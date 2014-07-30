@@ -1,0 +1,18 @@
+{
+  "name": "iq300",
+  "version": "0.1",
+  "dependencies": {
+    "jquery": "latest",
+    "jquery-mobile": "latest",
+    "jquery.role": "git://github.com/kossnocorp/role",
+    "modernizr": "~2.7.1",
+    "jquery-waypoints": "~2.0.4",
+    "animate.sass": "*",
+    "animate.css": "~3.0.0",
+    "jReject": "~1.1.1"
+  },
+  "ignore": [
+    "**/.*",
+    "components"
+  ]
+}
