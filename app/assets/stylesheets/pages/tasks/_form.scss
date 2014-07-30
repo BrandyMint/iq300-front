@@ -1,0 +1,354 @@
+section.task-form-section {
+  padding: 34px 50px;
+  ul.top {
+    @extend %small-tabs;
+    margin-bottom: 42px;
+  }
+  h2 {
+    color: #3489ae;
+    font-size: 20px;
+    margin-bottom: 22px;
+    a {
+      color: #3489ae;
+      font-size: 12px;
+      @include inline-block(middle);
+      margin-left: 34px;
+    }
+  }
+  form {
+      .input {
+      margin-bottom: 18px;
+      input[type=checkbox] {
+        @extend %blue-ok-checkbox-without-white-border;
+      }
+      label {
+        display: block;
+        margin-bottom: 7px;
+        line-height: 20px;
+        color: #999999;
+      }
+      input {
+        @include bordered;
+        background: #f1f5f6;
+        padding: 5px 11px;
+        line-height: 19px;
+        height: 31px;
+        @include box-sizing(border-box);
+        @include placeholder-color(#999999);
+        color: #666666;
+        width: 326px;
+        @include inline-block;
+        &[type='checkbox'] {
+          padding: 0;
+        }
+        &.full-width {
+          width: 100%;
+        }
+        &.field_with_errors {
+          border-color: #a92b2b;
+        }
+      }
+      select {
+        width: 326px;
+        @include inline-block;
+        & + span.right {
+          margin-top: 5px;
+        }
+      }
+      span.right {
+        @include inline-block;
+        line-height: 28px;
+        @include children-inline(top);
+        &.access-input {
+          line-height: 18px;
+          margin-left: 15px;
+        }
+        label {
+          color: #666666;
+          margin: 0 0 0 7px;
+        }
+      }
+      &.team > p {
+        margin-top: 10px;
+        @include children-inline;
+        > a {
+          text-decoration: none !important;
+          @include children-inline;
+          > i {
+            position: relative;
+            top: 1px;
+          }
+          &:hover > span {
+            text-decoration: underline !important;
+          }
+        }
+      }
+    }
+    > section.dates {
+      margin-top: 22px;
+      dl {
+        margin-top: 16px;
+        line-height: 29px;
+        @include children-inline;
+        input[type=checkbox] {
+          @include inline-block(middle);
+          @extend %blue-ok-checkbox-without-white-border;
+          &, + i {
+            position: relative;
+            top: -2px;
+          }
+        }
+        > dt {
+          width: 28.3%;
+          text-align: right;
+          color: #999999;
+          @include text-overflow;
+          &.unordinary-big-offset {
+            margin-bottom: 14px;
+          }
+          &.big-offset {
+            margin-bottom: 6px;
+          }
+        }
+        > dd {
+          margin-left: 1.2%;
+          width: 69%;
+          input[type=text] {
+            margin: 0;
+            @include bordered;
+            background: #f1f5f6;
+            padding: 3px 11px;
+            line-height: 18px;
+            height: 18px;
+            color: #666666;
+            @include placeholder-color(#999999);
+            &.short {
+              padding-left: 7px;
+              padding-right: 7px;
+              width: 25px;
+              text-align: center;
+            }
+          }
+          input + label {
+            @include inline-block(middle);
+            margin-left: 17px;
+            @include unselectable;
+          }
+          input + a {
+            margin-left: 15px;
+            color: #328bad;
+            text-decoration: none;
+            i {
+              position: relative;
+              top: 2px;
+              color: #999999;
+              margin-left: 3px;
+            }
+          }
+          label.radio {
+            margin-right: 6px;
+          }
+        }
+      }
+      footer {
+        color: #666666;
+        margin-top: 12px;
+        margin-bottom: 25px;
+        i {
+          color: #fd0003;
+        }
+      }
+    }
+    > section.outer-team {
+      margin-bottom: 18px;
+      label {
+        color: #999999;
+      }
+      > ul {
+        margin-top: 15px;
+        width: 100%;
+        @include children-inline;
+        > li {
+          width: 50%;
+          @include children-list-fix;
+          > .input {
+            margin-bottom: 18px;
+            input[type=checkbox] {
+              @extend %blue-ok-checkbox-without-white-border;
+            }
+            label {
+              display: block;
+              margin-bottom: 7px;
+              color: #999999;
+            }
+            input {
+              @include bordered;
+              background: #f1f5f6;
+              padding: 5px 11px;
+              line-height: 19px;
+              height: 31px;
+              @include box-sizing(border-box);
+              @include placeholder-color(#999999);
+              color: #666666;
+              width: 326px;
+              @include inline-block;
+              &.full-width {
+                width: 100%;
+              }
+            }
+            > select {
+              width: 326px;
+              @include inline-block;
+            }
+            > span.right {
+              @include inline-block;
+              line-height: 28px;
+              @include children-inline(middle);
+              label {
+                color: #666666;
+                margin: 0 0 0 7px;
+              }
+            }
+            &.team > p {
+              margin-top: 10px;
+              @include children-inline;
+              > a {
+                text-decoration: none !important;
+                @include children-inline;
+                > i {
+                  position: relative;
+                  top: 1px;
+                }
+                &:hover > span {
+                  text-decoration: underline !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    > section.client {
+      margin-bottom: 18px;
+      label {
+        color: #999999;
+      }
+      > ul {
+        margin-top: 15px;
+        width: 100%;
+        @include children-inline;
+        > li {
+          width: 25%;
+          @include children-list-fix;
+          > header {
+            line-height: 20px;
+            padding-left: 10px;
+            padding-right: 5px;
+            white-space: nowrap;
+            @include children-inline;
+            > input {
+              & + label {
+                margin-left: 5px;
+              }
+            }
+            > label {
+              height: 20px;
+            }
+            & + .input {
+              margin-top: 15px;
+            }
+          }
+          > .input {
+            padding-left: 10px;
+            padding-right: 5px;
+            margin-bottom: 18px;
+            input[type=checkbox] {
+              @extend %blue-ok-checkbox-without-white-border;
+            }
+            label {
+              display: block;
+              margin-bottom: 7px;
+              color: #999999;
+            }
+            input {
+              @include bordered;
+              background: #f1f5f6;
+              padding: 5px 11px;
+              line-height: 19px;
+              height: 31px;
+              @include box-sizing(border-box);
+              @include placeholder-color(#999999);
+              color: #666666;
+              width: 326px;
+              @include inline-block;
+              &.full-width {
+                width: 100%;
+              }
+            }
+            > select {
+              width: 326px;
+              @include inline-block;
+              &.full-width {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    > section.description {
+      label {
+        color: #999999;
+      }
+      margin-bottom: 18px;
+      textarea {
+        margin-top: 15px;
+        @include box-sizing(border-box);
+        width: 100%;
+        height: 117px;
+        @include bordered;
+        background: #f1f5f6;
+        padding: 10px 11px;
+        color: #666666;
+        line-height: 21px;
+        font-size: 13px;
+      }
+    }
+    > section.fileupload_multiple {
+      color: $defaultInfo;
+      .info {
+        > span {
+          font-size: 10px;
+          display: block;
+          @include truncate;
+        }
+      }
+    }
+    > .buttons {
+      @include children-inline;
+      margin-top: 30px;
+      margin-left: -20px;
+      > * {
+        margin: 0;
+        margin-top: 10px;
+        margin-left: 20px;
+        line-height: 20px;
+        color: #328bab;
+      }
+      a {
+        padding: 5px;
+        &.delete {
+          color: #ff2021;
+        }
+      }
+      input {
+        padding: 5px 21px;
+        -webkit-appearance: none;
+        color: white;
+        background: #338cae;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

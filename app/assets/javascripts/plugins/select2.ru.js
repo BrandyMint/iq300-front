@@ -1,0 +1,1 @@
+//= require ../lib/select2_locale_ru

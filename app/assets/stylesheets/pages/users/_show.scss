@@ -1,0 +1,186 @@
+.user-detailed-info {
+  > .related-objects {
+    margin-top: 22px;
+    float: right;
+    padding: 15px;
+    @include bordered;
+    font-size: 12px;
+    margin-left: 10px;
+    h4 {
+      color: #999999;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed #999999;
+    }
+  }
+  > h3 {
+    color: #999999;
+    font-size: 17px;
+    a {
+      @include inline-block;
+      font-size: 13px;
+      margin: 2px 0 2px 12px;
+      line-height: 18px;
+    }
+  }
+  > header {
+    overflow: hidden;
+    margin-top: 22px;
+    > aside {
+      float: left;
+      width: 150px;
+      > .picture {
+        height: 148px;
+        width: 148px;
+        @include bordered;
+        margin-bottom: 10px;
+        line-height: 148px;
+        img {
+          vertical-align: top;
+          width: 100%;
+        }
+      }
+      a {
+        line-height: 16px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        height: auto;
+        &.write-message, .edit {
+          @extend %green-link-button;
+          text-align: center;
+        }
+        &.add-contact {
+          @extend %blue-link-button;
+          text-align: center;
+          width: 120px;
+        }
+        &.delete-contact {
+          @extend %danger-link-button;
+          width: 120px;
+          text-align: center;
+        }
+      }
+      .edit ~ .edit {
+        margin-top: 3px;
+      }
+      & + .details {
+        margin-left: 170px;
+      }
+    }
+    > .details {
+      margin-left: 170px;
+      .social {
+        img {
+          vertical-align: middle;
+        }
+        a {
+          vertical-align: middle;
+        }
+      }
+      p {
+        margin-bottom: 4px;
+      }
+    }
+  }
+  section.other-section {
+    margin-top: 22px;
+    overflow: hidden;
+    aside {
+      float: left;
+      width: 190px;
+      & + .communities {
+        margin-left: 222px;
+      }
+    }
+    .offers, .communities {
+      text-align: left;
+      h4 {
+        margin-bottom: 9px;
+        font-size: 18px;
+        color: #888888;
+        padding-bottom: 9px;
+        border-bottom: 1px dashed #999999;
+      }
+      ul {
+        li {
+          padding: 9px 0;
+          font-size: 14px;
+        }
+      }
+    }
+    .offers {
+      li a {
+        margin: 3px 0;
+        font-size: 12px;
+      }
+    }
+    .communities {
+      h4 {
+        margin-bottom: 15px;
+      }
+      ul li {
+        @include inline-block;
+        width: 240px;
+        color: #999999;
+        border: 1px solid #dddddd;
+        margin: 0 10px 10px 0;
+        padding: 4px 8px;
+        min-height: 50px;
+        @include children-inline(middle);
+        .picture {
+          height: 50px;
+          width: 50px;
+          position: relative;
+          img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+        .name {
+          margin-left: 10px;
+          max-width: 175px;
+          a {
+            display: block;
+          }
+          small {
+            span {
+              margin-left: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .user-detailed-info header {
+    aside {
+      float: none;
+      width: auto;
+    }
+    .details {
+      margin-top: 20px;
+      margin-left: 0 !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  .user-detailed-info section.other-section {
+    aside {
+      float: none;
+      width: auto;
+      & + .communities {
+        margin-top: 20px;
+      }
+    }
+    .communities {
+      margin-left: 0;
+    }
+  }
+}

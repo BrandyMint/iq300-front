@@ -1,0 +1,23 @@
+// item view
+.departments-view-column {
+  > h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  > header {
+    > ul {
+      > li {
+        @include children-inline;
+        color: #666666;
+        > label {
+          color: #888888;
+          font-weight: bold;
+          width: 147px;
+        }
+        > span {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

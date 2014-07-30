@@ -1,0 +1,47 @@
+.partner-cart-page-content {
+  padding: 40px;
+  .partner-cart-table {
+    width: 900px;
+    text-align: left;
+    font-size: 12pt;
+    .partner-cart-row {
+      height: 24px;
+      vertical-align: top;
+      .partner-cart-key {
+        width: 220px;
+      }
+      .partner-cart-value {
+        width: 680px;
+      }
+      .partner-cart-bank-position {
+        width: 40px;
+      }
+      .partner-cart-bank-key {
+        width: 180px;
+      }
+      .partner-cart-value-title {
+        font-size: 20pt;
+      }
+    }
+  }
+}
+
+.header {
+  .print {
+    color: #358bae;
+  }
+}
+
+@media print {
+  .header {
+    img {
+      display: none;
+    }
+    a.print, a.back {
+      display: none;
+    }
+  }
+  .fc-header-right {
+    display: none;
+  }
+}

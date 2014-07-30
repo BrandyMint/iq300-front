@@ -15,6 +15,6 @@
 # Ignore Sass' cache
 /.sass-cache
 
-/source/vendor/components
-/source/vendor
+/app/vendor/components
+/app/vendor
 .*~imageoptim.*

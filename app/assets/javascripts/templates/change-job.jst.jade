@@ -1,0 +1,15 @@
+form(action='#')
+  ul.errors
+  input#worker_id(type='hidden')
+  .input.inline
+    a.personal-tree
+  .input.inline
+    label(for='worker_is_boss')= t('templates.change_jobs.appoint_head')
+    input(name='worker[is_boss]', id='worker_is_boss', type='checkbox')
+    i
+  .input
+    label(for='department_parent_id')= t('templates.change_jobs.appoint_post')
+    input#worker_job_id(name='worker[job_id]',type='hidden')
+  section.buttons
+    input.green( type='submit', name='commit', value= t('templates.change_jobs.appoint'))
+    a.close= t('templates.change_jobs.skip')

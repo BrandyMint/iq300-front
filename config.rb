@@ -40,6 +40,10 @@ module Haml::Filters::Markdown
   end
 end
 
+
+set :source_dir, 'app'
+set :source, 'app'
+
 #activate :i18n, langs: [:en, :ru], mount_at_root: false
 
 # Middleman Navigation
@@ -74,9 +78,10 @@ set :markdown, :fenced_code_blocks => true,
                :autolink => true, 
                :smartypants => true
 
-set :css_dir, 'stylesheets'
 
-set :js_dir, 'javascripts'
+set :css_dir, 'assets/stylesheets'
+
+set :js_dir, 'assets/javascripts'
 
 set :images_dir, 'images'
 
@@ -95,10 +100,10 @@ end
 # Build-specific configuration
 configure :build do
   # Clean 'Build' folder clean
-  ignore "/javascripts/application/*"
-  ignore "/javascripts/vendor/lib/*"
-  ignore "/stylesheets/vendor/*"
-  ignore "/stylesheets/app/*"
+  ignore "/assets/javascripts/application/*"
+  ignore "/assets/javascripts/vendor/lib/*"
+  ignore "/assets/stylesheets/vendor/*"
+  ignore "/assets/stylesheets/app/*"
   ignore "/vendor/components/*"
   ignore "*.rb"
 
@@ -125,12 +130,12 @@ end
 after_configuration do
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
   @bower_assets_path = File.join "#{root}", @bower_config["directory"]
-  sprockets.append_path 'source/vendor'
+  sprockets.append_path 'app/vendor'
   sprockets.append_path @bower_assets_path
-  sprockets.append_path 'vendor/javascripts'
-  sprockets.append_path 'vendor/stylesheets'
-  sprockets.append_path 'source/stylesheets/fonts'
-  #sprockets.import_asset 'source/robots.txt'
+  sprockets.append_path 'vendor/assets/javascripts'
+  sprockets.append_path 'vendor/assets/stylesheets'
+  sprockets.append_path 'app/assets/stylesheets/fonts'
+  #sprockets.import_asset 'app/robots.txt'
 end
 
 

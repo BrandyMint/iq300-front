@@ -1,0 +1,13 @@
+span= model.get('short_name')
+  if model.isRestricted()
+    span.fa.fa-key
+input(type = 'hidden', name = 'project[memberships_attributes][' + model.index() + '][user_id]',
+  value = model.get('id'), id = 'project_memberships_attributes_' + model.index() + '_user_id')
+input(type = 'hidden', name = 'project[memberships_attributes][' + model.index() + '][group_name]',
+  value = model.get('group_name'))
+if model.isMembershipPersisted()
+  input(type = 'hidden', role = 'deletion-flag', name = 'project[memberships_attributes][' + model.index() + '][_destroy]',
+    value = model.toDelete().toString())
+  input(type = 'hidden', name = 'project[memberships_attributes][' + model.index() + '][id]',
+    value = model.get('membership_id'))
+a.fa.fa-times-circle.btn-remove(href = '#', role = 'remove-btn')

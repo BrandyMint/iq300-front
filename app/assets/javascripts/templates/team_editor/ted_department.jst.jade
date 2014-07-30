@@ -1,0 +1,6 @@
+a(href='#')
+  span= model.get('title')
+  small= ' ' + model.users().length
+  span.icon-active &rsaquo;
+if model.children().length > 0 && !model.root
+  ul.form-list.nested

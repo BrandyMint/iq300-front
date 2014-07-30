@@ -1,0 +1,27 @@
+.departments-jobs-list-column {
+  @extend section.list-column;
+  ul li {
+    > * {
+      padding: 0 0.9%;
+    }
+    .title {
+      width: 240px;
+      font-weight: bold;
+    }
+    .department {
+      width: 200px;
+    }
+    .is_boss {
+      width: 100px;
+    }
+    .actions {
+      width: 100px;
+    }
+    &.header ~ li {
+      > * {
+        padding-top: 3px;
+        padding-bottom: 3px;
+      }
+    }
+  }
+}

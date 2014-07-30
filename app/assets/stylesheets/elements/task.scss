@@ -1,0 +1,95 @@
+.task-box {
+	border-left: solid 5px #eee;
+	padding: 10px 10px 10px 35px;
+  margin-bottom: 1px;
+  cursor: pointer;
+  font-size: 12px;
+  @include clear;
+  @include transition();
+  &:hover {
+  	border-left-color: darken(#eee,10%);
+  	background-color: #f8f8f8;
+  	border-top-color: transparent;
+  	+ .task-box { border-top-color: transparent;}
+  }
+  + .task-box {
+  	border-top: solid 1px #eee;
+  }
+  &.project-task-box {
+    padding-left: 10px;
+  }
+  > .pull-left {
+    white-space: nowrap;
+    span {
+      vertical-align: middle;
+      &.title {
+        max-width: 70%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+      }
+    }
+  	max-width: 75%;
+  }
+	.label, .status-date {
+		vertical-align: middle;
+	}
+	.status-date {
+		padding: 0;
+		min-height: 0;
+		color: $brand-primary;
+	}
+	.fa-star, .icon-star-empty, .fa-star-o {
+		float: left;
+		margin: 3px 0 0 -23px;
+	}
+}
+.task-overdue {
+	border-left-color: $brand-danger;
+	border-top: 0;
+	+ .task-box { border-top: 0;}
+	&:hover {border-left-color: $brand-danger;}
+	.status-date {
+		color: $brand-danger;
+	}
+}
+.task-new {
+	border-top: 0;
+	border-left-color: $brand-primary;
+	background-color: $contentBackgroundColor;
+	&:hover {border-left-color: $brand-primary;}
+	+ .task-box { border-top: 0;}
+  .task-box-title-block {
+    font-weight: bold;
+  }
+}
+.task-group-title {
+	color: #ccc;
+	margin: 10px;
+}
+.task-box-user {
+  white-space: nowrap;
+}
+.task-box-status-date {
+  margin-top: -2px;
+  white-space: nowrap;
+}
+.task-box-status-block {
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    text-align: left;
+  }
+}
+.task-box-title-block {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task-title {
+    color: #000;
+    font-size: 2em;
+    font-weight: bold;
+}
+

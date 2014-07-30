@@ -1,0 +1,17 @@
+.attached-file {
+  display: inline-block;
+  margin-right: 1.2em;
+}
+
+.attached-file-delete-btn {
+  color: $gray-light;
+  &:hover {
+    color: $gray;
+  }
+}
+
+.attached-file-icon {
+  font-size: 14px;
+  margin-right: 2px;
+}
+

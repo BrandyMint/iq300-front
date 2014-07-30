@@ -1,0 +1,85 @@
+section.community-form-section {
+  > form {
+    section.boss, section.non-corporate, section.corporate, section.description {
+      label {
+        color: #999999;
+      }
+      //> div
+      //  padding: 10px 0
+      a.right.remove_nested_fields {
+        float: right;
+        color: #ff0101;
+      }
+      header.title {
+        margin-bottom: 10px;
+        color: #666666;
+        font-weight: bold;
+      }
+      .input {
+        margin-bottom: 18px;
+        input[type=checkbox] {
+          @extend %blue-ok-checkbox-without-white-border;
+        }
+        label {
+          display: block;
+          margin-bottom: 7px;
+          color: #999999;
+        }
+        input {
+          @include bordered;
+          background: #f1f5f6;
+          padding: 5px 11px;
+          line-height: 19px;
+          height: 31px;
+          @include box-sizing(border-box);
+          @include placeholder-color(#999999);
+          color: #666666;
+          width: 326px;
+          @include inline-block;
+          &.full-width {
+            width: 100%;
+          }
+        }
+        textarea {
+          margin-top: 15px;
+          @include box-sizing(border-box);
+          width: 100%;
+          height: 117px;
+          @include bordered;
+          background: #f1f5f6;
+          padding: 10px 13px;
+          color: #666666;
+          line-height: 19px;
+          font-size: 13px;
+          font-family: Arial, sans-serif;
+        }
+        > select {
+          width: 326px;
+          @include inline-block;
+        }
+        > span.right {
+          @include inline-block;
+          line-height: 28px;
+          @include children-inline(middle);
+          label {
+            color: #666666;
+            margin: 0 0 0 7px;
+          }
+        }
+        &.under-title-header {
+          margin-left: 10px;
+        }
+      }
+    }
+    &.non-corporate-profile {
+      > section.corporate {
+        display: none;
+      }
+    }
+    &.corporate-profile {
+      > section.non-corporate {
+        display: none;
+      }
+    }
+  }
+}

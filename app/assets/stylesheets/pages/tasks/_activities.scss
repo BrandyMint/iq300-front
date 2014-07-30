@@ -1,0 +1,96 @@
+$spx: 369;
+
+// when smallest screen its 891
+
+@mixin width-percent($val) {
+  width: percentage($val / $spx);
+}
+
+@mixin padding-left-percent($val) {
+  padding-left: percentage($val / $spx);
+}
+
+@mixin padding-right-percent($val) {
+  padding-right: percentage($val / $spx);
+}
+
+ul.activities-list {
+  display: block;
+  margin-bottom: 25px;
+  li {
+    display: block;
+    @include children-inline(middle);
+    padding: 7px 5px;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  li.header {
+    background: #e3ebed;
+    color: #666666;
+    padding: 15px 5px 10px 5px;
+    @include bordered-bottom;
+    font-weight: bold;
+  }
+  li {
+    //:width 379px
+    > * {
+      @include padding-left-percent(7);
+      @include padding-right-percent(7);
+      font-size: 12px;
+    }
+    > .date {
+      @include width-percent(50);
+    }
+    > .user {
+      @include width-percent(46);
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    > .event {
+      @include width-percent(83);
+      color: #666666;
+    }
+    > .changes {
+      @include width-percent(127);
+      > span {
+        padding: 0 6px;
+        max-width: 87%;
+        display: block;
+        color: #666666;
+        @include truncate;
+        &.update {
+          .status {
+            padding: 0 6px;
+            color: white;
+            &.in_work {
+              background: #543ab5 !important;
+            }
+            &.new {
+              background: #9cb53a !important;
+            }
+            &.browsed {
+              background: #b5913a !important;
+            }
+            &.refused, &.scenario {
+              background: #ca7841 !important;
+            }
+            &.completed {
+              background: #39b78c !important;
+            }
+            &.accepted, &.recovered {
+              background: #39b74b !important;
+            }
+            &.declined, &.archived {
+              background: #b73960 !important;
+            }
+            &.delegated, &.draft {
+              background: #b739b3 !important;
+            }
+            &.canceled {
+              background: #8d8d8d !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

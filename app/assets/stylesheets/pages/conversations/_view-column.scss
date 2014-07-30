@@ -1,0 +1,53 @@
+.conversation-view-column {
+  .discussion {
+    padding-top: 0 !important;
+    .comments-list {
+      margin-top: 0;
+      .comment {
+        margin-top: 0;
+        border-top: 0;
+        padding-top: 10px;
+        padding-left: 46px;
+        .image {
+          max-width: 36px;
+          max-height: 36px;
+          line-height: 36px;
+          top: 12px;
+          left: 0;
+          > a {
+            display: block;
+            zoom: 1;
+            vertical-align: top;
+            > img {
+              display: block;
+              max-width: 36px;
+              max-height: 36px;
+              width: 36px !important;
+              height: 36px !important;
+              border: 0;
+              vertical-align: top;
+            }
+          }
+        }
+        .name {
+          padding-top: 2px;
+          margin-bottom: 1px;
+        }
+        .date {
+          display: block;
+          margin-bottom: 4px;
+        }
+        .body {
+          line-height: 16px;
+        }
+        & + .comment {
+          margin-top: 5px;
+          border-top: 1px solid #cccccc;
+        }
+      }
+    }
+    .comments-form {
+      margin-top: 15px;
+    }
+  }
+}

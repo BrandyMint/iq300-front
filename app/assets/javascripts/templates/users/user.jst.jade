@@ -1,0 +1,5 @@
+img(src=model.get("photo").thumb, data-default-src='/assets/default-user-avatar.png')
+.name
+  a(href="/users/#{model.id}")=model.get("name")
+  .detailed
+    span=model.get("email")

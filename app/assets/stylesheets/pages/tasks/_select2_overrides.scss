@@ -1,0 +1,105 @@
+section.task-form-section {
+  .select-two, .select2-search-field, .select2-input {
+    width: 100% !important;
+  }
+  .select2-search-choice {
+    display: none;
+  }
+  .modal {
+    .select2-search-choice {
+      display: block;
+    }
+    .select2-container-active, .select2-container-multi {
+      .select2-choices {
+        border: 1px solid #cccccc !important;
+        background: #f1f5f6;
+      }
+    }
+  }
+  .select2-container-active, .select2-container-multi {
+    .select2-choices {
+      border: none !important;
+      background-image: none;
+      @include box-shadow(none !important);
+    }
+  }
+}
+
+section.badges-list {
+  .select-two, .select2-search-field, .select2-input {
+    width: 100% !important;
+  }
+  .select-two, .select2-search-field, .select2-input {
+    width: 100% !important;
+  }
+  .select2-search-choice {
+    display: none;
+  }
+  .select2-container-active, .select2-container-multi {
+    .select2-choices {
+      border: none !important;
+      background-image: none;
+      @include box-shadow(none !important);
+    }
+  }
+}
+
+.search-by-tag {
+  .select-two, .select2-search-field, .select2-input {
+    width: 70% !important;
+  }
+}
+
+section.task-view-column {
+  .best_in_place {
+    & textarea {
+      width: 100% !important;
+    }
+    & input[type='text'] {
+      width: 80% !important;
+    }
+  }
+}
+
+.attachment-categories {
+  .select-two, .select2-input {
+    width: 100% !important;
+    height: 30px !important;
+    display: inline-table;
+  }
+}
+
+.accessor-users, %section.form.add-user {
+  .select2-container, .select-two, .select2-input {
+    width: 100% !important;
+  }
+}
+
+.add-ducument-topup, .add-folder-topup {
+  .select2-container, .select-two, .select2-input {
+    width: 100% !important;
+  }
+}
+
+.modal {
+  .multiple-attachments-select {
+    .select2-choices {
+      width: 400px;
+    }
+  }
+}
+
+//ul.select2-results
+//  > li.select2-result, li.select2-no-results
+//    :color #999999
+
+div.select2-container {
+  > a.select2-choice {
+    > span.select2-chosen {
+      color: #999999;
+    }
+    > abbr.select2-search-choice-close {
+      top: 6px;
+    }
+  }
+}

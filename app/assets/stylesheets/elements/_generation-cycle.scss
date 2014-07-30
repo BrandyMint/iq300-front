@@ -1,0 +1,75 @@
+.generation-cycle-form {
+  margin-top: 20px;
+  color: #666666;
+  > .first {
+    margin-top: -10px;
+    input[type="checkbox"] {
+      & + i {
+        margin-top: 17px !important;
+        top: 0 !important;
+        & ~ span {
+          margin-left: 5px !important;
+        }
+      }
+    }
+  }
+  > .gc-enabled {
+    input[type="checkbox"] {
+      & + i {
+        margin-top: 7px !important;
+        top: 0 !important;
+        & ~ span {
+          margin-left: 5px !important;
+        }
+      }
+    }
+  }
+  .checkbox-label {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #999999;
+  }
+  input[type='text'] {
+    margin: 0;
+    border: 1px solid #cccccc;
+    background: #f1f5f6;
+    padding: 3px 11px;
+    line-height: 18px;
+    height: 18px;
+    color: #666666;
+    width: 64px;
+    &.short {
+      width: 24px;
+    }
+  }
+  .hidden {
+    display: none !important;
+  }
+  ul.cycle-types {
+    margin-top: 10px;
+    @include inline-block;
+    li {
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      color: #338cae;
+      margin-right: 10px;
+      padding: 0 10px;
+      &.selected {
+        color: white;
+        background: #338cae;
+      }
+    }
+    .days-enabled {
+      display: none;
+    }
+  }
+  .business-only {
+    display: block;
+  }
+  .cycle-count, .cycle-dates {
+    margin-top: 20px;
+  }
+}

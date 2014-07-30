@@ -1,0 +1,33 @@
+@import "helpers/mixins";
+@import "libs/fullcalendar";
+
+html, body {
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  line-height: 19px;
+}
+
+.header {
+  margin-bottom: 15px;
+  a {
+    margin-left: 15px;
+  }
+}
+
+.calendar-page {
+  width: 950px;
+}
+
+@media print {
+  .header {
+    img {
+      float: right;
+    }
+    a.print, a.back {
+      display: none;
+    }
+  }
+  .fc-header-right {
+    display: none;
+  }
+}

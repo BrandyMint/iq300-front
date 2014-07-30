@@ -1,0 +1,104 @@
+section.view-column {
+  float: none !important;
+  background: white;
+  @include box-shadow(-3px 3px 10px rgba(0, 0, 0, 0.1));
+  z-index: 10;
+  position: relative;
+  header.tab-navigation + .column-content {
+    top: 55px;
+  }
+  .column-content {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .object-details {
+      padding: 26px 22px 10px 22px;
+      &, header {
+        > p, > div > p {
+          color: #999999;
+          font-size: 12px;
+          line-height: 24px;
+          a {
+            @include inline-block;
+            color: #338bb1;
+            margin-left: 5px;
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+          > span {
+            color: #666666;
+            margin-left: 5px;
+            &.task-status {
+              @include inline-block(top);
+              margin-top: 3px;
+              margin-bottom: 3px;
+              line-height: 18px;
+              padding: 0 8px;
+              color: white;
+              // default background
+              position: relative;
+              @include gradient(#38b6fa, #f267fa);
+            }
+            & + i {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 1em;
+      margin-bottom: 4px;
+      line-height: 34px;
+      color: #368aaf;
+      &.with-icons {
+        @include inline-block;
+        .icons {
+          text-align: left;
+          display: inline;
+          a {
+            color: #999999;
+          }
+          i {
+            font-size: 14px;
+            display: inline;
+            margin-left: 5px;
+          }
+          i.icon-repeat {
+            color: #666666;
+          }
+        }
+        .favorite {
+          display: inline;
+          &:hover > a {
+            color: #666666;
+            text-decoration: none;
+          }
+          &.starred {
+            > a {
+              color: #fab035;
+              > i:before {
+                @extend .icon-star:before;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+%view-column-middle-size {
+  .column-content {
+    padding-left: 36px;
+    padding-right: 53px;
+  }
+}

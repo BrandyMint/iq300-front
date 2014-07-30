@@ -1,0 +1,72 @@
+.status-box {
+	white-space: nowrap;
+	font-size: 0;
+	.status-label, .status-date {
+		display: inline-block;
+		vertical-align: middle;
+		white-space: normal;
+		text-align: center;
+		min-height: 50px;
+		min-width: 120px;
+		font-size: 12px;
+		border: solid 1px transparent;
+		@include box-sizing(border-box);
+	}
+	.status-label {
+		margin-left: 5px;
+	}
+	.label {
+		font-size: 11px;
+	}
+}
+
+.status-label {
+	max-width: 180px;
+	text-align: center;
+	padding: 0 5px;
+	&:before {
+		content: '';
+	  display: inline-block;
+	  vertical-align: middle;
+	  height: 50px;
+	  margin-left: -0.25em;
+	}
+	> span {
+		display: inline-block;
+	  vertical-align: middle;
+	}
+}
+
+.status-date {
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	min-width: 50px;
+	sup {
+		margin-left: -2px;
+		font-size: 80%;
+	}
+	.day {
+		font-size: 1.2em;
+	}
+	.bg-info + & { 
+		border-color: $label-info-bg;
+		color: $label-info-bg;
+	}
+	.bg-danger + & { 
+		border-color: $brand-danger;
+		color: $brand-danger;
+	}
+	.bg-warning + & { 
+		border-color: $brand-warning;
+		color: $brand-warning;
+	}
+	.bg-success + & { 
+		border-color: $brand-success;
+		color: $brand-success;
+	}
+	.bg-primary + & { 
+		border-color: $brand-primary;
+		color: $brand-primary;
+	}
+}

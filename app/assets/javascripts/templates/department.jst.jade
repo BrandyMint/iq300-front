@@ -1,0 +1,16 @@
+input(type='checkbox', class=model.id + ' toggle')
+input(type='checkbox', class=model.id + ' department-toggle')
+.line(class=model.id)
+.line-child
+.line-clear
+.counter(class=model.id)=model.childrenCount()
+.department-card(class=model.id)
+.expander
+.d-card-title(class=model.id)
+.d-card-body(class=model.id)
+  .boss-card(class=model.id)
+  .workers(class=model.id)
+ol.children(class=model.id)
+.toggle-icon
+.toggle-arrow
+.toggle-block

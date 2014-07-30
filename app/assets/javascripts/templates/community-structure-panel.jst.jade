@@ -1,0 +1,45 @@
+.add-department-btn
+  .add-button.popup-window(data-popup='new-department')
+    = t('templates.community_structure.add_department')
+    a.small-plus-button.add-tag(, href='#')
+      i.icon-plus
+  .adding-form.new-department.without-left-pimp(data-focused-input='input#department_title')
+    form(action='#')
+      ul.errors.department
+      .input
+        label(for='department_title')= t('templates.community_structure.title')
+          abbr *
+        input(name='department[title]', id='department_title', placeholde= t('templates.community_structure.enter_title'))
+      .input
+        label(for='department_parent_id')= t('templates.community_structure.top_department')
+        select.select-two(name='department[parent_id]', id='department_parent_id', data-allow-clear='true', placeholder= t('templates.community_structure.select_from_list'))
+      ul.errors.contract
+      .input
+        label(for='department_boss_id')= t('templates.change_jobs.appoint_head')
+        select.select-two(name='department[boss_id]', id='department_boss_id', data-allow-clear='true', placeholder= t('templates.community_structure.select_from_list'))
+      section.buttons
+        input.green( type='submit', name='commit', value= t('common.create'))
+        a.delete= t('common.cancel')
+
+.add-user-btn
+  .add-button.popup-window(data-popup='add-user')
+    = t('templates.community_structure.add_member')
+    a.small-plus-button.add-tag(href='#')
+      i.icon-plus
+  .search-user-for-community.add-user.without-left-pimp(data-focused-input='input#search')
+    form(action='/users', method='get')
+      input(name='for',id='for', value='communities', type='hidden')
+      input(name='community_id',id='community_id', value=gon.communityId, type='hidden')
+      input(name='search', type='text', id='search', placeholder= t('templates.community_structure.enter_name'))
+      button( type='submit', name='commit', disabled=true)
+        span.icon-search
+    .results
+
+.unallocated-btn
+  .btn
+    .expander(data-target='.unallocated-workers')
+    a= t('templates.community_structure.unallocated')
+    span.red.counter
+  .unallocated-workers
+
+.apply-changes-view

@@ -1,0 +1,8 @@
+.expander
+label
+  span(title=app.i18n.t('common.dbl_click_to_edit'))= _.str.truncate(model.get("title"), 18)
+  input
+
+if !model.isRoot()
+  .destroy-department(class=model.get("id"))
+.options

@@ -1,0 +1,12 @@
+.multiple-file-upload {
+  ul {
+    li {
+      input[type=file] {
+        display: none;
+      }
+      &.fields {
+        margin-right: 10px;
+      }
+    }
+  }
+}

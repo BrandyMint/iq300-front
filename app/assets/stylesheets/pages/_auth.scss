@@ -1,0 +1,69 @@
+%auth-form {
+  line-height: 30px;
+  max-width: 430px;
+  label {
+    width: 140px;
+    @include inline-block;
+    &.checkbox {
+      margin-left: 140px;
+      width: 200px;
+      > span {
+        position: relative;
+        top: 1px;
+        margin-left: 5px;
+      }
+    }
+  }
+  input[type=text], input[type=password], input[type=email], input[type=tel] {
+    width: 200px;
+    margin: 0;
+    @include bordered;
+    background: #f1f5f6;
+    padding: 3px 11px;
+    line-height: 18px;
+    height: 18px;
+    color: #666666;
+    @include placeholder-color(#999999);
+  }
+  input[type=submit] {
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    @include button(#348dad);
+  }
+  input.field_with_errors {
+    border-color: #a92b2b;
+  }
+}
+
+.login-page, .password-recovery-page, .confirmation-resend-page {
+  form {
+    @extend %auth-form;
+  }
+  p {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  .login-page form {
+    label, input[type=text], input[type=password], input[type=email], input[type=tel] {
+      display: block;
+      width: 100%;
+      max-width: 320px;
+      height: 26px;
+      @include box-sizing(border-box);
+    }
+    label.checkbox {
+      margin-left: 0;
+      width: auto;
+    }
+    input[type=text], input[type=password], input[type=email], input[type=tel] {
+      & + label {
+        margin-top: 4px;
+      }
+    }
+  }
+}

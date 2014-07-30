@@ -1,0 +1,327 @@
+.column-content#community-tab-pane {
+  border-bottom: 1px solid #cccccc;
+  #community-participants, #community-departments {
+    padding: 0px;
+  }
+  .tab-navigation.with-buttons {
+    border-bottom: 1px solid #cccccc;
+    background: white;
+    padding-left: 22px;
+    padding-right: 22px;
+    > ul.tabnav {
+      height: 44px;
+      line-height: 26px;
+      @include children-inline;
+      > li {
+        border: 1px solid white;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        > a {
+          border-left: none;
+          padding: 0 15px;
+          display: block;
+          &:hover {
+            background: white;
+            color: #338cac;
+            text-decoration: underline;
+          }
+        }
+        &:hover {
+          @include bordered;
+        }
+        &.active {
+          @include bordered;
+          background: #338cae;
+          > a {
+            color: white;
+            &:hover {
+              background: #338cae;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.community-structure-panel-view {
+  @include inline-block;
+  float: right;
+  height: 44px;
+  .new-department {
+    @extend .search-user-for-community;
+  }
+  .new-department, .add-user {
+    margin-top: 13px;
+  }
+  .new-department {
+    @include has-top-custom-centered-pimp(98);
+    @extend section.task-form-section;
+    form {
+      .select-two, .select2-search-field, .select2-input {
+        width: 100% !important;
+      }
+      .select2-drop-mask {
+        margin-left: 20px !important;
+      }
+      input#department_title {
+        width: 100%;
+      }
+      select#department_parent_id {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      input[type='submit'].green {
+        background: #38b64b;
+      }
+      .buttons {
+        margin-left: 0;
+        .delete {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .add-user {
+    @include has-top-custom-centered-pimp(122);
+  }
+  .add-department-btn, .add-user-btn {
+    @include inline-block;
+    float: left;
+    margin-right: 18px;
+    margin-top: 9px;
+    ul.errors {
+      display: none;
+      background: #f6f1f1;
+      padding: 14px;
+      font-size: 14px;
+      color: #ff2021;
+      > span {
+        color: #38b64b;
+        margin-bottom: 5px;
+      }
+      margin-bottom: 10px;
+      li:first-child {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    }
+    a.small-plus-button {
+      margin-left: 7px !important;
+    }
+    .add-button {
+      cursor: pointer;
+      font-size: 12px;
+      &:hover {
+        text-decoration: underline;
+        color: #338cac;
+      }
+    }
+  }
+  .unallocated-btn {
+    &.drop-area {
+      .unallocated-workers {
+        border: 1px solid #338cae;
+        margin-right: -1px;
+        margin-bottom: -1px;
+        margin-left: -1px;
+      }
+    }
+  }
+  .unallocated-workers {
+    @include inline-block;
+    max-height: 568px;
+    overflow: auto;
+    background: #f1f5f6;
+    display: none;
+    border-top: 1px solid #f1f5f6;
+    &.expanded {
+      display: block;
+    }
+    .memberships-contract {
+      cursor: move;
+      margin-top: 5px;
+      margin-bottom: 1px;
+      overflow: hidden;
+      border: 1px solid #f1f5f6;
+      z-index: 1;
+      &.empty {
+        height: 34px;
+        cursor: default;
+        opacity: 0.6;
+        position: relative;
+        border: 1px dashed #338cae !important;
+        &:hover {
+          border: 1px dashed #338cae !important;
+        }
+        @include has-after-icon(18px, white) {
+          @include absoluted;
+          line-height: 34px;
+          text-align: center;
+          @extend .icon-plus:before;
+          width: 34px;
+          @include bordered;
+          background: #cccccc;
+        }
+      }
+      &:hover {
+        border: 1px solid #338cae;
+      }
+    }
+  }
+  .apply-changes-view {
+    display: none;
+    margin-right: 22px;
+    background-color: white;
+    border: 1px solid #ff0101;
+    height: 34px;
+    position: absolute;
+    z-index: 100;
+    top: 50px;
+    left: 350px;
+    .accept {
+      color: #38b64b;
+      margin: 0px 10px 0px 10px;
+      display: inline-block;
+      line-height: 34px;
+      cursor: pointer;
+      i {
+        color: #38b64b;
+        line-height: 34px;
+        margin-left: 10px;
+      }
+    }
+    .decline {
+      color: #ff0103;
+      margin: 0px 10px 0px 20px;
+      display: inline-block;
+      line-height: 34px;
+      cursor: pointer;
+      i {
+        color: #ff0103;
+        line-height: 34px;
+        margin-left: 10px;
+      }
+    }
+    .spinner {
+      display: none;
+      line-height: 34px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+    .error {
+      &.is-loading {
+        &:after {
+          background-position: right;
+          margin-right: 10px;
+        }
+      }
+      display: none;
+      line-height: 34px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  }
+  .apply-changes-view.saving {
+    display: block;
+    .spinner {
+      display: inline-block;
+    }
+    .accept {
+      display: none;
+    }
+    .decline {
+      display: none;
+    }
+  }
+  .apply-changes-view.error {
+    display: block;
+    .spinner {
+      display: none;
+    }
+    .error {
+      display: inline-block;
+    }
+    .accept {
+      display: none;
+    }
+    .decline {
+      display: inline-block;
+    }
+  }
+}
+
+.unallocated-btn {
+  @include inline-block;
+  float: left;
+  position: relative;
+  width: 230px;
+  z-index: 100;
+  margin-top: 4px;
+  margin-left: 8px;
+  .btn {
+    .counter {
+      display: none;
+    }
+    line-height: 34px;
+    border: 1px solid #ff0101;
+    &.zero-workers {
+      border: 1px solid #cccccc;
+    }
+    background: #dbe3e6;
+    &.expanded {
+      > .expander {
+        background: #f1f5f6;
+        &:before {
+          @extend .icon-chevron-down:before;
+        }
+      }
+    }
+    .expander {
+      @include inline-block;
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+      position: relative;
+      border-right: 1px solid #ff0101;
+      &.zero-workers {
+        border-right: 1px solid #cccccc;
+      }
+      @include unselectable;
+      @include has-after-icon(15px, #666666) {
+        @include absoluted;
+        line-height: 34px;
+        text-align: center;
+        @extend .icon-chevron-right:before;
+      }
+
+      &:before {
+        color: #ff0101 !important;
+      }
+      &.zero-workers {
+        &:before {
+          color: #666666 !important;
+        }
+      }
+    }
+    > a {
+      cursor: default;
+      color: #ff0101;
+      &.zero-workers {
+        color: #666666;
+      }
+      font-weight: bold;
+      margin-left: 10px;
+      @include unselectable;
+      text-decoration: none;
+    }
+    > span {
+      @extend %buble-counter;
+      float: right;
+      margin-top: (34px - 19px) / 2;
+      margin-right: 6px;
+    }
+  }
+}

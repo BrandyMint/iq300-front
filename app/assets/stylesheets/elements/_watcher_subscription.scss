@@ -1,0 +1,11 @@
+.resource-watcher-subscription {
+  float: right;
+  line-height: 24px;
+  color: #999999;
+  input[type=checkbox] {
+    @extend %blue-ok-checkbox-without-white-border;
+  }
+  i {
+    top: 2px;
+  }
+}

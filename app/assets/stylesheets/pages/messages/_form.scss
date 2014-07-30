@@ -1,0 +1,17 @@
+.messages-form, .comments-form {
+  width: 100%;
+  .comment-body {
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 72px;
+    min-height: 31px;
+    line-height: 1.7;
+  }
+  textarea.comment-body {
+    resize: vertical !important;
+  }
+  input.comment-body {
+    float: none;
+  }
+}

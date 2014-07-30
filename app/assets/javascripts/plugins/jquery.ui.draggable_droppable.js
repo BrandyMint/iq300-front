@@ -1,0 +1,1 @@
+//= require ../lib/jquery-ui-draggable-droppable

@@ -1,0 +1,31 @@
+.community-structure-view {
+  &.personal-tree {
+    > ol.departments {
+      display: none;
+    }
+    > .personal-tree {
+      display: block;
+    }
+  }
+  &.base {
+    > ol.departments {
+      display: block;
+    }
+    > .personal-tree {
+      display: none;
+    }
+  }
+}
+
+.community-structure-panel {
+  &.personal-tree {
+    .unallocated-btn, .add-department-btn, .add-user-btn {
+      display: none;
+    }
+  }
+  &.base {
+    .unallocated-btn, .add-department-btn, .add-user-btn {
+      display: block;
+    }
+  }
+}

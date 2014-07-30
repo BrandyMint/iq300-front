@@ -1,0 +1,36 @@
+.user-contracts-page {
+  nav {
+    margin-bottom: 22px;
+    ul {
+      @extend %small-tabs;
+    }
+  }
+  p {
+    margin-bottom: 22px;
+  }
+  table {
+    width: 100%;
+    @extend %simple-table;
+    color: #666666;
+    th, td {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    th.date {
+      width: 115px;
+    }
+  }
+  .pagination {
+    margin: 18px 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 720px) {
+  .user-contracts-page table {
+    th, td {
+      &.flexible {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.comments-list {
+  margin-top: 15px;
+  div.comment {
+    position: relative;
+    padding-left: 50px;
+    padding-bottom: 7px;
+    padding-top: 5px;
+    font-size: 11px;
+    margin-top: 5px;
+    @include bordered-top;
+    > .image {
+      position: absolute;
+      left: 3px;
+      top: 5px;
+      max-width: 37px;
+      max-height: 37px;
+      line-height: 37px;
+      //+bordered
+      > a {
+        @include inline-block;
+        > img {
+          max-width: 35px;
+          max-height: 35px;
+          vertical-align: middle;
+          @include bordered;
+          line-height: 0;
+        }
+      }
+    }
+    > .name {
+      line-height: 14px;
+      padding-top: 5px;
+      margin-bottom: 3px;
+      span.parent {
+        color: #999999;
+      }
+      a {
+        color: #358bae;
+      }
+      .muted {
+        display: inline;
+        color: #888888;
+      }
+    }
+    a.delete {
+      position: absolute;
+      right: 4px;
+      top: 5px;
+      color: #999999;
+      font-size: 14px;
+    }
+    > .body {
+      color: #666666;
+      font-size: 13px;
+      margin-bottom: 1px;
+      @extend %markdown-style;
+      .attachment {
+        margin-top: 3px;
+        margin-bottom: 2px;
+        &.image {
+          margin-top: 10px;
+          margin-bottom: 3px;
+          img {
+            //:width 173px
+            background: white;
+            padding: 0px;
+            @include bordered;
+            ~ a {
+              @include inline-block;
+              color: #666666;
+              margin-left: 2px;
+              line-height: 17px;
+            }
+          }
+        }
+        a {
+          i {
+            color: #999999;
+          }
+        }
+      }
+    }
+    > .date {
+      color: #999999;
+      line-height: 18px;
+      > .answer {
+        float: right;
+      }
+    }
+    > .replies {
+      margin-top: 7px;
+      @include bordered-top;
+    }
+    > .answer-form.hidden {
+      display: none;
+    }
+    &.undeletable {
+      border-style: none;
+      background: #eeeeee;
+      padding-left: 10px;
+      padding-right: 10px;
+      .date {
+        float: right;
+      }
+      .body {
+        p {
+          font-size: 0.85em;
+          color: #888888;
+          a {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}

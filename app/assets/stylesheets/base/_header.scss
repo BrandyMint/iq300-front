@@ -1,0 +1,71 @@
+.header-global {
+  position: relative;
+  z-index: 12;
+  height: $headerHeight;
+  line-height: $headerHeight;
+  padding-left: $navColumnWidth;
+  background-color: $headerBg;
+  border-bottom: 1px solid #eee;
+  .logo {
+    position: absolute;
+    display: block;
+    left: 14px;
+    top: 14px;
+    height: 30px;
+    width: 70px;
+    background: url('/assets/login/logo.png') no-repeat;
+    background-size: contain;
+  }
+  
+  .user-nav {
+    float: right;
+    height: $headerHeight;
+    padding-right: 20px;
+    .userpic {
+      display: inline-block;
+      height: $headerHeight;
+      vertical-align: middle;
+      img {
+        border-radius: 100%;
+        margin: 3px 10px 0 0;
+        border: 1px solid #ddd;
+      }
+    }
+    a { 
+      color: inherit;
+      display: inline-block;
+      vertical-align: top;
+      line-height: $headerHeight;
+      margin-left: 16px;
+      padding-left: 20px;
+      border-left: 1px solid #e9e9e9;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header-global {
+    display: none;
+    padding-left: $navColumnWidth / 2;
+    > .logo {
+      width: $navColumnWidth / 2 - 1;
+      height: $navColumnWidth / 2 - 1;
+      > a {
+        width: $navColumnWidth / 2 + 2;
+        height: $navColumnWidth / 2 + 2;
+        margin-left: -3px;
+        margin-top: -3px;
+        > img {
+          width: 47px;
+          height: 47px;
+        }
+        &:active {
+          width: $navColumnWidth / 2 + 1;
+          height: $navColumnWidth / 2 + 1;
+          margin-left: -2px;
+          margin-top: -2px;
+        }
+      }
+    }
+  }
+}

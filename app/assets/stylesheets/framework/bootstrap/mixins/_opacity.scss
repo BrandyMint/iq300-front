@@ -1,0 +1,16 @@
+// Opacity
+// UPDATE ---->
+// @mixin opacity($value, $ie: false) {
+//   opacity: $value;
+//   @if $ie {
+//     filter: progid:DXImageTransform.Microsoft.Alpha(opacity=#{$value * 100});
+//     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=#{$value * 100})";
+//   }
+// }
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: #{alpha(opacity=$opacity-ie)};
+}

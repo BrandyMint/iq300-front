@@ -1,0 +1,125 @@
+.search-user-for-community {
+  position: absolute;
+  display: none;
+  top: inherit;
+  left: inherit;
+  margin-top: 15px;
+  @include bordered;
+  background: white;
+  padding: 15px 14px;
+  z-index: 200;
+  @include box-shadow(0px 2px 9px rgba(0, 0, 0, 0.2));
+  width: 358px;
+  &.create-contact-window {
+    width: 358px;
+  }
+  &:not(.without-left-pimp) {
+    @extend %has-top-left-pimp;
+  }
+  &.shown {
+    display: block;
+  }
+  p {
+    margin: 0;
+    color: #666666;
+    ~ p {
+      margin-top: 8px;
+    }
+  }
+  input[type=text], input[type=email] {
+    @extend %full-width-input;
+    display: block;
+  }
+  input[type=submit] {
+    @include inline-block;
+    margin: 0;
+    @include button(#348dad);
+  }
+  ~ section.search-user-for-community {
+    z-index: 201;
+  }
+  > form {
+    > span.twitter-typeahead {
+      width: 293px;
+      height: 36px;
+      display: inline-block;
+      > input#search {
+        width: 357px !important;
+      }
+    }
+    > button[type=submit] {
+      width: 36px;
+      height: 36px;
+      color: #666666;
+      font-size: 15px;
+      margin-left: 23px;
+      padding: 0;
+      background: white;
+      border: none;
+    }
+  }
+  .results {
+    max-height: 333px;
+    overflow-y: auto;
+    button.invite-by-email {
+      margin-top: 10px;
+      margin-left: 40px;
+      @include button(#3ab54a);
+      font-size: 0.8em;
+      cursor: pointer;
+    }
+    ul {
+      margin-top: 4px;
+      li {
+        padding-top: 4px;
+        //:padding-bottom 6px
+        @include bordered-bottom;
+        &.contact-exists {
+          background-color: #f1f5f6;
+          > form > button {
+            background-color: #f1f5f6;
+          }
+        }
+        form {
+          > .user {
+            margin-bottom: 0px !important;
+          }
+          span {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #666666;
+            &.name {
+              width: 144px;
+              font-weight: bold;
+              padding-left: 11px;
+            }
+            &.email {
+              width: 125px;
+              font-size: 11px;
+            }
+          }
+          button {
+            float: right;
+            width: 36px;
+            border: none;
+            background: white;
+            margin-top: 10px;
+            padding: 0;
+            color: #1abc9c;
+            &[name=commit] {
+              cursor: pointer;
+              color: #338cae;
+              font-size: 15px;
+              &:hover {
+                background-color: #f1f5f6;
+                color: #1abc9c;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

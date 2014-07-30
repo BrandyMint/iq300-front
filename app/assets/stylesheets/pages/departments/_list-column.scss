@@ -1,0 +1,35 @@
+section.departments-list-column {
+  ul li {
+    > * {
+      padding: 0 0.9%;
+    }
+    .id {
+      width: 4%;
+    }
+    .title {
+      width: 27%;
+      font-weight: bold;
+    }
+    .parent {
+      width: 25%;
+    }
+    .boss {
+      width: 17%;
+    }
+    .members {
+      width: 6%;
+    }
+    .actions {
+      width: 7%;
+    }
+    &.header ~ li {
+      > * {
+        padding-top: 3px;
+        padding-bottom: 3px;
+      }
+    }
+  }
+  .pagination-centered {
+    text-align: center;
+  }
+}
