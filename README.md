@@ -6,7 +6,7 @@
 Должен быть настроен Bower (в т.ч. Sprockets для него)
 
 1. Устанавливаем компонент
-```bower install iq300_frontend git@github.com:IQ300Ltd/NewInterfaces.git```
+```bower install git@github.com:IQ300Ltd/NewInterfaces.git#master```
 
 2. Подключаем стили в проект
 ```@import iq300_frontend/app/stylesheets/application.css.scss```

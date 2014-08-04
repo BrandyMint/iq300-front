@@ -1,15 +1,9 @@
 {
-  "name": "iq300_frontend",
+  "name": "NewInterfaces",
   "version": "0.1",
   "dependencies": {
     "jquery": "latest",
-    "jquery-mobile": "latest",
     "jquery.role": "git://github.com/kossnocorp/role",
-    "modernizr": "~2.7.1",
-    "jquery-waypoints": "~2.0.4",
-    "animate.sass": "*",
-    "animate.css": "~3.0.0",
-    "jReject": "~1.1.1",
     "jquery.atwho": "~0.5.0",
     "select2": "~3.5.1",
     "font-awesome": "~4.1.0"
