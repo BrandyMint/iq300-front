@@ -79,11 +79,11 @@ set :markdown, :fenced_code_blocks => true,
                :smartypants => true
 
 
-set :css_dir, 'assets/stylesheets'
+set :css_dir, 'stylesheets'
 
-set :js_dir, 'assets/javascripts'
+set :js_dir, 'javascripts'
 
-set :images_dir, 'assets/images'
+set :images_dir, 'images'
 
 set :relative_links, true
 
@@ -100,10 +100,10 @@ end
 # Build-specific configuration
 configure :build do
   # Clean 'Build' folder clean
-  ignore "/assets/javascripts/application/*"
-  ignore "/assets/javascripts/vendor/lib/*"
-  ignore "/assets/stylesheets/vendor/*"
-  ignore "/assets/stylesheets/app/*"
+  ignore "/javascripts/application/*"
+  ignore "/javascripts/vendor/lib/*"
+  ignore "/stylesheets/vendor/*"
+  ignore "/stylesheets/app/*"
   ignore "/vendor/components/*"
   ignore "*.rb"
 
@@ -134,7 +134,7 @@ after_configuration do
   sprockets.append_path @bower_assets_path
   sprockets.append_path 'vendor/assets/javascripts'
   sprockets.append_path 'vendor/assets/stylesheets'
-  sprockets.append_path 'app/assets/stylesheets/fonts'
+  sprockets.append_path 'app/stylesheets/fonts'
   #sprockets.import_asset 'app/robots.txt'
 end
 

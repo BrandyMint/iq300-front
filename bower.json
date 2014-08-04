@@ -1,5 +1,5 @@
 {
-  "name": "iq300",
+  "name": "iq300_frontend",
   "version": "0.1",
   "dependencies": {
     "jquery": "latest",
