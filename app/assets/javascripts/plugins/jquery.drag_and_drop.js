@@ -1,1 +1,0 @@
-//= require ../lib/jquery-drag-and-drop-plugin

@@ -1,8 +1,0 @@
-if model.photo()
-  img(src=model.photo(), data-default-src='/assets/default-user-avatar.png')
-.name
-  a(href="/users/#{model.get('user_id')}")=model.get("name")
-  .detailed
-    span=model.post()
-    input.add-remove(type="checkbox", checked=taskRuleChecked())
-    i

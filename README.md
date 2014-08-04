@@ -1,6 +1,10 @@
 # IQ300 Frontend Static project
 ------
 
+## Notes
+
+active_admin.scss is not included (see main project)
+
 ## Development
 
 `bundle install` first.

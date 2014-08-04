@@ -10,11 +10,8 @@
   %head
     = partial 'layouts/head'
   %body{class: current_page.data.body_class || 'page'}
-    -#.application-container
-      %a{name: :top}
-      = partial 'layouts/navbar'
-      = yield
-
-      = partial 'layouts/footer'
+    #container
+      #wrapper
+        = yield
 
 = partial 'layouts/javascripts'

@@ -20,6 +20,7 @@ gem 'compass-rails', require: false
 gem 'animate-sass'
 #gem "sass-rails", ">= 4.0"
 gem "sass", ">= 3.2"
+#gem 'select2-rails', require: false
 
 #gem "jquery-rails"
 #gem 'therubyracer'
