@@ -26,11 +26,18 @@
 Необходимые правки только для статического проекта держим в
 `stylesheets/static_fixes` — они не подключаются в основной проект.
 
-## Development
+## Разработка
 
-`bundle install` first.
+`bundle install`
+
+`bower install`
 
 `bundle exec middleman` starts a server on `0.0.0.0:4567` (liveupdate included).
 
 `bundle exec middleman build` builds a static site in `build` folder.
 
+## TODO
+
+Перенести из главного проекта все изменения после 30 июля.
+
+`grep -r TODO app`
