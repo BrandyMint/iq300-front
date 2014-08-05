@@ -3,13 +3,6 @@
 #Dir[File.join(File.dirname(__FILE__), 'models', '*.rb')].each{ |file| require file }
 #Navigation.load_all(data.navigation)
 
-#activate :fjords do |config|
-  #config.username = ""
-  #config.password = ""
-  #config.domain = "site.example.com"
-#end
-
-
 ##############################
 # Helpers
 require 'config/routes'
@@ -44,10 +37,12 @@ end
 set :source_dir, 'app'
 set :source, 'app'
 
+set :build_dir, 'dist'
+
 #activate :i18n, langs: [:en, :ru], mount_at_root: false
 
 # Middleman Navigation
-activate :navigation
+# activate :navigation
 
 # Livereload
 # activate :livereload
@@ -105,6 +100,9 @@ configure :build do
   ignore "/stylesheets/vendor/*"
   ignore "/stylesheets/app/*"
   ignore "/vendor/components/*"
+  ignore "/vendor/components/**/*"
+  ignore "app/vendor/components/*"
+  ignore "app/vendor/components/**/*"
   ignore "*.rb"
 
   activate :minify_css
@@ -115,9 +113,6 @@ configure :build do
   # Enable cache buster
   activate :cache_buster
 
-  # Activate google-analytics extension
-  activate :google_analytics do |ga|
-    ga.tracking_id = 'UA-XXXXXXX-X'
   end
   
   # Use relative URLs
@@ -125,7 +120,6 @@ configure :build do
   
   # Or use a different image path
   # set :http_path, "/Content/images/"
-end
 
 after_configuration do
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))

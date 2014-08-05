@@ -5,7 +5,7 @@
   cursor: pointer;
   font-size: 12px;
   @include clear;
-  @include transition();
+  @include transition(all);
   &:hover {
   	border-left-color: darken(#eee,10%);
   	background-color: #f8f8f8;

@@ -5,8 +5,8 @@
     "jquery": "latest",
     "jquery.role": "git://github.com/kossnocorp/role",
     "jquery.atwho": "~0.5.0",
-    "select2": "~3.5.1",
-    "font-awesome": "~4.1.0"
+    "font-awesome": "~4.1.0",
+    "bootstrap-sass-official": "3.2.0"
   },
   "ignore": [
     "**/.*",

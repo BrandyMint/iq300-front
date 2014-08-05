@@ -23,7 +23,7 @@
       height: $topPanelHeight;
       color: inherit;
       @include inline-block;
-      @include transition;
+      @include transition(all);
       @include box-sizing(border-box);
       i {
         font-size: 15px;
@@ -311,7 +311,7 @@
         border: 1px solid $borderColor;
         visibility: hidden;
         @include opacity(0);
-        @include transition;
+        @include transition(all);
         @include children-inline;
         > a, > div > a, > div {
           position: relative;
