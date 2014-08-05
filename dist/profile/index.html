@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if lt IE 10]> <html class="no-js lt-ie10" lang="en-us"> <![endif]-->
+<!--[if !IE]> > <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <title>iq300 frontend</title>
+    <link href="../stylesheets/application.css?1407228514" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/static_fixes.css?1407228647" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='users-show'>
+    <div id='container'>
+      <div id='wrapper'>
+        <div id='container'>
+          <div id='wrapper'>
+            <header class='header-global group'>
+              <a class='logo' href='/' title='IQ300 System'></a>
+              <div class='user-nav'>
+                <a href='/help'>Помощь</a>
+                <a href='/users/1757'>
+                  <span class='userpic'>
+                    <img alt='Александр' hide_wait_message='true' src='https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg' style='width:44px; height:44px;' title='Мещеряков Александр Игоревич'>
+                  </span>
+                  Александр Мещеряков
+                </a>
+                <a class='fa fa-sign-out' data-method='delete' href='/users/sign_out' rel='nofollow' title='Выйти'></a>
+                <!-- %section -->
+                <!-- = render "shared/user_widget" -->
+                <!-- .help-link> -->
+                <!-- = link_to icon('question-sign'), "/help", title: t('common.help') -->
+              </div>
+              <input id='app_signed_in_user_id' name='app_signed_in_user_id' type='hidden' value='1757'>
+              <input id='pusher_app_key' name='pusher_app_key' type='hidden' value='7baa6a182eefe7314de0'>
+            </header>
+            <div class='content content-global display-mode' data-initial-action='show'>
+              <section class='top-panel'>
+                <div class='pull-left'>
+                  <a class='navigation' href='#' onclick="$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;">
+                    <i class='icon-reorder'></i>
+                  </a>
+                  <i class='nothing' style='display: none'></i>
+                </div>
+              </section>
+              <nav class='nav-global menu-list' data-channel='presence-1757:notifications' data-remote='true'>
+                <div class='logo'>
+                  <a href='/' title='IQ300 System'>
+                    <img alt='IQ300' class='image-x1' src='/assets/logo_x1_new-d8723d12f92b613ca64336f47cbcc8b2.png'>
+                    <img alt='IQ300' class='image-x2' src='/assets/logo_x2_new-de36414447dd02fdfd2f410ef57f4548.png'>
+                  </a>
+                </div>
+                <ul>
+                  <li class='menu-item notifications' data-params='{&amp;quot;folder&amp;quot;:&amp;quot;new&amp;quot;}' data-url='/notifications'>
+                    <div class='html-notifier' data-channel='presence-1757:notifications' data-redirect-url='/notifications?folder=new' data-url='/notifications.count?folder=new'></div>
+                    <a href='/notifications'>
+                    <div class='picture'>
+                      <i class='icon-bell'></i>
+                      <sup>2</sup>
+                    </div>
+                    <span>Уведомления</span>
+                  </li>
+                  <li class='menu-item tasks' data-params='{&amp;quot;overview&amp;quot;:1757}' data-url='/tasks'>
+                    <a href='/tasks'>
+                    <div class='picture'>
+                      <i class='icon-list-alt'></i>
+                    </div>
+                    <span>Задачи</span>
+                  </li>
+                  <li class='menu-item projects not-initialize' data-params='null' data-url='/projects'>
+                    <a href='/projects?folder=in_work'>
+                    <div class='picture'>
+                      <i class='icon-books'></i>
+                    </div>
+                    <span>Проекты</span>
+                  </li>
+                  <li class='menu-item calendars not-initialize' data-params='null' data-url='/calendar'>
+                    <a href='/calendar'>
+                    <div class='picture'>
+                      <i class='icon-calendar'></i>
+                    </div>
+                    <span>Календарь</span>
+                  </li>
+                  <li class='menu-item communities not-initialize' data-params='null' data-url='/communities'>
+                    <a href='/communities?folder=my'>
+                    <div class='picture'>
+                      <i class='icon-briefcase'></i>
+                    </div>
+                    <span>Сообщества</span>
+                  </li>
+                  <li class='menu-item docs not-initialize' data-params='null' data-url='/docs'>
+                    <a href='/docs?folder=my'>
+                    <div class='picture'>
+                      <i class='icon-paste'></i>
+                    </div>
+                    <span>Документы</span>
+                  </li>
+                  <li class='menu-item conversations' data-params='{&amp;quot;folder&amp;quot;:&amp;quot;new&amp;quot;}' data-url='/conversations'>
+                    <a href='/conversations'>
+                    <div class='picture'>
+                      <i class='icon-comment-alt'></i>
+                    </div>
+                    <span>Сообщения</span>
+                  </li>
+                  <li class='menu-item contacts not-initialize' data-params='null' data-url='/contacts'>
+                    <a href='/contacts?folder=all'>
+                    <div class='picture'>
+                      <i class='icon-group'></i>
+                    </div>
+                    <span>Контакты</span>
+                  </li>
+                </ul>
+              </nav>
+              <div class='one-big-column'>
+                <header class='tab-navigation personal-navigation'>
+                  <ul>
+                    <li class='right'>
+                      <a href='/users/1757/edit'>
+                        <i class='icon-cog'></i>
+                      </a>
+                    </li>
+                    <li class='active'>
+                      <a href='/users/1757'>
+                        <i class='icon-user'></i>
+                        <span>Мой профиль</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/users/1757/edit'>
+                        <i class='icon-pencil'></i>
+                        <span>Редактировать</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/users/1757/contracts'>
+                        <span>Мои договоры</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/users/1757/activities'>
+                        <i class='icon-reorder'></i>
+                        <span>Активность</span>
+                      </a>
+                    </li>
+                  </ul>
+                </header>
+                <div class='column-content'>
+                  <div class='user-detailed-info'>
+                    <h2>Мещеряков Александр Игоревич</h2>
+                    <h3>
+                      Это вы
+                    </h3>
+                    <header>
+                      <aside>
+                        <img alt='Александр' src='https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/normal_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg' title='Мещеряков Александр Игоревич'>
+                        <a class='edit' href='/users/1757/edit'>редактировать профиль</a>
+                      </aside>
+                      <div class='details'>
+                        <p>
+                          Email
+                          <a href='mailto:s***x@ya.ru'>s***x@ya.ru</a>
+                        </p>
+                      </div>
+                    </header>
+                    <section class='other-section'>
+                      <div class='communities'>
+                        <h4>Состоит в сообществах:</h4>
+                        <ul>
+                          <li>
+                            <div class='picture'>
+                              <img alt='6' class='default-community-picture' data-default-src='/assets/logo_x2.png' src='/assets/community/6.png'>
+                            </div>
+                            <div class='name'>
+                              <a href='/communities/2933'>UX fake community</a>
+                              <small>
+                                2
+                                <i class='icon-user'></i>
+                                <span>Руководитель</span>
+                              </small>
+                            </div>
+                          </li>
+                          <li>
+                            <div class='picture'>
+                              <img alt='Normal_3d80fa8b-7db1-450f-9d37-537060d329f5' src='https://iq300.s3.amazonaws.com/uploads/community_profile/logo/677/normal_3d80fa8b-7db1-450f-9d37-537060d329f5.png'>
+                            </div>
+                            <div class='name'>
+                              <a href='/communities/956'>Айкью 300, ООО</a>
+                              <small>
+                                21
+                                <i class='icon-user'></i>
+                                <span>Сотрудник</span>
+                              </small>
+                            </div>
+                          </li>
+                          <li>
+                            <div class='picture'>
+                              <img alt='Normal_c60edd87-2a2e-4c77-984d-7c4d3dfeb875' src='https://iq300.s3.amazonaws.com/uploads/community_profile/logo/619/normal_c60edd87-2a2e-4c77-984d-7c4d3dfeb875.jpeg'>
+                            </div>
+                            <div class='name'>
+                              <a href='/communities/1021'>TOR</a>
+                              <small>
+                                24
+                                <i class='icon-user'></i>
+                                <span>Сотрудник</span>
+                              </small>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../javascripts/application.js?1407228647" type="text/javascript"></script>

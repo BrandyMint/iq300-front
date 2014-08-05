@@ -80,7 +80,7 @@ section.list-column > div.notifications-table {
           background: white no-repeat center;
           border: 1px solid #dddddd;
           cursor: pointer;
-          @include transition;
+          @include transition(all);
           > i {
             display: block;
             width: 100%;
@@ -90,7 +90,7 @@ section.list-column > div.notifications-table {
             font-size: 11px;
             text-align: center;
             @include opacity(0);
-            @include transition;
+            @include transition(all);
           }
           & + * {
             margin-top: -36px;
@@ -126,7 +126,7 @@ section.list-column > div.notifications-table {
                 top: 1px;
                 display: block;
                 @include text-overflow;
-                @include transition;
+                @include transition(all);
               }
               &:hover {
                 > span {

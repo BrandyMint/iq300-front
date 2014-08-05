@@ -589,7 +589,7 @@ section.projects-view-column {
                 z-index: 1;
                 border: 1px solid transparent;
                 margin: -1px;
-                @include transition;
+                @include transition(all);
                 > section {
                   background: #f8f4ed;
                   padding: {
@@ -714,7 +714,7 @@ section.projects-view-column {
                           border: {
                             bottom: 1px dashed #358bae;
                           };
-                          @include transition;
+                          @include transition(all);
                           &:hover {
                             border: {
                               color: transparent;
@@ -828,7 +828,7 @@ section.projects-view-column {
                           @include box-shadow(2px 2px 0 rgba(204, 204, 204, 0.5));
                           @include opacity(0);
                           visibility: hidden;
-                          @include transition;
+                          @include transition(all);
                           @include children-list-fix;
                           > li {
                             position: relative;

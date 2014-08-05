@@ -101,9 +101,19 @@ configure :build do
   ignore "/stylesheets/app/*"
   ignore "/vendor/components/*"
   ignore "/vendor/components/**/*"
-  ignore "app/vendor/components/*"
-  ignore "app/vendor/components/**/*"
+  ignore "vendor/*"
+  ignore "app/vendor/*"
+  ignore "/app/vendor/components/*"
+  ignore "/app/vendor/components/**/*"
   ignore "*.rb"
+  ignore "stylesheets/base/*"
+  ignore "stylesheets/elements/*"
+  ignore "stylesheets/framework/*"
+  ignore "stylesheets/helpers/*"
+  ignore "stylesheets/landing/*"
+  ignore "stylesheets/libs/*"
+  ignore "stylesheets/pages/*"
+  # TODO transfer all to app folder and ignore it on build
 
   activate :minify_css
   
@@ -124,7 +134,7 @@ configure :build do
 after_configuration do
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
   @bower_assets_path = File.join "#{root}", @bower_config["directory"]
-  sprockets.append_path 'app/vendor'
+  #sprockets.append_path 'app/vendor'
   sprockets.append_path @bower_assets_path
   sprockets.append_path 'vendor/assets/javascripts'
   sprockets.append_path 'vendor/assets/stylesheets'
