@@ -877,7 +877,7 @@ section.projects-view-column {
                             height: 9px;
                             top: -9px;
                             left: 165px;
-                            background: url(/assets/backgrounds/project_popup.png) no-repeat center;
+                            background: url(#{$images-path}/backgrounds/project_popup.png) no-repeat center;
                           }
                         }
                         &:hover > ul, &.expanded > ul {
@@ -1038,7 +1038,7 @@ section.projects-view-column {
                     height: 9px;
                     top: -9px;
                     left: 60px;
-                    background: url(/assets/backgrounds/project.png) no-repeat center;
+                    background: url(#{$images-path}/backgrounds/project.png) no-repeat center;
                   }
                   &.zero-element {
                     display: none;

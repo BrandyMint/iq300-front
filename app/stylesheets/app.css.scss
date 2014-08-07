@@ -1,5 +1,6 @@
 // Setup: custom vars, mixins and helpers
 // --------------------------------------
+@import "helpers/paths";
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/icons";
@@ -12,8 +13,6 @@
 // Bootstrap components
 // --------------------------------------
 // @import "framework/bootstrap";
-//@import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
-//@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
