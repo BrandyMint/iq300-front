@@ -27,8 +27,10 @@ body_class: users-show
       %nav.nav-global.menu-list{"data-channel" => "presence-1757:notifications", "data-remote" => "true"}
         .logo
           %a{:href => "/", :title => "IQ300 System"}
-            %img.image-x1{:alt => "IQ300", :src => "/assets/logo_x1_new-d8723d12f92b613ca64336f47cbcc8b2.png"}
-            %img.image-x2{:alt => "IQ300", :src => "/assets/logo_x2_new-de36414447dd02fdfd2f410ef57f4548.png"}
+            -#%img.image-x1{:alt => "IQ300", :src => "/assets/logo_x1_new-d8723d12f92b613ca64336f47cbcc8b2.png"}
+            -#%img.image-x2{:alt => "IQ300", :src => "/assets/logo_x2_new-de36414447dd02fdfd2f410ef57f4548.png"}
+            = image_tag 'logo_x1.png'
+            = image_tag 'logo_x2.png'
         %ul
           %li.menu-item.notifications{"data-params" => "{&quot;folder&quot;:&quot;new&quot;}", "data-url" => "/notifications"}
             .html-notifier{"data-channel" => "presence-1757:notifications", "data-redirect-url" => "/notifications?folder=new", "data-url" => "/notifications.count?folder=new"}

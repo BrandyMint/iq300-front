@@ -1472,7 +1472,7 @@ div.dhx_modal_cover {
 
 /* Customization */
 .gantt_task_line.in_work {
-  background: #28abe3 url(/assets/backgrounds/gantt/progress.png) repeat-x left center;
+  background: #28abe3 url(#{$images-path}/backgrounds/gantt/progress.png) repeat-x left center;
 }
 
 .gantt_task_line.in_work > .gantt_task_progress {
@@ -1488,7 +1488,7 @@ div.dhx_modal_cover {
   position: absolute;
   width: 16px;
   height: 16px;
-  background: #8fc12a url(/assets/icons/gantt_check.png) no-repeat center;
+  background: #8fc12a url(#{$images-path}/icons/gantt_check.png) no-repeat center;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -1499,7 +1499,7 @@ div.dhx_modal_cover {
 }
 
 .gantt_task_line.mailstone {
-  background: #90c320 url(/assets/backgrounds/gantt/progress.png) repeat-x left center;
+  background: #90c320 url(#{$images-path}/backgrounds/gantt/progress.png) repeat-x left center;
 }
 
 .gantt_task_line.mailstone > .gantt_task_progress {
