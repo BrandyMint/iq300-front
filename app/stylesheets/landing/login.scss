@@ -16,7 +16,7 @@ header {
 }
 
 .white {
-  background: image-url("login/whbg.jpg") no-repeat;
+  background: url("#{$images-path}/login/whbg.jpg") no-repeat;
   padding: 50px 0;
 }
 
@@ -245,7 +245,7 @@ header {
   display: block;
   width: 112px;
   height: 47px;
-  background: image-url("login/logo.png");
+  background: url("#{$images-path}/login/logo.png");
   float: left;
   margin: 17px 20px 0 0;
 }
@@ -442,7 +442,7 @@ h2 {
   height: 16px;
   display: inline-block;
   cursor: pointer;
-  background: image-url("login/chb.jpg");
+  background: url("#{$images-path}/login/chb.jpg");
   background-position: 0;
   input {
     filter: alpha(opacity=0);
@@ -594,7 +594,7 @@ h2 {
   text-shadow: 0 1px 0 #2f475e;
   font-size: 13px;
   padding: 20px 0 0 15px;
-  background: image-url("login/strelka.png") no-repeat;
+  background: url("#{$images-path}/login/strelka.png") no-repeat;
   color: #fff;
 }
 
@@ -650,7 +650,7 @@ h2 {
 .tags a {
   display: inline-block;
   height: 22px;
-  background: image-url("login/tag.png") no-repeat;
+  background: url("#{$images-path}/login/tag.png") no-repeat;
   font: bold 10px / 22px Open Sans, tahoma;
   color: #9b9b9b;
   text-decoration: none;
@@ -666,7 +666,7 @@ h2 {
     right: 0;
     width: 20px;
     height: 22px;
-    background: image-url("login/tag.png") 100% 0 no-repeat;
+    background: url("#{$images-path}/login/tag.png") 100% 0 no-repeat;
   }
   &:hover {
     background-position: 0 -23px;
@@ -691,7 +691,7 @@ h2 {
 }
 
 .iconss {
-  background: image-url("login/postsocial.png") no-repeat;
+  background: url("#{$images-path}/login/postsocial.png") no-repeat;
   width: 25px;
   height: 20px;
   float: left;
@@ -741,7 +741,7 @@ h2 {
 .searchbutton {
   width: 25px;
   height: 25px;
-  background: image-url("login/searchbutton.png") no-repeat;
+  background: url("#{$images-path}/login/searchbutton.png") no-repeat;
   border: 0;
   outline: none;
   cursor: pointer;
@@ -822,7 +822,7 @@ h2 {
 
 .bgform {
   width: 524px;
-  background: image-url("login/bgform.png") no-repeat center;
+  background: url("#{$images-path}/login/bgform.png") no-repeat center;
   margin: 30px 0 70px 0;
 }
 
@@ -836,12 +836,12 @@ h2 {
   clear: both;
   width: 354px;
   height: 83px;
-  background: image-url("login/bgform1.png") no-repeat;
+  background: url("#{$images-path}/login/bgform1.png") no-repeat;
 }
 
 .bgform2 {
   width: 354px;
-  background: image-url("login/bgform2.png") repeat-y;
+  background: url("#{$images-path}/login/bgform2.png") repeat-y;
   padding-top: 30px;
   form {
     margin-bottom: 0;
@@ -859,7 +859,7 @@ h2 {
 .bgform3 {
   width: 354px;
   height: 20px;
-  background: image-url("login/bgform3.png") no-repeat;
+  background: url("#{$images-path}/login/bgform3.png") no-repeat;
 }
 
 .socauth {
@@ -881,7 +881,7 @@ h2 {
 }
 
 .verification {
-  background: image-url("login/blue.png") no-repeat 97%;
+  background: url("#{$images-path}/login/blue.png") no-repeat 97%;
 }
 
 .smallbutton {
@@ -926,7 +926,7 @@ header aside {
 }
 
 .after-form-note {
-  background: image-url("login/screamer.png") no-repeat;
+  background: url("#{$images-path}/login/screamer.png") no-repeat;
   padding-left: 23px;
   color: #bac5cf;
   line-height: 19px;
