@@ -1,141 +1,73 @@
 ---
 body_class: users-show
 ---
-#container
-  #wrapper
-    %header.header-global.group
-      %a.logo{:href => "/", :title => "IQ300 System"}
-      .user-nav
-        %a{:href => "/help"} Помощь
-        %a{:href => "/users/1757"}
-          %span.userpic
-            %img{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", :style => "width:44px; height:44px;", :title => "Мещеряков Александр Игоревич"}
-          Александр Мещеряков
-        %a.fa.fa-sign-out{"data-method" => "delete", :href => "/users/sign_out", :rel => "nofollow", :title => "Выйти"}
-        / %section
-        / = render "shared/user_widget"
-        / .help-link>
-        / = link_to icon('question-sign'), "/help", title: t('common.help')
-      %input#app_signed_in_user_id{:name => "app_signed_in_user_id", :type => "hidden", :value => "1757"}
-      %input#pusher_app_key{:name => "pusher_app_key", :type => "hidden", :value => "7baa6a182eefe7314de0"}
-    .content.content-global.display-mode{"data-initial-action" => "show"}
-      %section.top-panel
-        .pull-left
-          %a.navigation{:href => "#", :onclick => "$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;"}
+
+= partial 'shared/header'
+.content.content-global.display-mode{"data-initial-action" => "show"}
+  %section.top-panel
+  = partial 'shared/_navigation'
+  .one-big-column
+    %header.tab-navigation.personal-navigation
+      %ul
+        %li.right
+          %a{:href => "/users/1757/edit"}
+            %i.icon-cog
+        %li.active
+          %a{:href => "/users/1757"}
+            %i.icon-user
+            %span Мой профиль
+        %li
+          %a{:href => "/users/1757/edit"}
+            %i.icon-pencil
+            %span Редактировать
+        %li
+          %a{:href => "/users/1757/contracts"}
+            %span Мои договоры
+        %li
+          %a{:href => "/users/1757/activities"}
             %i.icon-reorder
-          %i.nothing{:style => "display: none"}
-      %nav.nav-global.menu-list{"data-channel" => "presence-1757:notifications", "data-remote" => "true"}
-        .logo
-          %a{:href => "/", :title => "IQ300 System"}
-            -#%img.image-x1{:alt => "IQ300", :src => "/assets/logo_x1_new-d8723d12f92b613ca64336f47cbcc8b2.png"}
-            -#%img.image-x2{:alt => "IQ300", :src => "/assets/logo_x2_new-de36414447dd02fdfd2f410ef57f4548.png"}
-            = image_tag 'logo_x1.png'
-            = image_tag 'logo_x2.png'
-        %ul
-          %li.menu-item.notifications{"data-params" => "{&quot;folder&quot;:&quot;new&quot;}", "data-url" => "/notifications"}
-            .html-notifier{"data-channel" => "presence-1757:notifications", "data-redirect-url" => "/notifications?folder=new", "data-url" => "/notifications.count?folder=new"}
-            %a{:href => "/notifications"}/
-            .picture
-              %i.icon-bell
-              %sup 2
-            %span Уведомления
-          %li.menu-item.tasks{"data-params" => "{&quot;overview&quot;:1757}", "data-url" => "/tasks"}
-            %a{:href => "/tasks"}/
-            .picture
-              %i.icon-list-alt
-            %span Задачи
-          %li.menu-item.projects.not-initialize{"data-params" => "null", "data-url" => "/projects"}
-            %a{:href => "/projects?folder=in_work"}/
-            .picture
-              %i.icon-books
-            %span Проекты
-          %li.menu-item.calendars.not-initialize{"data-params" => "null", "data-url" => "/calendar"}
-            %a{:href => "/calendar"}/
-            .picture
-              %i.icon-calendar
-            %span Календарь
-          %li.menu-item.communities.not-initialize{"data-params" => "null", "data-url" => "/communities"}
-            %a{:href => "/communities?folder=my"}/
-            .picture
-              %i.icon-briefcase
-            %span Сообщества
-          %li.menu-item.docs.not-initialize{"data-params" => "null", "data-url" => "/docs"}
-            %a{:href => "/docs?folder=my"}/
-            .picture
-              %i.icon-paste
-            %span Документы
-          %li.menu-item.conversations{"data-params" => "{&quot;folder&quot;:&quot;new&quot;}", "data-url" => "/conversations"}
-            %a{:href => "/conversations"}/
-            .picture
-              %i.icon-comment-alt
-            %span Сообщения
-          %li.menu-item.contacts.not-initialize{"data-params" => "null", "data-url" => "/contacts"}
-            %a{:href => "/contacts?folder=all"}/
-            .picture
-              %i.icon-group
-            %span Контакты
-      .one-big-column
-        %header.tab-navigation.personal-navigation
-          %ul
-            %li.right
-              %a{:href => "/users/1757/edit"}
-                %i.icon-cog
-            %li.active
-              %a{:href => "/users/1757"}
-                %i.icon-user
-                %span Мой профиль
-            %li
-              %a{:href => "/users/1757/edit"}
-                %i.icon-pencil
-                %span Редактировать
-            %li
-              %a{:href => "/users/1757/contracts"}
-                %span Мои договоры
-            %li
-              %a{:href => "/users/1757/activities"}
-                %i.icon-reorder
-                %span Активность
-        .column-content
-          .user-detailed-info
-            %h2 Мещеряков Александр Игоревич
-            %h3
-              Это вы
-            %header
-              %aside
-                %img{:alt => "Александр", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/normal_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", :title => "Мещеряков Александр Игоревич"}/
-                %a.edit{:href => "/users/1757/edit"} редактировать профиль
-              .details
-                %p
-                  Email
-                  %a{:href => "mailto:s***x@ya.ru"} s***x@ya.ru
-            %section.other-section
-              .communities
-                %h4 Состоит в сообществах:
-                %ul
-                  %li
-                    .picture
-                      %img.default-community-picture{:alt => "6", "data-default-src" => "/assets/logo_x2.png", :src => "/assets/community/6.png"}/
-                    .name
-                      %a{:href => "/communities/2933"} UX fake community
-                      %small
-                        2
-                        %i.icon-user
-                        %span Руководитель
-                  %li
-                    .picture
-                      %img{:alt => "Normal_3d80fa8b-7db1-450f-9d37-537060d329f5", :src => "https://iq300.s3.amazonaws.com/uploads/community_profile/logo/677/normal_3d80fa8b-7db1-450f-9d37-537060d329f5.png"}/
-                    .name
-                      %a{:href => "/communities/956"} Айкью 300, ООО
-                      %small
-                        21
-                        %i.icon-user
-                        %span Сотрудник
-                  %li
-                    .picture
-                      %img{:alt => "Normal_c60edd87-2a2e-4c77-984d-7c4d3dfeb875", :src => "https://iq300.s3.amazonaws.com/uploads/community_profile/logo/619/normal_c60edd87-2a2e-4c77-984d-7c4d3dfeb875.jpeg"}/
-                    .name
-                      %a{:href => "/communities/1021"} TOR
-                      %small
-                        24
-                        %i.icon-user
-                        %span Сотрудник
+            %span Активность
+    .column-content
+      .user-detailed-info
+        %h2 Мещеряков Александр Игоревич
+        %h3
+          Это вы
+        %header
+          %aside
+            %img{:alt => "Александр", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/normal_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", :title => "Мещеряков Александр Игоревич"}/
+            %a.edit{:href => "/users/1757/edit"} редактировать профиль
+          .details
+            %p
+              Email
+              %a{:href => "mailto:s***x@ya.ru"} s***x@ya.ru
+        %section.other-section
+          .communities
+            %h4 Состоит в сообществах:
+            %ul
+              %li
+                .picture
+                  %img.default-community-picture{:alt => "6", "data-default-src" => "/assets/logo_x2.png", :src => "/assets/community/6.png"}/
+                .name
+                  %a{:href => "/communities/2933"} UX fake community
+                  %small
+                    2
+                    %i.icon-user
+                    %span Руководитель
+              %li
+                .picture
+                  %img{:alt => "Normal_3d80fa8b-7db1-450f-9d37-537060d329f5", :src => "https://iq300.s3.amazonaws.com/uploads/community_profile/logo/677/normal_3d80fa8b-7db1-450f-9d37-537060d329f5.png"}/
+                .name
+                  %a{:href => "/communities/956"} Айкью 300, ООО
+                  %small
+                    21
+                    %i.icon-user
+                    %span Сотрудник
+              %li
+                .picture
+                  %img{:alt => "Normal_c60edd87-2a2e-4c77-984d-7c4d3dfeb875", :src => "https://iq300.s3.amazonaws.com/uploads/community_profile/logo/619/normal_c60edd87-2a2e-4c77-984d-7c4d3dfeb875.jpeg"}/
+                .name
+                  %a{:href => "/communities/1021"} TOR
+                  %small
+                    24
+                    %i.icon-user
+                    %span Сотрудник
