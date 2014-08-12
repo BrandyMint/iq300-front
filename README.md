@@ -15,6 +15,8 @@
 ```config.assets.precompile += %w(app.css dev-app.css)```
 То же для остальных прекомпилируемых стилей.
 
+3. Обновление компонента в рельсовом проекте
+```bower update iq300-frontend```
 
 ## Примечания
 
