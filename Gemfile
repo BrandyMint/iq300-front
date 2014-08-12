@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~> 3.3.4"
+gem "middleman-sprockets"
 #gem "middleman-fjords"
 #gem "bourbon"
 gem 'builder'
@@ -17,11 +18,11 @@ gem "middleman-deploy"
 gem 'bootstrap-sass', '~> 3.2.0', :require => false
 gem 'compass-rails', require: false
 gem 'autoprefixer-rails'
-gem "sass-rails", "~> 4.0.2", require: false
+gem "sass-rails", require: false
 
 #gem 'animate-sass'
 #gem "sass", ">= 3.2"
-#gem 'select2-rails', require: false
+gem 'select2-rails', require: false
 
 #gem "jquery-rails"
 #gem 'therubyracer'
