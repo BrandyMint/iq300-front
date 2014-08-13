@@ -12,9 +12,9 @@
 
 // Bootstrap components
 // --------------------------------------
-// @import "framework/bootstrap";
 @import "bootstrap-sprockets";
-@import "bootstrap";
+@import "framework/bootstrap";
+//@import "bootstrap";
 
 // Libs and plugins
 // --------------------------------------
