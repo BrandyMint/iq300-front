@@ -16,6 +16,13 @@
     background: url('#{$images-path}/login/logo.png') no-repeat;
     background-size: contain;
   }
+
+  .app-version {
+    font-size: 80%;
+    font-weight: bold;
+    margin-left: 1em;
+    color: red;
+  }
   
   .user-nav {
     float: right;
@@ -27,7 +34,7 @@
       vertical-align: middle;
       img {
         border-radius: 100%;
-        margin: 2px 10px 7px 0;
+        margin: 3px 10px 0 0;
         border: 1px solid #ddd;
       }
     }

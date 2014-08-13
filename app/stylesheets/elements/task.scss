@@ -1,6 +1,6 @@
 .task-box {
 	border-left: solid 5px #eee;
-	padding: 10px 10px 10px 35px;
+	padding: 10px 10px 10px 25px;
   margin-bottom: 1px;
   cursor: pointer;
   font-size: 12px;
@@ -14,9 +14,6 @@
   }
   + .task-box {
   	border-top: solid 1px #eee;
-  }
-  &.project-task-box {
-    padding-left: 10px;
   }
   > .pull-left {
     white-space: nowrap;
@@ -45,24 +42,25 @@
 		margin: 3px 0 0 -23px;
 	}
 }
+.task-new {
+  border-left-color: $brand-primary;
+  &:hover {border-left-color: $brand-primary;}
+  .task-box-title-block {
+    font-weight: bold;
+  }
+}
 .task-overdue {
 	border-left-color: $brand-danger;
-	border-top: 0;
-	+ .task-box { border-top: 0;}
+	background-color: $contentBackgroundColor;
 	&:hover {border-left-color: $brand-danger;}
 	.status-date {
 		color: $brand-danger;
 	}
-}
-.task-new {
-	border-top: 0;
-	border-left-color: $brand-primary;
-	background-color: $contentBackgroundColor;
-	&:hover {border-left-color: $brand-primary;}
-	+ .task-box { border-top: 0;}
-  .task-box-title-block {
-    font-weight: bold;
-  }
+    &.task-new {
+      .task-box-title-block {
+        font-weight: bold;
+      }
+    }
 }
 .task-group-title {
 	color: #ccc;
@@ -75,10 +73,19 @@
   margin-top: -2px;
   white-space: nowrap;
 }
+.task-box-status-date-days {
+  position: absolute;
+  top: 2px;
+  @media screen and (max-width: 768px) {
+    position: inherit;
+  }
+}
 .task-box-status-block {
+  padding-top: 22px;
   text-align: center;
   @media screen and (max-width: 768px) {
     text-align: left;
+    padding-top: 10px;
   }
 }
 .task-box-title-block {
@@ -92,4 +99,3 @@
     font-size: 2em;
     font-weight: bold;
 }
-

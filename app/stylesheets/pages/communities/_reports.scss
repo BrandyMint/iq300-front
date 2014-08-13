@@ -1,10 +1,19 @@
 #community-tab-pane {
   #community-reports {
     .report-form {
-      width: 264px;
+      width: 358px;
+      .buttons {
+        margin-top: 0 !important;
+      }
+      .form-group {
+        display: inline;
+      }
     }
     .report-period {
       color: #666666;
+      .control-label {
+        margin-top: 7px;
+      }
       .input {
         display: inline;
         input[type='text'] {

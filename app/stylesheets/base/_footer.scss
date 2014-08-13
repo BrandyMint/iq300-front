@@ -7,10 +7,6 @@
   @include children-inline;
   z-index: 16;
   position: relative;
-  .label-warning {
-    color: red;
-    background: 0;
-  }
   a {
     text-decoration: none;
   }
@@ -55,11 +51,6 @@
     a {
       color: inherit;
     }
-  }
-  .app-version {
-    font-size: 80%;
-    font-weight: bold;
-    margin-left: 1em;
   }
   #Intercom {
     position: relative;
