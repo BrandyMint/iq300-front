@@ -1,5 +1,64 @@
 section.task-form-section {
   padding: 34px 50px;
+  .attachments {
+    padding: 20px 0px 20px 0px;
+    border: none;
+  }
+  .pull-right {
+    padding-right: 20px;
+  }
+  .form-buttons {
+    .pull-right {
+      padding-right: 0px;
+    }
+  }
+  .checkbox.parent_task_access {
+    padding-left: 15px;
+  }
+  .form-group.description, .task-repeat-form {
+    display: none;
+  }
+  .form-group{
+    &.todo-list, &.task-files {
+      padding-left: 15px;
+    }
+  }
+  .task-repeat-checkbox {
+    padding-left: 5px;
+  }
+  .input-group {
+    &.weeks-repeat-type, &.months-repeat-type {
+      display: none;
+    }
+  }
+  .task-proposed-end-dates {
+    margin-top: 10px;
+    .input-group {
+      margin-right: 10px;
+      text-decoration: underline;
+    }
+  }
+  .attachment-files {
+    .file {
+      width: auto;
+      max-width: 20%;
+      display: inline-flex;
+      a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 90%;
+        .icon-remove {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+  ul#todo-list {
+    .todo-body {
+      width: 98%;
+    }
+  }
   ul.top {
     @extend %small-tabs;
     margin-bottom: 42px;

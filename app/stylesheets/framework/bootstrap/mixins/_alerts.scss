@@ -5,6 +5,10 @@
   border-color: $border;
   color: $text-color;
 
+  a {
+    color: $text-color;
+  }
+
   hr {
     border-top-color: darken($border, 5%);
   }
