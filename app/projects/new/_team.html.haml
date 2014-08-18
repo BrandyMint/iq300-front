@@ -1,0 +1,157 @@
+.project-form-team-list-block{:role => "team-editor"}
+  .project-form-team-list-header
+    .form-header{:role => "main-header"}
+      .title
+        %h6 Добавить из сообщества
+        -#.pull-right
+          %a.link-grey{:href => "#", :role => "clear-btn"} Очистить
+          -#.form-group
+            %select.project-form-team-communities{:multiple => "", role: 'select2-multiple add-another-community', :tabindex => "-1", style: "width: 100%;"}
+              %option{selected: 'selected'} Community one
+              - for i in 1..6
+                - caption = "Сообщество #{i} Управление организационно-аналитической и правовой работы аппарата Мэра (Городского Совета)"
+                %option= truncate(caption, length: 30)
+        %select.form-control{role: 'project-team-select-community'}
+          - for i in 1..6
+            - caption = "Управление #{i} организационно-аналитической и правовой работы аппарата Мэра (Городского Совета)"
+            %option= truncate(caption, length: 60)
+
+      -#%a.btn.btn-link.btn-sm{:href => "#", :role => "add-all-community"} Добавить в проект всё сообщество
+      -#%a{:href => "#", :role => "add-all-community tooltip", 'data-original-title' => caption}= truncate(caption, length: 30)
+
+  .project-form-team-list-sidebar
+    .form-group.underline
+      .text-field-holder
+        %label
+          Пользователи сообщества
+          %small.text-muted 122
+        %input.form-control{"data-context" => "local", :placeholder => "Имя или email", :role => "search", "test-current-community-search-input" => "", :type => "text"}/
+        %hr
+        %strong По отделам
+        %ul.form-list{:role => "departments-list"}
+          - departments = ['Руководство', 'Разработчики', 'Менеджеры', 'Тестировщики', 'Управление организационно-аналитической и правовой работы аппарата Мэра (Городского Совета)']
+          - departments.each do |dep|
+            %li{ role: "#{dep.length > 40 ? 'tooltip' : ''}", 'data-original-title' => dep}
+              %a{:href => "#"}
+                %span= truncate(dep, length: 40)
+                %small= 1 + rand(10)
+                %span.icon-active ›
+        %hr
+        %label
+          Пригласить других пользователей
+          -#%small.text-muted Незарегистрированных пользователей можно пригласить по email
+        .input-group
+          %input.form-control{"data-context" => "global", :placeholder => "Имя или email", :role => "search", "test-external-members-search-input" => "", :type => "text"}/
+          %span.input-group-addon
+            %a.fa.fa-times.fa-lg{:href => "#", :role => "clear-selected"}
+        %br
+        %a.btn.btn-default.btn-sm{href: '#'} Пригласить нового пользователя
+  .project-form-team-list-content-header
+    .text-field-holder
+      .pull-left
+        Найдено по запросу
+        %strong 34
+      .pull-right
+        &nbsp;&nbsp;
+        %a.link-gray-light{:href => "#"} Очистить
+      .pull-right
+        %a{:href => "#"} Добавить всех
+      .clearfix
+
+  .project-form-team-list-content
+    -#.members-scrolling-list
+    %ul.form-list.underline{:role => "users-list", "test-result-members-list" => ""}
+      - for i in 0..20
+        %li
+          .checkbox-member
+            %label.group
+              - if i == 0
+                %input{:checked => "checked", :type => "checkbox"}/
+              - else
+                %input{type: 'checkbox'}
+              %i
+              %span.input-holder
+              %span.input-label Александр Мещеряков
+  
+  .project-form-team-selected-block-header
+    .form-header
+      .title
+        .pull-left
+          %h6
+            Команда проекта
+            %small{:role => "team-counter"} 2
+        .pull-right
+          %a.link-grey{:href => "#", :role => "clear-team"} Очистить
+
+  .project-form-team-selected-block
+    %ul.form-list.underline{:role => "team-list", "test-team-list" => ""}
+      %li.project-form-team-selected-list-group Управление проектом 
+      %li{role: 'tooltip', 'data-original-title' => 'Руководитель проекта'}
+        %strong
+          %i.fa.fa-flag.text-color-gray-light
+          &nbsp;
+          Иван Макаров
+        %input#project_memberships_attributes_0_user_id{:name => "project[memberships_attributes][0][user_id]", :type => "hidden", :value => "203"}/
+        %input{:name => "project[memberships_attributes][0][group_name]", :type => "hidden", :value => "owners"}/
+        -#%a.fa.fa-times-circle.btn-remove{:href => "#", :role => "remove-btn"}
+
+      %li{role: 'tooltip', 'data-original-title' => 'Администратор проекта'}
+        %strong
+          %i.fa.fa-flag-o.text-color-gray-light
+          &nbsp;
+          Василий Михайлов
+        %input#project_memberships_attributes_0_user_id{:name => "project[memberships_attributes][0][user_id]", :type => "hidden", :value => "203"}/
+        %input{:name => "project[memberships_attributes][0][group_name]", :type => "hidden", :value => "owners"}/
+        %a.fa.fa-times-circle.btn-remove{:href => "#", :role => "remove-btn"}
+      -#%li
+        %strong
+          %i.fa.fa-users.text-color-gray-light
+          &nbsp;
+          Сообщество Fake community
+          %small.text-muted 120
+        %input#project_memberships_attributes_0_user_id{:name => "project[memberships_attributes][0][user_id]", :type => "hidden", :value => "203"}/
+        %input{:name => "project[memberships_attributes][0][group_name]", :type => "hidden", :value => "owners"}/
+        %a.fa.fa-times-circle.btn-remove{:href => "#", :role => "remove-btn"}
+
+      -#%li
+        %strong
+          %i.fa.fa-users.text-color-gray-light
+          &nbsp;
+          Сообщество Iq300
+          %small.text-muted 60
+        %input#project_memberships_attributes_0_user_id{:name => "project[memberships_attributes][0][user_id]", :type => "hidden", :value => "203"}/
+        %input{:name => "project[memberships_attributes][0][group_name]", :type => "hidden", :value => "owners"}/
+        %a.fa.fa-times-circle.btn-remove{:href => "#", :role => "remove-btn"}A
+
+      - community_title = 'Управление организационно-аналитической и правовой работы аппарата Мэра (Городского Совета)'
+      %li.project-form-team-selected-list-group{role: 'tooltip', 'data-original-title' => community_title}
+        = truncate(community_title, length: 40)
+      - for i in 0..3
+        %li
+          %span Александр Мещеряков
+          %input#project_memberships_attributes_0_user_id{:name => "project[memberships_attributes][0][user_id]", :type => "hidden", :value => "203"}/
+          %input{:name => "project[memberships_attributes][0][group_name]", :type => "hidden", :value => "owners"}/
+          %a.fa.fa-times-circle.btn-remove{:href => "#", :role => "remove-btn"}
+        %li{role: 'tooltip', 'data-original-title' => 'Приглашённый участник'}
+          %span
+            Ильнур Газизуллин
+            &nbsp;
+            %span.fa.fa-key.text-color-gray-light
+          %input#project_memberships_attributes_1_user_id{:name => "project[memberships_attributes][1][user_id]", :type => "hidden", :value => "54"}/
+          %input{:name => "project[memberships_attributes][1][group_name]", :type => "hidden", :value => "others"}/
+          %a.fa.fa-times-circle.btn-remove{:href => "#", :role => "remove-btn"}
+
+
+      %li.project-form-team-selected-list-group Остальные участники
+      %li{role: 'tooltip', 'data-original-title' => 'Пользователь не зарегистрировался'}
+        %span
+          nkrasnoperov@gmail.com
+          &nbsp;
+          %i.fa.fa-question-circle.text-color-gray-light
+        %input#project_memberships_attributes_0_user_id{:name => "project[memberships_attributes][0][user_id]", :type => "hidden", :value => "203"}/
+        %input{:name => "project[memberships_attributes][0][group_name]", :type => "hidden", :value => "owners"}/
+        %a.fa.fa-times-circle.btn-remove{:href => "#", :role => "remove-btn"}
+
+
+
+

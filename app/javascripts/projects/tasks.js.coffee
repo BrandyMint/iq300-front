@@ -1,31 +1,4 @@
-#= require jquery/dist/jquery
-#= require bootstrap
-#= require jquery.role/lib/jquery.role
-#= require select2/select2
-#= require moment/moment
-#= require eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min
-#= require projects/tasks
-#= require projects/new
-
 $ ->
-  $('@select2').select2()
-  $('@datetimepicker').datetimepicker
-    language: 'ru'
-    icons:
-      time: "fa fa-clock-o datetimepicker-icon",
-      date: "fa fa-calendar datetimepicker-icon",
-      up: "fa fa-arrow-up datetimepicker-icon",
-      down: "fa fa-arrow-down datetimepicker-icon"
-    format: 'DD/MM/YYYY HH:mm'
-  
-  $('@datetimepicker input').on 'focus', () ->
-    picker = $(@).parents().find('[role*="datetimepicker"]').first()
-    picker.data("DateTimePicker").setDate(Date.now())
-    picker.data('DateTimePicker').show()
-
-  $('@tooltip').tooltip
-    container: 'body'
-
   @checkboxes = $('.project-task-box input[type="checkbox"], @project-tasks-list-select-all')
 
   $('@project-group-header').on 'click', () ->
@@ -67,45 +40,16 @@ $ ->
   $('@project-task-box-edit-task-btn').on 'click', (e) ->
     e.preventDefault()
     project_id = $(@).data('project-id')
+    debugger
     $('@project-task-box[data-project-id*="'+project_id+'"]').addClass('hide')
     $('@project-task-box-form[data-project-id*="'+project_id+'"]').removeClass('hide')
-    if project_id == 'new'
-      $(@).hide()
-      $('@project-task-box-form-close').filter('[data-project-id="new"]').show()
-      $('@project-task-box-template-form').addClass 'hide'
 
   $('@project-task-box-form-close').on 'click', (e) ->
     e.preventDefault()
     project_id = $(@).data('project-id')
+    debugger
     $('@project-task-box[data-project-id*="'+project_id+'"]').removeClass('hide')
     $('@project-task-box-form[data-project-id*="'+project_id+'"]').addClass('hide')
-    if project_id == 'new'
-      $(@).hide()
-      $('@project-task-box-edit-task-btn').filter('[data-project-id="new"]').show()
-      $('@project-task-box-template-form').removeClass 'hide'
 
 
 
-  docsFiltersToggle = $('@documents-filters-toggle')
-  docsContentGlobal = $('@documents-content-global')
-  docsFiltersToggle.on 'click', (e) ->
-    e.preventDefault()
-    view = docsContentGlobal.attr('view')
-    if view == 'true'
-      docsContentGlobal.attr('view', '')
-    else
-      docsContentGlobal.attr('view', 'true')
-
-$(document).on 'click', '@jump', (e) ->
-  href = $(this).data('href')
-  if $(this).data 'push'
-    window.wiselinks.load href
-  else
-    if href != ''
-      if event.shiftKey || event.ctrlKey || event.metaKey
-        window.open(target, '_blank')
-      else
-        window.location = href
-
-$(document).on 'click', '@jump .dropdown, @jump input', (e) ->
-  e.stopPropagation()

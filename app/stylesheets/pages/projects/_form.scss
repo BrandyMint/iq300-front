@@ -1,113 +1,7 @@
-// section.project-form-section
-//   :padding 34px 50px
-//   > h2
-//     :color #3489ae
-//     :font-size 20px
-//   > form
-//     input, select, textarea
-//       :width 100%
-//     input[type='text']
-//       +bordered
-//       +box-sizing(border-box)
-//       +placeholder-color(#999)
-//       :background #f1f5f6
-//       :padding 5px 11px
-//       :line-height 19px
-//       :height 28px
-//       :color #666
-//     input[type='submit']
-//       :display block
-//       :background #3ab54a
-//       :border-color #3ab54a
-//       :text-align center
-//       :text-decoration none
-//       :color #fff
-//       :font-weight bold
-//       :padding 5px 0
-//       :line-height 18px
-//       :font-size 13px
-//       :border 1px solid rgba(0, 0, 0, 0.2)
-//       :width 100%
-//       &:hover
-//         :background #198748
-//       &:active
-//         +transition(0.0s background-color)
-//     textarea
-//       +bordered
-//       +box-sizing(border-box)
-//       :height 117px
-//       :background #f1f5f6
-//       :padding 10px 11px
-//       :color #666
-//       :line-height 21px
-//       :font-size 13px
-//     > section
-//       :margin-bottom 10px
-//       header
-//         :color #999
-//       label
-//         :display block
-//         :color #999
-//         :margin 5px 0
-//       .members-container
-//         >.member
-//           >p
-//             >span
-//               :margin-right 5px
-//               :color #999
-//           >a
-//             :text-decoration none
-//       .add-member
-//         :display block
-//         :margin-top 10px
-//       &#client-section
-//         label
-//           :display inline
-//         > ul
-//           :margin-top 10px
-//           > li
-//             :display inline-block
-//             :vertical-align top
-//             :width 25%
-//             >header
-//               :margin-bottom 5px
-//               >input[type='radio']
-//                 :width auto
-//             input, select, textarea
-//               :width 90%
-//       &#deadtime-section
-//         > .input
-//           > label
-//             :display inline-block
-//             :width 25%
-//             :text-align right
-//           input, select, textarea
-//             :width auto
-//             :margin-top 5px
-//   .hide
-//     :display none
+$project-form-width: 640px;
+$project-form-navigation-height: 51px;
+$project-form-navigation-z-index: 100;
 
-//   a.next
-//     :display block
-//     :background #3ab54a
-//     :border-color #3ab54a
-//     :text-align center
-//     :text-decoration none
-//     :color #fff
-//     :font-weight bold
-//     :padding 5px 0
-//     :line-height 18px
-//     :height 18px
-//     :font-size 13px
-//     :border 1px solid rgba(0, 0, 0, 0.2)
-//     :width 100%
-//     &:hover
-//       :background #198748
-//     &:active
-//       +transition(0.0s background-color)
-
-// Update Create New Project Form
-$projectFormWidth: 640px;
 
 .form-gray {
   background-color: #e6e6e6;
@@ -118,13 +12,12 @@ $projectFormWidth: 640px;
   color: #666;
   .container-centered {
     width: 100%;
-    max-width: $projectFormWidth;
+    max-width: $project-form-width;
     margin: 0 auto;
     padding: 0 10px;
     @include box-sizing(border-box);
   }
   .project-form {
-    margin-top: 45px;
     ul.errors-list {
       color: #ff0101;
     }
@@ -147,20 +40,20 @@ $projectFormWidth: 640px;
       }
     }
     .form-grid-3 {
-      @include set-responsive(0, $projectFormWidth) {
+      @include set-responsive(0, $project-form-width) {
         float: none;
         width: 100%;
       }
 
       label {
-        @include set-responsive(0, $projectFormWidth) {
+        @include set-responsive(0, $project-form-width) {
           display: inline-block;
           padding: 0 0 7px;
         }
       }
     }
     .form-grid-8 {
-      @include set-responsive(0, $projectFormWidth) {
+      @include set-responsive(0, $project-form-width) {
         width: 91.66667%;
       }
     }
@@ -168,12 +61,17 @@ $projectFormWidth: 640px;
 }
 
 .project-form-navigation {
+  position: absolute;
+  height: $project-form-navigation-height;
+  z-index: $project-form-navigation-z-index;
+  //left: $navColumnWidth;
+  left: 0;
+  right: 0;
   text-align: center;
   border-bottom: solid 1px #e6e6e6;
   min-height: 50px;
   line-height: 50px;
   background-color: white;
-  position: relative;
   color: $greyText;
   .container-centered {
     position: relative;
@@ -191,33 +89,8 @@ $projectFormWidth: 640px;
       top: 50%;
       z-index: 0;
     }
-    > span {
-      background: white;
-      position: relative;
-      z-index: 1;
-      padding: 0 25px;
-      @include set-responsive(0, 400px) {
-        padding: 0 7px;
-      }
-
-      &:first-child {
-        float: left;
-        padding-left: 0;
-      }
-      &:last-child {
-        float: right;
-        text-align: right;
-        padding-right: 0;
-      }
-    }
     span {
       vertical-align: middle;
-    }
-    .active {
-      color: #2b8caf;
-      .number {
-        border-color: #2b8caf;
-      }
     }
     .number {
       display: inline-block;
@@ -271,5 +144,64 @@ $projectFormWidth: 640px;
   h6 {
     font-weight: 600;
     margin-bottom: 5px;
+  }
+}
+
+.projects-form-step-indicator {
+  background: white;
+  position: relative;
+  z-index: 1;
+  padding: 0 25px;
+  cursor: pointer;
+  color: $gray-light;
+  @include set-responsive(0, 400px) {
+    padding: 0 7px;
+  }
+  &, &:hover {
+    text-decoration: none;
+  }
+  &:first-child {
+    float: left;
+    padding-left: 0;
+  }
+  &:last-child {
+    float: right;
+    text-align: right;
+    padding-right: 0;
+  }
+  &:hover, &.active {
+    color: #2b8caf;
+    .number {
+      border-color: #2b8caf;
+    }
+  }
+
+}
+
+.project-form-info,
+.project-form-description {
+  padding-top: 45px + $project-form-navigation-height;
+}
+
+.project-step-team {
+  position: absolute;
+  //left: $navColumnWidth;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //top: $topPanelHeight + $headerHeight + $project-form-navigation-height;
+  top: 0;
+}
+
+.project-form-team-communities {
+  margin-top: 10px;
+}
+
+.project-form-team-selected-list-group {
+  cursor: default;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  &, &:hover {
+    background: $gray-lightest;
   }
 }

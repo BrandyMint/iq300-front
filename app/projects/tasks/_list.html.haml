@@ -12,8 +12,8 @@
           .row
             .col-sm-3
               %input.form-control{type: 'text', value: "Группа #{i+1}", required: 'required', placeholder: 'Название группы задач', autofocus: 'autofocus'}
-            .col-sm-2
-              = partial 'shared/select2', locals: {title: 'Исполнитель'}
+            .col-sm-3
+              = partial 'shared/select2', locals: {title: 'Исполнитель не назначен'}
             .col-sm-3
               .input-group-inline
                 .input-group{role: 'tooltip', data: {'original-title' => 'Срок выполнения'}}
@@ -28,7 +28,6 @@
                   = link_to 'Отменить', '', class: 'btn link-gray-light', role: 'project-group-header-form-close'
                 .col-xs-4
                   = link_to 'Удалить', '', class: 'btn link-danger', role: 'project-group-header-form-close'
-
 
     %li.project-tasks-group
       %div

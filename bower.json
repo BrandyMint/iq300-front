@@ -15,5 +15,8 @@
   "ignore": [
     "**/.*",
     "components"
-  ]
+  ],
+  "devDependencies": {
+    "underscore": "~1.7.0"
+  }
 }

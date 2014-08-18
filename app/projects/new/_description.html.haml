@@ -1,0 +1,97 @@
+.form-group.underline
+  %label.col-md-3.control-label
+    Описание
+  .col-sm-9
+    .input-group
+      %input#project_description.form-control{:name => "project[description]", :placeholder => "Описание проекта", :size => "30", :type => "text"}/
+      .input-group-addon{role: 'tooltip', data: {'original-title' => 'Подсказка'}}
+        .fa.fa-question-circle
+.form-group.underline
+  %label.col-md-3.control-label
+    Основание
+  .col-sm-9
+    .input-group
+      %input#project_reason.form-control{:name => "project[reason]", :placeholder => "Основание для инициации", :size => "30", :type => "text"}/
+      .input-group-addon{role: 'tooltip', data: {'original-title' => 'Подсказка'}}
+        .fa.fa-question-circle
+.form-group.underline
+  %label.col-md-3.control-label
+    Цели
+  .col-sm-8.inputs-manager{"data-field-begin" => "project[goals_attributes]", "data-field-end" => "[title]", :role => "inputs-manager"}
+    .form-group.inputs-list
+      .col-sm-12
+        %ul.text-list.form-control-static{:role => "projects-form-goals-list"}
+          - for i in 1..4
+            %li= "Цель #{i}"
+
+    .form-group.editor{:role => "projects-form-goal-editor"}
+      .col-sm-12{"test-project-goal-form" => ""}
+        %textarea.form-control{:rows => "2", "test-project-goal-name" => ""}
+        .group
+          .pull-left
+            %a.btn.link-success{:href => "#", :role => "save-button", "test-save-project-goal" => ""}
+              Сохранить
+          .pull-right
+            %a.btn.text-info{:href => "#", :role => "cancel-button"}
+              Отменить
+            %a.btn.text-info{:href => "#", :role => "delete-button", "test-remove-project-goal" => ""}
+              Удалить
+    %a.btn{:href => "#", :role => "add-button projects-form-add-project-goal"} Добавить цель
+  .col-md-1.form-control-static{role: 'tooltip', data: {'original-title' => 'Подсказка'}}
+    .fa.fa-question-circle
+.form-group.underline
+  %label.col-md-3.control-label
+    Результат
+  .col-sm-9
+    .input-group
+      %input#project_result.form-control{:name => "project[result]", :placeholder => "Планируемый результат реализации проекта", :size => "30", :type => "text"}/
+      .input-group-addon
+        .fa.fa-question-circle
+.form-group.underline
+  %label.col-md-3.control-label Критерии успеха
+  .col-sm-8.inputs-manager{"data-field-begin" => "project[criterions_attributes]", "data-field-end" => "[title]", :role => "inputs-manager"}
+    .form-group.inputs-list.hide
+      .col-sm-12
+        %ul.text-list.form-control-static{:role => "list"}
+    .form-group.editor{:role => "editor", "test-project-criterion-form" => ""}
+      .col-sm-12
+        %textarea.form-control{:rows => "2", "test-project-criterion-name" => ""}
+        .group
+          .pull-left
+            %a.btn.link-success{:href => "#", :role => "save-button", "test-save-project-criterion" => ""}
+              Сохранить
+          .pull-right
+            %a.btn.text-info{:href => "#", :role => "cancel-button"}
+              Отменить
+            %a.btn.text-info{:href => "#", :role => "delete-button", "test-remove-project-criterion" => ""}
+              Удалить
+    %a.btn{:href => "#", :role => "add-button", "test-add-project-criterion" => ""} Добавить критерий успеха
+  .col-md-1.form-control-static{role: 'tooltip', data: {'original-title' => 'Подсказка'}}
+    .fa.fa-question-circle
+.form-group.underline
+  %label.col-md-3.control-label Риски
+  .col-sm-8.inputs-manager{"data-field-begin" => "project[risks_attributes]", "data-field-end" => "[title]", :role => "inputs-manager"}
+    .form-group.inputs-list.hide
+      .col-sm-12
+        %ul.text-list.form-control-static{:role => "list"}
+    .form-group.editor{:role => "editor"}
+      .col-sm-12{"test-project-risk-form" => ""}
+        %textarea.form-control{:rows => "2", "test-project-risk-name" => ""}
+        .group
+          .pull-left
+            %a.btn.link-success{:href => "#", :role => "save-button", "test-save-project-risk" => ""}
+              Сохранить
+          .pull-right
+            %a.btn.text-info{:href => "#", :role => "cancel-button"}
+              Отменить
+            %a.btn.text-info{:href => "#", :role => "delete-button", "test-remove-project-risk" => ""}
+              Удалить
+    %a.btn{:href => "#", :role => "add-button", "test-add-project-risk" => ""} Добавить риск
+  .col-md-1.form-control-static{role: 'tooltip', data: {'original-title' => 'Подсказка'}}
+    .fa.fa-question-circle
+.form-group
+  .pull-right
+    %a.btn.btn-primary.btn-lg{"data-step" => "team", :href => "#", :role => "step-switcher", "test-choose-project-members" => ""}
+      Выбрать участников
+      %span.fa.fa-chevron-right
+
