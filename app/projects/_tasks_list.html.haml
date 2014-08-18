@@ -1,0 +1,25 @@
+%section.tree.project-tasks-list.project-tasks-list-initialized{"data-channel" => "private-project-1:base_tasks", "data-scroll-container" => ".column-content", "data-url" => "/projects/1/tasks"}
+  %ul.tabs
+    %li.tab.active
+      %a{:href => "/projects/1/tasks?folder=all"}
+        %b Задачи
+    %li.tab
+      %a{:href => "/projects/1/tasks?canceled_only=true"}
+        %b Отмененные задачи
+    %li
+      %a{:href => "/projects/1/tasks/gantt", :target => "_blank"}
+        %b
+          %i.icon-share>
+          Диаграмма
+    %li.project-tasks-filter.pull-right
+      %input#hide-finished-tasks-filter{:name => "hide-finished-tasks-filter", :type => "checkbox", :value => "hide-finished-tasks-filter"}/
+      %i
+      %label{:for => "hide-finished-tasks-filter"} Скрывать завершенные
+    .clearfix
+
+  %ul.contents
+    %li.active
+      %ul.infinite-list
+        = partial 'projects/tasks/list'
+  %a.add-task Добавить черновик задачи
+  .new-task-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/new", :style => "display: none;"}

@@ -1,0 +1,39 @@
+- status = locals[:status]
+
+.task-box.project-task-box{class: "task-#{status}"}
+  .row
+    .col-md-1.project-task-box-stats
+      %span.project-task-box-level 1
+      %a.project-task-box-child-counter{:href => "#"}
+        2
+      %a.add.project-task-box-add-subtask-btn{:href => "#"}
+        %i.icon-plus
+    .col-md-6
+      .task-box-description-block{"data-status" => "#{status}", :role => "project-task-box-description"}
+        %h4.task-box-title-block{"data-href" => "/tasks/10", :role => "project-task-title"}
+          %span.title
+            test test test task
+        .text-muted
+          Chelny01
+          | Изменилась 2 июля
+    .col-md-3
+      %h4.task-box-title-block
+        %span.small
+          \#10
+        %span -
+        %small.user.task-box-user
+          Александр Владимирогородский
+    .col-md-2
+      .task-box-status-block
+        .status-date.task-box-status-date
+          %span.day
+            12
+            %sup.task-box-status-date-days
+              2 дн.
+          %span.month
+            июль
+        %br.visible-md.visible-lg/
+        .label.label-default
+          Просмотрена
+        .clearfix
+

@@ -1,0 +1,6 @@
+- statuses = ['draft', 'overdued', 'completed', 'new']
+- statuses.each do |status|
+  = partial 'projects/tasks/item', locals: {status: status}
+
+
+
