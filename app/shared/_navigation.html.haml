@@ -10,13 +10,13 @@
       .html-notifier.html-notifier-initialized{"data-channel" => "presence-1757:notifications", "data-redirect-url" => "/notifications?folder=new", "data-url" => "/notifications.count?folder=new"}
         %audio#notice-audio
           %source{src: "/audios/notify.wav", type: "audio/wav"}
-      %a{href: "/notifications"}
+      = link_to "/notifications" do
         .picture
           %i.icon-bell
           %sup 3
         %span Уведомления
     %li.menu-item.tasks{"data-params" => "{\"overview\":1757}", "data-url" => "/tasks"}
-      %a{href: "/tasks"}
+      = link_to "/tasks" do
         .picture
           %i.icon-list-alt
         %span Задачи
