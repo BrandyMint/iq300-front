@@ -9,7 +9,7 @@
   <!-- <![endif] -->
   <head>
     <title>iq300 frontend</title>
-    <link href="stylesheets/app.css?1408384898" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/app.css?1408441694" rel="stylesheet" type="text/css" />
     <link href="stylesheets/static_fixes.css?1408113218" rel="stylesheet" type="text/css" />
   </head>
   <body class='page'>
@@ -19,43 +19,49 @@
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
           <url>
             <loc>http://www.brandymint.com/index.html</loc>
-            <lastmod>2014-08-18T00:00:00+04:00</lastmod>
+            <lastmod>2014-08-19T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/profile.html</loc>
-            <lastmod>2014-08-18T00:00:00+04:00</lastmod>
+            <lastmod>2014-08-19T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/636.html</loc>
-            <lastmod>2014-08-18T00:00:00+04:00</lastmod>
+            <lastmod>2014-08-19T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/879.html</loc>
-            <lastmod>2014-08-18T00:00:00+04:00</lastmod>
+            <lastmod>2014-08-19T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/index.html</loc>
-            <lastmod>2014-08-18T00:00:00+04:00</lastmod>
+            <lastmod>2014-08-19T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show.html</loc>
-            <lastmod>2014-08-18T00:00:00+04:00</lastmod>
+            <lastmod>2014-08-19T00:00:00+04:00</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+          </url>
+          <url>
+            <loc>http://www.brandymint.com/projects/tasks_new.html</loc>
+            <lastmod>2014-08-19T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/tasks/index.html</loc>
-            <lastmod>2014-08-18T00:00:00+04:00</lastmod>
+            <lastmod>2014-08-19T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
