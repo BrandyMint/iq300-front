@@ -1,4 +1,6 @@
 #= require jquery/dist/jquery
+#= require bootstrap
+#= require jquery.role/lib/jquery.role
 
 $ ->
-  console.log 'it works'
+  $('@tooltip').tooltip()

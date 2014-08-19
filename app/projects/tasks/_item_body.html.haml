@@ -3,7 +3,7 @@
 .task-box.project-task-box{class: "task-#{status}"}
   .row
     .col-md-1.project-task-box-stats
-      %span.project-task-box-level 1
+      .project-task-box-level 1
       %a.project-task-box-child-counter{:href => "#"}
         2
       %a.add.project-task-box-add-subtask-btn{:href => "#"}
@@ -13,9 +13,15 @@
         %h4.task-box-title-block{"data-href" => "/tasks/10", :role => "project-task-title"}
           %span.title
             test test test task
-        .text-muted
+          %small
+            = link_to '#', role: :tooltip, data: {'original-title' => 'Редактировать'}  do
+              %i.icon-pencil
+        %span.text-muted
           Chelny01
           | Изменилась 2 июля
+        %span.label.label-default
+          Просмотрена
+
     .col-md-3
       %h4.task-box-title-block
         %span.small
@@ -33,7 +39,21 @@
           %span.month
             июль
         %br.visible-md.visible-lg/
-        .label.label-default
-          Просмотрена
-        .clearfix
+        -#%span Редактировать
 
+        -# .settings.pull-left
+          %section
+            -#.popup
+              .list
+                %i.icon-reorder
+              -#%ul
+                %li.edit
+                  %a
+                    %i.icon-pencil
+                    %span Редактировать
+            -#.position
+              %a.up{"data-method" => "put", :href => "/projects/879/tasks/60979/change_position?up=true", :rel => "nofollow"}
+                %i.icon-chevron-up
+              %br
+              %a.down{"data-method" => "put", :href => "/projects/879/tasks/60979/change_position?down=true", :rel => "nofollow"}
+                %i.icon-chevron-down

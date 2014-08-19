@@ -1,0 +1,27 @@
+- tabs = [{slug: 'details', title: 'Детали'}, {slug: 'discussions', title: 'Обсуждения'}, {slug: 'participants', title: 'Участники'}, {slug: 'history', title: 'История'}]
+- active_item = locals[:active_item] || 0
+
+.project-show-tabs
+  %ul.nav.nav-tabs{"data-container" => "#project-tab-pane", "role-ready" => "tabnav"}
+    - tabs.each_with_index do |tab, i|
+      %li{class: i == active_item ? 'active' : '' }
+        = link_to tab[:title], '#'
+  -#
+    %li.details
+      %a{"data-target" => "project-details", href: "/projects/879"} Детали
+    %li.discussions.discussion.discussion-initialized
+      %a{"data-target" => "project-discussions", href: "/projects/879/discussions?initial=true"} Обсуждения
+    %li.members
+      %a{"data-target" => "project-members", href: "/projects/879/project_memberships?initial=true"} Участники
+    %li.history
+      %a{"data-target" => "project-activities", href: "/projects/879/activities?initial=true"} История
+    %li.documents
+      %a{"data-class" => "project-documents-list-column project-document-view-column", "data-target" => "project-documents", href: "/projects/879/documents"} Документы
+  .column-controller
+    %a.enlarge.mode-trigger.mode-trigger-initialized{href: "#", mode: "full-view", state: "true", title: "Развернуть"}
+      %i.icon-resize-small{"data-opposite-class" => "icon-resize-full"}
+    %a.close-panel.mode-trigger.mode-trigger-initialized{href: "#", mode: "view", state: "true", title: "Закрыть"}
+      %i.icon-remove
+    %a.printer{href: "/projects/879.printer", target: "_blank"}
+      %i.icon-print
+
