@@ -1,11 +1,13 @@
 - status = locals[:status]
+- children_count = locals[:children_count]
 
 .task-box.project-task-box{class: "task-#{status}"}
   .row
     .col-md-1.project-task-box-stats
-      .project-task-box-level 1
-      %a.project-task-box-child-counter{:href => "#"}
-        2
+      .project-task-box-level= 1 + rand(2000)
+      - if children_count > 0
+        %a.project-task-box-child-counter{:href => "#"}
+          2
       %a.add.project-task-box-add-subtask-btn{:href => "#"}
         %i.icon-plus
     .col-md-6
@@ -13,9 +15,6 @@
         %h4.task-box-title-block{"data-href" => "/tasks/10", :role => "project-task-title"}
           %span.title
             test test test task
-          %small
-            = link_to '#', role: :tooltip, data: {'original-title' => 'Редактировать'}  do
-              %i.icon-pencil
         %span.text-muted
           Chelny01
           | Изменилась 2 июля
@@ -30,15 +29,21 @@
         %small.user.task-box-user
           Александр Владимирогородский
     .col-md-2
-      .task-box-status-block
-        .status-date.task-box-status-date
-          %span.day
-            12
-            %sup.task-box-status-date-days
-              2 дн.
-          %span.month
-            июль
-        %br.visible-md.visible-lg/
+      .row
+        .col-md-8
+          .task-box-status-block.pull-right
+            .status-date.task-box-status-date
+              %span.day
+                12
+                %sup.task-box-status-date-days
+                  2 дн.
+              %span.month
+                июль
+          .clearfix
+        .col-md-4
+          = link_to '#', role: :tooltip, data: {'original-title' => 'Редактировать'}  do
+            %i.icon-pencil
+
         -#%span Редактировать
 
         -# .settings.pull-left

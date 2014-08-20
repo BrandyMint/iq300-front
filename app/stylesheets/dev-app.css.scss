@@ -3,7 +3,6 @@
 @import "helpers/paths";
 @import "helpers/variables";
 @import "helpers/mixins";
-@import "helpers/icons";
 @import "helpers/extras";
 
 // Reset
@@ -14,6 +13,10 @@
 // --------------------------------------
 @import "bootstrap-sprockets";
 @import "framework/bootstrap";
+
+// other helpers
+@import "helpers/icons";
+@import "helpers/icons_icomoon";
 
 // Libs and plugins
 // --------------------------------------

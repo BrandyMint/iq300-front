@@ -1,9 +1,8 @@
-// Setup: custom vars, mixins and helpers
+// Setup: custom vars, mixins and base helpers
 // --------------------------------------
 @import "helpers/paths";
 @import "helpers/variables";
 @import "helpers/mixins";
-@import "helpers/icons";
 @import "helpers/extras";
 
 // Reset
@@ -15,6 +14,11 @@
 @import "bootstrap-sprockets";
 @import "framework/bootstrap";
 //@import "bootstrap";
+
+// other helpers
+@import "helpers/icons";
+@import "helpers/icons_icomoon";
+
 
 // Libs and plugins
 // --------------------------------------

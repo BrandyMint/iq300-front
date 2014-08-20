@@ -1,3 +1,5 @@
+// Also see pages/projects/_show.scss
+
 %overdued-block {
   border-left-color: $brand-danger;
   //background-color: lighten($brand-danger, 40%);
@@ -170,11 +172,6 @@ section.projects-view-column {
         position: absolute;
       }
       > div {
-        > h2 {
-          margin: {
-            top: 0 !important;
-          };
-        }
         > p {
           color: #999999;
         }
@@ -208,24 +205,8 @@ section.projects-view-column {
           .row {
             margin-top: 6px;
             overflow: hidden;
-//            @include inline-block(middle);
-            span.project-state {
-              @include inline-block(top);
-              margin: {
-                top: 6px;
-                bottom: 3px;
-              };
-              line-height: 18px;
-              padding: 0 8px;
-              color: white;
-              position: relative;
-              background: #543ab5;
-              &.inactive {
-                color: #dddddd;
-                background: #999999 !important;
-              }
-            }
           }
+
           a {
             @include inline-block(middle);
             margin-right: 15px;
@@ -1167,6 +1148,7 @@ section.projects-view-column {
   background-color: #eee;
   .project-task-box {
     border-left-color: darken(#eee, 10%);
+    //border-left-width: 10px;
     padding-left: 20px;
     @include box-shadow(0 1px 0 #fff);
     &:hover {
@@ -1175,9 +1157,10 @@ section.projects-view-column {
     }
     &.task-overdued {
       @extend %overdued-block;
+      border-left-color: desaturate(darken($brand-danger, 0%), 30%);
     }
     &.task-new {
-      border-left-color: $brand-primary;
+      border-left-color: desaturate(darken($brand-primary, 0%), 30%);
     }
   }
 }

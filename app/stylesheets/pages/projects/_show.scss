@@ -1,7 +1,26 @@
-.project-show-title {
-  margin: 0.5em 0;
+.project-show-title,
+h2.project-show-title {
+  &, 
+  section.view-column .column-content & {
+    margin: 0.5em 0;
+  }
 }
 
 .project-show-tabs {
   margin-top: 1em;
 }
+
+
+.project-state-block {
+  margin: 2em 0;
+}
+
+.project-state {
+  color: $gray-light;
+  position: relative;
+  &.active  {
+    color: $gray;
+    font-weight: bold;
+  }
+}
+

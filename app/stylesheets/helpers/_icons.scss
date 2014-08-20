@@ -26,11 +26,6 @@
   content: attr(data-icon);
 }
 
-.icon-repeat, .icon-print, .icon-calendar, .icon-bell, .icon-briefcase, .icon-bullhorn, .icon-group, .icon-paste, .icon-list-alt, .icon-cog, .icon-signout, .icon-caret-left, .icon-caret-right, .icon-caret-up, .icon-caret-down, .icon-chevron-left, .icon-chevron-right, .icon-chevron-up, .icon-chevron-down, .icon-plus, .icon-question-sign, .icon-search, .icon-reorder, .icon-resize-full, .icon-resize-small, .icon-pencil, .icon-ok, .icon-share, .icon-paper-clip, .icon-save, .icon-star-empty, .icon-star, .icon-comment-alt, .icon-comment, .icon-bell-alt, .icon-trophy, .icon-user, .icon-building, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-down, .icon-remove, .icon-exclamation-sign, .icon-folder-close-alt, .icon-folder-open-alt, .icon-file-alt, .icon-file, .icon-folder-open, .icon-folder-close, .icon-filter, .icon-share-alt, .icon-books, .icon-lock {
-  @extend %icon;
-  font-style: normal;
-}
-
 @mixin has-after-icon($size: 14px, $color: false) {
   &:before {
     position: absolute;
@@ -44,218 +39,24 @@
   }
 }
 
-.icon-calendar:before {
-  content: "\f073";
+
+@each $size in 8, 10, 12, 14, 16, 18, 20, 24, 28, 32, 40, 48, 64 {
+  .icon-size-#{$size} {
+    font-size: #{$size}px;
+  }
+}
+@each $align in top, baseline, middle, bottom {
+  .v-align-#{$align} {
+    vertical-align: #{$align};
+  }
 }
 
-.icon-print:before {
-  content: "\f02f";
+@each $color in (white #fff, gray-lighter $gray-lighter, gray-light $gray-light, gray $gray, gray-dark $gray-dark, gray-darker $gray-darker, green $brand-success, red $brand-danger, orange $brand-warning, blue $brand-primary) {
+  .icon-color-#{nth($color,1)} {
+    color: nth($color,2);
+    &:hover {
+      color: darken(nth($color,2),10%);
+    }
+  }
 }
 
-.icon-bell:before {
-  content: "\f0a2";
-}
-
-.icon-briefcase:before {
-  content: "\f0b1";
-}
-
-.icon-bullhorn:before {
-  content: "\f0a1";
-}
-
-.icon-group:before {
-  content: "\f0c0";
-}
-
-.icon-paste:before {
-  content: "\f0ea";
-}
-
-.icon-list-alt:before {
-  content: "\f022";
-}
-
-.icon-cog:before {
-  content: "\f013";
-}
-
-.icon-signout:before {
-  content: "\f08b";
-}
-
-.icon-caret-left:before {
-  content: "\f0d9";
-}
-
-.icon-caret-right:before {
-  content: "\f0da";
-}
-
-.icon-caret-up:before {
-  content: "\f0d8";
-}
-
-.icon-caret-down:before {
-  content: "\f0d7";
-}
-
-.icon-chevron-left:before {
-  content: "\f053";
-}
-
-.icon-chevron-right:before {
-  content: "\f054";
-}
-
-.icon-chevron-up:before {
-  content: "\f077";
-}
-
-.icon-chevron-down:before {
-  content: "\f078";
-}
-
-.icon-plus:before {
-  content: "\f067";
-}
-
-.icon-question-sign:before {
-  content: "\f059";
-}
-
-.icon-search:before {
-  content: "\f002";
-}
-
-.icon-reorder:before {
-  content: "\f0c9";
-}
-
-.icon-resize-full:before {
-  content: "\f065";
-}
-
-.icon-resize-small:before {
-  content: "\f066";
-}
-
-.icon-pencil:before {
-  content: "\f040";
-}
-
-.icon-ok:before {
-  content: "\f00c";
-}
-
-.icon-share:before {
-  content: "\f045";
-}
-
-.icon-paper-clip:before {
-  content: "\f0c6";
-}
-
-.icon-save:before {
-  content: "\f0c7";
-}
-
-.icon-star-empty:before {
-  content: "\f006";
-}
-
-.icon-star:before {
-  content: "\f005";
-}
-
-.icon-comment-alt:before {
-  content: "\f0e5";
-}
-
-.icon-comment:before {
-  content: "\f075";
-}
-
-.icon-bell-alt:before {
-  content: "\f0f3";
-}
-
-.icon-trophy:before {
-  content: "\f091";
-}
-
-.icon-user:before {
-  content: "\f007";
-}
-
-.icon-building:before {
-  content: "\f0f7";
-}
-
-.icon-arrow-left:before {
-  content: "\f060";
-}
-
-.icon-arrow-right:before {
-  content: "\f061";
-}
-
-.icon-arrow-up:before {
-  content: "\f062";
-}
-
-.icon-arrow-down:before {
-  content: "\f063";
-}
-
-.icon-remove:before {
-  content: "\f00d";
-}
-
-.icon-exclamation-sign:before {
-  content: "\f06a";
-}
-
-.icon-folder-close-alt:before {
-  content: "\f114";
-}
-
-.icon-folder-open-alt:before {
-  content: "\f115";
-}
-
-.icon-file-alt:before {
-  content: "\f0f6";
-}
-
-.icon-file:before {
-  content: "\f016";
-}
-
-.icon-folder-open:before {
-  content: "\f07c";
-}
-
-.icon-folder-close:before {
-  content: "\f07b";
-}
-
-.icon-repeat:before {
-  content: "\e000";
-}
-
-.icon-filter:before {
-  content: "\f0b0";
-}
-
-.icon-share-alt:before {
-  content: "\f064";
-}
-
-.icon-books:before {
-  content: "\e601";
-}
-
-.icon-lock:before {
-  content: "\e600";
-}
