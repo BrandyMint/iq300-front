@@ -19,3 +19,4 @@
 /app/vendor/components
 /app/vendor
 .*~imageoptim.*
+/.idea/

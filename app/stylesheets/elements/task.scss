@@ -51,7 +51,6 @@
 }
 .task-overdue {
 	border-left-color: $brand-danger;
-	background-color: $contentBackgroundColor;
 	&:hover {border-left-color: $brand-danger;}
 	.status-date {
 		color: $brand-danger;
@@ -61,6 +60,9 @@
         font-weight: bold;
       }
     }
+}
+.task-with-change {
+  background-color: $contentBackgroundColor;
 }
 .task-group-title {
 	color: #ccc;
