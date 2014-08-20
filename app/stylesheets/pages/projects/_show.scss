@@ -11,16 +11,31 @@ h2.project-show-title {
 }
 
 
+.project-show-section-title {
+  margin: {
+    top: 1em;
+    bottom: 1em;
+  }
+}
+
 .project-state-block {
+  @extend .breadcrumb;
   margin: 2em 0;
 }
 
 .project-state {
-  color: $gray-light;
+  color: $gray;
   position: relative;
+  padding: 0 10px;
   &.active  {
-    color: $gray;
+    color: $text-color;
     font-weight: bold;
   }
 }
 
+.project-show-information {
+  margin: {
+    top: $grid-gutter-width;
+    bottom: $grid-gutter-width;
+  }
+}

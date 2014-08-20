@@ -24,12 +24,24 @@ body_class: projects-show
             %li
               %a{href: "#documents"} 15 документов
           .row
-            .col-md-6
-              %h4 Задачи
+            .col-md-4
+              %h4.project-show-section-title
+                Задачи
+                %small.text-muted 5/20
+              %table.table.table-condensed
+                %tr
+                  %td В работе: 5
+                %tr.text-color-danger
+                  %td Просрочено: 2
+                %tr
+                  %td Выполнено: 10
+                %tr
+                  %td Черновики: 3
+                %tr
+                  %td Отменённые: 10
 
-            .col-md-6
-              %h4 Сводная информация
-              %br
+            .col-md-7.col-md-offset-1
+              %h4.project-show-section-title Сводная информация
               %table.table.table-condensed
                 %tr
                   %td Руководитель проекта
@@ -46,8 +58,19 @@ body_class: projects-show
                 %tr
                   %td Сообщества&ndash;участники
                   %td= link_to 'Название сообщества', '#'
+          -#%hr
+          -#%h4 Участники
           %hr
-          %h4 Участники
+          .project-show-information
+            - project_sections = ['Описание проекта', 'Основание проекта', 'Цель', 'Результаты', 'Критерии успеха', 'Риски']
+            - project_sections.each do |section|
+              .row
+                .col-md-3
+                  %h5
+                    %strong= "#{section}"
+                .col-md-9
+                  = data.projects.project.description
+              %hr
 
 
 
