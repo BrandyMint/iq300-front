@@ -44,8 +44,8 @@ body_class: projects-show
               %h4.project-show-section-title Сводная информация
               %table.table.table-condensed
                 %tr
-                  %td Руководитель проекта
-                  %td= link_to 'Василий Петров', '#'
+                  %td{width: '40%'} Руководитель проекта
+                  %td{width: '60%'}= link_to 'Василий Петров', '#'
                 %tr
                   %td Начало проекта
                   %td 12 июня 2014
@@ -57,7 +57,12 @@ body_class: projects-show
                   %td= link_to 'Название сообщества', '#'
                 %tr
                   %td Сообщества&ndash;участники
-                  %td= link_to 'Название сообщества', '#'
+                  %td
+                    %small
+                      - for i in 0..4 do
+                        %nobr= link_to 'Название сообщества', '#'
+                        - unless i == 4
+                          &middot;
           -#%hr
           -#%h4 Участники
           %hr

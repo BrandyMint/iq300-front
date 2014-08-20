@@ -1,15 +1,45 @@
 .project-show-title,
 h2.project-show-title {
-  &, 
+  &,
   section.view-column .column-content & {
-    margin: 0.5em 0;
+    margin: {
+      top: 0;
+      bottom: 0.5em;
+    }
   }
 }
 
 .project-show-tabs {
-  margin-top: 1em;
+  margin: {
+    top: 1.5em;
+    bottom: 2em;
+  }
+  .nav.nav-tabs {
+    & > li {
+      & > a {
+        font-size: 1.1em;
+      }
+      &.active > a {
+        font-weight: bold;
+      }
+    }
+  }
 }
 
+
+
+.project-header-avatar-content {
+  //padding-top: (32px - $font-size-base*1.3) / 2;
+  line-height: 1.2em;
+}
+
+.project-header-avatar {
+  width: 32px;
+  height: 32px;
+  @include border-radius(32px/1.4);
+  border: 1px solid $gray-lighter;
+  margin-right: 0.5em;
+}
 
 .project-show-section-title {
   margin: {
@@ -23,15 +53,25 @@ h2.project-show-title {
   margin: 2em 0;
 }
 
+.project-state,
+.project-state-title {
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.project-state-title {
+  padding-left: 0;
+}
+
 .project-state {
   color: $gray;
   position: relative;
-  padding: 0 10px;
   &.active  {
     color: $text-color;
     font-weight: bold;
   }
 }
+
 
 .project-show-information {
   margin: {
@@ -39,3 +79,5 @@ h2.project-show-title {
     bottom: $grid-gutter-width;
   }
 }
+
+

@@ -1,19 +1,24 @@
 %section.project-state-block
-  %strong
-    Статус:
-  %span.inactive.project-state{"data-state" => "in_work"}
-    1.
-    Инициализация
-  →
-  %span.inactive.project-state{"data-state" => "in_work"}
-    2.
-    Планирование
-  →
-  %span.active.project-state{"data-state" => "in_work"}
-    3.
-    В работе
-  →
-  %span.inactive.project-state{"data-state" => "in_work"}
-    4.
-    Завершен
-
+  .row
+    .col-md-9
+      %span.project-state-title
+        %strong
+          Статус:
+      %span.inactive.project-state{"data-state" => "in_work"}
+        1.
+        Инициализация
+      →
+      %span.inactive.project-state{"data-state" => "in_work"}
+        2.
+        Планирование
+      →
+      %span.active.project-state{"data-state" => "in_work"}
+        3.
+        В работе
+      →
+      %span.inactive.project-state{"data-state" => "in_work"}
+        4.
+        Завершен
+    .col-md-3
+      = link_to 'Завершить', '#', class: 'btn btn-default btn-sm pull-right'
+      .clearfix

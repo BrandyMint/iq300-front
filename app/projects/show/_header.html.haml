@@ -9,8 +9,28 @@
       .favorite.favorite-view.favorite-view-initialized
         %a{"data-method" => "put", href: "/favorites?project_id=879", rel: "nofollow"}
           %i.icon-star-empty
-    UX/UI Iq300
+    Разработка системы IQ300
   .pull-right
     = link_to '#' do
       В работе
   .clearfix
+  .row
+    .col-sm-4
+      = link_to '#', class: 'text-color-gray' do
+        = image_tag 'iq300-community.png', class: 'project-header-avatar pull-left'
+        .project-header-avatar-content.pull-left
+          .text-muted Сообщество
+          Iq300
+        .clearfix
+    .col-sm-4
+      = link_to '#', class: 'text-color-gray' do
+        = image_tag 'shamil.jpg', class: 'project-header-avatar pull-left'
+        .project-header-avatar-content.pull-left
+          .text-muted Руководитель проекта
+          Шамиль Хамадеев
+        .clearfix
+    .col-sm-4
+      .pull-right
+        = link_to 'Редактировать', '#', class: 'btn btn-sm btn-default text-color-gray-light'
+      .clearfix
+
