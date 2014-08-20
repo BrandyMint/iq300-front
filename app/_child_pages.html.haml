@@ -1,0 +1,8 @@
+- c = locals[:page]
+- if c.children.present?
+  - c.children.each do |cc|
+    &mdash;
+    = link_to cc.path, cc.path
+    %br
+    = partial 'child_pages', locals: {page: cc}
+

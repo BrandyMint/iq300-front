@@ -17,13 +17,7 @@ layout: page
       - if c.path.match(/html/) && !c.path.match(/(demo|fontello|error|userflow)/)
         = link_to c.path, c.path
         %br
-        -# pages += "http://localhost:4567/#{c.path} "
-        - if c.children.present?
-          - c.children.each do |cc|
-            -# pages += "http://localhost:4567/#{cc.path} "
-            &mdash;
-            = link_to cc.path, cc.path
-            %br
+        = partial 'child_pages', locals: {page: c}
   -#= pages
   %br
   %br
