@@ -3,14 +3,20 @@
 
 .task-box.project-task-box{class: "task-#{status}"}
   .row
-    .col-md-1.project-task-box-stats
-      .project-task-box-level= 1 + rand(2000)
+    .col-sm-1.project-task-box-stats
+      %label.project-task-box-checkbox.pull-left
+        %input{type: 'checkbox'}
+
+      .project-task-box-level.pull-right
+        = 1 + rand(2000)
+      .clearfix
       - if children_count > 0
-        %a.project-task-box-child-counter{:href => "#"}
+        %a.project-task-box-child-counter.pull-left{:href => "#"}
           2
-      %a.add.project-task-box-add-subtask-btn{:href => "#"}
+      = link_to "#", role: :tooltip, data: {'original-title' => 'Добавить подзадачу'}, class: 'project-task-box-add-subtask-btn pull-right' do
         %i.icon-plus
-    .col-md-6
+      .clearfix
+    .col-lg-6.col-sm-5
       .task-box-description-block{"data-status" => "#{status}", :role => "project-task-box-description"}
         %h4.task-box-title-block{"data-href" => "/tasks/10", :role => "project-task-title"}
           %span.title
@@ -18,19 +24,20 @@
         %span.text-muted
           Chelny01
           | Изменилась 2 июля
+        &nbsp;
         %span.label.label-default
           Просмотрена
 
-    .col-md-3
+    .col-sm-3
       %h4.task-box-title-block
         %span.small
           \#10
         %span -
         %small.user.task-box-user
           Александр Владимирогородский
-    .col-md-2
+    .col-lg-2.col-sm-3
       .row
-        .col-md-8
+        .col-lg-8.col-sm-6
           .task-box-status-block.pull-right
             .status-date.task-box-status-date
               %span.day
@@ -40,9 +47,28 @@
               %span.month
                 июль
           .clearfix
-        .col-md-4
-          = link_to '#', role: :tooltip, data: {'original-title' => 'Редактировать'}  do
-            %i.icon-pencil
+        .col-lg-4.col-sm-6
+          .dropdown
+            = link_to '#', data: {toggle: 'dropdown', placement: 'bottom'}, class: 'btn btn-sm'  do
+              %i.fa.fa-bars.icon-color-gray-light
+            %ul.dropdown-menu
+              %li
+                = link_to '#'  do
+                  %i.icon-pencil.icon-color-gray-light
+                  &nbsp;
+                  Редактировать
+              %li
+                = link_to 'javascript:confirm("Удалить задачу?");' do
+                  %i.fa.fa-times.icon-size-14.icon-color-gray-light
+                  &nbsp;
+                  Удалить
+              %li
+                = link_to 'javascript:confirm("Удалить задачу?");' do
+                  %i.fa.fa-arrow-right.icon-size-14.icon-color-gray-light
+                  &nbsp;
+                  В задачу
+
+
 
         -#%span Редактировать
 

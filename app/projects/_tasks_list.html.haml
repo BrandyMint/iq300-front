@@ -1,21 +1,33 @@
 %section.tree.project-tasks-list.project-tasks-list-initialized{"data-channel" => "private-project-1:base_tasks", "data-scroll-container" => ".column-content", "data-url" => "/projects/1/tasks"}
-  %ul.tabs
-    %li.tab.active
-      %a{:href => "/projects/1/tasks?folder=all"}
-        %b Задачи
-    %li.tab
-      %a{:href => "/projects/1/tasks?canceled_only=true"}
-        %b Отмененные задачи
-    %li
-      %a{:href => "/projects/1/tasks/gantt", :target => "_blank"}
-        %b
-          %i.icon-share>
-          Диаграмма
-    %li.project-tasks-filter.pull-right
-      %input#hide-finished-tasks-filter{:name => "hide-finished-tasks-filter", :type => "checkbox", :value => "hide-finished-tasks-filter"}/
-      %i
-      %label{:for => "hide-finished-tasks-filter"} Скрывать завершенные
-    .clearfix
+  .navbar.navbar-default.project-tasks-list-navbar
+    .row
+      .col-md-4
+        %form.navbar-form.navbar-left
+          .form-group
+            .checkbox.project-tasks-list-navbar-checkbox
+              %label
+                %input.project-tasks-list-navbar-checkbox-input{type: 'checkbox'}
+                Выбрать все
+            .checkbox.project-tasks-list-navbar-checkbox
+              %label
+                %input.project-tasks-list-navbar-checkbox-input{type: 'checkbox'}
+                Скрыть группы
+      .col-md-4
+        %form.navbar-form.navbar-left
+          %select.form-control.input-sm
+            - tasks_filter = ['К выполнению', 'Завершённые', 'Черновики', 'Задачи на сегодня', 'Задачи по участникам']
+            %option{selected: 'selected'} Все задачи
+            - tasks_filter.each do |f|
+              %option= f
+      .col-md-4
+        .pull-right
+          .navbar-form.navbar-left
+            = link_to 'Добавить группу', '#', class: 'btn btn-default btn-sm'
+            &nbsp;&nbsp;
+            = link_to 'Добавить задачу', '#', class: 'btn btn-default btn-sm'
+
+        .clearfix
+
 
   %ul.contents
     %li.active

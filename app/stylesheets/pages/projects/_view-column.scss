@@ -1138,40 +1138,4 @@ section.projects-view-column {
   }
 }
 
-.project-task-box-stats {
-  padding-right: 0;
-}
 
-.project-task-view-subtasks-list {
-  @include arrow(top, 8px, #eee, #fff);
-  @include arrow-position-left(25px);
-  background-color: #eee;
-  .project-task-box {
-    border-left-color: darken(#eee, 10%);
-    //border-left-width: 10px;
-    padding-left: 20px;
-    @include box-shadow(0 1px 0 #fff);
-    &:hover {
-      border-left-color: darken(#eee, 15%);
-      background-color: darken(#eee,5%);
-    }
-    &.task-overdued {
-      @extend %overdued-block;
-      border-left-color: desaturate(darken($brand-danger, 0%), 30%);
-    }
-    &.task-new {
-      border-left-color: desaturate(darken($brand-primary, 0%), 30%);
-    }
-  }
-}
-
-.project-task-box-add-subtask-btn {
-  padding: 5px;
-}
-
-.project-task-box-child-counter {
-  @extend .badge;
-  @extend .badge-default;
-  padding: 3px 5px;
-  font-size: 11px;
-}

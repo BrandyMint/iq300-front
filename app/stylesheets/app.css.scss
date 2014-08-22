@@ -18,6 +18,7 @@
 // other helpers
 @import "helpers/icons";
 @import "helpers/icons_icomoon";
+@import "helpers/utils";
 
 
 // Libs and plugins
@@ -129,6 +130,8 @@
 @import "pages/projects/list-column";
 @import "pages/projects/view-column";
 @import "pages/projects/show";
+@import "pages/projects/tasks";
+
 
 @import "pages/departments/list-column";
 @import "pages/departments/view-column";

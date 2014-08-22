@@ -1,0 +1,53 @@
+.project-tasks-list-navbar-checkbox {
+  margin-right: 2em;
+}
+
+.project-tasks-list-navbar-checkbox-input {
+  margin-right: 3px;
+}
+
+.project-task-box-stats {
+  padding-right: 5px;
+}
+
+.project-task-box-level {
+  padding: 5px;
+}
+
+.project-task-box-add-subtask-btn {
+  padding: 5px;
+  display: inline-block;
+  @extend .link-gray-light;
+}
+
+.project-task-view-subtasks-list {
+  @include arrow(top, 8px, #eee, #fff);
+  @include arrow-position-left(25px);
+  background-color: #eee;
+  .project-task-box {
+    border-left-color: darken(#eee, 10%);
+    padding-left: 20px;
+    @include box-shadow(0 1px 0 #fff);
+    &:hover {
+      border-left-color: darken(#eee, 15%);
+      background-color: darken(#eee,5%);
+    }
+    &.task-overdued {
+      @extend %overdued-block;
+      border-left-color: desaturate(darken($brand-danger, 0%), 30%);
+    }
+    &.task-new {
+      border-left-color: desaturate(darken($brand-primary, 0%), 30%);
+    }
+  }
+  .project-task-box-checkbox {
+    margin-left: -10px;
+  }
+}
+
+.project-task-box-child-counter {
+  @extend .badge;
+  @extend .badge-default;
+  padding: 3px 5px;
+  font-size: 11px;
+}
