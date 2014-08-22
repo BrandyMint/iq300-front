@@ -1,7 +1,7 @@
 .task-box {
 	border-left: solid 5px #eee;
 	padding: 10px 10px 10px 25px;
-  margin-bottom: 1px;
+  border-bottom: 1px solid $gray-lighter;
   cursor: pointer;
   font-size: 12px;
   @include clear;
@@ -14,9 +14,6 @@
   }
   + .task-box {
   	border-top: solid 1px #eee;
-  }
-  &.project-task-box {
-    padding-left: 10px;
   }
   > .pull-left {
     white-space: nowrap;
@@ -75,14 +72,20 @@
   white-space: nowrap;
 }
 .task-box-status-date {
-  margin-top: -2px;
   white-space: nowrap;
+  position: relative;
 }
 .task-box-status-date-days {
   font-size: 0.8em;
   @media screen and (max-width: 768px) {
     position: inherit;
   }
+}
+.task-box-status-date-hypen {
+  position: absolute;
+  margin-left: - $grid-gutter-width/2;
+  width: $grid-gutter-width;
+  text-align: center;
 }
 .task-box-status-block {
   text-align: center;
@@ -95,6 +98,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-bottom: 0.2em;
 }
 
 .task-title {

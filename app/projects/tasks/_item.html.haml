@@ -1,18 +1,18 @@
 - status = locals[:status]
 
 .project-task-view.project-task-view-initialized{"data-id" => "10", "data-status" => status, class: "#{status}"}
-  %section
-    = partial 'projects/tasks/item_body', locals: {status: status, children_count: 4}
+  = partial 'projects/tasks/item_body', locals: {status: status, children_count: 4}
   .edit-task-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/10/edit", :style => "display: none;"}
   .new-subtask-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/new?parent_id=10", :style => "display: none;"}
-  .project-task-view-subtasks-list
+  %ol.project-tasks-list.project-task-view-subtasks-list
     - statuses = ['draft', 'overdued', 'completed', 'new']
     - statuses.each do |status|
-      .project-task-view.project-task-view-initialized{"data-id" => "10", "data-status" => status, class: "#{status}"}
-        %section
-          = partial 'projects/tasks/item_body', locals: {status: status, children_count: 0}
-        .edit-task-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/10/edit", :style => "display: none;"}
-        .new-subtask-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/new?parent_id=10", :style => "display: none;"}
+      %li.project-tasks-list-item
+        %div
+          .project-task-view.project-task-view-initialized{"data-id" => "10", "data-status" => status, class: "#{status}"}
+            = partial 'projects/tasks/item_body', locals: {status: status, children_count: 0}
+            .edit-task-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/10/edit", :style => "display: none;"}
+            .new-subtask-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/new?parent_id=10", :style => "display: none;"}
 
 
 

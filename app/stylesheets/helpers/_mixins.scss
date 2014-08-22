@@ -258,8 +258,8 @@ $main_radius: 3px !default;
   &:before {
     border-color: rgba($arrow-border-color, 0);
     border-#{nth(arrow-direction($direction), 1)}-color: $arrow-border-color;
-    border-width: $arrow-size;
-    margin-#{nth(arrow-direction($direction), 2)}: - $arrow-size;
+    border-width: $arrow-size + 1px;
+    margin-#{nth(arrow-direction($direction), 2)}: - $arrow-size - 1px;
   }
 }
 @mixin arrow-position-left($left: 50%) {
@@ -285,49 +285,4 @@ $main_radius: 3px !default;
   border-radius: 2px;
 }
 
-@function arrow-direction($direction) {
-  @if $direction == bottom {
-    @return (top left);
-  }
-  @if $direction == top {
-    @return (bottom left);
-  }
-}
 
-@mixin arrow($direction: bottom, $arrow-size: $grid-gutter-width, $arrow-color: #fff, $arrow-border-color: $gray-lighter) {
-  position: relative;
-  background: $arrow-color;
-  //border: 1px solid $arrow-color;
-  &:after, &:before {
-    #{nth(arrow-direction($direction),1)}: 100%;
-    #{nth(arrow-direction($direction),2)}: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-  }
-  &:after {
-    border-color: rgba($arrow-color, 0);
-    border-#{nth(arrow-direction($direction), 1)}-color: $arrow-color;
-    border-width: $arrow-size;
-    margin-#{nth(arrow-direction($direction), 2)}: - $arrow-size;
-  }
-  &:before {
-    border-color: rgba($arrow-border-color, 0);
-    border-#{nth(arrow-direction($direction), 1)}-color: $arrow-border-color;
-    border-width: $arrow-size;
-    margin-#{nth(arrow-direction($direction), 2)}: - $arrow-size;
-  }
-}
-@mixin arrow-position-left($left: 50%) {
-  &:after, &:before {
-    left: $left;
-  }
-}
-@mixin arrow-position-top($top: 50%) {
-  &:after, &:before {
-    top: $top;
-  }
-}
