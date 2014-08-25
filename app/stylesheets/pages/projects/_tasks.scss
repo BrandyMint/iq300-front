@@ -25,6 +25,12 @@ $project-task-checkbox-width: 10px;
   margin: {
     right: 2em;
   }
+  label {
+    padding: {
+      top:  5px;
+      bottom: 5px;
+    }
+  }
 }
 
 .project-tasks-list-navbar-checkbox-input {
@@ -55,7 +61,6 @@ $project-task-checkbox-width: 10px;
   &:before {
     border-bottom-color: darken($gray-lighter, 10%);
   }
-  margin-left: $grid-gutter-width/2;
   .project-task-box {
     border-left-color: $gray-lighter;
     padding-left: $project-task-padding-left-nested;
@@ -85,8 +90,11 @@ $project-task-checkbox-width: 10px;
   font-size: 11px;
 }
 
-.project-tasks-group {
-  margin-bottom: $grid-gutter-width;
+
+.project-tasks-list-show-groups {
+  .project-tasks-group {
+    margin-bottom: $grid-gutter-width/2;
+  }
 }
 
 .project-tasks-group-header {

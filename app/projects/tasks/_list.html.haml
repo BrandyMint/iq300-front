@@ -26,7 +26,7 @@
                   = link_to 'Отменить', '', class: 'btn link-gray-light', role: 'project-group-header-form-close'
 
     .project-tasks-group-content
-      = partial 'projects/tasks/item', locals: {status: status}
+      = partial 'projects/tasks/item', locals: {status: status, root_number: (i+1)}
 
 
 

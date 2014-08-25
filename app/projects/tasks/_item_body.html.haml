@@ -1,26 +1,28 @@
 - status = locals[:status]
 - children_count = locals[:children_count]
+- number = locals[:number] || "1.1"
+- is_root = locals[:is_root] || false
 
-.task-box.project-task-box{class: "task-#{status}"}
+.task-box.project-task-box{class: "task-#{status}", role: 'jump', data: {href: '../../../tasks/show'}}
   .row
     .col-md-1.col-sm-2
       %label.project-task-box-checkbox.pull-left
         %input{type: 'checkbox'}
-
       .project-task-box-level.pull-right
-        = 1 + rand(2000)
+        = number
       .clearfix
       -# if children_count > 0
         %a.project-task-box-child-counter.pull-left{:href => "#"}
           2
-      = link_to "#", role: :tooltip, data: {'original-title' => 'Добавить подзадачу'}, class: 'project-task-box-add-subtask-btn pull-right' do
-        %i.icon-plus
+      - if is_root
+        = link_to "#", role: :tooltip, data: {'original-title' => 'Добавить подзадачу'}, class: 'project-task-box-add-subtask-btn pull-right' do
+          %i.icon-plus
       .clearfix
-    .col-lg-9.col-sm-6
+    .col-lg-8.col-sm-5
       .task-box-description-block{"data-status" => "#{status}", :role => "project-task-box-description"}
         %h4.task-box-title-block{"data-href" => "/tasks/10", :role => "project-task-title"}
           %span.title
-            test test test task
+            Сделать обзор макета страницы Задача
         -#%span.label.label-default
           Просмотрена
         .text-muted.pull-left
@@ -31,42 +33,29 @@
           %i.fa.fa-comments-o.icon-size-14
           14
         .clearfix
-    .col-lg-2.col-sm-4
+    .col-lg-3.col-sm-5
       .row
         .col-lg-8.col-sm-6
           .task-box-status-block
             .row
               .col-xs-6
                 .status-date.task-box-status-date
-                  %span.day 12
-                  %div.small
-                    февраля
+                  .day 12
+                  февраля
               .col-xs-6
                 .task-box-status-date-hypen
                   %i.fa.fa-angle-right.icon-color-gray-light
                 .status-date.task-box-status-date
-                  %span.day 22
-                  %div.small
-                    сентября
+                  .day 22
+                  сентября
           .clearfix
         .col-lg-4.col-sm-6
-          .dropdown
-            = link_to '#', data: {toggle: 'dropdown', placement: 'bottom'}, class: 'btn btn-sm'  do
+          .pull-right
+            = link_to '#', class: 'btn btn-xs'  do
               %i.fa.fa-bars.icon-color-gray-light
-            %ul.dropdown-menu
-              %li
-                = link_to '#'  do
-                  %i.icon-pencil.icon-color-gray-light
-                  &nbsp;
-                  Редактировать
-              %li
-                = link_to 'javascript:confirm("Удалить задачу?");' do
-                  %i.fa.fa-times.icon-size-14.icon-color-gray-light
-                  &nbsp;
-                  Удалить
-              %li
-                = link_to 'javascript:confirm("Удалить задачу?");' do
-                  %i.fa.fa-arrow-right.icon-size-14.icon-color-gray-light
-                  &nbsp;
-                  В задачу
+            %br
+            = link_to '../../../tasks/edit', class: 'btn btn-xs', role: 'tooltip', data: {'original-title' => 'Редактировать', placement: 'bottom'}  do
+              %i.fa.fa-pencil.icon-color-gray-light.icon-size-12
+          .clearfix
 
+          
