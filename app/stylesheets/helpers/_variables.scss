@@ -1,11 +1,12 @@
 $borderColor: #cccccc;
 $blueLink: #3fabf3;
 $greyText: #9a9a9a;
-$placeholderColor: #cccccc;
+$placeholderColor: lighten(#000, 60%);
 $contentBackgroundColor: #e3ebed;
 $navigationBackground: #245b79;
 $errorColor: red;
 $notificationNewParticipant: #fff6ed;
+$input-color-placeholder: $placeholderColor;
 
 // Header global vars
 $headerDarker: #dbe3e6;

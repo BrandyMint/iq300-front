@@ -24,12 +24,11 @@
           .navbar-form.navbar-left
             = link_to 'Добавить группу', '#', class: 'btn btn-default btn-sm'
             &nbsp;&nbsp;
-            = link_to 'Добавить задачу', '#', class: 'btn btn-default btn-sm'
+            = link_to 'Добавить задачу', '#', class: 'btn btn-default btn-sm', role: 'project-tasks-list-add-task-btn'
 
         .clearfix
 
 
   %ul.contents
     %li.active
-      %ul.infinite-list
-        = partial 'projects/tasks/list'
+      = partial 'projects/tasks/list'

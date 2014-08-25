@@ -25,6 +25,17 @@ $ ->
     checkboxes = $('.project-task-box input[type="checkbox"]')
     checkboxes.prop('checked', !checkboxes.prop('checked'))
 
+  $('@project-tasks-list-add-task-btn').on 'click', (e) ->
+    e.preventDefault()
+    $('@project-tasks-list-new-task')
+      .removeClass('hide')
+      .find('input').first().focus()
+
+  
+  $('@project-tasks-list-task-form-close').on 'click', (e) ->
+    e.preventDefault()
+    $('@project-tasks-list-new-task').addClass('hide')
+
 $(document).on 'click', '@jump', (e) ->
   href = $(this).data('href')
   if $(this).data 'push'

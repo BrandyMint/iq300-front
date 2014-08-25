@@ -16,6 +16,18 @@ $project-task-checkbox-width: 10px;
   }
 }
 
+.project-task-box-template {
+  &, &:hover {
+    background: #fff;
+    border: 1px dashed $gray-light;
+    margin: 2em 0;
+    padding: {
+      top: 1.5em;
+      bottom: 1.5em;
+    }
+  }
+}
+
 .project-task-box-checkbox,
 .project-task-box-child-counter {
   margin-left: - $project-task-padding-left + $project-task-checkbox-width;
@@ -129,4 +141,5 @@ $project-task-checkbox-width: 10px;
     display: block;
   }
 }
+
 

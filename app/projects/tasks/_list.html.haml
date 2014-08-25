@@ -1,6 +1,8 @@
 - statuses = ['draft', 'overdued', 'completed', 'new']
-- statuses.each_with_index do |status, i|
-  .project-tasks-group
+%ol.project-tasks-list-sortable
+  .hide{role: 'project-tasks-list-new-task'}
+    = partial 'projects/tasks/new'
+  - statuses.each_with_index do |status, i|
     .project-tasks-group-header{role: 'project-group-header'}
       %div{role: 'project-group-header-content'}
         %h4.project-tasks-group-title
@@ -25,8 +27,11 @@
                 .col-xs-6
                   = link_to 'Отменить', '', class: 'btn link-gray-light', role: 'project-group-header-form-close'
 
-    .project-tasks-group-content
-      = partial 'projects/tasks/item', locals: {status: status, root_number: (i+1)}
+
+    %li.project-tasks-group
+      %div
+        .project-tasks-group-content
+          = partial 'projects/tasks/item', locals: {status: status, root_number: (i+1)}
 
 
 
