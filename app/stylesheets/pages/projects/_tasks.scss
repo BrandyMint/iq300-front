@@ -9,6 +9,7 @@ $project-task-checkbox-width: 10px;
       left: $project-task-padding-left;
       right: $project-task-padding-right;
     }
+    margin-bottom: 1px;
   }
   @each $c in overdued $brand-danger, new $brand-primary {
     &.task-#{nth($c,1)} {
@@ -84,7 +85,6 @@ $project-task-checkbox-width: 10px;
   .project-task-box {
     border-left-color: $gray-lighter;
     padding-left: $project-task-padding-left-nested;
-    border-bottom: 1px solid $gray-lighter;
     &:hover {
       border-left-color: darken($gray-lighter, 10%);
       background-color: $gray-lighter;

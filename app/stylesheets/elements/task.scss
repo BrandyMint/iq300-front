@@ -1,7 +1,8 @@
 .task-box {
 	border-left: solid 5px #eee;
 	padding: 10px 10px 10px 25px;
-  border-bottom: 1px solid $gray-lighter;
+  //border-bottom: 1px solid $gray-lighter;
+  @include box-shadow(0 1px 0 $gray-lighter);
   cursor: pointer;
   font-size: 12px;
   @include clear;

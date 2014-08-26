@@ -1,3 +1,22 @@
+%column-content-block {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.column-content-fluid {
+  @extend %column-content-block;
+  padding: {
+    top: $grid-gutter-width;
+    bottom: $grid-gutter-width*2;
+  }
+}
+
 section.view-column {
   float: none !important;
   background: white;
@@ -8,14 +27,7 @@ section.view-column {
     top: 55px;
   }
   .column-content {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
+    @extend %column-content-block;
     .object-details {
       padding: 26px 22px 10px 22px;
       &, header {
@@ -102,3 +114,5 @@ section.view-column {
     padding-right: 53px;
   }
 }
+
+
