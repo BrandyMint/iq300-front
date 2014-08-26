@@ -149,7 +149,11 @@ $project-task-checkbox-width: 10px;
     top: $grid-gutter-width/2;
     bottom: $grid-gutter-width;
   }
-  background: $gray-lightest;
-  border-left: none;
+  &, &:hover {
+    background-color: $gray-lightest;
+    border: {
+      left: 5px solid $gray-lighter;
+    }
+  }
 }
 

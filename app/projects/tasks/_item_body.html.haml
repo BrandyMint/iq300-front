@@ -70,7 +70,7 @@
               Задача
       .clearfix
         
-.task-box.project-task-box.project-task-box-form{role: 'project-task-box-form', data: {project_id: project_id}}
+.task-box.project-task-box-form.hide{role: 'project-task-box-form', data: {project_id: project_id}}
   .col-lg-10.col-lg-offset-1
-    = partial 'projects/tasks/form'
+    = partial 'projects/tasks/form', locals: {project_id: project_id}
         

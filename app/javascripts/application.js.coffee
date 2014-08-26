@@ -4,6 +4,7 @@
 
 $ ->
   $('@tooltip').tooltip()
+  @checkboxes = $('.project-task-box input[type="checkbox"], @project-tasks-list-select-all')
 
   $('@project-group-header').on 'click', () ->
     $(@).find('@project-group-header-form')
@@ -21,9 +22,14 @@ $ ->
     $('@project-tasks-list').toggleClass('project-tasks-list-show-groups')
     $('@project-group-header').toggleClass('hide')
 
-  $('@project-tasks-list-select-all').on 'change', () ->
-    checkboxes = $('.project-task-box input[type="checkbox"]')
-    checkboxes.prop('checked', !checkboxes.prop('checked'))
+  $('@project-tasks-list-select-all').on 'change', () =>
+    @checkboxes.prop('checked', !@checkboxes.prop('checked'))
+
+  @checkboxes.on 'change', () =>
+    if @checkboxes.is(':checked')
+      $('@project-group-header-actions').removeClass('hide')
+    else
+      $('@project-group-header-actions').addClass('hide')
 
   $('@project-tasks-list-add-task-btn').on 'click', (e) ->
     e.preventDefault()
@@ -36,6 +42,22 @@ $ ->
     e.preventDefault()
     $('@project-tasks-list-new-task').addClass('hide')
 
+  $('@project-task-box-edit-task-btn').on 'click', (e) ->
+    e.preventDefault()
+    project_id = $(@).data('project-id')
+    debugger
+    $('@project-task-box[data-project-id*="'+project_id+'"]').addClass('hide')
+    $('@project-task-box-form[data-project-id*="'+project_id+'"]').removeClass('hide')
+
+  $('@project-task-box-form-close').on 'click', (e) ->
+    e.preventDefault()
+    project_id = $(@).data('project-id')
+    debugger
+    $('@project-task-box[data-project-id*="'+project_id+'"]').removeClass('hide')
+    $('@project-task-box-form[data-project-id*="'+project_id+'"]').addClass('hide')
+
+
+
 $(document).on 'click', '@jump', (e) ->
   href = $(this).data('href')
   if $(this).data 'push'
@@ -47,3 +69,5 @@ $(document).on 'click', '@jump', (e) ->
       else
         window.location = href
 
+$(document).on 'click', '@jump .dropdown, @jump input', (e) ->
+  e.stopPropagation()

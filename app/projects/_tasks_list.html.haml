@@ -24,8 +24,24 @@
           = link_to 'Добавить группу', '#', class: 'btn btn-default btn-sm'
         .navbar-form.navbar-right
           = link_to 'Добавить задачу', '#', class: 'btn btn-default btn-sm', role: 'project-tasks-list-add-task-btn'
-
         .clearfix
+    .project-group-header-actions.hide{role: 'project-group-header-actions'}
+      .navbar-form.navbar-left
+        = link_to 'Преобразовать в задачу', '#', class: 'btn btn-default btn-sm'
+      .navbar-form.navbar-left
+        = link_to 'Отменить', '#', class: 'btn btn-default btn-sm'
+      .navbar-form.navbar-left
+        = link_to 'Преобразовать в черновик', '#', class: 'btn btn-default btn-sm'
+      .navbar-form.navbar-left.pull-right
+        %select.form-control.input-sm
+          - tasks_filter = ['Группа 2', 'Группа 3', 'Группа 4']
+          %option{selected: 'selected'} Изменить группу
+          - tasks_filter.each do |f|
+            %option= f
+      .clearfix
+
+
+
 
 
   %ul.contents
