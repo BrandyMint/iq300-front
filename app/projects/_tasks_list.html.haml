@@ -1,7 +1,7 @@
 %section.tree.project-tasks-list.project-tasks-list-initialized.project-tasks-list-show-groups{role: 'project-tasks-list'}
   .navbar.navbar-default.project-tasks-list-navbar
     .row
-      .col-md-4
+      .col-sm-4
         %form.navbar-form.navbar-left
           .form-group
             .checkbox.project-tasks-list-navbar-checkbox
@@ -12,19 +12,18 @@
               %label{role: 'project-tasks-list-toggle-groups'}
                 %input.project-tasks-list-navbar-checkbox-input{type: 'checkbox'}
                 Скрыть группы
-      .col-md-4
+      .col-sm-3
         %form.navbar-form.navbar-left
           %select.form-control.input-sm
             - tasks_filter = ['К выполнению', 'Завершённые', 'Черновики', 'Задачи на сегодня', 'Задачи по участникам']
             %option{selected: 'selected'} Все задачи
             - tasks_filter.each do |f|
               %option= f
-      .col-md-4
-        .pull-right
-          .navbar-form.navbar-left
-            = link_to 'Добавить группу', '#', class: 'btn btn-default btn-sm'
-            &nbsp;&nbsp;
-            = link_to 'Добавить задачу', '#', class: 'btn btn-default btn-sm', role: 'project-tasks-list-add-task-btn'
+      .col-sm-5
+        .navbar-form.navbar-right
+          = link_to 'Добавить группу', '#', class: 'btn btn-default btn-sm'
+        .navbar-form.navbar-right
+          = link_to 'Добавить задачу', '#', class: 'btn btn-default btn-sm', role: 'project-tasks-list-add-task-btn'
 
         .clearfix
 

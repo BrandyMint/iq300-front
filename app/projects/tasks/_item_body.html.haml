@@ -18,7 +18,7 @@
         = link_to "#", role: :tooltip, data: {'original-title' => 'Добавить подзадачу'}, class: 'project-task-box-add-subtask-btn pull-right' do
           %i.icon-plus
       .clearfix
-    .col-lg-8.col-sm-5
+    .col-lg-9.col-sm-6
       .task-box-description-block{"data-status" => "#{status}", :role => "project-task-box-description"}
         %h4.task-box-title-block{"data-href" => "/tasks/10", :role => "project-task-title"}
           %span.title
@@ -33,29 +33,40 @@
           %i.fa.fa-comments-o.icon-size-14
           14
         .clearfix
-    .col-lg-3.col-sm-5
-      .row
-        .col-lg-8.col-sm-6
-          .task-box-status-block
-            .row
-              .col-xs-6
-                .status-date.task-box-status-date
-                  .day 12
-                  февраля
-              .col-xs-6
-                .task-box-status-date-hypen
-                  %i.fa.fa-angle-right.icon-color-gray-light
-                .status-date.task-box-status-date
-                  .day 22
-                  сентября
-          .clearfix
-        .col-lg-4.col-sm-6
-          .pull-right
-            = link_to '#', class: 'btn btn-xs'  do
-              %i.fa.fa-bars.icon-color-gray-light
-            %br
-            = link_to '../../../tasks/edit', class: 'btn btn-xs', role: 'tooltip', data: {'original-title' => 'Редактировать', placement: 'bottom'}  do
-              %i.fa.fa-pencil.icon-color-gray-light.icon-size-12
-          .clearfix
+    .col-lg-2.col-sm-4
+      .task-box-status-block.pull-left
+        .row
+          .col-xs-6
+            .status-date.task-box-status-date
+              .day 12
+              февраля
+          .col-xs-6
+            .task-box-status-date-hypen
+              %i.fa.fa-angle-right.icon-color-gray-light
+            .status-date.task-box-status-date
+              .day 22
+              сентября
+      .project-task-box-actions.dropdown.pull-right
+        = link_to '#', data: {toggle: 'dropdown', placement: 'bottom'}, class: 'btn btn-sm'  do
+          %i.fa.fa-bars.icon-color-gray-light
+        %ul.dropdown-menu
+          %li
+            = link_to '#'  do
+              %i.icon-pencil.icon-color-gray-light
+              &nbsp;
+              Редактировать
+          %li
+            = link_to 'javascript:confirm("Удалить задачу?");' do
+              %i.fa.fa-times.icon-size-14.icon-color-gray-light
+              &nbsp;
+              Удалить
+          %li
+            = link_to 'javascript:confirm("Удалить задачу?");' do
+              %i.fa.fa-arrow-right.icon-size-14.icon-color-gray-light
+              &nbsp;
+              Черновик
+              %i.fa.fa-angle-right
+                Задача
+      .clearfix
 
-          
+        

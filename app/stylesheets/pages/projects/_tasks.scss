@@ -1,10 +1,14 @@
 $project-task-padding-left: $grid-gutter-width;
+$project-task-padding-right: $grid-gutter-width*2;
 $project-task-padding-left-nested: $grid-gutter-width*1.75;
 $project-task-checkbox-width: 10px;
 
 .project-task-box {
   &, &.task-box {
-    padding-left: $project-task-padding-left;
+    padding: {
+      left: $project-task-padding-left;
+      right: $project-task-padding-right;
+    }
   }
   @each $c in overdued $brand-danger, new $brand-primary {
     &.task-#{nth($c,1)} {
@@ -33,9 +37,13 @@ $project-task-checkbox-width: 10px;
   margin-left: - $project-task-padding-left + $project-task-checkbox-width;
 }
 
+.project-task-box-actions {
+  margin-right: - $project-task-padding-right;
+}
+
 .project-tasks-list-navbar-checkbox {
   margin: {
-    right: 2em;
+    right: 1em;
   }
   label {
     padding: {
@@ -102,12 +110,6 @@ $project-task-checkbox-width: 10px;
   font-size: 11px;
 }
 
-
-.project-tasks-list-show-groups {
-  .project-tasks-group {
-    margin-bottom: $grid-gutter-width/2;
-  }
-}
 
 .project-tasks-group-header {
   padding: 8px $grid-gutter-width/2;
