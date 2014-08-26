@@ -157,3 +157,16 @@ $project-task-checkbox-width: 10px;
   }
 }
 
+.project-group-header-actions-fixed {
+  @extend .navbar;
+  @extend .navbar-default;
+  @extend .navbar-bottom-fixed;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: inherit;
+  right: inherit;
+  width: inherit;
+  background-color: $gray-lighter;
+  margin-left: - $grid-gutter-width/2;
+}
