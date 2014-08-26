@@ -246,6 +246,13 @@
   }
   ul > li > span.counter {
     @extend %buble-counter;
+    &.overdue {
+      color: $brand-danger;
+      border-color: $brand-danger;
+      &.has-overview {
+        right: 35px;
+      }
+    }
   }
   ul > li > span.grey-counter {
     background: #a1b8be;
