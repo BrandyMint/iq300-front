@@ -9,7 +9,7 @@
   @include transition(all);
   &:hover {
   	border-left-color: darken(#eee,10%);
-  	background-color: #f8f8f8;
+  	background-color: $gray-lightest;
   	border-top-color: transparent;
   	+ .task-box { border-top-color: transparent;}
   }

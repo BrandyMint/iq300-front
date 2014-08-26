@@ -144,4 +144,12 @@ $project-task-checkbox-width: 10px;
   }
 }
 
+.project-task-box-form {
+  padding: {
+    top: $grid-gutter-width/2;
+    bottom: $grid-gutter-width;
+  }
+  background: $gray-lightest;
+  border-left: none;
+}
 

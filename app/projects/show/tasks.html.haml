@@ -12,9 +12,10 @@ body_class: projects-show
     %section.task-view-column.disable-initializer{"data-channel-template" => "private-base_task-%id%:update", "data-url" => "/tasks"}
     -##project-tab-pane.column-content
     #project-tab-pane.column-content-fluid
-      .row
-        .col-lg-10.col-lg-offset-1
-          #project-details.object-details
-            = partial 'projects/show/header'
-            = partial 'projects/tab_navigation', locals: {active_item: 1}
-            = partial 'projects/tasks_list'
+      .container-fluid
+        .row
+          .col-lg-10.col-lg-offset-1
+            #project-details.object-details
+              = partial 'projects/show/header'
+              = partial 'projects/tab_navigation', locals: {active_item: 1}
+              = partial 'projects/tasks_list'
