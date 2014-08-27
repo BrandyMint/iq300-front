@@ -1,0 +1,23 @@
+%section.top-panel
+  .notification-options
+    %form.form-inline.notification-options-form
+      .pull-right
+        .form-group
+          %span Показывать
+          %select.form-control
+            %option{:value => "id"} Задача
+            %option{:value => "updated_at"} Проект
+            %option{:value => "end_date"} Сообщество
+            %option{:value => "message"} Сообщение
+          %select.form-control
+            %option{:value => "id"} Айти Челны
+            %option{:value => "updated_at"} UX Fake
+            %option{:value => "end_date"} Айкью 300
+          %span c
+          %input.form-control.notification-options-date{type: "text", placeholder: "22.08.2014"}
+          %span по
+          %input.form-control.notification-options-date{type: "text", placeholder: "23.08.2014"}
+          %span.notification-options-collapse-link
+            %i.icon-chevron-up
+            Свернуть
+      .clearfix
