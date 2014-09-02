@@ -76,6 +76,10 @@
             left: 50%;
             text-decoration: none;
           }
+          > sup.overdue {
+              margin-left: -24px;
+              background: $brand-danger;
+          }
         }
         > span {
           display: inline-block;
