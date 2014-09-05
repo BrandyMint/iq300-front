@@ -1,75 +1,51 @@
-section.notifications-list-column {
-  color: #666666;
-  background: #f1f5f6;
-  input[type=checkbox] {
-    @extend %blue-ok-checkbox-without-white-border;
+.notifications-list-column {
+  .notifications-list-column-title {
+    @include bordered-bottom;
+    margin: 13px 9px 0 9px;
+    padding:  0 0 9px 15px;
   }
-  header {
-    margin-bottom: 22px;
-    nav {
-      margin-bottom: 22px;
-      ul {
-        @extend %small-tabs;
-      }
+  .notification-list-item {
+    @extend .row;
+    border-bottom: 1px solid lighten($borderColor, 15%);
+    padding: 9px 0 9px 0;
+    margin: 0 25px 0 25px;
+  }
+  .notification-list-item-title {
+    .notification-name, .notification-type {
+      display: block;
     }
-    p.unread {
-      label {
-        @include inline-block;
-        @include unselectable;
-        margin-top: 5px;
-      }
-      a {
-        margin-left: 20px;
-        @include inline-block;
-        @include button(#348dad);
-        line-height: 30px;
-        text-decoration: none;
-      }
+    .notification-type {
+      color: $gray-light;
     }
   }
-  table {
-    @extend %simple-table;
-    width: 100%;
-    td.image {
-      width: 37px;
-      height: 37px;
-      text-align: center;
-      a {
-        @include inline-block;
-        line-height: 0;
-      }
-      img {
-        @include bordered;
-        max-width: 35px;
-        max-height: 35px;
-      }
+  .notification-list-item-description {
+    .blue-icon {
+      color: $navigationBackground;
     }
-    td.date {
-      min-width: 60px;
-      font-size: 12px;
-      color: #666666;
-    }
-    td.action {
-      min-width: 85px;
-      label {
-        @include unselectable;
-        span {
-          text-decoration: underline;
-          color: #338cae;
-          font-weight: normal;
-          cursor: pointer;
-          font-size: 12px;
-          margin-left: 1px;
-        }
-      }
+    .notifications-btn {
+      margin-top: 7px;
+      font-size: $font-size-small;
+      line-height: 13px;
     }
   }
-  > li.prev-page, > li.next-page {
+  .notifications-list-item-user-image {
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    vertical-align: text-top;
+  }
+  .notifications-list-item-new {
+    background-color: saturate(lighten($contentBackgroundColor, 5), 34);
+  }
+  .notifications-list-item-new-participant {
+    background-color: $notificationNewParticipant;
+  }
+  .notifications-list-item-unread {
+    font-size: $font-size-small;
     text-align: center;
-    color: #358bae;
-    &:hover {
-      border: none !important;
-      margin: 0 !important;
+    color: lighten($gray-light, 10%);
+    .grey-icon {
+      color: lighten($gray-light, 10%);
     }
   }
 }

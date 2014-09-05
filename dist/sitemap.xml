@@ -9,8 +9,8 @@
   <!-- <![endif] -->
   <head>
     <title>iq300 frontend</title>
-    <link href="stylesheets/app.css?1409652240" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/static_fixes.css?1408344576" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/app.css?1409918742" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/static_fixes.css?1409594775" rel="stylesheet" type="text/css" />
   </head>
   <body class='page'>
     <div id='container'>
@@ -18,56 +18,62 @@
         <?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
           <url>
-            <loc>http://www.brandymint.com/index.html</loc>
-            <lastmod>2014-09-02T00:00:00+04:00</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-          </url>
-          <url>
-            <loc>http://www.brandymint.com/profile.html</loc>
-            <lastmod>2014-09-02T00:00:00+04:00</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-          </url>
-          <url>
-            <loc>http://www.brandymint.com/projects/636.html</loc>
-            <lastmod>2014-09-02T00:00:00+04:00</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-          </url>
-          <url>
-            <loc>http://www.brandymint.com/projects/879.html</loc>
-            <lastmod>2014-09-02T00:00:00+04:00</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-          </url>
-          <url>
-            <loc>http://www.brandymint.com/projects/index.html</loc>
-            <lastmod>2014-09-02T00:00:00+04:00</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-          </url>
-          <url>
-            <loc>http://www.brandymint.com/projects/show.html</loc>
-            <lastmod>2014-09-02T00:00:00+04:00</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-          </url>
-          <url>
-            <loc>http://www.brandymint.com/projects/tasks_new.html</loc>
-            <lastmod>2014-09-02T00:00:00+04:00</lastmod>
+            <loc>http://www.brandymint.com/tasks/show.html</loc>
+            <lastmod>2014-09-05T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/tasks/index.html</loc>
-            <lastmod>2014-09-02T00:00:00+04:00</lastmod>
+            <lastmod>2014-09-05T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
-            <loc>http://www.brandymint.com/tasks/show.html</loc>
-            <lastmod>2014-09-02T00:00:00+04:00</lastmod>
+            <loc>http://www.brandymint.com/index.html</loc>
+            <lastmod>2014-09-05T00:00:00+04:00</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+          </url>
+          <url>
+            <loc>http://www.brandymint.com/profile.html</loc>
+            <lastmod>2014-09-05T00:00:00+04:00</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+          </url>
+          <url>
+            <loc>http://www.brandymint.com/notifications/index.html</loc>
+            <lastmod>2014-09-05T00:00:00+04:00</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+          </url>
+          <url>
+            <loc>http://www.brandymint.com/projects/tasks_new.html</loc>
+            <lastmod>2014-09-05T00:00:00+04:00</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+          </url>
+          <url>
+            <loc>http://www.brandymint.com/projects/show.html</loc>
+            <lastmod>2014-09-05T00:00:00+04:00</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+          </url>
+          <url>
+            <loc>http://www.brandymint.com/projects/879.html</loc>
+            <lastmod>2014-09-05T00:00:00+04:00</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+          </url>
+          <url>
+            <loc>http://www.brandymint.com/projects/index.html</loc>
+            <lastmod>2014-09-05T00:00:00+04:00</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+          </url>
+          <url>
+            <loc>http://www.brandymint.com/projects/636.html</loc>
+            <lastmod>2014-09-05T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
@@ -76,4 +82,4 @@
     </div>
   </body>
 </html>
-<script src="javascripts/application.js?1409652240" type="text/javascript"></script>
+<script src="javascripts/application.js?1409594775" type="text/javascript"></script>
