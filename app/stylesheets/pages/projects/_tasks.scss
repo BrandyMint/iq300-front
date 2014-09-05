@@ -76,9 +76,41 @@ $project-task-checkbox-width: 10px;
   }
 }
 
-.project-task-view-subtasks-list {
-  @include arrow(top, 8px, #fff, $gray-lighter);
-  @include arrow-position-left(25px);
+.placeholder {
+  outline: 1px dashed #4183C4;
+}
+
+.mjs-nestedSortable-error {
+  background: #fbe3e4;
+  border-color: transparent;
+}
+
+li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
+  border-color: #999;
+}
+
+.disclose, .expandEditor {
+  cursor: pointer;
+  width: 20px;
+  display: none;
+}
+
+.sortable li.mjs-nestedSortable-collapsed > ol {
+  display: none;
+}
+
+.sortable li.mjs-nestedSortable-branch > div > .disclose {
+  display: inline-block;
+}
+
+.project-tasks-list-sortable li ol {
+  li:first-child {
+    @include arrow(top, 8px, #fff, $gray-lighter);
+    @include arrow-position-left(25px);
+  }
+  li.placeholder {
+    margin-left: 25px;
+  }
   &:before {
     border-bottom-color: darken($gray-lighter, 10%);
   }
