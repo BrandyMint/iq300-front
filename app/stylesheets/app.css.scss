@@ -131,6 +131,7 @@
 @import "pages/projects/view-column";
 @import "pages/projects/show";
 @import "pages/projects/tasks";
+@import "pages/projects/gantt_custom";
 
 
 @import "pages/departments/list-column";
@@ -170,7 +171,6 @@
 
 @import "pages/accessor_users/create";
 
-@import "pages/paragraphs/gantt";
 @import "pages/paragraphs/view";
 
 @import 'pages/communities/invites/base';
