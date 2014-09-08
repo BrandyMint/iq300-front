@@ -22,10 +22,11 @@ $project-task-checkbox-width: 10px;
 }
 
 .project-task-box-template {
-  &, &:hover {
+  &, &:hover, &.task-box {
     background: #fff;
     border: 1px dashed $gray-light;
     margin: 2em 0;
+    margin-bottom: 2em;
     padding: {
       top: 1.5em;
       bottom: 1.5em;
