@@ -49,10 +49,16 @@
   .task-box-title-block {
     font-weight: bold;
   }
+  a {
+    color: $brand-primary
+  }
 }
-.task-overdue {
+.task-overdued {
 	border-left-color: $brand-danger;
 	&:hover {border-left-color: $brand-danger;}
+  a {
+    color: $brand-danger;
+  }
 	.status-date {
 		color: $brand-danger;
 	}

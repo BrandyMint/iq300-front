@@ -11,6 +11,39 @@
 
 .task-overdued {
   @extend %overdued-block;
+  color: $brand-danger
+  a {
+    color: $brand-danger
+  }
+}
+
+.task-in_work {
+  a {
+    color: #666;
+  }
+  color: #666;
+}
+
+.task-draft {
+  border-left-color: #a0b9be;
+  font: {
+    style: italic;
+    size: 13px;
+  }
+  color: #8d8d8d;
+  a {
+    color: #8d8d8d
+  }
+}
+
+.task-completed {
+  .title a {
+    color: #666;
+    text-decoration: line-through;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 section.projects-view-column {

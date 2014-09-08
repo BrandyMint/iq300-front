@@ -124,9 +124,19 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
     }
     &.task-overdued {
       border-left-color: desaturate(darken($brand-danger, 0%), 30%);
+      a {
+        color: desaturate(darken($brand-danger, 0%), 30%);
+      }
     }
     &.task-new {
       border-left-color: desaturate(darken($brand-primary, 0%), 30%);
+      a {
+        color: desaturate(darken($brand-primary, 0%), 30%);
+      }
+    }
+    &.task-draft {
+      border-left-color: desaturate(darken(#a0b9be, 0%), 30%);
+      color: #8d8d8d;
     }
   }
   .project-task-box-checkbox,

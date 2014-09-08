@@ -23,7 +23,7 @@
       .task-box-description-block{"data-status" => "#{status}", :role => "project-task-box-description"}
         %h4.task-box-title-block{"data-href" => "/tasks/10", :role => "project-task-title"}
           %span.title
-            Сделать обзор макета страницы Задача
+            %a Сделать обзор макета страницы Задача
         -#%span.label.label-default
           Просмотрена
         .text-muted.pull-left
@@ -69,8 +69,8 @@
               %i.fa.fa-angle-right
               Задача
       .clearfix
-        
+
 .task-box.project-task-box-form.hide{role: 'project-task-box-form', data: {project_id: project_id}}
   .col-lg-10.col-lg-offset-1
     = partial 'projects/tasks/form', locals: {project_id: project_id}
-        
+

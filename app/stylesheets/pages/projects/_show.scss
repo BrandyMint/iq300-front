@@ -76,6 +76,10 @@ h2.project-show-title {
     top: $grid-gutter-width;
     bottom: $grid-gutter-width;
   }
+  ol li {
+    list-style-position: inside;
+    list-style-type: disc;
+  }
 }
 
 

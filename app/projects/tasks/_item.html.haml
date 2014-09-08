@@ -6,7 +6,7 @@
   .edit-task-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/10/edit", :style => "display: none;"}
   .new-subtask-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/new?parent_id=10", :style => "display: none;"}
   %ol.project-tasks-list.project-task-view-subtasks-list
-    - statuses = ['draft', 'overdued', 'completed', 'new']
+    - statuses = ['in_work', 'draft', 'overdued', 'completed', 'new']
     - statuses.each_with_index do |status, i|
       %li.project-tasks-list-item
         .project-task-view.project-task-view-initialized{"data-id" => "10", "data-status" => status, class: "#{status}"}
