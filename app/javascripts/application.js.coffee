@@ -50,12 +50,20 @@ $ ->
     project_id = $(@).data('project-id')
     $('@project-task-box[data-project-id*="'+project_id+'"]').addClass('hide')
     $('@project-task-box-form[data-project-id*="'+project_id+'"]').removeClass('hide')
+    if project_id == 'new'
+      $(@).hide()
+      $('@project-task-box-form-close').filter('[data-project-id="new"]').show()
+      $('@project-task-box-template-form').addClass 'hide'
 
   $('@project-task-box-form-close').on 'click', (e) ->
     e.preventDefault()
     project_id = $(@).data('project-id')
     $('@project-task-box[data-project-id*="'+project_id+'"]').removeClass('hide')
     $('@project-task-box-form[data-project-id*="'+project_id+'"]').addClass('hide')
+    if project_id == 'new'
+      $(@).hide()
+      $('@project-task-box-edit-task-btn').filter('[data-project-id="new"]').show()
+      $('@project-task-box-template-form').removeClass 'hide'
 
 
 

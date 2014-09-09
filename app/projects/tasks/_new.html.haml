@@ -1,5 +1,5 @@
 .task-box.project-task-box.project-task-box-template
-  .row
+  .row{role: 'project-task-box-template-form'}
     .col-sm-3
       .task-box-description-block{:role => "project-task-box-description"}
         %input.form-control{type: 'text', placeholder: 'Название задачи'}
@@ -12,14 +12,16 @@
           .input-group-addon
             .fa.fa-calendar-o.fa-lg
     .col-sm-3
-      .row
-        .col-xs-6
-          = link_to 'Добавить', '', class: 'btn btn-success', role: 'project-tasks-list-task-form-close'
-        .col-xs-6
-          = link_to 'Отменить', '', class: 'btn link-gray-light', role: 'project-tasks-list-task-form-close'
+      .pull-right= link_to 'Добавить задачу', '', class: 'btn btn-success', role: 'project-tasks-list-task-form-close'
+      .clearfix
+    
+  .pull-left
+    = link_to '#', class: 'btn btn-link', role: 'project-task-box-edit-task-btn', data: {project_id: 'new'}  do
+      Больше параметров&hellip;
+    %a.btn.btn-link{:href => "/tasks/2330", role: 'project-task-box-form-close', data: {project_id: 'new'}, style: 'display: none;'} Скрыть дополнительные параметры
 
-  = link_to '#', role: 'project-task-box-edit-task-btn', data: {project_id: 'new'}  do
-    Больше параметров&hellip;
+  .pull-right= link_to 'Отменить', '', class: 'btn link-gray-light', role: 'project-tasks-list-task-form-close'
+  .clearfix
 
   .task-box.project-task-box-form.hide{role: 'project-task-box-form', data: {project_id: 'new'}}
     .col-lg-10.col-lg-offset-1
