@@ -30,7 +30,7 @@
       Описание
     .col-sm-10
       %textarea#base_task_description.form-control{:cols => "40", :name => "base_task[description]", :rows => "5"}
-  .form-group{:role => "community"}
+  -#.form-group{:role => "community"}
     %label.control-label.col-sm-2
       Сообщество
     .col-sm-5
@@ -96,11 +96,12 @@
           %a{"data-date" => "27.08.2014", :href => "#"} 27 августа
   .form-group
     %label.control-label.col-sm-2
-      Наблюдатели
-    .col-sm-5
+      Область видимости
+    .col-sm-10
+      - task_groups = ['управленцы', 'сообщество 1', 'сообщество 2']
       %select{role: 'select2', multiple: '', style: 'width: 100%;'}
-        - for i in 1..5
-          %option= "Участник #{i}"
+        - for g in task_groups
+          %option{selected: 'selected'}= "#{g}"
 
   .form-group.text-right.form-buttons{"test-buttons" => ""}
     .form-field
