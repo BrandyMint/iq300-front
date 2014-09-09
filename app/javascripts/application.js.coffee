@@ -2,9 +2,19 @@
 #= require bootstrap
 #= require jquery.role/lib/jquery.role
 #= require select2/select2
+#= require moment/moment
+#= require eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min
 
 $ ->
   $('@select2').select2()
+  $('@datetimepicker').datetimepicker
+    language: 'ru'
+    icons:
+      time: "fa fa-clock-o datetimepicker-icon",
+      date: "fa fa-calendar datetimepicker-icon",
+      up: "fa fa-arrow-up datetimepicker-icon",
+      down: "fa fa-arrow-down datetimepicker-icon"
+    format: 'DD/MM/YYYY HH:mm'
 
   $('@tooltip').tooltip()
   @checkboxes = $('.project-task-box input[type="checkbox"], @project-tasks-list-select-all')

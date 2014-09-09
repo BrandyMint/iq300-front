@@ -64,8 +64,8 @@
       Начинается:
     .col-sm-10
       .input-group-inline
-        .input-group
-          %input#task-start-date.date-input.zebra-date-picker.form-control{"data-pair" => "input-end-date", "data-show-clear-date" => "false", "data-zdp_format" => "d.m.Y", :disabled => "disabled", :readonly => "readonly", "role-zebra-date-picker" => "ready", :type => "text", :value => "25.08.2014"}/
+        .input-group{role: 'datetimepicker'}
+          %input.form-control{type: 'text'}
           .input-group-addon
             .fa.fa-calendar-o.fa-lg
         .input-group
@@ -78,9 +78,9 @@
       Выполнить к:
     .col-sm-10
       .input-group-inline
-        .input-group
-          %input#task-end-date.date-input.zebra-date-picker.form-control{"data-direction-start" => "true", "data-show-clear-date" => "false", "data-zdp_format" => "d.m.Y", :disabled => "disabled", :readonly => "readonly", :role => "input-end-date", "role-zebra-date-picker" => "ready", :type => "text", :value => "29.08.2014"}/
-          .input-group-addon{"test-input-end-date" => ""}
+        .input-group{role: 'datetimepicker'}
+          %input.form-control{type: 'text'}
+          .input-group-addon
             .fa.fa-calendar-o.fa-lg
         .input-group
           %input.time-input.form-control{:type => "text", :value => "23:59"}/

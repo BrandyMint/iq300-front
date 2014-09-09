@@ -5,13 +5,13 @@
         %input.form-control{type: 'text', placeholder: 'Название задачи'}
     .col-sm-3
       = partial 'shared/select2', locals: {title: 'Выберите исполнителя'}
-    .col-sm-3
+    .col-sm-4
       .input-group-inline
-        .input-group{role: 'tooltip', data: {'original-title' => 'Срок выполнения'}}
-          %input.date-input.zebra-date-picker.form-control{"data-pair" => "input-end-date", "data-show-clear-date" => "false", "data-zdp_format" => "d.m.Y", :readonly => "readonly", "role-zebra-date-picker" => "ready", :type => "text", :value => "22.08.2014"}
+        .input-group{role: 'datetimepicker tooltip', data: {'original-title' => 'Срок выполнения'}}
+          %input.form-control{type: 'text'}
           .input-group-addon
             .fa.fa-calendar-o.fa-lg
-    .col-sm-3
+    .col-sm-2
       .pull-right= link_to 'Добавить задачу', '', class: 'btn btn-success', role: 'project-tasks-list-task-form-close'
       .clearfix
     
