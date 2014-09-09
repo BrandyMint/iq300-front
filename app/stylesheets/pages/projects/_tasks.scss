@@ -198,6 +198,13 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
       left: 5px solid $gray-lighter;
     }
   }
+  .project-task-box-template & {
+    margin-top: $grid-gutter-width/2;
+    &, &:hover {
+      background: none;
+      border-left: none;
+    }
+  }
 }
 
 .project-group-header-actions-fixed {

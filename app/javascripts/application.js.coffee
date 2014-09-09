@@ -1,8 +1,11 @@
 #= require jquery/dist/jquery
 #= require bootstrap
 #= require jquery.role/lib/jquery.role
+#= require select2/select2
 
 $ ->
+  $('@select2').select2()
+
   $('@tooltip').tooltip()
   @checkboxes = $('.project-task-box input[type="checkbox"], @project-tasks-list-select-all')
 
@@ -45,14 +48,12 @@ $ ->
   $('@project-task-box-edit-task-btn').on 'click', (e) ->
     e.preventDefault()
     project_id = $(@).data('project-id')
-    debugger
     $('@project-task-box[data-project-id*="'+project_id+'"]').addClass('hide')
     $('@project-task-box-form[data-project-id*="'+project_id+'"]').removeClass('hide')
 
   $('@project-task-box-form-close').on 'click', (e) ->
     e.preventDefault()
     project_id = $(@).data('project-id')
-    debugger
     $('@project-task-box[data-project-id*="'+project_id+'"]').removeClass('hide')
     $('@project-task-box-form[data-project-id*="'+project_id+'"]').addClass('hide')
 

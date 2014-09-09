@@ -94,6 +94,14 @@
           %a{"data-date" => "26.08.2014", :href => "#"} завтра, 26 августа
         .input-group
           %a{"data-date" => "27.08.2014", :href => "#"} 27 августа
+  .form-group
+    %label.control-label.col-sm-2
+      Наблюдатели
+    .col-sm-5
+      %select{role: 'select2', multiple: '', style: 'width: 100%;'}
+        - for i in 1..5
+          %option= "Участник #{i}"
+
   .form-group.text-right.form-buttons{"test-buttons" => ""}
     .form-field
       .pull-left
