@@ -69,3 +69,7 @@
 .gantt_selected .weekend {
   background: #f7eb91 !important;
 }
+
+.dhx_cal_quick_info {
+  @include text-overflow();
+}

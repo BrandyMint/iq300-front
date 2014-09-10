@@ -9,8 +9,8 @@
   <!-- <![endif] -->
   <head>
     <title>iq300 frontend</title>
-    <link href="stylesheets/app.css?1410353195" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/static_fixes.css?1410353363" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/app.css?1410361590" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/static_fixes.css?1408091257" rel="stylesheet" type="text/css" />
   </head>
   <body class='page'>
     <div id='container'>
@@ -76,4 +76,4 @@
     </div>
   </body>
 </html>
-<script src="javascripts/application.js?1410353379" type="text/javascript"></script>
+<script src="javascripts/application.js?1410361002" type="text/javascript"></script>
