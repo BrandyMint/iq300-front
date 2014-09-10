@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if lt IE 10]> <html class="no-js lt-ie10" lang="en-us"> <![endif]-->
+<!--[if !IE]> > <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <title>iq300 frontend</title>
+    <link href="../stylesheets/app.css?1410353195" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/static_fixes.css?1410353363" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='tasks-index'>
+    <div id='container'>
+      <div id='wrapper'>
+        <header class='header-global group'>
+          <a class='logo' href='/' title='IQ300 System'></a>
+          <div class='search-header' role-ready='search-form'>
+            <span class='search-button'>
+              <span class='icon-search'></span>
+            </span>
+            <form action='/projects/879' class='form-search' method='get'>
+              <!-- - b = button_tag raw("<span class='icon-search'></span>") -->
+              <!-- #{content_tag(:i)}#{i}#{b} -->
+              <i></i>
+              <input class='search-query form-control' id='search' name='search' placeholder='Поиск' role='global-search-field' type='search'>
+            </form>
+          </div>
+          <div class='user-nav'>
+            <a href='/help'>Помощь</a>
+            <a href='/users/1757'>
+              <span class='userpic'>
+                <img alt='Александр' class='img-corrector-initialized' hide_wait_message='true' src='https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg' style='width:44px; height:44px;' title='Мещеряков Александр Игоревич'>
+              </span>
+              Александр Мещеряков
+            </a>
+            <a class='fa fa-sign-out' data-method='delete' href='/users/sign_out' rel='nofollow' title='Выйти'></a>
+            <!-- %section -->
+            <!-- = render "shared/user_widget" -->
+            <!-- .help-link> -->
+            <!-- = link_to icon('question-sign'), "/help", title: t('common.help') -->
+          </div>
+          <input id='app_signed_in_user_id' name='app_signed_in_user_id' type='hidden' value='1757'>
+          <input id='pusher_app_key' name='pusher_app_key' type='hidden' value='7baa6a182eefe7314de0'>
+        </header>
+        <div class='content content-global display-mode display-mode-initialized' data-initial-action='index' filters='true' full_view='true' list='true' view='false'>
+          <nav class='nav-global menu-list menu-list-initialized' data-channel='presence-1757:notifications' data-remote='true'>
+            <div class='logo'>
+              <a href='/' title='IQ300 System'>
+                <img alt="" width="95" height="95" src="../images/logo_x1_new.png?1410353363" />
+                <img alt="" width="190" height="190" src="../images/logo_x2_new.png?1410353363" />
+              </a>
+            </div>
+            <ul>
+              <li class='menu-item notifications' data-params='{"folder":"new"}' data-url='/notifications'>
+                <div class='html-notifier html-notifier-initialized' data-channel='presence-1757:notifications' data-redirect-url='/notifications?folder=new' data-url='/notifications.count?folder=new'>
+                  <audio id='notice-audio'>
+                    <source src='/audios/notify.wav' type='audio/wav'>
+                  </audio>
+                </div>
+                <a href="/notifications"><div class='picture'>
+                  <i class='icon-bell'></i>
+                  <sup>3</sup>
+                </div>
+                <span>Уведомления</span>
+                </a>
+              </li>
+              <li class='menu-item tasks' data-params='{"overview":1757}' data-url='/tasks'>
+                <a href="/tasks"><div class='picture'>
+                  <i class='icon-list-alt'></i>
+                </div>
+                <span>Задачи</span>
+                </a>
+              </li>
+              <li class='active menu-item projects not-initialize' data-params='null' data-url='/projects'>
+                <a href='/projects?folder=in_work'>
+                  <div class='picture'>
+                    <i class='icon-books'></i>
+                  </div>
+                  <span>Проекты</span>
+                </a>
+              </li>
+              <li class='menu-item calendars not-initialize' data-params='null' data-url='/calendar'>
+                <a href='/calendar'>
+                  <div class='picture'>
+                    <i class='icon-calendar'></i>
+                  </div>
+                  <span>Календарь</span>
+                </a>
+              </li>
+              <li class='menu-item communities not-initialize' data-params='null' data-url='/communities'>
+                <a href='/communities?folder=my'>
+                  <div class='picture'>
+                    <i class='icon-briefcase'></i>
+                  </div>
+                  <span>Сообщества</span>
+                </a>
+              </li>
+              <li class='menu-item docs not-initialize' data-params='null' data-url='/docs'>
+                <a href='/docs?folder=my'>
+                  <div class='picture'>
+                    <i class='icon-paste'></i>
+                  </div>
+                  <span>Документы</span>
+                </a>
+              </li>
+              <li class='menu-item conversations' data-params='{"folder":"new"}' data-url='/conversations'>
+                <a href='/conversations'>
+                  <div class='picture'>
+                    <i class='icon-comment-alt'></i>
+                  </div>
+                  <span>Сообщения</span>
+                </a>
+              </li>
+              <li class='menu-item contacts not-initialize' data-params='null' data-url='/contacts'>
+                <a href='/contacts?folder=all'>
+                  <div class='picture'>
+                    <i class='icon-group'></i>
+                  </div>
+                  <span>Контакты</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div data-scope='personal' role-ready='tasks-list-manager'></div>
+          <section class='tasks-filters-column filters-column filters-label section-navigation' role='tasks-filter'>
+            <ul class='with-subfolders tasks-filter' data-channel='presence-203:base_tasks'>
+              <li class='folder actual active' data-params='{"folder":"actual"}' role='folder'>
+                <a>Задачи</a>
+              </li>
+              <li class='folder inbox' data-params='{"folder":"inbox"}' role='folder'>
+                <a>Входящие</a>
+                <span class='counter' data-params='{"by_status":"new","folder":"inbox"}' role='counter' type='new-tasks'>0</span>
+              </li>
+              <li class='folder outbox' data-params='{"folder":"outbox"}' role='folder'>
+                <a>Исходящие</a>
+                <span class='counter' data-params='{"by_statuses":["completed","refused"],"folder":"outbox"}' role='counter' type='to-accept-tasks'>0</span>
+              </li>
+              <li class='folder watchable' data-params='{"folder":"watchable"}' role='folder'>
+                <a>Наблюдаемые</a>
+              </li>
+              <li class='folder archive' data-params='{"folder":"archive"}' role='folder'>
+                <a>Архив</a>
+              </li>
+              <li class='folder templates' data-params='{"folder":"templates"}' role='folder'>
+                <a>Шаблоны</a>
+              </li>
+            </ul>
+            <div class='task-categories' role='task-categories-filter'>
+              <span role='expander'>
+                Категории
+                <i class='fa fa-angle-right'></i>
+              </span>
+              <div class='form-horizontal'></div>
+            </div>
+          </section>
+          <section class='list-column tasks-list-column form-container-compact' role='tasks-list-scroll-container'>
+            <div class='form-group' data-channel='presence-203:base_tasks' data-url='/tasks/list_panel' role='tasks-list-panel'>
+              <div class='page-title mbm'>
+                <div class='pull-left'>
+                  <h2>
+                    Актуальные задачи
+                    <small>2</small>
+                  </h2>
+                </div>
+                <div class='pull-right'>
+                  <a class='btn btn-default' href='/tasks/new'>
+                    <span class='fa fa-plus-circle'></span>
+                    Добавить задачу
+                  </a>
+                </div>
+              </div>
+              <div class='form-group'>
+                <div class='form-field'>
+                  <div class='form-group'>
+                    <div class='row'>
+                      <div class='col-md-3'>
+                        <select class='form-control' data-param='by_status' id='status' name='status' role='simple-filter'>
+                          <option selected='selected' value=''>Все статусы</option>
+                          <option disabled='disabled' value='new'>Новые</option>
+                          <option disabled='disabled' value='browsed'>Просмотренные</option>
+                          <option value='in_work'>В работе - 2</option>
+                          <option disabled='disabled' value='refused'>Отказанные</option>
+                          <option disabled='disabled' value='completed'>Ждут подтверждения</option>
+                          <option disabled='disabled' value='accepted'>Выполненные</option>
+                          <option disabled='disabled' value='declined'>Не принятые</option>
+                          <option disabled='disabled' value='canceled'>Отмененные</option>
+                        </select>
+                      </div>
+                      <div class='col-md-3'>
+                        <select class='form-control' data-param='by_community' id='community_id' name='community_id' role='simple-filter'>
+                          <option selected='selected' value=''>Все сообщества</option>
+                          <option value='290'>Личные задачи - 2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='form-group form-group-sm'>
+                    <div class='row'>
+                      <div class='col-md-3'>
+                        <div class='input-group input-group-sm'>
+                          <span class='text-muted control-label'>Группировать:</span>
+                          <select class='form-control' data-param='group_by' id='group_by' name='group_by' role='grouper'>
+                            <option selected='selected' value=''>Без группировки</option>
+                            <option value='favorite'>По важности</option>
+                            <option value='deadline'>По дедлайну</option>
+                            <option value='projects_u'>По проектам</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class='col-md-3 pull-right' role='tasks-sorted-panel'>
+                        <span class='text-muted control-label'>Сортировать:</span>
+                        <div class='input-group-above input-group-sm' role='sorter'>
+                          <select class='form-control' data-param='sort' id='sort' name='sort' role='sorter-value'>
+                            <option value='id'>По номеру</option>
+                            <option value='updated_at'>По последней активности</option>
+                            <option value='end_date'>По дедлайну</option>
+                          </select>
+                          <div class='input-group-addon btn' data-direction='desc' role='sorter-direction'>
+                            <a class='fa fa-sort-amount-desc' href='#'></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='form-group' data-url='/tasks' role='tasks-list' test-tasks-list=''>
+              <div class='form-group' group='all_tasks' role='grouped-tasks'>
+                <h4 class='task-group-title'>Все задачи</h4>
+                <div class='task-box' data-group-id='all_tasks' data-group-title='Все задачи' data-href='http://edge.iq300.ru/tasks/2317' role='task-item' test-task=''>
+                  <div class='row'>
+                    <div class='col-md-7'>
+                      <h4 class='fa star-favourite fa-star-o' data-url='/favorites?base_task_id=2317' role='favorite-list-view'></h4>
+                      <h4 class='task-box-title-block'>
+                        <span class='title' test-task-title=''>Добавить сотрудников в новое сообщество</span>
+                      </h4>
+                      <div class='text-muted'>
+                        Личная задача
+                        | Изменилась 13 авг.
+                      </div>
+                    </div>
+                    <div class='col-md-3'>
+                      <h4 class='task-box-title-block'>
+                        <span class='small'>#2317</span>
+                        <span></span>
+                        →
+                        <small>
+                          <a class='user task-box-user' data-href='/users/203' role='user'>
+                            Мне
+                          </a>
+                        </small>
+                      </h4>
+                    </div>
+                    <div class='col-md-2'>
+                      <div class='task-box-status-block'>
+                        <div class='status-date task-box-status-date'>
+                          <span class='day'>
+                            19
+                          </span>
+                          <span class='month'>
+                            Август
+                          </span>
+                          <sup class='task-box-status-date-days'>
+                            6 дн.
+                          </sup>
+                        </div>
+                        <br class='visible-md visible-lg'>
+                        <div class='label label-warning'>В работе</div>
+                        <div class='clearfix'></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='task-box' data-group-id='all_tasks' data-group-title='Все задачи' data-href='http://edge.iq300.ru/tasks/2316' role='task-item' test-task=''>
+                  <div class='row'>
+                    <div class='col-md-7'>
+                      <h4 class='fa star-favourite fa-star-o' data-url='/favorites?base_task_id=2316' role='favorite-list-view'></h4>
+                      <h4 class='task-box-title-block'>
+                        <span class='title' test-task-title=''>Заполнить профиль</span>
+                      </h4>
+                      <div class='text-muted'>
+                        Личная задача
+                        | Изменилась 12 авг.
+                      </div>
+                    </div>
+                    <div class='col-md-3'>
+                      <h4 class='task-box-title-block'>
+                        <span class='small'>#2316</span>
+                        <span></span>
+                        →
+                        <small>
+                          <a class='user task-box-user' data-href='/users/203' role='user'>
+                            Мне
+                          </a>
+                        </small>
+                      </h4>
+                    </div>
+                    <div class='col-md-2'>
+                      <div class='task-box-status-block'>
+                        <div class='status-date task-box-status-date'>
+                          <span class='day'>
+                            19
+                          </span>
+                          <span class='month'>
+                            Август
+                          </span>
+                          <sup class='task-box-status-date-days'>
+                            6 дн.
+                          </sup>
+                        </div>
+                        <br class='visible-md visible-lg'>
+                        <div class='label label-warning'>В работе</div>
+                        <div class='clearfix'></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- = render 'shared/footer' -->
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../javascripts/application.js?1410353379" type="text/javascript"></script>
