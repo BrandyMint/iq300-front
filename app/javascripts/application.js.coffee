@@ -15,6 +15,11 @@ $ ->
       up: "fa fa-arrow-up datetimepicker-icon",
       down: "fa fa-arrow-down datetimepicker-icon"
     format: 'DD/MM/YYYY HH:mm'
+  
+  $('@datetimepicker input').on 'focus', () ->
+    picker = $(@).parents().find('[role*="datetimepicker"]').first()
+    picker.data("DateTimePicker").setDate(Date.now())
+    picker.data('DateTimePicker').show()
 
   $('@tooltip').tooltip()
   @checkboxes = $('.project-task-box input[type="checkbox"], @project-tasks-list-select-all')
