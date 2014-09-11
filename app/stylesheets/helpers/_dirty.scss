@@ -8,7 +8,7 @@ body.tasks-index {
 	.tasks-filters-column, .tasks-list-column, .task-view-column {
 		margin-top: -45px;
 		padding-bottom: 45px;
-		box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1);
+    @extend %list-column-shadow;
 		@include box-sizing(content-box);
 	}
 }

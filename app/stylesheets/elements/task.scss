@@ -1,5 +1,5 @@
-.task-box {
-	border-left: solid 5px #eee;
+%task-box-style {
+  border-left: solid 5px #eee;
 	padding: 10px 10px 10px 25px;
   //border-bottom: 1px solid $gray-lighter;
   @include box-shadow(0 1px 0 $gray-lighter);
@@ -10,6 +10,35 @@
   &:hover {
   	border-left-color: darken(#eee,10%);
   	background-color: $gray-lightest;
+  }
+}
+
+%task-new-style {
+  border-left-color: $brand-primary;
+  &:hover {border-left-color: $brand-primary;}
+  .task-box-title-block {
+    font-weight: bold;
+  }
+  a {
+    color: $brand-primary
+  }
+}
+
+%task-overdued-style {
+	border-left-color: $brand-danger;
+	background-color: $contentBackgroundColor;
+	&:hover {border-left-color: $brand-danger;}
+  a {
+    color: $brand-danger;
+  }
+	.status-date {
+		color: $brand-danger;
+	}
+}
+
+.task-box {
+  @extend %task-box-style;
+  &:hover {
   	border-top-color: transparent;
   	+ .task-box { border-top-color: transparent;}
   }
@@ -44,26 +73,10 @@
 	}
 }
 .task-new {
-  border-left-color: $brand-primary;
-  &:hover {border-left-color: $brand-primary;}
-  .task-box-title-block {
-    font-weight: bold;
-  }
-  a {
-    color: $brand-primary
-  }
+  @extend %task-new-style;
 }
 .task-overdued {
-	border-left-color: $brand-danger;
-  border-left-color: $brand-danger;
-  background-color: $contentBackgroundColor;
-  &:hover {border-left-color: $brand-danger;}
-  a {
-    color: $brand-danger;
-  }
-  .status-date {
-    color: $brand-danger;
-  }
+  @extend %task-overdued-style;
   &.task-new {
     .task-box-title-block {
       font-weight: bold;
@@ -73,6 +86,7 @@
 .task-with-change {
   background-color: $contentBackgroundColor;
 }
+
 .task-group-title {
 	color: #ccc;
 	margin: 10px;

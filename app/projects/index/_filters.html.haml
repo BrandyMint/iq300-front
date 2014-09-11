@@ -1,0 +1,30 @@
+.form-group
+  .form-field
+    .form-group
+      .row
+        .col-md-3
+          %select.form-control
+            %option{selected: ''} Все сообщества
+        .col-md-3
+          %select.form-control
+            %option{selected: ''} Все руководители
+
+    .form-group.form-group-sm
+      .row
+        .col-md-3
+          .input-group.input-group-sm
+            %span.text-muted.control-label Группировать:
+            %select.form-control
+              %option{selected: ''} Без группировки
+              %option По важности
+        .col-md-3.pull-right
+          %span.text-muted.control-label Сортировать:
+          .input-group-above.input-group-sm{role: "sorter"}
+            %select.form-control
+              %option{selected: ''} По номеру
+              - ['По последней активности', 'По дедлайну'].each do |o|
+                %option= o
+            .input-group-addon.btn{"data-direction" => "desc", role: "sorter-direction"}
+              %a.fa.fa-sort-amount-desc{href: "#"}
+        .clearfix
+

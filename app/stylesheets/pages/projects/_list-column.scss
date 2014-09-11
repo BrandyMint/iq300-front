@@ -1,117 +1,83 @@
-section.projects-list-column {
-  line-height: 20px;
-  color: #666666;
-  background: #f1f5f6;
-  > menu.sortable-header > a {
-    .sort-arrow {
-      position: relative;
-      margin-left: 5px;
-      top: -2px;
-    }
-    &.id {
-      width: 4%;
-      padding-left: 1%;
-      padding-right: 1%;
-      text-align: center;
-    }
-    &.name {
-      width: 64%;
-    }
-    &.end_date {
-      width: 20%;
-      > b {
-        font-weight: normal;
-      }
-    }
-    &:hover {
-      text-decoration: none !important;
-      > b {
-        text-decoration: underline !important;
-      }
-    }
-  }
-  > .infinite-list {
-    position: absolute;
-    top: 44px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    @include children-list-fix;
-    > a {
-      position: relative;
-      display: block;
-      height: 42px;
-      border: 1px solid transparent;
-      @include children-inline;
-      > div {
-        height: 40px;
-        line-height: 20px;
-        padding: 1px 2% 1px 3%;
-        > * {
-          display: block;
-          @include text-overflow;
-        }
-        &.right {
-          text-align: right;
-        }
-        &.id {
-          width: 3.5%;
-          padding-left: 1.5%;
-          padding-right: 1%;
-          text-align: center;
-          > p {
-            line-height: 42px;
-            color: #666666;
-          }
-        }
-        &.name {
-          width: 64%;
-          > p {
-            position: relative;
-            top: 3px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666666;
-          }
-          > span {
-            font-size: 10px;
-            color: #999999;
-          }
-        }
-        &.end_date {
-          width: 20%;
-          > p {
-            line-height: 40px;
-            color: #666666;
-            &.today {
-              font-weight: bold;
-            }
-          }
-        }
-      }
-      &:hover {
-        border-color: #338bae;
-        text-decoration: none;
-      }
-      &.active {
-        background: #338cae;
-        @include has-after-icon(20px, #e1ecf0) {
-          right: -2px;
-          top: 50%;
-          margin-top: -11px;
-          @extend .icon-caret-left:before;
-        }
+//.projects-list-column {
+//}
 
-        > div > p {
-          color: white;
-          font-weight: normal;
-        }
-        > div.name > span {
-          color: #cccccc;
-        }
-      }
+.project-box {
+  @extend %task-box-style;
+  @extend .project-task-box;
+  padding: {
+    top: $grid-gutter-width/2;
+    bottom: $grid-gutter-width/2;
+  }
+  &:hover {
+    border-left-color: darken($gray-lighter, 10%);
+    background-color: $gray-lighter;
+  }
+  &.project-box-overdued {
+    @extend %task-overdued-style;
+    border-left-color: desaturate(darken($brand-danger, 0%), 30%);
+    .project-box-title-block,
+    .status-date {
+      color: desaturate(darken($brand-danger, 0%), 30%);
     }
   }
+  &.project-box-new {
+    @extend %task-new-style;
+    background-color: $contentBackgroundColor;
+    border-left-color: desaturate(darken($brand-primary, 0%), 30%);
+    .project-box-title-block,
+    .status-date {
+      color: desaturate(darken($brand-primary, 0%), 30%);
+    }
+  }
+  &.project-box-draft {
+    border-left-color: desaturate(darken(#a0b9be, 0%), 30%);
+    &, 
+    .project-box-title-block,
+    .status-date {
+      color: #8d8d8d;
+    }
+    .project-box-title-block {
+      font-style: italic;
+    }
+  }
+}
+
+
+
+.project-box-star {
+  margin-left: -1.5em;
+}
+
+.project-box-details-block {
+  margin: 0.5em 0;
+
+}
+
+.project-box-details-item,
+a.project-box-details-item {
+  color: $gray-light;
+}
+
+.project-box-details-item-new,
+a.project-box-details-item-new {
+  font-weight: bold;
+  color: desaturate(lighten($brand-danger, 20%), 30%);
+}
+
+
+.project-box-progress {
+  margin: 0.5em 0;
+  height: 5px;
+  @include border-radius(0);
+  background-color: $gray-lighter;
+  &, .progress-bar {
+    @include box-shadow(none);
+  }
+  .progress-bar-danger {
+    background-color: desaturate(lighten($brand-danger, 20%), 30%);
+  }
+  .progress-bar-primary {
+    background-color: desaturate(lighten($brand-primary, 20%), 30%);
+  }
+
 }
