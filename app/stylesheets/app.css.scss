@@ -82,6 +82,9 @@
 
 // Customize pages
 // --------------------------------------
+
+@import "pages/activities/activities";
+
 @import "pages/tasks/general";
 @import "pages/tasks/list-column";
 @import "pages/tasks/view-column";
@@ -140,7 +143,6 @@
 @import "pages/news";
 @import "pages/users/show";
 @import "pages/users/edit";
-@import "pages/users/activities";
 @import "pages/users/contracts";
 @import "pages/folders";
 @import "pages/docs/list-column";
