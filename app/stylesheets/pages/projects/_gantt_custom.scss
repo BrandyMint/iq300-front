@@ -70,6 +70,10 @@
   background: #f7eb91 !important;
 }
 
-.dhx_cal_quick_info {
+.gantt_cal_quick_info {
   @include text-overflow();
+}
+
+.gantt_scale_line > .gantt_scale_cell.current {
+  color: red;
 }
