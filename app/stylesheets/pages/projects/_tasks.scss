@@ -122,16 +122,16 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
       border-left-color: darken($gray-lighter, 10%);
       background-color: $gray-lighter;
     }
-    &.task-overdued {
-      border-left-color: desaturate(darken($brand-danger, 0%), 30%);
-      a {
-        color: desaturate(darken($brand-danger, 0%), 30%);
-      }
-    }
     &.task-new {
       border-left-color: desaturate(darken($brand-primary, 0%), 30%);
       a {
         color: desaturate(darken($brand-primary, 0%), 30%);
+      }
+    }
+    &.task-overdued {
+      border-left-color: desaturate(darken($brand-danger, 0%), 30%);
+      a {
+        color: desaturate(darken($brand-danger, 0%), 30%);
       }
     }
     &.task-draft {
