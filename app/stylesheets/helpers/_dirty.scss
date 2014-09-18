@@ -1,9 +1,14 @@
-// For task/index 
+// For task/index
 // Use helpers class for body controller_action_class
+body.projects-index {
+  // hide top panel
+  .top-panel { display: none !important;}
+}
+
 body.tasks-index {
 	// hide top panel
 	.top-panel { display: none !important;}
-	
+
 	// Cut place of top panel
 	.tasks-filters-column, .tasks-list-column, .task-view-column {
 		margin-top: -45px;
@@ -33,8 +38,8 @@ body.tasks-show {
 	}
 }
 
-// Clean flat filters for tasks pages 
-// must be refactoring in future 
+// Clean flat filters for tasks pages
+// must be refactoring in future
 .section-navigation {
   background-color: #fff;
 
@@ -78,13 +83,13 @@ body.tasks-show {
       line-height: 30px;
     }
   }
-	
+
   .tasks-filter, .with-subfolders a {
     background: none!important;
   }
   ul.with-subfolders {
   	padding-top: 20px;
-	  
+
 	  li {
 	  	border: 0;
 	  	&:before, &:after { display: none !important;}
