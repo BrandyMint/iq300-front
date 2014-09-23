@@ -9,19 +9,19 @@
   }
 }
 
-.task-overdued {
-  @extend %overdued-block;
-  color: $brand-danger
-  a {
-    color: $brand-danger
-  }
-}
-
 .task-in_work {
   a {
     color: #666;
   }
   color: #666;
+}
+
+.task-overdued {
+  @extend %overdued-block;
+  color: $brand-danger;
+  a {
+    color: $brand-danger
+  }
 }
 
 .task-draft {

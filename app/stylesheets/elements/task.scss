@@ -55,18 +55,20 @@
 }
 .task-overdued {
 	border-left-color: $brand-danger;
-	&:hover {border-left-color: $brand-danger;}
+  border-left-color: $brand-danger;
+  background-color: $contentBackgroundColor;
+  &:hover {border-left-color: $brand-danger;}
   a {
     color: $brand-danger;
   }
-	.status-date {
-		color: $brand-danger;
-	}
-    &.task-new {
-      .task-box-title-block {
-        font-weight: bold;
-      }
+  .status-date {
+    color: $brand-danger;
+  }
+  &.task-new {
+    .task-box-title-block {
+      font-weight: bold;
     }
+  }
 }
 .task-with-change {
   background-color: $contentBackgroundColor;
