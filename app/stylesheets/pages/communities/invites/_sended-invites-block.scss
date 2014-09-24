@@ -1,0 +1,21 @@
+.community-invites-sended-block-title {
+  background-color: $heads-color;
+  border-bottom: 2px solid $border-color;
+  padding: 0.5em;
+  padding-left: 0.8em;
+}
+
+.community-sended-invites-list {
+  width: 91%;
+  margin: 0 auto;
+}
+
+.community-sended-invite-item-detail{
+  border: none;
+  &.invitation-person-email { 
+  	width: 28%; 
+  }
+  &.status {
+  	width: 61%; 
+  }
+}

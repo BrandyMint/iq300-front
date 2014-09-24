@@ -1,0 +1,27 @@
+.btn-base {
+  @extend .btn;
+  width: 20%;
+  background-color: $btn-color;
+  color: $base-color;
+  margin-top: 0.8em;
+  margin-right: 3em;
+  padding-left: 4em;
+  padding-right: 4em;
+  font-weight: normal;
+
+  &:hover {
+    color: $base-color;
+  }
+}
+
+.btn-check {
+  @extend .btn-base;
+  float: right;
+}
+
+.btn-send {
+  @extend .btn-base;
+  margin-top: 1.8em;
+  margin-right: 4em;
+  float: right;
+}

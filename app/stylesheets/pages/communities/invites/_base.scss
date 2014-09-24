@@ -1,0 +1,33 @@
+@import "form";
+@import "status-block";
+@import "sended-invites-block";
+
+community-invites-table {
+  color: $link-color;
+}
+
+.community-invites-cancel-invite-link{
+  color: $link-color;
+  border: 1px solid $base-color;
+  padding: 5px;
+
+  &:hover {
+    text-decoration: none;
+    border: 1px solid $alert-color;
+    border-radius: 4px;
+    color: $alert-color;
+  }
+}
+
+.invite-people-list-status-waiting { @include badge-style($waiting-color); }
+.invite-people-list-status-member  { @include badge-style($member-color); }
+.invite-people-list-status-error { color: $alert-color; }
+
+.community-invites-pane{
+  width: 90%;
+  margin-top: 1em;
+  border-radius: 4px;
+  border-color: $border-color;
+  background-color: $base-color;
+  border: 1px solid $border-color;
+}

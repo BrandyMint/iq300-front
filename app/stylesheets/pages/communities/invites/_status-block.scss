@@ -1,0 +1,22 @@
+.community-invites-status-block{
+  border-top: 1px solid $border-color;
+}
+
+.collection-action {
+  height: 6em;
+  background-color: $heads-color;
+}
+
+.community-invites-status-list {
+  color: $link-color;
+}
+.community-invites-status-item-head {
+  font-weight: bold;
+}
+.community-invites-status-item-head-row {
+  background-color: $heads-color;
+}
+
+.community-invites-status-item-actions-reseted {
+  font-style: italic;
+}

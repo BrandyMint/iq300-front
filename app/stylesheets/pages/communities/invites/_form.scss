@@ -1,0 +1,40 @@
+.community-invites-form-section{
+  margin-bottom: 5em;
+  border-bottom: 1px solid $border-color;
+  background-color: $heads-color;
+  height: inherit; 
+}
+
+.community-invites-form-title {
+  border-bottom: 2px solid $border-color;
+  padding: 0.5em;
+  padding-left: 0.8em;
+}
+
+.community-invites-form-wrapper{
+  display: block;
+  overflow: auto;
+  padding-bottom: 1em;
+  
+}
+
+.community-invites-form-element {
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+}
+
+.form-controls-wrapper{
+  padding-left: 2em;
+  padding-top: 1em;
+}
+
+.invitation-email-area {
+  border: 2px solid $border-color;
+  border-radius: 4px;
+  width: 69%;
+  height: 4em;
+  max-height: 4em;
+  padding-left: 1em;
+}
+
