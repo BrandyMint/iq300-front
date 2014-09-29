@@ -9,8 +9,8 @@
   <!-- <![endif] -->
   <head>
     <title>iq300 frontend</title>
-    <link href="../../stylesheets/app.css?1411458729" rel="stylesheet" type="text/css" />
-    <link href="../../stylesheets/static_fixes.css?1408344576" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/app.css?1411993547" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/static_fixes.css?1411993272" rel="stylesheet" type="text/css" />
   </head>
   <body class='tasks-show'>
     <div id='container'>
@@ -60,8 +60,8 @@
           <nav class='nav-global menu-list menu-list-initialized' data-channel='presence-1757:notifications' data-remote='true'>
             <div class='logo'>
               <a href='/' title='IQ300 System'>
-                <img alt="" width="95" height="95" src="../../images/logo_x1_new.png?1408344576" />
-                <img alt="" width="190" height="190" src="../../images/logo_x2_new.png?1408344576" />
+                <img alt="" width="95" height="95" src="../../images/logo_x1_new.png?1411993272" />
+                <img alt="" width="190" height="190" src="../../images/logo_x2_new.png?1411993272" />
               </a>
             </div>
             <ul>
@@ -156,42 +156,67 @@
                 <div class='pull-right task-status'>
                   <div class='status-box'>
                     <div class='status-label bg-info' test-task-status=''>
-                      Ждет подтверждения
+                      Просмотрена
+                    </div>
+                    <div class='status-label bg-danger'>
+                      <span>
+                        Просрочена
+                        <br>
+                        на 2 дня
+                      </span>
                     </div>
                     <div class='status-date'>
                       <div class='day'>
-                        21
+                        18
                       </div>
                       <div class='month'>
-                        Июня
+                        Августа
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <ul class='nav nav-tabs tabnav' data-container='.tab-content' role-tabnav='ready' test-tabnav=''>
-              <li class='active'>
-                <a data-target='task-details' href='/tasks/65590'>Детали</a>
+            <ul class='nav nav-tabs tabnav' data-channel='presence-5:base_task-121' data-container='.tab-content' data-read-changes-url='/changes/read?base_task_id=121' role-ready='tabnav' test-tabnav=''>
+              <li class='active' data-changes='base_tasks,todo_items,attachment_links'>
+                <a data-target='task-details' href='/tasks/121'>
+                  Детали
+                  <span class='badge' role='counter'></span>
+                </a>
               </li>
-              <li id='accessor_users_tab'>
-                <a data-class='accessor-users-view' data-roles='accessor-users-view' data-target='task_accessor_users' href='/tasks/65590/accessor_users'>Участники</a>
+              <li data-changes='accessor_users' id='accessor_users_tab'>
+                <a data-class='accessor-users-view' data-target='task_accessor_users' href='/tasks/121/accessor_users'>
+                  Участники
+                  <span class='badge' role='counter'></span>
+                </a>
               </li>
               <li>
-                <a data-target='task_activities' href='/tasks/65590/activities?initial=true'>История</a>
+                <a data-target='task_activities' href='/tasks/121/activities?initial=true'>История</a>
               </li>
-              <li class='discussion' role-discussion='ready'>
-                <a data-target='task-discussions' href='/tasks/65590/discussion?initial=true'>Обсуждения</a>
+              <li class='discussion discussion-initialized' data-changes='comments'>
+                <a data-target='task-discussions' href='/tasks/121/discussion?initial=true'>
+                  Обсуждения
+                  <span class='badge' role='counter'>1</span>
+                </a>
               </li>
             </ul>
             <div class='tab-content'>
               <div class='tab-pane active' id='task-details'>
-                <div class='form-group events' role='actions-field'>
+                <div class='form-group events' role='actions-field' style='display: block;'>
                   <div class='form-field'>
                     <div class='pull-left'>
-                      <div class='group'></div>
+                      <div class='group'>
+                        <a class='btn btn-default action force_accept' href='/tasks/121/change_status?do=force_accept' role='action'>Принять как выполненную</a>
+                        <a class='btn btn-default action cancel' data-confirm='Вы уверены?' href='/tasks/121/change_status?do=cancel' role='action'>Отменить</a>
+                      </div>
                     </div>
-                    <div class='pull-right'></div>
+                    <div class='pull-right'>
+                      <a class='btn btn-default' data-method='put' href='/tasks/121/save_as_template' rel='nofollow'>Сохранить как шаблон</a>
+                      <a class='btn btn-default' href='/tasks/121/edit'>
+                        <span class='fa fa-edit'></span>
+                        Редактировать
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div class='form-group underline'>
@@ -269,8 +294,6 @@
                                         <ul class='select2-results'></ul>
                                       </div>
                                     </div>
-                                    <input class='select-two todo-body select2-offscreen' data-tags='[]' data-url='/categories/65590?base_task_id=65590' id='_name' name='#[name]' placeholder='Добавить категорию' role-select-two='ready' size='30' tabindex='-1' type='text'>
-                                    <input type='reset' value='Отменить'>
                                   </form>
                                 </div>
                               </div>
@@ -301,12 +324,38 @@
                     </div>
                   </div>
                   <div>
-                    <ul></ul>
+                    <ul>
+                      <li class='todo-item todo-item-initialized' data-url='/tasks/121/todo_items/66'>
+                        <input id='completed' name='completed' type='checkbox' value='1'>
+                        <i></i>
+                        <div class='title'>wedwedewd</div>
+                        <span class='right'>
+                          <a href='/tasks/new?parent_id=121&amp;todo_item_id=66' title='Преобразовать в задачу'>
+                            <i class='icon-list-alt'></i>
+                          </a>
+                          <a class='edit' href='#' title='Изменить'>
+                            <i class='icon-pencil'></i>
+                          </a>
+                          <a class='remove' data-confirmation='Подтвердите действие' title='Удалить'>
+                            <i class='icon-remove'></i>
+                          </a>
+                        </span>
+                        <form accept-charset='UTF-8' action='/tasks/121/todo_items/66' class='edit-form' id='edit_todo_item_66' method='post'>
+                          <div style='margin:0;padding:0;display:inline'>
+                            <input name='utf8' type='hidden' value='✓'>
+                            <input name='_method' type='hidden' value='put'>
+                            <input name='authenticity_token' type='hidden' value='axzWGG14VvSmKixUNQHEmOOUnKTdQ8z4X7tp3IX6c+I='>
+                          </div>
+                          <input class='todo-body' id='todo_item_title' name='todo_item[title]' size='30' type='text' value='wedwedewd'>
+                          <input name='commit' type='submit' value='Сохранить'>
+                        </form>
+                      </li>
+                    </ul>
                     <div class='add-todo-form'>
-                      <form accept-charset='UTF-8' action='/tasks/65590/todo_items' class='new-todo' id='new_todo_item' method='post' style='display: none;'>
+                      <form accept-charset='UTF-8' action='/tasks/121/todo_items' class='new-todo' id='new_todo_item' method='post' style='display: none;'>
                         <div style='margin:0;padding:0;display:inline'>
                           <input name='utf8' type='hidden' value='✓'>
-                          <input name='authenticity_token' type='hidden' value='uEWcLHYGGc3CWmAg2FbZlhOKDays7ebwCfdUXdj6d0I='>
+                          <input name='authenticity_token' type='hidden' value='axzWGG14VvSmKixUNQHEmOOUnKTdQ8z4X7tp3IX6c+I='>
                         </div>
                         <input class='todo-body' id='todo_item_title' name='todo_item[title]' placeholder='Добавить пункт' size='30' type='text'>
                         <input class='btn btn-primary' name='commit' type='submit' value='Сохранить'>
@@ -321,7 +370,17 @@
                       <h3 aria-describedby='tooltip155203' class='task-page-section-title' data-original-title='Вы можете добавить файлы к задаче' data-placement='right' role-bootstrap-tooltip='ready' title=''>
                         Файлы к задаче
                       </h3>
-                      <div class='files'></div>
+                      <div class='files'>
+                        <span class='attached-file' role-ready='task-attachment'>
+                          <a href='/download?file=40160815-8048-4164-af5e-4c199d6ce5d5.png'>
+                            <i class='fa fa-file-text-o attached-file-icon'></i>
+                            favicon (1).png
+                          </a>
+                          <a class='attached-file-delete-btn' href='/tasks/121/attachments/52?file=52' role='remove-attachment'>
+                            <i class='fa fa-times'></i>
+                          </a>
+                        </span>
+                      </div>
                     </div>
                     <div class='pull-right'>
                       <a class='btn btn-default' data-original-title='Добавьте новый файл' data-placement='left' href='#' role-bootstrap-tooltip='ready' role='new-attachment-button' title=''>
@@ -345,9 +404,13 @@
                 <div class='form-group' test-subtasks=''>
                   <div class='page-title mbm'>
                     <div class='pull-left'>
-                      <h3 class='task-page-section-title' data-original-title='Если задача большая, то Вы можете разбить ее на дочерние задачи' data-placement='right' role-bootstrap-tooltip='ready' title=''>
-                        Подзадачи
-                      </h3>
+                      <h3 class='task-page-section-title'>Подзадачи</h3>
+                    </div>
+                    <div class='pull-right'>
+                      <a class='btn btn-default' data-original-title='' href='/tasks/new?parent_id=121' role='add-subtask-btn' title=''>
+                        <span class='fa fa-plus-circle'></span>
+                        Добавить
+                      </a>
                     </div>
                   </div>
                   <div class='task-box' data-group-id='all_tasks' data-group-title='Все задачи' data-href='https://beta.iq300.ru/tasks/66863' role='task-item' test-task=''>
@@ -425,4 +488,4 @@
     </div>
   </body>
 </html>
-<script src="../../javascripts/application.js?1411026373" type="text/javascript"></script>
+<script src="../../javascripts/application.js?1411993272" type="text/javascript"></script>

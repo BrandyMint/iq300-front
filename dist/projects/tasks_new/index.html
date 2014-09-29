@@ -12,29 +12,24 @@
     <link href="../../stylesheets/app.css?1411993547" rel="stylesheet" type="text/css" />
     <link href="../../stylesheets/static_fixes.css?1411993272" rel="stylesheet" type="text/css" />
   </head>
-  <body class='tasks-show'>
+  <body class='tasks-new'>
     <div id='container'>
       <div id='wrapper'>
         <header class='header-global group'>
           <a class='logo' href='/' title='IQ300 System'></a>
-          <div class='search-header' role-ready='search-form'>
-            <span class='search-button'>
-              <span class='icon-search'></span>
+          <span class='app-version'>
+            v.1.5.2
+            <span>
+              sa/refactor_initializer
             </span>
-            <form action='/projects/879' class='form-search' method='get'>
-              <!-- - b = button_tag raw("<span class='icon-search'></span>") -->
-              <!-- #{content_tag(:i)}#{i}#{b} -->
-              <i></i>
-              <input class='search-query form-control' id='search' name='search' placeholder='Поиск' role='global-search-field' type='search'>
-            </form>
-          </div>
+          </span>
           <div class='user-nav'>
             <a href='/help'>Помощь</a>
-            <a href='/users/1757'>
+            <a href='/users/5'>
               <span class='userpic'>
-                <img alt='Александр' class='img-corrector-initialized' hide_wait_message='true' src='https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg' style='width:44px; height:44px;' title='Мещеряков Александр Игоревич'>
+                <img alt='Эльвир' class='img-corrector-initialized' hide_wait_message='true' src='/assets/default-user-avatar.png' style='width:44px; height:44px;' title='Нуриахметов Эльвир Петрович'>
               </span>
-              Александр Мещеряков
+              Эльвир Нуриахметов
             </a>
             <a class='fa fa-sign-out' data-method='delete' href='/users/sign_out' rel='nofollow' title='Выйти'></a>
             <!-- %section -->
@@ -42,51 +37,53 @@
             <!-- .help-link> -->
             <!-- = link_to icon('question-sign'), "/help", title: t('common.help') -->
           </div>
-          <input id='app_signed_in_user_id' name='app_signed_in_user_id' type='hidden' value='1757'>
-          <input id='pusher_app_key' name='pusher_app_key' type='hidden' value='7baa6a182eefe7314de0'>
+          <input id='app_signed_in_user_id' name='app_signed_in_user_id' type='hidden' value='5'>
+          <input id='pusher_app_key' name='pusher_app_key' type='hidden' value='d113d7d870e1723ff8c8'>
         </header>
-        <div class='content content-global display-mode' data-initial-action='edit' filters='true' full_view='true' list='true' role-display-mode='ready' view='true'>
+        <div class='content content-global display-mode' data-initial-action='new' filters='false' full_view='false' list='false' role-display-mode='ready' view='false'>
           <section class='top-panel'>
             <div class='pull-left'>
               <a class='navigation' href='#' onclick="$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;">
                 <i class='icon-reorder'></i>
               </a>
               <a class='btn btn-lg' href='/tasks'>
-                <span class='fa fa-reply'>
-                  Список задач
-                </span>
+                <span class='fa fa-reply'></span>
+                Список задач
               </a>
             </div>
           </section>
-          <nav class='nav-global menu-list menu-list-initialized' data-channel='presence-1757:notifications' data-remote='true'>
+          <nav class='nav-global menu-list' data-channel='presence-5:notifications' data-remote='true' role-menu-list='ready'>
             <div class='logo'>
               <a href='/' title='IQ300 System'>
-                <img alt="" width="95" height="95" src="../../images/logo_x1_new.png?1411993272" />
-                <img alt="" width="190" height="190" src="../../images/logo_x2_new.png?1411993272" />
+                <img alt='IQ300' class='image-x1 img-corrector-initialized' src='/assets/logo_x1_new.png'>
+                <img alt='IQ300' class='image-x2 img-corrector-initialized' src='/assets/logo_x2_new.png'>
               </a>
             </div>
             <ul>
               <li class='menu-item notifications' data-params='{"folder":"new"}' data-url='/notifications'>
-                <div class='html-notifier html-notifier-initialized' data-channel='presence-1757:notifications' data-redirect-url='/notifications?folder=new' data-url='/notifications.count?folder=new'>
+                <div class='html-notifier' data-channel='presence-5:notifications' data-redirect-url='/notifications?folder=new' data-url='/notifications.count?folder=new' role-html-notifier='ready'>
                   <audio id='notice-audio'>
                     <source src='/audios/notify.wav' type='audio/wav'>
                   </audio>
                 </div>
-                <a href="/notifications"><div class='picture'>
-                  <i class='icon-bell'></i>
-                  <sup>3</sup>
-                </div>
-                <span>Уведомления</span>
+                <a href='/notifications'>
+                  <div class='picture'>
+                    <i class='icon-bell'></i>
+                    <sup>5</sup>
+                  </div>
+                  <span>Уведомления</span>
                 </a>
               </li>
-              <li class='menu-item tasks' data-params='{"overview":1757}' data-url='/tasks'>
-                <a href="/tasks"><div class='picture'>
-                  <i class='icon-list-alt'></i>
-                </div>
-                <span>Задачи</span>
+              <li class='active menu-item tasks' data-params='{"overview":5}' data-url='/tasks'>
+                <a href='/tasks'>
+                  <div class='picture'>
+                    <i class='icon-list-alt'></i>
+                    <sup>50</sup>
+                  </div>
+                  <span>Задачи</span>
                 </a>
               </li>
-              <li class='active menu-item projects not-initialize' data-params='null' data-url='/projects'>
+              <li class='menu-item projects not-initialize' data-params='null' data-url='/projects'>
                 <a href='/projects?folder=in_work'>
                   <div class='picture'>
                     <i class='icon-books'></i>
@@ -136,19 +133,18 @@
               </li>
             </ul>
           </nav>
-          <section class='one-big-column task-form-section form-container' data-default-community='290' data-default-executor='203' role-task-form='ready'>
-            <form accept-charset='UTF-8' action='/tasks/2330' class='form-horizontal' enctype='multipart/form-data' id='edit_base_task_2330' method='post'>
+          <section class='one-big-column task-form-section form-container' data-default-community='5' data-default-executor='5' role-task-form='ready'>
+            <form _lpchecked='1' accept-charset='UTF-8' action='/tasks' class='form-horizontal' enctype='multipart/form-data' id='new_base_task' method='post'>
               <div style='margin:0;padding:0;display:inline'>
                 <input name='utf8' type='hidden' value='✓'>
-                <input name='_method' type='hidden' value='put'>
-                <input name='authenticity_token' type='hidden' value='c7G+eXfYvyf3DE8wZOs6br5Ie9CYtG4AUUsidktbgA8='>
+                <input name='authenticity_token' type='hidden' value='mkEJ4f/U2uFjhSyiaeP21FV20F1XFEHgzY7hD9pen/g='>
               </div>
               <input class='task-kind-input' id='base_task_kind' name='base_task[kind]' type='hidden' value='Task'>
               <input id='base_task_template_id' name='base_task[template_id]' type='hidden'>
               <div class='form-group'>
                 <div class='page-title col-md-12'>
                   <div class='pull-left'>
-                    <h3>Редактирование задачи</h3>
+                    <h3>Новая задача</h3>
                   </div>
                 </div>
               </div>
@@ -158,7 +154,7 @@
                 </label>
                 <div class='col-sm-10'>
                   <div class='input-group'>
-                    <input class='form-control' id='base_task_title' name='base_task[title]' placeholder='Новая задача' role='title' size='30' type='text' value='Test test test task'>
+                    <input class='form-control' id='base_task_title' name='base_task[title]' placeholder='Новая задача' role='title' size='30' style='cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;' type='text'>
                     <div class='input-group-addon' data-original-title='Формулировка задачи должна быть понятна исполнителю. Правильно поставленная задача - половина успеха! Ознакомьтесь с нашими рекомендациями по формулировке задач в разделе Помощь.' role-bootstrap-tooltip='ready' title=''>
                       <div class='fa fa-question-circle'></div>
                     </div>
@@ -186,23 +182,26 @@
                   Сообщество
                 </label>
                 <div class='col-sm-5'>
-                  <select class='form-control' data-allow-clear='true' data-ignore-value='290' disabled='disabled' id='base_task_community_id' name='base_task[community_id]' placeholder='Выбрать сообщество'>
-                    <option selected='selected' value='290'>Личная задача</option>
-                    <option value='291'>Fake community</option>
+                  <select class='form-control' data-allow-clear='true' data-ignore-value='5' id='base_task_community_id' name='base_task[community_id]' placeholder='Выбрать сообщество'>
+                    <option value='5'>Личная задача</option>
+                    <option value='8'>REC</option>
+                    <option value='307'>VLAD</option>
+                    <option value='10'>test</option>
+                    <option value='306'>Садоводы</option>
                   </select>
                 </div>
                 <div class='col-md-1 form-control-static nopadding-left'>
                   <div class='fa fa-question-circle' data-original-title='Укажите сообщество, в рамках которого Вы хотите поставить задачу' role-bootstrap-tooltip='ready' title=''></div>
                 </div>
               </div>
-              <div class='form-group show' role='task-executor'>
+              <div class='form-group' role='task-executor' style='display: none;'>
                 <label class='control-label col-sm-2'>
                   Исполнитель
                 </label>
                 <div class='col-sm-5'>
-                  <div class='select2-container select-two chained-select' id='s2id_base_task_executor_id' style='width: 436px;'>
+                  <div class='select2-container select-two chained-select' id='s2id_base_task_executor_id' style='width: 100%;'>
                     <a class='select2-choice' href='javascript:void(0)' onclick='return false;' tabindex='-1'>
-                      <span class='select2-chosen'>Александр Мещеряков</span>
+                      <span class='select2-chosen'> </span>
                       <abbr class='select2-search-choice-close'></abbr>
                       <span class='select2-arrow'>
                         <b></b>
@@ -216,29 +215,27 @@
                       <ul class='select2-results'></ul>
                     </div>
                   </div>
-                  <select class='select-two chained-select select2-offscreen' data-allow-clear='true' data-chained-select='/communities/__base_task%5Bcommunity_id%5D__/executors?per=500' data-skip-init-req='true' id='base_task_executor_id' name='base_task[executor_id]' placeholder='Выбрать исполнителя' role-chained-select='ready' role-select-two='ready' role='executor-select' tabindex='-1'>
-                    <option selected='selected' value='203'>Александр Мещеряков</option>
-                  </select>
+                  <select class='select-two chained-select select2-offscreen' data-allow-clear='true' data-chained-select='/communities/__base_task%5Bcommunity_id%5D__/executors?per=500' data-skip-init-req='true' id='base_task_executor_id' name='base_task[executor_id]' placeholder='Выбрать исполнителя' role-chained-select='ready' role-select-two='ready' role='executor-select' tabindex='-1'></select>
                 </div>
                 <div class='col-md-1 form-control-static nopadding-left'>
                   <div class='fa fa-question-circle' data-original-title='Укажите сотрудника, которому Вы хотите поставить задачу' role-bootstrap-tooltip='ready' title=''></div>
                 </div>
               </div>
               <div class='form-group' role-datetime-field='ready'>
-                <input id='base_task_start_date' name='base_task[start_date]' role='start-date' type='hidden' value='2014-08-24 20:00:00'>
+                <input id='base_task_start_date' name='base_task[start_date]' role='start-date' type='hidden' value='2014-08-18 00:00:00 +0400'>
                 <label class='control-label col-sm-2'>
                   Начинается:
                 </label>
                 <div class='col-sm-10'>
                   <div class='input-group-inline'>
                     <div class='input-group'>
-                      <input class='date-input zebra-date-picker form-control' data-pair='input-end-date' data-show-clear-date='false' data-zdp_format='d.m.Y' disabled='disabled' id='task-start-date' readonly='readonly' role-zebra-date-picker='ready' type='text' value='25.08.2014'>
+                      <input class='date-input zebra-date-picker form-control' data-pair='input-end-date' data-show-clear-date='false' data-zdp_format='d.m.Y' disabled='disabled' id='task-start-date' readonly='readonly' role-zebra-date-picker='ready' type='text' value='17.08.2014'>
                       <div class='input-group-addon'>
                         <div class='fa fa-calendar-o fa-lg'></div>
                       </div>
                     </div>
                     <div class='input-group'>
-                      <input class='time-input form-control' type='text' value='00:00'>
+                      <input class='time-input form-control' type='text' value='22:57'>
                       <div class='input-group-addon' data-original-title='Срок начала задачи' role-bootstrap-tooltip='ready' title=''>
                         <div class='fa fa-question-circle'></div>
                       </div>
@@ -247,20 +244,20 @@
                 </div>
               </div>
               <div class='form-group' role-datetime-field='ready'>
-                <input id='base_task_end_date' name='base_task[end_date]' role='end-date' type='hidden' value='2014-08-29 19:59:00'>
+                <input id='base_task_end_date' name='base_task[end_date]' role='end-date' type='hidden' value='2014-08-18 23:59:59 +0400'>
                 <label class='control-label col-sm-2'>
                   Выполнить к:
                 </label>
                 <div class='col-sm-10'>
                   <div class='input-group-inline'>
                     <div class='input-group'>
-                      <input class='date-input zebra-date-picker form-control' data-direction-start='true' data-show-clear-date='false' data-zdp_format='d.m.Y' disabled='disabled' id='task-end-date' readonly='readonly' role-zebra-date-picker='ready' role='input-end-date' type='text' value='29.08.2014'>
+                      <input class='date-input zebra-date-picker form-control' data-direction-start='true' data-show-clear-date='false' data-zdp_format='d.m.Y' id='task-end-date' readonly='readonly' role-zebra-date-picker='ready' role='input-end-date' type='text' value='18.08.2014'>
                       <div class='input-group-addon' test-input-end-date=''>
                         <div class='fa fa-calendar-o fa-lg'></div>
                       </div>
                     </div>
                     <div class='input-group'>
-                      <input class='time-input form-control' type='text' value='23:59'>
+                      <input class='time-input form-control' type='text' value='22:59'>
                       <div class='input-group-addon' data-original-title='Срок, к которому Вы хотите видеть задачу выполненной' role-bootstrap-tooltip='ready' title=''>
                         <div class='fa fa-question-circle'></div>
                       </div>
@@ -270,13 +267,13 @@
                 <div class='col-md-5 col-md-offset-2'>
                   <div class='input-group-inline task-proposed-end-dates' role='task-proposed-end-dates'>
                     <div class='input-group'>
-                      <a data-date='25.08.2014' href='#'>сегодня, 25 августа</a>
+                      <a data-date='18.08.2014' href='#'>сегодня, 18 августа</a>
                     </div>
                     <div class='input-group'>
-                      <a data-date='26.08.2014' href='#'>завтра, 26 августа</a>
+                      <a data-date='19.08.2014' href='#'>завтра, 19 августа</a>
                     </div>
                     <div class='input-group'>
-                      <a data-date='27.08.2014' href='#'>27 августа</a>
+                      <a data-date='20.08.2014' href='#'>20 августа</a>
                     </div>
                   </div>
                 </div>
@@ -291,7 +288,7 @@
                   </label>
                 </div>
               </div>
-              <div class='form-group task-repeat-form' role='repeat-form'>
+              <div class='form-group task-repeat-form' role='repeat-form' style='display: block;'>
                 <div class='form-field-gray col-md-12'>
                   <div class='form-group'>
                     <div class='input-group-inline'>
@@ -480,18 +477,18 @@
                     <a class='save-as-template btn btn-default' data-original-title='Сохраните условия текущей задачи для создания новых' role-bootstrap-tooltip='ready' role='save-as-template' title=''>
                       Сохранить как шаблон
                     </a>
-                    <a class='btn link-grey' href='/tasks/2330'>Отменить</a>
                   </div>
                   <div class='pull-right' data-original-title='Отправьте задачу в работу' role-bootstrap-tooltip='ready' title=''>
-                    <input class='btn btn-success' data-disable-with='Отправка...' name='commit' role='input-submit' type='submit' value='Сохранить'>
+                    <input class='btn btn-success' data-disable-with='Отправка...' name='commit' role='input-submit' type='submit' value='Поставить задачу'>
                   </div>
                 </div>
               </div>
-              <div data-blueprint='&lt;li class=&#x0027;fields&#x0027; role=&#x0027;todo-fields&#x0027;&gt;&#x000A;&lt;input class="todo-body" id="base_task_todo_items_attributes_new_todo_items_title" name="base_task[todo_items_attributes][new_todo_items][title]" placeholder="Добавить пункт" role="todo-title" size="30" type="text" /&gt;&#x000A;&lt;input id="base_task_todo_items_attributes_new_todo_items__destroy" name="base_task[todo_items_attributes][new_todo_items][_destroy]" type="hidden" value="false" /&gt;&lt;a href="javascript:void(0)" class="delete remove_nested_fields" data-association="todo_items"&gt;&lt;i class="icon-remove" &gt;&lt;/i&gt;&lt;/a&gt;&#x000A;&lt;/li&gt;' id='todo_items_fields_blueprint' style='display: none'></div>
-              <div data-blueprint='&lt;div class=&#x0027;file fields&#x0027; role=&#x0027;file&#x0027;&gt;&#x000A;&lt;a href="#"&gt;&lt;span class=&#x0027;fa fa-file-text-o fa-lg&#x0027;&gt;&lt;/span&gt;&#x000A;&lt;span class=&#x0027;file-name&#x0027;&gt;&#x000A;file_name&#x000A;&lt;/span&gt;&#x000A;&lt;/a&gt;&lt;input id="base_task_attachments_attributes_new_attachments_file" name="base_task[attachments_attributes][new_attachments][file]" style="display:none" type="file" /&gt;&#x000A;&lt;input id="base_task_attachments_attributes_new_attachments__destroy" name="base_task[attachments_attributes][new_attachments][_destroy]" type="hidden" value="false" /&gt;&lt;a href="javascript:void(0)" class="delete remove_nested_fields" data-association="attachments" data-confirm="Вы уверены?"&gt;&lt;i class="icon-remove" &gt;&lt;/i&gt;&lt;/a&gt;&#x000A;&lt;/div&gt;' id='attachments_fields_blueprint' style='display: none'></div>
+              <div data-blueprint='&lt;li class=&#x0027;fields&#x0027; role=&#x0027;todo-fields&#x0027;&gt;&#x000A;              &lt;input class="todo-body" id="base_task_todo_items_attributes_new_todo_items_title" name="base_task[todo_items_attributes][new_todo_items][title]" placeholder="Добавить пункт" role="todo-title" size="30" type="text" /&gt;&#x000A;              &lt;input id="base_task_todo_items_attributes_new_todo_items__destroy" name="base_task[todo_items_attributes][new_todo_items][_destroy]" type="hidden" value="false" /&gt;&lt;a href="javascript:void(0)" class="delete remove_nested_fields" data-association="todo_items"&gt;&lt;i class="icon-remove" &gt;&lt;/i&gt;&lt;/a&gt;&#x000A;            &lt;/li&gt;&#x000A;            ' id='todo_items_fields_blueprint' style='display: none'></div>
+              <div data-blueprint='  &lt;div class=&#x0027;file fields&#x0027; role=&#x0027;file&#x0027;&gt;&#x000A;                &lt;a href="#"&gt;&lt;span class=&#x0027;fa fa-file-text-o fa-lg&#x0027;&gt;&lt;/span&gt;&#x000A;            &lt;span class=&#x0027;file-name&#x0027;&gt;&#x000A;              file_name&#x000A;            &lt;/span&gt;&#x000A;            &lt;/a&gt;&#x000A;                &lt;input id="base_task_attachments_attributes_new_attachments_file" name="base_task[attachments_attributes][new_attachments][file]" style="display:none" type="file" /&gt;&#x000A;                &lt;input id="base_task_attachments_attributes_new_attachments__destroy" name="base_task[attachments_attributes][new_attachments][_destroy]" type="hidden" value="false" /&gt;&lt;a href="javascript:void(0)" class="delete remove_nested_fields" data-association="attachments" data-confirm="Вы уверены?"&gt;&lt;i class="icon-remove" &gt;&lt;/i&gt;&lt;/a&gt;&#x000A;              &lt;/div&gt;&#x000A;            ' id='attachments_fields_blueprint' style='display: none'></div>
             </form>
           </section>
         </div>
+        <!-- = render 'shared/footer' -->
       </div>
     </div>
   </body>
