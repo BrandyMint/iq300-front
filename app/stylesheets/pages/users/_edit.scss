@@ -18,9 +18,11 @@
         text-align: left;
       }
     }
-    .email-reports {
+    .email-reports, .confidential-settings {
       .inner {
         margin-left: 10px;
+        display: inline-flex;
+        margin-bottom: 15px;
       }
       label {
         width: 270px;

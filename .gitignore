@@ -20,3 +20,6 @@
 /app/vendor
 .*~imageoptim.*
 /.idea/
+
+/.ruby-version
+/.ruby-gemset
