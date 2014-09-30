@@ -53,6 +53,7 @@
 @import "elements/page-title";
 @import "elements/status";
 @import "elements/task";
+@import "elements/buttons";
 // old
 @import "elements/image-cropper";
 @import "elements/user-widget";
@@ -162,6 +163,8 @@
 
 @import "pages/paragraphs/gantt";
 @import "pages/paragraphs/view";
+
+@import 'pages/communities/invites/base';
 
 // Dirty css for temporary use
 @import "helpers/dirty";

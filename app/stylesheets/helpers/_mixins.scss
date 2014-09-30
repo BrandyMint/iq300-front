@@ -272,3 +272,15 @@ $main_radius: 3px !default;
     top: $top;
   }
 }
+
+@mixin badge-style($bg-color) {
+  color: $base-color;
+  font-size: 10px;
+  font-weight: 700;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding: 0.2em 1em;
+  background-color: $bg-color;
+  display: inline-block;
+  border-radius: 2px;
+}

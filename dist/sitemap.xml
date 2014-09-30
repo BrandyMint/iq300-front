@@ -9,8 +9,8 @@
   <!-- <![endif] -->
   <head>
     <title>iq300 frontend</title>
-    <link href="stylesheets/app.css?1411551736" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/static_fixes.css?1411369898" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/app.css?1412059194" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/static_fixes.css?1412059443" rel="stylesheet" type="text/css" />
   </head>
   <body class='page'>
     <div id='container'>
@@ -18,62 +18,68 @@
         <?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
           <url>
+            <loc>http://www.brandymint.com/communities/invites/index.html</loc>
+            <lastmod>2014-09-30T00:00:00+04:00</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+          </url>
+          <url>
             <loc>http://www.brandymint.com/index.html</loc>
-            <lastmod>2014-09-24T00:00:00+04:00</lastmod>
+            <lastmod>2014-09-30T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/notifications/index.html</loc>
-            <lastmod>2014-09-24T00:00:00+04:00</lastmod>
+            <lastmod>2014-09-30T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/profile.html</loc>
-            <lastmod>2014-09-24T00:00:00+04:00</lastmod>
+            <lastmod>2014-09-30T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/636.html</loc>
-            <lastmod>2014-09-24T00:00:00+04:00</lastmod>
+            <lastmod>2014-09-30T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/879.html</loc>
-            <lastmod>2014-09-24T00:00:00+04:00</lastmod>
+            <lastmod>2014-09-30T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/index.html</loc>
-            <lastmod>2014-09-24T00:00:00+04:00</lastmod>
+            <lastmod>2014-09-30T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show.html</loc>
-            <lastmod>2014-09-24T00:00:00+04:00</lastmod>
+            <lastmod>2014-09-30T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/tasks_new.html</loc>
-            <lastmod>2014-09-24T00:00:00+04:00</lastmod>
+            <lastmod>2014-09-30T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/tasks/index.html</loc>
-            <lastmod>2014-09-24T00:00:00+04:00</lastmod>
+            <lastmod>2014-09-30T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/tasks/show.html</loc>
-            <lastmod>2014-09-24T00:00:00+04:00</lastmod>
+            <lastmod>2014-09-30T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
@@ -82,4 +88,4 @@
     </div>
   </body>
 </html>
-<script src="javascripts/application.js?1411551581" type="text/javascript"></script>
+<script src="javascripts/application.js?1412059453" type="text/javascript"></script>
