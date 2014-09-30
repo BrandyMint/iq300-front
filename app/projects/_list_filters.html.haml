@@ -1,0 +1,36 @@
+%section.tasks-filters-column.filters-column
+  %ul.with-subfolders.projects-filter.projects-filter-initialized
+    %li.expanded.folder.nested{"data-folder" => "all"}
+      .expander.expander-initialized
+      %a Проекты
+      %span.counter
+      %ul.flat
+        %li.folder{"data-folder" => "draft"}
+          %a Инициализация
+          %span.grey-counter
+        %li.folder{"data-folder" => "scenario"}
+          %a Планирование
+          %span.grey-counter 1
+        %li.active.folder{"data-folder" => "in_work"}
+          %a В работе
+          %span.grey-counter 2
+        %li.folder{"data-folder" => "archived"}
+          %a Архив
+          %span.grey-counter 1
+        %li.folder{"data-folder" => "canceled"}
+          %a Отмененные
+          %span.grey-counter 1
+    %li.flat.folder{"data-folder" => "template"}
+      %a Шаблоны
+    %li.flat.folder{"data-folder" => "favorite"}
+      %a Избранные
+    %li.folder.nested{"data-folder" => "all"}
+      .expander.expander-initialized
+      %a Роль
+      %span.counter.related
+      %ul.flat
+        %li.folder{"data-folder" => "manager"}
+          %a Менеджер
+        %li.folder{"data-folder" => "member"}
+          %a Участник
+

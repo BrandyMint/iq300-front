@@ -9,10 +9,10 @@
   <!-- <![endif] -->
   <head>
     <title>iq300 frontend</title>
-    <link href="../../stylesheets/app.css?1412059194" rel="stylesheet" type="text/css" />
-    <link href="../../stylesheets/static_fixes.css?1412059443" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/app.css?1411993547" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/static_fixes.css?1411993272" rel="stylesheet" type="text/css" />
   </head>
-  <body class='tasks-index'>
+  <body class='tasks-show'>
     <div id='container'>
       <div id='wrapper'>
         <header class='header-global group'>
@@ -45,7 +45,7 @@
           <input id='app_signed_in_user_id' name='app_signed_in_user_id' type='hidden' value='1757'>
           <input id='pusher_app_key' name='pusher_app_key' type='hidden' value='7baa6a182eefe7314de0'>
         </header>
-        <div class='content content-global display-mode display-mode-initialized' data-initial-action='show' filters='false' full_view='true' list='false' view='true'>
+        <div class='content content-global display-mode' data-initial-action='show' filters='false' full_view='true' list='false' role-display-mode='ready' view='true'>
           <section class='top-panel'>
             <div class='pull-left'>
               <a class='navigation' href='#' onclick="$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;">
@@ -57,38 +57,35 @@
               </a>
             </div>
           </section>
-          <nav class='nav-global menu-list menu-list-initialized' data-channel='presence-5:notifications' data-remote='true'>
+          <nav class='nav-global menu-list menu-list-initialized' data-channel='presence-1757:notifications' data-remote='true'>
             <div class='logo'>
               <a href='/' title='IQ300 System'>
-                <img alt='IQ300' class='image-x1 img-corrector-initialized' src='/assets/logo_x1_new.png'>
-                <img alt='IQ300' class='image-x2 img-corrector-initialized' src='/assets/logo_x2_new.png'>
+                <img alt="" width="95" height="95" src="../../images/logo_x1_new.png?1411993272" />
+                <img alt="" width="190" height="190" src="../../images/logo_x2_new.png?1411993272" />
               </a>
             </div>
             <ul>
               <li class='menu-item notifications' data-params='{"folder":"new"}' data-url='/notifications'>
-                <div class='html-notifier html-notifier-initialized' data-channel='presence-5:notifications' data-redirect-url='/notifications?folder=new' data-url='/notifications.count?folder=new'>
+                <div class='html-notifier html-notifier-initialized' data-channel='presence-1757:notifications' data-redirect-url='/notifications?folder=new' data-url='/notifications.count?folder=new'>
                   <audio id='notice-audio'>
                     <source src='/audios/notify.wav' type='audio/wav'>
                   </audio>
                 </div>
-                <a href='/notifications'>
-                  <div class='picture'>
-                    <i class='icon-bell'></i>
-                    <sup>1</sup>
-                  </div>
-                  <span>Уведомления</span>
+                <a href="/notifications"><div class='picture'>
+                  <i class='icon-bell'></i>
+                  <sup>3</sup>
+                </div>
+                <span>Уведомления</span>
                 </a>
               </li>
-              <li class='active menu-item tasks' data-params='{"overview":5}' data-url='/tasks'>
-                <a href='/tasks'>
-                  <div class='picture'>
-                    <i class='icon-list-alt'></i>
-                    <sup>4</sup>
-                  </div>
-                  <span>Задачи</span>
+              <li class='menu-item tasks' data-params='{"overview":1757}' data-url='/tasks'>
+                <a href="/tasks"><div class='picture'>
+                  <i class='icon-list-alt'></i>
+                </div>
+                <span>Задачи</span>
                 </a>
               </li>
-              <li class='menu-item projects not-initialize' data-params='null' data-url='/projects'>
+              <li class='active menu-item projects not-initialize' data-params='null' data-url='/projects'>
                 <a href='/projects?folder=in_work'>
                   <div class='picture'>
                     <i class='icon-books'></i>
@@ -138,129 +135,22 @@
               </li>
             </ul>
           </nav>
-          <section class='tasks-filters-column filters-column filters-label section-navigation' role='tasks-filter'>
-            <ul class='with-subfolders tasks-filter' data-channel='presence-5:base_tasks'>
-              <li class='folder actual' data-params='{"folder":"actual"}' role='folder'>
-                <a>Задачи</a>
-              </li>
-              <li class='folder inbox' data-params='{"folder":"inbox"}' role='folder'>
-                <a>Входящие</a>
-                <span class='counter' data-params='{"by_status":"new","folder":"inbox"}' role='counter' type='new-tasks'></span>
-              </li>
-              <li class='folder outbox' data-params='{"folder":"outbox"}' role='folder'>
-                <a>Исходящие</a>
-                <span class='counter' data-params='{"by_statuses":["completed","refused"],"folder":"outbox"}' role='counter' type='to-accept-tasks'></span>
-              </li>
-              <li class='folder watchable' data-params='{"folder":"watchable"}' role='folder'>
-                <a>Наблюдаемые</a>
-              </li>
-              <li class='folder archive' data-params='{"folder":"archive"}' role='folder'>
-                <a>Архив</a>
-              </li>
-              <li class='folder templates' data-params='{"folder":"templates"}' role='folder'>
-                <a>Шаблоны</a>
-              </li>
-            </ul>
-            <div class='task-categories' role='task-categories-filter'>
-              <span role='expander'>
-                Категории
-                <i class='fa fa-angle-right'></i>
-              </span>
-              <div class='form-horizontal'>
-                <div class='form-group form-group-sm' data-category='dvdsvdsv' role='category'>
-                  <div class='col-sm-9 small'>
-                    <div class='checkbox'>
-                      <label>
-                        <input type='checkbox'>
-                        dvdsvdsv
-                      </label>
-                    </div>
-                  </div>
-                  <div class='col-sm-3 small'>
-                    <span data-params='categories=dvdsvdsv' data-url='/error_reports'>
-                      2
-                    </span>
-                  </div>
-                </div>
-                <div class='form-group form-group-sm' data-category='juinoi' role='category'>
-                  <div class='col-sm-9 small'>
-                    <div class='checkbox'>
-                      <label>
-                        <input type='checkbox'>
-                        juinoi
-                      </label>
-                    </div>
-                  </div>
-                  <div class='col-sm-3 small'>
-                    <span data-params='categories=juinoi' data-url='/error_reports'>
-                      2
-                    </span>
-                  </div>
-                </div>
-                <div class='form-group form-group-sm' data-category='ijoijo' role='category'>
-                  <div class='col-sm-9 small'>
-                    <div class='checkbox'>
-                      <label>
-                        <input type='checkbox'>
-                        ijoijo
-                      </label>
-                    </div>
-                  </div>
-                  <div class='col-sm-3 small'>
-                    <span data-params='categories=ijoijo' data-url='/error_reports'>
-                      1
-                    </span>
-                  </div>
-                </div>
-                <div class='form-group form-group-sm' data-category='ewfewf' role='category'>
-                  <div class='col-sm-9 small'>
-                    <div class='checkbox'>
-                      <label>
-                        <input type='checkbox'>
-                        ewfewf
-                      </label>
-                    </div>
-                  </div>
-                  <div class='col-sm-3 small'>
-                    <span data-params='categories=ewfewf' data-url='/error_reports'>
-                      1
-                    </span>
-                  </div>
-                </div>
-                <div class='form-group form-group-sm' data-category='111' role='category'>
-                  <div class='col-sm-9 small'>
-                    <div class='checkbox'>
-                      <label>
-                        <input type='checkbox'>
-                        111
-                      </label>
-                    </div>
-                  </div>
-                  <div class='col-sm-3 small'>
-                    <span data-params='categories=111' data-url='/error_reports'>
-                      1
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class='view-column task-view-column task-view-column-initialized' data-channel-template='private-base_task-%id%:update' data-channel='private-base_task-121:create,update,destroy' data-status='browsed' data-url='/tasks/121' test-task-view=''>
+          <section class='view-column task-view-column' data-channel-template='private-base_task-%id%:update' data-channel='private-base_task-65590:update' data-status='completed' data-url='/tasks/65590' role-task-view-column='ready' test-task-view=''>
             <div class='form-container'>
               <div class='page-title'>
                 <div class='pull-left title'>
                   <h3 class='task-title'>
-                    <div class='favorite favorite-view favorite-view-initialized'>
-                      <a data-method='put' href='/favorites?base_task_id=121' rel='nofollow'>
-                        <span class='fa fa-big icon-star-empty text-warning'></span>
+                    <div class='favorite favorite-view' role-favorite-view='ready'>
+                      <a data-method='put' href='/favorites?base_task_id=65590' rel='nofollow'>
+                        <span class='fa fa-big icon-star-empty star-favourite'></span>
                       </a>
                     </div>
-                    <span>fdvfdvfdvfd</span>
+                    <span>Сделать обзор макета страницы Задача</span>
                   </h3>
                   <div class='bread-crumbs'>
-                    <a href='/users/5'>Эльвир Нуриахметов</a>
+                    <a href='/users/76'>Алмаз Бикчурин</a>
                     <span class='fa fa-long-arrow-right'></span>
-                    <a href='/users/6'>Влад Никошнов</a>
+                    <a href='/users/1757'>Александр Владимирогородский</a>
                   </div>
                 </div>
                 <div class='pull-right task-status'>
@@ -312,15 +202,6 @@
             </ul>
             <div class='tab-content'>
               <div class='tab-pane active' id='task-details'>
-                <div class='row'>
-                  <div class='resource-watcher-subscription resource-watcher-subscription-initialized' data-url='/subscriptions?task_decorator_id=121'>
-                    <label class='checkbox' title='Вы не можете отписаться от уведомлений'>
-                      <input checked='checked' disabled='disabled' id='subscribe' name='subscribe' type='checkbox' value='1'>
-                      <i></i>
-                      Следить за изменениями
-                    </label>
-                  </div>
-                </div>
                 <div class='form-group events' role='actions-field' style='display: block;'>
                   <div class='form-field'>
                     <div class='pull-left'>
@@ -348,7 +229,7 @@
                               Номер задачи:
                             </td>
                             <td>
-                              121
+                              65590
                             </td>
                           </tr>
                           <tr>
@@ -356,7 +237,7 @@
                               Сообщество:
                             </td>
                             <td>
-                              <a href='/communities/8'>REC</a>
+                              <a href='/communities/956'>Айкью 300, ООО</a>
                             </td>
                           </tr>
                           <tr>
@@ -364,7 +245,7 @@
                               Создана:
                             </td>
                             <td>
-                              18 августа 2014 в 17:59
+                              17 июня 2014 в 15:46
                             </td>
                           </tr>
                         </tbody>
@@ -373,15 +254,24 @@
                     <div class='col-md-6'>
                       <table class='table-info table-responsive'>
                         <tbody>
-                          <tr></tr>
                           <tr>
                             <td>
-                              Категории:
+                              Базовая задача:
                             </td>
-                            <td class='badges-list categories-view categories-view-initialized'>
+                            <td>
+                              Компоновка раздела Задачи
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <span data-original-title='Присваивайте категории задачам для более удобного поиска в списке задач' role-bootstrap-tooltip='ready' title=''>
+                                Категории:
+                              </span>
+                            </td>
+                            <td class='badges-list categories-view' role-categories-view='ready'>
                               <div class='label-tags'>
                                 <div class='add-button'>
-                                  <a class='with-plus-button add-tag' href='#'>
+                                  <a class='with-plus-button add-tag' data-original-title='Добавьте новую категорию к задаче' href='#' role-bootstrap-tooltip='ready' title=''>
                                     Добавить
                                     <span>
                                       <i class='icon-plus'></i>
@@ -392,9 +282,9 @@
                                   <form accept-charset='UTF-8' action='#' class='new-todo' method='post'>
                                     <div style='margin:0;padding:0;display:inline'>
                                       <input name='utf8' type='hidden' value='✓'>
-                                      <input name='authenticity_token' type='hidden' value='axzWGG14VvSmKixUNQHEmOOUnKTdQ8z4X7tp3IX6c+I='>
+                                      <input name='authenticity_token' type='hidden' value='uEWcLHYGGc3CWmAg2FbZlhOKDays7ebwCfdUXdj6d0I='>
                                     </div>
-                                    <div class='select2-container select2-container-multi select-two todo-body select-two-initialized' id='s2id__name' style='width: 100%;'>
+                                    <div class='select2-container select2-container-multi select-two todo-body' id='s2id__name' style='width: 100%;'>
                                       <ul class='select2-choices'>
                                         <li class='select2-search-field'>
                                           <input autocapitalize='off' autocomplete='off' autocorrect='off' class='select2-input select2-default' id='s2id_autogen1' spellcheck='false' style='width: 122%;' type='text'>
@@ -404,8 +294,6 @@
                                         <ul class='select2-results'></ul>
                                       </div>
                                     </div>
-                                    <input class='select-two todo-body select-two-initialized select2-offscreen' data-tags='[]' data-url='/categories/121?task_decorator_id=121' id='_name' name='#[name]' placeholder='Добавить категорию' size='30' tabindex='-1' type='text'>
-                                    <input type='reset' value='Отменить'>
                                   </form>
                                 </div>
                               </div>
@@ -416,18 +304,20 @@
                     </div>
                   </div>
                 </div>
-                <div class='form-group todo-list' role-ready='todo-list'>
+                <div class='form-group todo-list' role-todo-list='ready'>
                   <div class='page-title'>
                     <div class='pull-left'>
                       <h3 class='task-page-section-title'>
-                        Чек-лист
+                        <span data-original-title='С помощью чек-листов Вы можете создавать список работ по задаче и отслеживать прогресс ее исполнения' data-placement='right' role-bootstrap-tooltip='ready' title=''>
+                          Чек-лист
+                        </span>
                       </h3>
                     </div>
                     <div class='pull-right'>
                       <span class='text-muted' data-text='Выполнено' role='progress'>
-                        Выполнено 0/1
+                        Выполнено 0/0
                       </span>
-                      <a class='add-todo btn btn-default add-button' href='#'>
+                      <a class='add-todo btn btn-default add-button' data-original-title='Добавьте новый пункт в чек-лист задачи' href='#' role-bootstrap-tooltip='ready' title=''>
                         <span class='fa fa-plus-circle'></span>
                         Добавить
                       </a>
@@ -475,9 +365,9 @@
                   </div>
                 </div>
                 <div class='form-group'>
-                  <div class='page-title' role-ready='task-attachments'>
+                  <div class='page-title' role-task-attachments='ready'>
                     <div class='pull-left'>
-                      <h3 class='task-page-section-title'>
+                      <h3 aria-describedby='tooltip155203' class='task-page-section-title' data-original-title='Вы можете добавить файлы к задаче' data-placement='right' role-bootstrap-tooltip='ready' title=''>
                         Файлы к задаче
                       </h3>
                       <div class='files'>
@@ -493,15 +383,17 @@
                       </div>
                     </div>
                     <div class='pull-right'>
-                      <a class='btn btn-default' href='#' role='new-attachment-button'>
+                      <a class='btn btn-default' data-original-title='Добавьте новый файл' data-placement='left' href='#' role-bootstrap-tooltip='ready' role='new-attachment-button' title=''>
                         <span class='fa fa-plus-circle'></span>
-                        <span class='title'>Добавить</span>
+                        <span class='title'>
+                          Добавить
+                        </span>
                       </a>
                       <div class='task-attachment-form'>
-                        <form accept-charset='UTF-8' action='/tasks/121/attachments' data-attachment-max-size='50' enctype='multipart/form-data' method='post'>
+                        <form accept-charset='UTF-8' action='/tasks/65590/attachments' data-attachment-max-size='50' enctype='multipart/form-data' method='post'>
                           <div style='margin:0;padding:0;display:inline'>
                             <input name='utf8' type='hidden' value='✓'>
-                            <input name='authenticity_token' type='hidden' value='axzWGG14VvSmKixUNQHEmOOUnKTdQ8z4X7tp3IX6c+I='>
+                            <input name='authenticity_token' type='hidden' value='uEWcLHYGGc3CWmAg2FbZlhOKDays7ebwCfdUXdj6d0I='>
                           </div>
                           <input class='task-attachment' id='attachments_attributes_file' name='attachments_attributes[file]' type='file'>
                         </form>
@@ -521,6 +413,72 @@
                       </a>
                     </div>
                   </div>
+                  <div class='task-box' data-group-id='all_tasks' data-group-title='Все задачи' data-href='https://beta.iq300.ru/tasks/66863' role='task-item' test-task=''>
+                    <div class='col-md-10'>
+                      <div class='row'>
+                        <div class='col-md-10'>
+                          <h4 class='fa text-warning fa-star-o' data-url='/favorites?base_task_id=66863' role='favorite-list-view'></h4>
+                          <h4 class='task-box-title-block'>
+                            <span class='title' data-original-title='Вместе со своим верстальщиком сделать маленький одностраничный прототип, чтобы увидеть в действии поведение холста вокруг центальной колонки' role-bootstrap-tooltip='ready' test-task-title='' title=''>
+                              Вместе со своим верстальщиком сделать маленький одностраничный прототип, чтобы увидеть в действии поведение холста вокруг центальной колонки
+                              <span class='small'>
+                                #66863
+                              </span>
+                            </span>
+                          </h4>
+                        </div>
+                      </div>
+                      <div class='row'>
+                        <div class='col-md-10'>
+                          <div class='text-muted'>
+                            <span>
+                              <span class='fa fa-users'></span>
+                              Айкью 300, ООО
+                            </span>
+                            <span></span>
+                            [
+                            <a class='user task-box-user' data-href='/users/76' role='user'>
+                              Алмаз Бикчурин
+                            </a>
+                            →
+                            <a class='user task-box-user' data-href='/users/1757' role='user'>
+                              Мне
+                            </a>
+                            ]
+                          </div>
+                        </div>
+                      </div>
+                      <div class='row'>
+                        <div class='col-md-10'>
+                          <div class='text-muted'>
+                            Без проекта
+                            | Изменилась 17 июля
+                          </div>
+                        </div>
+                      </div>
+                      <div class='row'>
+                        <div class='col-md-7'>
+                          <div class='label label-default'>
+                            Выполнена
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='col-md-2'>
+                      <div class='task-box-status-block'>
+                        <div class='status-date task-box-status-date'>
+                          <span class='day-list'>
+                            21
+                          </span>
+                          <span class='month'>
+                            Июнь
+                          </span>
+                        </div>
+                        <br class='visible-md visible-lg'>
+                        <div class='clearfix'></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -530,4 +488,4 @@
     </div>
   </body>
 </html>
-<script src="../../javascripts/application.js?1412059453" type="text/javascript"></script>
+<script src="../../javascripts/application.js?1411993272" type="text/javascript"></script>

@@ -1,9 +1,8 @@
-// Setup: custom vars, mixins and helpers
+// Setup: custom vars, mixins and base helpers
 // --------------------------------------
 @import "helpers/paths";
 @import "helpers/variables";
 @import "helpers/mixins";
-@import "helpers/icons";
 @import "helpers/extras";
 
 // Reset
@@ -15,6 +14,12 @@
 @import "bootstrap-sprockets";
 @import "framework/bootstrap";
 //@import "bootstrap";
+
+// other helpers
+@import "helpers/icons";
+@import "helpers/icons_icomoon";
+@import "helpers/utils";
+
 
 // Libs and plugins
 // --------------------------------------
@@ -29,6 +34,8 @@
 @import "libs/zebra-datepicker";
 @import "libs/pnotify";
 @import "libs/lightbox";
+@import "eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min";
+@import "libs/datetimepicker";
 
 
 // Base layout partials
@@ -58,6 +65,7 @@
 @import "elements/image-cropper";
 @import "elements/user-widget";
 @import "elements/buble-counter";
+@import "elements/star";
 @import "elements/expandable";
 @import "elements/adding-form";
 @import "elements/badges-list";
@@ -123,6 +131,10 @@
 @import "pages/projects/form";
 @import "pages/projects/list-column";
 @import "pages/projects/view-column";
+@import "pages/projects/show";
+@import "pages/projects/tasks";
+@import "pages/projects/gantt_custom";
+
 
 @import "pages/departments/list-column";
 @import "pages/departments/view-column";
@@ -161,7 +173,6 @@
 
 @import "pages/accessor_users/create";
 
-@import "pages/paragraphs/gantt";
 @import "pages/paragraphs/view";
 
 @import 'pages/communities/invites/base';

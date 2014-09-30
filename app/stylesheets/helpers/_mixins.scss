@@ -258,8 +258,8 @@ $main_radius: 3px !default;
   &:before {
     border-color: rgba($arrow-border-color, 0);
     border-#{nth(arrow-direction($direction), 1)}-color: $arrow-border-color;
-    border-width: $arrow-size;
-    margin-#{nth(arrow-direction($direction), 2)}: - $arrow-size;
+    border-width: $arrow-size + 1px;
+    margin-#{nth(arrow-direction($direction), 2)}: - $arrow-size - 1px;
   }
 }
 @mixin arrow-position-left($left: 50%) {
@@ -284,3 +284,5 @@ $main_radius: 3px !default;
   display: inline-block;
   border-radius: 2px;
 }
+
+

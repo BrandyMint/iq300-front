@@ -1,14 +1,15 @@
 .task-box {
 	border-left: solid 5px #eee;
 	padding: 10px 10px 10px 25px;
-  margin-bottom: 1px;
+  //border-bottom: 1px solid $gray-lighter;
+  @include box-shadow(0 1px 0 $gray-lighter);
   cursor: pointer;
   font-size: 12px;
   @include clear;
   @include transition(all);
   &:hover {
   	border-left-color: darken(#eee,10%);
-  	background-color: #f8f8f8;
+  	background-color: $gray-lightest;
   	border-top-color: transparent;
   	+ .task-box { border-top-color: transparent;}
   }
@@ -48,18 +49,26 @@
   .task-box-title-block {
     font-weight: bold;
   }
+  a {
+    color: $brand-primary
+  }
 }
-.task-overdue {
+.task-overdued {
 	border-left-color: $brand-danger;
-	&:hover {border-left-color: $brand-danger;}
-	.status-date {
-		color: $brand-danger;
-	}
-    &.task-new {
-      .task-box-title-block {
-        font-weight: bold;
-      }
+  border-left-color: $brand-danger;
+  background-color: $contentBackgroundColor;
+  &:hover {border-left-color: $brand-danger;}
+  a {
+    color: $brand-danger;
+  }
+  .status-date {
+    color: $brand-danger;
+  }
+  &.task-new {
+    .task-box-title-block {
+      font-weight: bold;
     }
+  }
 }
 .task-with-change {
   background-color: $contentBackgroundColor;
@@ -72,18 +81,22 @@
   white-space: nowrap;
 }
 .task-box-status-date {
-  margin-top: -2px;
   white-space: nowrap;
+  position: relative;
 }
 .task-box-status-date-days {
-  position: absolute;
-  top: 2px;
+  font-size: 0.8em;
   @media screen and (max-width: 768px) {
     position: inherit;
   }
 }
+.task-box-status-date-hypen {
+  position: absolute;
+  margin-left: - $grid-gutter-width;
+  width: $grid-gutter-width;
+  text-align: center;
+}
 .task-box-status-block {
-  padding-top: 22px;
   text-align: center;
   @media screen and (max-width: 768px) {
     text-align: left;
@@ -94,6 +107,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-bottom: 0.2em;
 }
 
 .task-title {

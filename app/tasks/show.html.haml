@@ -1,9 +1,10 @@
 ---
-body_class: tasks-index
+layout: application
+body_class: tasks-show
 ---
 
 = partial 'shared/header'
-.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "show", :filters => "false", :full_view => "true", :list => "false", :view => "true"}
+.content.content-global.display-mode{"data-initial-action" => "show", :filters => "false", :full_view => "true", :list => "false", "role-display-mode" => "ready", :view => "true"}
   %section.top-panel
     .pull-left
       %a.navigation{:href => "#", :onclick => "$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;"}
@@ -11,136 +12,21 @@ body_class: tasks-index
       %a.btn.btn-lg{:href => "/tasks"}
         %span.fa.fa-reply
         Список задач
-  %nav.nav-global.menu-list.menu-list-initialized{"data-channel" => "presence-5:notifications", "data-remote" => "true"}
-    .logo
-      %a{:href => "/", :title => "IQ300 System"}
-        %img.image-x1.img-corrector-initialized{:alt => "IQ300", :src => "/assets/logo_x1_new.png"}/
-        %img.image-x2.img-corrector-initialized{:alt => "IQ300", :src => "/assets/logo_x2_new.png"}/
-    %ul
-      %li.menu-item.notifications{"data-params" => "{\"folder\":\"new\"}", "data-url" => "/notifications"}
-        .html-notifier.html-notifier-initialized{"data-channel" => "presence-5:notifications", "data-redirect-url" => "/notifications?folder=new", "data-url" => "/notifications.count?folder=new"}
-          %audio#notice-audio
-            %source{:src => "/audios/notify.wav", :type => "audio/wav"}
-        %a{:href => "/notifications"}
-          .picture
-            %i.icon-bell
-            %sup 1
-          %span Уведомления
-      %li.active.menu-item.tasks{"data-params" => "{\"overview\":5}", "data-url" => "/tasks"}
-        %a{:href => "/tasks"}
-          .picture
-            %i.icon-list-alt
-            %sup 4
-          %span Задачи
-      %li.menu-item.projects.not-initialize{"data-params" => "null", "data-url" => "/projects"}
-        %a{:href => "/projects?folder=in_work"}
-          .picture
-            %i.icon-books
-          %span Проекты
-      %li.menu-item.calendars.not-initialize{"data-params" => "null", "data-url" => "/calendar"}
-        %a{:href => "/calendar"}
-          .picture
-            %i.icon-calendar
-          %span Календарь
-      %li.menu-item.communities.not-initialize{"data-params" => "null", "data-url" => "/communities"}
-        %a{:href => "/communities?folder=my"}
-          .picture
-            %i.icon-briefcase
-          %span Сообщества
-      %li.menu-item.docs.not-initialize{"data-params" => "null", "data-url" => "/docs"}
-        %a{:href => "/docs?folder=my"}
-          .picture
-            %i.icon-paste
-          %span Документы
-      %li.menu-item.conversations{"data-params" => "{\"folder\":\"new\"}", "data-url" => "/conversations"}
-        %a{:href => "/conversations"}
-          .picture
-            %i.icon-comment-alt
-          %span Сообщения
-      %li.menu-item.contacts.not-initialize{"data-params" => "null", "data-url" => "/contacts"}
-        %a{:href => "/contacts?folder=all"}
-          .picture
-            %i.icon-group
-          %span Контакты
-  %section.tasks-filters-column.filters-column.filters-label.section-navigation{:role => "tasks-filter"}
-    %ul.with-subfolders.tasks-filter{"data-channel" => "presence-5:base_tasks"}
-      %li.folder.actual{"data-params" => "{\"folder\":\"actual\"}", :role => "folder"}
-        %a Задачи
-      %li.folder.inbox{"data-params" => "{\"folder\":\"inbox\"}", :role => "folder"}
-        %a Входящие
-        %span.counter{"data-params" => "{\"by_status\":\"new\",\"folder\":\"inbox\"}", :role => "counter", :type => "new-tasks"}
-      %li.folder.outbox{"data-params" => "{\"folder\":\"outbox\"}", :role => "folder"}
-        %a Исходящие
-        %span.counter{"data-params" => "{\"by_statuses\":[\"completed\",\"refused\"],\"folder\":\"outbox\"}", :role => "counter", :type => "to-accept-tasks"}
-      %li.folder.watchable{"data-params" => "{\"folder\":\"watchable\"}", :role => "folder"}
-        %a Наблюдаемые
-      %li.folder.archive{"data-params" => "{\"folder\":\"archive\"}", :role => "folder"}
-        %a Архив
-      %li.folder.templates{"data-params" => "{\"folder\":\"templates\"}", :role => "folder"}
-        %a Шаблоны
-    .task-categories{:role => "task-categories-filter"}
-      %span{:role => "expander"}
-        Категории
-        %i.fa.fa-angle-right
-      .form-horizontal
-        .form-group.form-group-sm{"data-category" => "dvdsvdsv", :role => "category"}
-          .col-sm-9.small
-            .checkbox
-              %label
-                %input{:type => "checkbox"}/
-                dvdsvdsv
-          .col-sm-3.small
-            %span{"data-params" => "categories=dvdsvdsv", "data-url" => "/error_reports"}
-              2
-        .form-group.form-group-sm{"data-category" => "juinoi", :role => "category"}
-          .col-sm-9.small
-            .checkbox
-              %label
-                %input{:type => "checkbox"}/
-                juinoi
-          .col-sm-3.small
-            %span{"data-params" => "categories=juinoi", "data-url" => "/error_reports"}
-              2
-        .form-group.form-group-sm{"data-category" => "ijoijo", :role => "category"}
-          .col-sm-9.small
-            .checkbox
-              %label
-                %input{:type => "checkbox"}/
-                ijoijo
-          .col-sm-3.small
-            %span{"data-params" => "categories=ijoijo", "data-url" => "/error_reports"}
-              1
-        .form-group.form-group-sm{"data-category" => "ewfewf", :role => "category"}
-          .col-sm-9.small
-            .checkbox
-              %label
-                %input{:type => "checkbox"}/
-                ewfewf
-          .col-sm-3.small
-            %span{"data-params" => "categories=ewfewf", "data-url" => "/error_reports"}
-              1
-        .form-group.form-group-sm{"data-category" => "111", :role => "category"}
-          .col-sm-9.small
-            .checkbox
-              %label
-                %input{:type => "checkbox"}/
-                111
-          .col-sm-3.small
-            %span{"data-params" => "categories=111", "data-url" => "/error_reports"}
-              1
-  %section.view-column.task-view-column.task-view-column-initialized{"data-channel" => "private-base_task-121:create,update,destroy", "data-channel-template" => "private-base_task-%id%:update", "data-status" => "browsed", "data-url" => "/tasks/121", "test-task-view" => ""}
+  = partial 'shared/navigation'
+  %section.view-column.task-view-column{"data-channel" => "private-base_task-65590:update", "data-channel-template" => "private-base_task-%id%:update", "data-status" => "completed", "data-url" => "/tasks/65590", "role-task-view-column" => "ready", "test-task-view" => ""}
     .form-container
       .page-title
         .pull-left.title
           %h3.task-title
-            .favorite.favorite-view.favorite-view-initialized
-              %a{"data-method" => "put", :href => "/favorites?base_task_id=121", :rel => "nofollow"}
-                %span.fa.fa-big.icon-star-empty.text-warning
-            %span fdvfdvfdvfd
+            .favorite.favorite-view{"role-favorite-view" => "ready"}
+              %a{"data-method" => "put", :href => "/favorites?base_task_id=65590", :rel => "nofollow"}
+                %span.fa.fa-big.icon-star-empty.star-favourite
+            %span Сделать обзор макета страницы Задача
+
           .bread-crumbs
-            %a{:href => "/users/5"} Эльвир Нуриахметов
+            %a{:href => "/users/76"} Алмаз Бикчурин
             %span.fa.fa-long-arrow-right
-            %a{:href => "/users/6"} Влад Никошнов
+            %a{:href => "/users/1757"} Александр Владимирогородский
         .pull-right.task-status
           .status-box
             .status-label.bg-info{"test-task-status" => ""}
@@ -155,6 +41,7 @@ body_class: tasks-index
                 18
               .month
                 Августа
+
     %ul.nav.nav-tabs.tabnav{"data-channel" => "presence-5:base_task-121", "data-container" => ".tab-content", "data-read-changes-url" => "/changes/read?base_task_id=121", "role-ready" => "tabnav", "test-tabnav" => ""}
       %li.active{"data-changes" => "base_tasks,todo_items,attachment_links"}
         %a{"data-target" => "task-details", :href => "/tasks/121"}
@@ -170,14 +57,9 @@ body_class: tasks-index
         %a{"data-target" => "task-discussions", :href => "/tasks/121/discussion?initial=true"}
           Обсуждения
           %span.badge{:role => "counter"} 1
+    
     .tab-content
       #task-details.tab-pane.active
-        .row
-          .resource-watcher-subscription.resource-watcher-subscription-initialized{"data-url" => "/subscriptions?task_decorator_id=121"}
-            %label.checkbox{:title => "Вы не можете отписаться от уведомлений"}
-              %input#subscribe{:checked => "checked", :disabled => "disabled", :name => "subscribe", :type => "checkbox", :value => "1"}/
-              %i
-              Следить за изменениями
         .form-group.events{:role => "actions-field", :style => "display: block;"}
           .form-field
             .pull-left
@@ -198,28 +80,33 @@ body_class: tasks-index
                     %td
                       Номер задачи:
                     %td
-                      121
+                      65590
                   %tr
                     %td
                       Сообщество:
                     %td
-                      %a{:href => "/communities/8"} REC
+                      %a{:href => "/communities/956"} Айкью 300, ООО
                   %tr
                     %td
                       Создана:
                     %td
-                      18 августа 2014 в 17:59
+                      17 июня 2014 в 15:46
             .col-md-6
               %table.table-info.table-responsive
                 %tbody
                   %tr
+                    %td
+                      Базовая задача:
+                    %td
+                      Компоновка раздела Задачи
                   %tr
                     %td
-                      Категории:
-                    %td.badges-list.categories-view.categories-view-initialized
+                      %span{"data-original-title" => "Присваивайте категории задачам для более удобного поиска в списке задач", "role-bootstrap-tooltip" => "ready", :title => ""}
+                        Категории:
+                    %td.badges-list.categories-view{"role-categories-view" => "ready"}
                       .label-tags
                         .add-button
-                          %a.with-plus-button.add-tag{:href => "#"}
+                          %a.with-plus-button.add-tag{"data-original-title" => "Добавьте новую категорию к задаче", :href => "#", "role-bootstrap-tooltip" => "ready", :title => ""}
                             Добавить
                             %span
                               %i.icon-plus
@@ -227,24 +114,23 @@ body_class: tasks-index
                           %form.new-todo{"accept-charset" => "UTF-8", :action => "#", :method => "post"}
                             %div{:style => "margin:0;padding:0;display:inline"}
                               %input{:name => "utf8", :type => "hidden", :value => "✓"}/
-                              %input{:name => "authenticity_token", :type => "hidden", :value => "axzWGG14VvSmKixUNQHEmOOUnKTdQ8z4X7tp3IX6c+I="}/
-                            #s2id__name.select2-container.select2-container-multi.select-two.todo-body.select-two-initialized{:style => "width: 100%;"}
+                              %input{:name => "authenticity_token", :type => "hidden", :value => "uEWcLHYGGc3CWmAg2FbZlhOKDays7ebwCfdUXdj6d0I="}/
+                            #s2id__name.select2-container.select2-container-multi.select-two.todo-body{:style => "width: 100%;"}
                               %ul.select2-choices
                                 %li.select2-search-field
                                   %input#s2id_autogen1.select2-input.select2-default{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :style => "width: 122%;", :type => "text"}/
                               .select2-drop.select2-drop-multi.select2-display-none
                                 %ul.select2-results
-                            %input#_name.select-two.todo-body.select-two-initialized.select2-offscreen{"data-tags" => "[]", "data-url" => "/categories/121?task_decorator_id=121", :name => "#[name]", :placeholder => "Добавить категорию", :size => "30", :tabindex => "-1", :type => "text"}/
-                            %input{:type => "reset", :value => "Отменить"}/
-        .form-group.todo-list{"role-ready" => "todo-list"}
+        .form-group.todo-list{"role-todo-list" => "ready"}
           .page-title
             .pull-left
               %h3.task-page-section-title
-                Чек-лист
+                %span{"data-original-title" => "С помощью чек-листов Вы можете создавать список работ по задаче и отслеживать прогресс ее исполнения", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
+                  Чек-лист
             .pull-right
               %span.text-muted{"data-text" => "Выполнено", :role => "progress"}
-                Выполнено 0/1
-              %a.add-todo.btn.btn-default.add-button{:href => "#"}
+                Выполнено 0/0
+              %a.add-todo.btn.btn-default.add-button{"data-original-title" => "Добавьте новый пункт в чек-лист задачи", :href => "#", "role-bootstrap-tooltip" => "ready", :title => ""}
                 %span.fa.fa-plus-circle
                 Добавить
           %div
@@ -276,9 +162,9 @@ body_class: tasks-index
                 %input.btn.btn-primary{:name => "commit", :type => "submit", :value => "Сохранить"}/
                 %input{:type => "reset", :value => "Отменить"}/
         .form-group
-          .page-title{"role-ready" => "task-attachments"}
+          .page-title{"role-task-attachments" => "ready"}
             .pull-left
-              %h3.task-page-section-title
+              %h3.task-page-section-title{"aria-describedby" => "tooltip155203", "data-original-title" => "Вы можете добавить файлы к задаче", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
                 Файлы к задаче
               .files
                 %span.attached-file{"role-ready" => "task-attachment"}
@@ -287,15 +173,17 @@ body_class: tasks-index
                     favicon (1).png
                   %a.attached-file-delete-btn{:href => "/tasks/121/attachments/52?file=52", :role => "remove-attachment"}
                     %i.fa.fa-times
+
             .pull-right
-              %a.btn.btn-default{:href => "#", :role => "new-attachment-button"}
+              %a.btn.btn-default{"data-original-title" => "Добавьте новый файл", "data-placement" => "left", :href => "#", :role => "new-attachment-button", "role-bootstrap-tooltip" => "ready", :title => ""}
                 %span.fa.fa-plus-circle
-                %span.title Добавить
+                %span.title
+                  Добавить
               .task-attachment-form
-                %form{"accept-charset" => "UTF-8", :action => "/tasks/121/attachments", "data-attachment-max-size" => "50", :enctype => "multipart/form-data", :method => "post"}
+                %form{"accept-charset" => "UTF-8", :action => "/tasks/65590/attachments", "data-attachment-max-size" => "50", :enctype => "multipart/form-data", :method => "post"}
                   %div{:style => "margin:0;padding:0;display:inline"}
                     %input{:name => "utf8", :type => "hidden", :value => "✓"}/
-                    %input{:name => "authenticity_token", :type => "hidden", :value => "axzWGG14VvSmKixUNQHEmOOUnKTdQ8z4X7tp3IX6c+I="}/
+                    %input{:name => "authenticity_token", :type => "hidden", :value => "uEWcLHYGGc3CWmAg2FbZlhOKDays7ebwCfdUXdj6d0I="}/
                   %input#attachments_attributes_file.task-attachment{:name => "attachments_attributes[file]", :type => "file"}/
         .form-group{"test-subtasks" => ""}
           .page-title.mbm
@@ -305,3 +193,45 @@ body_class: tasks-index
               %a.btn.btn-default{"data-original-title" => "", :href => "/tasks/new?parent_id=121", :role => "add-subtask-btn", :title => ""}
                 %span.fa.fa-plus-circle
                 Добавить
+          .task-box{"data-group-id" => "all_tasks", "data-group-title" => "Все задачи", "data-href" => "https://beta.iq300.ru/tasks/66863", :role => "task-item", "test-task" => ""}
+            .col-md-10
+              .row
+                .col-md-10
+                  %h4.fa.text-warning.fa-star-o{"data-url" => "/favorites?base_task_id=66863", :role => "favorite-list-view"}
+                  %h4.task-box-title-block
+                    %span.title{"data-original-title" => "Вместе со своим верстальщиком сделать маленький одностраничный прототип, чтобы увидеть в действии поведение холста вокруг центальной колонки", "role-bootstrap-tooltip" => "ready", "test-task-title" => "", :title => ""}
+                      Вместе со своим верстальщиком сделать маленький одностраничный прототип, чтобы увидеть в действии поведение холста вокруг центальной колонки
+                      %span.small
+                        \#66863
+              .row
+                .col-md-10
+                  .text-muted
+                    %span
+                      %span.fa.fa-users
+                      Айкью 300, ООО
+                    %span
+                    [
+                    %a.user.task-box-user{"data-href" => "/users/76", :role => "user"}
+                      Алмаз Бикчурин
+                    →
+                    %a.user.task-box-user{"data-href" => "/users/1757", :role => "user"}
+                      Мне
+                    ]
+              .row
+                .col-md-10
+                  .text-muted
+                    Без проекта
+                    | Изменилась 17 июля
+              .row
+                .col-md-7
+                  .label.label-default
+                    Выполнена
+            .col-md-2
+              .task-box-status-block
+                .status-date.task-box-status-date
+                  %span.day-list
+                    21
+                  %span.month
+                    Июнь
+                %br.visible-md.visible-lg/
+                .clearfix

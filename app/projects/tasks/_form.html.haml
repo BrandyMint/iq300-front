@@ -1,0 +1,107 @@
+- project_id = locals[:project_id] || ''
+
+%form#edit_base_task_2330.form-horizontal.project-task-form{"accept-charset" => "UTF-8", :action => "/tasks/2330", :enctype => "multipart/form-data", :method => "post"}
+  %div{:style => "margin:0;padding:0;display:inline"}
+    %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+    %input{:name => "_method", :type => "hidden", :value => "put"}/
+    %input{:name => "authenticity_token", :type => "hidden", :value => "c7G+eXfYvyf3DE8wZOs6br5Ie9CYtG4AUUsidktbgA8="}/
+  %input#base_task_kind.task-kind-input{:name => "base_task[kind]", :type => "hidden", :value => "Task"}/
+  %input#base_task_template_id{:name => "base_task[template_id]", :type => "hidden"}/
+  -#.form-group
+    .page-title.col-md-12
+      .pull-left
+        %h3 Редактирование задачи
+  .form-group
+    .col-sm-2
+      %label.control-label
+        Название
+    .col-sm-10
+      .input-group
+        %input#base_task_title.form-control{:name => "base_task[title]", :placeholder => "Новая задача", :role => "title", :size => "30", :type => "text", :value => "Test test test task"}/
+        .input-group-addon{"data-original-title" => "Формулировка задачи должна быть понятна исполнителю. Правильно поставленная задача - половина успеха! Ознакомьтесь с нашими рекомендациями по формулировке задач в разделе Помощь.", "role-bootstrap-tooltip" => "ready", :title => ""}
+          .fa.fa-question-circle
+      .btn-line
+        %a.btn.btn-deffault{:href => "#", :role => "add-description-btn"}
+          %span.fa.fa-arrow-circle-o-down{:role => "description-icon"}
+          %span{"data-original-title" => "В описании Вы можете детализировать задачу", :role => "text", "role-bootstrap-tooltip" => "ready", "test-add-descr-btn" => "", :title => ""}
+            Добавить описание
+  .form-group.description.hide{:role => "description"}
+    %label.control-label.col-sm-2
+      Описание
+    .col-sm-10
+      %textarea#base_task_description.form-control{:cols => "40", :name => "base_task[description]", :rows => "5"}
+  -#.form-group{:role => "community"}
+    %label.control-label.col-sm-2
+      Сообщество
+    .col-sm-5
+      %select#base_task_community_id.form-control{"data-allow-clear" => "true", "data-ignore-value" => "290", :name => "base_task[community_id]", :placeholder => "Выбрать сообщество"}
+        %option{:selected => "selected", :value => "290"} Личная задача
+        %option{:value => "291"} Fake community
+    .col-md-1.form-control-static.nopadding-left
+      .fa.fa-question-circle{"data-original-title" => "Укажите сообщество, в рамках которого Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
+  .form-group.show{:role => "task-executor"}
+    %label.control-label.col-sm-2
+      Исполнитель
+    .col-sm-5
+      #s2id_base_task_executor_id.select2-container.select-two.chained-select{:style => "width: 100%;"}
+        %a.select2-choice{:href => "javascript:void(0)", :onclick => "return false;", :tabindex => "-1"}
+          %span.select2-chosen Александр Владимирогородский
+          %abbr.select2-search-choice-close
+          %span.select2-arrow
+            %b
+        %input#s2id_autogen1.select2-focusser.select2-offscreen{:type => "text"}/
+        .select2-drop.select2-display-none.select2-with-searchbox
+          .select2-search
+            %input.select2-input{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :type => "text"}/
+          %ul.select2-results
+      %select#base_task_executor_id.select-two.chained-select.select2-offscreen{"data-allow-clear" => "true", "data-chained-select" => "/communities/__base_task%5Bcommunity_id%5D__/executors?per=500", "data-skip-init-req" => "true", :name => "base_task[executor_id]", :placeholder => "Выбрать исполнителя", :role => "executor-select", "role-chained-select" => "ready", "role-select-two" => "ready", :tabindex => "-1"}
+        %option{:selected => "selected", :value => "203"} Александр Мещеряков
+    .col-md-1.form-control-static.nopadding-left
+      .fa.fa-question-circle{"data-original-title" => "Укажите сотрудника, которому Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
+  .form-group{"role-datetime-field" => "ready"}
+    %input#base_task_start_date{:name => "base_task[start_date]", :role => "start-date", :type => "hidden", :value => "2014-08-24 20:00:00"}/
+    %label.control-label.col-sm-2
+      Начинается:
+    .col-sm-10
+      .input-group-inline
+        .input-group{role: 'datetimepicker'}
+          %input.form-control{type: 'text'}
+          .input-group-addon
+            .fa.fa-calendar-o.fa-lg
+        .input-group
+          .fa.fa-question-circle
+  .form-group{"role-datetime-field" => "ready"}
+    %input#base_task_end_date{:name => "base_task[end_date]", :role => "end-date", :type => "hidden", :value => "2014-08-29 19:59:00"}/
+    %label.control-label.col-sm-2
+      Выполнить к:
+    .col-sm-10
+      .input-group-inline
+        .input-group{role: 'datetimepicker'}
+          %input.form-control{type: 'text'}
+          .input-group-addon
+            .fa.fa-calendar-o.fa-lg
+        .input-group
+          .fa.fa-question-circle
+    .col-md-8.col-md-offset-2
+      .input-group-inline.task-proposed-end-dates{:role => "task-proposed-end-dates"}
+        .input-group
+          %a{"data-date" => "25.08.2014", :href => "#"} сегодня, 25 августа
+        .input-group
+          %a{"data-date" => "26.08.2014", :href => "#"} завтра, 26 августа
+        .input-group
+          %a{"data-date" => "27.08.2014", :href => "#"} 27 августа
+  .form-group
+    %label.control-label.col-sm-2
+      Область видимости
+    .col-sm-10
+      - task_groups = ['управленцы', 'сообщество 1', 'сообщество 2']
+      %select{role: 'select2', multiple: '', style: 'width: 100%;'}
+        - for g in task_groups
+          %option{selected: 'selected'}= "#{g}"
+
+  .form-group.text-right.form-buttons{"test-buttons" => ""}
+    .form-field
+      .pull-left
+        %a.btn.link-grey{:href => "/tasks/2330", role: 'project-task-box-form-close', data: {project_id: project_id}} Отменить
+      .pull-right{"data-original-title" => "Отправьте задачу в работу", "role-bootstrap-tooltip" => "ready", :title => ""}
+        %input.btn.btn-success{:value => "Сохранить", role: 'project-task-box-form-close', data: {project_id: project_id}}/

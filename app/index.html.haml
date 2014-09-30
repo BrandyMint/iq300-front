@@ -1,0 +1,23 @@
+---
+layout: page
+---
+%br
+%br
+.container{style: 'background-color: #fff;'}
+  %br
+  %h1 iq300-frontend
+  %br
+  - page = sitemap.find_resource_by_destination_path('index.html')
+  - pages = ''
+  -# page.children.map {|c| c.path.match(/html/) ? pages.push("http://localhost:4567/#{c.path}") : ''}
+  - if page.children.present?
+    - page.children.each do |c|
+      -#= c.path
+      -# c.path
+      - if c.path.match(/html/) && !c.path.match(/(demo|fontello|error|userflow)/)
+        = link_to c.path, c.path
+        %br
+        = partial 'child_pages', locals: {page: c}
+  -#= pages
+  %br
+  %br

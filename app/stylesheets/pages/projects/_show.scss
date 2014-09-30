@@ -1,0 +1,85 @@
+.project-show-title,
+h2.project-show-title {
+  &,
+  section.view-column .column-content & {
+    margin: {
+      top: 0;
+      bottom: 0.5em;
+    }
+  }
+}
+
+.project-show-tabs {
+  margin: {
+    top: 1.5em;
+    bottom: 2em;
+  }
+  .nav.nav-tabs {
+    & > li {
+      & > a {
+        font-size: 1.1em;
+      }
+      &.active > a {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+.project-header-avatar-content {
+  line-height: 1.2em;
+}
+
+.project-header-avatar {
+  width: 32px;
+  height: 32px;
+  @include border-radius(32px/1.4);
+  border: 1px solid $gray-lighter;
+  margin-right: 0.5em;
+}
+
+.project-show-section-title {
+  margin: {
+    top: 1em;
+    bottom: 1em;
+  }
+}
+
+.project-state-block {
+  @extend .breadcrumb;
+  margin: 2em 0;
+}
+
+.project-state,
+.project-state-title {
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.project-state-title {
+  padding-left: 0;
+}
+
+.project-state {
+  color: $gray;
+  position: relative;
+  &.active  {
+    color: $text-color;
+    font-weight: bold;
+  }
+}
+
+
+.project-show-information {
+  margin: {
+    top: $grid-gutter-width;
+    bottom: $grid-gutter-width;
+  }
+  ol li {
+    list-style-position: inside;
+    list-style-type: disc;
+  }
+}
+
+

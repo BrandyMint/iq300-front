@@ -10,21 +10,4 @@
     %a.voronka.mode-trigger.mode-trigger-initialized{href: "#", mode: "filters", onclick: "$('#container').removeClass('show-navigation show-list').toggleClass('show-filters'); return false;", state: "false"}
       %i.icon-filter
     -# wtf html fix with inline style
-    .community-context{ style: 'display: inline-block;'}
-      %label{for: "s2id_autogen1"} Сообщество:
-      #s2id_community_id.select2-container.select-two.select-two-initialized
-        %a.select2-choice.select2-default{href: "javascript:void(0)", onclick: "return false;", tabindex: "-1"}
-          %span.select2-chosen Выберите сообщество
-          %abbr.select2-search-choice-close
-          %span.select2-arrow
-            %b
-        %input#s2id_autogen1.select2-focusser.select2-offscreen{type: "text"}/
-        .select2-drop.select2-display-none.select2-with-searchbox
-          .select2-search
-            %input.select2-input{autocapitalize: "off", autocomplete: "off", autocorrect: "off", spellcheck: "false", type: "text"}/
-          %ul.select2-results
-      %select#community_id.select-two.select-two-initialized.select2-offscreen{"data-allow-clear" => "true", "data-placeholder" => "Выберите сообщество", "data-width" => "copy", name: "community_id", tabindex: "-1"}
-        %option{value: ""}
-        %option{value: "956"} Айкью 300, ООО
-        %option{value: "1021"} TOR
-        %option{value: "2933"} UX fake community
+    = partial 'shared/select2', locals: {title: 'Выберите сообщество'}

@@ -34,13 +34,6 @@ section.task-form-section {
       display: none;
     }
   }
-  .task-proposed-end-dates {
-    margin-top: 10px;
-    .input-group {
-      margin-right: 10px;
-      text-decoration: underline;
-    }
-  }
   .attachment-files {
     .file {
       width: auto;
@@ -414,3 +407,12 @@ section.task-form-section {
     }
   }
 }
+
+.task-proposed-end-dates {
+  margin-top: 10px;
+  .input-group {
+    margin-right: 10px;
+    text-decoration: underline;
+  }
+}
+

@@ -2,6 +2,7 @@
 // --------------------------------------
 @import "helpers/paths";
 @import "helpers/variables";
+@import "framework/bootstrap/variables";
 @import "helpers/mixins";
 @import "helpers/icons";
 @import "helpers/extras";
@@ -16,7 +17,7 @@
 
 // Customize pages
 // --------------------------------------
-@import "pages/paragraphs/gantt";
+@import "pages/projects/gantt_custom";
 
 html, body {
   font-size: 13px;
