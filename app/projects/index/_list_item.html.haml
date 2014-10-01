@@ -1,0 +1,51 @@
+- status = locals[:status]
+- project_id = 1 + rand(1000)
+
+.project-box{class: "project-box-#{status}", role: 'jump project-box', data: {href: '../projects/show', project_id: project_id}}
+  .row
+    .col-md-1.col-sm-2
+      -#%label.project-task-box-checkbox.pull-left
+        %input{type: 'checkbox'}
+      .project-box-star.pull-left
+        .fa.star-favourite.fa-star-o.icon-size-16
+      .project-task-box-level.text-muted.pull-right
+        %small= "##{project_id}"
+      .clearfix
+    .col-lg-8.col-sm-6
+      .task-box-description-block{"data-status" => "#{status}", :role => "project-task-box-description"}
+        %h4.project-box-title-block{"data-href" => "/tasks/10", :role => "project-task-title"}
+          %span.title
+            Разработка системы IQ300
+        %span.label.label-default
+          Инициализация
+        &nbsp;
+        &nbsp;
+        %span.text-muted
+          Айкью 300, ООО
+      .project-box-details-block
+        - details = ['Задачи', 'Участники', 'Обсуждения', 'Документы']
+        %ul.list-inline
+          - details.each do |d|
+            %li
+              - qty = 1 + rand(30)
+              -# выделяем блоки, в которых есть изменения
+              %a.project-box-details-item{ class: "#{(qty%3 == 0) && (status != 'draft') ? 'project-box-details-item-new' : ''}"}
+                = d
+                %small= qty
+
+    .col-lg-3.col-sm-4
+      .task-box-status-block.pull-right
+        .status-date.task-box-status-date
+          %span.day-list
+            19
+          %span.month
+            Август
+
+    .col-sm-10.col-sm-offset-2.col-md-11.col-md-offset-1
+      - ratio_normal = 1 + rand(100)
+      - ratio_danger = (100 - ratio_normal)/2
+      .progress.project-box-progress
+        .progress-bar.progress-bar-primary{"aria-valuemax" => "100", "aria-valuemin" => "0", role: "progressbar", style: "width: #{ratio_normal}%"}
+        .progress-bar.progress-bar-danger{"aria-valuemax" => "100", "aria-valuemin" => "0", role: "progressbar", style: "width: #{ratio_danger}%"}
+
+
