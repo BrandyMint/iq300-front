@@ -57,5 +57,6 @@ $member-color: #50B864;
 $filters-column-background: #f9f9f9;
 $filters-column-z-index: 19;
 $content-column-z-index: 20;
-
+$top-panel-z-index: $filters-column-z-index;
+$view-column-z-index: $content-column-z-index;
 
