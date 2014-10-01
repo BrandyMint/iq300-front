@@ -1,8 +1,8 @@
 .filters-column {
-  background: #dbe3e6;
+  background: $filters-column-background;
   overflow: hidden;
   position: relative;
-  z-index: 9;
+  z-index: $filters-column-z-index;
   ul.with-subfolders {
     background: $borderColor;
     .counter {

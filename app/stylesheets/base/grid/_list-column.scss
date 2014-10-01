@@ -1,5 +1,5 @@
 %list-column-shadow {
-  @include box-shadow(-2px 2px 2px rgba(0, 0, 0, 0.1));;
+  @include box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
 }
 
 
@@ -7,7 +7,7 @@ section.list-column {
   //  background: #f1f5f6; TODO не соответствовало макету
   background: #FFFFFF;
   @extend %list-column-shadow;
-  z-index: 9;
+  z-index: $content-column-z-index;
   position: relative;
   .hide {
     display: none;
