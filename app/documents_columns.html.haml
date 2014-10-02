@@ -1,0 +1,408 @@
+---
+body_class: docs-show
+layout: application
+---
+
+
+#wrapper
+  %header.header-global.group
+    %a.logo{:href => "/", :title => "IQ300 System"}
+    .search-header{"role-search-form" => "ready"}
+      %span.search-button
+        %span.icon-search
+      %form.form-search{:action => "/docs/434", :method => "get"}
+        / - b = button_tag raw("<span class='icon-search'></span>")
+        / #{content_tag(:i)}#{i}#{b}
+        %i
+        %input#search.search-query.form-control{:name => "search", :placeholder => "Поиск", :role => "global-search-field", :type => "search"}/
+    %span.app-version
+      v.1.5.2
+      %span master
+    .user-nav
+      %a{:href => "/help"} Помощь
+      %a{:href => "/users/203"}
+        %span.userpic
+          %img.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "/assets/default-user-avatar-ab40e583feb1d4ccafd691dd46b79968.png", :style => "width:44px; height:44px;", :title => "Мещеряков Александр"}/
+        Александр Мещеряков
+      %a.fa.fa-sign-out{"data-method" => "delete", :href => "/users/sign_out", :rel => "nofollow", :title => "Выйти"}
+      / %section
+      / = render "shared/user_widget"
+      / .help-link>
+      / = link_to icon('question-sign'), "/help", title: t('common.help')
+    %input#app_signed_in_user_id{:name => "app_signed_in_user_id", :type => "hidden", :value => "203"}/
+    %input#pusher_app_key{:name => "pusher_app_key", :type => "hidden", :value => "ba95502d0971c3028cdd"}/
+  .content.content-global.display-mode{"data-initial-action" => "show", :filters => "true", :full_view => "true", :list => "true", "role-display-mode" => "ready", :view => "", role: 'documents-content-global'}
+    %section.top-panel
+      .pull-left
+        %a.navigation{:href => "#", :onclick => "$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;"}
+          %i.icon-reorder
+        %a.popup-window.add-button.small{"data-popup" => "add-button-target", :href => "#", "role-popup-window" => "ready"}
+          %i.icon-plus
+        %a.popup-window.add-button.big{"data-popup" => "add-button-target", :href => "#", "role-popup-window" => "ready"}
+          %i.icon-plus
+          %span Загрузить документ
+        %a.voronka.mode-trigger.mode-trigger-initialized{:href => "#", role: 'documents-filters-toggle'}
+          %i.icon-filter
+        %a.link.close-folders
+          %span Сложить все
+          %i.icon-folder-close
+        .share-link-popup
+          %a.close
+            %i.icon-remove
+          %label{:for => "link"} Прямая ссылка на документ
+          %input#link.full-width{:name => "link", :type => "text", :value => ""}/
+          %a.close Закрыть
+        %a.link.popup-window{"data-popup" => "add-folder-topup", "role-popup-window" => "ready"}
+          %span Добавить папку
+          %i.icon-plus
+        %section.subtop.add-ducument-topup.document-form.add-button-target.popup-window{"data-focused-input" => "input#attachment_title", "role-document-form" => "ready"}
+          %form#new_attachment.new_attachment{"accept-charset" => "UTF-8", :action => "/attachments", "data-max-size" => "50", :enctype => "multipart/form-data", :method => "post"}
+            %div{:style => "margin:0;padding:0;display:inline"}
+              %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+              %input{:name => "authenticity_token", :type => "hidden", :value => "0uhrPq5V4cSBpBvLS0erZyNZR3dfg+bHtv8fA1rOKrE="}/
+            %p.file
+              %label{:for => "attachment_file"} Файл
+              %input#attachment_file{:name => "attachment[file]", :type => "file"}/
+            .info
+              %span.attachment-size
+                Максимальный размер загружаемого файла 50 Мегабайт
+            %p
+            %p
+              %label{:for => "attachment_title"} Название
+              %input#attachment_title.attachment-title{:maxlength => "255", :name => "attachment[title]", :size => "255", :type => "text"}/
+            %p
+              %textarea#attachment_description{:cols => "40", :maxlength => "1000", :name => "attachment[description]", :placeholder => "Описание", :rows => "20", :style => "overflow: hidden; word-wrap: break-word; resize: none; height: 30px;"}
+            %p
+              %label{:for => "community_id"} Сообщество (по умолчанию Мои документы)
+            #s2id_attachment_community_id.select2-container.select-two{:style => "width: 100%;"}
+              %a.select2-choice.select2-default{:href => "javascript:void(0)", :onclick => "return false;", :tabindex => "-1"}
+                %span.select2-chosen Выбор сообщества
+                %abbr.select2-search-choice-close
+                %span.select2-arrow
+                  %b
+              %input#s2id_autogen4.select2-focusser.select2-offscreen{:type => "text"}/
+              .select2-drop.select2-display-none.select2-with-searchbox
+                .select2-search
+                  %input.select2-input{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :type => "text"}/
+                %ul.select2-results
+            %select#attachment_community_id.select-two.select2-offscreen{"data-allow-clear" => "true", :name => "attachment[community_id]", :placeholder => "Выбор сообщества", "role-select-two" => "ready", :tabindex => "-1"}
+              %option{:value => ""}
+              %option{:value => "291"} Fake community
+            %p
+              %label{:for => "s2id_autogen2"} Папка
+            #s2id_attachment_share_parent_id.select2-container.folders-chained-select
+              %a.select2-choice.select2-default{:href => "javascript:void(0)", :onclick => "return false;", :tabindex => "-1"}
+                %span.select2-chosen Выбор папки
+                %abbr.select2-search-choice-close
+                %span.select2-arrow
+                  %b
+              %input#s2id_autogen2.select2-focusser.select2-offscreen{:type => "text"}/
+              .select2-drop.select2-display-none.bigdrop.select2-with-searchbox
+                .select2-search
+                  %input.select2-input{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :type => "text"}/
+                %ul.select2-results
+            %input#attachment_share_parent_id.folders-chained-select.select2-offscreen{"data-allow-clear" => "true", "data-chained-select" => "__attachment[community_id]__", "data-null-value" => "none", "data-parent-selector" => ".document-form", "data-selected-value" => "none", "data-url" => "/docs?community=__%3Aid__&folder=folders", :name => "attachment[share_parent_id]", :placeholder => "Выбор папки", "role-folders-chained-select" => "ready", :tabindex => "-1", :type => "hidden", :value => ""}/
+            .actions.popup-window
+              %input#btnSubmit{"data-disable-with" => "Загрузка...", :name => "commit", :style => "display: none;", :type => "submit", :value => "Загрузить"}/
+        %section.subtop.add-folder-topup.folder-form.popup-window{"data-focused-input" => "input#attachment_title", "role-folder-form" => "ready"}
+          %form#new_attachment.new_attachment{"accept-charset" => "UTF-8", :action => "/attachments", :enctype => "multipart/form-data", :method => "post"}
+            %div{:style => "margin:0;padding:0;display:inline"}
+              %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+              %input{:name => "authenticity_token", :type => "hidden", :value => "0uhrPq5V4cSBpBvLS0erZyNZR3dfg+bHtv8fA1rOKrE="}/
+            %input#attachment_is_folder{:name => "attachment[is_folder]", :type => "hidden", :value => "true"}/
+            %p
+              %label{:for => "attachment_title"} Название
+              %input#attachment_title.attachment-title{:maxlength => "255", :name => "attachment[title]", :size => "255", :type => "text"}/
+            %p
+              %label{:for => "s2id_autogen4"} Сообщество (по умолчанию Мои документы)
+            #s2id_attachment_community_id.select2-container.select-two{:style => "width: 100%;"}
+              %a.select2-choice.select2-default{:href => "javascript:void(0)", :onclick => "return false;", :tabindex => "-1"}
+                %span.select2-chosen Выбор сообщества
+                %abbr.select2-search-choice-close
+                %span.select2-arrow
+                  %b
+              %input#s2id_autogen5.select2-focusser.select2-offscreen{:type => "text"}/
+              .select2-drop.select2-display-none.select2-with-searchbox
+                .select2-search
+                  %input.select2-input{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :type => "text"}/
+                %ul.select2-results
+            %select#attachment_community_id.select-two.select2-offscreen{"data-allow-clear" => "true", :name => "attachment[community_id]", :placeholder => "Выбор сообщества", "role-select-two" => "ready", :tabindex => "-1"}
+              %option{:value => ""}
+              %option{:value => "291"} Fake community
+            %p
+              %label
+                Родительская папка
+            #s2id_attachment_share_parent_id.select2-container.folders-chained-select
+              %a.select2-choice.select2-default{:href => "javascript:void(0)", :onclick => "return false;", :tabindex => "-1"}
+                %span.select2-chosen Выбор папки
+                %abbr.select2-search-choice-close
+                %span.select2-arrow
+                  %b
+              %input#s2id_autogen3.select2-focusser.select2-offscreen{:type => "text"}/
+              .select2-drop.select2-display-none.bigdrop.select2-with-searchbox
+                .select2-search
+                  %input.select2-input{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :type => "text"}/
+                %ul.select2-results
+            %input#attachment_share_parent_id.folders-chained-select.select2-offscreen{"data-allow-clear" => "true", "data-chained-select" => "__attachment[community_id]__", "data-null-value" => "none", "data-parent-selector" => ".folder-form", "data-selected-value" => "none", "data-url" => "/docs?community=__%3Aid__&folder=roots%2Cfolders", :name => "attachment[share_parent_id]", :placeholder => "Выбор папки", "role-folders-chained-select" => "ready", :tabindex => "-1", :type => "hidden", :value => ""}/
+            .info
+              %span
+                Максимальный уровень вложенности папок - 2
+            .actions.popup-window
+              %input{"data-disable-with" => "Загрузка...", :name => "commit", :type => "submit", :value => "Добавить"}/
+    %nav.nav-global.menu-list{"data-channel" => "presence-203:notifications", "data-remote" => "true", "role-menu-list" => "ready"}
+      .logo
+        %a{:href => "/", :title => "IQ300 System"}
+          %img.image-x1.img-corrector-initialized{:alt => "IQ300", :src => "/assets/logo_x1_new-9a31dde6832d097c3c4c0b4379c75284.png"}/
+          %img.image-x2.img-corrector-initialized{:alt => "IQ300", :src => "/assets/logo_x2_new-dc0b3d331ac4645cfb0681000f683dc1.png"}/
+      %ul
+        %li.menu-item.notifications{"data-extra-params" => "null", "data-params" => "null", "data-section" => "notifications", "data-url" => "/notifications"}
+          .html-notifier{"data-channel" => "presence-203:notifications", "data-redirect-url" => "/notifications?folder=new", "data-url" => "/notifications.count?folder=new", "role-html-notifier" => "ready"}
+            %audio#notice-audio
+              %source{:src => "/audios/notify.wav", :type => "audio/wav"}
+          %a{:href => "/notifications"}
+            .picture
+              %i.iq-navicons-notifications
+              %sup 1
+            %span Уведомления
+        %li.menu-item.projects.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "projects", "data-url" => "/projects"}
+          %a{:href => "/projects"}
+            .picture
+              %i.iq-navicons-projects
+            %span Проекты
+        %li.menu-item.tasks{"data-extra-params" => "{\"related\":203,\"overdue\":true,\"by_statuses\":[\"new\",\"browsed\",\"refused\",\"in_work\",\"on_init\",\"declined\"]}", "data-params" => "{\"overview\":203}", "data-section" => "tasks", "data-url" => "/tasks"}
+          %a{:href => "/tasks"}
+            .picture
+              %i.iq-navicons-tasks
+              %sup.overdue
+                3
+            %span Задачи
+        %li.menu-item.conversations{"data-extra-params" => "null", "data-params" => "{\"folder\":\"new\"}", "data-section" => "conversations", "data-url" => "/conversations"}
+          %a{:href => "/conversations"}
+            .picture
+              %i.iq-navicons-messages
+            %span Сообщения
+        %li.menu-item.contacts.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "contacts", "data-url" => "/contacts"}
+          %a{:href => "/contacts?folder=all"}
+            .picture
+              %i.iq-navicons-contacts
+            %span Контакты
+        %li.menu-item.communities.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "communities", "data-url" => "/communities"}
+          %a{:href => "/communities?folder=my"}
+            .picture
+              %i.iq-navicons-communities
+            %span Сообщества
+        %li.active.menu-item.docs.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "docs", "data-url" => "/docs"}
+          %a{:href => "/docs?folder=my"}
+            .picture
+              %i.iq-navicons-documents
+            %span Документы
+        %li.menu-item.calendars.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "calendars", "data-url" => "/calendar"}
+          %a{:href => "/calendar"}
+            .picture
+              %i.iq-navicons-calendar
+            %span Календарь
+    %section.documents-filters-column.filters-column
+      %ul.with-subfolders.documents-filter{"role-documents-filter" => "ready"}
+        %li.nested.folder.active.expanded{"data-folder" => "roots,my,all"}
+          .expander{"role-expander" => "ready"}
+          %a Мои документы
+          %ul.flat
+            %li.folder{"data-folder" => "roots,my,text"}
+              %a Текстовые
+              %span.grey-counter
+            %li.folder{"data-folder" => "roots,my,sheet"}
+              %a Таблицы
+              %span.grey-counter
+            %li.folder{"data-folder" => "roots,my,image"}
+              %a Изображения
+              %span.grey-counter 1
+            %li.folder{"data-folder" => "roots,my,presentation"}
+              %a Презентации
+              %span.grey-counter
+            %li.folder{"data-folder" => "roots,my,pdf"}
+              %a PDF
+              %span.grey-counter
+            %li.folder{"data-folder" => "roots,my,other"}
+              %a Прочее
+        %li.nested.folder{"data-community" => "all", "data-folder" => "roots"}
+          .expander{"role-expander" => "ready"}
+          %a По сообществам
+          %ul.flat
+            %li.folder{"data-community" => "291", "data-folder" => "roots"}
+              %a{:title => "Fake community"} Fake community
+        %li.nested.folder{"data-folder" => "roots,shared,all"}
+          .expander{"role-expander" => "ready"}
+          %a Общий доступ
+          %ul.flat
+            %li.folder{"data-folder" => "roots,shared,text"}
+              %a Текстовые
+              %span.grey-counter
+            %li.folder{"data-folder" => "roots,shared,sheet"}
+              %a Таблицы
+              %span.grey-counter
+            %li.folder{"data-folder" => "roots,shared,image"}
+              %a Изображения
+              %span.grey-counter
+            %li.folder{"data-folder" => "roots,shared,presentation"}
+              %a Презентации
+              %span.grey-counter
+            %li.folder{"data-folder" => "roots,shared,pdf"}
+              %a PDF
+              %span.grey-counter
+            %li.folder{"data-folder" => "roots,shared,other"}
+              %a Прочее
+        %li.flat.folder{"data-folder" => "trash,roots"}
+          %a Корзина
+    %section.list-column.folders-list-column{"data-channel" => "presence-203:attachments", "data-url" => "/docs", "role-folders-list-column" => "ready"}
+      %ul
+        %li.header.sortable-header{"data-sortable-collection" => "docs", "data-store" => "1", "role-sortable-header" => "ready"}
+          .opener
+            %i.icon-reorder
+          .name
+            %a{"data-column" => "title", "data-direction" => "asc"}
+              %b Название
+          .actions.popup-window
+          .community
+            %a{"data-column" => "community_id", "data-direction" => "asc"}
+              %b Сообщество
+          .author
+            %a{"data-column" => "author_id", "data-direction" => "asc"}
+              %b Изменил
+          .date
+            %a{"data-column" => "updated_at", "data-direction" => "asc"}
+              %b Изменен
+      %ul.infinite-list
+        %li.doc-item{"data-community-id" => "291", "data-id" => "434", "data-url" => "/docs/434"}
+          .opener
+            %i.icon-file
+          .name
+            %strong.with-size{:title => "iq-docs-bug.png"}
+              %i.rename-434{:style => "display:none"}
+              %span#best_in_place_attachment_2199_title.best_in_place.disable-initializer{"data-activator" => "i.rename-434", "data-attribute" => "title", "data-object" => "attachment", "data-original-content" => "iq-docs-bug", "data-type" => "input", "data-url" => "/attachments/2199"} iq-docs-bug.png
+            %span.with-size
+              buggy bug
+            %small.file-size 102.0 КБ
+          .actions.popup-window
+            %a.trigger.menu{:href => "#"}
+              %i.icon-reorder.popup-window{"data-popup" => "actions", "role-popup-window" => "ready"}
+            %ul.context-menu
+              %li
+                %a.rename{"data-target" => "i.rename-434", :href => "#"}
+                  %i.icon-pencil
+                  %span Переименовать
+              %li
+                %a.share{:href => "http://edge.iq300.ru/shares?file=35644998-aa5d-49e3-9de1-7dc62daf5a7a.png"}
+                  %i.icon-share-alt
+                  %span Поделиться
+              %li
+                %a.download{:href => "/download?file=35644998-aa5d-49e3-9de1-7dc62daf5a7a.png", :target => "_blank"}
+                  %i.icon-save
+                  %span Скачать
+              %li
+                %a.delete{"data-confirm" => "Вы уверены?", :href => "/docs/434"}
+                  %i.icon-remove
+                  %span Удалить
+          .community Fake community
+          .author Александр Мещеряков
+          .date
+            Сегодня, 12:04
+    %section.view-column.folders-view-column{"data-channel" => "private-attachment-2199:update", "data-channel-template" => "private-attachment-%id%:update", "data-id" => "434", "data-url" => "/docs/434", "role-folders-view-column" => "ready"}
+      %header.tab-navigation
+        %ul.tabnav{"data-container" => "#folder-tab-pane", "role-tabnav" => "ready"}
+          %li.active
+            %a{"data-target" => "doc-details", :href => "/docs/434"} Информация о файле
+          %li#accessor_users_tab
+            %a{"data-class" => "accessor-users-view", "data-roles" => "accessor-users-view", "data-target" => "doc_members", :href => "/attachments/2199/doc_shares?initial=true&per=100"} Участники
+          %li
+            %a{"data-target" => "doc_activities", :href => "/attachments/2199/activities?initial=true"} История
+        .column-controller
+          %a.enlarge.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "full-view", :state => "true", :title => "Развернуть"}
+            %i.icon-resize-small{"data-opposite-class" => "icon-resize-full"}
+          %a.close-panel.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "view", :state => "", :title => "Закрыть"}
+            %i.icon-remove
+          %a.share-link.u-turn-right{:href => "http://edge.iq300.ru/shares?file=35644998-aa5d-49e3-9de1-7dc62daf5a7a.png", :title => "Отправить другу"}
+            %i.icon-share-alt
+      #folder-tab-pane.column-content
+        #doc-details.object-details{"data-attachment-id" => "2199"}
+          .resource-watcher-subscription{"data-url" => "/subscriptions?attachment_id=2199", "role-resource-watcher-subscription" => "ready"}
+            %label.checkbox{:title => ""}
+              %input#subscribe{:checked => "checked", :name => "subscribe", :type => "checkbox", :value => "1"}/
+              %i
+              Следить за изменениями
+          %figure
+            %a{"data-lightbox" => "image-434", "data-title" => "iq-docs-bug.png", :href => "https://iq300-edge.s3-eu-west-1.amazonaws.com/uploads/attachment_picture/file/2199/35644998-aa5d-49e3-9de1-7dc62daf5a7a.png?AWSAccessKeyId=AKIAI7YHRMN74KI6TWSQ&Signature=UlxjKoo05nRQVs3hYZC35d31XGA%3D&Expires=1412265920", :target => "blank"}
+              %img.img-corrector-initialized{:alt => "Zwcxl3surk0fdk8indwls%3d&expires=1412265920", :src => "https://iq300-edge.s3-eu-west-1.amazonaws.com/uploads/attachment_picture/file/2199/thumb_35644998-aa5d-49e3-9de1-7dc62daf5a7a.png?AWSAccessKeyId=AKIAI7YHRMN74KI6TWSQ&Signature=GcLXX/ZWCxL3sUrk0fdk8iNDwLs%3D&Expires=1412265920"}/
+            %figcaption
+              %h3
+                iq-docs-bug.png
+              %p.buttons
+                %a.download{:href => "/download?file=35644998-aa5d-49e3-9de1-7dc62daf5a7a.png", :target => "_blank"} Скачать
+                %span 102.0 КБ
+          .description
+            %p
+              %span#best_in_place_attachment_2199_description.best_in_place{"data-attribute" => "description", "data-nil" => "Нажмите для добавления описания", "data-object" => "attachment", "data-type" => "textarea", "data-url" => "/attachments/2199"} buggy bug
+              %i.icon-pencil
+          .stats
+            .meta
+              .avatar
+                %img.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "/assets/default-user-avatar-ab40e583feb1d4ccafd691dd46b79968.png", :style => "width:34px;height:34px;", :title => "Мещеряков Александр"}/
+              .info
+                Загрузил:
+                %a{:href => "/users/203"} Александр Мещеряков
+                %br/
+                %span Сегодня, 12:04
+            .meta
+              Сообщество:
+              .avatar
+                %img.default-community-picture.img-corrector-initialized{:alt => "4", "data-default-src" => "/assets/logo_x2.png", :src => "/assets/community/4.png"}/
+              .info
+                %a{:href => "/communities/291"} Fake community
+            %table.badges-list-container
+              %tbody
+                %tr
+                  %td
+                    Категории:
+                  %td.badges-list.categories-view{"role-categories-view" => "ready"}
+                    .label-tags
+                      .add-button
+                        %a.with-plus-button.add-tag{:href => "#"}
+                          Добавить
+                          %span
+                            %i.icon-plus
+                      .adding-form
+                        %form.new-todo{"accept-charset" => "UTF-8", :action => "#", :method => "post"}
+                          %div{:style => "margin:0;padding:0;display:inline"}
+                            %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+                            %input{:name => "authenticity_token", :type => "hidden", :value => "0uhrPq5V4cSBpBvLS0erZyNZR3dfg+bHtv8fA1rOKrE="}/
+                          #s2id__name.select2-container.select2-container-multi.select-two.todo-body{:style => "width: 100%;"}
+                            %ul.select2-choices
+                              %li.select2-search-field
+                                %input#s2id_autogen1.select2-input.select2-default{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :style => "width: 122%;", :type => "text"}/
+                            .select2-drop.select2-drop-multi.select2-display-none
+                              %ul.select2-results
+                          %input#_name.select-two.todo-body.select2-offscreen{"data-tags" => "[]", "data-url" => "/categories/434?doc_share_id=434", :name => "#[name]", :placeholder => "Добавить категорию", "role-select-two" => "ready", :size => "30", :tabindex => "-1", :type => "text"}/
+                          %input{:type => "reset", :value => "Отменить"}/
+            %p.edit-remove
+              %a.remove{"data-confirm" => "Подтвердите действие", "data-method" => "delete", :href => "/docs/434"}
+                %i.icon-remove
+                Удалить документ
+          %section.expandable.expanded.comments{"role-expandable" => "ready"}
+            %header
+              Комментарии:
+              %a.trigger{:href => "#"}
+            .task-discussion{"role-task-discussion" => "ready"}
+              .comments-list{"data-channel" => "private-discussion-4858:comments", "data-url" => "/discussions/4858/comments", "data-with-button" => ""}
+                .infinite-list
+              %form#new_comment.comments-form.main-form{"accept-charset" => "UTF-8", :action => "/discussions/4858/comments", "data-discussion-key" => "discussion-4858", "data-exist-attachment-default-name" => "Прикрепить уже загруженный", "data-users-path" => "/discussions/4858/users?for=accessors&per=500&without_current_user=true", :enctype => "multipart/form-data", :method => "post"}
+                %div{:style => "margin:0;padding:0;display:inline"}
+                  %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+                  %input{:name => "authenticity_token", :type => "hidden", :value => "0uhrPq5V4cSBpBvLS0erZyNZR3dfg+bHtv8fA1rOKrE="}/
+                %input#redirect_to{:name => "redirect_to", :type => "hidden", :value => "/attachments/2199"}/
+                %textarea.comment-body{:cols => "40", :name => "comment[body]", :placeholder => "Добавить комментарий", :role => "comment-body", :rows => "20", :style => "overflow: hidden; word-wrap: break-word; resize: none; height: 72px;"}
+                %input#btnSubmit{"data-wait" => "Отправка...", :name => "commit", :role => "submit-button", :type => "submit", :value => "Отправить"}/
+                %input{:role => "reset", :type => "reset", :value => "Отменить"}/
+                #discussion-attachments-4858{"data-files-max-size" => "50", :role => "files"}
+                  %a.add.add_nested_fields{"data-association" => "attachments", "data-blueprint-id" => "attachments_fields_blueprint", "data-target" => "#discussion-attachments-4858", :href => "javascript:void(0)", :role => "add-file"}
+                    %span.attachment-label
+                #attachments_fields_blueprint{"data-blueprint" => "<div class='file fields' role='file'>\r\n<a href=\"#\"><span class='fa fa-file-text-o fa-lg'></span>\r\n</a><span class='file-name' role='file-name'>\r\nfile_name\r\n</span>\r\n<input id=\"comment_attachments_attributes_new_attachments_file\" name=\"comment[attachments_attributes][new_attachments][file]\" role=\"file-input\" style=\"display:none\" type=\"file\" />\r\n<input id=\"comment_attachments_attributes_new_attachments__destroy\" name=\"comment[attachments_attributes][new_attachments][_destroy]\" type=\"hidden\" value=\"false\" /><a href=\"javascript:void(0)\" class=\"delete remove_nested_fields\" data-association=\"attachments\" data-confirm=\"Вы уверены?\"><i class=\"icon-remove \" ></i></a>\r\n</div>\r\n", :style => "display: none"}
+  / = render 'shared/footer'

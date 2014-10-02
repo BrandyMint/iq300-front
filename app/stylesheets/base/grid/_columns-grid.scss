@@ -77,6 +77,14 @@
         @extend %list-column-short-flexible;
       }
     }
+    .list-column {
+      margin-left: $filtersColumnWidth;
+    }
+  }
+  &[filters=true][list=true] {
+    & > .view-column {
+      margin-left: $navColumnWidth + $listColumnWidth;
+    }
   }
   // # # .
   &[filters=true][list=true][view=false] {

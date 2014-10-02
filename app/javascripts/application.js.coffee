@@ -82,6 +82,16 @@ $ ->
 
 
 
+  docsFiltersToggle = $('@documents-filters-toggle')
+  docsContentGlobal = $('@documents-content-global')
+  docsFiltersToggle.on 'click', (e) ->
+    e.preventDefault()
+    view = docsContentGlobal.attr('view')
+    if view == 'true'
+      docsContentGlobal.attr('view', '')
+    else
+      docsContentGlobal.attr('view', 'true')
+
 $(document).on 'click', '@jump', (e) ->
   href = $(this).data('href')
   if $(this).data 'push'
