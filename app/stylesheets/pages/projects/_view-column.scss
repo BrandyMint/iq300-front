@@ -49,13 +49,8 @@
 section.projects-view-column {
   .project-members-view, .project-members-form {
     .input {
-      > div#s2id_project_membership_group_name {
-        &.select2-container, &.select-two, &.select2-input {
-          width: 30% !important;
-        }
-      }
       > div#s2id_project_membership_user_id {
-        float: right;
+        float: left;
         &.select2-container, &.select-two, &.select2-input {
           width: 65% !important;
         }

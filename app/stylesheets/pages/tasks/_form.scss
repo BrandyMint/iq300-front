@@ -25,6 +25,20 @@ section.task-form-section {
     &.todo-list, &.task-files {
       padding-left: 15px;
     }
+    &.executor-container {
+      .add-invited-executor-button {
+        display: none;
+        margin-top: 4px;
+      }
+    }
+    &.invited-executor-container {
+      display: none;
+      margin-top: 0px;
+      height: 28px;
+      .remove-invited-executor-button {
+        margin-top: 4px;
+      }
+    }
   }
   .task-repeat-checkbox {
     padding-left: 5px;
@@ -71,7 +85,7 @@ section.task-form-section {
     }
   }
   form {
-      .input {
+    .input {
       margin-bottom: 18px;
       input[type=checkbox] {
         @extend %blue-ok-checkbox-without-white-border;
