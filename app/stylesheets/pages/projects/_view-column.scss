@@ -1151,4 +1151,8 @@ section.projects-view-column {
   }
 }
 
-
+.project-header-status-date {
+  &.with_year {
+    padding: 15px 5px;
+  }
+}
