@@ -19,6 +19,14 @@
   &.shown {
     display: block;
   }
+  .invite-by-email {
+    display: none;
+    margin-top: 10px;
+    margin-left: 40px;
+    @include button($brand-success);
+    font-size: 0.8em;
+    cursor: pointer;
+  }
   p {
     margin: 0;
     color: #666666;
@@ -61,13 +69,6 @@
   .results {
     max-height: 333px;
     overflow-y: auto;
-    button.invite-by-email {
-      margin-top: 10px;
-      margin-left: 40px;
-      @include button(#3ab54a);
-      font-size: 0.8em;
-      cursor: pointer;
-    }
     ul {
       margin-top: 4px;
       li {
@@ -80,42 +81,40 @@
             background-color: #f1f5f6;
           }
         }
-        form {
-          > .user {
-            margin-bottom: 0px !important;
+        .user {
+          margin-bottom: 0px !important;
+        }
+        .user-email {
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          color: $notification;
+          &.name {
+            width: 144px;
+            font-weight: bold;
+            padding-left: 11px;
           }
-          span {
-            display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            color: #666666;
-            &.name {
-              width: 144px;
-              font-weight: bold;
-              padding-left: 11px;
-            }
-            &.email {
-              width: 125px;
-              font-size: 11px;
-            }
+          &.email {
+            width: 125px;
+            font-size: 11px;
           }
-          button {
-            float: right;
-            width: 36px;
-            border: none;
-            background: white;
-            margin-top: 10px;
-            padding: 0;
-            color: #1abc9c;
-            &[name=commit] {
-              cursor: pointer;
-              color: #338cae;
-              font-size: 15px;
-              &:hover {
-                background-color: #f1f5f6;
-                color: #1abc9c;
-              }
+        }
+        .user-invite-button {
+          float: right;
+          width: 36px;
+          border: none;
+          background: white;
+          margin-top: 10px;
+          padding: 0;
+          color: $invite-button-color;
+          &[name=commit] {
+            cursor: pointer;
+            color: $brand-primary;
+            font-size: 15px;
+            &:hover {
+              background-color: $input-bg;
+              color: #1abc9c;
             }
           }
         }

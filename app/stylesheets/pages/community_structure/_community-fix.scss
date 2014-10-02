@@ -23,6 +23,16 @@ body {
               left: 0;
               right: 0;
               bottom: 0;
+              .object-details-spectator {
+                margin-top: 29px;
+              }
+              .object-details-highlight {
+                text-align: center;
+                background: $brand-primary;
+                color: white;
+                padding-left: 5px;
+                padding-right: 5px;
+              }
               #community-departments {
                 position: absolute;
                 top: 0;
