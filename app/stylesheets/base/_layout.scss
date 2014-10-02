@@ -141,7 +141,8 @@ hr {
 
 .one-big-column {
   position: relative;
-  z-index: 10;
+  z-index: $content-column-z-index;
+  @extend %list-column-shadow;
   margin-left: $navColumnWidth;
   float: none !important;
   width: auto;

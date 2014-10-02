@@ -1,3 +1,6 @@
+$nav-item-highlight-color: $green-grass;
+$nav-item-active-background: $nav-item-highlight-color;
+
 .nav-global {
   width: $navColumnWidth;
   top: -$topPanelHeight;
@@ -6,7 +9,9 @@
   position: relative;
   z-index: 12;
   background: $navigationBackground;
-  overflow: hidden;
+  //overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   @include transition(opacity 0.25s ease-out);
   @include box-sizing(content-box);
   .logo {
@@ -32,13 +37,15 @@
   ul {
     width: 100%;
     > li {
-      width: 100%;
+      width: 90%;
+      margin: 0 auto;
       text-align: center;
       border-bottom: 1px solid rgba(255,255,255, 0.1);
+      @include border-radius(4px);
       a {
         display: block;
         text-align: center;
-        padding: 8px 0;
+        padding: 4px 0 4px 0;
         @include transition(all 0.2s ease-out);
         transition-property: background-color, border-color;
         -webkit-transition-property: background-color, border-color;
@@ -46,45 +53,45 @@
         -o-transition-property: background-color, border-color;
         border-top: 1px solid transparent;
         border-bottom: 1px solid transparent;
+        color: $gray;
         &:hover {
-          background: lighten($navigationBackground, 3%);
+          //background: lighten($navigationBackground, 3%);
           //border-color: lighten($navigationBackground, 10%);
           text-decoration: none;
+          &, .picture {
+            color: $nav-item-highlight-color;
+          }
         }
         .picture {
           position: relative;
           @include inline-block;
-          margin-bottom: 1px;
-          //width: 100%;
+          margin-bottom: 4px;
+          width: 100%;
           @include box-sizing(border-box);
-          > i {
-            font-size: 25px;
-            color: #a0b9be;
-          }
+          font-size: 40px;
+          color: $gray-light;
           @media screen and (max-width: 480px) and (max-height: 740px) {
             height: auto;
-            > i {
-              font-size: 20px;
-            }
+            font-size: 20px;
           }
 
           > sup {
             @extend %buble-counter;
             display: block;
             position: absolute;
-            top: -8px;
-            left: 50%;
+            top: -5px;
+            right: 0%;
+            margin-right: 5px;
             text-decoration: none;
           }
           > sup.overdue {
-              margin-left: -24px;
+              margin-top: 28px;
               background: $brand-danger;
           }
         }
         > span {
-          display: inline-block;
+          display: block;
           width: 100%;
-          color: #a0b9be;
           font-size: 11px;
           line-height: 11px;
           @media screen and (max-width: 480px) and (max-height: 740px) {
@@ -96,7 +103,7 @@
         }
       }
       &.active {
-        background: #338cae;
+        background: $nav-item-active-background;
         position: relative;
         // @include has-after-icon(24px, #cdd8dc) {
         //   overflow: hidden;
@@ -108,13 +115,12 @@
         // }
 
         a {
+          font-weight: bold;
           &:hover {
             background: transparent;
           }
           .picture {
-            > i {
-              color: white;
-            }
+            color: white;
           }
           > span {
             color: white;

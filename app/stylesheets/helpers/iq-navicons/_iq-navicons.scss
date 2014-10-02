@@ -1,0 +1,62 @@
+// asset-url("icomoon-iq300.eot", font)
+
+@font-face {
+  font-family: 'iq-navicons';
+  src: asset-url('iq-navicons.eot?89507053', font);
+  src: asset-url('iq-navicons.eot?89507053#iefix', font) format('embedded-opentype'),
+       asset-url('iq-navicons.woff?89507053', font) format('woff'),
+       asset-url('iq-navicons.ttf?89507053', font) format('truetype'),
+       asset-url('iq-navicons.svg?89507053#iq-navicons', font) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'iq-navicons';
+    src: url('iq-navicons.svg?89507053#iq-navicons') format('svg');
+  }
+}
+*/
+ 
+ [class^="iq-navicons"]:before, [class*=" iq-navicons"]:before {
+  font-family: "iq-navicons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.iq-navicons-calendar:before { content: '\e800'; } /* '' */
+.iq-navicons-communities:before { content: '\e801'; } /* '' */
+.iq-navicons-contacts:before { content: '\e802'; } /* '' */
+.iq-navicons-documents:before { content: '\e803'; } /* '' */
+.iq-navicons-messages:before { content: '\e804'; } /* '' */
+.iq-navicons-notifications:before { content: '\e805'; } /* '' */
+.iq-navicons-projects:before { content: '\e806'; } /* '' */
+.iq-navicons-tasks:before { content: '\e807'; } /* '' */

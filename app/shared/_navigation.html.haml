@@ -12,42 +12,43 @@
           %source{src: "/audios/notify.wav", type: "audio/wav"}
       = link_to "/notifications" do
         .picture
-          %i.icon-bell
+          %i.iq-navicons-notifications
           %sup 3
+          %sup.overdue 9
         %span Уведомления
     %li.menu-item.tasks{"data-params" => "{\"overview\":1757}", "data-url" => "/tasks"}
       = link_to "/tasks" do
         .picture
-          %i.icon-list-alt
+          %i.iq-navicons-tasks
         %span Задачи
     %li.active.menu-item.projects.not-initialize{"data-params" => "null", "data-url" => "/projects"}
       %a{href: "/projects?folder=in_work"}
         .picture
-          %i.icon-books
+          %i.iq-navicons-projects
         %span Проекты
     %li.menu-item.calendars.not-initialize{"data-params" => "null", "data-url" => "/calendar"}
       %a{href: "/calendar"}
         .picture
-          %i.icon-calendar
+          %i.iq-navicons-calendar
         %span Календарь
     %li.menu-item.communities.not-initialize{"data-params" => "null", "data-url" => "/communities"}
       %a{href: "/communities?folder=my"}
         .picture
-          %i.icon-briefcase
+          %i.iq-navicons-communities
         %span Сообщества
     %li.menu-item.docs.not-initialize{"data-params" => "null", "data-url" => "/docs"}
       %a{href: "/docs?folder=my"}
         .picture
-          %i.icon-paste
+          %i.iq-navicons-documents
         %span Документы
     %li.menu-item.conversations{"data-params" => "{\"folder\":\"new\"}", "data-url" => "/conversations"}
       %a{href: "/conversations"}
         .picture
-          %i.icon-comment-alt
+          %i.iq-navicons-messages
         %span Сообщения
     %li.menu-item.contacts.not-initialize{"data-params" => "null", "data-url" => "/contacts"}
       %a{href: "/contacts?folder=all"}
         .picture
-          %i.icon-group
+          %i.iq-navicons-contacts
         %span Контакты
 

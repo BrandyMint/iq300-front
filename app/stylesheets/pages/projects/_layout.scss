@@ -1,28 +1,7 @@
-$filters-column-background: #f9f9f9;
-$filters-column-z-index: 9;
-$content-column-z-index: 10;
-
-%content-column-block {
-  position: absolute;
-  top: $headerHeight;
-  bottom: 0;
-  overflow-y: auto;
-}
-
 .projects-list-column {
-  @extend %content-column-block;
-  left: $navColumnWidth + $filtersColumnWidth;
-  right: 0;
-  z-index: $content-column-z-index;
-  background-color: #fff;
-  @extend %list-column-shadow;
+  @extend %list-column-block;
 }
 
 .projects-filters-column {
-  @extend %content-column-block;
-  left: $navColumnWidth;
-  width: $filtersColumnWidth;
-  z-index: $filters-column-z-index;
-  background-color: $filters-column-background;
-
+  @extend %filters-column-block;
 }

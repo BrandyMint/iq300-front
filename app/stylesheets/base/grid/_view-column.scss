@@ -20,9 +20,9 @@
 section.view-column {
   float: none !important;
   background: white;
-  @include box-shadow(-3px 3px 10px rgba(0, 0, 0, 0.1));
-  z-index: 10;
+  z-index: $view-column-z-index;
   position: relative;
+  @extend %list-column-shadow;
   header.tab-navigation + .column-content {
     top: 55px;
   }

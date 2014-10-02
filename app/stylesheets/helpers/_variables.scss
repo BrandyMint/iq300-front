@@ -1,16 +1,20 @@
+$bodyBackground: #f9f9f4;
 $borderColor: #cccccc;
 $blueLink: #3fabf3;
 $greyText: #9a9a9a;
 $placeholderColor: lighten(#000, 60%);
 $contentBackgroundColor: #e3ebed;
-$navigationBackground: #245b79;
+//$navigationBackground: #245b79;
+$navigationBackground: $bodyBackground;
 $errorColor: red;
 $notificationNewParticipant: #fff6ed;
 $input-color-placeholder: $placeholderColor;
+$green-cyan: #1adb88;
+$green-grass: #99ba6b;
 
 // Header global vars
 $headerDarker: #dbe3e6;
-$headerBg: #f8f9f4;
+$headerBg: $bodyBackground;
 $headerHeight: 55px;
 $topPanelHeight: 45px;
 
@@ -47,3 +51,12 @@ $link-color: black;
 $alert-color: red;
 $waiting-color: #FBB04B;
 $member-color: #50B864;
+
+
+// layout settings:
+$filters-column-background: #f9f9f9;
+$filters-column-z-index: 19;
+$content-column-z-index: 20;
+$top-panel-z-index: $filters-column-z-index;
+$view-column-z-index: $content-column-z-index;
+
