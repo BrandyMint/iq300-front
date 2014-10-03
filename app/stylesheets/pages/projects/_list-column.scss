@@ -10,11 +10,12 @@
   }
   &:hover {
     border-left-color: darken($gray-lighter, 10%);
-    background-color: $gray-lighter;
+    background-color: $gray-lightest;
   }
   &.project-box-overdued {
     @extend %task-overdued-style;
     border-left-color: desaturate(darken($brand-danger, 0%), 30%);
+    background-color: #fff;
     .project-box-title-block,
     .status-date {
       color: desaturate(darken($brand-danger, 0%), 30%);
@@ -23,6 +24,9 @@
   &.project-box-new {
     @extend %task-new-style;
     background-color: $contentBackgroundColor;
+    &:hover {
+      background-color: $gray-lightest;
+    }
     border-left-color: desaturate(darken($brand-primary, 0%), 30%);
     .project-box-title-block,
     .status-date {
@@ -61,7 +65,7 @@ a.project-box-details-item {
 .project-box-details-item-new,
 a.project-box-details-item-new {
   font-weight: bold;
-  color: desaturate(lighten($brand-danger, 20%), 30%);
+  color: desaturate(lighten($brand-primary, 10%), 20%);
 }
 
 
@@ -69,7 +73,7 @@ a.project-box-details-item-new {
   margin: 0.5em 0;
   height: 5px;
   @include border-radius(0);
-  background-color: $gray-lighter;
+  background-color: darken($gray-lighter, 5%);
   &, .progress-bar {
     @include box-shadow(none);
   }

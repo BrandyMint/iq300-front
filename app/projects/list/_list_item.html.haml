@@ -1,5 +1,9 @@
 - status = locals[:status]
+- status_title = locals[:status_title]
 - project_id = 1 + rand(1000)
+- day = 1 + rand(30)
+- current_year = 2014
+- year = current_year + rand(2)
 
 .project-box{class: "project-box-#{status}", role: 'jump project-box', data: {href: '../projects/show', project_id: project_id}}
   .row
@@ -17,7 +21,7 @@
           %span.title
             Разработка системы IQ300
         %span.label.label-default
-          Инициализация
+          = status_title || 'Инициализация'
         &nbsp;
         &nbsp;
         %span.text-muted
@@ -31,21 +35,28 @@
               -# выделяем блоки, в которых есть изменения
               %a.project-box-details-item{ class: "#{(qty%3 == 0) && (status != 'draft') ? 'project-box-details-item-new' : ''}"}
                 = d
-                %small= qty
+                %small
+                  = qty
+                  - if (qty%3 == 0) && (status != 'draft')
+                    = "/"
+                    %span.text-color-warning= "#{1 + rand(10)}"
 
     .col-lg-3.col-sm-4
       .task-box-status-block.pull-right
         .status-date.task-box-status-date
           %span.day-list
-            19
+            = day
           %span.month
             Август
-
-    .col-sm-10.col-sm-offset-2.col-md-11.col-md-offset-1
-      - ratio_normal = 1 + rand(100)
-      - ratio_danger = (100 - ratio_normal)/2
-      .progress.project-box-progress
-        .progress-bar.progress-bar-primary{"aria-valuemax" => "100", "aria-valuemin" => "0", role: "progressbar", style: "width: #{ratio_normal}%"}
-        .progress-bar.progress-bar-danger{"aria-valuemax" => "100", "aria-valuemin" => "0", role: "progressbar", style: "width: #{ratio_danger}%"}
+          - unless year == current_year
+            %span.year
+              = year
+    - unless status == 'draft' || status == 'scenario'
+      .col-sm-10.col-sm-offset-2.col-md-11.col-md-offset-1
+        - ratio_normal = 1 + rand(100)
+        - ratio_danger = (100 - ratio_normal)/2
+        .progress.project-box-progress
+          .progress-bar.progress-bar-primary{"aria-valuemax" => "100", "aria-valuemin" => "0", role: "progressbar", style: "width: #{ratio_normal}%"}
+          .progress-bar.progress-bar-danger{"aria-valuemax" => "100", "aria-valuemin" => "0", role: "progressbar", style: "width: #{ratio_danger}%"}
 
 

@@ -113,6 +113,8 @@ configure :build do
   ignore "stylesheets/landing/*"
   ignore "stylesheets/libs/*"
   ignore "stylesheets/pages/*"
+  ignore "app/vendor/components"
+  ignore ".git"
   # TODO transfer all to app folder and ignore it on build
 
   activate :minify_css
