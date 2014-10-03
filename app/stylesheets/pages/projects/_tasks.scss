@@ -11,6 +11,9 @@ $project-task-checkbox-width: 10px;
     }
     margin-bottom: 1px;
   }
+  a {
+    text-decoration: none;
+  }
   @each $c in new $brand-primary, overdued $brand-danger {
     &.task-#{nth($c,1)} {
       &,
