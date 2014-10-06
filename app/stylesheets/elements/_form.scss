@@ -1,3 +1,5 @@
+$form-group-padding: 20px;
+
 form .inline-errors {
   display: inline;
   color: red;
@@ -33,7 +35,7 @@ select {
 // GLOBAL FORM ELEMENTS -->
 // form header section -->
 .form-header {
-  padding: 20px;
+  padding: $form-group-padding;
   color: #666666;
   &.underline {
     border-bottom: solid 1px #e6e6e6;
@@ -48,7 +50,7 @@ select {
     margin-top: 7px;
     > a {
       display: inline-block;
-      margin-left: 10px;
+      margin-left: $form-group-padding/2;
     }
   }
   h6 {
@@ -64,7 +66,7 @@ select {
 // <-- form header section
 
 .text-field-holder {
-  padding: 20px;
+  padding: $form-group-padding;
   + .form-list {
     margin-top: 0;
   }
@@ -72,7 +74,7 @@ select {
 
 // form members list -->
 .form-list {
-  margin-top: 20px;
+  margin-top: $form-group-padding/2;
   color: #666666;
   &:first-child {
     margin-top: 0;
@@ -87,17 +89,21 @@ select {
     }
   }
   > li {
-    padding: 7px 20px 0;
+    padding: 7px $form-group-padding 0;
     position: relative;
     > ul.nested {
       margin-top: 0;
+    }
+    cursor: pointer;
+    &:hover {
+      color: $link-color;
     }
   }
   a {
     color: inherit;
   }
   .checkbox-member {
-    margin: -7px -20px 0;
+    margin: -7px (-$form-group-padding) 0;
   }
   .btn-remove {
     position: absolute;
@@ -108,6 +114,10 @@ select {
     margin-top: -8px;
     text-decoration: none;
     font-size: 16px;
+    color: $gray-light;
+    &:hover {
+      color: $brand-danger;
+    }
   }
   .icon-active {
     visibility: hidden;
@@ -121,15 +131,15 @@ select {
       color: #666666;
     }
   }
-  .form-list > li { padding-left: 15px;}
 }
 
 // <-- form members list
 
 // form members checkbox -->
 .checkbox-member {
-  padding: 7px 20px 7px 38px;
+  padding: 7px $form-group-padding 7px 38px;
   position: relative;
+  cursor: pointer;
   &:hover {
     color: #2b8cae;
     .input-holder {
@@ -163,8 +173,8 @@ select {
     }
   }
   .input-holder {
-    width: 20px;
-    height: 20px;
+    width: $form-group-padding;
+    height: $form-group-padding;
     border-radius: 100%;
     border: solid 1px #e6e6e6;
     float: left;
@@ -201,13 +211,13 @@ select {
 
 // form field -->
 .form-container {
-  padding: 20px 40px;
+  padding: $form-group-padding $form-group-padding*2;
 }
 .form-container-compact {
-  padding: 20px;
+  padding: $form-group-padding;
 }
 .form-field, .form-field-gray {
-  padding: 20px;
+  padding: $form-group-padding;
   border: solid 1px $input-border;
   @include clear;
 }

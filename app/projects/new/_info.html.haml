@@ -1,0 +1,103 @@
+.form-group
+  %label.col-md-3
+    Название проекта
+    %small
+      (обязательное поле)
+  #project-title.col-md-9
+    .input-group
+      %input#project_title.form-control{"data-errors-in" => "#project-title", "data-v-presence" => "true", :name => "project[title]", :placeholder => "Название проекта (обязательно)", :role => "validable", :size => "30", :type => "text"}/
+      .input-group-addon
+        .fa.fa-exclamation-triangle
+    %ul.errors-list{:role => "errors-list"}
+.form-group
+  %label.col-md-3
+    Основное сообщество
+    %small
+      (обязательное поле)
+  .col-md-9
+    .input-group-above
+      .form-group
+        %select{role: 'select2-multiple', :tabindex => "-1", style: "width: 100%;"}
+          %option{selected: 'selected'} Iq300
+          - for i in 1..6
+            - caption = "Сообщество #{i} Управление организационно-аналитической и правовой работы аппарата Мэра (Городского Совета)"
+            %option= truncate(caption, length: 30)
+.form-group
+  %label.col-md-3
+    Сообщества&ndash;участники
+  .col-md-9
+    .input-group-above
+      .form-group
+        %select{:multiple => "", role: 'select2-multiple add-another-community', :tabindex => "-1", style: "width: 100%;"}
+          %option{selected: 'selected'} Iq300
+          - for i in 1..6
+            - caption = "Сообщество #{i} Управление организационно-аналитической и правовой работы аппарата Мэра (Городского Совета)"
+            %option= truncate(caption, length: 30)
+
+
+.form-group
+  %label.col-md-3
+    Начало проекта
+    %small
+      (обязательное поле)
+  .col-md-9
+    .input-group-above.input-group-date
+      %input#project_start_date.date-input.zebra-date-picker.form-control.date-input-short{"data-zdp_format" => "d.m.Y", :name => "project[start_date]", :placeholder => "Начало проекта (обязательно)", :readonly => "readonly", "role-zebra-date-picker" => "ready", :size => "30", :type => "text", :value => "27.08.2014"}/
+      .input-group-addon.input-group-addon-btn{:role => "calendar-trigger"}
+        .fa.fa-calendar-o.fa-lg
+.form-group
+  %label.col-md-3
+    Дата завершения
+    %small
+      (обязательное поле)
+  #project-end-date.col-md-9
+    .input-group-above.input-group-date
+      %input#project_end_date.date-input.zebra-date-picker.form-control.date-input-short{"data-errors-in" => "#project-end-date", "data-v-presence" => "true", "data-zdp_format" => "d.m.Y", :disabled => "disabled", :name => "project[end_date]", :placeholder => "Дата завершения", :readonly => "readonly", :role => "validable", "role-zebra-date-picker" => "ready", :size => "30", :type => "text", :value => ""}/
+      .input-group-addon.input-group-addon-btn{"end-date" => "", :role => "calendar-trigger"}
+        .fa.fa-calendar-o.fa-lg
+    %ul.errors-list{:role => "errors-list"}
+.form-group.underline
+  %label.col-md-3
+    Руководитель
+    %small
+      (обязательное поле)
+  .col-md-9
+    .input-group-above
+      #s2id_project_manager_id.select2-container.select-two.chained-select{:style => "width: 100%;"}
+        %a.select2-choice{:href => "javascript:void(0)", :onclick => "return false;", :tabindex => "-1"}
+          %span.select2-chosen Александр Мещеряков
+          %abbr.select2-search-choice-close
+          %span.select2-arrow
+            %b
+        %input#s2id_autogen2.select2-focusser.select2-offscreen{:type => "text"}/
+        .select2-drop.select2-display-none.select2-with-searchbox
+          .select2-search
+            %input.select2-input{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :type => "text"}/
+          %ul.select2-results
+      %select#project_manager_id.select-two.chained-select.select2-offscreen{"data-chained-select" => "/communities/__project%5Bcommunity_id%5D__/users?per=500", "data-cs-default-value" => "203", "data-skip-init-req" => "true", :name => "project[project_manager_id]", :placeholder => "Ответственный по проекту (обязательно)", "role-chained-select" => "ready", "role-select-two" => "ready", :style => "width: 100%;", :tabindex => "-1"}
+        %option
+        %option{:value => "203"} Александр Мещеряков
+.form-group.underline
+  %label.col-md-3
+    Администраторы проекта
+  .col-md-9
+    .input-group-above
+      - admins = ["Василий Михайлов", "Петр Иванов", "Михаил Шматкевич", "Иван Остроухов"]
+      %select{:multiple => "", role: 'select2-multiple', :tabindex => "-1", style: "width: 100%;"}
+        - admins.each do |admin|
+          %option= admin
+
+
+.form-group
+  .pull-left
+    %a.btn.btn-lg{"data-step" => "description", :href => "#", :role => "step-switcher", "test-add-project-params" => ""}
+      Добавить параметры проекта
+  .pull-right
+    %a.btn.btn-primary.btn-lg{"data-step" => "team", :href => "#", :role => "step-switcher"}
+      Выбрать участников
+      %span.fa.fa-chevron-right
+    .small.text-muted.text-center.media
+      Перейти к выбору команды
+      %br/
+      без описания параметров проекта
+

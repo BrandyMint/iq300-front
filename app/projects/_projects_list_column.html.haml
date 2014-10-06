@@ -1,11 +1,11 @@
 %section.projects-list-column.form-container-compact{"data-channel" => "presence-1757:projects", "data-list-with-scroll" => "true", "data-url" => "/projects"}
-  = partial 'projects/index/header'
-  = partial 'projects/index/filters'
+  = partial 'projects/list/header'
+  = partial 'projects/list/filters'
   .form-group
     %h4.task-group-title Все проекты
   .infinite-list.projects-list{"data-url" => "/projects"}
     - for i in 0..4
       - statuses = ['in_work', 'draft', 'overdued', 'completed', 'new']
       - statuses.each_with_index do |status, i|
-        = partial 'projects/index/list_item', locals: {status: status}
+        = partial 'projects/list/list_item', locals: {status: status}
 

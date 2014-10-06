@@ -1,0 +1,97 @@
+// pft - project-form-team
+
+$pft-block-gutter-fixed: 10px;
+
+$pft-block-max-width: 970px;
+$pft-header-height: 90px;
+$pft-header-z-index: 90;
+$pft-selected-header-height: 60px;
+$pft-content-header-height: 60px;
+//$pft-list-top: $topPanelHeight + $headerHeight + $project-form-navigation-height + $pft-block-gutter-fixed;
+$pft-list-top: $project-form-navigation-height + $pft-block-gutter-fixed/2;
+$pft-list-bottom: $pft-block-gutter-fixed;
+
+$pft-width-fixed: 1280px;
+$pft-block-margin-fixed: 0px;
+$pft-header-width-fixed: ($pft-width-fixed - $pft-block-margin-fixed*2)/3*2;
+$pft-sidebar-width-fixed: $pft-header-width-fixed/2;
+$pft-content-width-fixed: $pft-header-width-fixed/2;
+$pft-selected-width-fixed: $pft-header-width-fixed/2;
+
+$pft-block-margin: percentage( $pft-block-margin-fixed / $pft-width-fixed );
+$pft-block-gutter: percentage( $pft-block-gutter-fixed / $pft-width-fixed);
+$pft-header-width: percentage( $pft-header-width-fixed / $pft-width-fixed );
+$pft-sidebar-width: $pft-header-width / 2;
+$pft-content-width: $pft-header-width / 2;
+$pft-selected-width: $pft-header-width / 2;
+
+$pft-header-left: $pft-block-margin - $pft-block-gutter/2;
+
+// dimensions: (class width left)
+$pft-header-dims: (project-form-team-list-header $pft-header-width $pft-header-left);
+$pft-sidebar-dims: (project-form-team-list-sidebar $pft-sidebar-width $pft-header-left);
+$pft-content-dims: (project-form-team-list-content $pft-content-width ($pft-header-left + $pft-sidebar-width));
+$pft-content-header-dims: (project-form-team-list-content-header $pft-content-width ($pft-header-left + $pft-sidebar-width));
+$pft-selected-dims: (project-form-team-selected-block $pft-selected-width ($pft-header-width + $pft-header-left + $pft-block-gutter/2));
+$pft-selected-header-dims: (project-form-team-selected-block-header $pft-selected-width ($pft-header-width + $pft-header-left + $pft-block-gutter/2));
+
+$pft-dims-list: ($pft-header-dims $pft-sidebar-dims $pft-content-dims $pft-content-header-dims $pft-selected-dims $pft-selected-header-dims);
+
+%project-form-team-block {
+  position: absolute;
+  background: #fff;
+  left: 0;
+}
+
+@each $block in $pft-dims-list {
+  .#{nth($block,1)} {
+    @extend %project-form-team-block;
+    width: nth($block,2);
+    margin-left: nth($block,3);
+    @include box-sizing(border-box);
+  }
+}
+
+
+.project-form-team-list-header {
+  top: $pft-list-top;
+  height: $pft-header-height;
+  z-index: $pft-header-z-index;
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.project-form-team-list-sidebar {
+  top: $pft-list-top + $pft-header-height;
+  bottom: $pft-list-bottom;
+  overflow-y: auto;
+}
+
+.project-form-team-list-content-header {
+  top: $pft-list-top + $pft-header-height;
+  border-left: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+  height: $pft-content-header-height;
+}
+
+.project-form-team-list-content {
+  top: $pft-list-top + $pft-header-height;
+  bottom: $pft-list-bottom;
+  overflow-y: auto;
+  border-left: 1px solid $gray-lighter;
+  margin-top: $pft-content-header-height;
+}
+
+.project-form-team-selected-block-header {
+  top: $pft-list-top;
+  height: $pft-selected-header-height;
+  z-index: $pft-header-z-index;
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.project-form-team-selected-block {
+  top: $pft-list-top;
+  bottom: $pft-list-bottom;
+  margin-top: $pft-selected-header-height;
+  overflow-y: auto;
+}
+
