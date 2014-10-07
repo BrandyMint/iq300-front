@@ -9,25 +9,25 @@
     bottom: $grid-gutter-width/2;
   }
   &:hover {
-    border-left-color: darken($gray-lighter, 10%);
-    background-color: $gray-lightest;
+    border-left-color: $item-hover-border-color;
+    background-color: $item-hover-background;
   }
   &.project-box-overdued {
     @extend %task-overdued-style;
-    border-left-color: desaturate(darken($brand-danger, 0%), 30%);
+    border-left-color: $overdued-item-border-color;
     background-color: #fff;
     .project-box-title-block,
     .status-date {
-      color: desaturate(darken($brand-danger, 0%), 30%);
+      color: $overdued-item-text-color;
     }
   }
   &.project-box-new {
     @extend %task-new-style;
-    background-color: $contentBackgroundColor;
+    background-color: $new-item-background;
+    border-left-color: $new-item-border-color;
     &:hover {
       background-color: $gray-lightest;
     }
-    border-left-color: desaturate(darken($brand-primary, 0%), 30%);
     .project-box-title-block,
     .status-date {
       color: desaturate(darken($brand-primary, 0%), 30%);

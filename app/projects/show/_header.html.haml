@@ -10,9 +10,18 @@
         %a{"data-method" => "put", href: "/favorites?project_id=879", rel: "nofollow"}
           %i.icon-star-empty.star-favourite.icon-size-18
     Разработка системы IQ300
-  .pull-right
-    = link_to '#' do
-      В работе
+  .status-box.pull-right
+    .status-label{"test-task-status" => ""}
+      %i.fa.fa-tasks
+      Просмотрена
+    .status-label.text-color-danger
+      %i.fa.fa-warning
+      Просрочена
+      на 2 дня
+    .status-label.text-color-danger
+      %i.fa.fa-calendar
+      18 Августа
+
   .clearfix
   .row
     .col-sm-4

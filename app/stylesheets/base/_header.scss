@@ -33,8 +33,11 @@
       vertical-align: middle;
       img {
         border-radius: 100%;
-        margin: 3px 10px 0 0;
+        display: inline-block;
+        margin: floor(($headerHeight - $user-avatar-width - 2px)/2) 0.5em 0 0;
         border: 1px solid #ddd;
+        width: $user-avatar-width;
+        height: $user-avatar-width;
       }
     }
     a { 

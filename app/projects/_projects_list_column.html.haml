@@ -1,6 +1,7 @@
 %section.projects-list-column.form-container-compact{"data-channel" => "presence-1757:projects", "data-list-with-scroll" => "true", "data-url" => "/projects"}
-  = partial 'projects/list/header'
-  = partial 'projects/list/filters'
+  .projects-list-header{role: 'projects-list-header'}
+    = partial 'projects/list/header'
+    = partial 'projects/list/filters'
   .form-group
     %h4.task-group-title Все проекты
   .infinite-list.projects-list{"data-url" => "/projects"}

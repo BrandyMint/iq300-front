@@ -1,0 +1,17 @@
+#project-discussions.object-details.project-discussions-tab.undefined{"data-url" => "/projects/120/discussions?initial=true", "role-project-discussions-tab" => "ready", :style => "display: block;"}
+  .navbar.navbar-default
+    %form#new_discussion.project-discussions-form{"accept-charset" => "UTF-8", :action => "/projects/120/discussions", :method => "post"}
+      %div{:style => "margin:0;padding:0;display:inline"}
+        %input{:name => "utf8", :type => "hidden", :value => "✓"}
+        %input{:name => "authenticity_token", :type => "hidden", :value => "="}
+      .row
+        .col-sm-9
+          .form-group
+            %input.form-control{:name => "discussion[title]", :placeholder => "Название обсуждения", :type => "text"}
+        .col-sm-3
+          %input.project-discussions-form-btn{"data-wait" => "Отправка...", :name => "commit", :type => "submit", :value => "Добавить"}
+  %section.project-discussions{"data-channel" => "private-project-120:discussions", "data-scroll-container" => ".column-content", "data-url" => "/projects/120/discussions?list_only=true", "data-with-button" => ""}
+    .more-button-data{"data-current-page" => "1", "data-limit-value" => "20", "data-total-pages" => "1", :style => "display:none;"}
+    - for i in 0..5
+      = partial 'projects/discussions/list_item'
+    .infinite-list-button-container

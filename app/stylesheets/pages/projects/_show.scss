@@ -9,6 +9,10 @@ h2.project-show-title {
   }
 }
 
+.project-show-title {
+  max-width: 60%;
+}
+
 .project-show-tabs {
   margin: {
     top: 1.5em;
@@ -32,9 +36,9 @@ h2.project-show-title {
 }
 
 .project-header-avatar {
-  width: 32px;
-  height: 32px;
-  @include border-radius(32px/1.4);
+  width: $user-avatar-width;
+  height: $user-avatar-width;
+  @include border-radius(100%);
   border: 1px solid $gray-lighter;
   margin-right: 0.5em;
 }

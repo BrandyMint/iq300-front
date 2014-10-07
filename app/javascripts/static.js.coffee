@@ -6,6 +6,8 @@
 #= require eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min
 #= require projects/tasks
 #= require projects/new
+#= require projects/discussions
+#= require projects/list
 
 $ ->
   $('@select2').select2()

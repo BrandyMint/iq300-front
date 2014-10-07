@@ -1,11 +1,24 @@
 $text-color: #606060;
+$blue-pale-dark: #e3ebed;
 
 $bodyBackground: #f9f9f4;
 $borderColor: #cccccc;
 $blueLink: #3fabf3;
 $greyText: #9a9a9a;
+
+$line-color: $gray-lighter;
+
+$new-item-background: $blue-pale-dark;
+$new-item-border-color: desaturate(darken($brand-primary, 0%), 30%);
+
+$item-hover-background: $gray-lighter;
+$item-hover-border-color: darken($gray-lighter, 10%);
+
+$overdued-item-border-color: desaturate(darken($brand-danger, 0%), 30%);
+$overdued-item-text-color: desaturate(darken($brand-danger, 0%), 30%);
+
 $placeholderColor: lighten(#000, 60%);
-$contentBackgroundColor: #e3ebed;
+$contentBackgroundColor: $blue-pale-dark;
 //$navigationBackground: #245b79;
 $navigationBackground: $bodyBackground;
 $errorColor: red;
@@ -62,4 +75,7 @@ $filters-column-z-index: 19;
 $content-column-z-index: 20;
 $top-panel-z-index: 21;
 $view-column-z-index: $content-column-z-index;
+$content-column-toolbar-z-index: 22;
 
+
+$user-avatar-width: 32px;

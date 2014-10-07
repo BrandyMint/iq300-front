@@ -1,17 +1,16 @@
 .form-group{"data-channel" => "presence-203:base_tasks", "data-url" => "/tasks/list_panel", role: "tasks-list-panel"}
   .page-title.mbm
-    .pull-left
-      %h2
-        Мои проекты
-        %small 2
-    -#.pull-right
-      %a.btn.btn-default{href: "#"}
-        %span.fa.fa-cog
-        Показывать&hellip;
-    -#.pull-right
-      &nbsp;&nbsp;&nbsp;
-    .pull-right
-      %a.btn.btn-default{href: "../projects/new/"}
-        %span.fa.fa-plus-circle
-        Новый проект
+    .row
+      .col-xs-4
+        %h2
+          Мои проекты
+          %small 2
+      .col-xs-4.text-center
+        %a.btn.btn-default.projects-list-header-filters-btn{role: 'projects-list-header-filters-btn'}
+          %i.fa.fa-filter
+          Фильтры
+      .col-xs-4.text-right
+        %a.btn.btn-default{href: "../projects/new/"}
+          %span.fa.fa-plus-circle
+          Новый проект
 

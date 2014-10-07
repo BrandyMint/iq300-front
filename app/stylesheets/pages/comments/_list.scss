@@ -3,11 +3,12 @@
   div.comment {
     position: relative;
     padding-left: 50px;
-    padding-bottom: 7px;
-    padding-top: 5px;
+    padding-bottom: $grid-gutter-width/2;
+    padding-top: $grid-gutter-width/2;
     font-size: 11px;
-    margin-top: 5px;
+    margin-bottom: 5px;
     @include bordered-top;
+    border-top-color: $line-color;
     > .image {
       position: absolute;
       left: 3px;
@@ -15,14 +16,16 @@
       max-width: 37px;
       max-height: 37px;
       line-height: 37px;
-      //+bordered
       > a {
         @include inline-block;
         > img {
+          margin-top: $grid-gutter-width/2;
           max-width: 35px;
           max-height: 35px;
+          @include border-radius(100%);
           vertical-align: middle;
           @include bordered;
+          border-color: $line-color;
           line-height: 0;
         }
       }

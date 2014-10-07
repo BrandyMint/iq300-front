@@ -1,0 +1,28 @@
+.projects-list-header {
+  &.projects-list-header-fixed {
+    position: fixed;
+    left: inherit;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid $line-color;
+    margin: {
+      top: - $form-group-padding;
+    }
+    padding: {
+      left: inherit;
+      right: inherit;
+      top: $form-group-padding;
+    }
+    z-index: $content-column-toolbar-z-index;
+    .projects-list-filters {
+      margin-bottom: $form-group-padding;
+    }
+    .projects-list-header-filters-btn {
+      display: inline-block;
+    }
+  }
+}
+
+.projects-list-header-filters-btn {
+  display: none;
+}

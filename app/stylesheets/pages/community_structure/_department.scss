@@ -7,7 +7,7 @@ $toggle-size: 23.75px;
 $toggle-bg-color: #dbe3e6;
 $toggle-arrow-color: #666666;
 $line-size: 2px;
-$line-color: #dbe3e6;
+$department-line-color: #dbe3e6;
 $line-transparent-color: white;
 $counter-width: 31.25px;
 $counter-height: 21.25px;
@@ -54,7 +54,7 @@ $counter-bg-color: #338bae;
       top: $list-top-padding + $title-height / 2;
       left: 0;
       height: 100%;
-      border-left: $line-size solid $line-color;
+      border-left: $line-size solid $department-line-color;
     }
     > .root-line-clear {
       position: absolute;
@@ -71,14 +71,14 @@ $counter-bg-color: #338bae;
       width: $list-left-padding;
     }
     > li > .line {
-      border-top: $line-size solid $line-color;
-      border-left: $line-size solid $line-color;
+      border-top: $line-size solid $department-line-color;
+      border-left: $line-size solid $department-line-color;
     }
     > li:last-child > .line {
       border-left-color: $line-transparent-color;
     }
     > li > ol.children li > .line {
-      border-top: $line-size solid $line-color;
+      border-top: $line-size solid $department-line-color;
     }
     > li > ol.children li > .line-child {
       position: absolute;
@@ -86,7 +86,7 @@ $counter-bg-color: #338bae;
       height: 100%;
       left: -$list-left-padding;
       width: $list-left-padding * 2;
-      border-top: $line-size solid $line-color;
+      border-top: $line-size solid $department-line-color;
     }
     > li > ol > li > ol li:last-child > .line-child {
       border-left: $line-size solid $line-transparent-color;
@@ -95,7 +95,7 @@ $counter-bg-color: #338bae;
       border-left: $line-size solid $line-transparent-color;
     }
     > li > input.toggle:checked ~ .line {
-      border-left: $line-size solid $line-color;
+      border-left: $line-size solid $department-line-color;
     }
     //
     // Toggles
@@ -118,7 +118,7 @@ $counter-bg-color: #338bae;
         display: block;
       }
       ~ .line {
-        border-left: $line-size solid $line-color;
+        border-left: $line-size solid $department-line-color;
       }
       ~ .toggle-arrow {
         top: $title-height / 2 - $toggle-size / 6 + $line-size;
@@ -158,7 +158,7 @@ $counter-bg-color: #338bae;
       width: $toggle-size - $line-size * 2;
       height: $toggle-size - $line-size * 2;
       background-color: $line-transparent-color;
-      border: $line-size solid $line-color;
+      border: $line-size solid $department-line-color;
     }
     .toggle-block {
       display: none;
@@ -227,7 +227,7 @@ $department-label-padding: 10px;
 }
 
 .department-root-drop-area.drop-area {
-  border: 2px dashed $line-color;
+  border: 2px dashed $department-line-color;
 }
 
 .department {

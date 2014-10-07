@@ -11,8 +11,8 @@
     img {
       vertical-align: top;
       @include bordered;
-      max-width: 34px;
-      max-height: 34px;
+      max-width: $user-avatar-width;
+      max-height: $user-avatar-width;
     }
   }
   .name {

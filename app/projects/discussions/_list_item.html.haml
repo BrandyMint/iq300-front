@@ -1,0 +1,74 @@
+.project-discussion.rolled{role: 'project-discussion', "data-channel" => "private-discussion-4679:comments", "data-discussion-url" => "/discussions/4679", "data-url" => "/projects/120/discussions/4679?info_only=true"}
+  .row
+    .col-xs-1
+      .project-discussion-label
+        Задача
+    .col-xs-11
+      .project-discussion-header
+        %h4.project-discussion-title.pull-left
+          %a{:href => "/tasks/2382"} Test task
+        %span.project-discussion-comments-counter.pull-right{role: 'project-discussion-comments-counter'}
+          %i.fa.fa-comments
+          2
+        %a.link-gray-light.pull-right{role: 'project-discussion-comments-hide', style: 'display: none'}
+          %i.fa.fa-angle-up
+          свернуть
+        .clearfix
+
+  .row
+    .col-xs-11.col-xs-offset-1
+      .project-discussion-latest.media
+        %a.pull-left{:href => "/users/203"}
+          %img.project-discussion-latest-image.media-object.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", :title => "Мещеряков Александр"}
+        .media-body
+          .project-discussion-latest-info
+            %span.project-discussion-latest-name
+              %a{:href => "/users/203"} Александр Мещеряков
+            %small.text-muted
+              &nbsp;
+              08 сент. в 17:09
+          .project-discussion-latest-body
+            Главное на этой неделе от Афиша-Город: Михалков взялся за Бунина, британские дизайнеры все еще в Пушкинском, фестиваль моноспектаклей и не только
+      .project-discussion-details
+        .task-discussion.disable-initializer{"role-task-discussion" => ""}
+          .comments-list{"data-channel" => "private-discussion-4952:comments", "data-url" => "/discussions/4952/comments", "data-with-button" => ""}
+            .infinite-list
+              .more-button-data{"data-current-page" => "1", "data-limit-value" => "10", "data-total-pages" => "1", :style => "display:none;"}
+              - for i in 0..3
+                .comment.comment-item.common{"data-author" => "МещеряковАлександр", "data-id" => "2896"}
+                  .image
+                    %a{:href => "/users/203"}
+                      %img{:alt => "Александр", :hide_wait_message => "true", :src => "/assets/default-user-avatar-ab40e583feb1d4ccafd691dd46b79968.png", :style => "width:34px;height:34px;", :title => "Мещеряков Александр"}/
+                  .name
+                    %a{:href => "/users/203"} Александр Мещеряков
+                  %a.delete{"data-confirmation" => "Подтвердите действие", "data-url" => "/discussions/4952/comments/2896", :href => "#"}
+                    %i.icon-remove
+                  %span.date
+                    Сегодня, 15:21
+                  .body
+                    %p test
+          %form#new_comment.comments-form.main-form{"accept-charset" => "UTF-8", :action => "/discussions/4952/comments", "data-discussion-key" => "discussion-4952", "data-exist-attachment-default-name" => "Прикрепить уже загруженный", "data-users-path" => "/tasks/2531/users?for=accessors&per=500&without_current_user=true", :enctype => "multipart/form-data", :method => "post"}
+            %div{:style => "margin:0;padding:0;display:inline"}
+              %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+              %input{:name => "authenticity_token", :type => "hidden", :value => "FJIl7SVnUIvMfRIc3JznD71P3QhfOL9146/wmqx/xPI="}/
+            %input#redirect_to{:name => "redirect_to", :type => "hidden", :value => "/tasks/2531"}/
+            %textarea.comment-body{:cols => "40", :name => "comment[body]", :placeholder => "Добавить комментарий", :role => "comment-body", :rows => "20", :style => "overflow: hidden; word-wrap: break-word; resize: none; height: 72px;"}
+            %input#btnSubmit{"data-wait" => "Отправка...", :name => "commit", :role => "submit-button", :type => "submit", :value => "Отправить"}/
+            %input{:role => "reset", :type => "reset", :value => "Отменить"}/
+            #discussion-attachments-4952{"data-files-max-size" => "50", :role => "files"}
+              %a.add.add_nested_fields{"data-association" => "attachments", "data-blueprint-id" => "attachments_fields_blueprint", "data-target" => "#discussion-attachments-4952", :href => "javascript:void(0)", :role => "add-file"}
+                %span.attachment-label
+            #attachments_fields_blueprint{"data-blueprint" => "<div class='file fields' role='file'>\r\n<a href=\"#\"><span class='fa fa-file-text-o fa-lg'></span>\r\n</a><span class='file-name' role='file-name'>\r\nfile_name\r\n</span>\r\n<input id=\"comment_attachments_attributes_new_attachments_file\" name=\"comment[attachments_attributes][new_attachments][file]\" role=\"file-input\" style=\"display:none\" type=\"file\" />\r\n<input id=\"comment_attachments_attributes_new_attachments__destroy\" name=\"comment[attachments_attributes][new_attachments][_destroy]\" type=\"hidden\" value=\"false\" /><a href=\"javascript:void(0)\" class=\"delete remove_nested_fields\" data-association=\"attachments\" data-confirm=\"Вы уверены?\"><i class=\"icon-remove \" ></i></a>\r\n</div>\r\n", :style => "display: none"}
+
+-#.project-discussion.rolled{"data-channel" => "private-discussion-4586:comments", "data-discussion-url" => "/discussions/4586", "data-url" => "/projects/120/discussions/4586?info_only=true"}
+  %header.discussion-header
+    .discussion-name
+      %a{:href => "/tasks/2343"} Обсуждение для задачи «test project task»№-2343 от 26.08.2014
+    .discussion-counter
+  .discussion-info
+    .discussion-latest
+      Комментарии отсутствуют
+    .discussion-date
+      26 авг. в 13:08
+  .discussion-details
+

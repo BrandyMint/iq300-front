@@ -28,18 +28,13 @@ body_class: tasks-show
             %a{:href => "/users/1757"} Александр Владимирогородский
         .pull-right.task-status
           .status-box
-            .status-label.bg-info{"test-task-status" => ""}
+            .status-label{"test-task-status" => ""}
               Просмотрена
-            .status-label.bg-danger
-              %span
-                Просрочена
-                %br/
-                на 2 дня
+            .status-label
+              Просрочена
+              на 2 дня
             .status-date
-              .day
-                18
-              .month
-                Августа
+              18 Августа
 
     %ul.nav.nav-tabs.tabnav{"data-channel" => "presence-5:base_task-121", "data-container" => ".tab-content", "data-read-changes-url" => "/changes/read?base_task_id=121", "role-ready" => "tabnav", "test-tabnav" => ""}
       %li.active{"data-changes" => "base_tasks,todo_items,attachment_links"}
