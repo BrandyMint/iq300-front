@@ -155,7 +155,7 @@ body_class: tasks-index
             %form.community-invites-form
               .form-controls-wrapper
                 %textarea.invitation-email-area{placeholder: "e-mail пользователей для приглашения"}
-                %input{type: 'submit', class: "btn-check", value: "Проверить"}
+                %input{type: 'submit', class: "community-invites-btn-check", value: "Проверить"}
         .community-invites-status-block
           %table.table.community-invites-status-list
             %thead
@@ -172,12 +172,6 @@ body_class: tasks-index
                 %td.community-invites-status-item-actions
                   %a{href: "#", class: "community-invites-cancel-invite-link"} Удалить
               %tr
-                %td.id 2
-                %td.email egor@users.com
-                %td.invite-people-list-status На указанный адрес уже выслано приглашение
-                %td.community-invites-status-item-actions
-                  %span.community-invites-status-item-actions-reseted Отменено
-              %tr
                 %td.id 3
                 %td.email @@users.com
                 %td.invite-people-list-status-error Неверный формат адреса
@@ -186,7 +180,7 @@ body_class: tasks-index
           .collection-action
             %form.send-invites
               .form-controls-wrapper
-                %input{type: 'submit', class: "btn-send", value: "Отправить"}
+                %input{type: 'submit', class: "community-invites-btn-send", value: "Отправить"}
         .community-invites-sended-block
           .community-invites-sended-block-title
             %strong
@@ -197,13 +191,19 @@ body_class: tasks-index
                 %tr.community-sended-invite-item
                   %td.community-sended-invite-item-detail.invitation-person-email shamil@users.com
                   %td.community-sended-invite-item-detail.status
-                    .invite-people-list-status-member В сообществе
+                    .invite-people-list-status-accepted В сообществе
                   %td.community-sended-invite-item-detail.actions
                     %a{href: "#", class: "community-invites-cancel-invite-link"} Удалить
                 %tr.community-sended-invite-item
                   %td.community-sended-invite-item-detail.invitation-person-email egor@users.com
                   %td.community-sended-invite-item-detail.status
-                    .invite-people-list-status-waiting Ждем ответа
+                    .invite-people-list-status-invited Ждем ответа
+                  %td.community-sended-invite-item-detail.actions
+                    %a{href: "#", class: "community-invites-cancel-invite-link"} Удалить
+                %tr.community-sended-invite-item
+                  %td.community-sended-invite-item-detail.invitation-person-email egor@users.com
+                  %td.community-sended-invite-item-detail.status
+                    .invite-people-list-status-canceled Отменено
                   %td.community-sended-invite-item-detail.actions
                     %a{href: "#", class: "community-invites-cancel-invite-link"} Удалить
 

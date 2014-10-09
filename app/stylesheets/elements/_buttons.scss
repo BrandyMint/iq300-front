@@ -1,4 +1,4 @@
-.btn-base {
+.community-invites-btn-base {
   @extend .btn;
   width: 20%;
   background-color: $btn-color;
@@ -12,15 +12,20 @@
   &:hover {
     color: $base-color;
   }
+
+  &:active {
+    color: white !important;
+  }
 }
 
-.btn-check {
-  @extend .btn-base;
+.community-invites-btn-check {
+  @extend .community-invites-btn-base;
+  margin-right: 4em;
   float: right;
 }
 
-.btn-send {
-  @extend .btn-base;
+.community-invites-btn-send {
+  @extend .community-invites-btn-base;
   margin-top: 1.8em;
   margin-right: 4em;
   float: right;
