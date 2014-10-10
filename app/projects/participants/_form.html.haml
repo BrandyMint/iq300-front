@@ -1,0 +1,38 @@
+.row
+  .col-xs-6.col-lg-5
+    %section.form.add-user.project-members-form{"ui-command-invite-form" => ""}
+      %form#new_project_membership.new_project_membership.form-vertical{"accept-charset" => "UTF-8", :action => "/projects/120/project_memberships", :method => "post"}
+        %label Добавить участника из команды проекта
+        %input#project_membership_group_name{:name => "project_membership[group_name]", :type => "hidden", :value => "owners"}/
+        %select{role: 'select2'}
+          %option{selected: ''} Введите имя пользователя или его email
+        -#s2id_project_membership_user_id.select2-container.search
+          %a.select2-choice.select2-default{:href => "javascript:void(0)", :onclick => "return false;", :tabindex => "-1"}
+            %span.select2-chosen Введите имя пользователя или его email
+            %abbr.select2-search-choice-close
+            %span.select2-arrow
+              %b
+          %input#s2id_autogen1.select2-focusser.select2-offscreen{:type => "text"}/
+          .select2-drop.select2-display-none.bigdrop.select2-with-searchbox
+            .select2-search
+              %input.select2-input{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :type => "text"}/
+            %ul.select2-results
+        -#%input#project_membership_user_id.search.select2-offscreen{"data-placeholder" => "Введите имя пользователя или его email", "data-url" => "/users?per=10", "data-url-with-community" => "/communities/291/users?per=500", :name => "project_membership[user_id]", :tabindex => "-1", :type => "hidden", "ui-search" => "true"}/
+        -#%input.hidden{"data-wait" => "Отправка...", :name => "commit", :type => "submit", "ui-submit" => "true", :value => "Добавить"}/
+  .col-xs-6.col-lg-5.col-lg-offset-2
+    %form.form-vertical
+      %label Пригласить участника вне команды проекта
+      %input.form-control{type: 'text', placeholder: 'Введите имя пользователя или его email'}
+    -#%section.invite-participiant
+      %a.add-button{:href => "#", "ui-invite-member-button" => "true"} Пригласить участника вне команды проекта
+      %section.invite-community-member.search-user-for-community{"ui-other-invite-form" => ""}
+        %form{:action => "/projects/120/candidates?for=projects", :method => "get", "ui-search-form" => ""}
+          %span.twitter-typeahead{:style => "position: relative; display: inline-block;"}
+            %input.tt-hint{:autocomplete => "off", :disabled => "disabled", :spellcheck => "off", :style => "position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);", :type => "text"}/
+            %input#search.tt-query{:autocomplete => "off", :dir => "auto", :name => "search", :placeholder => "Введите имя пользователя или его email", :spellcheck => "false", :style => "position: relative; vertical-align: top; background-color: transparent;", :type => "text", "ui-search-input" => "true", :value => ""}/
+            %span{:style => "position: absolute; left: -9999px; visibility: hidden; white-space: nowrap; font-family: Arial, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"}
+            %span.tt-dropdown-menu{:style => "position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"}
+        .results{"ui-result-list" => ""}
+        %button.invite-by-email{"data-url" => "/projects/120/invitations", :name => "commit", :type => "submit", "ui-invite-button" => ""}
+          Пригласить незарегистрированного пользователя
+
