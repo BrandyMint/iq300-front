@@ -1,1 +1,3 @@
-html body #wrapper .content>.controls{display:none}
+/* line 5, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/printer.sass */
+html body #wrapper .content > .controls {
+  display: none; }

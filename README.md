@@ -3,13 +3,36 @@
 
 ## Старт
 
-1. `bundle install` устанавливает gem'ы
+Должны быть установлены git, ruby, bundler, bower, nodejs.
 
-2. `bower install` устанавливает bower-зависимости
+1. `bundle install`
 
-3. `bundle exec middleman` стартует сервер на http://localhost:4567
+2. `./frontend_prepare` устанавливаем зависимости
 
-4. `bundle exec middleman build` делает билд статичного сайта в `dist/`
+3. Запуск сервера
+
+	3.1. `bundle exec middleman` стартуем сервер на http://localhost:4567
+(обрабатываются haml, js/coffee)
+
+	3.2. В отдельной вкладке — `gulp watch` стартуем gulp для сборки sass, картинок (в images) и
+шрифтов (в fonts)
+
+4. Билд статичного сайта
+  `./frontend_build` делает билд статичного сайта в `build/` и билд
+компонента в `dist/`
+
+
+## Деплой статичного проекта
+
+`./frontend_build` — делаем билд
+
+`STAGE=<stage_name> ./frontend_deploy` — деплоим на
+`<stage_name>.iq300-dev.com`, по номеру стейджа предварительно
+договариваемся и указываем в STAGE — например, `STAGE=frontend3 ./frontend_deploy`
+
+При первом деплое нужно связаться c [elvir](https://github.com/elvir) или
+[sibsfinx](https://github.com/sibsfinx) и скинуть свой ssh-ключ.
+
 
 
 ## Использование в основном проекте
@@ -35,7 +58,9 @@
 
 Всё, что компилируется, находится в `app`.
 
-Билд находится в `dist`.
+Билд компонента находится в `dist`.
+
+Билд статичного сайда находится в `build`
 
 Вьюхи можно использовать HAML или ERB (первый предпочтительнее).
 
@@ -46,17 +71,6 @@
 
 Быстрый билд и push в репо `./update_component`
 
-
-## Деплой статичного проекта
-
-`./frontend_build` — делаем билд
-
-`STAGE=<stage_name> ./frontend_deploy` — деплоим на
-`<stage_name>.iq300-dev.com`, по номеру стейджа предварительно
-договариваемся и указываем в STAGE — например, `STAGE=frontend3 ./frontend_deploy`
-
-При первом деплое нужно связаться c [elvir](https://github.com/elvir) или
-[sibsfinx](https://github.com/sibsfinx) и скинуть свой ssh-ключ.
 
 
 

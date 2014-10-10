@@ -1,3 +1,4 @@
 #!/bin/bash
-bower install
 bundle exec middleman build
+rm -rf dist/*
+gulp dist

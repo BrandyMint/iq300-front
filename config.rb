@@ -37,7 +37,7 @@ end
 set :source_dir, 'app'
 set :source, 'app'
 
-set :build_dir, 'dist'
+set :build_dir, 'build'
 
 #activate :i18n, langs: [:en, :ru], mount_at_root: false
 
@@ -74,7 +74,7 @@ set :markdown, :fenced_code_blocks => true,
                :smartypants => true
 
 
-set :css_dir, 'stylesheets'
+set :css_dir, 'cssdir'
 
 set :js_dir, 'javascripts'
 
@@ -91,33 +91,22 @@ configure :development do
   BetterErrors.application_root = __dir__
 end
 
-
 # Build-specific configuration
 configure :build do
   # Clean 'Build' folder clean
   ignore "/javascripts/application/*"
   ignore "/javascripts/vendor/lib/*"
-  ignore "/stylesheets/vendor/*"
-  ignore "/stylesheets/app/*"
-  ignore "/vendor/components/*"
-  ignore "/vendor/components/**/*"
+  ignore "stylesheets/**/*"
+  ignore "stylesheets/*"
+  ignore "images/*"
+  ignore "fonts/*"
+  ignore "tmp/*"
   ignore "vendor/*"
-  ignore "app/vendor/*"
-  ignore "/app/vendor/components/*"
-  ignore "/app/vendor/components/**/*"
   ignore "*.rb"
-  ignore "stylesheets/base/*"
-  ignore "stylesheets/elements/*"
-  ignore "stylesheets/framework/*"
-  ignore "stylesheets/helpers/*"
-  ignore "stylesheets/landing/*"
-  ignore "stylesheets/libs/*"
-  ignore "stylesheets/pages/*"
-  ignore "app/vendor/components"
   ignore ".git"
   # TODO transfer all to app folder and ignore it on build
 
-  activate :minify_css
+  # activate :minify_css
   
   # Minify Javascript on build
   activate :minify_javascript
@@ -125,7 +114,7 @@ configure :build do
   # Enable cache buster
   activate :cache_buster
 
-  end
+end
   
   # Use relative URLs
   activate :relative_assets
@@ -136,12 +125,8 @@ configure :build do
 after_configuration do
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
   @bower_assets_path = File.join "#{root}", @bower_config["directory"]
-  #sprockets.append_path 'app/vendor'
   sprockets.append_path @bower_assets_path
   sprockets.append_path 'vendor/assets/javascripts'
-  sprockets.append_path 'vendor/assets/stylesheets'
-  sprockets.append_path 'app/stylesheets/fonts'
-  #sprockets.import_asset 'app/robots.txt'
 end
 
 
