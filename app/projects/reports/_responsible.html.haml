@@ -1,0 +1,85 @@
+.row
+  .col-lg-10.col-lg-offset-1
+    %h4.project-show-section-title
+      %strong Отчёт по исполнителям
+    %form.form-horizontal
+      %label.input-group-inline-label.pull-left
+        За период
+      .pull-left
+        .input-group-inline-block.pull-left
+          .input-group{role: 'datetimepicker'}
+            %input.form-control{type: 'text'}
+            .input-group-addon.btn
+              .fa.fa-calendar-o.fa-lg
+        .input-group-inline-dash.pull-left &mdash;
+        .input-group-inline-block.pull-left
+          .input-group{role: 'datetimepicker-now'}
+            %input.form-control{type: 'text'}
+            .input-group-addon.btn
+              .fa.fa-calendar-o.fa-lg
+        .pull-left
+          &nbsp;
+          &nbsp;
+          %input.btn.btn-default.btn-sm{type: 'sumbit', value: 'показать'}
+        .clearfix
+        %small
+          %a{href: '#'} День
+          &nbsp;
+          %a{href: '#'} Неделя
+          &nbsp;
+          %a{href: '#'} Месяц
+      .pull-right
+        &nbsp;
+        %a.btn.btn-default.btn-sm{href: ''}
+          %i.fa.fa-print
+          Печать
+      .pull-right
+        &nbsp;
+        %a.btn.btn-default.btn-sm{href: ''}
+          Скачать
+      .clearfix
+    
+%hr
+
+%table.table.table-striped
+  %thead
+    %th
+      Исполнитель
+    %th
+      Общее количество задач
+      %a.btn.btn-xs
+        %i.fa.fa-angle-down
+    %th
+      Выполнено в срок
+      %br
+      (без переноса)
+    %th
+      Выполнено досрочно
+    %th
+      Выполнено
+      %br
+      с переносом срока
+    %th
+      В работе
+    %th
+      Срыв сроков
+      %br
+      (не выполнено)
+  %tbody
+    - for i in 1..5
+      %tr
+        %td
+          %a{:href => "/users/203", :role => "member-name"}
+            John Doe
+        %td
+          22
+        %td
+          15
+        %td
+          2
+        %td
+          1
+        %td
+          3
+        %td
+          1

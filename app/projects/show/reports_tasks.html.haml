@@ -1,0 +1,21 @@
+---
+body_class: projects-show
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "show", filters: "false", full_view: "true", list: "false", view: "true"}
+  = partial 'projects/top_panel'
+  = partial 'shared/_navigation'
+  = partial 'projects/list_filters'
+  = partial 'projects/projects_list'
+  %section.view-column.projects-view-column.projects-view-column-initialized{"data-channel" => "private-project-879:update", "data-channel-template" => "private-project-%id%:update", "data-id" => "879", "data-url" => "/projects"}
+    %section.task-view-column.disable-initializer{"data-channel-template" => "private-base_task-%id%:update", "data-url" => "/tasks"}
+    -##project-tab-pane.column-content
+    #project-tab-pane.column-content-fluid
+      .container-fluid
+        .row
+          .col-lg-10.col-lg-offset-1
+            #project-details.object-details
+              = partial 'projects/show/header'
+              = partial 'projects/tab_navigation', locals: {active_item: 7}
+        = partial 'projects/reports/tasks'

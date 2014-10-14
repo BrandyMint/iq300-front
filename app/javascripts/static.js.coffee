@@ -19,7 +19,18 @@ $ ->
       up: "fa fa-arrow-up datetimepicker-icon",
       down: "fa fa-arrow-down datetimepicker-icon"
     format: 'DD/MM/YYYY HH:mm'
-  
+
+  $('@datetimepicker-now').datetimepicker
+    language: 'ru'
+    defaultDate: new Date()
+    icons:
+      time: "fa fa-clock-o datetimepicker-icon",
+      date: "fa fa-calendar datetimepicker-icon",
+      up: "fa fa-arrow-up datetimepicker-icon",
+      down: "fa fa-arrow-down datetimepicker-icon"
+    format: 'DD/MM/YYYY HH:mm'
+
+
   $('@datetimepicker input').on 'focus', () ->
     picker = $(@).parents().find('[role*="datetimepicker"]').first()
     picker.data("DateTimePicker").setDate(Date.now())

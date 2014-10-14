@@ -1,0 +1,111 @@
+.row
+  .col-lg-10.col-lg-offset-1
+    %h4.project-show-section-title
+      %strong Расширенный отчёт по задачам
+    %form.form-horizontal
+      %label.input-group-inline-label.pull-left
+        За период
+      .pull-left
+        .input-group-inline-block.pull-left
+          .input-group{role: 'datetimepicker'}
+            %input.form-control{type: 'text'}
+            .input-group-addon.btn
+              .fa.fa-calendar-o.fa-lg
+          %br
+          %label
+            %small
+              %a.input-group-inline-block-link{href: '#'} День
+              %a.input-group-inline-block-link{href: '#'} Неделя
+              %a.input-group-inline-block-link{href: '#'} Месяц
+
+        .input-group-inline-dash.pull-left &mdash;
+        .input-group-inline-block.pull-left
+          .input-group{role: 'datetimepicker-now'}
+            %input.form-control{type: 'text'}
+            .input-group-addon.btn
+              .fa.fa-calendar-o.fa-lg
+          %br
+          .checkbox
+            %label
+              %input{type: 'checkbox', checked: 'checked'} Расширенный отчёт
+
+        .pull-left
+          &nbsp;
+          &nbsp;
+          %input.btn.btn-default.btn-sm{type: 'sumbit', value: 'показать'}
+        .clearfix
+      .pull-right
+        &nbsp;
+        %a.btn.btn-default.btn-sm{href: ''}
+          %i.fa.fa-print
+          Печать
+      .pull-right
+        &nbsp;
+        %a.btn.btn-default.btn-sm{href: ''}
+          Скачать
+      .clearfix
+    
+%hr
+
+%table.table.table-striped
+  %thead
+    %th
+      №
+    %th
+      Название задачи
+    %th
+      Заказчик
+    %th
+      Исполнитель
+    %th
+      Начало
+      %a.btn.btn-xs
+        %i.fa.fa-angle-down
+    %th
+      Окончание
+      %br
+      по плану
+    %th
+      Окончание
+      %br
+      по факту
+    %th
+      Часов на задачу
+    %th
+      Статус задачи
+    %th
+      Сколько раз
+      %br
+      переносилась
+    %th
+      Просрочено
+      %br
+      дней
+  %tbody
+    - for i in 1..5
+      %tr
+        %td
+          = 1 + rand(1000)
+        %td
+          %a{href: ''}
+            Название задачи
+        %td
+          %a{href: ''}
+            ООО &laquo;Ромашка&raquo;
+          %br
+          %a{href: '', role: 'tooltip', 'data-original-title' => 'Департамент коммуникаций, начальник отдела'}
+            Игнат Зайцев
+        %td
+          %a{:href => "/users/203", :role => "member-name"}
+            John Doe
+        %td
+          11/10/2014
+        %td
+          15/10/2014
+        %td
+        %td
+          32
+        %td
+          Планирование
+        %td
+        %td
