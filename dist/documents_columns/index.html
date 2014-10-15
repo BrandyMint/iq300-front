@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if lt IE 10]> <html class="no-js lt-ie10" lang="en-us"> <![endif]-->
+<!--[if !IE]> > <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <title>iq300 frontend</title>
+    <meta charset='utf-8' content='text/html' http-equiv='content-type'>
+    <link href="../stylesheets/app.css?1413380696" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/static_fixes.css?1413380584" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='docs-show'>
+    <div id='container'>
+      <div id='wrapper'>
+        <div id='wrapper'>
+          <header class='header-global group'>
+            <a class='logo' href='/' title='IQ300 System'></a>
+            <div class='search-header' role-search-form='ready'>
+              <span class='search-button'>
+                <span class='icon-search'></span>
+              </span>
+              <form action='/docs/434' class='form-search' method='get'>
+                <!-- - b = button_tag raw("<span class='icon-search'></span>") -->
+                <!-- #{content_tag(:i)}#{i}#{b} -->
+                <i></i>
+                <input class='search-query form-control' id='search' name='search' placeholder='Поиск' role='global-search-field' type='search'>
+              </form>
+            </div>
+            <span class='app-version'>
+              v.1.5.2
+              <span>master</span>
+            </span>
+            <div class='user-nav'>
+              <a href='/help'>Помощь</a>
+              <a href='/users/203'>
+                <span class='userpic'>
+                  <img alt='Александр' class='img-corrector-initialized' hide_wait_message='true' src='/assets/default-user-avatar-ab40e583feb1d4ccafd691dd46b79968.png' style='width:44px; height:44px;' title='Мещеряков Александр'>
+                </span>
+                Александр Мещеряков
+              </a>
+              <a class='fa fa-sign-out' data-method='delete' href='/users/sign_out' rel='nofollow' title='Выйти'></a>
+              <!-- %section -->
+              <!-- = render "shared/user_widget" -->
+              <!-- .help-link> -->
+              <!-- = link_to icon('question-sign'), "/help", title: t('common.help') -->
+            </div>
+            <input id='app_signed_in_user_id' name='app_signed_in_user_id' type='hidden' value='203'>
+            <input id='pusher_app_key' name='pusher_app_key' type='hidden' value='ba95502d0971c3028cdd'>
+          </header>
+          <div class='content content-global display-mode' data-initial-action='show' filters='true' full_view='true' list='true' role-display-mode='ready' role='documents-content-global' view=''>
+            <section class='top-panel'>
+              <div class='pull-left'>
+                <a class='navigation' href='#' onclick="$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;">
+                  <i class='icon-reorder'></i>
+                </a>
+                <a class='popup-window add-button small' data-popup='add-button-target' href='#' role-popup-window='ready'>
+                  <i class='icon-plus'></i>
+                </a>
+                <a class='popup-window add-button big' data-popup='add-button-target' href='#' role-popup-window='ready'>
+                  <i class='icon-plus'></i>
+                  <span>Загрузить документ</span>
+                </a>
+                <a class='voronka mode-trigger mode-trigger-initialized' href='#' role='documents-filters-toggle'>
+                  <i class='icon-filter'></i>
+                </a>
+                <a class='link close-folders'>
+                  <span>Сложить все</span>
+                  <i class='icon-folder-close'></i>
+                </a>
+                <div class='share-link-popup'>
+                  <a class='close'>
+                    <i class='icon-remove'></i>
+                  </a>
+                  <label for='link'>Прямая ссылка на документ</label>
+                  <input class='full-width' id='link' name='link' type='text' value=''>
+                  <a class='close'>Закрыть</a>
+                </div>
+                <a class='link popup-window' data-popup='add-folder-topup' role-popup-window='ready'>
+                  <span>Добавить папку</span>
+                  <i class='icon-plus'></i>
+                </a>
+                <section class='subtop add-ducument-topup document-form add-button-target popup-window' data-focused-input='input#attachment_title' role-document-form='ready'>
+                  <form accept-charset='UTF-8' action='/attachments' class='new_attachment' data-max-size='50' enctype='multipart/form-data' id='new_attachment' method='post'>
+                    <div style='margin:0;padding:0;display:inline'>
+                      <input name='utf8' type='hidden' value='✓'>
+                      <input name='authenticity_token' type='hidden' value='0uhrPq5V4cSBpBvLS0erZyNZR3dfg+bHtv8fA1rOKrE='>
+                    </div>
+                    <p class='file'>
+                      <label for='attachment_file'>Файл</label>
+                      <input id='attachment_file' name='attachment[file]' type='file'>
+                    </p>
+                    <div class='info'>
+                      <span class='attachment-size'>
+                        Максимальный размер загружаемого файла 50 Мегабайт
+                      </span>
+                    </div>
+                    <p></p>
+                    <p>
+                      <label for='attachment_title'>Название</label>
+                      <input class='attachment-title' id='attachment_title' maxlength='255' name='attachment[title]' size='255' type='text'>
+                    </p>
+                    <p>
+                      <textarea cols='40' id='attachment_description' maxlength='1000' name='attachment[description]' placeholder='Описание' rows='20' style='overflow: hidden; word-wrap: break-word; resize: none; height: 30px;'></textarea>
+                    </p>
+                    <p>
+                      <label for='community_id'>Сообщество (по умолчанию Мои документы)</label>
+                    </p>
+                    <div class='select2-container select-two' id='s2id_attachment_community_id' style='width: 100%;'>
+                      <a class='select2-choice select2-default' href='javascript:void(0)' onclick='return false;' tabindex='-1'>
+                        <span class='select2-chosen'>Выбор сообщества</span>
+                        <abbr class='select2-search-choice-close'></abbr>
+                        <span class='select2-arrow'>
+                          <b></b>
+                        </span>
+                      </a>
+                      <input class='select2-focusser select2-offscreen' id='s2id_autogen4' type='text'>
+                      <div class='select2-drop select2-display-none select2-with-searchbox'>
+                        <div class='select2-search'>
+                          <input autocapitalize='off' autocomplete='off' autocorrect='off' class='select2-input' spellcheck='false' type='text'>
+                        </div>
+                        <ul class='select2-results'></ul>
+                      </div>
+                    </div>
+                    <select class='select-two select2-offscreen' data-allow-clear='true' id='attachment_community_id' name='attachment[community_id]' placeholder='Выбор сообщества' role-select-two='ready' tabindex='-1'>
+                      <option value=''></option>
+                      <option value='291'>Fake community</option>
+                    </select>
+                    <p>
+                      <label for='s2id_autogen2'>Папка</label>
+                    </p>
+                    <div class='select2-container folders-chained-select' id='s2id_attachment_share_parent_id'>
+                      <a class='select2-choice select2-default' href='javascript:void(0)' onclick='return false;' tabindex='-1'>
+                        <span class='select2-chosen'>Выбор папки</span>
+                        <abbr class='select2-search-choice-close'></abbr>
+                        <span class='select2-arrow'>
+                          <b></b>
+                        </span>
+                      </a>
+                      <input class='select2-focusser select2-offscreen' id='s2id_autogen2' type='text'>
+                      <div class='select2-drop select2-display-none bigdrop select2-with-searchbox'>
+                        <div class='select2-search'>
+                          <input autocapitalize='off' autocomplete='off' autocorrect='off' class='select2-input' spellcheck='false' type='text'>
+                        </div>
+                        <ul class='select2-results'></ul>
+                      </div>
+                    </div>
+                    <input class='folders-chained-select select2-offscreen' data-allow-clear='true' data-chained-select='__attachment[community_id]__' data-null-value='none' data-parent-selector='.document-form' data-selected-value='none' data-url='/docs?community=__%3Aid__&amp;folder=folders' id='attachment_share_parent_id' name='attachment[share_parent_id]' placeholder='Выбор папки' role-folders-chained-select='ready' tabindex='-1' type='hidden' value=''>
+                    <div class='actions popup-window'>
+                      <input data-disable-with='Загрузка...' id='btnSubmit' name='commit' style='display: none;' type='submit' value='Загрузить'>
+                    </div>
+                  </form>
+                </section>
+                <section class='subtop add-folder-topup folder-form popup-window' data-focused-input='input#attachment_title' role-folder-form='ready'>
+                  <form accept-charset='UTF-8' action='/attachments' class='new_attachment' enctype='multipart/form-data' id='new_attachment' method='post'>
+                    <div style='margin:0;padding:0;display:inline'>
+                      <input name='utf8' type='hidden' value='✓'>
+                      <input name='authenticity_token' type='hidden' value='0uhrPq5V4cSBpBvLS0erZyNZR3dfg+bHtv8fA1rOKrE='>
+                    </div>
+                    <input id='attachment_is_folder' name='attachment[is_folder]' type='hidden' value='true'>
+                    <p>
+                      <label for='attachment_title'>Название</label>
+                      <input class='attachment-title' id='attachment_title' maxlength='255' name='attachment[title]' size='255' type='text'>
+                    </p>
+                    <p>
+                      <label for='s2id_autogen4'>Сообщество (по умолчанию Мои документы)</label>
+                    </p>
+                    <div class='select2-container select-two' id='s2id_attachment_community_id' style='width: 100%;'>
+                      <a class='select2-choice select2-default' href='javascript:void(0)' onclick='return false;' tabindex='-1'>
+                        <span class='select2-chosen'>Выбор сообщества</span>
+                        <abbr class='select2-search-choice-close'></abbr>
+                        <span class='select2-arrow'>
+                          <b></b>
+                        </span>
+                      </a>
+                      <input class='select2-focusser select2-offscreen' id='s2id_autogen5' type='text'>
+                      <div class='select2-drop select2-display-none select2-with-searchbox'>
+                        <div class='select2-search'>
+                          <input autocapitalize='off' autocomplete='off' autocorrect='off' class='select2-input' spellcheck='false' type='text'>
+                        </div>
+                        <ul class='select2-results'></ul>
+                      </div>
+                    </div>
+                    <select class='select-two select2-offscreen' data-allow-clear='true' id='attachment_community_id' name='attachment[community_id]' placeholder='Выбор сообщества' role-select-two='ready' tabindex='-1'>
+                      <option value=''></option>
+                      <option value='291'>Fake community</option>
+                    </select>
+                    <p>
+                      <label>
+                        Родительская папка
+                      </label>
+                    </p>
+                    <div class='select2-container folders-chained-select' id='s2id_attachment_share_parent_id'>
+                      <a class='select2-choice select2-default' href='javascript:void(0)' onclick='return false;' tabindex='-1'>
+                        <span class='select2-chosen'>Выбор папки</span>
+                        <abbr class='select2-search-choice-close'></abbr>
+                        <span class='select2-arrow'>
+                          <b></b>
+                        </span>
+                      </a>
+                      <input class='select2-focusser select2-offscreen' id='s2id_autogen3' type='text'>
+                      <div class='select2-drop select2-display-none bigdrop select2-with-searchbox'>
+                        <div class='select2-search'>
+                          <input autocapitalize='off' autocomplete='off' autocorrect='off' class='select2-input' spellcheck='false' type='text'>
+                        </div>
+                        <ul class='select2-results'></ul>
+                      </div>
+                    </div>
+                    <input class='folders-chained-select select2-offscreen' data-allow-clear='true' data-chained-select='__attachment[community_id]__' data-null-value='none' data-parent-selector='.folder-form' data-selected-value='none' data-url='/docs?community=__%3Aid__&amp;folder=roots%2Cfolders' id='attachment_share_parent_id' name='attachment[share_parent_id]' placeholder='Выбор папки' role-folders-chained-select='ready' tabindex='-1' type='hidden' value=''>
+                    <div class='info'>
+                      <span>
+                        Максимальный уровень вложенности папок - 2
+                      </span>
+                    </div>
+                    <div class='actions popup-window'>
+                      <input data-disable-with='Загрузка...' name='commit' type='submit' value='Добавить'>
+                    </div>
+                  </form>
+                </section>
+              </div>
+            </section>
+            <nav class='nav-global menu-list' data-channel='presence-203:notifications' data-remote='true' role-menu-list='ready'>
+              <div class='logo'>
+                <a href='/' title='IQ300 System'>
+                  <img alt='IQ300' class='image-x1 img-corrector-initialized' src='/assets/logo_x1_new-9a31dde6832d097c3c4c0b4379c75284.png'>
+                  <img alt='IQ300' class='image-x2 img-corrector-initialized' src='/assets/logo_x2_new-dc0b3d331ac4645cfb0681000f683dc1.png'>
+                </a>
+              </div>
+              <ul>
+                <li class='menu-item notifications' data-extra-params='null' data-params='null' data-section='notifications' data-url='/notifications'>
+                  <div class='html-notifier' data-channel='presence-203:notifications' data-redirect-url='/notifications?folder=new' data-url='/notifications.count?folder=new' role-html-notifier='ready'>
+                    <audio id='notice-audio'>
+                      <source src='/audios/notify.wav' type='audio/wav'>
+                    </audio>
+                  </div>
+                  <a href='/notifications'>
+                    <div class='picture'>
+                      <i class='iq-navicons-notifications'></i>
+                      <sup>1</sup>
+                    </div>
+                    <span>Уведомления</span>
+                  </a>
+                </li>
+                <li class='menu-item projects not-initialize' data-extra-params='null' data-params='null' data-section='projects' data-url='/projects'>
+                  <a href='/projects'>
+                    <div class='picture'>
+                      <i class='iq-navicons-projects'></i>
+                    </div>
+                    <span>Проекты</span>
+                  </a>
+                </li>
+                <li class='menu-item tasks' data-extra-params='{"related":203,"overdue":true,"by_statuses":["new","browsed","refused","in_work","on_init","declined"]}' data-params='{"overview":203}' data-section='tasks' data-url='/tasks'>
+                  <a href='/tasks'>
+                    <div class='picture'>
+                      <i class='iq-navicons-tasks'></i>
+                      <sup class='overdue'>
+                        3
+                      </sup>
+                    </div>
+                    <span>Задачи</span>
+                  </a>
+                </li>
+                <li class='menu-item conversations' data-extra-params='null' data-params='{"folder":"new"}' data-section='conversations' data-url='/conversations'>
+                  <a href='/conversations'>
+                    <div class='picture'>
+                      <i class='iq-navicons-messages'></i>
+                    </div>
+                    <span>Сообщения</span>
+                  </a>
+                </li>
+                <li class='menu-item contacts not-initialize' data-extra-params='null' data-params='null' data-section='contacts' data-url='/contacts'>
+                  <a href='/contacts?folder=all'>
+                    <div class='picture'>
+                      <i class='iq-navicons-contacts'></i>
+                    </div>
+                    <span>Контакты</span>
+                  </a>
+                </li>
+                <li class='menu-item communities not-initialize' data-extra-params='null' data-params='null' data-section='communities' data-url='/communities'>
+                  <a href='/communities?folder=my'>
+                    <div class='picture'>
+                      <i class='iq-navicons-communities'></i>
+                    </div>
+                    <span>Сообщества</span>
+                  </a>
+                </li>
+                <li class='active menu-item docs not-initialize' data-extra-params='null' data-params='null' data-section='docs' data-url='/docs'>
+                  <a href='/docs?folder=my'>
+                    <div class='picture'>
+                      <i class='iq-navicons-documents'></i>
+                    </div>
+                    <span>Документы</span>
+                  </a>
+                </li>
+                <li class='menu-item calendars not-initialize' data-extra-params='null' data-params='null' data-section='calendars' data-url='/calendar'>
+                  <a href='/calendar'>
+                    <div class='picture'>
+                      <i class='iq-navicons-calendar'></i>
+                    </div>
+                    <span>Календарь</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <section class='documents-filters-column filters-column'>
+              <ul class='with-subfolders documents-filter' role-documents-filter='ready'>
+                <li class='nested folder active expanded' data-folder='roots,my,all'>
+                  <div class='expander' role-expander='ready'></div>
+                  <a>Мои документы</a>
+                  <ul class='flat'>
+                    <li class='folder' data-folder='roots,my,text'>
+                      <a>Текстовые</a>
+                      <span class='grey-counter'></span>
+                    </li>
+                    <li class='folder' data-folder='roots,my,sheet'>
+                      <a>Таблицы</a>
+                      <span class='grey-counter'></span>
+                    </li>
+                    <li class='folder' data-folder='roots,my,image'>
+                      <a>Изображения</a>
+                      <span class='grey-counter'>1</span>
+                    </li>
+                    <li class='folder' data-folder='roots,my,presentation'>
+                      <a>Презентации</a>
+                      <span class='grey-counter'></span>
+                    </li>
+                    <li class='folder' data-folder='roots,my,pdf'>
+                      <a>PDF</a>
+                      <span class='grey-counter'></span>
+                    </li>
+                    <li class='folder' data-folder='roots,my,other'>
+                      <a>Прочее</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class='nested folder' data-community='all' data-folder='roots'>
+                  <div class='expander' role-expander='ready'></div>
+                  <a>По сообществам</a>
+                  <ul class='flat'>
+                    <li class='folder' data-community='291' data-folder='roots'>
+                      <a title='Fake community'>Fake community</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class='nested folder' data-folder='roots,shared,all'>
+                  <div class='expander' role-expander='ready'></div>
+                  <a>Общий доступ</a>
+                  <ul class='flat'>
+                    <li class='folder' data-folder='roots,shared,text'>
+                      <a>Текстовые</a>
+                      <span class='grey-counter'></span>
+                    </li>
+                    <li class='folder' data-folder='roots,shared,sheet'>
+                      <a>Таблицы</a>
+                      <span class='grey-counter'></span>
+                    </li>
+                    <li class='folder' data-folder='roots,shared,image'>
+                      <a>Изображения</a>
+                      <span class='grey-counter'></span>
+                    </li>
+                    <li class='folder' data-folder='roots,shared,presentation'>
+                      <a>Презентации</a>
+                      <span class='grey-counter'></span>
+                    </li>
+                    <li class='folder' data-folder='roots,shared,pdf'>
+                      <a>PDF</a>
+                      <span class='grey-counter'></span>
+                    </li>
+                    <li class='folder' data-folder='roots,shared,other'>
+                      <a>Прочее</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class='flat folder' data-folder='trash,roots'>
+                  <a>Корзина</a>
+                </li>
+              </ul>
+            </section>
+            <section class='list-column folders-list-column' data-channel='presence-203:attachments' data-url='/docs' role-folders-list-column='ready'>
+              <ul>
+                <li class='header sortable-header' data-sortable-collection='docs' data-store='1' role-sortable-header='ready'>
+                  <div class='opener'>
+                    <i class='icon-reorder'></i>
+                  </div>
+                  <div class='name'>
+                    <a data-column='title' data-direction='asc'>
+                      <b>Название</b>
+                    </a>
+                  </div>
+                  <div class='actions popup-window'></div>
+                  <div class='community'>
+                    <a data-column='community_id' data-direction='asc'>
+                      <b>Сообщество</b>
+                    </a>
+                  </div>
+                  <div class='author'>
+                    <a data-column='author_id' data-direction='asc'>
+                      <b>Изменил</b>
+                    </a>
+                  </div>
+                  <div class='date'>
+                    <a data-column='updated_at' data-direction='asc'>
+                      <b>Изменен</b>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <ul class='infinite-list'>
+                <li class='doc-item' data-community-id='291' data-id='434' data-url='/docs/434'>
+                  <div class='opener'>
+                    <i class='icon-file'></i>
+                  </div>
+                  <div class='name'>
+                    <strong class='with-size' title='iq-docs-bug.png'>
+                      <i class='rename-434' style='display:none'></i>
+                      <span class='best_in_place disable-initializer' data-activator='i.rename-434' data-attribute='title' data-object='attachment' data-original-content='iq-docs-bug' data-type='input' data-url='/attachments/2199' id='best_in_place_attachment_2199_title'>iq-docs-bug.png</span>
+                    </strong>
+                    <span class='with-size'>
+                      buggy bug
+                    </span>
+                    <small class='file-size'>102.0 КБ</small>
+                  </div>
+                  <div class='actions popup-window'>
+                    <a class='trigger menu' href='#'>
+                      <i class='icon-reorder popup-window' data-popup='actions' role-popup-window='ready'></i>
+                    </a>
+                    <ul class='context-menu'>
+                      <li>
+                        <a class='rename' data-target='i.rename-434' href='#'>
+                          <i class='icon-pencil'></i>
+                          <span>Переименовать</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class='share' href='http://edge.iq300.ru/shares?file=35644998-aa5d-49e3-9de1-7dc62daf5a7a.png'>
+                          <i class='icon-share-alt'></i>
+                          <span>Поделиться</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class='download' href='/download?file=35644998-aa5d-49e3-9de1-7dc62daf5a7a.png' target='_blank'>
+                          <i class='icon-save'></i>
+                          <span>Скачать</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class='delete' data-confirm='Вы уверены?' href='/docs/434'>
+                          <i class='icon-remove'></i>
+                          <span>Удалить</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class='community'>Fake community</div>
+                  <div class='author'>Александр Мещеряков</div>
+                  <div class='date'>
+                    Сегодня, 12:04
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class='view-column folders-view-column' data-channel-template='private-attachment-%id%:update' data-channel='private-attachment-2199:update' data-id='434' data-url='/docs/434' role-folders-view-column='ready'>
+              <header class='tab-navigation'>
+                <ul class='tabnav' data-container='#folder-tab-pane' role-tabnav='ready'>
+                  <li class='active'>
+                    <a data-target='doc-details' href='/docs/434'>Информация о файле</a>
+                  </li>
+                  <li id='accessor_users_tab'>
+                    <a data-class='accessor-users-view' data-roles='accessor-users-view' data-target='doc_members' href='/attachments/2199/doc_shares?initial=true&amp;per=100'>Участники</a>
+                  </li>
+                  <li>
+                    <a data-target='doc_activities' href='/attachments/2199/activities?initial=true'>История</a>
+                  </li>
+                </ul>
+                <div class='column-controller'>
+                  <a class='enlarge mode-trigger mode-trigger-initialized' href='#' mode='full-view' state='true' title='Развернуть'>
+                    <i class='icon-resize-small' data-opposite-class='icon-resize-full'></i>
+                  </a>
+                  <a class='close-panel mode-trigger mode-trigger-initialized' href='#' mode='view' state='' title='Закрыть'>
+                    <i class='icon-remove'></i>
+                  </a>
+                  <a class='share-link u-turn-right' href='http://edge.iq300.ru/shares?file=35644998-aa5d-49e3-9de1-7dc62daf5a7a.png' title='Отправить другу'>
+                    <i class='icon-share-alt'></i>
+                  </a>
+                </div>
+              </header>
+              <div class='column-content' id='folder-tab-pane'>
+                <div class='object-details' data-attachment-id='2199' id='doc-details'>
+                  <div class='resource-watcher-subscription' data-url='/subscriptions?attachment_id=2199' role-resource-watcher-subscription='ready'>
+                    <label class='checkbox' title=''>
+                      <input checked='checked' id='subscribe' name='subscribe' type='checkbox' value='1'>
+                      <i></i>
+                      Следить за изменениями
+                    </label>
+                  </div>
+                  <figure>
+                    <a data-lightbox='image-434' data-title='iq-docs-bug.png' href='https://iq300-edge.s3-eu-west-1.amazonaws.com/uploads/attachment_picture/file/2199/35644998-aa5d-49e3-9de1-7dc62daf5a7a.png?AWSAccessKeyId=AKIAI7YHRMN74KI6TWSQ&amp;Signature=UlxjKoo05nRQVs3hYZC35d31XGA%3D&amp;Expires=1412265920' target='blank'>
+                      <img alt='Zwcxl3surk0fdk8indwls%3d&amp;expires=1412265920' class='img-corrector-initialized' src='https://iq300-edge.s3-eu-west-1.amazonaws.com/uploads/attachment_picture/file/2199/thumb_35644998-aa5d-49e3-9de1-7dc62daf5a7a.png?AWSAccessKeyId=AKIAI7YHRMN74KI6TWSQ&amp;Signature=GcLXX/ZWCxL3sUrk0fdk8iNDwLs%3D&amp;Expires=1412265920'>
+                    </a>
+                    <figcaption>
+                      <h3>
+                        iq-docs-bug.png
+                      </h3>
+                      <p class='buttons'>
+                        <a class='download' href='/download?file=35644998-aa5d-49e3-9de1-7dc62daf5a7a.png' target='_blank'>Скачать</a>
+                        <span>102.0 КБ</span>
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <div class='description'>
+                    <p>
+                      <span class='best_in_place' data-attribute='description' data-nil='Нажмите для добавления описания' data-object='attachment' data-type='textarea' data-url='/attachments/2199' id='best_in_place_attachment_2199_description'>buggy bug</span>
+                      <i class='icon-pencil'></i>
+                    </p>
+                  </div>
+                  <div class='stats'>
+                    <div class='meta'>
+                      <div class='avatar'>
+                        <img alt='Александр' class='img-corrector-initialized' hide_wait_message='true' src='/assets/default-user-avatar-ab40e583feb1d4ccafd691dd46b79968.png' style='width:34px;height:34px;' title='Мещеряков Александр'>
+                      </div>
+                      <div class='info'>
+                        Загрузил:
+                        <a href='/users/203'>Александр Мещеряков</a>
+                        <br>
+                        <span>Сегодня, 12:04</span>
+                      </div>
+                    </div>
+                    <div class='meta'>
+                      Сообщество:
+                      <div class='avatar'>
+                        <img alt='4' class='default-community-picture img-corrector-initialized' data-default-src='/assets/logo_x2.png' src='/assets/community/4.png'>
+                      </div>
+                      <div class='info'>
+                        <a href='/communities/291'>Fake community</a>
+                      </div>
+                    </div>
+                    <table class='badges-list-container'>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Категории:
+                          </td>
+                          <td class='badges-list categories-view' role-categories-view='ready'>
+                            <div class='label-tags'>
+                              <div class='add-button'>
+                                <a class='with-plus-button add-tag' href='#'>
+                                  Добавить
+                                  <span>
+                                    <i class='icon-plus'></i>
+                                  </span>
+                                </a>
+                              </div>
+                              <div class='adding-form'>
+                                <form accept-charset='UTF-8' action='#' class='new-todo' method='post'>
+                                  <div style='margin:0;padding:0;display:inline'>
+                                    <input name='utf8' type='hidden' value='✓'>
+                                    <input name='authenticity_token' type='hidden' value='0uhrPq5V4cSBpBvLS0erZyNZR3dfg+bHtv8fA1rOKrE='>
+                                  </div>
+                                  <div class='select2-container select2-container-multi select-two todo-body' id='s2id__name' style='width: 100%;'>
+                                    <ul class='select2-choices'>
+                                      <li class='select2-search-field'>
+                                        <input autocapitalize='off' autocomplete='off' autocorrect='off' class='select2-input select2-default' id='s2id_autogen1' spellcheck='false' style='width: 122%;' type='text'>
+                                      </li>
+                                    </ul>
+                                    <div class='select2-drop select2-drop-multi select2-display-none'>
+                                      <ul class='select2-results'></ul>
+                                    </div>
+                                  </div>
+                                  <input class='select-two todo-body select2-offscreen' data-tags='[]' data-url='/categories/434?doc_share_id=434' id='_name' name='#[name]' placeholder='Добавить категорию' role-select-two='ready' size='30' tabindex='-1' type='text'>
+                                  <input type='reset' value='Отменить'>
+                                </form>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p class='edit-remove'>
+                      <a class='remove' data-confirm='Подтвердите действие' data-method='delete' href='/docs/434'>
+                        <i class='icon-remove'></i>
+                        Удалить документ
+                      </a>
+                    </p>
+                  </div>
+                  <section class='expandable expanded comments' role-expandable='ready'>
+                    <header>
+                      Комментарии:
+                      <a class='trigger' href='#'></a>
+                    </header>
+                    <div class='task-discussion' role-task-discussion='ready'>
+                      <div class='comments-list' data-channel='private-discussion-4858:comments' data-url='/discussions/4858/comments' data-with-button=''>
+                        <div class='infinite-list'></div>
+                      </div>
+                      <form accept-charset='UTF-8' action='/discussions/4858/comments' class='comments-form main-form' data-discussion-key='discussion-4858' data-exist-attachment-default-name='Прикрепить уже загруженный' data-users-path='/discussions/4858/users?for=accessors&amp;per=500&amp;without_current_user=true' enctype='multipart/form-data' id='new_comment' method='post'>
+                        <div style='margin:0;padding:0;display:inline'>
+                          <input name='utf8' type='hidden' value='✓'>
+                          <input name='authenticity_token' type='hidden' value='0uhrPq5V4cSBpBvLS0erZyNZR3dfg+bHtv8fA1rOKrE='>
+                        </div>
+                        <input id='redirect_to' name='redirect_to' type='hidden' value='/attachments/2199'>
+                        <textarea class='comment-body' cols='40' name='comment[body]' placeholder='Добавить комментарий' role='comment-body' rows='20' style='overflow: hidden; word-wrap: break-word; resize: none; height: 72px;'></textarea>
+                        <input data-wait='Отправка...' id='btnSubmit' name='commit' role='submit-button' type='submit' value='Отправить'>
+                        <input role='reset' type='reset' value='Отменить'>
+                        <div data-files-max-size='50' id='discussion-attachments-4858' role='files'>
+                          <a class='add add_nested_fields' data-association='attachments' data-blueprint-id='attachments_fields_blueprint' data-target='#discussion-attachments-4858' href='javascript:void(0)' role='add-file'>
+                            <span class='attachment-label'></span>
+                          </a>
+                        </div>
+                        <div data-blueprint='&lt;div class=&#x0027;file fields&#x0027; role=&#x0027;file&#x0027;&gt;&#x000A;&lt;a href="#"&gt;&lt;span class=&#x0027;fa fa-file-text-o fa-lg&#x0027;&gt;&lt;/span&gt;&#x000A;&lt;/a&gt;&lt;span class=&#x0027;file-name&#x0027; role=&#x0027;file-name&#x0027;&gt;&#x000A;file_name&#x000A;&lt;/span&gt;&#x000A;&lt;input id="comment_attachments_attributes_new_attachments_file" name="comment[attachments_attributes][new_attachments][file]" role="file-input" style="display:none" type="file" /&gt;&#x000A;&lt;input id="comment_attachments_attributes_new_attachments__destroy" name="comment[attachments_attributes][new_attachments][_destroy]" type="hidden" value="false" /&gt;&lt;a href="javascript:void(0)" class="delete remove_nested_fields" data-association="attachments" data-confirm="Вы уверены?"&gt;&lt;i class="icon-remove " &gt;&lt;/i&gt;&lt;/a&gt;&#x000A;&lt;/div&gt;' id='attachments_fields_blueprint' style='display: none'></div>
+                      </form>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- = render 'shared/footer' -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../javascripts/static.js?1413380584" type="text/javascript"></script>
