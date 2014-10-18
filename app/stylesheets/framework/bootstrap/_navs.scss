@@ -81,20 +81,6 @@
     margin-bottom: -1px;
     position: relative;
 
-    &:first-child:before {
-      display: none;
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 25%;
-      bottom: 25%;
-      left: -1px;
-      width: 1px;
-      background-color: #e8e8e8;
-    }
-
     // Actual tabs (as links)
     > a {
       margin-right: 2px;

@@ -1,0 +1,187 @@
+---
+body_class: dialog-index
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
+  = partial 'communities/top_panel'
+  = partial 'shared/_navigation'
+
+  %section.one-big-column.one-big-column-collapse
+    %ul.nav.nav-tabs.tab-buttons.tabnav.container-grey
+      %li.active
+        %a{"data-toggle" => "tab", :href => "#messages-tab"}
+          Сообщения
+          %span.badge{:role => "counter"} 5
+      %li
+        %a{"data-toggle" => "tab", :href => "#comments-tab"}
+          Комментарии
+          %span.badge{:role => "counter"} 5
+
+    .tab-content.tab-panels
+      #messages-tab.tab-pane.active
+        .content-group
+          %a{:href => "#"} 
+            %strong 982 диалога
+        .content-group
+          .messages-group
+            .messages-box.bg-primary-light.tab-content-wide
+              .media
+                .pull-left
+                  .messages-user-avatar
+                    %a{:href => "#"}
+                      %img.img-circle{:src => "/images/community/1.png", :alt => "", :width => "40px", :height => "40px"}/
+                    .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right.user-status-bullet-online
+                .media-body
+                  .messages-header
+                    .row
+                      .col-xs-11
+                        %h4 Алексеева Лиана
+                        %p.text-muted 21 июля, 14:59
+                      .col-xs-1.text-right
+                        .badge.badge-primary 5
+                  .messages-body
+                    .row
+                      .col-xs-11
+                        %p Слушай, мы тут для одной фирмы с другом портал пишем для рабочих в цеху (справки заказывать разные, письма директорам писать с жалобами и т.д.) Нам программист нужен для этого проекта. Нам программист нужен для этого проекта...
+                      .col-xs-1.text-right
+                        .badge 245
+            .messages-box.tab-content-wide
+              .media
+                .pull-left
+                  .messages-user-avatar
+                    %a{:href => "#"}
+                      %img.img-circle{:src => "/images/community/5.png", :alt => "", :width => "40px", :height => "40px"}/
+                    .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right.user-status-bullet-offline
+                .media-body
+                  .messages-header
+                    .row
+                      .col-xs-11
+                        %h4 Иванов Дмитрий
+                        %p.text-muted 20 июля, 16:01
+                  .messages-body
+                    .row
+                      .col-xs-11
+                        %p Нам программист нужен для этого проекта. Нам программист нужен для этого проекта. У тебя      случайно нет таких знакомых с кем можно поработать в этом плане толковых? Может тебе интересно?
+                      .col-xs-1.text-right
+                        .badge 245
+            .messages-box.tab-content-wide
+              .media
+                .pull-left
+                  .messages-user-avatar
+                    %a{:href => "#"}
+                      %img.img-circle{:src => "/images/community/3.png", :alt => "", :width => "40px", :height => "40px"}/
+                    .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right.user-status-bullet-online
+                .media-body
+                  .messages-header
+                    .row
+                      .col-xs-11
+                        %h4 Алексеев Иван
+                        %p.text-muted 20 июля, 15:20
+                  .messages-body
+                    .row
+                      .col-xs-11
+                        %a.btn.btn-default{:href => "#"}
+                          %span.fa.fa-file-text-o 
+                          Имя_файла1.doc
+                        %a.btn.btn-default{:href => "#"}
+                          %span.fa.fa-file-text-o 
+                          Имя_файла2.doc
+                      .col-xs-1.text-right
+                        .badge 245
+            .messages-box.tab-content-wide
+              .media
+                .pull-left
+                  .messages-user-avatar
+                    %a{:href => "#"}
+                      %img.img-circle{:src => "/images/community/2.png", :alt => "", :width => "40px", :height => "40px"}/
+                    .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right.user-status-bullet-offline
+                .media-body
+                  .messages-header
+                    .row
+                      .col-xs-11
+                        %h4 Алексеев Иван, Алексеева Лиана, Чоловский Дмитрий 
+                        %p.text-muted 18 июля, 16:03
+                  .messages-body
+                    .row
+                      .col-xs-11
+                        %a.btn.btn-default{:href => "#"}
+                          %span.fa.fa-file-text-o 
+                          Имя_файла1.doc
+                        %a.btn.btn-default{:href => "#"}
+                          %span.fa.fa-file-text-o 
+                          Имя_файла2.doc
+                      .col-xs-1.text-right
+                        .badge 245
+        .content-group.text-center
+          %a{:href => "#"} Загрузить еще
+      
+      #comments-tab.tab-pane
+        .content-group
+          %a{:href => "#"} 
+            %strong 2 комментария
+        .content-group
+          .messages-group
+            .messages-box.bg-primary-light.tab-content-wide
+              .row.content-group
+                .col-xs-1
+                  %p Задача:
+                .col-xs-11
+                  %a{:href => "#"} Важнейший день в моей жизни, который перевернет ценности жизни и расставит все по полочкам
+              .row.content-group
+                .col-xs-1
+                  %p В проекте:
+                .col-xs-11
+                  %a{:href => "#"} Важнейший день в моей жизни, который перевернет ценности жизни и расставит все по полочкам, день в моей жизни, который перевернет ценности жизни и расставит все по полочкам,перевернет ценности жизни и расставит все по полочкам
+              .row.content-group
+                .col-xs-1.text-right
+                  .messages-user-avatar
+                    %a{:href => "#"}
+                      %img.img-circle{:src => "/images/community/1.png", :alt => "", :width => "40px", :height => "40px"}/
+                    .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right.user-status-bullet-online
+                .col-xs-11
+                  .messages-header
+                    %h4 
+                      %a{:href => "#"}Екатерина Федорова
+                      %small.text-muted 21 июля, 14:59
+                  .messages-body
+                    .row
+                      .col-xs-11
+                        %p Текст комментария. Я вышел на площадь и остановился перед киоском с газированной водой. Я точно помнил, что мелочи у меня нет, и знал, что придется разменивать бумажку, и уже готовил заискивающую улыбку, потому что продавщицы газированной воды.
+                        %a.btn.btn-default{:href => "#"}
+                          %span.fa.fa-file-text-o 
+                          Имя_файла1.doc
+                      .col-xs-1.text-right
+                        .badge 245  
+
+            .messages-box.tab-content-wide
+              .row.content-group
+                .col-xs-1
+                  %p Задача:
+                .col-xs-11
+                  %a{:href => "#"} Важнейший день в моей жизни, который перевернет ценности жизни и расставит все по полочкам
+              .row.content-group
+                .col-xs-1
+                  %p В проекте:
+                .col-xs-11
+                  %a{:href => "#"} Важнейший день в моей жизни, который перевернет ценности жизни и расставит все по полочкам, день в моей жизни, который перевернет ценности жизни и расставит все по полочкам,перевернет ценности жизни и расставит все по полочкам
+              .row.content-group
+                .col-xs-1.text-right
+                  .messages-user-avatar
+                    %a{:href => "#"}
+                      %img.img-circle{:src => "/images/community/1.png", :alt => "", :width => "40px", :height => "40px"}/
+                    .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right.user-status-bullet-online
+                .col-xs-11
+                  .messages-header
+                    %h4 
+                      %a{:href => "#"}Екатерина Федорова
+                      %small.text-muted 21 июля, 14:59
+                  .messages-body
+                    .row
+                      .col-xs-11
+                        %p Текст комментария. Я вышел на площадь и остановился перед киоском с газированной водой. Я точно помнил, что мелочи у меня нет, и знал, что придется разменивать бумажку, и уже готовил заискивающую улыбку, потому что продавщицы газированной воды.
+                        %a.btn.btn-default{:href => "#"}
+                          %span.fa.fa-file-text-o 
+                          Имя_файла1.doc
+                      .col-xs-1.text-right
+                        .badge 245                  

@@ -1,0 +1,22 @@
+.user-status-bullet {
+  display: inline-block;
+  vertical-align: -10%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  // Positions
+  &.user-status-bullet-bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  // Sizes
+  &.user-status-bullet-sm {
+    width: 7px;
+    height: 7px;
+  }
+  // Colors
+  &.user-status-bullet-online { background-color: $brand-success;}
+  &.user-status-bullet-offline { background-color: $bg-grey;}
+  &.user-status-bullet-away { background-color: $brand-warning;}
+}

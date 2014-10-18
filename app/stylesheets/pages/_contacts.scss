@@ -265,3 +265,15 @@ section.subtop.create-contact-window {
     }
   }
 }
+
+// Contacts page filters column
+.contacts-filters-column {
+  top: $headerHeight;
+}
+// @end
+
+// Contacts page content column
+.contacts-content-column {
+  @extend %list-column-block;
+}
+// @end

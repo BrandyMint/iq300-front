@@ -30,3 +30,16 @@
   margin-right: 4em;
   float: right;
 }
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    font-size: 300%;
+  }
+}

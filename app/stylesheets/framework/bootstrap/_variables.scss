@@ -489,11 +489,11 @@ $state-info-text:                #358bae !default;
 $state-info-bg:                  #f8f9f4 !default;
 $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
 
-$state-warning-text:             #fff !default;
+$state-warning-text:             #f8931f !default;
 $state-warning-bg:               #f8931f !default;
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
 
-$state-danger-text:              #fff !default;
+$state-danger-text:              #ff1d25 !default;
 $state-danger-bg:                #ff0101 !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 

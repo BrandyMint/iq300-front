@@ -1,0 +1,88 @@
+---
+body_class: communities-index
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
+  = partial 'communities/top_panel'
+  = partial 'shared/_navigation'
+
+  %section.one-big-column.form-container
+    .row
+      .col-md-9
+        .panel.panel-default
+          .panel-heading
+            .panel-title Введите пользователей, которых вы хотите пригласить в сообщест
+          .panel-body.container-grey
+            .row
+              .col-md-9
+                %input.form-control{:type => "text"}/
+              .col-md-3
+                %a.btn.btn-block.btn-default{:href => "#"} Проверить
+          .panel-body
+          %table.table
+            %thead
+              %tr.container-grey
+                %th №
+                %th Пользователь
+                %th Статус
+                %th Действия
+            %tbody
+              %tr
+                %td 1
+                %td name@company.ru
+                %td Готов к отправке
+                %td 
+                  %a.btn.btn-danger{:href => "#"} Удалить
+              %tr
+                %td 2
+                %td @@company.ru
+                %td 
+                  %span.text-danger Не верный формат адреса
+                %td 
+                  %a.btn.btn-danger{:href => "#"} Удалить
+              %tr
+                %td 3
+                %td Александр Ткачев
+                %td На указанный адрес уже выслано приглашение
+                %td 
+                  %i Отменено
+              %tr
+                %td 4
+                %td Шамиль Хамадеев
+                %td Пользователь уже состоит в сообществе
+                %td 
+                  %i Отменено
+          .panel-body.container-grey.text-right
+            %a.btn.btn-primary{:href => "#"} Проверить
+          .panel-body
+          %table.table
+            %thead.container-grey
+              %tr
+                %th{:colspan => "4"} 
+                  .panel-title Список отправленных приглашений
+            %tbody
+              %tr
+                %td name@company.ru
+                %td 
+                  %span.label.label-success В сообществе
+                %td 
+                  %a.btn.btn-danger{:href => "#"} Удалить
+              %tr
+                %td name@company.ru
+                %td 
+                  %span.label.label-success В сообществе
+                %td 
+                  %a.btn.btn-danger{:href => "#"} Удалить
+              %tr
+                %td name@company.ru
+                %td 
+                  %span.label.label-warning Ждем ответа
+                %td 
+                  %a.btn.btn-danger{:href => "#"} Удалить
+              %tr
+                %td name@company.ru
+                %td 
+                  %span.label.label-warning Ждем ответа
+                %td 
+                  %a.btn.btn-danger{:href => "#"} Удалить

@@ -1,0 +1,36 @@
+// Message group
+.messages-group {
+  .messages-box {
+    border-bottom: solid 1px $input-border;
+    &:first-child {
+      border-top: solid 1px $input-border;
+    }
+  }
+}
+// @end
+
+// Message box
+.messages-box {
+  padding: 20px;
+}
+// @end
+
+// Message avatar
+.messages-user-avatar {
+  display: inline-block;
+  position: relative;
+  padding-right: 10px;
+  img { display: block;}
+}
+// @end
+
+// Message body
+.messages-header {
+  margin-bottom: 5px;
+}
+.messages-body {
+  p:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+// @end

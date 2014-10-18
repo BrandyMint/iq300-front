@@ -1,0 +1,5 @@
+// Colors
+.panel-warning-light {
+  @include panel-variant(lighten($panel-warning-border, 30%), darken($panel-warning-border, 10%), lighten($panel-warning-heading-bg, 25%), lighten($panel-warning-border, 30%));
+}
+// @end

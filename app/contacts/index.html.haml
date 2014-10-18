@@ -1,0 +1,90 @@
+---
+body_class: contacts-index
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
+  / = partial 'communities/top_panel'
+  = partial 'shared/_navigation'
+  %section.filters-column.contacts-filters-column
+    %ul.with-subfolders
+      %li.active
+        %a{:href => "#"} Мои контакты
+      %li
+        %a{:href => "#"} Входящие
+      %li
+        %a{:href => "#"} Исходящие
+      %li
+        %a{:href => "#"} Все контакты
+
+  %section.contacts-content-column
+    .page-content-compact.container-grey.clearfix
+      .pull-left
+        %input.form-control{:type => "text"}/
+      .pull-right
+        %ul.list-inline
+          %li
+            %select{:name => "", :role => "select2"}
+              %option{:value => ""} Сообщества
+              %option{:value => ""} Сообщества
+              %option{:value => ""} Сообщества
+              %option{:value => ""} Сообщества
+          %li
+            %select{:name => "", :role => "select2"}
+              %option{:value => ""} Сортировка
+              %option{:value => ""} Сортировка
+              %option{:value => ""} Сортировка
+              %option{:value => ""} Сортировка
+
+    .page-content-compact
+      .row.row-collapse
+        .col-sm-4.col-collapse
+          - (1..4).each do
+            .media.member-box
+              .pull-left
+                .member-box-avatar
+                  %a{:href => "#"}
+                    %img.img-circle{:src => "/images/community/2.png", :alt => "", :width => "95px", :height => "95px"}/
+                  .user-status-bullet.user-status-bullet-bottom-right.user-status-bullet-online
+              .media-body
+                %h4.content-heading
+                  %a{:href => "#"} Борис Сергеев
+                %ul.unstyled-list
+                  %li Сотрудник
+                  %li Разработчик,
+                  %li Разработка Sega
+                  %li Entertainment
+        .col-sm-4.col-collapse
+          - (1..4).each do
+            .media.member-box
+              .pull-left
+                .member-box-avatar
+                  %a{:href => "#"}
+                    %img.img-circle{:src => "/images/community/6.png", :alt => "", :width => "95px", :height => "95px"}/
+                  .user-status-bullet.user-status-bullet-bottom-right.user-status-bullet-away
+              .media-body
+                %h4.content-heading
+                  %a{:href => "#"} Анастасия Сергеевна
+                %ul.unstyled-list
+                  %li Руководитель
+                  %li Начальник отдела,
+                  %li Разработка Sega
+                  %li Introduction Pro
+        .col-sm-4.col-collapse
+          - (1..4).each do
+            .media.member-box
+              .pull-left
+                .member-box-avatar
+                  %a{:href => "#"}
+                    %img.img-circle{:src => "/images/community/6.png", :alt => "", :width => "95px", :height => "95px"}/
+                  .user-status-bullet.user-status-bullet-bottom-right.user-status-bullet-away
+              .media-body
+                %h4.content-heading
+                  %a{:href => "#"} Анастасия Сергеевна
+                %ul.unstyled-list
+                  %li Руководитель
+                  %li Начальник отдела,
+                  %li Разработка Sega
+                  %li Introduction Pro
+      .text-center
+        %a.btn.btn-default{:href => "#"} Показать Еще 100

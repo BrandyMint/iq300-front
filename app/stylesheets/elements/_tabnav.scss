@@ -149,3 +149,46 @@ header.tab-navigation > .column-controller, .view-column .object-details .column
     display: none;
   }
 }
+
+
+// Tab buttons
+.tab-buttons {
+  padding-top: 0;
+  padding-bottom: 0;
+  > li {
+    position: relative;
+
+    &:first-child {
+      &:before { display: none;}
+      &.active a { 
+        border-left: 0; 
+        padding-left: 16px;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 25%;
+      bottom: 25%;
+      left: -1px;
+      width: 1px;
+      background-color: #e8e8e8;
+    }
+  }
+}
+// @end
+
+// Tab panels
+.tab-panels {
+  background-color: #fff;
+  padding-left: $space-large;
+  padding-right: $space-large;
+}
+.tab-content-wide {
+  margin-left: -$space-large;
+  margin-right: -$space-large;
+  padding-left: $space-large;
+  padding-right: $space-large;
+}
+// @end

@@ -1,0 +1,62 @@
+---
+body_class: communities-index
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
+  = partial 'communities/top_panel'
+  = partial 'shared/_navigation'
+  %section.filters-column
+    %ul.with-subfolders
+      %li.active
+        %a{:href => "#"} Мои сообщества
+      %li
+        %a{:href => "#"} Новые
+      %li
+        %a{:href => "#"} Каталог сообществ
+
+  %section.communities-content-column.form-container-compact
+    .content-group
+      .page-title.clearfix
+        .pull-left
+          %h2
+            Мои сообщества
+        .pull-right
+          %a.btn.btn-default{href: "../communities/new/"}
+            %span.fa.fa-plus-circle
+            Новое сообщество
+    .content-group
+      %select{:name => "", role: "select2"}
+        %option{:value => ""} Список объектов
+        %option{:value => ""} Список объектов
+        %option{:value => ""} Список объектов
+        %option{:value => ""} Список объектов
+        %option{:value => ""} Список объектов
+    .content-group
+      .row
+        .col-md-6.col-inline
+          .panel.community-panel
+            .community-panel-ribbon{"data-text" => "новое"}
+            .panel-body
+              .media 
+                .pull-left
+                  %a{:href => "#"}
+                    %img{:src => "/images/community/1.png", :alt => ""}/
+                .media-body
+                  %h3.community-panel-title ООО «Название сообщества»
+            .panel-footer &nbsp;
+            .community-panel-overlay
+              %a.btn.btn-primary{:href => "#"} Принять
+              %a.btn.btn-link.text-muted{:href => "#"} Отказаться
+        - (1..5).each_with_index do |item, i|
+          .col-md-6.col-inline
+            .panel.community-panel
+              .panel-body
+                .media 
+                  .pull-left
+                    %a{:href => "#"}
+                      %img{:src => "/images/community/#{i+1}.png", :alt => ""}/
+                  .media-body
+                    %h3.community-panel-title ООО «Название сообщества»
+              .panel-footer
+                %p Роль в сообществе

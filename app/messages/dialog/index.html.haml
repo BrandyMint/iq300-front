@@ -1,0 +1,145 @@
+---
+body_class: dialog-index
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
+  = partial 'communities/top_panel'
+  = partial 'shared/_navigation'
+
+  %section.one-big-column.one-big-column-collapse
+    %ul.nav.nav-tabs.tab-buttons.tabnav.container-grey
+      %li.active
+        %a{"data-toggle" => "tab", :href => "#messages-tab"}
+          Сообщения
+          %span.badge{:role => "counter"} 5
+      %li
+        %a{"data-toggle" => "tab", :href => "#comments-tab"}
+          Комментарии
+          %span.badge{:role => "counter"} 5
+
+    .tab-content.tab-panels
+      #messages-tab.tab-pane.active
+        .content-group
+          .tab-content-wide
+            .messages-box
+              .media
+                .pull-left
+                  .messages-user-avatar
+                    %a{:href => "#"}
+                      %img.img-circle{:src => "/images/community/1.png", :alt => "", :width => "40px", :height => "40px"}/
+                    .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right.user-status-bullet-online
+                .media-body
+                  .messages-header.group
+                    %h4.pull-left Алексеева Лиана
+                    %p.pull-right.text-muted 21 июля, 14:59
+                  .messages-body
+                    %p Слушай, мы тут для одной фирмы с другом портал пишем для рабочих в цеху (справки заказывать разные, письма директорам писать с жалобами и т.д.) Нам программист нужен для этого проекта. Нам программист нужен для этого проекта...
+          
+            .messages-box
+              .media
+                .pull-left
+                  .messages-user-avatar
+                    %a{:href => "#"}
+                      %img.img-circle{:src => "/images/community/5.png", :alt => "", :width => "40px", :height => "40px"}/
+                    .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right.user-status-bullet-offline
+                .media-body
+                  .messages-header.group
+                    %h4.pull-left Иванов Дмитрий
+                    %p.pull-right.text-muted 20 июля, 16:01
+                  .messages-body
+                    %p Нам программист нужен для этого проекта. Нам программист нужен для этого проекта. У тебя      случайно нет таких знакомых с кем можно поработать в этом плане толковых? Может тебе интересно?
+
+            .messages-box
+              .media
+                .pull-left
+                  .messages-user-avatar
+                    %a{:href => "#"}
+                      %img.img-circle{:src => "/images/community/3.png", :alt => "", :width => "40px", :height => "40px"}/
+                    .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right.user-status-bullet-online
+                .media-body
+                  .messages-header.group
+                    %h4.pull-left Алексеев Иван
+                    %p.pull-right.text-muted 20 июля, 15:20
+                  .messages-body
+                    %p Нам программист нужен для этого проекта. Нам программист нужен для этого проекта. У тебя      случайно нет таких знакомых с кем можно поработать в этом плане толковых? Может тебе интересно?
+                    %a.btn.btn-default{:href => "#"}
+                      %span.fa.fa-file-text-o 
+                      Имя_файла1.doc
+                    %a.btn.btn-default{:href => "#"}
+                      %span.fa.fa-file-text-o 
+                      Имя_файла2.doc
+
+            .messages-box
+              .media
+                .pull-left
+                  .messages-user-avatar
+                    %a{:href => "#"}
+                      %img.img-circle{:src => "/images/community/2.png", :alt => "", :width => "40px", :height => "40px"}/
+                    .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right.user-status-bullet-offline
+                .media-body
+                  .messages-header.group
+                    %h4.pull-left Алексеев Иван, Алексеева Лиана, Чоловский Дмитрий 
+                    %p.pull-right.text-muted 18 июля, 16:03
+                  .messages-body
+                    %p Нам программист нужен для этого проекта. Нам программист нужен для этого проекта. У тебя      случайно нет таких знакомых с кем можно поработать в этом плане толковых? Может тебе интересно?
+                    %a.btn.btn-default{:href => "#"}
+                      %span.fa.fa-file-text-o 
+                      Имя_файла1.doc
+                    %a.btn.btn-default{:href => "#"}
+                      %span.fa.fa-file-text-o 
+                      Имя_файла2.doc
+        
+        .tab-content-wide.container-grey
+          .content-group.group
+            .pull-left
+              %h5 Shift+Enter перенос строки
+            .pull-right
+              .text-primary Markdown
+          .content-group
+            %textarea.form-control{:rows => "4"}
+          .row
+            .col-sm-10
+              .media
+                .pull-left
+                  .fa.fa-2x.fa-paperclip
+                .media-body
+                  %ul.list-inline.form-group
+                    %li 
+                      %a{:href => "#"} Документ 1.jpeg 
+                      %a{:href => "#"} 
+                        %span.fa.fa-times
+                    %li 
+                      %a{:href => "#"} Фотография c конференции.jpeg 
+                      %a{:href => "#"} 
+                        %span.fa.fa-times
+                    %li 
+                      %a{:href => "#"} Документ 1.jpeg 
+                      %a{:href => "#"} 
+                        %span.fa.fa-times
+                    %li 
+                      %a{:href => "#"} Документ с очень-очень большим названием 2.doc 
+                      %a{:href => "#"} 
+                        %span.fa.fa-times
+                    %li 
+                      %a{:href => "#"} Документ 1.jpeg 
+                      %a{:href => "#"} 
+                        %span.fa.fa-times
+                    %li 
+                      %a{:href => "#"} Документ с очень-очень большим названием 2.doc 
+                      %a{:href => "#"} 
+                        %span.fa.fa-times
+
+                  .content-group
+                    %ul.unstyled-list.text-danger
+                      %li 
+                        %span.fa.fa-warning
+                        %span Вы не можете прикрепить больше 5 файлов
+                      %li 
+                        %span.fa.fa-warning
+                        %span Размер файла(ов) больше 50 Мб
+            .col-sm-2
+              %a.btn.btn-block.btn-primary{:href => "#"} Отправить
+
+      #comments-tab.tab-pane
+        %h1 Comments

@@ -1,0 +1,95 @@
+// Community logo
+.community-logo {
+  @include image-holder(120px, 120px);
+}
+// @end
+
+// Panel community
+.community-panel {
+  border: solid 1px $input-border;
+  position: relative;
+  font-size: $font-size-base;
+
+  &:hover {
+    border-color: lighten($brand-success, 15%);
+  }
+
+  .panel-body {
+    padding-right: 80px;
+    overflow: hidden;
+    height: $community-panel-height;
+  }
+
+  .panel-footer {
+    border-top: 0;
+    background-color: #f1f9fd;
+  }
+}
+// Ribon
+.community-panel-ribbon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 65px 65px 0;
+    border-color: transparent lighten($brand-success, 15%) transparent transparent;
+    border-color: rgba(255, 255, 255, 0) lighten($brand-success, 15%) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+  }
+  &:after {
+    content: attr(data-text);
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 150%;
+    left: -10%;
+    top: 20%;
+    text-align: center;
+    @include rotate(45deg);
+  }
+}
+// Title
+.community-panel-title {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+// Overlay with actions
+.community-panel-overlay {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 3px 3px;
+  .btn-link {
+    color: #b3b3b3;
+  }
+}
+// @end Panel community
+
+// Community profile info
+.community-profile-section {
+  padding: 15px 30px;
+  border-left: solid 5px transparent;
+  border-bottom: solid 1px $input-border;
+}
+.community-profile-contacts {
+  background-color: #fcfcf9;
+  border-left-color: $brand-primary;
+  h2 { margin-bottom: 15px;}
+}
+// @end
