@@ -10,8 +10,8 @@
   <head>
     <title>iq300 frontend</title>
     <meta charset='utf-8' content='text/html' http-equiv='content-type'>
-    <link href="../../stylesheets/app.css?1412941276" rel="stylesheet" type="text/css" />
-    <link href="../../stylesheets/static_fixes.css?1412941404" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/app.css?1413793108" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/static_fixes.css?1413792919" rel="stylesheet" type="text/css" />
   </head>
   <body class='tasks-index'>
     <div id='container'>
@@ -246,7 +246,7 @@
                     <form class='community-invites-form'>
                       <div class='form-controls-wrapper'>
                         <textarea class='invitation-email-area' placeholder='e-mail пользователей для приглашения'></textarea>
-                        <input class='btn-check' type='submit' value='Проверить'>
+                        <input class='community-invites-btn-check' type='submit' value='Проверить'>
                       </div>
                     </form>
                   </div>
@@ -271,14 +271,6 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class='id'>2</td>
-                        <td class='email'>egor@users.com</td>
-                        <td class='invite-people-list-status'>На указанный адрес уже выслано приглашение</td>
-                        <td class='community-invites-status-item-actions'>
-                          <span class='community-invites-status-item-actions-reseted'>Отменено</span>
-                        </td>
-                      </tr>
-                      <tr>
                         <td class='id'>3</td>
                         <td class='email'>@@users.com</td>
                         <td class='invite-people-list-status-error'>Неверный формат адреса</td>
@@ -291,7 +283,7 @@
                   <div class='collection-action'>
                     <form class='send-invites'>
                       <div class='form-controls-wrapper'>
-                        <input class='btn-send' type='submit' value='Отправить'>
+                        <input class='community-invites-btn-send' type='submit' value='Отправить'>
                       </div>
                     </form>
                   </div>
@@ -308,7 +300,7 @@
                         <tr class='community-sended-invite-item'>
                           <td class='community-sended-invite-item-detail invitation-person-email'>shamil@users.com</td>
                           <td class='community-sended-invite-item-detail status'>
-                            <div class='invite-people-list-status-member'>В сообществе</div>
+                            <div class='invite-people-list-status-accepted'>В сообществе</div>
                           </td>
                           <td class='community-sended-invite-item-detail actions'>
                             <a class='community-invites-cancel-invite-link' href='#'>Удалить</a>
@@ -317,7 +309,16 @@
                         <tr class='community-sended-invite-item'>
                           <td class='community-sended-invite-item-detail invitation-person-email'>egor@users.com</td>
                           <td class='community-sended-invite-item-detail status'>
-                            <div class='invite-people-list-status-waiting'>Ждем ответа</div>
+                            <div class='invite-people-list-status-invited'>Ждем ответа</div>
+                          </td>
+                          <td class='community-sended-invite-item-detail actions'>
+                            <a class='community-invites-cancel-invite-link' href='#'>Удалить</a>
+                          </td>
+                        </tr>
+                        <tr class='community-sended-invite-item'>
+                          <td class='community-sended-invite-item-detail invitation-person-email'>egor@users.com</td>
+                          <td class='community-sended-invite-item-detail status'>
+                            <div class='invite-people-list-status-canceled'>Отменено</div>
                           </td>
                           <td class='community-sended-invite-item-detail actions'>
                             <a class='community-invites-cancel-invite-link' href='#'>Удалить</a>
@@ -335,4 +336,4 @@
     </div>
   </body>
 </html>
-<script src="../../javascripts/static.js?1412941412" type="text/javascript"></script>
+<script src="../../javascripts/static.js?1413793009" type="text/javascript"></script>
