@@ -10,13 +10,8 @@
   <head>
     <title>iq300 frontend</title>
     <meta charset='utf-8' content='text/html' http-equiv='content-type'>
-<<<<<<< HEAD
-    <link href="stylesheets/app.css?1413380696" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/static_fixes.css?1413380584" rel="stylesheet" type="text/css" />
-=======
-    <link href="stylesheets/app.css?1413197394" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/static_fixes.css?1413197536" rel="stylesheet" type="text/css" />
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+    <link href="stylesheets/app.css?1413790455" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/static_fixes.css?1413790603" rel="stylesheet" type="text/css" />
   </head>
   <body class='page'>
     <div id='container'>
@@ -24,142 +19,92 @@
         <?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
           <url>
+            <loc>http://www.brandymint.com/communities/index.html</loc>
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+          </url>
+          <url>
             <loc>http://www.brandymint.com/communities/invites/index.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/documents_columns.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/index.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/notifications/index.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/profile.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/index.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/new/index.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show/details.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show/index.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show/tasks.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/tasks_new.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/tasks/edit.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/tasks/index.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/tasks/show.html</loc>
-<<<<<<< HEAD
-            <lastmod>2014-10-15T00:00:00+04:00</lastmod>
-=======
-            <lastmod>2014-10-13T00:00:00+04:00</lastmod>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+            <lastmod>2014-10-20T00:00:00+04:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
@@ -168,8 +113,4 @@
     </div>
   </body>
 </html>
-<<<<<<< HEAD
-<script src="javascripts/static.js?1413380584" type="text/javascript"></script>
-=======
-<script src="javascripts/static.js?1413197558" type="text/javascript"></script>
->>>>>>> 8a0dddb...  improve communities invites styles v2.0
+<script src="javascripts/static.js?1413790617" type="text/javascript"></script>
