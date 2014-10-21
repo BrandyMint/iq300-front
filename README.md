@@ -42,13 +42,24 @@
 
 `bower install`
 
-`bundle exec middleman` starts a server on `0.0.0.0:4567` (liveupdate included).
+`bundle exec middleman` стартует сервер
 
-`bundle exec middleman build` builds a static site in `build` folder.
+`bundle exec middleman build` билдит проект
+
+## Деплой статичного проекта
+
+`./frontend_build` — делаем билд
+
+`STAGE=<stage_name> ./frontend_deploy` — деплоим на
+`<stage_name>.iq300-dev.com`, по номеру стейджа предварительно
+договариваемся и указываем в STAGE — например, `STAGE=frontend3 ./frontend_deploy`
+
+При первом деплое нужно связаться c [elvir](https://github.com/elvir) или
+[sibsfinx](https://github.com/sibsfinx) и скинуть свой ssh-ключ.
+
+
 
 ## TODO
-
-Перенести из главного проекта все изменения после 30 июля.
 
 Убрать зависимости из проекта в Bower.
 
