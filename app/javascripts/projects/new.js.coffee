@@ -84,6 +84,11 @@ window.NewProject ||= {}
         option_html = '<option>' + title + '</option>'
         $(option_html).insertAfter(last_option)
 
+    #projectMemberCheckbox = $('@project-team-member-checkbox input')
+    projectMemberCheckboxBtn = $('@project-team-member-checkbox-admin')
+    projectMemberCheckboxBtn.on 'click', (e) ->
+      e.preventDefault()
+      $(@).toggleClass 'active'
 
 
 )(window.NewProject ||= {})
