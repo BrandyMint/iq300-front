@@ -74,4 +74,11 @@
 }
 // @end
 
+.user-avatar {
+  display: inline-block;
+  width: $user-avatar-width;
+  height: $user-avatar-width;
+  @include border-radius(100%);
+  border: 1px solid $line-color;
+}
 
