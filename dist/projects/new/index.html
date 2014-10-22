@@ -10,10 +10,10 @@
   <head>
     <title>iq300 frontend</title>
     <meta charset='utf-8' content='text/html' http-equiv='content-type'>
-    <link href="../../stylesheets/app.css?1413793108" rel="stylesheet" type="text/css" />
-    <link href="../../stylesheets/static_fixes.css?1413792919" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/app.css?1413961490" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/static_fixes.css?1413903967" rel="stylesheet" type="text/css" />
   </head>
-  <body class='projects-index'>
+  <body class='projects-new'>
     <div id='container'>
       <div id='wrapper'>
         <header class='header-global group'>
@@ -67,8 +67,8 @@
           <nav class='nav-global menu-list menu-list-initialized' data-channel='presence-1757:notifications' data-remote='true'>
             <div class='logo'>
               <a href='/' title='IQ300 System'>
-                <img alt="" width="95" height="95" src="../../images/logo_x1_new.png?1413792919" />
-                <img alt="" width="190" height="190" src="../../images/logo_x2_new.png?1413792919" />
+                <img alt="" width="95" height="95" src="../../images/logo_x1_new.png?1413903967" />
+                <img alt="" width="190" height="190" src="../../images/logo_x2_new.png?1413903967" />
               </a>
             </div>
             <ul>
@@ -305,21 +305,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class='form-group underline'>
-                    <label class='col-md-3'>
-                      Администраторы проекта
-                    </label>
-                    <div class='col-md-9'>
-                      <div class='input-group-above'>
-                        <select multiple='' role='select2-multiple' style='width: 100%;' tabindex='-1'>
-                          <option>Василий Михайлов</option>
-                          <option>Петр Иванов</option>
-                          <option>Михаил Шматкевич</option>
-                          <option>Иван Остроухов</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
                   <div class='form-group'>
                     <div class='pull-left'>
                       <a class='btn btn-lg' data-step='description' href='#' role='step-switcher' test-add-project-params=''>
@@ -536,14 +521,14 @@
                           <li data-original-title='Разработчики' role=''>
                             <a href='#'>
                               <span>Разработчики</span>
-                              <small>2</small>
+                              <small>7</small>
                               <span class='icon-active'>›</span>
                             </a>
                           </li>
                           <li data-original-title='Менеджеры' role=''>
                             <a href='#'>
                               <span>Менеджеры</span>
-                              <small>8</small>
+                              <small>10</small>
                               <span class='icon-active'>›</span>
                             </a>
                           </li>
@@ -557,7 +542,7 @@
                           <li data-original-title='Управление организационно-аналитической и правовой работы аппарата Мэра (Городского Совета)' role='tooltip'>
                             <a href='#'>
                               <span>Управление организационно-аналитическ...</span>
-                              <small>6</small>
+                              <small>5</small>
                               <span class='icon-active'>›</span>
                             </a>
                           </li>
@@ -597,211 +582,337 @@
                     <ul class='form-list underline' role='users-list' test-result-members-list=''>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input checked='checked' type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
                       <li>
                         <div class='checkbox-member'>
-                          <label class='group'>
+                          <label class='group' role='project-team-member-checkbox'>
                             <input type='checkbox'>
                             <i></i>
                             <span class='input-holder'></span>
-                            <span class='input-label'>Александр Мещеряков</span>
+                            <span class='input-label pull-left'>Александр Мещеряков</span>
+                            <a class='input-label project-form-team-member-btn pull-right' role='project-team-member-checkbox-admin'>
+                              <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                              <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                              админ
+                            </a>
+                            <span class='clearfix'></span>
                           </label>
                         </div>
                       </li>
@@ -826,20 +937,34 @@
                     <ul class='form-list underline' role='team-list' test-team-list=''>
                       <li class='project-form-team-selected-list-group'>Управление проектом</li>
                       <li data-original-title='Руководитель проекта' role='tooltip'>
-                        <strong>
+                        <strong class='pull-left'>
                           <i class='fa fa-flag text-color-gray-light'></i>
                           &nbsp;
                           Иван Макаров
+                          &nbsp;
                         </strong>
+                        <a class='input-label project-form-team-member-selected-btn active pull-left' role='project-team-member-checkbox-admin'>
+                          <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                          <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                          админ
+                        </a>
+                        <span class='clearfix'></span>
                         <input id='project_memberships_attributes_0_user_id' name='project[memberships_attributes][0][user_id]' type='hidden' value='203'>
                         <input name='project[memberships_attributes][0][group_name]' type='hidden' value='owners'>
                       </li>
                       <li data-original-title='Администратор проекта' role='tooltip'>
-                        <strong>
+                        <strong class='pull-left'>
                           <i class='fa fa-flag-o text-color-gray-light'></i>
                           &nbsp;
                           Василий Михайлов
+                          &nbsp;
                         </strong>
+                        <a class='input-label project-form-team-member-selected-btn active pull-left' role='project-team-member-checkbox-admin'>
+                          <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                          <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                          админ
+                        </a>
+                        <span class='clearfix'></span>
                         <input id='project_memberships_attributes_0_user_id' name='project[memberships_attributes][0][user_id]' type='hidden' value='203'>
                         <input name='project[memberships_attributes][0][group_name]' type='hidden' value='owners'>
                         <a class='fa fa-times-circle btn-remove' href='#' role='remove-btn'></a>
@@ -848,65 +973,129 @@
                         Управление организационно-аналитическ...
                       </li>
                       <li>
-                        <span>Александр Мещеряков</span>
+                        <span class='pull-left'>
+                          Александр Мещеряков
+                          &nbsp;
+                        </span>
+                        <a class='input-label project-form-team-member-selected-btn pull-left' role='project-team-member-checkbox-admin'>
+                          <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                          <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                          админ
+                        </a>
+                        <span class='clearfix'></span>
                         <input id='project_memberships_attributes_0_user_id' name='project[memberships_attributes][0][user_id]' type='hidden' value='203'>
                         <input name='project[memberships_attributes][0][group_name]' type='hidden' value='owners'>
                         <a class='fa fa-times-circle btn-remove' href='#' role='remove-btn'></a>
                       </li>
                       <li data-original-title='Приглашённый участник' role='tooltip'>
-                        <span>
+                        <span class='pull-left'>
                           Ильнур Газизуллин
                           &nbsp;
                           <span class='fa fa-key text-color-gray-light'></span>
+                          &nbsp;
                         </span>
+                        <a class='input-label project-form-team-member-selected-btn pull-left' role='project-team-member-checkbox-admin'>
+                          <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                          <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                          админ
+                        </a>
+                        <span class='clearfix'></span>
                         <input id='project_memberships_attributes_1_user_id' name='project[memberships_attributes][1][user_id]' type='hidden' value='54'>
                         <input name='project[memberships_attributes][1][group_name]' type='hidden' value='others'>
                         <a class='fa fa-times-circle btn-remove' href='#' role='remove-btn'></a>
                       </li>
                       <li>
-                        <span>Александр Мещеряков</span>
+                        <span class='pull-left'>
+                          Александр Мещеряков
+                          &nbsp;
+                        </span>
+                        <a class='input-label project-form-team-member-selected-btn pull-left' role='project-team-member-checkbox-admin'>
+                          <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                          <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                          админ
+                        </a>
+                        <span class='clearfix'></span>
                         <input id='project_memberships_attributes_0_user_id' name='project[memberships_attributes][0][user_id]' type='hidden' value='203'>
                         <input name='project[memberships_attributes][0][group_name]' type='hidden' value='owners'>
                         <a class='fa fa-times-circle btn-remove' href='#' role='remove-btn'></a>
                       </li>
                       <li data-original-title='Приглашённый участник' role='tooltip'>
-                        <span>
+                        <span class='pull-left'>
                           Ильнур Газизуллин
                           &nbsp;
                           <span class='fa fa-key text-color-gray-light'></span>
+                          &nbsp;
                         </span>
+                        <a class='input-label project-form-team-member-selected-btn pull-left' role='project-team-member-checkbox-admin'>
+                          <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                          <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                          админ
+                        </a>
+                        <span class='clearfix'></span>
                         <input id='project_memberships_attributes_1_user_id' name='project[memberships_attributes][1][user_id]' type='hidden' value='54'>
                         <input name='project[memberships_attributes][1][group_name]' type='hidden' value='others'>
                         <a class='fa fa-times-circle btn-remove' href='#' role='remove-btn'></a>
                       </li>
                       <li>
-                        <span>Александр Мещеряков</span>
+                        <span class='pull-left'>
+                          Александр Мещеряков
+                          &nbsp;
+                        </span>
+                        <a class='input-label project-form-team-member-selected-btn pull-left' role='project-team-member-checkbox-admin'>
+                          <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                          <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                          админ
+                        </a>
+                        <span class='clearfix'></span>
                         <input id='project_memberships_attributes_0_user_id' name='project[memberships_attributes][0][user_id]' type='hidden' value='203'>
                         <input name='project[memberships_attributes][0][group_name]' type='hidden' value='owners'>
                         <a class='fa fa-times-circle btn-remove' href='#' role='remove-btn'></a>
                       </li>
                       <li data-original-title='Приглашённый участник' role='tooltip'>
-                        <span>
+                        <span class='pull-left'>
                           Ильнур Газизуллин
                           &nbsp;
                           <span class='fa fa-key text-color-gray-light'></span>
+                          &nbsp;
                         </span>
+                        <a class='input-label project-form-team-member-selected-btn pull-left' role='project-team-member-checkbox-admin'>
+                          <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                          <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                          админ
+                        </a>
+                        <span class='clearfix'></span>
                         <input id='project_memberships_attributes_1_user_id' name='project[memberships_attributes][1][user_id]' type='hidden' value='54'>
                         <input name='project[memberships_attributes][1][group_name]' type='hidden' value='others'>
                         <a class='fa fa-times-circle btn-remove' href='#' role='remove-btn'></a>
                       </li>
                       <li>
-                        <span>Александр Мещеряков</span>
+                        <span class='pull-left'>
+                          Александр Мещеряков
+                          &nbsp;
+                        </span>
+                        <a class='input-label project-form-team-member-selected-btn pull-left' role='project-team-member-checkbox-admin'>
+                          <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                          <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                          админ
+                        </a>
+                        <span class='clearfix'></span>
                         <input id='project_memberships_attributes_0_user_id' name='project[memberships_attributes][0][user_id]' type='hidden' value='203'>
                         <input name='project[memberships_attributes][0][group_name]' type='hidden' value='owners'>
                         <a class='fa fa-times-circle btn-remove' href='#' role='remove-btn'></a>
                       </li>
                       <li data-original-title='Приглашённый участник' role='tooltip'>
-                        <span>
+                        <span class='pull-left'>
                           Ильнур Газизуллин
                           &nbsp;
                           <span class='fa fa-key text-color-gray-light'></span>
+                          &nbsp;
                         </span>
+                        <a class='input-label project-form-team-member-selected-btn pull-left' role='project-team-member-checkbox-admin'>
+                          <i class='fa fa-check project-form-team-member-btn-active-icon'></i>
+                          <span class='project-form-team-member-btn-inactive-icon'>+</span>
+                          админ
+                        </a>
+                        <span class='clearfix'></span>
                         <input id='project_memberships_attributes_1_user_id' name='project[memberships_attributes][1][user_id]' type='hidden' value='54'>
                         <input name='project[memberships_attributes][1][group_name]' type='hidden' value='others'>
                         <a class='fa fa-times-circle btn-remove' href='#' role='remove-btn'></a>
@@ -945,4 +1134,4 @@
     </div>
   </body>
 </html>
-<script src="../../javascripts/static.js?1413793009" type="text/javascript"></script>
+<script src="../../javascripts/static.js?1413961608" type="text/javascript"></script>
