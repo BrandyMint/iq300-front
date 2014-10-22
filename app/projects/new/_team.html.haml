@@ -64,15 +64,20 @@
       - for i in 0..20
         %li
           .checkbox-member
-            %label.group
+            %label.group{role: 'project-team-member-checkbox'}
               - if i == 0
                 %input{:checked => "checked", :type => "checkbox"}/
               - else
                 %input{type: 'checkbox'}
               %i
               %span.input-holder
-              %span.input-label Александр Мещеряков
-  
+              %span.input-label.pull-left Александр Мещеряков
+              %a.input-label.project-form-team-member-btn.pull-right{role: 'project-team-member-checkbox-admin'}
+                %i.fa.fa-check.project-form-team-member-btn-active-icon
+                %span.project-form-team-member-btn-inactive-icon + 
+                админ
+              %span.clearfix
+
   .project-form-team-selected-block-header
     .form-header
       .title
@@ -87,19 +92,32 @@
     %ul.form-list.underline{:role => "team-list", "test-team-list" => ""}
       %li.project-form-team-selected-list-group Управление проектом 
       %li{role: 'tooltip', 'data-original-title' => 'Руководитель проекта'}
-        %strong
+        %strong.pull-left
           %i.fa.fa-flag.text-color-gray-light
           &nbsp;
           Иван Макаров
+          &nbsp;
+        %a.input-label.project-form-team-member-selected-btn.active.pull-left{role: 'project-team-member-checkbox-admin'}
+          %i.fa.fa-check.project-form-team-member-btn-active-icon
+          %span.project-form-team-member-btn-inactive-icon + 
+          админ
+        %span.clearfix
         %input#project_memberships_attributes_0_user_id{:name => "project[memberships_attributes][0][user_id]", :type => "hidden", :value => "203"}/
         %input{:name => "project[memberships_attributes][0][group_name]", :type => "hidden", :value => "owners"}/
         -#%a.fa.fa-times-circle.btn-remove{:href => "#", :role => "remove-btn"}
 
       %li{role: 'tooltip', 'data-original-title' => 'Администратор проекта'}
-        %strong
+        %strong.pull-left
           %i.fa.fa-flag-o.text-color-gray-light
           &nbsp;
           Василий Михайлов
+          &nbsp;
+        %a.input-label.project-form-team-member-selected-btn.active.pull-left{role: 'project-team-member-checkbox-admin'}
+          %i.fa.fa-check.project-form-team-member-btn-active-icon
+          %span.project-form-team-member-btn-inactive-icon + 
+          админ
+        %span.clearfix
+
         %input#project_memberships_attributes_0_user_id{:name => "project[memberships_attributes][0][user_id]", :type => "hidden", :value => "203"}/
         %input{:name => "project[memberships_attributes][0][group_name]", :type => "hidden", :value => "owners"}/
         %a.fa.fa-times-circle.btn-remove{:href => "#", :role => "remove-btn"}
@@ -128,15 +146,30 @@
         = truncate(community_title, length: 40)
       - for i in 0..3
         %li
-          %span Александр Мещеряков
+          %span.pull-left
+            Александр Мещеряков
+            &nbsp;
+          %a.input-label.project-form-team-member-selected-btn.pull-left{role: 'project-team-member-checkbox-admin'}
+            %i.fa.fa-check.project-form-team-member-btn-active-icon
+            %span.project-form-team-member-btn-inactive-icon + 
+            админ
+          %span.clearfix
+
           %input#project_memberships_attributes_0_user_id{:name => "project[memberships_attributes][0][user_id]", :type => "hidden", :value => "203"}/
           %input{:name => "project[memberships_attributes][0][group_name]", :type => "hidden", :value => "owners"}/
           %a.fa.fa-times-circle.btn-remove{:href => "#", :role => "remove-btn"}
         %li{role: 'tooltip', 'data-original-title' => 'Приглашённый участник'}
-          %span
+          %span.pull-left
             Ильнур Газизуллин
             &nbsp;
             %span.fa.fa-key.text-color-gray-light
+            &nbsp;
+          %a.input-label.project-form-team-member-selected-btn.pull-left{role: 'project-team-member-checkbox-admin'}
+            %i.fa.fa-check.project-form-team-member-btn-active-icon
+            %span.project-form-team-member-btn-inactive-icon + 
+            админ
+          %span.clearfix
+
           %input#project_memberships_attributes_1_user_id{:name => "project[memberships_attributes][1][user_id]", :type => "hidden", :value => "54"}/
           %input{:name => "project[memberships_attributes][1][group_name]", :type => "hidden", :value => "others"}/
           %a.fa.fa-times-circle.btn-remove{:href => "#", :role => "remove-btn"}
