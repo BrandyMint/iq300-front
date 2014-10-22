@@ -13,5 +13,5 @@ git commit -m 'build'
 git push -f $STAGE $tmp_branch:master
 echo return to branch $current_branch
 git checkout $current_branch
-
+open "http://"$STAGE".iq300-dev.com"
 

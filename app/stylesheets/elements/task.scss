@@ -8,8 +8,8 @@
   @include clear;
   @include transition(all);
   &:hover {
-  	border-left-color: darken(#eee,10%);
-  	background-color: $gray-lightest;
+  	border-left-color: $item-hover-border-color;
+  	background-color: $item-hover-background;
   }
 }
 
@@ -26,7 +26,7 @@
 
 %task-overdued-style {
 	border-left-color: $brand-danger;
-	background-color: $contentBackgroundColor;
+	background-color: $new-item-background;
 	&:hover {border-left-color: $brand-danger;}
   a {
     color: $brand-danger;

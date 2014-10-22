@@ -8,6 +8,7 @@
 #= require projects/new
 #= require projects/discussions
 #= require projects/list
+#= require notifications/list
 
 $ ->
   $('@select2').select2()
