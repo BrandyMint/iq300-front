@@ -1,0 +1,37 @@
+- reports = [{title: 'Отчёт по задачам', link: 'reports_tasks'}, {title: 'Отчёт по исполнителям', link: 'reports_responsible'}, {title: 'Расширенный отчёт по задачам', link: 'reports_tasks_extended'}]
+- reports.each do |report|
+  .project-show-section
+    %h4.project-show-section-title
+      %strong= report[:title]
+    %form.form-horizontal{action: "#{report[:link]}"}
+      %label.input-group-inline-label.pull-left
+        За период
+      .pull-left
+        .input-group-inline-block.pull-left
+          .input-group{role: 'datetimepicker'}
+            %input.form-control{type: 'text'}
+            .input-group-addon.btn
+              .fa.fa-calendar-o.fa-lg
+        .input-group-inline-dash.pull-left &mdash;
+        .input-group-inline-block.pull-left
+          .input-group{role: 'datetimepicker-now'}
+            %input.form-control{type: 'text'}
+            .input-group-addon.btn
+              .fa.fa-calendar-o.fa-lg
+        .pull-left
+          &nbsp;
+          &nbsp;
+          -#%input.btn.btn-default.btn-sm{type: 'sumbit', value: 'Показать'}
+          %a.btn.btn-default.btn-sm{href: "#{report[:link]}"} Показать
+        .clearfix
+        %small
+          %a{href: '#'} День
+          &nbsp;
+          %a{href: '#'} Неделя
+          &nbsp;
+          %a{href: '#'} Месяц
+      .clearfix
+    %hr
+
+
+
