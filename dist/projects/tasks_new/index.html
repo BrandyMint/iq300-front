@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if lt IE 10]> <html class="no-js lt-ie10" lang="en-us"> <![endif]-->
+<!--[if !IE]> > <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <title>iq300 frontend</title>
+    <meta charset='utf-8' content='text/html' http-equiv='content-type'>
+    <link href="../../stylesheets/app.css?1415433246" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/static_fixes.css?1415432956" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='tasks-new'>
+    <div id='container'>
+      <div id='wrapper'>
+        <header class='header-global group'>
+          <a class='logo' href='/' title='IQ300 System'></a>
+          <span class='app-version'>
+            v.1.5.2
+            <span>
+              sa/refactor_initializer
+            </span>
+          </span>
+          <div class='user-nav'>
+            <a href='/help'>Помощь</a>
+            <a href='/users/5'>
+              <span class='userpic'>
+                <img alt='Эльвир' class='img-corrector-initialized' hide_wait_message='true' src='/assets/default-user-avatar.png' style='width:44px; height:44px;' title='Нуриахметов Эльвир Петрович'>
+              </span>
+              Эльвир Нуриахметов
+            </a>
+            <a class='fa fa-sign-out' data-method='delete' href='/users/sign_out' rel='nofollow' title='Выйти'></a>
+            <!-- %section -->
+            <!-- = render "shared/user_widget" -->
+            <!-- .help-link> -->
+            <!-- = link_to icon('question-sign'), "/help", title: t('common.help') -->
+          </div>
+          <input id='app_signed_in_user_id' name='app_signed_in_user_id' type='hidden' value='5'>
+          <input id='pusher_app_key' name='pusher_app_key' type='hidden' value='d113d7d870e1723ff8c8'>
+        </header>
+        <div class='content content-global display-mode' data-initial-action='new' filters='false' full_view='false' list='false' role-display-mode='ready' view='false'>
+          <section class='top-panel'>
+            <div class='pull-left'>
+              <a class='navigation' href='#' onclick="$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;">
+                <i class='icon-reorder'></i>
+              </a>
+              <a class='btn btn-lg' href='/tasks'>
+                <span class='fa fa-reply'></span>
+                Список задач
+              </a>
+            </div>
+          </section>
+          <nav class='nav-global menu-list' data-channel='presence-5:notifications' data-remote='true' role-menu-list='ready'>
+            <div class='logo'>
+              <a href='/' title='IQ300 System'>
+                <img alt='IQ300' class='image-x1 img-corrector-initialized' src='/assets/logo_x1_new.png'>
+                <img alt='IQ300' class='image-x2 img-corrector-initialized' src='/assets/logo_x2_new.png'>
+              </a>
+            </div>
+            <ul>
+              <li class='menu-item notifications' data-params='{"folder":"new"}' data-url='/notifications'>
+                <div class='html-notifier' data-channel='presence-5:notifications' data-redirect-url='/notifications?folder=new' data-url='/notifications.count?folder=new' role-html-notifier='ready'>
+                  <audio id='notice-audio'>
+                    <source src='/audios/notify.wav' type='audio/wav'>
+                  </audio>
+                </div>
+                <a href='/notifications'>
+                  <div class='picture'>
+                    <i class='icon-bell'></i>
+                    <sup>5</sup>
+                  </div>
+                  <span>Уведомления</span>
+                </a>
+              </li>
+              <li class='active menu-item tasks' data-params='{"overview":5}' data-url='/tasks'>
+                <a href='/tasks'>
+                  <div class='picture'>
+                    <i class='icon-list-alt'></i>
+                    <sup>50</sup>
+                  </div>
+                  <span>Задачи</span>
+                </a>
+              </li>
+              <li class='menu-item projects not-initialize' data-params='null' data-url='/projects'>
+                <a href='/projects?folder=in_work'>
+                  <div class='picture'>
+                    <i class='icon-books'></i>
+                  </div>
+                  <span>Проекты</span>
+                </a>
+              </li>
+              <li class='menu-item calendars not-initialize' data-params='null' data-url='/calendar'>
+                <a href='/calendar'>
+                  <div class='picture'>
+                    <i class='icon-calendar'></i>
+                  </div>
+                  <span>Календарь</span>
+                </a>
+              </li>
+              <li class='menu-item communities not-initialize' data-params='null' data-url='/communities'>
+                <a href='/communities?folder=my'>
+                  <div class='picture'>
+                    <i class='icon-briefcase'></i>
+                  </div>
+                  <span>Сообщества</span>
+                </a>
+              </li>
+              <li class='menu-item docs not-initialize' data-params='null' data-url='/docs'>
+                <a href='/docs?folder=my'>
+                  <div class='picture'>
+                    <i class='icon-paste'></i>
+                  </div>
+                  <span>Документы</span>
+                </a>
+              </li>
+              <li class='menu-item conversations' data-params='{"folder":"new"}' data-url='/conversations'>
+                <a href='/conversations'>
+                  <div class='picture'>
+                    <i class='icon-comment-alt'></i>
+                  </div>
+                  <span>Сообщения</span>
+                </a>
+              </li>
+              <li class='menu-item contacts not-initialize' data-params='null' data-url='/contacts'>
+                <a href='/contacts?folder=all'>
+                  <div class='picture'>
+                    <i class='icon-group'></i>
+                  </div>
+                  <span>Контакты</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <section class='one-big-column task-form-section form-container' data-default-community='5' data-default-executor='5' role-task-form='ready'>
+            <form _lpchecked='1' accept-charset='UTF-8' action='/tasks' class='form-horizontal' enctype='multipart/form-data' id='new_base_task' method='post'>
+              <div style='margin:0;padding:0;display:inline'>
+                <input name='utf8' type='hidden' value='✓'>
+                <input name='authenticity_token' type='hidden' value='mkEJ4f/U2uFjhSyiaeP21FV20F1XFEHgzY7hD9pen/g='>
+              </div>
+              <input class='task-kind-input' id='base_task_kind' name='base_task[kind]' type='hidden' value='Task'>
+              <input id='base_task_template_id' name='base_task[template_id]' type='hidden'>
+              <div class='form-group'>
+                <div class='page-title col-md-12'>
+                  <div class='pull-left'>
+                    <h3>Новая задача</h3>
+                  </div>
+                </div>
+              </div>
+              <div class='form-group'>
+                <label class='control-label col-sm-2'>
+                  Название
+                </label>
+                <div class='col-sm-10'>
+                  <div class='input-group'>
+                    <input class='form-control' id='base_task_title' name='base_task[title]' placeholder='Новая задача' role='title' size='30' style='cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;' type='text'>
+                    <div class='input-group-addon' data-original-title='Формулировка задачи должна быть понятна исполнителю. Правильно поставленная задача - половина успеха! Ознакомьтесь с нашими рекомендациями по формулировке задач в разделе Помощь.' role-bootstrap-tooltip='ready' title=''>
+                      <div class='fa fa-question-circle'></div>
+                    </div>
+                  </div>
+                  <div class='btn-line'>
+                    <a class='btn btn-deffault' href='#' role='add-description-btn'>
+                      <span class='fa fa-arrow-circle-o-down' role='description-icon'></span>
+                      <span data-original-title='В описании Вы можете детализировать задачу' role-bootstrap-tooltip='ready' role='text' test-add-descr-btn='' title=''>
+                        Добавить описание
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class='form-group description' role='description'>
+                <label class='control-label col-sm-2'>
+                  Описание
+                </label>
+                <div class='col-sm-10'>
+                  <textarea class='form-control' cols='40' id='base_task_description' name='base_task[description]' rows='5'></textarea>
+                </div>
+              </div>
+              <div class='form-group' role='community'>
+                <label class='control-label col-sm-2'>
+                  Сообщество
+                </label>
+                <div class='col-sm-5'>
+                  <select class='form-control' data-allow-clear='true' data-ignore-value='5' id='base_task_community_id' name='base_task[community_id]' placeholder='Выбрать сообщество'>
+                    <option value='5'>Личная задача</option>
+                    <option value='8'>REC</option>
+                    <option value='307'>VLAD</option>
+                    <option value='10'>test</option>
+                    <option value='306'>Садоводы</option>
+                  </select>
+                </div>
+                <div class='col-md-1 form-control-static nopadding-left'>
+                  <div class='fa fa-question-circle' data-original-title='Укажите сообщество, в рамках которого Вы хотите поставить задачу' role-bootstrap-tooltip='ready' title=''></div>
+                </div>
+              </div>
+              <div class='form-group' role='task-executor' style='display: none;'>
+                <label class='control-label col-sm-2'>
+                  Исполнитель
+                </label>
+                <div class='col-sm-5'>
+                  <div class='select2-container select-two chained-select' id='s2id_base_task_executor_id' style='width: 100%;'>
+                    <a class='select2-choice' href='javascript:void(0)' onclick='return false;' tabindex='-1'>
+                      <span class='select2-chosen'> </span>
+                      <abbr class='select2-search-choice-close'></abbr>
+                      <span class='select2-arrow'>
+                        <b></b>
+                      </span>
+                    </a>
+                    <input class='select2-focusser select2-offscreen' id='s2id_autogen1' type='text'>
+                    <div class='select2-drop select2-display-none select2-with-searchbox'>
+                      <div class='select2-search'>
+                        <input autocapitalize='off' autocomplete='off' autocorrect='off' class='select2-input' spellcheck='false' type='text'>
+                      </div>
+                      <ul class='select2-results'></ul>
+                    </div>
+                  </div>
+                  <select class='select-two chained-select select2-offscreen' data-allow-clear='true' data-chained-select='/communities/__base_task%5Bcommunity_id%5D__/executors?per=500' data-skip-init-req='true' id='base_task_executor_id' name='base_task[executor_id]' placeholder='Выбрать исполнителя' role-chained-select='ready' role-select-two='ready' role='executor-select' tabindex='-1'></select>
+                </div>
+                <div class='col-md-1 form-control-static nopadding-left'>
+                  <div class='fa fa-question-circle' data-original-title='Укажите сотрудника, которому Вы хотите поставить задачу' role-bootstrap-tooltip='ready' title=''></div>
+                </div>
+              </div>
+              <div class='form-group' role-datetime-field='ready'>
+                <input id='base_task_start_date' name='base_task[start_date]' role='start-date' type='hidden' value='2014-08-18 00:00:00 +0400'>
+                <label class='control-label col-sm-2'>
+                  Начинается:
+                </label>
+                <div class='col-sm-10'>
+                  <div class='input-group-inline'>
+                    <div class='input-group'>
+                      <input class='date-input zebra-date-picker form-control' data-pair='input-end-date' data-show-clear-date='false' data-zdp_format='d.m.Y' disabled='disabled' id='task-start-date' readonly='readonly' role-zebra-date-picker='ready' type='text' value='17.08.2014'>
+                      <div class='input-group-addon'>
+                        <div class='fa fa-calendar-o fa-lg'></div>
+                      </div>
+                    </div>
+                    <div class='input-group'>
+                      <input class='time-input form-control' type='text' value='22:57'>
+                      <div class='input-group-addon' data-original-title='Срок начала задачи' role-bootstrap-tooltip='ready' title=''>
+                        <div class='fa fa-question-circle'></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='form-group' role-datetime-field='ready'>
+                <input id='base_task_end_date' name='base_task[end_date]' role='end-date' type='hidden' value='2014-08-18 23:59:59 +0400'>
+                <label class='control-label col-sm-2'>
+                  Выполнить к:
+                </label>
+                <div class='col-sm-10'>
+                  <div class='input-group-inline'>
+                    <div class='input-group'>
+                      <input class='date-input zebra-date-picker form-control' data-direction-start='true' data-show-clear-date='false' data-zdp_format='d.m.Y' id='task-end-date' readonly='readonly' role-zebra-date-picker='ready' role='input-end-date' type='text' value='18.08.2014'>
+                      <div class='input-group-addon' test-input-end-date=''>
+                        <div class='fa fa-calendar-o fa-lg'></div>
+                      </div>
+                    </div>
+                    <div class='input-group'>
+                      <input class='time-input form-control' type='text' value='22:59'>
+                      <div class='input-group-addon' data-original-title='Срок, к которому Вы хотите видеть задачу выполненной' role-bootstrap-tooltip='ready' title=''>
+                        <div class='fa fa-question-circle'></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='col-md-5 col-md-offset-2'>
+                  <div class='input-group-inline task-proposed-end-dates' role='task-proposed-end-dates'>
+                    <div class='input-group'>
+                      <a data-date='18.08.2014' href='#'>сегодня, 18 августа</a>
+                    </div>
+                    <div class='input-group'>
+                      <a data-date='19.08.2014' href='#'>завтра, 19 августа</a>
+                    </div>
+                    <div class='input-group'>
+                      <a data-date='20.08.2014' href='#'>20 августа</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='col-md-4 col-md-offset-2 task-repeat-checkbox'>
+                <div class='checkbox' role='task-repeat-checkbox'>
+                  <label>
+                    <input name='generation_cycle' role='input-checkbox' type='checkbox' value='true'>
+                    <span data-original-title='Автоматическое повторение задачи по расписанию' role-bootstrap-tooltip='ready' title=''>
+                      Повторять задачу
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class='form-group task-repeat-form' role='repeat-form' style='display: block;'>
+                <div class='form-field-gray col-md-12'>
+                  <div class='form-group'>
+                    <div class='input-group-inline'>
+                      <div class='input-group'>
+                        <span class='align-text'>Раз в:</span>
+                      </div>
+                      <div class='input-group'>
+                        <select class='form-control' id='base_task_cycle_type' name='base_task[cycle][type]' role='repeat-type-select-input'>
+                          <option value='days'>день</option>
+                          <option value='weeks'>неделю</option>
+                          <option value='months'>месяц</option>
+                        </select>
+                      </div>
+                      <div class='input-group days-repeat-type' role='fields-for-days-repeat-type'>
+                        <div class='input-group'>
+                          <span class='align-text'>Повторять с интервалом:</span>
+                        </div>
+                        <div class='input-group'>
+                          <select class='form-control' id='base_task_cycle_count' name='base_task[cycle][count]' role='input-select-day'>
+                            <option value='1'>1</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                            <option value='4'>4</option>
+                            <option value='5'>5</option>
+                            <option value='6'>6</option>
+                            <option value='7'>7</option>
+                            <option value='8'>8</option>
+                            <option value='9'>9</option>
+                            <option value='10'>10</option>
+                            <option value='11'>11</option>
+                            <option value='12'>12</option>
+                            <option value='13'>13</option>
+                            <option value='14'>14</option>
+                            <option value='15'>15</option>
+                            <option value='16'>16</option>
+                            <option value='17'>17</option>
+                            <option value='18'>18</option>
+                            <option value='19'>19</option>
+                            <option value='20'>20</option>
+                            <option value='21'>21</option>
+                            <option value='22'>22</option>
+                            <option value='23'>23</option>
+                            <option value='24'>24</option>
+                            <option value='25'>25</option>
+                            <option value='26'>26</option>
+                            <option value='27'>27</option>
+                            <option value='28'>28</option>
+                            <option value='29'>29</option>
+                            <option value='30'>30</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class='input-group weeks-repeat-type' role='fields-for-weeks-repeat-type'>
+                        <div class='input-group'>
+                          <span class='align-text'>День повтора:</span>
+                        </div>
+                        <div class='input-group'>
+                          <select class='form-control' id='base_task_cycle_day_of_week' name='base_task[cycle][day_of_week]' role='input-select-day-of-week'>
+                            <option value='Monday'>Понедельник</option>
+                            <option value='Tuesday'>Вторник</option>
+                            <option value='Wednesday'>Среда</option>
+                            <option value='Thursday'>Четверг</option>
+                            <option value='Friday'>Пятница</option>
+                            <option value='Saturday'>Суббота</option>
+                            <option value='Sunday'>Воскресенье</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class='input-group months-repeat-type' role='fields-for-months-repeat-type'>
+                        <div class='input-group'>
+                          <span class='align-text'>День повтора:</span>
+                        </div>
+                        <div class='input-group'>
+                          <select class='form-control' id='base_task_cycle_day_of_month' name='base_task[cycle][day_of_month]' role='input-select-day-of-month'>
+                            <option value='1'>1</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                            <option value='4'>4</option>
+                            <option value='5'>5</option>
+                            <option value='6'>6</option>
+                            <option value='7'>7</option>
+                            <option value='8'>8</option>
+                            <option value='9'>9</option>
+                            <option value='10'>10</option>
+                            <option value='11'>11</option>
+                            <option value='12'>12</option>
+                            <option value='13'>13</option>
+                            <option value='14'>14</option>
+                            <option value='15'>15</option>
+                            <option value='16'>16</option>
+                            <option value='17'>17</option>
+                            <option value='18'>18</option>
+                            <option value='19'>19</option>
+                            <option value='20'>20</option>
+                            <option value='21'>21</option>
+                            <option value='22'>22</option>
+                            <option value='23'>23</option>
+                            <option value='24'>24</option>
+                            <option value='25'>25</option>
+                            <option value='26'>26</option>
+                            <option value='27'>27</option>
+                            <option value='28'>28</option>
+                            <option value='29'>29</option>
+                            <option value='30'>30</option>
+                            <option value='31'>31</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <div class='input-group-inline'>
+                      <div class='input-group'>
+                        <span class='align-text'>Начинается с:</span>
+                      </div>
+                      <div class='input-group' role-datetime-field='ready'>
+                        <input id='base_task_cycle_next' name='base_task[cycle_next]' role='cycle-next' type='hidden'>
+                        <input class='date-input zebra-date-picker form-control' data-direction-start='true' data-pair='cycle-end-date' data-show-clear-date='false' data-zdp_format='d.m.Y' readonly='readonly' role-zebra-date-picker='ready' type='text'>
+                        <div class='input-group-addon'>
+                          <div class='fa fa-calendar-o fa-lg'></div>
+                        </div>
+                      </div>
+                      <div class='input-group'>
+                        <span class='align-text'>по:</span>
+                      </div>
+                      <div class='input-group' role-datetime-field='ready'>
+                        <input id='base_task_cycle_end' name='base_task[cycle_end]' role='cycle-end' type='hidden'>
+                        <input class='date-input zebra-date-picker form-control' data-direction-start='true' data-show-clear-date='false' data-zdp_format='d.m.Y' readonly='readonly' role-zebra-date-picker='ready' role='cycle-end-date' type='text'>
+                        <div class='input-group-addon'>
+                          <div class='fa fa-calendar-o fa-lg'></div>
+                        </div>
+                      </div>
+                      <div class='input-group' role='working-only'>
+                        <div class='checkbox'>
+                          <label>
+                            <input name='base_task[cycle][business_only]' type='checkbox' value='true'>
+                            Только по рабочим
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='form-group todo-list' role='todo-fields-list'>
+                <div class='page-title'>
+                  <div class='pull-left'>
+                    <h3 class='task-page-section-title' data-original-title='С помощью чек-листов Вы можете создавать список работ по задаче и отслеживать прогресс ее исполнения' data-placement='right' role-bootstrap-tooltip='ready' title=''>
+                      Чек-лист
+                    </h3>
+                  </div>
+                  <div class='pull-right'>
+                    <span data-original-title='Добавьте новый пункт в чек-лист задачи' data-placement='left' role-bootstrap-tooltip='ready' title=''>
+                      <a class='add-todo btn btn-default add-button add_nested_fields' data-association='todo_items' data-blueprint-id='todo_items_fields_blueprint' data-target='#todo-list' href='javascript:void(0)' role='add-todo-field'>
+                        <span class='fa fa-plus-circle'></span>
+                        Добавить
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <ul id='todo-list'></ul>
+                </div>
+              </div>
+              <div class='form-group task-files' data-file-max-size='50' role-task-form-files='ready'>
+                <div class='form-field col-md-12 attachments'>
+                  <div class='page-title form-group'>
+                    <div class='pull-left'>
+                      <h3 data-original-title='Вы можете добавить файлы к задаче' data-placement='right' role-bootstrap-tooltip='ready' title=''>
+                        Файлы к задаче
+                      </h3>
+                    </div>
+                    <div class='pull-right' data-original-title='Добавьте новый файл' data-placement='left' role-bootstrap-tooltip='ready' title=''>
+                      <a class='add-attachment btn btn-default add-button add_nested_fields' data-association='attachments' data-blueprint-id='attachments_fields_blueprint' data-target='#attachment-files' href='javascript:void(0)' role='add-file'>
+                        <span class='fa fa-plus-circle'></span>
+                        Добавить
+                      </a>
+                    </div>
+                  </div>
+                  <div class='attachment-files form-group hidden' id='attachment-files' role='files'></div>
+                </div>
+              </div>
+              <div class='form-group text-right form-buttons' test-buttons=''>
+                <div class='form-field'>
+                  <div class='pull-left'>
+                    <a class='save-as-template btn btn-default' data-original-title='Сохраните условия текущей задачи для создания новых' role-bootstrap-tooltip='ready' role='save-as-template' title=''>
+                      Сохранить как шаблон
+                    </a>
+                  </div>
+                  <div class='pull-right' data-original-title='Отправьте задачу в работу' role-bootstrap-tooltip='ready' title=''>
+                    <input class='btn btn-success' data-disable-with='Отправка...' name='commit' role='input-submit' type='submit' value='Поставить задачу'>
+                  </div>
+                </div>
+              </div>
+              <div data-blueprint='&lt;li class=&#x0027;fields&#x0027; role=&#x0027;todo-fields&#x0027;&gt;&#x000A;              &lt;input class="todo-body" id="base_task_todo_items_attributes_new_todo_items_title" name="base_task[todo_items_attributes][new_todo_items][title]" placeholder="Добавить пункт" role="todo-title" size="30" type="text" /&gt;&#x000A;              &lt;input id="base_task_todo_items_attributes_new_todo_items__destroy" name="base_task[todo_items_attributes][new_todo_items][_destroy]" type="hidden" value="false" /&gt;&lt;a href="javascript:void(0)" class="delete remove_nested_fields" data-association="todo_items"&gt;&lt;i class="icon-remove" &gt;&lt;/i&gt;&lt;/a&gt;&#x000A;            &lt;/li&gt;&#x000A;            ' id='todo_items_fields_blueprint' style='display: none'></div>
+              <div data-blueprint='  &lt;div class=&#x0027;file fields&#x0027; role=&#x0027;file&#x0027;&gt;&#x000A;                &lt;a href="#"&gt;&lt;span class=&#x0027;fa fa-file-text-o fa-lg&#x0027;&gt;&lt;/span&gt;&#x000A;            &lt;span class=&#x0027;file-name&#x0027;&gt;&#x000A;              file_name&#x000A;            &lt;/span&gt;&#x000A;            &lt;/a&gt;&#x000A;                &lt;input id="base_task_attachments_attributes_new_attachments_file" name="base_task[attachments_attributes][new_attachments][file]" style="display:none" type="file" /&gt;&#x000A;                &lt;input id="base_task_attachments_attributes_new_attachments__destroy" name="base_task[attachments_attributes][new_attachments][_destroy]" type="hidden" value="false" /&gt;&lt;a href="javascript:void(0)" class="delete remove_nested_fields" data-association="attachments" data-confirm="Вы уверены?"&gt;&lt;i class="icon-remove" &gt;&lt;/i&gt;&lt;/a&gt;&#x000A;              &lt;/div&gt;&#x000A;            ' id='attachments_fields_blueprint' style='display: none'></div>
+            </form>
+          </section>
+        </div>
+        <!-- = render 'shared/footer' -->
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../../javascripts/static.js?1415433260" type="text/javascript"></script>

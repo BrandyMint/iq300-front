@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if lt IE 10]> <html class="no-js lt-ie10" lang="en-us"> <![endif]-->
+<!--[if !IE]> > <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <title>iq300 frontend</title>
+    <meta charset='utf-8' content='text/html' http-equiv='content-type'>
+    <link href="../../stylesheets/app.css?1415433246" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/static_fixes.css?1415432956" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='communities-index'>
+    <div id='container'>
+      <div id='wrapper'>
+        <header class='header-global group'>
+          <a class='logo' href='/' title='IQ300 System'></a>
+          <div class='search-header' role-ready='search-form'>
+            <span class='search-button'>
+              <span class='icon-search'></span>
+            </span>
+            <form action='/projects/879' class='form-search' method='get'>
+              <!-- - b = button_tag raw("<span class='icon-search'></span>") -->
+              <!-- #{content_tag(:i)}#{i}#{b} -->
+              <i></i>
+              <input class='search-query form-control' id='search' name='search' placeholder='Поиск' role='global-search-field' type='search'>
+            </form>
+          </div>
+          <span class='app-version'>
+            sa/notifications &mdash; 8e0100
+          </span>
+          <div class='user-nav'>
+            <a href='/help'>Помощь</a>
+            <a href='/users/1757'>
+              <span class='userpic'>
+                <img alt='Александр' class='userpic-image img-corrector-initialized' hide_wait_message='true' src='https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg' title='Мещеряков Александр Игоревич'>
+              </span>
+              Александр Мещеряков
+            </a>
+            <a class='fa fa-sign-out' data-method='delete' href='/users/sign_out' rel='nofollow' title='Выйти'></a>
+            <!-- %section -->
+            <!-- = render "shared/user_widget" -->
+            <!-- .help-link> -->
+            <!-- = link_to icon('question-sign'), "/help", title: t('common.help') -->
+          </div>
+          <input id='app_signed_in_user_id' name='app_signed_in_user_id' type='hidden' value='1757'>
+          <input id='pusher_app_key' name='pusher_app_key' type='hidden' value='7baa6a182eefe7314de0'>
+        </header>
+        <div class='content content-global display-mode display-mode-initialized' data-initial-action='index' filters='true' full_view='true' list='true' view='false'>
+          <section class='top-panel'>
+            <div class='pull-left'>
+              <a class='btn btn-lg' href='#'>
+                <span class='fa fa-reply'></span>
+                Сообщества
+              </a>
+            </div>
+          </section>
+          <nav class='nav-global menu-list menu-list-initialized' data-channel='presence-1757:notifications' data-remote='true'>
+            <div class='logo'>
+              <a href='/' title='IQ300 System'>
+                <img alt="" width="95" height="95" src="../../images/logo_x1_new.png?1415432956" />
+                <img alt="" width="190" height="190" src="../../images/logo_x2_new.png?1415432956" />
+              </a>
+            </div>
+            <ul>
+              <li class='menu-item notifications'>
+                <a href="/notifications/"><div class='picture'>
+                  <i class='iq-navicons-notifications'></i>
+                  <sup>9</sup>
+                  <sup class='overdue'>3</sup>
+                </div>
+                <span>Уведомления</span>
+                </a>
+              </li>
+              <li class='menu-item projects'>
+                <a href="/projects/"><div class='picture'>
+                  <i class='iq-navicons-projects'></i>
+                </div>
+                <span>Проекты</span>
+                </a>
+              </li>
+              <li class='menu-item tasks'>
+                <a href="/tasks/"><div class='picture'>
+                  <i class='iq-navicons-tasks'></i>
+                </div>
+                <span>Задачи</span>
+                </a>
+              </li>
+              <li class='conversations menu-item'>
+                <a href="/conversations/"><div class='picture'>
+                  <i class='iq-navicons-messages'></i>
+                </div>
+                <span>Сообщения</span>
+                </a>
+              </li>
+              <li class='contacts menu-item'>
+                <a href="/contacts/"><div class='picture'>
+                  <i class='iq-navicons-contacts'></i>
+                </div>
+                <span>Контакты</span>
+                </a>
+              </li>
+              <li class='communities menu-item'>
+                <a href="/communities/"><div class='picture'>
+                  <i class='iq-navicons-communities'></i>
+                </div>
+                <span>Сообщества</span>
+                </a>
+              </li>
+              <li class='docs menu-item'>
+                <a href="/docs/"><div class='picture'>
+                  <i class='iq-navicons-documents'></i>
+                </div>
+                <span>Документы</span>
+                </a>
+              </li>
+              <li class='calendar menu-item'>
+                <a href="/calendar/"><div class='picture'>
+                  <i class='iq-navicons-calendar'></i>
+                </div>
+                <span>Календарь</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <section class='one-big-column form-container'>
+            <div class='row'>
+              <div class='col-md-9'>
+                <div class='panel panel-default'>
+                  <div class='panel-heading'>
+                    <div class='panel-title'>Введите пользователей, которых вы хотите пригласить в сообщест</div>
+                  </div>
+                  <div class='panel-body container-grey'>
+                    <div class='row'>
+                      <div class='col-md-9'>
+                        <input class='form-control' type='text'>
+                      </div>
+                      <div class='col-md-3'>
+                        <a class='btn btn-block btn-default' href='#'>Проверить</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='panel-body'></div>
+                  <table class='table'>
+                    <thead>
+                      <tr class='container-grey'>
+                        <th>№</th>
+                        <th>Пользователь</th>
+                        <th>Статус</th>
+                        <th>Действия</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>name@company.ru</td>
+                        <td>Готов к отправке</td>
+                        <td>
+                          <a class='btn btn-danger' href='#'>Удалить</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>@@company.ru</td>
+                        <td>
+                          <span class='text-danger'>Не верный формат адреса</span>
+                        </td>
+                        <td>
+                          <a class='btn btn-danger' href='#'>Удалить</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Александр Ткачев</td>
+                        <td>На указанный адрес уже выслано приглашение</td>
+                        <td>
+                          <i>Отменено</i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Шамиль Хамадеев</td>
+                        <td>Пользователь уже состоит в сообществе</td>
+                        <td>
+                          <i>Отменено</i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class='panel-body container-grey text-right'>
+                    <a class='btn btn-primary' href='#'>Проверить</a>
+                  </div>
+                  <div class='panel-body'></div>
+                  <table class='table'>
+                    <thead class='container-grey'>
+                      <tr>
+                        <th colspan='4'>
+                          <div class='panel-title'>Список отправленных приглашений</div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>name@company.ru</td>
+                        <td>
+                          <span class='label label-success'>В сообществе</span>
+                        </td>
+                        <td>
+                          <a class='btn btn-danger' href='#'>Удалить</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>name@company.ru</td>
+                        <td>
+                          <span class='label label-success'>В сообществе</span>
+                        </td>
+                        <td>
+                          <a class='btn btn-danger' href='#'>Удалить</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>name@company.ru</td>
+                        <td>
+                          <span class='label label-warning'>Ждем ответа</span>
+                        </td>
+                        <td>
+                          <a class='btn btn-danger' href='#'>Удалить</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>name@company.ru</td>
+                        <td>
+                          <span class='label label-warning'>Ждем ответа</span>
+                        </td>
+                        <td>
+                          <a class='btn btn-danger' href='#'>Удалить</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../../javascripts/static.js?1415433260" type="text/javascript"></script>
