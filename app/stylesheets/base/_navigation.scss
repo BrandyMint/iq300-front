@@ -1,5 +1,7 @@
-$nav-item-highlight-color: $green-grass;
-$nav-item-active-background: $nav-item-highlight-color;
+$nav-item-highlight-color: $blue-brand;
+$nav-item-active-background: $blue-brand;
+$nav-item-active-color: #fff;
+
 
 .nav-global {
   width: $navColumnWidth;
@@ -47,10 +49,7 @@ $nav-item-active-background: $nav-item-highlight-color;
         text-align: center;
         padding: 4px 0 4px 0;
         @include transition(all 0.2s ease-out);
-        transition-property: background-color, border-color;
-        -webkit-transition-property: background-color, border-color;
-        -moz-transition-property: background-color, border-color;
-        -o-transition-property: background-color, border-color;
+        @include transition-property(background-color, border-color, color);
         border-top: 1px solid transparent;
         border-bottom: 1px solid transparent;
         color: $gray;
@@ -70,6 +69,8 @@ $nav-item-active-background: $nav-item-highlight-color;
           @include box-sizing(border-box);
           font-size: 40px;
           color: $gray-light;
+          @include transition(all 0.2s ease-out);
+          @include transition-property(color, background);
           @media screen and (max-width: 480px) and (max-height: 740px) {
             height: auto;
             font-size: 20px;
@@ -79,14 +80,19 @@ $nav-item-active-background: $nav-item-highlight-color;
             @extend %buble-counter;
             display: block;
             position: absolute;
-            top: -5px;
+            top: -2px;
             right: 0%;
             margin-right: 5px;
             text-decoration: none;
+            background-color: #fff;
+            color: $blue-brand-bright;
+            border-color: $blue-brand-bright;
           }
           > sup.overdue {
-              margin-top: 28px;
-              background: $brand-danger;
+              margin-top: 25px;
+              background-color: $brand-danger;
+              color: #fff;
+              border-color: $brand-danger;
           }
         }
         > span {
@@ -120,10 +126,10 @@ $nav-item-active-background: $nav-item-highlight-color;
             background: transparent;
           }
           .picture {
-            color: white;
+            color: $nav-item-active-color;
           }
           > span {
-            color: white;
+            color: $nav-item-active-color;
           }
         }
       }

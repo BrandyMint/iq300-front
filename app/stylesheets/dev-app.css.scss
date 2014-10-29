@@ -41,6 +41,9 @@
 @import "eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min";
 @import "libs/datetimepicker";
 
+// Elements
+@import "elements/buble-counter";
+
 // Base layout partials
 // --------------------------------------
 @import "base/layout";
@@ -68,7 +71,6 @@
 // old
 @import "elements/image-cropper";
 @import "elements/user-widget";
-@import "elements/buble-counter";
 @import "elements/star";
 @import "elements/expandable";
 @import "elements/adding-form";

@@ -5,7 +5,7 @@ body_class: notifications-index
 = partial 'shared/header'
 .content.content-global.display-mode{"data-initial-action" => "index", :filters => "false", :full_view => "false", :list => "true", "role-display-mode" => "ready", :view => "false"}
   = partial 'notifications/top_panel'
-  = partial 'shared/navigation'
+  = partial 'shared/navigation', locals: {active: 'notifications'}
   %section.list-column.notifications-list-column{"data-channel" => "presence-4:notifications", "data-url" => "/notifications", "role-notifications-list-column" => "ready"}
     %h4.notifications-list-column-title
       12 мая 2014
