@@ -1,32 +1,45 @@
-// Community logo
+$community-block-height: 230px;
+
 .community-logo {
   @include image-holder(120px, 120px);
 }
-// @end
 
-// Panel community
-.community-panel {
-  border: solid 1px $input-border;
+.community-block {
+  @extend .panel;
   position: relative;
+  height: $community-block-height;
+  overflow: hidden;
+  border: solid 1px $input-border;
   font-size: $font-size-base;
-
+  cursor: pointer;
   &:hover {
     border-color: lighten($brand-success, 15%);
   }
-
-  .panel-body {
-    padding-right: 80px;
-    overflow: hidden;
-    height: $community-panel-height;
-  }
-
-  .panel-footer {
-    border-top: 0;
-    background-color: #f1f9fd;
-  }
 }
-// Ribon
-.community-panel-ribbon {
+
+.community-block-body {
+  @extend .panel-body;
+  padding-right: 80px;
+  overflow: hidden;
+  height: $community-block-height;
+}
+
+.community-block-description {
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.community-block-footer {
+  @extend .panel-footer;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 0;
+  background-color: #f1f9fd;
+}
+
+
+.community-block-ribbon {
   position: absolute;
   right: 0;
   top: 0;
@@ -59,14 +72,14 @@
     @include rotate(45deg);
   }
 }
-// Title
-.community-panel-title {
+
+.community-block-title {
   margin-bottom: 10px;
   font-size: 1.5em;
   line-height: 1.2;
 }
-// Overlay with actions
-.community-panel-overlay {
+
+.community-block-overlay {
   position: absolute;
   text-align: center;
   bottom: 0;
@@ -74,22 +87,50 @@
   left: 0;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 0 0 3px 3px;
-  .btn-link {
-    color: #b3b3b3;
-  }
+  border-radius: 0 0 $border-radius-base $border-radius-base;
 }
-// @end Panel community
 
-// Community profile info
 .community-profile-section {
   padding: 15px 30px;
   border-left: solid 5px transparent;
   border-bottom: solid 1px $input-border;
 }
+
 .community-profile-contacts {
-  background-color: #fcfcf9;
+  background-color: $brand-beige;
   border-left-color: $brand-primary;
-  h2 { margin-bottom: 15px;}
 }
-// @end
+
+.community-profile-contacts-title {
+  margin-bottom: 15px;
+}
+
+
+.community-profile-details-stats {
+  @extend .panel;
+  @extend .panel-primary;
+}
+
+.community-profile-details-stats-heading {
+  @extend .panel-heading;
+  padding: 5px 10px;
+}
+
+.community-profile-details-stats-title {
+  @extend .panel-title;
+  font-size: $font-size-base;
+}
+
+.community-profile-details-stats-body {
+  @extend .panel-body;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.community-profile-details-stats-image {
+  width: $user-avatar-width*2;
+  height: $user-avatar-width*2;
+  border-radius: 50%;
+  border: 1px solid $line-color;
+}

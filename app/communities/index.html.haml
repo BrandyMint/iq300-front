@@ -32,31 +32,20 @@ body_class: communities-index
         %option{:value => ""} Список объектов
         %option{:value => ""} Список объектов
         %option{:value => ""} Список объектов
+
+    - description = 'Кабельные и беспроводные сети. Оборудование для IT-коммуникаций. Кабельные и беспроводные сети. Оборудование для IT-коммуникаций. Кабельные и беспроводные сети. Оборудование для IT-коммуникаций'
+    - phone = '+7 (8552) 30-55-42'
+    - email = 'welcome@romaska.ru'
+
     .content-group
       .row
         .col-md-6.col-inline
-          .panel.community-panel
-            .community-panel-ribbon{"data-text" => "новое"}
-            .panel-body
-              .media 
-                .pull-left
-                  %a{:href => "#"}
-                    %img{:src => "/images/community/1.png", :alt => ""}/
-                .media-body
-                  %h3.community-panel-title ООО «Название сообщества»
-            .panel-footer &nbsp;
-            .community-panel-overlay
-              %a.btn.btn-primary{:href => "#"} Принять
-              %a.btn.btn-link.text-muted{:href => "#"} Отказаться
-        - (1..5).each_with_index do |item, i|
+          = partial 'communities/block', locals: {status: 'new', description: description, phone: phone, email: email}
+        - for i in 1..5
           .col-md-6.col-inline
-            .panel.community-panel
-              .panel-body
-                .media 
-                  .pull-left
-                    %a{:href => "#"}
-                      %img{:src => "/images/community/#{i+1}.png", :alt => ""}/
-                  .media-body
-                    %h3.community-panel-title ООО «Название сообщества»
-              .panel-footer
-                %p Роль в сообществе
+            - if i % 2 == 0
+              = partial 'communities/block', locals: {description: description, phone: phone, email: email}
+            - else
+              = partial 'communities/block', locals: {description: description}
+
+

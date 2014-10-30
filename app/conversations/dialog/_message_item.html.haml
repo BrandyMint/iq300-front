@@ -1,0 +1,24 @@
+- text = locals[:text] || ''
+- user_status = locals[:user_status] || 'offline'
+- files = locals[:files]
+
+.message-box
+  .media
+    .pull-left
+      .message-box-user-avatar
+        %a{:href => "#"}
+          %img.img-circle{:src => "/images/community/2.png", :alt => "", :width => "40px", :height => "40px"}/
+        .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right{class: "user-status-bullet-#{user_status}"}
+    .media-body
+      .message-box-header.group
+        %h4.pull-left Алексеев Иван, Алексеева Лиана, Чоловский Дмитрий 
+        %p.pull-right.text-muted 18 июля, 16:03
+      .message-body
+        .message-body-text= text
+        .message-box-files
+          - if files.present?
+            - files.each do |f|
+              %a.btn.btn-default{:href => "#"}
+                %span.fa.fa-file-text-o 
+                  = "#{f}"
+

@@ -43,3 +43,25 @@
     font-size: 300%;
   }
 }
+
+@each $color in (white #fff, gray-lighter $gray-lighter, gray-light $gray-light, gray $gray, success $brand-success, danger $brand-danger, warning $brand-warning, primary $brand-primary) {
+  .btn-link-#{nth($color,1)} {
+    @extend .btn-link;
+    color: nth($color,2);
+    &:hover {
+      color: darken(nth($color,2),10%);
+    }
+  }
+}
+@each $color in (gray-light $gray-light, gray $gray) {
+  .btn-outline-#{nth($color,1)} {
+    @extend .btn-default;
+    color: nth($color,2);
+    border-color: lighten(nth($color,2), 30%);
+    &:hover, &:hover {
+      color: darken(nth($color,2),10%);
+      border-color: lighten(nth($color,2), 20%);
+    }
+  }
+}
+

@@ -1,0 +1,52 @@
+.tab-content-wide.container-grey
+  .content-group.group
+    .pull-left
+      %h5 Shift+Enter перенос строки
+    .pull-right
+      .text-primary Markdown
+  .content-group
+    %textarea.form-control{:rows => "4"}
+  .row
+    .col-sm-10
+      .media
+        .pull-left
+          .fa.fa-2x.fa-paperclip
+        .media-body
+          %ul.list-inline.form-group
+            %li 
+              %a{:href => "#"} Документ 1.jpeg 
+              %a{:href => "#"} 
+                %span.fa.fa-times
+            %li 
+              %a{:href => "#"} Фотография c конференции.jpeg 
+              %a{:href => "#"} 
+                %span.fa.fa-times
+            %li 
+              %a{:href => "#"} Документ 1.jpeg 
+              %a{:href => "#"} 
+                %span.fa.fa-times
+            %li 
+              %a{:href => "#"} Документ с очень-очень большим названием 2.doc 
+              %a{:href => "#"} 
+                %span.fa.fa-times
+            %li 
+              %a{:href => "#"} Документ 1.jpeg 
+              %a{:href => "#"} 
+                %span.fa.fa-times
+            %li 
+              %a{:href => "#"} Документ с очень-очень большим названием 2.doc 
+              %a{:href => "#"} 
+                %span.fa.fa-times
+
+          .content-group
+            %ul.unstyled-list.text-danger
+              %li 
+                %span.fa.fa-warning
+                %span Вы не можете прикрепить больше 5 файлов
+              %li 
+                %span.fa.fa-warning
+                %span Размер файла(ов) больше 50 Мб
+    .col-sm-2
+      %a.btn.btn-block.btn-primary{:href => "#"} Отправить
+
+

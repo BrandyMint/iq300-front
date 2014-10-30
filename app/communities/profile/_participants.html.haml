@@ -1,0 +1,76 @@
+.content-group.clearfix
+  .pull-left
+    %a.btn.btn-default{:href => "#"} Добавить участников
+    %a.btn.btn-default{:href => "#"} Управление ролями
+    %a.btn.btn-default{:href => "#"} Экспорт списка
+  .pull-right
+    %input.form-control{:type => "text", :placeholder => "Поиск по участникам..."}/
+.content-group
+  .tab-content-wide.container-grey
+    .clearfix
+      .pull-left
+        %select{:name => "", :role => "select2"}
+          %option{:value => ""} Роль
+          %option{:value => ""} Роль
+          %option{:value => ""} Роль
+          %option{:value => ""} Роль
+        %select{:name => "", :role => "select2"}
+          %option{:value => ""} Подразделение
+          %option{:value => ""} Подразделение
+          %option{:value => ""} Подразделение
+          %option{:value => ""} Подразделение
+      .pull-right
+        %a.btn.btn-default{:href => "#"} Экспорт
+        %a.btn.btn-default{:href => "#"} Редактировать
+.row.row-collapse
+  .col-sm-4.col-collapse
+    - (1..4).each do
+      .media.member-box
+        .pull-left
+          .member-box-avatar
+            %a{:href => "#"}
+              %img.img-circle{:src => "/images/community/2.png", :alt => "", :width => "95px", :height => "95px"}/
+            .user-status-bullet.user-status-bullet-bottom-right.user-status-bullet-online
+        .media-body
+          %h4.content-heading
+            %a{:href => "#"} Борис Сергеев
+          %ul.unstyled-list
+            %li Сотрудник
+            %li Разработчик,
+            %li Разработка Sega
+            %li Entertainment
+  .col-sm-4.col-collapse
+    - (1..4).each do
+      .media.member-box
+        .pull-left
+          .member-box-avatar
+            %a{:href => "#"}
+              %img.img-circle{:src => "/images/community/6.png", :alt => "", :width => "95px", :height => "95px"}/
+            .user-status-bullet.user-status-bullet-bottom-right.user-status-bullet-away
+        .media-body
+          %h4.content-heading
+            %a{:href => "#"} Анастасия Сергеевна
+          %ul.unstyled-list
+            %li Руководитель
+            %li Начальник отдела,
+            %li Разработка Sega
+            %li Introduction Pro
+  .col-sm-4.col-collapse
+    - (1..4).each do
+      .media.member-box
+        .pull-left
+          .community-member-avatar
+            %a{:href => "#"}
+              %img.img-circle{:src => "/images/community/6.png", :alt => "", :width => "95px", :height => "95px"}/
+            .user-status-bullet.user-status-bullet-bottom-right.user-status-bullet-away
+        .media-body
+          %h4.content-heading
+            %a{:href => "#"} Анастасия Сергеевна
+          %ul.unstyled-list
+            %li Руководитель
+            %li Начальник отдела,
+            %li Разработка Sega
+            %li Introduction Pro
+.text-center
+  %a.btn.btn-default{:href => "#"} Показать Еще 100
+

@@ -1,0 +1,14 @@
+.content-group
+  %a{:href => "#"} 
+    %strong 982 диалога
+.content-group
+  .messages-list
+    = partial 'conversations/messages_list_item', locals: {message_status: 'new', user_status: 'online'}
+    = partial 'conversations/messages_list_item', locals: {user_status: 'online'}
+    = partial 'conversations/messages_list_item', locals: {user_status: 'offline', files: ['file1.doc', 'file2.doc']}
+
+
+.content-group.text-center
+  %a{:href => "#"} Загрузить еще
+
+

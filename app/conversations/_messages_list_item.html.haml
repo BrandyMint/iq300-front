@@ -1,0 +1,36 @@
+- text = 'Слушай, мы тут для одной фирмы с другом портал пишем для рабочих в цеху (справки заказывать разные, письма директорам писать с жалобами и т.д.) Нам программист нужен для этого проекта. Нам программист нужен для этого проекта...'
+- user_status = locals[:user_status] || 'offline'
+- files = locals[:files]
+- message_status = locals[:message_status] || ''
+
+.message-box.tab-content-wide{class: "message-box-#{message_status}"}
+  .media
+    .pull-left
+      .message-box-user-avatar
+        %a{:href => "#"}
+          %img.img-circle{:src => "/images/community/1.png", :alt => "", :width => "40px", :height => "40px"}/
+        .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right{class: "user-status-bullet-#{user_status}"}
+    .media-body
+      .message-box-header
+        .row
+          .col-xs-11
+            %h4 Алексеева Лиана
+            %p.text-muted 21 июля, 14:59
+          .col-xs-1.text-right
+            - if message_status == 'new'
+              .badge.badge-primary 5
+      .message-body
+        .row
+          .col-xs-11
+            .message-body-text
+              = text
+          .col-xs-1.text-right
+            .badge 245
+        .message-box-files
+          - if files.present?
+            - files.each do |f|
+              %a.btn.btn-default{:href => "#"}
+                %span.fa.fa-file-text-o 
+                  = "#{f}"
+
+

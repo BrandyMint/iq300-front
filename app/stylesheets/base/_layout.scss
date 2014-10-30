@@ -176,10 +176,12 @@ hr {
 // @end
 
 // Content boxes
-.content-heading, .form-heading {
+.content-heading,
+.form-heading {
   margin-bottom: 0.5em;
 }
-.content-section, .form-section {
+.content-section,
+.form-section {
   margin-bottom: $space-large;
 }
 .content-group {

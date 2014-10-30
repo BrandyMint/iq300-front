@@ -61,4 +61,9 @@
 .member-box-avatar {
   position: relative;
 }
+
+.member-box-avatar-image {
+  border-radius: 50%;
+  border: 1px solid $line-color;
+}
 // @end
