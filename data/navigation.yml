@@ -1,0 +1,20 @@
+notifications:
+  title: Уведомления
+  counter: 9
+  counter_overdue: 3
+projects:
+  title: Проекты
+tasks:
+  title: Задачи
+conversations:
+  title: Сообщения
+  icon: messages
+contacts:
+  title: Контакты
+communities:
+  title: Сообщества
+docs:
+  title: Документы
+  icon: documents
+calendar:
+  title: Календарь

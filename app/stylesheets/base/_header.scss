@@ -12,8 +12,12 @@
     top: 14px;
     height: 30px;
     width: 70px;
-    background: url('#{$images-path}/login/logo.png') no-repeat;
-    background-size: contain;
+    background: {
+      image: url('#{$images-path}/logo-blue.png');
+      image: url('#{$images-path}/logo-blue.svg');
+      repeat: no-repeat;
+      size: contain;
+    }
   }
 
   .app-version {

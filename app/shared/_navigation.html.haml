@@ -1,54 +1,24 @@
+- nav = data.navigation
+- active = locals[:active] || -1
+
 %nav.nav-global.menu-list.menu-list-initialized{"data-channel" => "presence-1757:notifications", "data-remote" => "true"}
   .logo
     %a{href: "/", title: "IQ300 System"}
-      -#%img.image-x1.img-corrector-initialized{alt: "IQ300", src: "/assets/logo_x1_new.png"}/
-      -#%img.image-x2.img-corrector-initialized{alt: "IQ300", src: "/assets/logo_x2_new.png"}/
       = image_tag 'logo_x1_new.png'
       = image_tag 'logo_x2_new.png'
   %ul
-    %li.menu-item.notifications{"data-params" => "{\"folder\":\"new\"}", "data-url" => "/notifications"}
-      .html-notifier.html-notifier-initialized{"data-channel" => "presence-1757:notifications", "data-redirect-url" => "/notifications?folder=new", "data-url" => "/notifications.count?folder=new"}
-        %audio#notice-audio
-          %source{src: "/audios/notify.wav", type: "audio/wav"}
-      = link_to "/notifications" do
-        .picture
-          %i.iq-navicons-notifications
-          %sup 3
-          %sup.overdue 9
-        %span Уведомления
-    %li.menu-item.tasks{"data-params" => "{\"overview\":1757}", "data-url" => "/tasks"}
-      = link_to "/tasks" do
-        .picture
-          %i.iq-navicons-tasks
-        %span Задачи
-    %li.active.menu-item.projects.not-initialize{"data-params" => "null", "data-url" => "/projects"}
-      %a{href: "/projects?folder=in_work"}
-        .picture
-          %i.iq-navicons-projects
-        %span Проекты
-    %li.menu-item.calendars.not-initialize{"data-params" => "null", "data-url" => "/calendar"}
-      %a{href: "/calendar"}
-        .picture
-          %i.iq-navicons-calendar
-        %span Календарь
-    %li.menu-item.communities.not-initialize{"data-params" => "null", "data-url" => "/communities"}
-      %a{href: "/communities?folder=my"}
-        .picture
-          %i.iq-navicons-communities
-        %span Сообщества
-    %li.menu-item.docs.not-initialize{"data-params" => "null", "data-url" => "/docs"}
-      %a{href: "/docs?folder=my"}
-        .picture
-          %i.iq-navicons-documents
-        %span Документы
-    %li.menu-item.conversations{"data-params" => "{\"folder\":\"new\"}", "data-url" => "/conversations"}
-      %a{href: "/conversations"}
-        .picture
-          %i.iq-navicons-messages
-        %span Сообщения
-    %li.menu-item.contacts.not-initialize{"data-params" => "null", "data-url" => "/contacts"}
-      %a{href: "/contacts?folder=all"}
-        .picture
-          %i.iq-navicons-contacts
-        %span Контакты
+    - nav.each_with_index do |(k, v), i|
+      %li.menu-item{class: "#{k} #{active == k ? 'active' : ''}"}
+        = link_to "/#{k}/" do
+          .picture
+            - if v.icon.present?
+              %i{class: "iq-navicons-#{v.icon}"}
+            - else
+              %i{class: "iq-navicons-#{k}"}
+            - if v.counter.present?
+              %sup= v.counter
+            - if v.counter_overdue.present?
+              %sup.overdue= v.counter_overdue
+          %span= v.title
+
 
