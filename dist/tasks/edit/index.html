@@ -10,8 +10,8 @@
   <head>
     <title>iq300 frontend</title>
     <meta charset='utf-8' content='text/html' http-equiv='content-type'>
-    <link href="../../stylesheets/app.css?1414499896" rel="stylesheet" type="text/css" />
-    <link href="../../stylesheets/static_fixes.css?1414499201" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/app.css?1414648613" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/static_fixes.css?1414648465" rel="stylesheet" type="text/css" />
   </head>
   <body class='tasks-show'>
     <div id='container'>
@@ -62,78 +62,67 @@
           <nav class='nav-global menu-list menu-list-initialized' data-channel='presence-1757:notifications' data-remote='true'>
             <div class='logo'>
               <a href='/' title='IQ300 System'>
-                <img alt="" width="95" height="95" src="../../images/logo_x1_new.png?1414499201" />
-                <img alt="" width="190" height="190" src="../../images/logo_x2_new.png?1414499201" />
+                <img alt="" width="95" height="95" src="../../images/logo_x1_new.png?1414648465" />
+                <img alt="" width="190" height="190" src="../../images/logo_x2_new.png?1414648465" />
               </a>
             </div>
             <ul>
-              <li class='menu-item notifications' data-params='{"folder":"new"}' data-url='/notifications'>
-                <div class='html-notifier html-notifier-initialized' data-channel='presence-1757:notifications' data-redirect-url='/notifications?folder=new' data-url='/notifications.count?folder=new'>
-                  <audio id='notice-audio'>
-                    <source src='/audios/notify.wav' type='audio/wav'>
-                  </audio>
-                </div>
-                <a href="/notifications"><div class='picture'>
+              <li class='menu-item notifications'>
+                <a href="/notifications/"><div class='picture'>
                   <i class='iq-navicons-notifications'></i>
-                  <sup>3</sup>
-                  <sup class='overdue'>9</sup>
+                  <sup>9</sup>
+                  <sup class='overdue'>3</sup>
                 </div>
                 <span>Уведомления</span>
                 </a>
               </li>
-              <li class='menu-item tasks' data-params='{"overview":1757}' data-url='/tasks'>
-                <a href="/tasks"><div class='picture'>
+              <li class='menu-item projects'>
+                <a href="/projects/"><div class='picture'>
+                  <i class='iq-navicons-projects'></i>
+                </div>
+                <span>Проекты</span>
+                </a>
+              </li>
+              <li class='menu-item tasks'>
+                <a href="/tasks/"><div class='picture'>
                   <i class='iq-navicons-tasks'></i>
                 </div>
                 <span>Задачи</span>
                 </a>
               </li>
-              <li class='active menu-item projects not-initialize' data-params='null' data-url='/projects'>
-                <a href='/projects?folder=in_work'>
-                  <div class='picture'>
-                    <i class='iq-navicons-projects'></i>
-                  </div>
-                  <span>Проекты</span>
+              <li class='conversations menu-item'>
+                <a href="/conversations/"><div class='picture'>
+                  <i class='iq-navicons-messages'></i>
+                </div>
+                <span>Сообщения</span>
                 </a>
               </li>
-              <li class='menu-item calendars not-initialize' data-params='null' data-url='/calendar'>
-                <a href='/calendar'>
-                  <div class='picture'>
-                    <i class='iq-navicons-calendar'></i>
-                  </div>
-                  <span>Календарь</span>
+              <li class='contacts menu-item'>
+                <a href="/contacts/"><div class='picture'>
+                  <i class='iq-navicons-contacts'></i>
+                </div>
+                <span>Контакты</span>
                 </a>
               </li>
-              <li class='menu-item communities not-initialize' data-params='null' data-url='/communities'>
-                <a href='/communities?folder=my'>
-                  <div class='picture'>
-                    <i class='iq-navicons-communities'></i>
-                  </div>
-                  <span>Сообщества</span>
+              <li class='communities menu-item'>
+                <a href="/communities/"><div class='picture'>
+                  <i class='iq-navicons-communities'></i>
+                </div>
+                <span>Сообщества</span>
                 </a>
               </li>
-              <li class='menu-item docs not-initialize' data-params='null' data-url='/docs'>
-                <a href='/docs?folder=my'>
-                  <div class='picture'>
-                    <i class='iq-navicons-documents'></i>
-                  </div>
-                  <span>Документы</span>
+              <li class='docs menu-item'>
+                <a href="/docs/"><div class='picture'>
+                  <i class='iq-navicons-documents'></i>
+                </div>
+                <span>Документы</span>
                 </a>
               </li>
-              <li class='menu-item conversations' data-params='{"folder":"new"}' data-url='/conversations'>
-                <a href='/conversations'>
-                  <div class='picture'>
-                    <i class='iq-navicons-messages'></i>
-                  </div>
-                  <span>Сообщения</span>
-                </a>
-              </li>
-              <li class='menu-item contacts not-initialize' data-params='null' data-url='/contacts'>
-                <a href='/contacts?folder=all'>
-                  <div class='picture'>
-                    <i class='iq-navicons-contacts'></i>
-                  </div>
-                  <span>Контакты</span>
+              <li class='calendar menu-item'>
+                <a href="/calendar/"><div class='picture'>
+                  <i class='iq-navicons-calendar'></i>
+                </div>
+                <span>Календарь</span>
                 </a>
               </li>
             </ul>
@@ -498,4 +487,4 @@
     </div>
   </body>
 </html>
-<script src="../../javascripts/static.js?1414500009" type="text/javascript"></script>
+<script src="../../javascripts/static.js?1414648719" type="text/javascript"></script>
