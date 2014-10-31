@@ -1,0 +1,44 @@
+---
+layout: input_registration
+---
+.registration-page
+  .registration-page-container
+    .registration-page-header
+      %img{src: '/images/login/logo-blue.png', class: 'main-logo'}
+      %p.registration-page-header-title
+        Система проектного управления
+    .registration-page-body
+      .registration-page-body-internal-container
+        .registration-form-title-wrapper
+          %p.registration-form-title.registration-form-title-step1
+            Пожалуйста представтесь
+        %form.registration-page-form
+          .form-group
+            .registration-form-input-wrapper
+              %img{src: '/images/registration/choose_photo.png', class: 'registration-choose-avatar'}
+            .registration-form-input-wrapper
+              %input.form-control.registration-form-input{placeholder: 'Имя'}
+            .registration-form-input-wrapper
+              %input.form-control.registration-form-input{placeholder: 'Фамилия'}
+            .registration-form-input-wrapper
+              %input.form-control.registration-form-input{placeholder: 'Пароль'}
+            .registration-form-input-wrapper
+              %p.registration-form-input-hint
+                Имеется промо код?
+              %input.form-control.registration-form-input{placeholder: 'Промо код'}
+          .buttons
+            %a{href: '', class: 'btn one-big-btn registration-next-step registration-step-one-next'} Далее
+            %a{href: '', class: 'one-big-btn registration-previous-step registration-step-one-prev registration-step-one-back'} Назад
+        .registration-page-body-footer
+
+    .registration-page-footer
+      .enter-container
+        .registration-delimeter
+        .registration-steps-status-block
+          %ol
+            %li.registration-steps-status
+              .registration-steps-status-link.active
+            %li.registration-steps-status
+              .registration-steps-status-link
+            %li.registration-steps-status
+              .registration-steps-status-link

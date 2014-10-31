@@ -1,0 +1,37 @@
+---
+layout: input_registration
+---
+.registration-page
+  .registration-page-container
+    .registration-page-header
+      %img{src: '/images/login/logo-blue.png', class: 'main-logo'}
+      %p.registration-page-header-title
+        Система управления задачами и проектами
+    .registration-page-body
+      .registration-page-body-internal-container
+        %img{src: '/images/login/logo-blue.png', class: 'enter-logo'}
+        .registration-form-title-wrapper
+          %p.registration-form-title.registration-top-title
+            Войти в систему
+        %form.registration-page-form
+          .form-group
+            .registration-form-input-wrapper
+              %input.form-control.registration-form-input{placeholder: 'Логин'}
+            .registration-form-input-wrapper
+              %input.form-control.registration-form-input{placeholder: 'Пароль'}
+          .buttons
+            %a{href: '', class: 'btn one-big-btn'} Войти
+        .registration-page-body-footer
+
+    .registration-page-footer
+      .enter-container-centered
+        %p.enter-page-title
+          Вы можете войти в систему с помощью своей учетной записи в одной из социальных сетей
+        .enter-through-social-links
+          %a{href: '#', class: 'social-login-link'}
+            %img{src: '/images/login/facebook.png', class: 'enter-social-logo'}
+          %a{href: '#', class: 'social-login-link'}
+            %img{src: '/images/login/google_plus.png', class: 'enter-social-logo'}
+        %a{href: '#', class: 'enter-link'} Забыли пароль?
+        %a{href: '#', class: 'enter-link'} Регистрация
+        %a{href: '#', class: 'enter-link'} Не получили инструкцию по подтверждению регистрации?
