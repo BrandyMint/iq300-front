@@ -1,0 +1,40 @@
+.message-box {
+  padding: 20px;
+  &.message-box-new {
+    background-color: lighten($brand-primary, 53%);
+  }
+}
+
+.messages-list {
+  .message-box {
+    border-bottom: solid 1px $input-border;
+    &:first-child {
+      border-top: solid 1px $input-border;
+    }
+  }
+}
+
+.message-box-user-avatar {
+  display: inline-block;
+  position: relative;
+  padding-right: 10px;
+  img {
+    display: block;
+  }
+}
+
+.message-box-header {
+  margin-bottom: 5px;
+}
+.message-body-text {
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.message-box-files {
+  margin: {
+    top: 0.5em;
+    bottom: 0.5em;
+  }
+}

@@ -303,3 +303,13 @@ section.destroy-confirmation {
     }
   }
 }
+
+
+// Communities content column
+.communities-content-column {
+  @extend %list-column-block;
+  top: $headerHeight + $topPanelHeight;
+  bottom: 0;
+  height: auto;
+}
+// @end

@@ -6,16 +6,16 @@ body.projects-index {
 }
 
 body.tasks-index {
-	// hide top panel
-	.top-panel { display: none !important;}
+  // hide top panel
+  .top-panel { display: none !important;}
 
-	// Cut place of top panel
-	.tasks-filters-column, .tasks-list-column, .task-view-column {
-		margin-top: -45px;
-		padding-bottom: 45px;
+  // Cut place of top panel
+  .tasks-filters-column, .tasks-list-column, .task-view-column {
+    margin-top: -45px;
+    padding-bottom: 45px;
     @extend %list-column-shadow;
-		@include box-sizing(content-box);
-	}
+    @include box-sizing(content-box);
+  }
 }
 body.tasks-show {
   .top-panel {
@@ -27,97 +27,8 @@ body.tasks-show {
 
 // Add gray background to tasks/show form
 body.tasks-show {
-	.task-view-column {
-		padding: 0;
-		background-color: #f6f6f6;
-	}
-	.tab-content {
-		background-color: #fff;
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-}
-
-// Clean flat filters for tasks pages
-// must be refactoring in future
-.section-navigation {
-  background-color: #fff;
-
-  .task-categories {
-    padding-left: 15px;
-
-    .form-group {
-      cursor: pointer;
-      margin-top: 0;
-    }
-
-    .form-horizontal {
-      padding-top: 20px !important;
-      display: none;
-      .checkbox {
-        padding-top: 0;
-      }
-    }
-
-    &.expanded {
-      .form-horizontal {
-        display: block;
-      }
-    }
-
-    label {
-      font-weight: 400 !important;
-    }
-
-    .counter {
-      margin-top: 25px !important;
-      color: $brand-primary;
-    }
-
-    > span {
-      padding-top: 30px;
-      cursor: pointer;
-      padding-bottom: 30px;
-      height: auto;
-      font-size: 1.1em;
-      line-height: 30px;
-    }
-  }
-
-  .tasks-filter, .with-subfolders a {
-    background: none!important;
-  }
-  ul.with-subfolders {
-  	padding-top: 20px;
-
-	  li {
-	  	border: 0;
-	  	&:before, &:after { display: none !important;}
-	  	&.active {
-	  		a {
-	  			font-weight: 600;
-	  			color: $brand-primary;
-	  		}
-	  	}
-
-	  	> a {
-	  		font-weight: 400;
-		  	height: auto;
-		  	font-size: 1.1em;
-		  	line-height: 30px;
-		  	padding-right: 30px;
-		  	@include text-overflow;
-		  	&:hover {
-		  		text-decoration: underline;
-		  	}
-	  	}
-
-	  	.counter {
-	  		color: $brand-primary;
-	  		border-color: $brand-primary;
-	  		background: none;
-	  		font-size: 0.8em;
-	  	}
-	  }
+  .task-view-column {
+    padding: 0;
+    background-color: $bg-light-grey;
   }
 }

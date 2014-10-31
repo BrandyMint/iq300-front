@@ -285,4 +285,19 @@ $main_radius: 3px !default;
   border-radius: 2px;
 }
 
+@mixin container-color-variant($bg, $padding-vertical: $space-small) {
+  background-color: $bg;
+  padding-top: $padding-vertical;
+  padding-bottom: $padding-vertical;
+}
 
+@mixin image-holder($width, $height, $border-color: $input-border) {
+  border: solid 1px $border-color;
+  text-align: center;
+  width: $width;
+  height: $height;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}

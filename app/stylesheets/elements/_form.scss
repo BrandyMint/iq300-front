@@ -215,7 +215,6 @@ select {
 
 // <-- form members checkbox
 
-
 // form field -->
 .form-container {
   padding: $form-group-padding $form-group-padding*2;
@@ -324,3 +323,32 @@ select {
     }
   }
 }
+// @end
+
+// Bootstrap overright
+// form groups
+.form-group {
+  margin-bottom: $space-middle;
+  &.underline {
+    padding-bottom: $space-middle;
+    border-bottom: solid 1px #e6e6e6;
+  }
+  &.first-group {
+    padding-top: $space-middle;
+  }
+  .form-group {
+    margin-bottom: $space-small;
+    &.underline {
+      padding-bottom: $space-small;
+    }
+  }
+}
+
+// checkbox and radio buttons
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  margin-top: 0;
+}
+// @end

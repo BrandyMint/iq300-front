@@ -1,0 +1,32 @@
+- status = locals[:status] || ''
+- description = locals[:description]
+- phone = locals[:phone]
+- email = locals[:email]
+
+.community-block
+  - if status == 'new'
+    .community-block-ribbon{"data-text" => "новое"}
+  .community-block-body
+    .media 
+      .pull-left
+        %a{:href => "#"}
+          %img{:src => "/images/community/1.png", :alt => ""}/
+      .media-body
+        %h3.community-block-title ООО «Название сообщества»
+        .community-block-description
+          = truncate(description, length: 80) if description.present?
+        .community-block-contacts
+          = phone if phone.present?
+          %br
+          = link_to email, email if email.present?
+
+  - if status == 'new'
+    .community-block-footer &nbsp;
+    .community-block-overlay
+      %a.btn.btn-primary{:href => "#"} Принять
+      %a.btn.btn-link-gray-lighter{:href => "#"} Отказаться
+  - else
+    .community-block-footer
+      %p Роль в сообществе
+
+

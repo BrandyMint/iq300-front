@@ -1,0 +1,20 @@
+- user_status = locals[:user_status] || ''
+- is_contact = locals[:is_contact]
+
+.media.member-box
+  .pull-left
+    .member-box-avatar
+      %a{:href => "#"}
+        %img.member-box-avatar-image{:src => "/images/community/2.png", :alt => "", :width => "95px", :height => "95px"}/
+      .user-status-bullet.user-status-bullet-bottom-right{class: "user-status-bullet-#{user_status}"}
+  .media-body
+    %h4.content-heading
+      %a{:href => "#"} Борис Сергеев
+    - if is_contact
+      %a.btn.btn-outline-gray-light.btn-sm{href: ''}
+        Написать
+    - else
+      %a.btn.btn-outline-gray-light.btn-sm{href: ''}
+        Добавить в контакты
+
+

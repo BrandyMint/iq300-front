@@ -116,20 +116,7 @@ hr {
   background-image: image-url("backgrounds/navigation.png");
   background-repeat: repeat-y;
   padding-top: $headerHeight + $topPanelHeight;
-  // padding-bottom: $footerHeight;
   @include box-sizing(border-box);
-  // &:after {
-  //   content: "";
-  //   position: absolute;
-  //   bottom: -2px;
-  //   left: 0;
-  //   right: 0;
-  //   background: #e3ebed;
-  //   height: $footerHeight + 2;
-  //   @include bordered-top;
-  //   @include bordered-bottom;
-  //   z-index: 15;
-  // }
   > * { 
     float: left;
     height: 100%;
@@ -140,7 +127,6 @@ hr {
 }
 
 .one-big-column {
-  position: relative;
   z-index: $content-column-z-index;
   @extend %list-column-shadow;
   margin-left: $navColumnWidth;
@@ -164,7 +150,44 @@ hr {
   > h2, > .column-content > h2 {
     margin-bottom: 20px;
   }
+
+  // views
+  &.one-big-column-collapse {
+    padding: 0;
+  }
 }
+
+// Containers 
+// colors
+.container-grey {
+  @include container-color-variant($bg-light-grey);
+}
+.container-white {
+  @include container-color-variant(#fff);
+}
+
+// views
+.page-content {
+  padding: $space-middle $space-large;
+}
+.page-content-compact {
+  padding: $space-middle;
+}
+// @end
+
+// Content boxes
+.content-heading,
+.form-heading {
+  margin-bottom: 0.5em;
+}
+.content-section,
+.form-section {
+  margin-bottom: $space-large;
+}
+.content-group {
+  margin-bottom: $space-middle;
+}
+// @end
 
 img.image-x2 {
   display: none;

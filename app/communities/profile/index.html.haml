@@ -1,0 +1,72 @@
+---
+body_class: communities-profile
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
+  = partial 'communities/top_panel'
+  = partial 'shared/_navigation'
+
+  %section.one-big-column.one-big-column-collapse
+    .form-container.container-grey
+      .tabs-page-header
+        .row
+          .col-sm-2
+            .fluid-square
+              %a{:href => "#"}
+                %img.fluid-square-content{:src => "/images/community/2.png", :alt => ""}/
+          .col-sm-10
+            .content-group
+              %h2.content-heading
+                ООО «Старбакс» 
+                %small 123
+              %h4.content-heading Кабельные и беспроводные сети. Оборудование для IT-коммуникаций
+              %ul.list-inline
+                %li +7 (8552) 30-55-42
+                %li 
+                  %a{:href => "#"} http://www.starbucks.com
+            .tabs-page-header-actions
+              %a.btn.btn-default{:href => "#"} Написать сообщение
+    
+    %ul.nav.nav-tabs.tab-buttons.tabnav.container-grey
+      %li.active
+        %a{"data-toggle" => "tab", :href => "#community-profile"}
+          Профиль
+          %span.badge{:role => "counter"}
+      %li
+        %a{"data-class" => "accessor-users-view", "data-target" => "tab", :href => "/tasks/121/accessor_users"}
+          Проекты
+          %span.badge{:role => "counter"}
+      %li
+        %a{:href => "#"} Задачи
+      %li
+        %a{"data-toggle" => "tab", :href => "#community-members"}
+          Участники
+          %small.text-muted 17
+      %li
+        %a{:href => "#"} Структура сообщества
+      %li
+        %a{"data-toggle" => "tab", :href => "#community-partners"} Карта партнера
+      %li
+        %a{"data-toggle" => "tab", :href => "#community-partners-edit"} Редактировать карту партнера
+      %li
+        %a{:href => "#"} Отчеты
+      %li
+        %a{"data-toggle" => "tab", :href => "#community-actions"} Активность
+
+    .tab-content.tab-panels
+      #community-profile.tab-pane.active
+        = partial 'communities/profile/details'
+      
+      #community-members.tab-pane
+        = partial 'communities/profile/participants'
+
+      #community-actions.tab-pane
+        = partial 'communities/profile/actions'
+
+      #community-partners.tab-pane
+        = partial 'communities/profile/partners'
+
+      #community-partners-edit.tab-pane
+        = partial 'communities/profile/partners_edit'
+

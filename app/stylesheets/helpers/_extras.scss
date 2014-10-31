@@ -384,6 +384,27 @@ a.with-plus-button {
   color: #666666;
 }
 
+// Perfect circle
+.img-circle {
+  border-radius: 50%; // set radius in percents
+  &.middle {
+    vertical-align: middle;
+  }
+}
+// @end
+
+// Fluid square block
+.fluid-square {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+  .fluid-square-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media print {
   .no-print, .no-print * {
     display: none !important;

@@ -1,0 +1,78 @@
+---
+body_class: communities-edit
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
+  = partial 'communities/top_panel'
+  = partial 'shared/_navigation'
+
+  %section.one-big-column.form-container
+    .content-group
+      .page-title.clearfix
+        .pull-left
+          %h2
+            Редактировать сообщества
+    
+    .form-section
+      %label.text-muted{:for => ""} Логотип
+      .form-inline
+        .input-group.input-group-spacy
+          .community-logo
+            %img{:src => "/images/community/1.png", :alt => ""}/
+        .input-group.input-group-spacy
+          .btn.btn-primary.btn-file
+            Выбрать файл...
+            %input{:type => "file"}/
+        .input-group.input-group-spacy
+          %a.btn.btn-default{:href => "#"} Без логотипа
+    
+    .form-section
+      .form-group
+        %label.text-muted{:for => ""} Название сообщества
+        %input.form-control{:type => "text"}/
+      
+      .form-group
+        %label.text-muted{:for => ""} Правильно ли мы определили ваш город?
+        %select.select-wide{:name => "", role: "select2"}
+          %option{:value => ""} Набережные Челны, Россия
+          %option{:value => ""} Набережные Челны, Россия
+          %option{:value => ""} Набережные Челны, Россия
+          %option{:value => ""} Набережные Челны, Россия
+          %option{:value => ""} Набережные Челны, Россия
+      
+      .form-group
+        %label.text-muted{:for => ""} E-mail
+        %input.form-control{:type => "email"}/
+
+      .form-group
+        %label.text-muted{:for => ""} Web-сайт
+        %input.form-control{:type => "text"}/
+
+      .form-group
+        %label.text-muted{:for => ""} Телефон
+        %input.form-control{:type => "text"}/
+
+      .form-group
+        %label.text-muted{:for => ""} Владелец сообщества:
+        %input.form-control{:type => "text"}/
+
+      .form-group
+        %label.text-muted{:for => ""} Руководитель сообщества:
+        %input.form-control{:type => "text"}/
+    
+    .form-section
+      %h3.form-heading Настройки приватности
+      .form-group
+        .checkbox
+          %label
+            %input{:type => "checkbox"}/
+            %span Показывать карту партнера
+        .checkbox
+          %label
+            %input{:type => "checkbox"}/
+            %span Показывать карту партнера
+      
+      .form-group
+        %a.btn.btn-default{:href => "#"} Сохранить
+        %a.btn.btn-link{:href => "#"} Отмена

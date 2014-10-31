@@ -1,0 +1,76 @@
+%h2.form-heading Активность сообщества
+.form-section
+  .form-group
+    %label.text-muted Выбор организационно-правовой формы
+    %select.select-wide{:name => "", :role => "select2"}
+      %option{:value => ""} Подразделение
+      %option{:value => ""} Подразделение
+      %option{:value => ""} Подразделение
+      %option{:value => ""} Подразделение
+  
+  .form-group
+    %label.text-muted Название организации(без кавычек)
+    %input.form-control{:type => "text", :placeholder => "Селектор"}/
+
+
+%h3.form-heading Почтовый адрес
+.form-section
+  .form-group
+    %label.text-muted Выберите город
+    %select.select-wide{:name => "", :role => "select2"}
+      %option{:value => ""} Набережные Челны, Республика Татарстан, Россия
+      %option{:value => ""} Набережные Челны, Республика Татарстан, Россия
+      %option{:value => ""} Набережные Челны, Республика Татарстан, Россия
+      %option{:value => ""} Набережные Челны, Республика Татарстан, Россия
+  .form-group
+    %label.text-muted Улица
+    %input.form-control{:type => "text", :placeholder => "Машиностроительная"}/
+  .form-group
+    %label.text-muted Дом, Офис
+    %input.form-control{:type => "text", :placeholder => "91 (ИТ-парк), оф. А506"}/
+
+  .checkbox
+    %label
+      %input{:type => "checkbox"}/
+      %span Юридический адрес совпадает с почтовым
+  
+  .form-group
+    %label.text-muted БИК
+    %input.form-control{:type => "text", :placeholder => "048762824"}/
+
+  .form-group
+    %label.text-muted ИНН
+    %input.form-control{:type => "text", :placeholder => "165001001"}/
+
+  .form-group
+    %label.text-muted КПП
+    %input.form-control{:type => "text", :placeholder => "163231001"}/
+
+  .form-group
+    %label.text-muted ОГРН
+    %input.form-control{:type => "text", :placeholder => "1121650492889"}/
+
+  .form-group
+    %label.text-muted Банковские реквизиты
+    %textarea.form-control{:rows => "7"}
+
+  .form-group
+    %label.text-muted Руководитель
+    %input.form-control{:type => "text", :placeholder => "Ткачев Александр Александрович"}/
+
+  .form-group
+    %label.text-muted Должность
+    %input.form-control{:type => "text", :placeholder => "Генеральный директор"}/
+  
+  .form-group
+    %label.text-muted Основание
+    %input.form-control{:type => "text"}/
+
+  .form-group
+    %label.text-muted Телефон руководителя
+    %input.form-control{:type => "text"}/
+
+.form-group
+  %a.btn.btn-default{:href => "#"} Сохранить
+  %a.btn.btn-link{:href => "#"} Отмена
+

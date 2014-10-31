@@ -1,27 +1,29 @@
-.status-box {
-	white-space: nowrap;
-	.status-label, .status-date {
-		display: inline-block;
-		vertical-align: middle;
-		white-space: normal;
-		text-align: center;
-		font-size: 12px;
-		border: solid 1px transparent;
-		@include box-sizing(border-box);
-    @include border-radius($border-radius-base);
-	}
-	.label {
-		font-size: 11px;
-	}
-}
-
+// Status box
 .title-status-box {
   max-width: 40%;
 }
+.status-box {
+  white-space: nowrap;
+  .status-label, .status-date {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    text-align: center;
+    font-size: 12px;
+    border: solid 1px transparent;
+    @include box-sizing(border-box);
+    @include border-radius($border-radius-base);
+  }
+  .label {
+    font-size: 11px;
+  }
+}
+// @end
 
+// Status label
 .status-label {
-	text-align: center;
-	padding: 0 1em;
+  text-align: center;
+  padding: 0 1em;
   margin: 8px 0;
   &:first-child {
     padding-left: 0;
@@ -30,5 +32,4 @@
     padding-right: 0;
   }
 }
-
-
+// @end
