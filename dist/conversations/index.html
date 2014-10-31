@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if lt IE 10]> <html class="no-js lt-ie10" lang="en-us"> <![endif]-->
+<!--[if !IE]> > <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <title>iq300 frontend</title>
+    <meta charset='utf-8' content='text/html' http-equiv='content-type'>
+    <link href="../stylesheets/app.css?1414738828" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/static_fixes.css?1414738934" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='dialog-index'>
+    <div id='container'>
+      <div id='wrapper'>
+        <header class='header-global group'>
+          <a class='logo' href='/' title='IQ300 System'></a>
+          <div class='search-header' role-ready='search-form'>
+            <span class='search-button'>
+              <span class='icon-search'></span>
+            </span>
+            <form action='/projects/879' class='form-search' method='get'>
+              <!-- - b = button_tag raw("<span class='icon-search'></span>") -->
+              <!-- #{content_tag(:i)}#{i}#{b} -->
+              <i></i>
+              <input class='search-query form-control' id='search' name='search' placeholder='Поиск' role='global-search-field' type='search'>
+            </form>
+          </div>
+          <div class='user-nav'>
+            <a href='/help'>Помощь</a>
+            <a href='/users/1757'>
+              <span class='userpic'>
+                <img alt='Александр' class='userpic-image img-corrector-initialized' hide_wait_message='true' src='https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg' title='Мещеряков Александр Игоревич'>
+              </span>
+              Александр Мещеряков
+            </a>
+            <a class='fa fa-sign-out' data-method='delete' href='/users/sign_out' rel='nofollow' title='Выйти'></a>
+            <!-- %section -->
+            <!-- = render "shared/user_widget" -->
+            <!-- .help-link> -->
+            <!-- = link_to icon('question-sign'), "/help", title: t('common.help') -->
+          </div>
+          <input id='app_signed_in_user_id' name='app_signed_in_user_id' type='hidden' value='1757'>
+          <input id='pusher_app_key' name='pusher_app_key' type='hidden' value='7baa6a182eefe7314de0'>
+        </header>
+        <div class='content content-global display-mode display-mode-initialized' data-initial-action='index' filters='true' full_view='true' list='true' view='false'>
+          <section class='top-panel'>
+            <div class='pull-left'>
+              <a class='btn btn-lg' href='#'>
+                <span class='fa fa-reply'></span>
+                Сообщества
+              </a>
+            </div>
+          </section>
+          <nav class='nav-global menu-list menu-list-initialized' data-channel='presence-1757:notifications' data-remote='true'>
+            <div class='logo'>
+              <a href='/' title='IQ300 System'>
+                <img alt="" width="95" height="95" src="../images/logo_x1_new.png?1414738934" />
+                <img alt="" width="190" height="190" src="../images/logo_x2_new.png?1414738934" />
+              </a>
+            </div>
+            <ul>
+              <li class='menu-item notifications'>
+                <a href="/notifications/"><div class='picture'>
+                  <i class='iq-navicons-notifications'></i>
+                  <sup>9</sup>
+                  <sup class='overdue'>3</sup>
+                </div>
+                <span>Уведомления</span>
+                </a>
+              </li>
+              <li class='menu-item projects'>
+                <a href="/projects/"><div class='picture'>
+                  <i class='iq-navicons-projects'></i>
+                </div>
+                <span>Проекты</span>
+                </a>
+              </li>
+              <li class='menu-item tasks'>
+                <a href="/tasks/"><div class='picture'>
+                  <i class='iq-navicons-tasks'></i>
+                </div>
+                <span>Задачи</span>
+                </a>
+              </li>
+              <li class='conversations menu-item'>
+                <a href="/conversations/"><div class='picture'>
+                  <i class='iq-navicons-messages'></i>
+                </div>
+                <span>Сообщения</span>
+                </a>
+              </li>
+              <li class='contacts menu-item'>
+                <a href="/contacts/"><div class='picture'>
+                  <i class='iq-navicons-contacts'></i>
+                </div>
+                <span>Контакты</span>
+                </a>
+              </li>
+              <li class='communities menu-item'>
+                <a href="/communities/"><div class='picture'>
+                  <i class='iq-navicons-communities'></i>
+                </div>
+                <span>Сообщества</span>
+                </a>
+              </li>
+              <li class='docs menu-item'>
+                <a href="/docs/"><div class='picture'>
+                  <i class='iq-navicons-documents'></i>
+                </div>
+                <span>Документы</span>
+                </a>
+              </li>
+              <li class='calendar menu-item'>
+                <a href="/calendar/"><div class='picture'>
+                  <i class='iq-navicons-calendar'></i>
+                </div>
+                <span>Календарь</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <section class='one-big-column one-big-column-collapse'>
+            <ul class='nav nav-tabs tab-buttons tabnav container-grey'>
+              <li class='active'>
+                <a data-toggle='tab' href='#messages-tab'>
+                  Сообщения
+                  <span class='badge' role='counter'>5</span>
+                </a>
+              </li>
+              <li>
+                <a data-toggle='tab' href='#comments-tab'>
+                  Комментарии
+                  <span class='badge' role='counter'>5</span>
+                </a>
+              </li>
+            </ul>
+            <div class='tab-content tab-panels'>
+              <div class='tab-pane active' id='messages-tab'>
+                <div class='content-group'>
+                  <a href='#'>
+                    <strong>982 диалога</strong>
+                  </a>
+                </div>
+                <div class='content-group'>
+                  <div class='messages-list'>
+                    <div class='message-box message-box-new tab-content-wide'>
+                      <div class='media'>
+                        <div class='pull-left'>
+                          <div class='message-box-user-avatar'>
+                            <a href='#'>
+                              <img alt='' class='img-circle' height='40px' src='/images/community/1.png' width='40px'>
+                            </a>
+                            <div class='user-status-bullet user-status-bullet-bottom-right user-status-bullet-online user-status-bullet-sm'></div>
+                          </div>
+                        </div>
+                        <div class='media-body'>
+                          <div class='message-box-header'>
+                            <div class='row'>
+                              <div class='col-xs-11'>
+                                <h4>Алексеева Лиана</h4>
+                                <p class='text-muted'>21 июля, 14:59</p>
+                              </div>
+                              <div class='col-xs-1 text-right'>
+                                <div class='badge badge-primary'>5</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='message-body'>
+                            <div class='row'>
+                              <div class='col-xs-11'>
+                                <div class='message-body-text'>
+                                  Слушай, мы тут для одной фирмы с другом портал пишем для рабочих в цеху (справки заказывать разные, письма директорам писать с жалобами и т.д.) Нам программист нужен для этого проекта. Нам программист нужен для этого проекта...
+                                </div>
+                              </div>
+                              <div class='col-xs-1 text-right'>
+                                <div class='badge'>245</div>
+                              </div>
+                            </div>
+                            <div class='message-box-files'>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='message-box message-box- tab-content-wide'>
+                      <div class='media'>
+                        <div class='pull-left'>
+                          <div class='message-box-user-avatar'>
+                            <a href='#'>
+                              <img alt='' class='img-circle' height='40px' src='/images/community/1.png' width='40px'>
+                            </a>
+                            <div class='user-status-bullet user-status-bullet-bottom-right user-status-bullet-online user-status-bullet-sm'></div>
+                          </div>
+                        </div>
+                        <div class='media-body'>
+                          <div class='message-box-header'>
+                            <div class='row'>
+                              <div class='col-xs-11'>
+                                <h4>Алексеева Лиана</h4>
+                                <p class='text-muted'>21 июля, 14:59</p>
+                              </div>
+                              <div class='col-xs-1 text-right'>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='message-body'>
+                            <div class='row'>
+                              <div class='col-xs-11'>
+                                <div class='message-body-text'>
+                                  Слушай, мы тут для одной фирмы с другом портал пишем для рабочих в цеху (справки заказывать разные, письма директорам писать с жалобами и т.д.) Нам программист нужен для этого проекта. Нам программист нужен для этого проекта...
+                                </div>
+                              </div>
+                              <div class='col-xs-1 text-right'>
+                                <div class='badge'>245</div>
+                              </div>
+                            </div>
+                            <div class='message-box-files'>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='message-box message-box- tab-content-wide'>
+                      <div class='media'>
+                        <div class='pull-left'>
+                          <div class='message-box-user-avatar'>
+                            <a href='#'>
+                              <img alt='' class='img-circle' height='40px' src='/images/community/1.png' width='40px'>
+                            </a>
+                            <div class='user-status-bullet user-status-bullet-bottom-right user-status-bullet-offline user-status-bullet-sm'></div>
+                          </div>
+                        </div>
+                        <div class='media-body'>
+                          <div class='message-box-header'>
+                            <div class='row'>
+                              <div class='col-xs-11'>
+                                <h4>Алексеева Лиана</h4>
+                                <p class='text-muted'>21 июля, 14:59</p>
+                              </div>
+                              <div class='col-xs-1 text-right'>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='message-body'>
+                            <div class='row'>
+                              <div class='col-xs-11'>
+                                <div class='message-body-text'>
+                                  Слушай, мы тут для одной фирмы с другом портал пишем для рабочих в цеху (справки заказывать разные, письма директорам писать с жалобами и т.д.) Нам программист нужен для этого проекта. Нам программист нужен для этого проекта...
+                                </div>
+                              </div>
+                              <div class='col-xs-1 text-right'>
+                                <div class='badge'>245</div>
+                              </div>
+                            </div>
+                            <div class='message-box-files'>
+                              <a class='btn btn-default' href='#'>
+                                <span class='fa fa-file-text-o'>
+                                  file1.doc
+                                </span>
+                              </a>
+                              <a class='btn btn-default' href='#'>
+                                <span class='fa fa-file-text-o'>
+                                  file2.doc
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='content-group text-center'>
+                  <a href='#'>Загрузить еще</a>
+                </div>
+              </div>
+              <div class='tab-pane' id='comments-tab'>
+                <div class='content-group'>
+                  <a href='#'>
+                    <strong>2 комментария</strong>
+                  </a>
+                </div>
+                <div class='content-group'>
+                  <div class='messages-list'>
+                    <div class='message-box bg-primary-light tab-content-wide'>
+                      <div class='row content-group'>
+                        <div class='col-xs-1'>
+                          <p>Задача:</p>
+                        </div>
+                        <div class='col-xs-11'>
+                          <a href='#'>Важнейший день в моей жизни, который перевернет ценности жизни и расставит все по полочкам</a>
+                        </div>
+                      </div>
+                      <div class='row content-group'>
+                        <div class='col-xs-1'>
+                          <p>В проекте:</p>
+                        </div>
+                        <div class='col-xs-11'>
+                          <a href='#'>Важнейший день в моей жизни, который перевернет ценности жизни и расставит все по полочкам, день в моей жизни, который перевернет ценности жизни и расставит все по полочкам,перевернет ценности жизни и расставит все по полочкам</a>
+                        </div>
+                      </div>
+                      <div class='row content-group'>
+                        <div class='col-xs-1 text-right'>
+                          <div class='message-box-user-avatar'>
+                            <a href='#'>
+                              <img alt='' class='img-circle' height='40px' src='/images/community/1.png' width='40px'>
+                            </a>
+                            <div class='user-status-bullet user-status-bullet-sm user-status-bullet-bottom-right user-status-bullet-online'></div>
+                          </div>
+                        </div>
+                        <div class='col-xs-11'>
+                          <div class='message-box-header'>
+                            <h4>
+                              <a href='#'>Екатерина Федорова</a>
+                              <small class='text-muted'>21 июля, 14:59</small>
+                            </h4>
+                          </div>
+                          <div class='message-body'>
+                            <div class='row'>
+                              <div class='col-xs-11'>
+                                <p>Текст комментария. Я вышел на площадь и остановился перед киоском с газированной водой. Я точно помнил, что мелочи у меня нет, и знал, что придется разменивать бумажку, и уже готовил заискивающую улыбку, потому что продавщицы газированной воды.</p>
+                                <div class='message-box-files'>
+                                  <a class='btn btn-default' href='#'>
+                                    <span class='fa fa-file-text-o'></span>
+                                    Имя_файла1.doc
+                                  </a>
+                                </div>
+                              </div>
+                              <div class='col-xs-1 text-right'>
+                                <div class='badge'>245</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='message-box tab-content-wide'>
+                      <div class='row content-group'>
+                        <div class='col-xs-1'>
+                          <p>Задача:</p>
+                        </div>
+                        <div class='col-xs-11'>
+                          <a href='#'>Важнейший день в моей жизни, который перевернет ценности жизни и расставит все по полочкам</a>
+                        </div>
+                      </div>
+                      <div class='row content-group'>
+                        <div class='col-xs-1'>
+                          <p>В проекте:</p>
+                        </div>
+                        <div class='col-xs-11'>
+                          <a href='#'>Важнейший день в моей жизни, который перевернет ценности жизни и расставит все по полочкам, день в моей жизни, который перевернет ценности жизни и расставит все по полочкам,перевернет ценности жизни и расставит все по полочкам</a>
+                        </div>
+                      </div>
+                      <div class='row content-group'>
+                        <div class='col-xs-1 text-right'>
+                          <div class='message-box-user-avatar'>
+                            <a href='#'>
+                              <img alt='' class='img-circle' height='40px' src='/images/community/1.png' width='40px'>
+                            </a>
+                            <div class='user-status-bullet user-status-bullet-sm user-status-bullet-bottom-right user-status-bullet-online'></div>
+                          </div>
+                        </div>
+                        <div class='col-xs-11'>
+                          <div class='message-box-header'>
+                            <h4>
+                              <a href='#'>Екатерина Федорова</a>
+                              <small class='text-muted'>21 июля, 14:59</small>
+                            </h4>
+                          </div>
+                          <div class='message-body'>
+                            <div class='row'>
+                              <div class='col-xs-11'>
+                                <p>Текст комментария. Я вышел на площадь и остановился перед киоском с газированной водой. Я точно помнил, что мелочи у меня нет, и знал, что придется разменивать бумажку, и уже готовил заискивающую улыбку, потому что продавщицы газированной воды.</p>
+                                <div class='message-box-files'>
+                                  <a class='btn btn-default' href='#'>
+                                    <span class='fa fa-file-text-o'></span>
+                                    Имя_файла1.doc
+                                  </a>
+                                </div>
+                              </div>
+                              <div class='col-xs-1 text-right'>
+                                <div class='badge'>245</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../javascripts/static.js?1414738943" type="text/javascript"></script>
