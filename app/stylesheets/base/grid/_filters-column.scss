@@ -62,10 +62,14 @@
         font-weight: 400;
         height: auto;
         font-size: 1.1em;
-        line-height: 30px;
-        padding-right: 30px;
-        padding-left: 15px;
-        display: block;
+        line-height: 1em;
+        padding: {
+          right: 30px;
+          left: 15px;
+          top: 4px;
+          bottom: 4px;
+        }
+        display: inline-block;
         color: #666;
         @include text-overflow;
         &:hover {
@@ -74,11 +78,17 @@
       }
       
       .counter {
-        color: $brand-primary;
-        border-color: $brand-primary;
-        background: none;
+        @extend %buble-counter;
         font-size: 0.8em;
         display: none;
+        background-color: $green-cyan;
+        border: none;
+        margin-bottom: -4px;
+        padding: 3px 6px;
+        &.overdue {
+          background-color: $brand-danger;
+          color: #fff;
+        }
       }
     }
   }

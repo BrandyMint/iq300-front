@@ -10,9 +10,11 @@ body_class: tasks-index
     %ul.with-subfolders.tasks-filter{"data-channel" => "presence-203:base_tasks"}
       %li.folder.actual.active{"data-params" => "{\"folder\":\"actual\"}", role: "folder"}
         %a Задачи
-      %li.folder.inbox{"data-params" => "{\"folder\":\"inbox\"}", role: "folder"}
-        %a Входящие
-        %span.counter{"data-params" => "{\"by_status\":\"new\",\"folder\":\"inbox\"}", role: "counter", type: "new-tasks"} 0
+      %li.folder.inbox{"data-params" => "{\"folder\":\"inbox\"}", :role => "folder"}
+        %a{"data-original-title" => "Задачи, которые поставлены Вам", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
+          Входящие
+        %span.counter.overdue.has-overview{"data-params" => "{\"by_statuses\":[\"new\",\"browsed\",\"refused\",\"in_work\",\"on_init\",\"declined\"],\"overdue\":true,\"folder\":\"inbox\"}", "data-url" => "/tasks", :role => "counter", :style => "display: inline;"} 5
+        %span.counter.overview{"data-params" => "{\"by_status\":\"new\",\"folder\":\"inbox\"}", "data-url" => "/tasks", :role => "counter", :style => "display: inline;"} 2
       %li.folder.outbox{"data-params" => "{\"folder\":\"outbox\"}", role: "folder"}
         %a Исходящие
         %span.counter{"data-params" => "{\"by_statuses\":[\"completed\",\"refused\"],\"folder\":\"outbox\"}", role: "counter", type: "to-accept-tasks"} 0

@@ -10,8 +10,8 @@
   <head>
     <title>iq300 frontend</title>
     <meta charset='utf-8' content='text/html' http-equiv='content-type'>
-    <link href="../stylesheets/app.css?1415182189" rel="stylesheet" type="text/css" />
-    <link href="../stylesheets/static_fixes.css?1414755625" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/app.css?1415191645" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/static_fixes.css?1415191651" rel="stylesheet" type="text/css" />
   </head>
   <body class='tasks-index'>
     <div id='container'>
@@ -50,8 +50,8 @@
           <nav class='nav-global menu-list menu-list-initialized' data-channel='presence-1757:notifications' data-remote='true'>
             <div class='logo'>
               <a href='/' title='IQ300 System'>
-                <img alt="" width="95" height="95" src="../images/logo_x1_new.png?1414755625" />
-                <img alt="" width="190" height="190" src="../images/logo_x2_new.png?1414755625" />
+                <img alt="" width="95" height="95" src="../images/logo_x1_new.png?1415191651" />
+                <img alt="" width="190" height="190" src="../images/logo_x2_new.png?1415191651" />
               </a>
             </div>
             <ul>
@@ -122,8 +122,11 @@
                 <a>Задачи</a>
               </li>
               <li class='folder inbox' data-params='{"folder":"inbox"}' role='folder'>
-                <a>Входящие</a>
-                <span class='counter' data-params='{"by_status":"new","folder":"inbox"}' role='counter' type='new-tasks'>0</span>
+                <a data-original-title='Задачи, которые поставлены Вам' data-placement='right' role-bootstrap-tooltip='ready' title=''>
+                  Входящие
+                </a>
+                <span class='counter overdue has-overview' data-params='{"by_statuses":["new","browsed","refused","in_work","on_init","declined"],"overdue":true,"folder":"inbox"}' data-url='/tasks' role='counter' style='display: inline;'>5</span>
+                <span class='counter overview' data-params='{"by_status":"new","folder":"inbox"}' data-url='/tasks' role='counter' style='display: inline;'>2</span>
               </li>
               <li class='folder outbox' data-params='{"folder":"outbox"}' role='folder'>
                 <a>Исходящие</a>
@@ -313,4 +316,4 @@
     </div>
   </body>
 </html>
-<script src="../javascripts/static.js?1415182064" type="text/javascript"></script>
+<script src="../javascripts/static.js?1415191664" type="text/javascript"></script>
