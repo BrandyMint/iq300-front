@@ -9,7 +9,7 @@ gem 'redcarpet'
 #gem "activesupport", "~> 3.2.8"
 gem "rake", "~> 0.9.2"
 gem "therubyracer", :require => 'v8'
-gem "middleman-livereload"
+# gem "middleman-livereload"
 #gem "middleman-navigation"
 gem "middleman-deploy"
 #gem "middleman-imageoptim", "~> 0.1.4"
