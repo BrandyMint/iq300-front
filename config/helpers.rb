@@ -132,4 +132,12 @@ module ApplicationHelpers
     "/#{I18n.locale}/#{path}"
   end
 
+
+  def app_version
+    g = Git.open(root)
+    cmm = g.log.first.to_s
+    "#{g.current_branch} &mdash; #{cmm[0,6]}".html_safe
+
+  end
+
 end

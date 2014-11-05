@@ -50,6 +50,7 @@ GEM
     execjs (2.2.1)
     ffi (1.9.3)
     fssm (0.2.10)
+    git (1.2.8)
     haml (4.0.5)
       tilt
     highline (1.6.20)
@@ -181,6 +182,7 @@ DEPENDENCIES
   builder
   capistrano
   compass-rails
+  git
   middleman (~> 3.3.4)
   middleman-deploy
   middleman-sprockets

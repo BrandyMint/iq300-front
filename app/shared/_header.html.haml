@@ -8,6 +8,8 @@
       / #{content_tag(:i)}#{i}#{b}
       %i
       %input#search.search-query.form-control{name: "search", placeholder: "Поиск", role: "global-search-field", type: "search"}/
+  %span.app-version
+    = app_version
   .user-nav
     %a{href: "/help"} Помощь
     %a{href: "/users/1757"}
