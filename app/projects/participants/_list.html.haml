@@ -1,0 +1,21 @@
+.project-participants-section
+  .project-participants-section-title
+    Управление проектом
+  .project-participants-section-list
+    .row
+      .col-xs-4
+        = partial 'projects/participants/list_item', locals: {name: 'Александр Мещеряков', role: 'Руководитель'}
+      .col-xs-4
+        = partial 'projects/participants/list_item', locals: {role: 'Администратор проекта'}
+
+- for g in 1..3
+  .project-participants-section
+    .project-participants-section-title
+      = "Группа #{g}"
+    .project-participants-section-list
+      .row
+        - for i in 0..6
+          .col-xs-4
+            = partial 'projects/participants/list_item'
+
+

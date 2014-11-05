@@ -1,0 +1,36 @@
+.project-participants {
+  margin: 0;
+}
+
+.project-participants-section {
+  margin-bottom: $grid-gutter-width/2;
+  padding: 0;
+}
+
+.project-participants-section-title,
+.project-participants-section-list {
+  padding: 0 $grid-gutter-width/2;
+}
+
+.project-participants-section-title {
+  background-color: $gray-lightest;
+  font-size: 1.1em;
+  padding: {
+    top: 10px;
+    bottom: 10px;
+  }
+}
+
+.project-participants-section-list {
+  padding: {
+    top: $grid-gutter-width/2;
+    bottom: $grid-gutter-width/2;
+  }
+}
+
+.project-participants-section-list-item {
+  margin: {
+    top: $grid-gutter-width/4;
+    bottom: $grid-gutter-width/4;
+  }
+}
