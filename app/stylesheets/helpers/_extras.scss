@@ -88,105 +88,15 @@
 }
 
 %blue-ok-checkbox {
-  background: #4cade2;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  width: 14px;
-  height: 14px;
-  position: relative;
-  margin: 0;
-  @include opacity(0);
-  z-index: 15;
-  cursor: pointer;
-  + i {
-    @include inline-block(top);
-    position: relative;
-    width: 12px;
-    height: 12px;
-    border: 1px solid #4cade2;
-    margin-left: -14px;
-    margin-top: 2px;
-    background: white;
-    cursor: pointer;
-  }
-  &:checked {
-    + i {
-      border-color: white;
-      background: #4cade2;
-      &:before {
-        position: absolute;
-        display: block;
-        @extend %icon;
-        @extend .icon-ok:before;
-        font-size: 11px;
-        line-height: 12px;
-        left: -3px;
-        right: 0px;
-        top: 0px;
-        bottom: 0px;
-        color: white;
-        text-align: center;
-        cursor: pointer;
-      }
-    }
-  }
-  &:disabled {
-    + i {
-      border: 1px solid #cccccc;
-      opacity: 0.8;
-      cursor: default;
-    }
-    &:checked {
-      + i {
-        border: 1px solid #cccccc;
-        background: #cccccc;
-        &:before {
-          color: lighten(#cccccc, 10%);
-        }
-      }
-    }
-  }
-  &.field_with_errors + i {
-    border-color: #a92b2b;
-  }
+
 }
 
 %fake-blue-ok-checkbox {
-  @include inline-block(middle);
-  position: relative;
-  width: 12px;
-  height: 12px;
-  border: 1px solid #4cade2;
-  margin-left: 10px;
-  background: white;
-  &.checked {
-    border-color: white;
-    background: #4cade2;
-    &:before {
-      position: absolute;
-      display: block;
-      @extend %icon;
-      @extend .icon-ok:before;
-      font-size: 11px;
-      line-height: 14px;
-      left: -1px;
-      right: 0px;
-      top: -1px;
-      bottom: 0px;
-      color: white;
-      text-align: center;
-    }
-  }
+
 }
 
 %blue-ok-checkbox-without-white-border {
-  @extend %blue-ok-checkbox;
-  &:checked + i {
-    border-color: #4cade2;
-  }
+
 }
 
 a.small-plus-button {
