@@ -66,4 +66,12 @@
   border-radius: 50%;
   border: 1px solid $line-color;
 }
+
+.member-box-avatar-image-small {
+  @extend .member-box-avatar-image;
+  width: $user-avatar-width;
+  height: $user-avatar-width;
+}
 // @end
+
+
