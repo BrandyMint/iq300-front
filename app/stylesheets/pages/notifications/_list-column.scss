@@ -20,6 +20,10 @@
   }
 }
 
+.notification-name {
+  word-wrap: break-word;
+}
+
 .notification-list-item-group {
   margin: {
     left: $grid-gutter-width/2;
@@ -28,6 +32,7 @@
 }
 
 .notification-list-item-description {
+  word-wrap: break-word;
   .blue-icon {
     color: $navigationBackground;
   }
