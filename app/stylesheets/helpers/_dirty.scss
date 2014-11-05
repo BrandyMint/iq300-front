@@ -7,7 +7,9 @@ body.projects-index {
 
 body.tasks-index {
   // hide top panel
-  .top-panel { display: none !important;}
+  .top-panel { 
+    display: none !important;
+  }
 
   // Cut place of top panel
   .tasks-filters-column, .tasks-list-column, .task-view-column {
@@ -23,10 +25,17 @@ body.tasks-show {
       display: none;
     }
   }
+
+
 }
 
 // Add gray background to tasks/show form
 body.tasks-show {
+  .tab-content {
+    background-color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .task-view-column {
     padding: 0;
     background-color: $bg-light-grey;

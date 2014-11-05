@@ -13,6 +13,7 @@
   @extend %content-column-block;
   left: $navColumnWidth + $filtersColumnWidth;
   right: 0;
+  height: auto;
   z-index: $content-column-z-index;
   background-color: #fff;
   @extend %list-column-shadow;
