@@ -1,6 +1,17 @@
 # IQ300 Frontend
 ------
 
+## Старт
+
+1. `bundle install` устанавливает gem'ы
+
+2. `bower install` устанавливает bower-зависимости
+
+3. `bundle exec middleman` стартует сервер на http://localhost:4567
+
+4. `bundle exec middleman build` делает билд статичного сайта в `dist/`
+
+
 ## Использование в основном проекте
 
 Должен быть настроен Bower (в т.ч. Sprockets для него)
@@ -35,16 +46,6 @@
 
 Быстрый билд и push в репо `./update_component`
 
-
-## Разработка
-
-`bundle install`
-
-`bower install`
-
-`bundle exec middleman` стартует сервер
-
-`bundle exec middleman build` билдит проект
 
 ## Деплой статичного проекта
 
