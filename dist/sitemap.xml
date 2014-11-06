@@ -10,8 +10,8 @@
   <head>
     <title>iq300 frontend</title>
     <meta charset='utf-8' content='text/html' http-equiv='content-type'>
-    <link href="stylesheets/app.css?1415291049" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/static_fixes.css?1415281435" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/app.css?1415291869" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/static_fixes.css?1415291093" rel="stylesheet" type="text/css" />
   </head>
   <body class='page'>
     <div id='container'>
@@ -56,12 +56,6 @@
           </url>
           <url>
             <loc>http://www.brandymint.com/communities/profile/index.html</loc>
-            <lastmod>2014-11-06T00:00:00+03:00</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
-          </url>
-          <url>
-            <loc>http://www.brandymint.com/communities/profile/structure.html</loc>
             <lastmod>2014-11-06T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
@@ -251,4 +245,4 @@
     </div>
   </body>
 </html>
-<script src="javascripts/static.js?1415291071" type="text/javascript"></script>
+<script src="javascripts/static.js?1415291894" type="text/javascript"></script>
