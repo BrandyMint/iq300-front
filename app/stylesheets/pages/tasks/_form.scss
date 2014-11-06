@@ -101,11 +101,13 @@ section.task-form-section {
         background: #f1f5f6;
         padding: 5px 11px;
         line-height: 19px;
-        height: 31px;
+        //height: 31px;
         @include box-sizing(border-box);
         @include placeholder-color(#999999);
         color: #666666;
-        width: 326px;
+        //width: 326px;
+        float: left;
+        margin-right: 10px;
         @include inline-block;
         &[type='checkbox'] {
           padding: 0;

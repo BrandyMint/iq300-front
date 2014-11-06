@@ -1,0 +1,427 @@
+---
+body_class: communities-show
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode{"data-initial-action" => "show", :filters => "false", :full_view => "true", :list => "false", "role-display-mode" => "ready", :view => "true"}
+  %section.top-panel
+    .pull-left
+      %a.navigation{:href => "#", :onclick => "$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;"}
+        %i.icon-reorder
+      %a.add-button.small{"data-popup" => "add-button-target", :href => "/communities/new"}
+        %i.icon-plus
+      %a.add-button.big{"data-popup" => "add-button-target", :href => "/communities/new"}
+        %i.icon-plus
+        %span Создать сообщество
+  %nav.nav-global.menu-list{"data-channel" => "presence-203:notifications", "data-remote" => "true", "role-menu-list" => "ready"}
+    .logo
+      %a{:href => "/", :title => "IQ300 System"}
+        %img.image-x1.img-corrector-initialized{:alt => "IQ300", :src => "/assets/logo_x1_new-9a31dde6832d097c3c4c0b4379c75284.png"}/
+        %img.image-x2.img-corrector-initialized{:alt => "IQ300", :src => "/assets/logo_x2_new-dc0b3d331ac4645cfb0681000f683dc1.png"}/
+    %ul
+      %li.menu-item.notifications{"data-extra-params" => "null", "data-params" => "null", "data-section" => "notifications", "data-url" => "/notifications"}
+        .html-notifier{"data-channel" => "presence-203:notifications", "data-redirect-url" => "/notifications?folder=new", "data-url" => "/notifications.count?folder=new", "role-html-notifier" => "ready"}
+          %audio#notice-audio
+            %source{:src => "/audios/notify.wav", :type => "audio/wav"}
+        %a{:href => "/notifications"}
+          .picture
+            %i.iq-navicons-notifications
+            %sup 1
+          %span Уведомления
+      %li.menu-item.projects.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "projects", "data-url" => "/projects"}
+        %a{:href => "/projects"}
+          .picture
+            %i.iq-navicons-projects
+          %span Проекты
+      %li.menu-item.tasks{"data-extra-params" => "{\"related\":203,\"overdue\":true,\"by_statuses\":[\"new\",\"browsed\",\"refused\",\"in_work\",\"on_init\",\"declined\"]}", "data-params" => "{\"overview\":203}", "data-section" => "tasks", "data-url" => "/tasks"}
+        %a{:href => "/tasks"}
+          .picture
+            %i.iq-navicons-tasks
+            %sup 2
+            %sup.overdue
+              5
+          %span Задачи
+      %li.menu-item.conversations{"data-extra-params" => "null", "data-params" => "{\"folder\":\"new\"}", "data-section" => "conversations", "data-url" => "/conversations"}
+        %a{:href => "/conversations"}
+          .picture
+            %i.iq-navicons-messages
+          %span Сообщения
+      %li.menu-item.contacts.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "contacts", "data-url" => "/contacts"}
+        %a{:href => "/contacts?folder=all"}
+          .picture
+            %i.iq-navicons-contacts
+          %span Контакты
+      %li.active.menu-item.communities.not-initialize{"data-extra-params" => "null", "data-params" => "{\"folder\":\"new\"}", "data-section" => "communities", "data-url" => "/communities"}
+        %a{:href => "/communities"}
+          .picture
+            %i.iq-navicons-communities
+          %span Сообщества
+      %li.menu-item.docs.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "docs", "data-url" => "/docs"}
+        %a{:href => "/docs?folder=my"}
+          .picture
+            %i.iq-navicons-documents
+          %span Документы
+      %li.menu-item.calendars.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "calendars", "data-url" => "/calendar"}
+        %a{:href => "/calendar"}
+          .picture
+            %i.iq-navicons-calendar
+          %span Календарь
+  %section.list-column.communities-list-column{"data-url" => "/communities", "role-communities-list-column" => ""}
+    .form-group{"data-url" => "/communities", :role => "communities-list-panel"}
+      .pull-left
+        %a.btn.btn-default{:href => "/communities/new"}
+          %span.fa.fa-plus-circle
+          Создать сообщество
+      .form-group{"data-url" => "/communities/list_panel", :role => "communities-list-panel"}
+        .form-field
+          .form-group.form-group-sm
+            .row
+              .col-md-3.pull-right{:role => "communities-sorted-panel"}
+                %span.text-muted.control-label
+                  Сортировать:
+                .input-group-above.input-group-sm{:role => "sorter"}
+                  %select#sort.form-control{"data-param" => "sort", :name => "sort", :role => "sorter-value"}
+                    %option{:value => "id"}
+                      По номеру
+                    %option{:value => "created_at"}
+                      По дате создания
+                    %option{:value => "title"}
+                      По имени
+                  .input-group-addon.btn{"data-direction" => "desc", :role => "sorter-direction"}
+                    %a.fa.fa-sort-amount-desc{:href => "#"}
+    .form-group{"data-scroll-container" => "[role=communities-list-scroll-container]", "data-url" => "/communities", :role => "communities-list"}
+  %section.view-column.community-view-column{"data-channel" => "private-base_community-291:update", "data-channel-template" => "private-base_community-%id%:update", "data-id" => "291", "data-url" => "/communities", "role-community-view-column" => "ready"}
+    :javascript
+      window.gon = window.gon || {}
+      window.gon.communityId = 291 // TODO try to use gon watch:true
+      $(document).ready(function() {
+        if (false) {
+          $('#community_members_tab a').click()
+        }
+      });
+    %header.tab-navigation
+      %ul.tabnav{"data-container" => "#community-tab-pane", "role-tabnav" => "ready"}
+        %li
+          %a{"data-target" => "community-details", :href => "/communities/291"} Детали
+        %li#community_tasks_tab
+          %a{"data-target" => "community-tasks", :href => "/communities/291/tasks?initial=true"} Задачи
+        %li#community_projects_tab
+          %a{"data-target" => "community-projects", :href => "/communities/291/projects?initial=true"} Проекты
+        %li#community_members_tab.active
+          %a{"data-target" => "community-participants", :href => "/communities/291/member_users?initial=true"} Участники
+        %li#community_activities_tab
+          %a{"data-target" => "community-activities", :href => "/communities/291/activities"} Активность
+        %li
+          %a{"data-target" => "community-contracts", :href => "/communities/291/contracts?initial=true"} Договоры
+        %li#community_invites_tab
+          %a{"data-target" => "community-invites", :href => "/communities/291/invites"} Приглашения
+        %li#community_reports_tab
+          %a{"data-target" => "community-reports", :href => "/communities/291/reports/new"} Отчёты
+      .column-controller
+        %a.enlarge.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "full-view", :state => "true", :title => "Развернуть"}
+          %i.icon-resize-small{"data-opposite-class" => "icon-resize-full"}
+        %a.close-panel.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "view", :state => "true", :title => "Закрыть"}
+          %i.icon-remove
+        %a.u-turn-right{"data-target" => "community-preferences", :href => "/communities/291/edit", :title => "Настройки сообщества"}
+          %i.icon-cog
+    #community-tab-pane.column-content
+      #community-details.object-details{:style => "display: none;"}
+        %header
+          .resource-watcher-subscription{"data-url" => "/subscriptions?community_id=291", "role-resource-watcher-subscription" => "ready"}
+            %label.checkbox{:title => "Вы не можете отписаться от уведомлений"}
+              %input#subscribe{:checked => "checked", :disabled => "disabled", :name => "subscribe", :type => "checkbox", :value => "1"}/
+              %i
+              Следить за изменениями
+          %p.membership-status Вы состоите в сообществе
+          .community-cart
+            .community-avatar
+              %img.default-community-picture.img-corrector-initialized{:alt => "4", "data-default-src" => "/assets/logo_x2.png", :src => "/assets/community/4.png"}/
+            %a.destroy-button{"data-target" => "#destroy-confirm", "data-toggle" => "modal", :href => "/communities/291"}
+              Расформировать сообщество
+            #destroy-confirm.modal.fade.modal-initialized{"data-remote" => "/communities/291/destroy_confirmation", "data-width" => "760", :tabindex => "-1"}
+              .modal-header
+                %button.close.btn{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+                %h4 Вы действительно хотите расформировать сообщество Fake community?
+              .modal-body
+            .info
+              %p
+                Дата создания:
+                %span 12 августа 2014
+              %p
+                Участников:
+                %span 2
+              %p
+                Проекты:
+                %a{:href => "/communities/291/projects"} 2/2
+              %p
+                Задачи:
+                %span
+                  %a{:href => "/communities/291/tasks"} 3/3
+                %span
+                  %a{:href => "/calendar?community_id=291", :title => "Календарь"}
+                    %i.icon-calendar
+              %p.status
+        %p
+          Телефон:
+          %a{:href => "tel:88008888888"} 88008888888
+        %p
+          Эл. почта:
+          %a{:href => "mailto:sibsfinx@ya.ru"} sibsfinx@ya.ru
+        %h2.with-icons
+          Fake community
+          .icons
+            %span.favorite.favorite-view{"role-favorite-view" => "ready"}
+              %a{"data-method" => "put", :href => "/favorites?base_community_id=291", :rel => "nofollow"}
+                %i.icon-star-empty
+        %section.people
+          .admin
+            Владелец:
+            .user
+              .avatar
+                %img.member-box-avatar-image-small.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/medium_50e2e4ea-a09d-4977-8972-bf233bf0453c.jpg", :style => "width:34px;height:34px;", :title => "Мещеряков Александр "}/
+              .name
+                %a{:href => "/users/203", :role => "member-name"} Александр Мещеряков
+                %span.user-email
+                  Владелец
+          .moderator
+            Руководитель:
+            .user
+              .avatar
+                %img.member-box-avatar-image-small.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/medium_50e2e4ea-a09d-4977-8972-bf233bf0453c.jpg", :style => "width:34px;height:34px;", :title => "Мещеряков Александр "}/
+              .name
+                %a{:href => "/users/203", :role => "member-name"} Александр Мещеряков
+                %span.user-email
+                  Руководитель
+          %footer
+            %a{:href => "/communities/291/users", :onclick => "$('#community_members_tab a').trigger('click'); return false;"} Все участники
+        %p.address
+          Адрес:
+          %br/
+          %span test
+      #community-participants.object-details.community-participants-tab.undefined{"data-url" => "/communities/291/member_users?initial=true", :style => "display: block;"}
+        .tab-navigation.with-buttons
+          %ul.tabnav{"data-container" => "#members-tab-pane", "role-tabnav" => "ready"}
+            %li.default-tab
+              %a{"data-target" => "members-details", :href => "/communities/291/member_users"} Все участники
+            %li#community_departments_tab.active
+              %a{"data-target" => "community-departments", :href => "/communities/291/departments"} Структура сообщества
+            .community-structure-panel-view{"role-community-structure-panel" => ""}
+              .community-structure-panel.personal-tree
+                .add-department-btn{"ui-invite-button" => "ui-invite-button"}
+                  .add-button.popup-window{"data-popup" => "new-department", "role-popup-window" => "ready"}
+                    Добавить отдел
+                    %a.small-plus-button.add-tag{:href => "#"}
+                      %i.icon-plus
+                  .adding-form.new-department.without-left-pimp.popup-window{"data-focused-input" => "input#department_title"}
+                    %form{:action => "#"}
+                      %ul.errors.department
+                      .input
+                        %label{:for => "department_title"}
+                          Название
+                          %abbr *
+                        %input#department_title{:name => "department[title]", :placeholde => "введите название"}/
+                      .input
+                        %label{:for => "department_parent_id"} Вышестоящий отдел
+                        #s2id_department_parent_id.select2-container.select-two{:style => "width: 100%;"}
+                          %a.select2-choice{:href => "javascript:void(0)", :tabindex => "-1"}
+                            %span#select2-chosen-2.select2-chosen  
+                            %abbr.select2-search-choice-close
+                            %span.select2-arrow{:role => "presentation"}
+                              %b{:role => "presentation"}
+                          %label.select2-offscreen{:for => "s2id_autogen2"} Вышестоящий отделНазначить должность
+                          %input#s2id_autogen2.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-2", :role => "button", :type => "text"}/
+                          .select2-drop.select2-display-none.select2-with-searchbox
+                            .select2-search
+                              %label.select2-offscreen{:for => "s2id_autogen2_search"} Вышестоящий отделНазначить должность
+                              %input#s2id_autogen2_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-2", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+                            %ul#select2-results-2.select2-results{:role => "listbox"}
+                        %select#department_parent_id.select-two.select2-offscreen{"data-allow-clear" => "true", :name => "department[parent_id]", :placeholder => "выбрать из списка", "role-select-two" => "ready", :tabindex => "-1", :title => "Вышестоящий отделНазначить должность"}
+                      %ul.errors.contract
+                      .input
+                        %label{:for => "department_boss_id"} Назначить руководителем
+                        #s2id_department_boss_id.select2-container.select-two{:style => "width: 100%;"}
+                          %a.select2-choice{:href => "javascript:void(0)", :tabindex => "-1"}
+                            %span#select2-chosen-3.select2-chosen  
+                            %abbr.select2-search-choice-close
+                            %span.select2-arrow{:role => "presentation"}
+                              %b{:role => "presentation"}
+                          %label.select2-offscreen{:for => "s2id_autogen3"} Назначить руководителем
+                          %input#s2id_autogen3.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-3", :role => "button", :type => "text"}/
+                          .select2-drop.select2-display-none.select2-with-searchbox
+                            .select2-search
+                              %label.select2-offscreen{:for => "s2id_autogen3_search"} Назначить руководителем
+                              %input#s2id_autogen3_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-3", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+                            %ul#select2-results-3.select2-results{:role => "listbox"}
+                        %select#department_boss_id.select-two.select2-offscreen{"data-allow-clear" => "true", :name => "department[boss_id]", :placeholder => "выбрать из списка", "role-select-two" => "ready", :tabindex => "-1", :title => "Назначить руководителем"}
+                      %section.buttons
+                        %input.green{:name => "commit", :type => "submit", :value => "Создать"}/
+                        %a.delete Отменить
+                .unallocated-btn.ui-droppable.droppable
+                  .btn.expanded
+                    .expander{"data-target" => ".unallocated-workers", "role-expander" => "ready"}
+                    %a Нераспределенные
+                    %span.red.counter{:style => "display: inline;"} 1
+                  .unallocated-workers.expanded
+                    .memberships-contract.ui-draggable
+                      %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/186/thumb_6b7103f9-dbb7-4906-b306-eee69765bd5b.png"}/
+                      .name
+                        %a{:href => "/users/244"} Mescheryakov Alexander
+                        .detailed
+                          %span
+                .apply-changes-view{"role-apply-changes-view" => "ready", :style => "display: none;"}
+                  .accept
+                    %span Закончить редактирование
+                    %i.icon-ok
+                  .decline
+                    %span Отменить
+                    %i.icon-remove
+                  .spinner
+                    %span Сохранение...
+                  .error
+                    %span Ошибка сохранения. Новая попытка сохранения каждые 5 секунд.
+        #members-tab-pane.column-content{"data-url" => "/communities/291/member_users", "role-community-members" => "ready"}
+          #members-details.object-details{:style => "display: none;"}
+            %section.invite-participiant
+              .pull-right
+                %form.form-search{:action => "/communities/291/member_users", :method => "get", :role => "ui-search-members"}
+                  %input#search.search-query.form-control{:name => "search", :placeholder => "Поиск", :role => "ui-members-search-input", :type => "search"}/
+            %section.spectator
+              %p Участники:
+              %ul{:role => "ui-infinite-list", "ui-accepted-members" => ""}
+                .user.community-member.extended{:role => "community-member"}
+                  .avatar
+                    %img.member-box-avatar-image-small.img-corrector-initialized{:alt => "Alexander", :hide_wait_message => "true", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/186/medium_6b7103f9-dbb7-4906-b306-eee69765bd5b.png", :style => "width:75px;height:75px;", :title => "Mescheryakov Alexander"}/
+                  .name
+                    %a{:href => "/users/244"} Alexander Mescheryakov
+                    %span
+                      %span#best_in_place_memberships_contract_742_consumer_role_id.best_in_place{"data-bip-attribute" => "consumer_role_id", "data-bip-collection" => "{\"1\":\"\\u0420\\u0443\\u043a\\u043e\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\",\"3\":\"\\u0421\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\",\"7\":\"\\u041e\\u0442\\u0432\\u0435\\u0442\\u0441\\u0442\\u0432\\u0435\\u043d\\u043d\\u044b\\u0439\"}", "data-bip-object" => "memberships_contract", "data-bip-original-content" => "3", "data-bip-type" => "select", "data-bip-url" => "/communities/291/member_users/742", "data-bip-value" => "3"} Сотрудник
+                      %i.icon-pencil
+                      %a.icon-remove{"data-confirmation" => "Вы уверены, что хотите удалить участника из текущего сообщества?", "data-role" => "action", :href => "/communities/291/member_users/742?do=cancel"}
+                    .extras
+                      %p{:title => ""}
+                      %p{:title => ""}
+                .user.community-member.extended{:role => "community-member"}
+                  .avatar
+                    %img.member-box-avatar-image-small.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/medium_50e2e4ea-a09d-4977-8972-bf233bf0453c.jpg", :style => "width:75px;height:75px;", :title => "Мещеряков Александр "}/
+                  .name
+                    %a{:href => "/users/203"} Александр Мещеряков
+                    %span
+                      %span#best_in_place_memberships_contract_638_consumer_role_id.best_in_place{"data-bip-attribute" => "consumer_role_id", "data-bip-collection" => "{\"1\":\"\\u0420\\u0443\\u043a\\u043e\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\",\"3\":\"\\u0421\\u043e\\u0442\\u0440\\u0443\\u0434\\u043d\\u0438\\u043a\",\"7\":\"\\u041e\\u0442\\u0432\\u0435\\u0442\\u0441\\u0442\\u0432\\u0435\\u043d\\u043d\\u044b\\u0439\"}", "data-bip-object" => "memberships_contract", "data-bip-original-content" => "1", "data-bip-type" => "select", "data-bip-url" => "/communities/291/member_users/638", "data-bip-value" => "1"} Руководитель
+                      %i.icon-pencil
+                    .extras
+                      %p{:title => "Директор"}
+                        Директор,
+                      %p{:title => "Руководство"}
+                        Руководство
+          #community-departments.object-details.community-departments-tab.undefined{"data-url" => "/communities/291/departments", :style => "display: block;"}
+            .community-structure-view.zero-children.personal-tree{"role-community-structure-view" => "ready"}
+              .edit-job.structure-popup{:style => "position: fixed; left: 95.5px; top: 299.75px;"}
+                %form{:action => "#"}
+                  %ul.errors
+                  %input#worker_id{:type => "hidden", :value => "638"}/
+                  .input.inline
+                    %a.personal-tree Правила постановки задач
+                  .input.inline
+                    %label{:for => "worker_is_boss"} Назначить руководителем
+                    %input#worker_is_boss{:name => "worker[is_boss]", :type => "checkbox"}/
+                    %i
+                  .input
+                    %label{:for => "department_parent_id"} Назначить должность
+                    #s2id_worker_job_id.select2-container{:style => "width: 280px;", :title => ""}
+                      %a.select2-choice{:href => "javascript:void(0)", :tabindex => "-1"}
+                        %span#select2-chosen-8.select2-chosen Директор
+                        %abbr.select2-search-choice-close
+                        %span.select2-arrow{:role => "presentation"}
+                          %b{:role => "presentation"}
+                      %label.select2-offscreen{:for => "s2id_autogen8"}
+                      %input#s2id_autogen8.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-8", :role => "button", :type => "text"}/
+                      .select2-drop.select2-display-none.select2-with-searchbox
+                        .select2-search
+                          %label.select2-offscreen{:for => "s2id_autogen8_search"}
+                          %input#s2id_autogen8_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-8", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+                        %ul#select2-results-8.select2-results{:role => "listbox"}
+                    %input#worker_job_id.select2-offscreen{:name => "worker[job_id]", :tabindex => "-1", :title => "", :type => "hidden", :value => "287"}/
+                  %section.buttons
+                    %input.green{:name => "commit", :type => "submit", :value => "Назначить"}/
+                    %a.close Пропустить
+              %ol.departments
+                .root-line
+                .root-line-clear
+                %li.department.zero-children.ui-droppable.droppable
+                  %input.143.toggle{:type => "checkbox"}/
+                  %input.143.department-toggle{:type => "checkbox"}/
+                  .line.143
+                  .line-child
+                  .line-clear
+                  .counter.143 0
+                  .department-card.143
+                  .expander{"role-expander" => "role-expander"}
+                  .d-card-title.143
+                    .expander{"role-expander" => "role-expander"}
+                    %label
+                      %span{:title => "Двойной щелчок для редактирования"} Руководство
+                      %input/
+                    .options
+                  .d-card-body.143.ui-droppable.droppable
+                    .boss-card.143
+                      .memberships-contract.ui-draggable
+                        %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/thumb_50e2e4ea-a09d-4977-8972-bf233bf0453c.jpg"}/
+                        .name
+                          %a{:href => "/users/203"} Мещеряков Александр
+                          .detailed
+                            %span Директор
+                            .actions
+                              %a.edit
+                                %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "638"}
+                                %span.workers-counter
+                                  0
+                                  %i.icon-user
+                    .workers.143
+                  %ol.children.143
+                  .toggle-icon
+                  .toggle-arrow
+                  .toggle-block
+              .personal-tree
+                .personal-tree-header
+                  .title Правила постановки задач
+                  .close-btn
+                    %i.icon-remove
+                .personal-tree-body
+                  .masters-column
+                    .btn.dark.column-title.expanded
+                      .expander{"data-expand-on-init" => "data-expand-on-init", "data-target" => ".task-rules-list", "role-expander" => "ready"}
+                      %a Поставщики
+                      .search-expander{"data-expanded-class" => "search-expanded", "data-target" => ".search, .search-results", "role-search-expander" => "ready"}
+                        %i.icon-plus
+                    .search
+                      %input/
+                      %i.icon-search
+                    .search-results
+                    .task-rules-list.expanded
+                  .target-column
+                    .arrow
+                    .btn.expanded
+                      .expander{"data-expand-on-init" => "data-expand-on-init", "data-target" => ".target", "role-expander" => "ready"}
+                      %a.department-title Руководство
+                    .target.expanded
+                      .memberships-contract
+                        %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/thumb_50e2e4ea-a09d-4977-8972-bf233bf0453c.jpg"}/
+                        .name
+                          %a{:href => "/users/203"} Мещеряков Александр
+                          .detailed
+                            %span Директор
+                            .actions
+                              %a.edit
+                                %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "638"}
+                    .arrow
+                  .slaves-column
+                    .btn.dark.column-title.expanded
+                      .expander{"data-expand-on-init" => "data-expand-on-init", "data-target" => ".task-rules-list", "role-expander" => "ready"}
+                      %a Исполнители
+                      .search-expander{"data-expanded-class" => "search-expanded", "data-target" => ".search, .search-results", "role-search-expander" => "ready"}
+                        %i.icon-plus
+                    .search
+                      %input/
+                      %i.icon-search
+                    .search-results
+                    .task-rules-list.expanded
