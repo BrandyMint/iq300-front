@@ -29,6 +29,9 @@
   @extend .btn-block;
   @extend .btn-sm;
   margin: 0;
+  &, &[type="submit"] {
+    font-weight: bold;
+  }
 }
 
 
