@@ -152,6 +152,11 @@ $border-size: 1px;
       }
       .buttons a {
         font-weight: bold;
+        &.close {
+          font-size: $font-size-base;
+          float: none;
+          @include opacity(1);
+        }
       }
     }
     &:before {

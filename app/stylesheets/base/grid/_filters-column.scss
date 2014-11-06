@@ -1,6 +1,7 @@
 .filters-column {
   background: $filters-column-background;
   overflow: hidden;
+  overflow-y: auto;
   position: absolute;
   z-index: $filters-column-z-index;
   left: $navColumnWidth;
@@ -81,12 +82,14 @@
         @extend %buble-counter;
         font-size: 0.8em;
         display: none;
-        background-color: $green-cyan;
-        border: none;
         margin-bottom: -4px;
         padding: 3px 6px;
+        background-color: #fff;
+        color: $blue-brand-bright;
+        border-color: 1px solid $blue-brand-bright;
         &.overdue {
           background-color: $brand-danger;
+          border-color: $brand-danger;
           color: #fff;
         }
       }

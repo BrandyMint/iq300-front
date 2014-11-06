@@ -1,0 +1,15 @@
+- text = locals[:text] || 'Текст сообщения'
+- title = locals[:title] || 'Текст сообщения'
+
+.ui-pnotify{role: 'ui-pnotify', :style => "width: 300px; right: 25px; top: 25px; opacity: 1; display: none; overflow: visible; cursor: auto;"}
+  .alert.ui-pnotify-container.alert-danger.ui-pnotify-shadow{:style => "min-height: 16px; overflow: hidden;"}
+    .ui-pnotify-closer{:style => "cursor: pointer; visibility: hidden;"}
+      %span.fa.fa-times{:title => "Close"}
+    .ui-pnotify-sticker{:style => "cursor: pointer; visibility: hidden; display: none;"}
+      %span.fa.fa-pause{:title => "Stick"}
+    %h4.ui-pnotify-title{:style => "display: block"}
+      = title
+    .ui-pnotify-text
+      = text
+      %br
+    %div{:style => "margin-top: 5px; clear: both; text-align: right; display: none;"}

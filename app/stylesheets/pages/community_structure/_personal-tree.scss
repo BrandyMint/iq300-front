@@ -97,6 +97,10 @@
         .btn {
           border: 1px solid #cccccc;
           @include truncate;
+          display: block;
+          padding: 0;
+          border-radius: 0;
+          text-align: left;
           &.column-title {
             position: relative;
             &.search-expanded {

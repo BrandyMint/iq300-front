@@ -301,3 +301,21 @@ $main_radius: 3px !default;
     width: 100%;
   }
 }
+
+
+@mixin center-block-container {
+  text-align: center;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+  }
+}
+
+@mixin center-block-content {
+  display: inline-block;
+  vertical-align: middle;
+}
+

@@ -75,7 +75,8 @@
 .task-new {
   @extend %task-new-style;
 }
-.task-overdued {
+.task-overdued,
+.task-overdue {
   @extend %task-overdued-style;
   &.task-new {
     .task-box-title-block {
@@ -94,10 +95,25 @@
 .task-box-user {
   white-space: nowrap;
 }
+
+.task-box-status-block {
+  text-align: center;
+  @include center-block-container;
+  @media screen and (max-width: 768px) {
+    text-align: left;
+    padding-top: 10px;
+  }
+}
+
 .task-box-status-date {
   white-space: nowrap;
   position: relative;
+  @include center-block-content;
+  .task-box & {
+    display: block;
+  }
 }
+
 .task-box-status-date-days {
   font-size: 0.8em;
   @media screen and (max-width: 768px) {
@@ -110,13 +126,7 @@
   width: $grid-gutter-width;
   text-align: center;
 }
-.task-box-status-block {
-  text-align: center;
-  @media screen and (max-width: 768px) {
-    text-align: left;
-    padding-top: 10px;
-  }
-}
+
 .task-box-title-block {
   white-space: nowrap;
   overflow: hidden;
