@@ -14,7 +14,8 @@
   color: $brand-danger
 }
 
-.task-overdued {
+.task-overdued,
+.task-overdue {
   @extend %task-block-overdued;
 }
 

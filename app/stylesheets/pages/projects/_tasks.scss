@@ -14,7 +14,7 @@ $project-task-checkbox-width: 10px;
   a {
     text-decoration: none;
   }
-  @each $c in new $brand-primary, overdued $brand-danger {
+  @each $c in new $brand-primary, overdued $brand-danger, overdue $brand-danger {
     &.task-#{nth($c,1)} {
       &,
       .status-date {
@@ -131,7 +131,8 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
         color: desaturate(darken($brand-primary, 0%), 30%);
       }
     }
-    &.task-overdued {
+    &.task-overdued,
+    &.task-overdue {
       border-left-color: desaturate(darken($brand-danger, 0%), 30%);
       a {
         color: desaturate(darken($brand-danger, 0%), 30%);
