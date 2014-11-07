@@ -1,0 +1,103 @@
+section.communities-list-column
+  margin-left: 0 !important
+  color: #666666
+  > ul.infinite-list
+    position: absolute
+    top: 45px
+    bottom: 0
+    overflow-y: auto
+    overflow-x: hidden
+  > ul > li
+    position: relative
+    .logo
+      width: 14%
+      text-align: center
+    .image
+      width: 14%
+      max-height: 44px
+      text-align: center
+      line-height: 44px
+      overflow: hidden
+      img
+        border: 1px solid #aaaaaa
+        max-width: 42px
+        max-height: 42px
+        background: white
+        vertical-align: top
+        align: middle
+    .name
+      width: 60%
+      padding: 2px 2% 2px 3%
+      height: 40px
+      line-height: 40px
+      .title
+        position: relative
+        +text-overflow
+      .status
+        position: relative
+        top: -1px
+        font-size: 11px
+        color: #999999
+        i
+          color: #358bae
+          font-size: 10px
+          margin-right: 3px
+      &.legal-person
+        line-height: 20px
+        .title
+          top: 2px
+    .paid
+      width: 6%
+      color: #f9b13b
+    .favorite
+      width: 6%
+      text-align: center
+    .population
+      width: 9%
+      font-size: 11px
+      i
+        margin: 0 2px
+    &.header
+      font-size: 14px
+      line-height: 44px
+      +box-shadow(0 2px 12px rgba(black, 0.12))
+      > .name
+        padding-top: 0
+        padding-bottom: 0
+        line-height: 44px
+        height: 44px
+    &.active
+      .name, .population
+        color: white
+      .name .status
+        color: #f2f1ef
+        i
+          color: #f2f1ef
+
+%communities-list-wide
+  .image, .logo
+    width: 14%
+  .name
+    width: 60%
+    padding-left: 3%
+    padding-right: 2%
+  .paid
+    width: 6%
+  .favorite
+    width: 6%
+  .population
+    width: 9%
+
+%communities-list-wider
+  .image, .logo
+    width: 14%
+  .name
+    width: 60%
+    padding-left: 3%
+    padding-right: 2%
+  .paid
+    width: 6%
+  .favorite
+    width: 6%
+  .population
+    width: 9%

@@ -1,0 +1,155 @@
+// form
+.error-reports-form
+  padding:
+    top: 34px
+    left: 69px
+    right: 76px
+    bottom: 34px
+  > form
+    margin-top: 20px
+    > .input
+      margin-bottom: 18px
+      input[type=checkbox]
+        @extend %blue-ok-checkbox-without-white-border
+      label
+        display: block
+        margin-bottom: 7px
+        color: #999999
+      input
+        +bordered
+        background: #f1f5f6
+        padding: 5px 11px
+        line-height: 19px
+        height: 31px
+        +box-sizing(border-box)
+        +placeholder-color(#999999)
+        color: #666666
+        width: 326px
+        +inline-block
+        &.full-width
+          width: 100%
+      > select
+        width: 326px
+        +inline-block
+      > span.right
+        margin-left: 40px
+        +inline-block
+        line-height: 28px
+        +children-inline(middle)
+        label
+          color: #666666
+          margin: 0 0 0 7px
+    > section.description
+      label
+        color: #999999
+      textarea
+        margin-top: 15px
+        +box-sizing(border-box)
+        width: 100%
+        height: 117px
+        +bordered
+        background: #f1f5f6
+        padding: 10px 13px
+        color: #666666
+        line-height: 19px
+        font-size: 13px
+        font-family: Arial, sans-serif
+    > section.fileupload_multiple
+      label
+        color: #999999
+        &.error
+          color: $errorColor
+      .info
+        > span
+          font-size: 10px
+          display: block
+          color: $defaultInfo
+          +truncate
+    > .buttons
+      +children-inline
+      margin-top: 40px
+      > *
+        margin: 0
+        line-height: 20px
+        color: #328bab
+      a
+        padding: 5px
+        margin-left: 12px
+        ~ a
+          margin-left: 20px
+        &.delete
+          color: #ff2021
+      input
+        padding: 5px 21px
+        -webkit-appearance: none
+        color: white
+        background: #338cae
+        border: none
+        cursor: pointer
+
+// list
+section.error-reports-list-column
+  ul li
+    > *
+      padding: 0 0.9%
+      +text-overflow
+    color: #666666
+    &.active
+      color: white
+    .id
+      width: 4%
+    .date
+      width: 7%
+    .status
+      width: 8%
+    .title
+      width: 41%
+      font-weight: bold
+    .author
+      width: 20%
+    .comments
+      width: 7%
+      font-size: 10px
+      i
+        margin-left: 3px
+    &.header
+      > div > a
+        +text-overflow
+
+// filters
+section.error-reports-filters-column
+  //@extend .tasks-filters-column
+
+.error-report-view-column, section.error-reports-list-column
+  .report-status
+    font-weight: bold
+    //&.new
+    &.in_work
+      color: rgb(29, 162, 162)
+    &.completed
+      color: green
+
+// item view
+.error-report-view-column
+  h2
+    margin:
+      top: 15px
+      bottom: 15px
+  .object-details
+    > ul
+      > li
+        +children-inline
+        color: #666666
+        > label
+          color: #888888
+          font-weight: bold
+          width: 57px
+        > span
+          margin:
+            left: 10px
+  section.description
+    margin: 18px 0
+    color: #666666
+    p ~ p
+      margin-top: 0.75em
+    @extend %markdown-style

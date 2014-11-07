@@ -1,0 +1,329 @@
+section.task-form-section
+  .input-group-addon[title]
+    border: none
+  padding: 34px 50px
+  .attachments
+    padding: 20px 0px 20px 0px
+    border: none
+  .pull-right
+    padding-right: 20px
+  .form-buttons
+    .pull-right
+      padding-right: 0px
+  .checkbox.parent_task_access
+    padding-left: 15px
+  .form-group.description, .task-repeat-form
+    display: none
+  .form-group
+    &.todo-list, &.task-files
+      padding-left: 15px
+    &.executor-container
+      .add-invited-executor-button
+        display: none
+        margin-top: 4px
+    &.invited-executor-container
+      display: none
+      margin-top: 0px
+      height: 28px
+      .remove-invited-executor-button
+        margin-top: 4px
+  .task-repeat-checkbox
+    padding-left: 5px
+  .input-group
+    &.weeks-repeat-type, &.months-repeat-type
+      display: none
+  .attachment-files
+    .file
+      width: auto
+      max-width: 20%
+      display: inline-flex
+      a
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+        max-width: 90%
+        .icon-remove
+          padding-left: 5px
+  ul#todo-list
+    .todo-body
+      width: 98%
+  ul.top
+    @extend %small-tabs
+    margin-bottom: 42px
+  h2
+    color: #3489ae
+    font-size: 20px
+    margin-bottom: 22px
+    a
+      color: #3489ae
+      font-size: 12px
+      +inline-block(middle)
+      margin-left: 34px
+  form
+    .input
+      margin-bottom: 18px
+      input[type=checkbox]
+        @extend %blue-ok-checkbox-without-white-border
+      label
+        display: block
+        margin-bottom: 7px
+        line-height: 20px
+        color: #999999
+      input
+        +bordered
+        background: #f1f5f6
+        padding: 5px 11px
+        line-height: 19px
+        //height: 31px;
+        +box-sizing(border-box)
+        +placeholder-color(#999999)
+        color: #666666
+        //width: 326px;
+        float: left
+        margin-right: 10px
+        +inline-block
+        &[type='checkbox']
+          padding: 0
+        &.full-width
+          width: 100%
+        &.field_with_errors
+          border-color: #a92b2b
+      select
+        width: 326px
+        +inline-block
+        & + span.right
+          margin-top: 5px
+      span.right
+        +inline-block
+        line-height: 28px
+        +children-inline(top)
+        &.access-input
+          line-height: 18px
+          margin-left: 15px
+        label
+          color: #666666
+          margin: 0 0 0 7px
+      &.team > p
+        margin-top: 10px
+        +children-inline
+        > a
+          text-decoration: none !important
+          +children-inline
+          > i
+            position: relative
+            top: 1px
+          &:hover > span
+            text-decoration: underline !important
+    > section.dates
+      margin-top: 22px
+      dl
+        margin-top: 16px
+        line-height: 29px
+        +children-inline
+        input[type=checkbox]
+          +inline-block(middle)
+          @extend %blue-ok-checkbox-without-white-border
+          &, + i
+            position: relative
+            top: -2px
+        > dt
+          width: 28.3%
+          text-align: right
+          color: #999999
+          +text-overflow
+          &.unordinary-big-offset
+            margin-bottom: 14px
+          &.big-offset
+            margin-bottom: 6px
+        > dd
+          margin-left: 1.2%
+          width: 69%
+          input[type=text]
+            margin: 0
+            +bordered
+            background: #f1f5f6
+            padding: 3px 11px
+            line-height: 18px
+            height: 18px
+            color: #666666
+            +placeholder-color(#999999)
+            &.short
+              padding-left: 7px
+              padding-right: 7px
+              width: 25px
+              text-align: center
+          input + label
+            +inline-block(middle)
+            margin-left: 17px
+            +unselectable
+          input + a
+            margin-left: 15px
+            color: #328bad
+            text-decoration: none
+            i
+              position: relative
+              top: 2px
+              color: #999999
+              margin-left: 3px
+          label.radio
+            margin-right: 6px
+      footer
+        color: #666666
+        margin-top: 12px
+        margin-bottom: 25px
+        i
+          color: #fd0003
+    > section.outer-team
+      margin-bottom: 18px
+      label
+        color: #999999
+      > ul
+        margin-top: 15px
+        width: 100%
+        +children-inline
+        > li
+          width: 50%
+          +children-list-fix
+          > .input
+            margin-bottom: 18px
+            input[type=checkbox]
+              @extend %blue-ok-checkbox-without-white-border
+            label
+              display: block
+              margin-bottom: 7px
+              color: #999999
+            input
+              +bordered
+              background: #f1f5f6
+              padding: 5px 11px
+              line-height: 19px
+              height: 31px
+              +box-sizing(border-box)
+              +placeholder-color(#999999)
+              color: #666666
+              width: 326px
+              +inline-block
+              &.full-width
+                width: 100%
+            > select
+              width: 326px
+              +inline-block
+            > span.right
+              +inline-block
+              line-height: 28px
+              +children-inline(middle)
+              label
+                color: #666666
+                margin: 0 0 0 7px
+            &.team > p
+              margin-top: 10px
+              +children-inline
+              > a
+                text-decoration: none !important
+                +children-inline
+                > i
+                  position: relative
+                  top: 1px
+                &:hover > span
+                  text-decoration: underline !important
+    > section.client
+      margin-bottom: 18px
+      label
+        color: #999999
+      > ul
+        margin-top: 15px
+        width: 100%
+        +children-inline
+        > li
+          width: 25%
+          +children-list-fix
+          > header
+            line-height: 20px
+            padding-left: 10px
+            padding-right: 5px
+            white-space: nowrap
+            +children-inline
+            > input
+              & + label
+                margin-left: 5px
+            > label
+              height: 20px
+            & + .input
+              margin-top: 15px
+          > .input
+            padding-left: 10px
+            padding-right: 5px
+            margin-bottom: 18px
+            input[type=checkbox]
+              @extend %blue-ok-checkbox-without-white-border
+            label
+              display: block
+              margin-bottom: 7px
+              color: #999999
+            input
+              +bordered
+              background: #f1f5f6
+              padding: 5px 11px
+              line-height: 19px
+              height: 31px
+              +box-sizing(border-box)
+              +placeholder-color(#999999)
+              color: #666666
+              width: 326px
+              +inline-block
+              &.full-width
+                width: 100%
+            > select
+              width: 326px
+              +inline-block
+              &.full-width
+                width: 100%
+    > section.description
+      label
+        color: #999999
+      margin-bottom: 18px
+      textarea
+        margin-top: 15px
+        +box-sizing(border-box)
+        width: 100%
+        height: 117px
+        +bordered
+        background: #f1f5f6
+        padding: 10px 11px
+        color: #666666
+        line-height: 21px
+        font-size: 13px
+    > section.fileupload_multiple
+      color: $defaultInfo
+      .info
+        > span
+          font-size: 10px
+          display: block
+          +truncate
+    > .buttons
+      +children-inline
+      margin-top: 30px
+      margin-left: -20px
+      > *
+        margin: 0
+        margin-top: 10px
+        margin-left: 20px
+        line-height: 20px
+        color: #328bab
+      a
+        padding: 5px
+        &.delete
+          color: #ff2021
+      input
+        padding: 5px 21px
+        -webkit-appearance: none
+        color: white
+        background: #338cae
+        border: none
+        cursor: pointer
+
+.task-proposed-end-dates
+  margin-top: 10px
+  .input-group
+    margin-right: 10px
+    text-decoration: underline

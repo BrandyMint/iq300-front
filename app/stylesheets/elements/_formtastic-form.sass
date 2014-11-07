@@ -1,0 +1,60 @@
+.formtastic-form
+  > form
+    margin-top: 10px
+    label
+      display: block
+      margin-bottom: 7px
+      color: #999999
+      > abbr
+        color: red
+    input[type=checkbox]
+      @extend %blue-ok-checkbox-without-white-border
+    > .inputs
+      > ol
+        > li.input
+          margin-bottom: 12px
+          input
+            +bordered
+            background: #f1f5f6
+            padding: 5px 11px
+            line-height: 19px
+            height: 31px
+            +box-sizing(border-box)
+            +placeholder-color(#999999)
+            color: #666666
+            width: 326px
+            +inline-block
+            &.full-width
+              width: 100%
+          > select
+            width: 326px
+            +inline-block
+          > span.right
+            margin-left: 40px
+            +inline-block
+            line-height: 28px
+            +children-inline(middle)
+            label
+              color: #666666
+              margin: 0 0 0 7px
+    > .buttons
+      +children-inline
+      margin-top: 20px
+      > *
+        margin: 0
+        line-height: 20px
+        color: #328bab
+      a
+        padding: 5px
+        margin-left: 12px
+        ~ a
+          margin-left: 20px
+        &.delete
+          color: #ff2021
+      input
+        padding: 5px 21px
+        -webkit-appearance: none
+        color: white
+        background: #338cae
+        border: none
+        cursor: pointer

@@ -1,0 +1,281 @@
+$form-group-padding: 20px
+
+form .inline-errors
+  display: inline
+  color: red
+
+input
+  font-size: 13px
+  font-family: Arial, sans-serif
+
+input[type='submit']:disabled
+  background-color: $voronkaBackground !important
+
+label.error
+  color: $errorColor
+
+.info
+  span.error
+    color: $errorColor !important
+
+select
+  margin:
+    left: 0
+    right: 0
+
+// GLOBAL FORM ELEMENTS -->
+// form header section -->
+.form-header
+  padding: $form-group-padding
+  color: #666666
+  &.underline
+    border-bottom: solid 1px #e6e6e6
+  + .text-field-holder, + .form-list
+    padding-top: 0
+  .title
+    +clear
+  .subtitle
+    margin-top: 7px
+    > a
+      display: inline-block
+      margin-left: $form-group-padding / 2
+  h6
+    font-weight: 600
+    margin: 0
+    small
+      // color: $greyText;
+      font-weight: 400
+
+// <-- form header section
+
+.text-field-holder
+  padding: $form-group-padding
+  + .form-list
+    margin-top: 0
+
+// form members list -->
+.form-list
+  margin-top: $form-group-padding / 2
+  color: #666666
+  &:first-child
+    margin-top: 0
+  &.underline
+    > li
+      border-bottom: solid 1px #e6e6e6
+      padding-bottom: 7px
+    .checkbox-member
+      margin-bottom: -7px
+  > li
+    padding: 7px $form-group-padding 0
+    position: relative
+    > ul.nested
+      margin-top: 0
+    cursor: pointer
+    &:hover
+      color: $link-color
+  a
+    color: inherit
+  .checkbox-member
+    margin: -7px (-$form-group-padding) 0
+  .btn-remove
+    position: absolute
+    width: 16px
+    height: 16px
+    top: 50%
+    right: 5px
+    margin-top: -8px
+    text-decoration: none
+    font-size: 16px
+    color: $gray-light
+    &:hover
+      color: $brand-danger
+  .icon-active
+    visibility: hidden
+  .active
+    color: $blueLink
+    .icon-active
+      visibility: visible
+    small
+      color: #666666
+
+// <-- form members list
+
+// form members checkbox -->
+.checkbox-member
+  padding: 7px $form-group-padding 7px 38px
+  position: relative
+  cursor: pointer
+  &:hover
+    color: #2b8cae
+    .input-holder
+      border-color: #2b8cae
+  label
+    display: inline
+  input
+    margin: 0
+    border: 0
+    opacity: 0
+    position: absolute
+    +box-sizing(border-box)
+    ~ .project-form-team-member-btn
+      display: none
+    &:checked
+      + i
+        &:before
+          content: ""
+          +absoluted
+          background-color: #45aee4
+          z-index: 0
+      ~ .input-holder
+        background: #3982a7
+        border-color: #3982a7
+      ~ .input-label
+        font-weight: 600
+        color: white
+      ~ .project-form-team-member-btn
+        display: inline-block
+  .input-holder
+    width: $form-group-padding
+    height: $form-group-padding
+    border-radius: 100%
+    border: solid 1px #e6e6e6
+    float: left
+    margin-left: -32px
+    overflow: hidden
+    position: relative
+    z-index: 1
+    &:after
+      content: ""
+      position: absolute
+      left: 7px
+      top: 4px
+      width: 4px
+      height: 7px
+      border-bottom: solid 2px white
+      border-right: solid 2px white
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      -o-transform: rotate(45deg)
+      transform: rotate(45deg)
+  .input-label
+    display: inline-block
+    padding-top: 3px
+    position: relative
+    z-index: 1
+
+// <-- form members checkbox
+
+// form field -->
+.form-container
+  padding: $form-group-padding $form-group-padding * 2
+
+.form-container-compact
+  padding: $form-group-padding
+
+.form-field, .form-field-gray
+  padding: $form-group-padding
+  border: solid 1px $input-border
+  +clear
+
+.form-field-gray
+  border-color: #f7f7f7
+  background-color: #f7f7f7
+
+// <-- form field
+
+// form input addon -->
+.input-group-addon-btn
+  cursor: pointer
+  &:hover
+    color: $link-hover-color
+
+// <-- form input addon
+
+// Attachment files
+// --------------------------------
+.attachment-files
+  border: solid 1px $input-border
+  background-color: #fff
+  padding: 10px 5px 0
+  font-size: 0
+  .file
+    width: 20%
+    font-size: $font-size-base
+    padding: 0 5px 10px
+    display: inline-block
+    vertical-align: top
+    +text-overflow
+    +box-sizing(border-box)
+    //@media only screen and (max-width: 800px)
+      width: 33.333%
+    //@media only screen and (max-width: 568px)
+      width: 50%
+    //@media only screen and (max-width: 320px)
+      width: 100%
+
+.project-form-team-member-btn
+  @extend .btn
+  @extend .btn-default
+  @extend .btn-xs
+  color: #fff
+  background: none
+  &, &.input-label
+    padding: 4px 6px
+    line-height: 1em
+    font-weight: normal
+  border-color: rgba(white, 0.5)
+  &:hover, &:focus
+    background-color: rgba(0, 0, 0, 0.2)
+    color: #fff
+  .project-form-team-member-btn-active-icon
+    display: none
+  &.active
+    border: 1px solid rgba(white, 0.5)
+    &, &:hover, &:focus
+      background-color: $brand-success
+      +box-shadow(none)
+    .project-form-team-member-btn-active-icon
+      display: inline-block
+    .project-form-team-member-btn-inactive-icon
+      display: none
+
+.project-form-team-member-selected-btn
+  @extend .project-form-team-member-btn
+  border-color: $gray-lighter
+  &:hover, &:focus
+    background: none
+    color: $brand-primary
+    border-color: $brand-primary
+  &.active
+    border-color: $brand-success
+    &, &:hover, &:focus
+      color: #fff
+      background-color: $brand-success
+      +box-shadow(none)
+
+// @end
+
+// Bootstrap overright
+// form groups
+.form-group
+  margin-bottom: $space-middle
+  &.underline
+    padding-bottom: $space-middle
+    border-bottom: solid 1px #e6e6e6
+  &.first-group
+    padding-top: $space-middle
+  .form-group
+    margin-bottom: $space-small
+    &.underline
+      padding-bottom: $space-small
+
+// checkbox and radio buttons
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"]
+  margin-top: 0
+
+// @end

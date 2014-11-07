@@ -1,0 +1,251 @@
+section.task-view-column
+  .title
+    width: 60%
+  .task-status
+    max-width: 40%
+  h3
+    font-size: 1.6em
+  .task-page-section-title
+    font-size: 1.3em
+    margin: 0.7em 0
+  .status-date.with_year
+    line-height: 15px
+  .is-loading
+    min-height: 0
+  .task-attachment-form
+    display: none
+  .form-group.events
+    display: none
+  > .column-content
+    #task-details
+      &.accepted, &.canceled
+        background: #f1f5f6
+    .object-details
+      > .description
+        background: #f1f5f6
+        padding: 7px 14px 10px
+        font-size: 14px
+        color: #666666
+        > p
+          color: #666666
+          font-size: 15px
+          line-height: 1.5
+        @extend %markdown-style
+      > p.files
+        line-height: 27px
+        a
+          color: #328aae
+          margin-left: 1px
+        span.all-files
+          position: relative
+          float: right
+          +has-after-icon(14px, #959595)
+            @extend .icon-paste:before
+            left: -17px
+            top: 5px
+      > p .create-from-tpl
+        padding: 5px 21px
+        -webkit-appearance: none
+        color: white
+        background: #338cae
+        border: none
+        cursor: pointer
+      > section.people-dates
+        margin:
+          top: 30px
+          bottom: 7px
+        .dates
+          padding: 10px 11px 9px 11px
+          background: #f1f5f6
+          margin-bottom: 10px
+          > p
+            +inline-block
+            width: 42%
+            padding-right: 8%
+            +clear
+            line-height: 16px
+            > *
+              display: block
+              float: left
+            a
+              text-decoration: none
+              > i.icon-bell-alt
+                margin-left: 7px
+                right: -11px
+                font-size: 14px
+                line-height: 16px
+                color: #8f9190
+                border-bottom: 1px dashed
+              &.active
+                > i.icon-bell-alt
+                  color: #f8931f
+            strong
+              font-weight: normal
+              margin-right: 7px
+              color: #98999b
+            span.with-bell
+              position: relative
+              +has-after-icon(14px, #8f9190)
+                right: -21px
+                top: 0px
+        .customer, .executor
+          +inline-block
+          width: 50%
+          color: #999999
+          line-height: 18px
+          a
+            color: #358ab1
+            line-height: 18px
+      > section.actions
+        margin:
+          top: 19px
+        line-height: 30px
+        color: #999999
+        .row
+          margin-top: 6px
+          overflow: hidden
+          a
+            padding:
+              right: 4px
+            &.cancel
+              color: #ff2021
+            ~ a
+              margin-left: 16px
+        a.accept, a.complete, a.decline, a.work, a.refuse, a.rollback
+          +inline-block(middle)
+          text-decoration: none
+          color: white
+          padding: 0 15px
+          height: 30px
+          +transition(0.4s background-color)
+        a.accept, a.work, a.rollback
+          background: #3ab54a
+          &:hover
+            background: darken(#3ab54a, 3%)
+        a.complete
+          background: #338cae
+          //:float right
+        a.decline, a.refuse
+          background: #fe1d25
+          background: #d6363b
+          &:hover
+            background: darken(#d6363b, 3%)
+        a.delegate
+          color: #358bae
+        // icons
+        a.edit, a.delete, a.convert
+          position: relative
+          padding-right: 14px
+          +has-after-icon(12px)
+            right: 0
+            top: 0px
+        a.edit
+          color: #f8931f
+          margin-right: 47px
+          &:before
+            @extend .icon-pencil:before
+            line-height: 14px
+        a.delete
+          color: #fe1d25
+          +has-after-icon(14px)
+            @extend .icon-remove:before
+            top: 1px
+        a.convert
+          float: right
+          color: #358bae
+          line-height: 15px
+          margin-top: 7px
+          padding-right: 17px
+          +has-after-icon(12px)
+            @extend .icon-share:before
+            top: 2px
+      > p.add-subtask
+        margin:
+          top: 12px
+          bottom: 16px
+
+%view-column-wide-size
+  > .column-content
+    padding:
+      left: 71px
+      right: 92px
+    .object-details
+      > section.people-dates
+        position: relative
+        .dates
+          position: absolute
+          padding: 9px 15px
+          left: 50%
+          top: 20px
+          span
+            max-width: 60%
+            &.with-bell:before
+              right: -14px
+        .customer, .executor
+          width: 25%
+      > section.actions
+        > .row
+          +inline-block
+          width: auto
+          > a
+            float: none !important
+          > a.complete, > a.edit
+            margin-left: 21px
+          > a.delete
+            margin-right: 47px
+
+.task-comments-filter
+  display: inline-block
+  position: relative
+  > input[type='checkbox']
+    margin-left: 5px
+  > input[type='checkbox'] + i
+    margin-right: 5px
+    margin-top: 6px
+
+section.reminders
+  display: none
+  +bordered
+  background: white
+  padding: 15px 14px
+  z-index: 200
+  +box-shadow(0px 2px 9px rgba(0, 0, 0, 0.2))
+  width: 312px
+  header
+    color: #999999
+    margin-bottom: 14px
+    a.close
+      margin-top: -5px
+      font-size: 16px
+      +inline-block
+      float: right
+      color: #999999
+      text-decoration: none
+  &.create-contact-window
+    width: 348px
+  &.shown
+    display: block
+  .reminders-item
+    color: #999999
+    a.destroy-reminder
+      text-decoration: none
+  .reminders-form
+    span
+      color: #8f9190
+    input[type=submit]
+      +inline-block
+      margin-top: 14px
+      margin-left: 14px
+      +button(#348dad)
+      cursor: pointer
+      float: left
+    input[type=number]
+      +bordered
+      background: #f1f5f6
+      padding: 5px 11px
+      line-height: 19px
+      height: 28px
+      +box-sizing(border-box)
+      +placeholder-color(#999999)
+      color: #666666
+      +inline-block

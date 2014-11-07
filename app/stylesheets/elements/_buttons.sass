@@ -1,0 +1,52 @@
+.community-invites-btn-base
+  @extend .btn
+  width: 20%
+  background-color: $btn-color
+  color: $base-color
+  margin-top: 0.8em
+  margin-right: 3em
+  padding-left: 4em
+  padding-right: 4em
+  font-weight: normal
+  &:hover
+    color: $base-color
+  &:active
+    color: white !important
+
+.community-invites-btn-check
+  @extend .community-invites-btn-base
+  margin-right: 4em
+  float: right
+
+.community-invites-btn-send
+  @extend .community-invites-btn-base
+  margin-top: 1.8em
+  margin-right: 4em
+  float: right
+
+.btn-file
+  position: relative
+  overflow: hidden
+  input[type="file"]
+    opacity: 0
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 0
+    font-size: 300%
+
+@each $color in white white, gray-lighter $gray-lighter, gray-light $gray-light, gray $gray, success $brand-success, danger $brand-danger, warning $brand-warning, primary $brand-primary
+  .btn-link-#{nth($color, 1)}
+    @extend .btn-link
+    color: nth($color, 2)
+    &:hover
+      color: darken(nth($color, 2), 10%)
+
+@each $color in gray-light $gray-light, gray $gray
+  .btn-outline-#{nth($color, 1)}
+    @extend .btn-default
+    color: nth($color, 2)
+    border-color: lighten(nth($color, 2), 30%)
+    &:hover, &:hover
+      color: darken(nth($color, 2), 10%)
+      border-color: lighten(nth($color, 2), 20%)

@@ -1,0 +1,122 @@
+.folders-view-column
+  @extend section.task-view-column
+  position: relative
+  //header.tab-navigation > ul > li.active
+  // //:opacity 0
+  > a.make-bigger
+    position: absolute
+    z-index: 2
+    left: -3px
+    top: -2px
+    width: 16px
+    height: 16px
+    background: #dbe3e6
+    border-radius: 3px
+    padding: 4px 2px 3px 8px
+    color: #444444
+    text-decoration: none
+    &:hover
+      color: #358bac
+  //> header ul li
+  //  :padding-left 17px
+  .column-content .object-details
+    figure
+      margin: 40px 0 23px 0
+      text-align: center
+      img
+        margin-bottom: 20px
+        max-width: 80%
+      > a
+        text-decoration: none
+        > i
+          color: #999999
+          font-size: 80px
+          line-height: 130px
+      h3
+        +text-overflow
+      p.buttons
+        margin-top: 17px
+        span
+          line-height: 30px
+          padding-left: 7px
+        a.download
+          @extend %blue-link-button
+      .folder-content
+        text-align: left
+        ul.sub-documents
+          padding-left: 15px
+        a.sub-document
+          + h3
+            padding-left: 15px
+          ~ ul.sub-documents
+            padding-left: 30px
+    > .description
+      background: #f1f5f6
+      padding: 7px 14px 24px
+      font-size: 14px
+      color: #666666
+      margin-bottom: 9px
+      textarea
+        width: 100%
+    > .stats
+      max-width: 764px
+      margin: 0 auto
+      color: #666666
+      > p
+        margin-bottom: 3px
+      > .meta
+        box-sizing: border-box
+        padding-left: 45px
+        position: relative
+        +inline-block
+        width: 50%
+        +children-inline
+        margin: 17px -5px 0 0
+        .avatar
+          position: absolute
+          left: 0
+          top: 0
+          img
+            width: 35px
+            max-width: 35px
+            +bordered
+        span
+          color: #999999
+      p.edit-remove
+        margin-top: 4px
+        a.edit
+          @extend %green-link-button
+        a.remove
+          @extend %blue-link-button
+          background: white
+          color: red
+          &:hover
+            background: #f7f5f5
+    > .comments
+      margin-top: 32px
+
+.add-ducument-topup, .add-folder-topup
+  span.flash
+    display: none
+    float: right
+    margin-top: 10px
+    font-weight: bold
+    color: #3ab54a
+  p.file
+    font-weight: bold
+    padding: 10px 0
+  textarea
+    height: 40px
+  .actions
+    margin-top: 12px
+  .info
+    > span
+      font-size: 10px
+      display: block
+      color: $defaultInfo
+      +truncate
+
+.add-folder-topup
+  left: 386px
+  label
+    margin-right: 4px

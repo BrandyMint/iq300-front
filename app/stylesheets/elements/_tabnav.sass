@@ -1,0 +1,155 @@
+header.tab-navigation
+  background: #f1f5f6
+  +bordered-bottom
+  +absoluted
+  bottom: auto
+  z-index: 12
+  +box-shadow(0 2px 12px rgba(0, 0, 0, 0.12))
+  > ul
+    width: auto
+    height: 54px
+    white-space: nowrap
+    margin-bottom: 0
+    > li
+      position: relative
+      &, a
+        +inline-block
+        height: 54px
+      > a
+        min-width: 30px
+        text-align: center
+        padding-left: 12px
+        padding-right: 12px
+        line-height: 54px
+        color: #666666
+        font-size: 12px
+        text-decoration: none
+        border-right: 1px solid transparent
+        i
+          position: relative
+          top: 1px
+          font-size: 13px
+          & + span
+            margin-left: 5px
+        &:hover
+          background: lighten(#f1f5f6, 3%)
+        &:active
+          background: #d8f7ea
+          background: #f7f7e9
+          +transition(0.5s background-color)
+      &.right
+        float: right
+        margin: 0
+        > a
+          border-right: 0 !important
+          +bordered-left
+        i
+          +inline-block(middle)
+          font-size: 19px
+          line-height: 26px
+          padding-bottom: 3px
+      & ~ li
+        margin-left: -1px
+        a
+          +bordered-left
+      &:hover
+        > a
+          background: lighten(#f1f5f6, 3%)
+          +bordered-right
+      &.active
+        background: white
+        > a
+          +bordered-right
+
+header.tab-navigation > .column-controller, .view-column .object-details .column-controller
+  overflow: hidden
+  position: absolute
+  right: 0
+  top: 0
+  width: 53px
+  height: 54px
+  &.one-row
+    height: 27px
+  +bordered-left
+  > a
+    display: block
+    float: left
+    height: 26px
+    line-height: 26px
+    text-align: center
+    color: #666666
+    > i
+      line-height: 28px !important
+    &:hover
+      color: #358bac
+      text-decoration: none
+  .u-turn-right
+    width: 100%
+    padding-top: 1px
+    height: 27px
+    line-height: 27px
+  .enlarge
+    width: 26px
+    +bordered-right
+    +bordered-bottom
+  .close-panel
+    width: 26px
+    background: #b4c7cb
+    border-bottom: 1px solid #b4c7cb
+  .printer
+    width: 26px
+    height: 27px
+    line-height: 27px
+    +bordered-right
+    > i
+      line-height: 30px !important
+  .edit
+    width: 26px
+    height: 27px
+    line-height: 27px
+
+.view-column .object-details .column-controller
+  +bordered-bottom
+  &.one-row
+    border-bottom: 0
+
+//@media only screen and (min-width: 320px) and (max-width: 640px)
+  header.tab-navigation > ul > li > a > span
+    display: none
+
+// Tab buttons
+.tab-buttons
+  padding-top: 0
+  padding-bottom: 0
+  > li
+    position: relative
+    &:first-child
+      &:before
+        display: none
+      &.active a
+        border-left: 0
+        padding-left: 16px
+    &:before
+      content: ''
+      position: absolute
+      top: 25%
+      bottom: 25%
+      left: -1px
+      width: 1px
+      background-color: #e8e8e8
+
+// @end
+
+// Tab panels
+.tab-panels
+  background-color: #fff
+  padding-left: $space-large
+  padding-right: $space-large
+
+.tab-content-wide
+  margin-left: -$space-large
+  margin-right: -$space-large
+  padding-left: $space-large
+  padding-right: $space-large
+
+// @end

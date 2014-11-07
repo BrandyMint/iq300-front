@@ -1,0 +1,121 @@
+%task-box-style
+  border-left: solid 5px #eee
+  padding: 10px 10px 10px 25px
+  //border-bottom: 1px solid $gray-lighter;
+  +box-shadow(0 1px 0 $gray-lighter)
+  cursor: pointer
+  font-size: 12px
+  +clear
+  +transition(all)
+  &:hover
+    border-left-color: $item-hover-border-color
+    background-color: $item-hover-background
+
+%task-new-style
+  border-left-color: $brand-primary
+  background-color: $new-item-background
+  &:hover
+    border-left-color: $brand-primary
+  .task-box-title-block
+    font-weight: bold
+  a
+    color: $brand-primary
+
+%task-overdued-style
+  border-left-color: $brand-danger
+  &:hover
+    border-left-color: $brand-danger
+
+.task-box
+  @extend %task-box-style
+  &:hover
+    border-top-color: transparent
+    + .task-box
+      border-top-color: transparent
+  + .task-box
+    border-top: solid 1px #eee
+  > .pull-left
+    white-space: nowrap
+    span
+      vertical-align: middle
+      &.title
+        max-width: 70%
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+        display: inline-block
+    max-width: 75%
+  .label, .status-date
+    vertical-align: middle
+  .fa-star, .icon-star-empty, .fa-star-o
+    float: left
+    margin: 3px 0 0 -23px
+  .task-details-subtasks-list &
+    padding-left: 10px
+    .star-favourite
+      display: none
+
+.task-group-title
+  color: #ccc
+  margin: 10px
+
+.task-box-user
+  white-space: nowrap
+
+.task-box-status-block
+  text-align: center
+  +center-block-container
+  .project-task-box &
+    &:before
+      display: none
+      content: none
+  //@media screen and (max-width: 768px)
+    text-align: left
+    padding-top: 10px
+
+.task-box-status-date
+  white-space: nowrap
+  position: relative
+  +center-block-content
+  display: block
+  padding: 0
+  min-height: 0
+  color: $brand-primary
+
+.task-box-status-date-days
+  font-size: 0.8em
+  //@media screen and (max-width: 768px)
+    position: inherit
+
+.task-box-status-date-hypen
+  position: absolute
+  margin-left: -$grid-gutter-width
+  width: $grid-gutter-width
+  text-align: center
+
+.task-box-title-block
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  margin-bottom: 0.2em
+
+.task-title
+  color: #000
+  font-size: 2em
+  font-weight: bold
+
+.task-new
+  @extend %task-new-style
+
+.task-overdued,
+.task-overdue
+  @extend %task-overdued-style
+  .task-box-title-block,
+  .task-box-status-date
+    color: $brand-danger
+  &.task-new
+    .task-box-title-block
+      font-weight: bold
+
+.task-with-change
+  background-color: $contentBackgroundColor

@@ -1,0 +1,116 @@
+.select-wide
+  width: 100%
+
+.select2-container .select2-choice
+  height: 30px
+  border: 1px solid $input-border
+  line-height: 30px
+  color: $text-color
+  background: #fff
+  box-shadow: none
+
+.select2-container.select2-drop-above .select2-choice
+  border-radius: $border-radius-base
+  border-bottom-color: $input-border
+  background: none
+  filter: none
+
+.select2-drop
+  margin-top: 2px
+  padding-top: 4px
+  color: #000
+  border: 1px solid $input-border
+  border-radius: $border-radius-base
+  &:before
+    content: ''
+    display: block
+    height: 2px
+    position: absolute
+    top: -3px
+    left: -1px
+    right: -1px
+    background-color: #fff
+
+.select2-drop-auto-width .select2-search
+  padding-top: 4px
+
+.select2-drop.select2-drop-above
+  margin-top: -2px
+  border: solid 1px $input-border
+  border-radius: $border-radius-base
+  &:before
+    top: auto
+    bottom: -3px
+
+.select2-drop-active
+  border-color: $input-border
+
+.select2-drop.select2-drop-above.select2-drop-active
+  border-color: $input-border
+
+.select2-container .select2-choice .select2-arrow
+  border-left: 0
+  background: none
+  filter: none
+  width: 26px
+
+.select2-container .select2-choice .select2-arrow b
+  text-align: center
+  line-height: 26px
+  background: none
+  @extend .fa
+  @extend .fa-sort-desc
+
+.select2-container.select2-drop-above .select2-choice .select2-arrow b
+  @extend .fa-sort-asc
+  line-height: 34px
+
+.select2-search
+  margin-bottom: 4px
+  @extend .fa
+  @extend .fa-search
+  &:before
+    position: absolute
+    right: 10px
+    top: 7px
+    color: $gray
+
+.select2-search input
+  @extend .form-control
+  padding-right: 20px
+  padding-left: 5px
+  background: none
+
+.select2-drop.select2-drop-above .select2-search input
+  margin-top: 0
+
+.select2-dropdown-open .select2-choice
+  background-color: $select2-bg-color
+  border-radius: $border-radius-base
+  box-shadow: 0 0 10px $select2-shadow-color inset
+
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices
+  border-color: $input-border
+  background-color: $select2-bg-color
+  box-shadow: 0 0 10px $select2-shadow-color inset
+
+.select2-results
+  padding: 0
+  margin: 0
+
+ul.select2-results li.select2-result
+  border-left: 0
+  border-right: 0
+
+.select2-results .select2-highlighted
+  background: $brand-primary
+  color: #fff
+
+.select2-results .select2-no-results,
+.select2-results .select2-searching,
+.select2-results .select2-selection-limit
+  color: $gray-light
+  text-align: center
+  padding: 5px 10px
+  border-radius: 0 0 $border-radius-base $border-radius-base

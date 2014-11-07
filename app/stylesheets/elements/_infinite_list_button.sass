@@ -1,0 +1,21 @@
+.infinite-list-button-container
+  margin-top: 10px
+  width: 100%
+  text-align: center
+  a.infinite-list-button
+    +inline-block
+    +gradient(#fcfcfc, #f8f8f8)
+    cursor: pointer
+    padding: 0 15px
+    height: 32px
+    line-height: 32px
+    font-size: 12px
+    font-weight: bold
+    color: #666666
+    border: 1px solid #cccccc
+    text-align: center
+    width: 90%
+    &:hover
+      text-decoration: none
+      +gradient(darken(#fcfcfc, 3%), darken(#f8f8f8, 3%))
+      border: 1px solid darken(#cccccc, 3%)

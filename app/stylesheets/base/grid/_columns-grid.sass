@@ -1,0 +1,255 @@
+=switcher-states($filters, $list, $view)
+  > .top-panel
+    @if $filters
+      > .pull-left
+        > a.add-button.big
+          display: inline-block
+    @else
+      > .pull-left
+        a.add-button.small
+          display: inline-block
+        a.collapsed
+          display: inline-block
+  ul.display-mode
+    @if $filters
+      a[mode=filters]
+        @extend %active-switcher-button
+    @if $list
+      a[mode=list]
+        @extend %active-switcher-button
+    @if $view
+      a[mode=view]
+        @extend %active-switcher-button
+
+.content-global
+  > .top-panel
+    height: inherit
+    > .pull-left
+      > span.community
+        padding: 12px
+  > .filters-column
+    width: $filtersColumnWidth
+    background-color: #f9f9f9
+    +transition(opacity 0.25s ease-out)
+  > .list-column
+    width: $listColumnWidth
+    &.animated
+      +transition(width 0.2s)
+  > .view-column
+    margin-left: $navColumnWidth + $filtersColumnWidth + $listColumnWidth
+    &.animated
+      +transition(width 0.2s)
+    .favorite
+      display: inline-block
+      float: left
+      margin-left: -30px
+  // # # #
+  &[filters=true][list=true][view=true]
+    +switcher-states(true, true, true)
+    > .task-view-column
+      .subtasks section
+        @extend %list-column-short-flexible
+    .list-column
+      margin-left: $filtersColumnWidth
+  &[filters=true][list=true]
+    & > .view-column
+      margin-left: $navColumnWidth + $listColumnWidth
+  // # # .
+  &[filters=true][list=true][view=false]
+    +switcher-states(true, true, false)
+    > .view-column
+      display: none
+    > .list-column
+      margin-left: $navColumnWidth + $filtersColumnWidth
+      float: none !important
+      width: auto
+      &.tasks-list-column
+        @extend %list-column-wide-size
+      &.contacts-list-column
+        @extend %contact-list-wide
+      &.communities-list-column
+        @extend %communities-list-wider
+      &.conversations-list-column
+        @extend %conversations-list-wide
+  // # . .
+  &[filters=true][list=false][view=false]
+    +switcher-states(true, false, false)
+    > .list-column, > .view-column
+      display: none
+    > .filters-column
+      display: block
+  // . # #
+  &[filters=false][list=true][view=true]
+    +switcher-states(false, true, true)
+    > .filters-column
+      display: none
+    > .list-column
+      width: $wideListColumnWidth
+      &.tasks-list-column
+        width: $listColumnWidth
+        & + .view-column
+          margin-left: $navColumnWidth + $listColumnWidth !important
+      &.contacts-list-column
+        @extend %contact-list-wide
+      &.communities-list-column
+        @extend %communities-list-wide
+      &.conversations-list-column
+        @extend %conversations-list-wide
+    > .view-column
+      margin-left: $navColumnWidth + $wideListColumnWidth
+      @extend %view-column-middle-size
+      &.task-view-column
+        .subtasks section
+          @extend %list-column-short-flexible
+  // . . #
+  &[filters=false][list=false][view=true]
+    +switcher-states(false, false, true)
+    > .filters-column
+      display: none
+    > .list-column
+      display: none
+    > .view-column
+      margin-left: $navColumnWidth
+      @extend %view-column-wide-size
+      &.task-view-column
+        .subtasks section
+          @extend %list-column-wide-size
+  // . # .
+  &[filters=false][list=true][view=false]
+    +switcher-states(false, true, false)
+    > .filters-column, > .view-column
+      display: none
+    > .list-column
+      margin-left: $navColumnWidth
+      float: none !important
+      width: auto
+      &.tasks-list-column
+        @extend %list-column-wide-size
+      &.contacts-list-column
+        @extend %contact-list-wider
+      &.communities-list-column
+        @extend %communities-list-wider
+      &.conversations-list-column
+        @extend %conversations-list-wide
+  // # . #
+  &[filters=true][list=false][view=true]
+    +switcher-states(true, false, true)
+    > .list-column
+      display: none
+    > .view-column
+      margin-left: $navColumnWidth + $filtersColumnWidth
+      @extend %view-column-middle-size
+      &.task-view-column
+        .subtasks section
+          @extend %list-column-wide-size
+  // . . .
+  &[filters=false][list=false][view=false]
+    +switcher-states(false, false, false)
+    > section
+      display: none
+    > .top-panel
+      display: block
+
+//@media only screen and (max-width: 960px)
+  .content-global
+    &[view=true]
+      > .list-column
+        display: none
+      &[filters=true]
+        > .view-column
+          margin-left: $navColumnWidth
+      &[filters=false]
+        > .view-column
+          margin-left: 0 !important
+
+//@media only screen and (max-width: 800px)
+  .content-global
+    &[filters=true][list=true][view=false], &[filters=false][list=true][view=false]
+      > .list-column
+        &.tasks-list-column
+          > ul > li
+            > .id
+              width: percentage(95 / 907)
+            > .name
+              width: percentage(618 / 907)
+            > .end_date
+              width: percentage(152 / 907)
+            > .status, > .community, > .favorite
+              display: none
+
+//@media only screen and (min-width: 320px) and (max-width: 800px)
+  .content-global
+    .filters-column
+      display: block !important
+      position: fixed
+      top: 0
+      right: 0
+      z-index: -2
+      +opacity(0)
+    &[view=true]
+      .list-column
+        display: none
+    &[filters=true][list=true][view=false]
+      > .list-column
+        margin-left: $navColumnWidth
+    &[filters=true][list=true][view=true]
+      > .view-column
+        margin-left: $navColumnWidth
+    &[filters=false][list=true][view=true]
+      > .view-column
+        margin-left: $navColumnWidth !important
+        > .column-content
+          padding-left: 0
+          padding-right: 0
+    &[filters=true][list=false][view=true], &[filters=false][list=false][view=true]
+      > .view-column
+        margin-left: $navColumnWidth
+        > .column-content
+          padding-left: 0
+          padding-right: 0
+          .object-details
+            > .people-dates
+              position: static
+              .dates
+                position: static
+                padding: 10px 11px 9px 11px
+                span
+                  max-width: auto
+                  &.with-bell:before
+                    right: -21px
+              .customer, .executor
+                width: 50%
+            > .actions
+              > .row
+                display: block
+                width: auto
+                > a
+                  float: left
+                  &.cancel
+                    color: #ff2021
+                  &:first-child
+                    margin-left: 0
+  .show-filters
+    right: $filtersColumnWidth
+    .content-global
+      .filters-column
+        z-index: -1
+        +opacity(1)
+
+//@media only screen and (min-width: 320px) and (max-width: 480px)
+  .content-global
+    padding-top: 46px
+    &[filters=true][list=true][view=false], &[filters=false][list=true][view=false]
+      > .list-column
+        margin-left: 0
+    &[filters=false][list=true][view=true], &[filters=true][list=true][view=true]
+      > .list-column
+        display: none
+      > .view-column
+        margin-left: 0 !important
+    &[filters=false][list=false][view=true], &[filters=true][list=false][view=true]
+      > .view-column
+        margin-left: 0px !important
+        > .column-content
+          padding-left: 0
+          padding-right: 0

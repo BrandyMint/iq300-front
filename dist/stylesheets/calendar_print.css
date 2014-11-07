@@ -6,4 +6,4 @@
  * FullCalendar v2.0.0-beta2 Print Stylesheet
  * Docs & License: http://arshaw.com/fullcalendar/
  * (c) 2013 Adam Shaw
- */.fc-event{background:#fff !important;color:#000 !important}.fc-event-bg{display:none !important}.fc-event .ui-resizable-handle{display:none !important}html,body{font-size:13px;font-family:Arial, sans-serif;line-height:19px}.header{margin-bottom:15px}.header a{margin-left:15px}.calendar-page{width:950px}@media print{.header img{float:right}.header a.print,.header a.back{display:none}.fc-header-right{display:none}}
+ */.fc-event{background:#fff !important;color:#000 !important}.fc-event-bg{display:none !important}.fc-event .ui-resizable-handle{display:none !important}html,body{font-size:13px;font-family:Arial, sans-serif;line-height:19px}.header{margin-bottom:15px}.header a{margin-left:15px}.calendar-page{width:950px}

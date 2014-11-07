@@ -1,0 +1,163 @@
+$spx: 907
+
+// when smallest screen its 891
+
+=width-percent($val)
+  width: percentage($val / $spx)
+
+=padding-left-percent($val)
+  padding-left: percentage($val / $spx)
+
+=padding-right-percent($val)
+  padding-right: percentage($val / $spx)
+
+section.conversations-list-column
+  > ul.infinite-list
+    position: absolute
+    top: 45px
+    bottom: 0
+    overflow-y: auto
+    overflow-x: hidden
+  > ul
+    > li
+      line-height: 58px
+      > div
+        line-height: 58px
+        height: auto
+        min-height: 58px
+      > .sender
+        position: relative
+        vertical-align: top
+        width: 92%
+        padding:
+          left: 4%
+          right: 4%
+        sup
+          position: absolute
+          top: 22px
+          left: 24px
+          @extend %buble-counter
+        .image
+          position: absolute
+          left: 0
+          top: -1px
+          height: 36px
+          img
+            max-width: 36px
+            max-height: 36px
+            vertical-align: top
+        .name
+          position: relative
+          margin:
+            top: 7px
+            bottom: 11px
+          height: 40px
+          line-height: 20px
+          span
+            display: block
+            +text-overflow
+          > a
+            display: inline-block
+            position: relative
+            top: 3px
+            font:
+              size: 12px
+            padding:
+              left: 50px
+          > span
+            position: relative
+            color: #999999
+            font:
+              size: 10px
+            margin:
+              left: 50px
+      > .body
+        color: #666666
+        > p
+          padding:
+            top: 12px
+            bottom: 14px
+          line-height: 16px
+      > .body, > .attachment, > .remove
+        display: none
+      > .remove
+        line-height: 42px
+        font:
+          size: 15px
+        color: #cccccc
+        text:
+          align: right
+      > .attachment
+        height: 58px
+        line-height: 60px
+        font-size: 18px
+        color: #666666
+        text:
+          align: center
+      &.new
+        background: #e3ebed
+        > .body
+          font:
+            weight: bold
+        > .remove
+          color: #999999
+      &.active
+        > .sender > .name
+          > a
+            color: white
+            font:
+              weight: bold
+          > span
+            color: #cccccc
+        > .body
+          color: white
+        &:before
+          top: 19px
+    > li.header
+      font:
+        size: 14px
+      line-height: 44px
+      +box-shadow(0 2px 5px rgba(black, 0.1))
+      > div
+        line-height: 44px
+        min-height: 44px
+    &:after
+      width: 0
+
+// MIDDLE size mixin
+%conversations-list-middle
+  > ul > li
+    > .body
+      width: 275px
+
+// WIDE size mixin (full width)
+%conversations-list-wide
+  //:width 907px !important
+  > ul > li
+    > div
+      padding:
+        left: 2%
+        right: 2%
+    > .sender
+      width: 30%
+    > .body, > .attachment
+      display: inline-block
+    > .body
+      width: 44%
+    > .attachment, > .remove
+      width: 5%
+    &:hover
+      > .remove
+        display: inline-block
+
+%conversations-list-short
+  // total 347px
+  > ul > li
+    > .body, > .attachment, > .remove
+      padding:
+        right: percentage(5 / 347)
+        left: percentage(6 / 347)
+      width: percentage(235 / 347)
+      display: inline-block
+    > .attachment, > .remove
+      width: percentage(25 / 347)
