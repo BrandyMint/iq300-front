@@ -1,0 +1,14 @@
+- id = 1 + rand(6000)
+- status = locals[:status] || ''
+- children_count = locals[:children_count] || 0
+
+.notification-list-item-block{role: "#{children_count > 1 ? 'notification-list-item-block' : ''}"}
+  .notification-list-item{class: "notifications-list-item-#{status}"}
+    = partial 'notifications/list/list_item_body', locals: {type: type, type_activity: type_activity, children_count: children_count, id: id}
+  - if children_count > 1
+    .notification-list-item-group.collapse{role: 'notification-list-item-group'}
+      - for i in 0..3
+        .notification-list-item
+          = partial 'notifications/list/list_item_body', locals: {type: type, type_activity: type_activity}
+
+

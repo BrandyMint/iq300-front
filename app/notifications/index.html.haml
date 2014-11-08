@@ -7,30 +7,18 @@ body_class: notifications-index
   = partial 'notifications/top_panel'
   = partial 'shared/navigation', locals: {active: 'notifications'}
   %section.list-column.notifications-list-column{"data-channel" => "presence-4:notifications", "data-url" => "/notifications", "role-notifications-list-column" => "ready"}
-    %h4.notifications-list-column-title
-      12 мая 2014
-    .row
-      .notification-list-item.notifications-list-item-new
-        .col-md-1
-          15:01
-        .col-md-5
-          .notification-list-item-title
-            %a.notification-name
-              Наладка инфраструктуры для Минкомсвязи
-            %strong.notification-type
-              Проект
-        .col-md-6
-          .notification-list-item-description
-            .row
-              Сменился исполнитель задачи
-              %a
-                Согласование Тех.задания (25 июля 15:40)
-            .row
-              Новый исполнитель:
-              %a
-                %img.notifications-list-item-user-image{src: "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/398/normal_25f93167-06f4-430e-b8ab-a03310342da3.jpg"}
-                Игнат Зайцев
+    .container-fluid
+      - ['Сегодня', 'Вчера', '20 октября'].each do |date|
+        %h4.notifications-list-column-title
+          = date
+        - types = {'Проект' => 'создал обсуждение в проекте', 'Задача' => 'написал комментарий', 'Сообщество' => 'приглашает вас вступить в сообщество'}
+        - types.each_pair do |type, type_activity|
+          - children_count = 2 + rand(10)
+          - ['', 'new'].each do |status|
+            = partial 'notifications/list/list_item', locals: {type: type, type_activity: type_activity, status: status, children_count: children_count}
+            = partial 'notifications/list/list_item', locals: {type: type, type_activity: type_activity, status: status, children_count: 0}
 
+  -#
     .row
       .notification-list-item.notifications-list-item-new
         .col-md-1

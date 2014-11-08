@@ -1,0 +1,43 @@
+- id = locals[:id]
+- title = 'Наладка инфраструктуры для Минкомсвязи, разработать план наладки инфраструктуры для Минкомсвязи, разработать план наладки инфраструктуры для Минкомсвязи, разработать план наладки инфраструктуры для Минкомсвязи'
+- text = 'В первую очередь взгляд останавливается на особенностях во многом похожих офисов разных дизайнерских компаний. У всех — open space, разделенный не по проектам, а по специальностям, а еще аймаки, переговорные, кухни, библиотеки и пространства для презентаций. В местах общественного пользования, помимо обязательных стендов с лучшими проектами и наградами, расставлены душевные вещички, каждая со своей историей.'
+- if rand(4) % 2 == 1
+  - status = 'new'
+- type = locals[:type]
+- type_activity = locals[:type_activity]
+- children_count = locals[:children_count] || 0
+
+.row
+  .col-md-1
+    .text-muted.notification-type
+      = type
+    %a.link-gray{href: ''}
+      %small= id
+  .col-md-3
+    .notification-list-item-title
+      %a.notification-name{href: ''}
+        = truncate(title, length: 50)
+  .col-md-7
+    .media
+      %a.pull-left{:href => "/users/203"}
+        %img.user-avatar.media-object.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", :title => "Мещеряков Александр"}
+      .media-body
+        .notification-list-item-description
+          %a{:href => "/users/203"}
+            Александр Мещеряков
+          = type_activity
+          %br
+          = truncate(text, length: 140)
+          %a{href: "/#{type}/show"}
+            Подробнее
+            %i.fa.fa-angle-right
+
+  .col-md-1
+    .notification-list-item-time
+      = "#{8 + rand(12)}:#{10 + rand(49)}"
+    - if children_count % 2 == 1
+      %a.notification-list-group-item-counter{href: '#', role: 'notification-list-group-item-counter'}
+        = children_count
+      %a.notification-list-group-item-counter{href: '#', role: 'notification-list-group-item-close', style: 'display: none;'}
+        свернуть
+
