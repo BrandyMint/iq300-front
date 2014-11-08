@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if lt IE 10]> <html class="no-js lt-ie10" lang="en-us"> <![endif]-->
+<!--[if !IE]> > <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <title>iq300 frontend</title>
+    <meta charset='utf-8' content='text/html' http-equiv='content-type'>
+    <link href="../../../stylesheets/app.css?1415454338" rel="stylesheet" type="text/css" />
+    <link href="../../../stylesheets/static_fixes.css?1415454343" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='communities-show'>
+    <div id='container'>
+      <div id='wrapper'>
+        <header class='header-global group'>
+          <a class='logo' href='/' title='IQ300 System'></a>
+          <div class='search-header' role-ready='search-form'>
+            <span class='search-button'>
+              <span class='icon-search'></span>
+            </span>
+            <form action='/projects/879' class='form-search' method='get'>
+              <!-- - b = button_tag raw("<span class='icon-search'></span>") -->
+              <!-- #{content_tag(:i)}#{i}#{b} -->
+              <i></i>
+              <input class='search-query form-control' id='search' name='search' placeholder='Поиск' role='global-search-field' type='search'>
+            </form>
+          </div>
+          <span class='app-version'>
+            sa/test &mdash; c2b3cc
+          </span>
+          <div class='user-nav'>
+            <a href='/help'>Помощь</a>
+            <a href='/users/1757'>
+              <span class='userpic'>
+                <img alt='Александр' class='userpic-image img-corrector-initialized' hide_wait_message='true' src='https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg' title='Мещеряков Александр Игоревич'>
+              </span>
+              Александр Мещеряков
+            </a>
+            <a class='fa fa-sign-out' data-method='delete' href='/users/sign_out' rel='nofollow' title='Выйти'></a>
+            <!-- %section -->
+            <!-- = render "shared/user_widget" -->
+            <!-- .help-link> -->
+            <!-- = link_to icon('question-sign'), "/help", title: t('common.help') -->
+          </div>
+          <input id='app_signed_in_user_id' name='app_signed_in_user_id' type='hidden' value='1757'>
+          <input id='pusher_app_key' name='pusher_app_key' type='hidden' value='7baa6a182eefe7314de0'>
+        </header>
+        <div class='content content-global display-mode' data-initial-action='show' filters='false' full_view='true' list='false' role-display-mode='ready' view='true'>
+          <section class='top-panel'>
+            <div class='pull-left'>
+              <a class='navigation' href='#' onclick="$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;">
+                <i class='icon-reorder'></i>
+              </a>
+              <a class='add-button small' data-popup='add-button-target' href='/communities/new'>
+                <i class='icon-plus'></i>
+              </a>
+              <a class='add-button big' data-popup='add-button-target' href='/communities/new'>
+                <i class='icon-plus'></i>
+                <span>Создать сообщество</span>
+              </a>
+            </div>
+          </section>
+          <nav class='nav-global menu-list' data-channel='presence-203:notifications' data-remote='true' role-menu-list='ready'>
+            <div class='logo'>
+              <a href='/' title='IQ300 System'>
+                <img alt='IQ300' class='image-x1 img-corrector-initialized' src='/assets/logo_x1_new-9a31dde6832d097c3c4c0b4379c75284.png'>
+                <img alt='IQ300' class='image-x2 img-corrector-initialized' src='/assets/logo_x2_new-dc0b3d331ac4645cfb0681000f683dc1.png'>
+              </a>
+            </div>
+            <ul>
+              <li class='menu-item notifications' data-extra-params='null' data-params='null' data-section='notifications' data-url='/notifications'>
+                <div class='html-notifier' data-channel='presence-203:notifications' data-redirect-url='/notifications?folder=new' data-url='/notifications.count?folder=new' role-html-notifier='ready'>
+                  <audio id='notice-audio'>
+                    <source src='/audios/notify.wav' type='audio/wav'>
+                  </audio>
+                </div>
+                <a href='/notifications'>
+                  <div class='picture'>
+                    <i class='iq-navicons-notifications'></i>
+                    <sup>1</sup>
+                  </div>
+                  <span>Уведомления</span>
+                </a>
+              </li>
+              <li class='menu-item projects not-initialize' data-extra-params='null' data-params='null' data-section='projects' data-url='/projects'>
+                <a href='/projects'>
+                  <div class='picture'>
+                    <i class='iq-navicons-projects'></i>
+                  </div>
+                  <span>Проекты</span>
+                </a>
+              </li>
+              <li class='menu-item tasks' data-extra-params='{"related":203,"overdue":true,"by_statuses":["new","browsed","refused","in_work","on_init","declined"]}' data-params='{"overview":203}' data-section='tasks' data-url='/tasks'>
+                <a href='/tasks'>
+                  <div class='picture'>
+                    <i class='iq-navicons-tasks'></i>
+                    <sup>2</sup>
+                    <sup class='overdue'>
+                      5
+                    </sup>
+                  </div>
+                  <span>Задачи</span>
+                </a>
+              </li>
+              <li class='menu-item conversations' data-extra-params='null' data-params='{"folder":"new"}' data-section='conversations' data-url='/conversations'>
+                <a href='/conversations'>
+                  <div class='picture'>
+                    <i class='iq-navicons-messages'></i>
+                  </div>
+                  <span>Сообщения</span>
+                </a>
+              </li>
+              <li class='menu-item contacts not-initialize' data-extra-params='null' data-params='null' data-section='contacts' data-url='/contacts'>
+                <a href='/contacts?folder=all'>
+                  <div class='picture'>
+                    <i class='iq-navicons-contacts'></i>
+                  </div>
+                  <span>Контакты</span>
+                </a>
+              </li>
+              <li class='active menu-item communities not-initialize' data-extra-params='null' data-params='{"folder":"new"}' data-section='communities' data-url='/communities'>
+                <a href='/communities'>
+                  <div class='picture'>
+                    <i class='iq-navicons-communities'></i>
+                  </div>
+                  <span>Сообщества</span>
+                </a>
+              </li>
+              <li class='menu-item docs not-initialize' data-extra-params='null' data-params='null' data-section='docs' data-url='/docs'>
+                <a href='/docs?folder=my'>
+                  <div class='picture'>
+                    <i class='iq-navicons-documents'></i>
+                  </div>
+                  <span>Документы</span>
+                </a>
+              </li>
+              <li class='menu-item calendars not-initialize' data-extra-params='null' data-params='null' data-section='calendars' data-url='/calendar'>
+                <a href='/calendar'>
+                  <div class='picture'>
+                    <i class='iq-navicons-calendar'></i>
+                  </div>
+                  <span>Календарь</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <section class='list-column communities-list-column' data-url='/communities' role-communities-list-column=''>
+            <div class='form-group' data-url='/communities' role='communities-list-panel'>
+              <div class='pull-left'>
+                <a class='btn btn-default' href='/communities/new'>
+                  <span class='fa fa-plus-circle'></span>
+                  Создать сообщество
+                </a>
+              </div>
+              <div class='form-group' data-url='/communities/list_panel' role='communities-list-panel'>
+                <div class='form-field'>
+                  <div class='form-group form-group-sm'>
+                    <div class='row'>
+                      <div class='col-md-3 pull-right' role='communities-sorted-panel'>
+                        <span class='text-muted control-label'>
+                          Сортировать:
+                        </span>
+                        <div class='input-group-above input-group-sm' role='sorter'>
+                          <select class='form-control' data-param='sort' id='sort' name='sort' role='sorter-value'>
+                            <option value='id'>
+                              По номеру
+                            </option>
+                            <option value='created_at'>
+                              По дате создания
+                            </option>
+                            <option value='title'>
+                              По имени
+                            </option>
+                          </select>
+                          <div class='input-group-addon btn' data-direction='desc' role='sorter-direction'>
+                            <a class='fa fa-sort-amount-desc' href='#'></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='form-group' data-scroll-container='[role=communities-list-scroll-container]' data-url='/communities' role='communities-list'></div>
+          </section>
+          <section class='view-column community-view-column' data-channel-template='private-base_community-%id%:update' data-channel='private-base_community-291:update' data-id='291' data-url='/communities' role-community-view-column='ready'>
+            <script>
+              window.gon = window.gon || {}
+              window.gon.communityId = 291 // TODO try to use gon watch:true
+              $(document).ready(function() {
+                if (false) {
+                  $('#community_members_tab a').click()
+                }
+              });
+            </script>
+            <header class='tab-navigation'>
+              <ul class='tabnav' data-container='#community-tab-pane' role-tabnav='ready'>
+                <li>
+                  <a data-target='community-details' href='/communities/291'>Детали</a>
+                </li>
+                <li id='community_tasks_tab'>
+                  <a data-target='community-tasks' href='/communities/291/tasks?initial=true'>Задачи</a>
+                </li>
+                <li id='community_projects_tab'>
+                  <a data-target='community-projects' href='/communities/291/projects?initial=true'>Проекты</a>
+                </li>
+                <li class='active' id='community_members_tab'>
+                  <a data-target='community-participants' href='/communities/291/member_users?initial=true'>Участники</a>
+                </li>
+                <li id='community_activities_tab'>
+                  <a data-target='community-activities' href='/communities/291/activities'>Активность</a>
+                </li>
+                <li>
+                  <a data-target='community-contracts' href='/communities/291/contracts?initial=true'>Договоры</a>
+                </li>
+                <li id='community_invites_tab'>
+                  <a data-target='community-invites' href='/communities/291/invites'>Приглашения</a>
+                </li>
+                <li id='community_reports_tab'>
+                  <a data-target='community-reports' href='/communities/291/reports/new'>Отчёты</a>
+                </li>
+              </ul>
+              <div class='column-controller'>
+                <a class='enlarge mode-trigger mode-trigger-initialized' href='#' mode='full-view' state='true' title='Развернуть'>
+                  <i class='icon-resize-small' data-opposite-class='icon-resize-full'></i>
+                </a>
+                <a class='close-panel mode-trigger mode-trigger-initialized' href='#' mode='view' state='true' title='Закрыть'>
+                  <i class='icon-remove'></i>
+                </a>
+                <a class='u-turn-right' data-target='community-preferences' href='/communities/291/edit' title='Настройки сообщества'>
+                  <i class='icon-cog'></i>
+                </a>
+              </div>
+            </header>
+            <div class='column-content' id='community-tab-pane'>
+              <div class='object-details' id='community-details' style='display: none;'>
+                <header>
+                  <div class='resource-watcher-subscription' data-url='/subscriptions?community_id=291' role-resource-watcher-subscription='ready'>
+                    <label class='checkbox' title='Вы не можете отписаться от уведомлений'>
+                      <input checked='checked' disabled='disabled' id='subscribe' name='subscribe' type='checkbox' value='1'>
+                      <i></i>
+                      Следить за изменениями
+                    </label>
+                  </div>
+                  <p class='membership-status'>Вы состоите в сообществе</p>
+                  <div class='community-cart'>
+                    <div class='community-avatar'>
+                      <img alt='4' class='default-community-picture img-corrector-initialized' data-default-src='/assets/logo_x2.png' src='/assets/community/4.png'>
+                    </div>
+                    <a class='destroy-button' data-target='#destroy-confirm' data-toggle='modal' href='/communities/291'>
+                      Расформировать сообщество
+                    </a>
+                    <div class='modal fade modal-initialized' data-remote='/communities/291/destroy_confirmation' data-width='760' id='destroy-confirm' tabindex='-1'>
+                      <div class='modal-header'>
+                        <button aria-hidden='true' class='close btn' data-dismiss='modal' type='button'>×</button>
+                        <h4>Вы действительно хотите расформировать сообщество Fake community?</h4>
+                      </div>
+                      <div class='modal-body'></div>
+                    </div>
+                    <div class='info'>
+                      <p>
+                        Дата создания:
+                        <span>12 августа 2014</span>
+                      </p>
+                      <p>
+                        Участников:
+                        <span>2</span>
+                      </p>
+                      <p>
+                        Проекты:
+                        <a href='/communities/291/projects'>2/2</a>
+                      </p>
+                      <p>
+                        Задачи:
+                        <span>
+                          <a href='/communities/291/tasks'>3/3</a>
+                        </span>
+                        <span>
+                          <a href='/calendar?community_id=291' title='Календарь'>
+                            <i class='icon-calendar'></i>
+                          </a>
+                        </span>
+                      </p>
+                      <p class='status'></p>
+                    </div>
+                  </div>
+                </header>
+                <p>
+                  Телефон:
+                  <a href='tel:88008888888'>88008888888</a>
+                </p>
+                <p>
+                  Эл. почта:
+                  <a href='mailto:sibsfinx@ya.ru'>sibsfinx@ya.ru</a>
+                </p>
+                <h2 class='with-icons'>
+                  Fake community
+                  <div class='icons'>
+                    <span class='favorite favorite-view' role-favorite-view='ready'>
+                      <a data-method='put' href='/favorites?base_community_id=291' rel='nofollow'>
+                        <i class='icon-star-empty'></i>
+                      </a>
+                    </span>
+                  </div>
+                </h2>
+                <section class='people'>
+                  <div class='admin'>
+                    Владелец:
+                    <div class='user'>
+                      <div class='avatar'>
+                        <img alt='Александр' class='member-box-avatar-image-small img-corrector-initialized' hide_wait_message='true' src='https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/medium_50e2e4ea-a09d-4977-8972-bf233bf0453c.jpg' style='width:34px;height:34px;' title='Мещеряков Александр '>
+                      </div>
+                      <div class='name'>
+                        <a href='/users/203' role='member-name'>Александр Мещеряков</a>
+                        <span class='user-email'>
+                          Владелец
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='moderator'>
+                    Руководитель:
+                    <div class='user'>
+                      <div class='avatar'>
+                        <img alt='Александр' class='member-box-avatar-image-small img-corrector-initialized' hide_wait_message='true' src='https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/medium_50e2e4ea-a09d-4977-8972-bf233bf0453c.jpg' style='width:34px;height:34px;' title='Мещеряков Александр '>
+                      </div>
+                      <div class='name'>
+                        <a href='/users/203' role='member-name'>Александр Мещеряков</a>
+                        <span class='user-email'>
+                          Руководитель
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <footer>
+                    <a href='/communities/291/users' onclick="$('#community_members_tab a').trigger('click'); return false;">Все участники</a>
+                  </footer>
+                </section>
+                <p class='address'>
+                  Адрес:
+                  <br>
+                  <span>test</span>
+                </p>
+              </div>
+              <div class='object-details community-participants-tab undefined' data-url='/communities/291/member_users?initial=true' id='community-participants' style='display: block;'>
+                <div class='tab-navigation with-buttons'>
+                  <ul class='tabnav' data-container='#members-tab-pane' role-tabnav='ready'>
+                    <li class='default-tab'>
+                      <a data-target='members-details' href='/communities/291/member_users'>Все участники</a>
+                    </li>
+                    <li class='active' id='community_departments_tab'>
+                      <a data-target='community-departments' href='/communities/291/departments'>Структура сообщества</a>
+                    </li>
+                    <div class='community-structure-panel-view' role-community-structure-panel=''>
+                      <div class='community-structure-panel personal-tree'>
+                        <div class='add-department-btn' ui-invite-button='ui-invite-button'>
+                          <div class='add-button popup-window' data-popup='new-department' role-popup-window='ready'>
+                            Добавить отдел
+                            <a class='small-plus-button add-tag' href='#'>
+                              <i class='icon-plus'></i>
+                            </a>
+                          </div>
+                          <div class='adding-form new-department without-left-pimp popup-window' data-focused-input='input#department_title'>
+                            <form action='#'>
+                              <ul class='errors department'></ul>
+                              <div class='input'>
+                                <label for='department_title'>
+                                  Название
+                                  <abbr>*</abbr>
+                                </label>
+                                <input id='department_title' name='department[title]' placeholde='введите название'>
+                              </div>
+                              <div class='input'>
+                                <label for='department_parent_id'>Вышестоящий отдел</label>
+                                <div class='select2-container select-two' id='s2id_department_parent_id' style='width: 100%;'>
+                                  <a class='select2-choice' href='javascript:void(0)' tabindex='-1'>
+                                    <span class='select2-chosen' id='select2-chosen-2'> </span>
+                                    <abbr class='select2-search-choice-close'></abbr>
+                                    <span class='select2-arrow' role='presentation'>
+                                      <b role='presentation'></b>
+                                    </span>
+                                  </a>
+                                  <label class='select2-offscreen' for='s2id_autogen2'>Вышестоящий отделНазначить должность</label>
+                                  <input aria-haspopup='true' aria-labelledby='select2-chosen-2' class='select2-focusser select2-offscreen' id='s2id_autogen2' role='button' type='text'>
+                                  <div class='select2-drop select2-display-none select2-with-searchbox'>
+                                    <div class='select2-search'>
+                                      <label class='select2-offscreen' for='s2id_autogen2_search'>Вышестоящий отделНазначить должность</label>
+                                      <input aria-autocomplete='list' aria-expanded='true' aria-owns='select2-results-2' autocapitalize='off' autocomplete='off' autocorrect='off' class='select2-input' id='s2id_autogen2_search' placeholder='' role='combobox' spellcheck='false' type='text'>
+                                    </div>
+                                    <ul class='select2-results' id='select2-results-2' role='listbox'></ul>
+                                  </div>
+                                </div>
+                                <select class='select-two select2-offscreen' data-allow-clear='true' id='department_parent_id' name='department[parent_id]' placeholder='выбрать из списка' role-select-two='ready' tabindex='-1' title='Вышестоящий отделНазначить должность'></select>
+                              </div>
+                              <ul class='errors contract'></ul>
+                              <div class='input'>
+                                <label for='department_boss_id'>Назначить руководителем</label>
+                                <div class='select2-container select-two' id='s2id_department_boss_id' style='width: 100%;'>
+                                  <a class='select2-choice' href='javascript:void(0)' tabindex='-1'>
+                                    <span class='select2-chosen' id='select2-chosen-3'> </span>
+                                    <abbr class='select2-search-choice-close'></abbr>
+                                    <span class='select2-arrow' role='presentation'>
+                                      <b role='presentation'></b>
+                                    </span>
+                                  </a>
+                                  <label class='select2-offscreen' for='s2id_autogen3'>Назначить руководителем</label>
+                                  <input aria-haspopup='true' aria-labelledby='select2-chosen-3' class='select2-focusser select2-offscreen' id='s2id_autogen3' role='button' type='text'>
+                                  <div class='select2-drop select2-display-none select2-with-searchbox'>
+                                    <div class='select2-search'>
+                                      <label class='select2-offscreen' for='s2id_autogen3_search'>Назначить руководителем</label>
+                                      <input aria-autocomplete='list' aria-expanded='true' aria-owns='select2-results-3' autocapitalize='off' autocomplete='off' autocorrect='off' class='select2-input' id='s2id_autogen3_search' placeholder='' role='combobox' spellcheck='false' type='text'>
+                                    </div>
+                                    <ul class='select2-results' id='select2-results-3' role='listbox'></ul>
+                                  </div>
+                                </div>
+                                <select class='select-two select2-offscreen' data-allow-clear='true' id='department_boss_id' name='department[boss_id]' placeholder='выбрать из списка' role-select-two='ready' tabindex='-1' title='Назначить руководителем'></select>
+                              </div>
+                              <section class='buttons'>
+                                <input class='green' name='commit' type='submit' value='Создать'>
+                                <a class='delete'>Отменить</a>
+                              </section>
+                            </form>
+                          </div>
+                        </div>
+                        <div class='unallocated-btn ui-droppable droppable'>
+                          <div class='btn expanded'>
+                            <div class='expander' data-target='.unallocated-workers' role-expander='ready'></div>
+                            <a>Нераспределенные</a>
+                            <span class='red counter' style='display: inline;'>1</span>
+                          </div>
+                          <div class='unallocated-workers expanded'>
+                            <div class='memberships-contract ui-draggable'>
+                              <img class='img-corrector-initialized' data-default-src='/assets/default-user-avatar.png' src='https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/186/thumb_6b7103f9-dbb7-4906-b306-eee69765bd5b.png'>
+                              <div class='name'>
+                                <a href='/users/244'>Mescheryakov Alexander</a>
+                                <div class='detailed'>
+                                  <span></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='apply-changes-view' role-apply-changes-view='ready' style='display: none;'>
+                          <div class='accept'>
+                            <span>Закончить редактирование</span>
+                            <i class='icon-ok'></i>
+                          </div>
+                          <div class='decline'>
+                            <span>Отменить</span>
+                            <i class='icon-remove'></i>
+                          </div>
+                          <div class='spinner'>
+                            <span>Сохранение...</span>
+                          </div>
+                          <div class='error'>
+                            <span>Ошибка сохранения. Новая попытка сохранения каждые 5 секунд.</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+                <div class='column-content' data-url='/communities/291/member_users' id='members-tab-pane' role-community-members='ready'>
+                  <div class='object-details' id='members-details' style='display: none;'>
+                    <section class='invite-participiant'>
+                      <div class='pull-right'>
+                        <form action='/communities/291/member_users' class='form-search' method='get' role='ui-search-members'>
+                          <input class='search-query form-control' id='search' name='search' placeholder='Поиск' role='ui-members-search-input' type='search'>
+                        </form>
+                      </div>
+                    </section>
+                    <section class='spectator'>
+                      <p>Участники:</p>
+                      <ul role='ui-infinite-list' ui-accepted-members=''>
+                        <div class='user community-member extended' role='community-member'>
+                          <div class='avatar'>
+                            <img alt='Alexander' class='member-box-avatar-image-small img-corrector-initialized' hide_wait_message='true' src='https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/186/medium_6b7103f9-dbb7-4906-b306-eee69765bd5b.png' style='width:75px;height:75px;' title='Mescheryakov Alexander'>
+                          </div>
+                          <div class='name'>
+                            <a href='/users/244'>Alexander Mescheryakov</a>
+                            <span>
+                              <span class='best_in_place' data-bip-attribute='consumer_role_id' data-bip-collection='{"1":"\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c","3":"\u0421\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a","7":"\u041e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439"}' data-bip-object='memberships_contract' data-bip-original-content='3' data-bip-type='select' data-bip-url='/communities/291/member_users/742' data-bip-value='3' id='best_in_place_memberships_contract_742_consumer_role_id'>Сотрудник</span>
+                              <i class='icon-pencil'></i>
+                              <a class='icon-remove' data-confirmation='Вы уверены, что хотите удалить участника из текущего сообщества?' data-role='action' href='/communities/291/member_users/742?do=cancel'></a>
+                            </span>
+                            <div class='extras'>
+                              <p title=''></p>
+                              <p title=''></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='user community-member extended' role='community-member'>
+                          <div class='avatar'>
+                            <img alt='Александр' class='member-box-avatar-image-small img-corrector-initialized' hide_wait_message='true' src='https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/medium_50e2e4ea-a09d-4977-8972-bf233bf0453c.jpg' style='width:75px;height:75px;' title='Мещеряков Александр '>
+                          </div>
+                          <div class='name'>
+                            <a href='/users/203'>Александр Мещеряков</a>
+                            <span>
+                              <span class='best_in_place' data-bip-attribute='consumer_role_id' data-bip-collection='{"1":"\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c","3":"\u0421\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a","7":"\u041e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439"}' data-bip-object='memberships_contract' data-bip-original-content='1' data-bip-type='select' data-bip-url='/communities/291/member_users/638' data-bip-value='1' id='best_in_place_memberships_contract_638_consumer_role_id'>Руководитель</span>
+                              <i class='icon-pencil'></i>
+                            </span>
+                            <div class='extras'>
+                              <p title='Директор'>
+                                Директор,
+                              </p>
+                              <p title='Руководство'>
+                                Руководство
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </section>
+                  </div>
+                  <div class='object-details community-departments-tab undefined' data-url='/communities/291/departments' id='community-departments' style='display: block;'>
+                    <div class='community-structure-view zero-children personal-tree' role-community-structure-view='ready'>
+                      <div class='edit-job structure-popup' style='position: fixed; left: 95.5px; top: 299.75px;'>
+                        <form action='#'>
+                          <ul class='errors'></ul>
+                          <input id='worker_id' type='hidden' value='638'>
+                          <div class='input inline'>
+                            <a class='personal-tree'>Правила постановки задач</a>
+                          </div>
+                          <div class='input inline'>
+                            <label for='worker_is_boss'>Назначить руководителем</label>
+                            <input id='worker_is_boss' name='worker[is_boss]' type='checkbox'>
+                            <i></i>
+                          </div>
+                          <div class='input'>
+                            <label for='department_parent_id'>Назначить должность</label>
+                            <div class='select2-container' id='s2id_worker_job_id' style='width: 280px;' title=''>
+                              <a class='select2-choice' href='javascript:void(0)' tabindex='-1'>
+                                <span class='select2-chosen' id='select2-chosen-8'>Директор</span>
+                                <abbr class='select2-search-choice-close'></abbr>
+                                <span class='select2-arrow' role='presentation'>
+                                  <b role='presentation'></b>
+                                </span>
+                              </a>
+                              <label class='select2-offscreen' for='s2id_autogen8'></label>
+                              <input aria-haspopup='true' aria-labelledby='select2-chosen-8' class='select2-focusser select2-offscreen' id='s2id_autogen8' role='button' type='text'>
+                              <div class='select2-drop select2-display-none select2-with-searchbox'>
+                                <div class='select2-search'>
+                                  <label class='select2-offscreen' for='s2id_autogen8_search'></label>
+                                  <input aria-autocomplete='list' aria-expanded='true' aria-owns='select2-results-8' autocapitalize='off' autocomplete='off' autocorrect='off' class='select2-input' id='s2id_autogen8_search' placeholder='' role='combobox' spellcheck='false' type='text'>
+                                </div>
+                                <ul class='select2-results' id='select2-results-8' role='listbox'></ul>
+                              </div>
+                            </div>
+                            <input class='select2-offscreen' id='worker_job_id' name='worker[job_id]' tabindex='-1' title='' type='hidden' value='287'>
+                          </div>
+                          <section class='buttons'>
+                            <input class='green' name='commit' type='submit' value='Назначить'>
+                            <a class='close'>Пропустить</a>
+                          </section>
+                        </form>
+                      </div>
+                      <ol class='departments'>
+                        <div class='root-line'></div>
+                        <div class='root-line-clear'></div>
+                        <li class='department zero-children ui-droppable droppable'>
+                          <input class='143 toggle' type='checkbox'>
+                          <input class='143 department-toggle' type='checkbox'>
+                          <div class='line 143'></div>
+                          <div class='line-child'></div>
+                          <div class='line-clear'></div>
+                          <div class='counter 143'>0</div>
+                          <div class='department-card 143'></div>
+                          <div class='expander' role-expander='role-expander'></div>
+                          <div class='d-card-title 143'>
+                            <div class='expander' role-expander='role-expander'></div>
+                            <label>
+                              <span title='Двойной щелчок для редактирования'>Руководство</span>
+                              <input>
+                            </label>
+                            <div class='options'></div>
+                          </div>
+                          <div class='d-card-body 143 ui-droppable droppable'>
+                            <div class='boss-card 143'>
+                              <div class='memberships-contract ui-draggable'>
+                                <img data-default-src='/assets/default-user-avatar.png' src='https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/thumb_50e2e4ea-a09d-4977-8972-bf233bf0453c.jpg'>
+                                <div class='name'>
+                                  <a href='/users/203'>Мещеряков Александр</a>
+                                  <div class='detailed'>
+                                    <span>Директор</span>
+                                    <div class='actions'>
+                                      <a class='edit'>
+                                        <i class='icon-reorder popup-trigger edit-job' data-model-id='638'></i>
+                                        <span class='workers-counter'>
+                                          0
+                                          <i class='icon-user'></i>
+                                        </span>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class='workers 143'></div>
+                          </div>
+                          <ol class='children 143'></ol>
+                          <div class='toggle-icon'></div>
+                          <div class='toggle-arrow'></div>
+                          <div class='toggle-block'></div>
+                        </li>
+                      </ol>
+                      <div class='personal-tree'>
+                        <div class='personal-tree-header'>
+                          <div class='title'>Правила постановки задач</div>
+                          <div class='close-btn'>
+                            <i class='icon-remove'></i>
+                          </div>
+                        </div>
+                        <div class='personal-tree-body'>
+                          <div class='masters-column'>
+                            <div class='btn dark column-title expanded'>
+                              <div class='expander' data-expand-on-init='data-expand-on-init' data-target='.task-rules-list' role-expander='ready'></div>
+                              <a>Поставщики</a>
+                              <div class='search-expander' data-expanded-class='search-expanded' data-target='.search, .search-results' role-search-expander='ready'>
+                                <i class='icon-plus'></i>
+                              </div>
+                            </div>
+                            <div class='search'>
+                              <input>
+                              <i class='icon-search'></i>
+                            </div>
+                            <div class='search-results'></div>
+                            <div class='task-rules-list expanded'></div>
+                          </div>
+                          <div class='target-column'>
+                            <div class='arrow'></div>
+                            <div class='btn expanded'>
+                              <div class='expander' data-expand-on-init='data-expand-on-init' data-target='.target' role-expander='ready'></div>
+                              <a class='department-title'>Руководство</a>
+                            </div>
+                            <div class='target expanded'>
+                              <div class='memberships-contract'>
+                                <img data-default-src='/assets/default-user-avatar.png' src='https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/thumb_50e2e4ea-a09d-4977-8972-bf233bf0453c.jpg'>
+                                <div class='name'>
+                                  <a href='/users/203'>Мещеряков Александр</a>
+                                  <div class='detailed'>
+                                    <span>Директор</span>
+                                    <div class='actions'>
+                                      <a class='edit'>
+                                        <i class='icon-reorder popup-trigger edit-job' data-model-id='638'></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class='arrow'></div>
+                          </div>
+                          <div class='slaves-column'>
+                            <div class='btn dark column-title expanded'>
+                              <div class='expander' data-expand-on-init='data-expand-on-init' data-target='.task-rules-list' role-expander='ready'></div>
+                              <a>Исполнители</a>
+                              <div class='search-expander' data-expanded-class='search-expanded' data-target='.search, .search-results' role-search-expander='ready'>
+                                <i class='icon-plus'></i>
+                              </div>
+                            </div>
+                            <div class='search'>
+                              <input>
+                              <i class='icon-search'></i>
+                            </div>
+                            <div class='search-results'></div>
+                            <div class='task-rules-list expanded'></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../../../javascripts/static.js?1415454353" type="text/javascript"></script>
