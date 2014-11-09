@@ -46,15 +46,13 @@
   ~ section.search-user-for-community {
     z-index: 201;
   }
-  > form {
-    > span.twitter-typeahead {
-      width: 293px;
-      height: 36px;
-      display: inline-block;
-      > input#search {
-        width: 357px !important;
-      }
+  .twitter-typeahead {
+    width: 100%;
+    > input#search {
+      width: 357px !important;
     }
+  }
+  > form {
     > button[type=submit] {
       width: 36px;
       height: 36px;

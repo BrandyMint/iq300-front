@@ -1,0 +1,390 @@
+// Old styles
+// TODO refactor this
+
+.filters-column {
+  background: $filters-column-background;
+  overflow: hidden;
+  position: absolute;
+  z-index: $filters-column-z-index;
+  left: $navColumnWidth;
+  @extend %list-column-shadow;
+  ul.with-subfolders {
+    background: $borderColor;
+    .counter {
+      display: none;
+    }
+    > li {
+      position: relative;
+      line-height: 34px;
+      border: 1px solid transparent;
+      > .expander {
+        @include inline-block;
+        width: 34px;
+        height: 34px;
+        cursor: pointer;
+        position: relative;
+        background: #b3c6ca;
+        @include unselectable;
+        @include has-after-icon(15px, #666666) {
+          @include absoluted;
+          line-height: 34px;
+          text-align: center;
+          @extend .icon-chevron-right:before;
+        }
+
+        & + a, & + strong {
+          margin-left: 35px;
+          margin-top: -34px;
+        }
+      }
+      > a, > strong {
+        display: block;
+        height: 34px;
+        line-height: 35px;
+        font-weight: bold;
+        color: #666666;
+        background: #b3c6ca;
+        padding-left: 15px;
+        &.without-expander {
+          padding-left: 35px;
+        }
+        @include unselectable;
+        text-decoration: none;
+        &.but-skinny {
+          font-weight: normal;
+        }
+      }
+      > span {
+        position: absolute !important;
+        right: 10px;
+        &.grey-counter {
+          top: (34px - 14px) / 2;
+        }
+        &.counter {
+          top: (34px - 20px) / 2;
+        }
+      }
+      // modificators
+      &.flat, &.nested {
+        position: relative;
+        // verical line
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          z-index: 10;
+          width: 1px;
+          top: 0;
+          height: 34px;
+          left: 34px;
+          background: $borderColor;
+        }
+        &:hover:after {
+          background: #338cae !important;
+        }
+        &.active:after {
+          background: $borderColor !important;
+        }
+      }
+      &.flat {
+        > a, > strong {
+          padding-left: 50px;
+        }
+      }
+      &.expanded {
+        //:background #cad9dc
+        > .expander {
+          background: #dbe3e6;
+          &:before {
+            @extend .icon-chevron-down:before;
+            color: #666666 !important;
+          }
+        }
+        ul.with-subfolders li {
+          > a, > strong, > .expander {
+            background: #cad9dc;
+          }
+          &.active {
+            > a, > strong, > .expander {
+              background: #338cae;
+            }
+            &.expanded {
+              > .expander {
+                background: #cad9dc;
+              }
+            }
+          }
+        }
+        &.active > .expander {
+          background: #dbe3e6;
+        }
+        &.flat, &.nested {
+          &.active:after {
+            background: #338cae;
+          }
+        }
+      }
+      & + li {
+        margin-top: -1px;
+      }
+      &:hover {
+        z-index: 8;
+        border-color: #338cae;
+        > ul {
+          border-color: #338cae !important;
+        }
+      }
+      &.active {
+        border-color: #338cae;
+        z-index: 8;
+        &, > * {
+          position: relative;
+        }
+        > * {
+          z-index: 8;
+        }
+        @include has-after-icon(21px, #e1ecf0) {
+          @extend .icon-caret-left:before;
+          right: -1px;
+          top: 7px;
+          width: 7px;
+          overflow: hidden;
+          z-index: 10;
+        }
+
+        > .expander {
+          background: #338cae;
+          &:before {
+            color: white;
+          }
+        }
+        > a, > strong {
+          color: #f2f4f1;
+          background: #338cae;
+        }
+        > ul {
+          border-color: #338cae !important;
+        }
+      }
+    }
+  }
+  ul.with-subfolders {
+    ul {
+      border: 1px solid transparent;
+      margin: -1px;
+      margin-top: 0;
+      display: none;
+      li {
+        border: 1px solid transparent;
+        margin: -1px;
+        line-height: 34px;
+        position: relative;
+        &:hover {
+          z-index: 9;
+          border-color: #338cae;
+        }
+      }
+    }
+    li.expanded {
+      > ul {
+        display: block;
+      }
+      ul.flat {
+        > li {
+          &:hover > a {
+            background: lighten(#dbe3e6, 4%);
+          }
+          a {
+            display: block;
+            @include truncate;
+            padding-left: 35px;
+            background: #dbe3e6;
+            color: #666666;
+            line-height: 34px;
+            text-decoration: none;
+          }
+          span {
+            position: absolute !important;
+            right: 10px;
+            &.grey-counter {
+              top: (34px - 14px) / 2;
+            }
+            &.counter {
+              top: (34px - 20px) / 2;
+            }
+          }
+          &.red {
+            a {
+              color: #ff0101;
+            }
+          }
+          & + li {
+            margin-top: -1px;
+          }
+          &.active {
+            z-index: 9;
+            border-color: #338cae;
+            &, > * {
+              position: relative;
+            }
+            > * {
+              z-index: 8;
+            }
+            @include has-after-icon(21px, #e1ecf0) {
+              @extend .icon-caret-left:before;
+              right: -2px;
+              top: 7px;
+              z-index: 10;
+            }
+
+            > a {
+              color: #f2f4f1;
+              background: #338cae;
+            }
+            &.red > a {
+              color: #ff0101;
+            }
+          }
+        }
+      }
+    }
+  }
+  ul > li > span.counter {
+    @extend %buble-counter;
+    &.overdue {
+      color: $brand-danger;
+      border-color: $brand-danger;
+      &.has-overview {
+        right: 35px;
+      }
+    }
+  }
+  ul > li > span.grey-counter {
+    background: #a1b8be;
+    color: white;
+    line-height: 14px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 3px;
+  }
+  ul.with-subfolders {
+    > li.filters {
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 0;
+        right: 0;
+        height: 34px;
+        background: #b4c7cb;
+      }
+      > * {
+        position: relative;
+        z-index: 8;
+      }
+      > .add {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 34px;
+        width: 35px;
+        text-align: center;
+        border-left: 1px solid $borderColor;
+        cursor: pointer;
+        @include has-after-icon(17px, #666666) {
+          @extend .icon-search:before;
+          @include absoluted;
+          width: 35px;
+          line-height: 34px;
+          text-align: center;
+        }
+      }
+      &.expanded > .add {
+        background: #cad9dc;
+      }
+      > .search {
+        background: #cad9dc;
+        padding: 4px;
+        @include bordered;
+        > input {
+          @include bordered;
+          background: #f1f5f6;
+          width: 158px;
+          padding: 3px 5px;
+          line-height: 18px;
+        }
+      }
+      > .communities-search {
+        background: #dae2e5;
+        @include children-inline;
+        @include bordered-bottom;
+        input {
+          margin: 4px;
+          @include bordered;
+          padding: 3px 3px 3px 8px;
+          font-size: 11px;
+          line-height: 18px;
+          width: 123px;
+        }
+        button {
+          background: transparent;
+          border: none;
+          @include bordered-left;
+          width: 34px;
+          height: 34px;
+          position: relative;
+          cursor: pointer;
+          @include has-after-icon(17px, #666666) {
+            @extend .icon-search:before;
+            @include absoluted;
+            width: 35px;
+            line-height: 34px;
+            text-align: center;
+          }
+        }
+      }
+      > ol {
+        padding-top: 10px;
+        background: #cad9dc;
+        > li {
+          padding: 5px 0;
+          line-height: 24px;
+          > * {
+            @include inline-block(middle);
+          }
+          div.checkbox {
+            @extend %fake-blue-ok-checkbox;
+            margin-left: 10px;
+          }
+          div.label {
+            margin-left: 7px;
+            font-size: 11px;
+            color: #666867;
+            @include truncate;
+            width: 108px;
+            @include unselectable;
+            cursor: pointer;
+          }
+          span {
+            background: #a1b8be;
+            color: white;
+            line-height: 14px;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 0 3px;
+          }
+        }
+      }
+      > .search, > ol {
+        display: none;
+      }
+      &.expanded {
+        > .search, > ol {
+          display: block;
+        }
+      }
+    }
+  }
+}
