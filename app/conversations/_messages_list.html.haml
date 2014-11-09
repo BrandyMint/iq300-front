@@ -4,6 +4,7 @@
 .content-group
   .messages-list
     = partial 'conversations/messages_list_item', locals: {message_status: 'new', user_status: 'online'}
+    = partial 'conversations/messages_list_item', locals: {user_status: 'offline', author: 'Александр Мещеряков', from_current_user: true, files: ['file1.doc', 'file2.doc']}
     = partial 'conversations/messages_list_item', locals: {user_status: 'online'}
     = partial 'conversations/messages_list_item', locals: {user_status: 'offline', files: ['file1.doc', 'file2.doc']}
 

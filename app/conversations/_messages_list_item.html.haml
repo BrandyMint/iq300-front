@@ -2,8 +2,10 @@
 - user_status = locals[:user_status] || 'offline'
 - files = locals[:files]
 - message_status = locals[:message_status] || ''
+- from_current_user = locals[:from_current_user]
+- author = locals[:author] || 'Алексеева Лиана'
 
-.message-box.tab-content-wide{class: "message-box-#{message_status}"}
+.message-box.tab-content-wide{class: "message-box-#{message_status} #{from_current_user ? 'message-box-from-current-user' : ''}"}
   .media
     .pull-left
       .message-box-user-avatar
@@ -14,7 +16,7 @@
       .message-box-header
         .row
           .col-xs-11
-            %h4 Алексеева Лиана
+            %h4= author
             %p.text-muted 21 июля, 14:59
           .col-xs-1.text-right
             - if message_status == 'new'
