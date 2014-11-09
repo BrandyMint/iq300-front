@@ -60,6 +60,13 @@
 		float: left;
 		margin: 3px 0 0 -23px;
 	}
+  .task-details-subtasks-list & {
+    padding-left: 10px;
+    .star-favourite {
+      display: none;
+    }
+  }
+
 }
 
 .task-group-title {
