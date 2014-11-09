@@ -1,5 +1,8 @@
 .message-box {
   padding: 20px;
+  &.message-box-from-current-user {
+    background-color: darken($gray-lighter, 3%);
+  }
   &.message-box-new {
     background-color: lighten($brand-primary, 53%);
   }
