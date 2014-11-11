@@ -1,0 +1,3234 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 lt-ie9" lang="en-us"> <![endif]-->
+<!--[if lt IE 10]> <html class="no-js lt-ie10" lang="en-us"> <![endif]-->
+<!--[if !IE]> > <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <title>iq300 frontend</title>
+    <meta charset='utf-8' content='text/html' http-equiv='content-type'>
+    <link href="../stylesheets/app.css?1415703133" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/static_fixes.css?1415702781" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='projects-index'>
+    <div id='container'>
+      <div id='wrapper'>
+        <header class='header-global group'>
+          <a class='logo' href='/' title='IQ300 System'></a>
+          <div class='search-header' role-ready='search-form'>
+            <span class='search-button'>
+              <span class='icon-search'></span>
+            </span>
+            <form action='/projects/879' class='form-search' method='get'>
+              <!-- - b = button_tag raw("<span class='icon-search'></span>") -->
+              <!-- #{content_tag(:i)}#{i}#{b} -->
+              <i></i>
+              <input class='search-query form-control' id='search' name='search' placeholder='Поиск' role='global-search-field' type='search'>
+            </form>
+          </div>
+          <span class='app-version'>
+            sib/feature/tour &mdash; 77ba44
+          </span>
+          <div class='user-nav'>
+            <a href='/help'>Помощь</a>
+            <a href='/users/1757'>
+              <span class='userpic'>
+                <img alt='Александр' class='userpic-image img-corrector-initialized' hide_wait_message='true' src='https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg' title='Мещеряков Александр Игоревич'>
+              </span>
+              Александр Мещеряков
+            </a>
+            <a class='fa fa-sign-out' data-method='delete' href='/users/sign_out' rel='nofollow' title='Выйти'></a>
+            <!-- %section -->
+            <!-- = render "shared/user_widget" -->
+            <!-- .help-link> -->
+            <!-- = link_to icon('question-sign'), "/help", title: t('common.help') -->
+          </div>
+          <input id='app_signed_in_user_id' name='app_signed_in_user_id' type='hidden' value='1757'>
+          <input id='pusher_app_key' name='pusher_app_key' type='hidden' value='7baa6a182eefe7314de0'>
+        </header>
+        <div class='content content-global display-mode display-mode-initialized' data-initial-action='index' filters='true' full_view='true' list='true' view='false'>
+          <nav class='nav-global menu-list menu-list-initialized' data-channel='presence-1757:notifications' data-remote='true'>
+            <div class='logo'>
+              <a href='/' title='IQ300 System'>
+                <img alt="" width="95" height="95" src="../images/logo_x1_new.png?1415702781" />
+                <img alt="" width="190" height="190" src="../images/logo_x2_new.png?1415702781" />
+              </a>
+            </div>
+            <ul>
+              <li class='menu-item notifications'>
+                <a href="/notifications/"><div class='picture'>
+                  <i class='iq-navicons-notifications'></i>
+                  <sup>9</sup>
+                  <sup class='overdue'>3</sup>
+                </div>
+                <span>Уведомления</span>
+                </a>
+              </li>
+              <li class='active menu-item projects'>
+                <a href="/projects/"><div class='picture'>
+                  <i class='iq-navicons-projects'></i>
+                </div>
+                <span>Проекты</span>
+                </a>
+              </li>
+              <li class='menu-item tasks'>
+                <a href="/tasks/"><div class='picture'>
+                  <i class='iq-navicons-tasks'></i>
+                </div>
+                <span>Задачи</span>
+                </a>
+              </li>
+              <li class='conversations menu-item'>
+                <a href="/conversations/"><div class='picture'>
+                  <i class='iq-navicons-messages'></i>
+                </div>
+                <span>Сообщения</span>
+                </a>
+              </li>
+              <li class='contacts menu-item'>
+                <a href="/contacts/"><div class='picture'>
+                  <i class='iq-navicons-contacts'></i>
+                </div>
+                <span>Контакты</span>
+                </a>
+              </li>
+              <li class='communities menu-item'>
+                <a href="/communities/"><div class='picture'>
+                  <i class='iq-navicons-communities'></i>
+                </div>
+                <span>Сообщества</span>
+                </a>
+              </li>
+              <li class='docs menu-item'>
+                <a href="/docs/"><div class='picture'>
+                  <i class='iq-navicons-documents'></i>
+                </div>
+                <span>Документы</span>
+                </a>
+              </li>
+              <li class='calendar menu-item'>
+                <a href="/calendar/"><div class='picture'>
+                  <i class='iq-navicons-calendar'></i>
+                </div>
+                <span>Календарь</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <section class='projects-filters-column filters-column filters-label section-navigation' role='tasks-filter'>
+            <ul class='with-subfolders tasks-filter' data-channel='presence-203:base_tasks'>
+              <li class='active all folder'>
+                <a>Все проекты</a>
+              </li>
+              <li class='draft folder'>
+                <a>Инициализация</a>
+              </li>
+              <li class='folder scenario'>
+                <a>Планирование</a>
+              </li>
+              <li class='folder in_work'>
+                <a>В работе</a>
+              </li>
+              <li class='folder templates'>
+                <a>Шаблоны</a>
+              </li>
+              <li class='completed folder'>
+                <a>Выполненные</a>
+              </li>
+              <li class='deleted folder'>
+                <a>Удалённые</a>
+              </li>
+            </ul>
+          </section>
+          <section class='projects-list-column form-container-compact' data-channel='presence-1757:projects' data-list-with-scroll='true' data-url='/projects'>
+            <div class='projects-list-header' role='projects-list-header'>
+              <div class='form-group' data-channel='presence-203:base_tasks' data-url='/tasks/list_panel' role='tasks-list-panel'>
+                <div class='page-title mbm'>
+                  <div class='row'>
+                    <div class='col-xs-4'>
+                      <h2>
+                        Мои проекты
+                        <small>2</small>
+                      </h2>
+                    </div>
+                    <div class='col-xs-4 text-center'>
+                      <a class='btn btn-default projects-list-header-filters-btn' role='projects-list-header-filters-btn'>
+                        <i class='fa fa-filter'></i>
+                        Фильтры
+                      </a>
+                    </div>
+                    <div class='col-xs-4 text-right'>
+                      <a class='btn btn-default' href='../projects/new/'>
+                        <span class='fa fa-plus-circle'></span>
+                        Новый проект
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='form-group projects-list-filters' role='projects-list-filters'>
+                <div class='form-field'>
+                  <div class='form-group'>
+                    <div class='row'>
+                      <div class='col-md-3'>
+                        <select class='form-control'>
+                          <option selected=''>Все сообщества</option>
+                        </select>
+                      </div>
+                      <div class='col-md-3'>
+                        <select class='form-control'>
+                          <option selected=''>Все руководители</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='form-group form-group-sm'>
+                    <div class='row'>
+                      <div class='col-md-3'>
+                        <div class='input-group input-group-sm'>
+                          <span class='text-muted control-label'>Группировать:</span>
+                          <select class='form-control'>
+                            <option selected=''>Без группировки</option>
+                            <option>По важности</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class='col-md-3 pull-right'>
+                        <span class='text-muted control-label'>Сортировать:</span>
+                        <div class='input-group-above input-group-sm' role='sorter'>
+                          <select class='form-control'>
+                            <option selected=''>По номеру</option>
+                            <option>По последней активности</option>
+                            <option>По дедлайну</option>
+                          </select>
+                          <div class='input-group-addon btn' data-direction='desc' role='sorter-direction'>
+                            <a class='fa fa-sort-amount-desc' href='#'></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='clearfix'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='form-group'>
+              <h4 class='task-group-title'>Все проекты</h4>
+            </div>
+            <div class='infinite-list projects-list' data-url='/projects'>
+              <div class='project-box project-box-draft' data-href='../projects/show' data-project-id='34' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#34</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='draft' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Инициализация
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              4
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              12
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              29
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              21
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          2
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-scenario' data-href='../projects/show' data-project-id='59' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#59</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='scenario' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Планирование
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              26
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              2
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              7
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              14
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          16
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-in_work' data-href='../projects/show' data-project-id='542' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#542</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='in_work' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              14
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              2
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Обсуждения
+                            <small>
+                              15
+                              /
+                              <span class='text-color-warning'>8</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              5
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          6
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 30%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 35%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-new' data-href='../projects/show' data-project-id='973' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#973</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='new' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              29
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              14
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              29
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              17
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          13
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 88%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 6%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-overdued' data-href='../projects/show' data-project-id='541' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#541</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='overdued' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Задачи
+                            <small>
+                              27
+                              /
+                              <span class='text-color-warning'>3</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              1
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              19
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Документы
+                            <small>
+                              12
+                              /
+                              <span class='text-color-warning'>2</span>
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          25
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 67%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 16%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-completed' data-href='../projects/show' data-project-id='605' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#605</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='completed' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Выполнен
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              10
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Участники
+                            <small>
+                              30
+                              /
+                              <span class='text-color-warning'>10</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              26
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Документы
+                            <small>
+                              3
+                              /
+                              <span class='text-color-warning'>10</span>
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          26
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 30%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 35%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-cancelled' data-href='../projects/show' data-project-id='150' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#150</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='cancelled' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Отменён
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              10
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              1
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              26
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Документы
+                            <small>
+                              15
+                              /
+                              <span class='text-color-warning'>3</span>
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          10
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 39%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 30%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-draft' data-href='../projects/show' data-project-id='500' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#500</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='draft' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Инициализация
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              13
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              18
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              8
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              7
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          5
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-scenario' data-href='../projects/show' data-project-id='635' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#635</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='scenario' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Планирование
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Задачи
+                            <small>
+                              30
+                              /
+                              <span class='text-color-warning'>2</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              29
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              1
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              17
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          24
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-in_work' data-href='../projects/show' data-project-id='30' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#30</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='in_work' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              28
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              14
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              10
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              7
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          29
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 49%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 25%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-new' data-href='../projects/show' data-project-id='750' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#750</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='new' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              19
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Участники
+                            <small>
+                              27
+                              /
+                              <span class='text-color-warning'>6</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Обсуждения
+                            <small>
+                              27
+                              /
+                              <span class='text-color-warning'>7</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              16
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          25
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 59%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 20%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-overdued' data-href='../projects/show' data-project-id='980' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#980</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='overdued' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Задачи
+                            <small>
+                              18
+                              /
+                              <span class='text-color-warning'>1</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              4
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              25
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Документы
+                            <small>
+                              27
+                              /
+                              <span class='text-color-warning'>1</span>
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          17
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 38%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 31%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-completed' data-href='../projects/show' data-project-id='784' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#784</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='completed' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Выполнен
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              17
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Участники
+                            <small>
+                              6
+                              /
+                              <span class='text-color-warning'>7</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              22
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              11
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          22
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 29%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 35%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-cancelled' data-href='../projects/show' data-project-id='415' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#415</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='cancelled' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Отменён
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              7
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              17
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              28
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Документы
+                            <small>
+                              6
+                              /
+                              <span class='text-color-warning'>8</span>
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          9
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 61%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 19%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-draft' data-href='../projects/show' data-project-id='468' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#468</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='draft' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Инициализация
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              13
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              7
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              27
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              4
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          26
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-scenario' data-href='../projects/show' data-project-id='327' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#327</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='scenario' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Планирование
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              11
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Участники
+                            <small>
+                              3
+                              /
+                              <span class='text-color-warning'>2</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              26
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Документы
+                            <small>
+                              12
+                              /
+                              <span class='text-color-warning'>1</span>
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          2
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-in_work' data-href='../projects/show' data-project-id='982' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#982</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='in_work' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              29
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              26
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              14
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              10
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          1
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 80%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 10%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-new' data-href='../projects/show' data-project-id='874' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#874</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='new' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Задачи
+                            <small>
+                              3
+                              /
+                              <span class='text-color-warning'>8</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              4
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              19
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Документы
+                            <small>
+                              30
+                              /
+                              <span class='text-color-warning'>2</span>
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          9
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 76%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 12%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-overdued' data-href='../projects/show' data-project-id='223' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#223</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='overdued' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              1
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              29
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Обсуждения
+                            <small>
+                              12
+                              /
+                              <span class='text-color-warning'>1</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              28
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          10
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 39%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 30%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-completed' data-href='../projects/show' data-project-id='705' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#705</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='completed' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Выполнен
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Задачи
+                            <small>
+                              6
+                              /
+                              <span class='text-color-warning'>3</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Участники
+                            <small>
+                              27
+                              /
+                              <span class='text-color-warning'>9</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Обсуждения
+                            <small>
+                              15
+                              /
+                              <span class='text-color-warning'>10</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              7
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          22
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 20%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 40%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-cancelled' data-href='../projects/show' data-project-id='720' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#720</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='cancelled' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Отменён
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Задачи
+                            <small>
+                              27
+                              /
+                              <span class='text-color-warning'>6</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              26
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              13
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              22
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          4
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 46%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 27%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-draft' data-href='../projects/show' data-project-id='797' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#797</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='draft' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Инициализация
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              8
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              26
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              22
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              22
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          14
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-scenario' data-href='../projects/show' data-project-id='550' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#550</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='scenario' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Планирование
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Задачи
+                            <small>
+                              15
+                              /
+                              <span class='text-color-warning'>4</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              7
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              22
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              19
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          10
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-in_work' data-href='../projects/show' data-project-id='636' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#636</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='in_work' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              25
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              13
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Обсуждения
+                            <small>
+                              3
+                              /
+                              <span class='text-color-warning'>10</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Документы
+                            <small>
+                              24
+                              /
+                              <span class='text-color-warning'>7</span>
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          24
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 23%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 38%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-new' data-href='../projects/show' data-project-id='608' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#608</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='new' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Задачи
+                            <small>
+                              12
+                              /
+                              <span class='text-color-warning'>8</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              7
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Обсуждения
+                            <small>
+                              6
+                              /
+                              <span class='text-color-warning'>3</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              1
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          30
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 88%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 6%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-overdued' data-href='../projects/show' data-project-id='580' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#580</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='overdued' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Задачи
+                            <small>
+                              9
+                              /
+                              <span class='text-color-warning'>7</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              7
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              19
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              7
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          8
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 56%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 22%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-completed' data-href='../projects/show' data-project-id='514' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#514</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='completed' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Выполнен
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              20
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              16
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              8
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Документы
+                            <small>
+                              3
+                              /
+                              <span class='text-color-warning'>8</span>
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          11
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 32%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 34%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-cancelled' data-href='../projects/show' data-project-id='4' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#4</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='cancelled' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Отменён
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              25
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Участники
+                            <small>
+                              21
+                              /
+                              <span class='text-color-warning'>1</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Обсуждения
+                            <small>
+                              21
+                              /
+                              <span class='text-color-warning'>2</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              13
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          15
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 94%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 3%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-draft' data-href='../projects/show' data-project-id='257' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#257</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='draft' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Инициализация
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              26
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              14
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              19
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              25
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          14
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-scenario' data-href='../projects/show' data-project-id='847' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#847</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='scenario' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Планирование
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              4
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              8
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              19
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              13
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          20
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-in_work' data-href='../projects/show' data-project-id='33' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#33</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='in_work' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              16
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              29
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              20
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Документы
+                            <small>
+                              30
+                              /
+                              <span class='text-color-warning'>9</span>
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          9
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 19%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 40%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-new' data-href='../projects/show' data-project-id='892' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#892</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='new' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              20
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Участники
+                            <small>
+                              5
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              10
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Документы
+                            <small>
+                              24
+                              /
+                              <span class='text-color-warning'>10</span>
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          11
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 67%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 16%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-overdued' data-href='../projects/show' data-project-id='357' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#357</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='overdued' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        В работе
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Задачи
+                            <small>
+                              12
+                              /
+                              <span class='text-color-warning'>9</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Участники
+                            <small>
+                              18
+                              /
+                              <span class='text-color-warning'>5</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Обсуждения
+                            <small>
+                              27
+                              /
+                              <span class='text-color-warning'>8</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              1
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          5
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 10%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 45%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-completed' data-href='../projects/show' data-project-id='716' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#716</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='completed' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Выполнен
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Задачи
+                            <small>
+                              23
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Участники
+                            <small>
+                              12
+                              /
+                              <span class='text-color-warning'>4</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Обсуждения
+                            <small>
+                              27
+                              /
+                              <span class='text-color-warning'>5</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Документы
+                            <small>
+                              9
+                              /
+                              <span class='text-color-warning'>8</span>
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          27
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 23%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 38%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='project-box project-box-cancelled' data-href='../projects/show' data-project-id='161' role='jump project-box'>
+                <div class='row'>
+                  <div class='col-md-1 col-sm-2'>
+                    <div class='project-box-star pull-left'>
+                      <div class='fa star-favourite fa-star-o icon-size-16'></div>
+                    </div>
+                    <div class='project-task-box-level text-muted pull-right'>
+                      <small>#161</small>
+                    </div>
+                    <div class='clearfix'></div>
+                  </div>
+                  <div class='col-lg-8 col-sm-6'>
+                    <div class='task-box-description-block' data-status='cancelled' role='project-task-box-description'>
+                      <h4 class='project-box-title-block' data-href='/tasks/10' role='project-task-title'>
+                        <span class='title'>
+                          Разработка системы IQ300
+                        </span>
+                      </h4>
+                      <span class='label label-default'>
+                        Отменён
+                      </span>
+                      &nbsp;
+                      &nbsp;
+                      <span class='text-muted'>
+                        Айкью 300, ООО
+                      </span>
+                    </div>
+                    <div class='project-box-details-block'>
+                      <ul class='list-inline'>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Задачи
+                            <small>
+                              21
+                              /
+                              <span class='text-color-warning'>10</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item project-box-details-item-new'>
+                            Участники
+                            <small>
+                              15
+                              /
+                              <span class='text-color-warning'>4</span>
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Обсуждения
+                            <small>
+                              16
+                            </small>
+                          </a>
+                        </li>
+                        <li>
+                          <a class='project-box-details-item'>
+                            Документы
+                            <small>
+                              1
+                            </small>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='col-lg-3 col-sm-4'>
+                    <div class='task-box-status-block pull-right'>
+                      <div class='status-date task-box-status-date'>
+                        <span class='day-list'>
+                          5
+                        </span>
+                        <span class='month'>
+                          Август
+                        </span>
+                        <span class='year'>
+                          2015
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='col-sm-10 col-sm-offset-2 col-md-11 col-md-offset-1'>
+                    <div class='progress project-box-progress'>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-primary' role='progressbar' style='width: 85%'></div>
+                      <div aria-valuemax='100' aria-valuemin='0' class='progress-bar progress-bar-danger' role='progressbar' style='width: 7%'></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class='view-column projects-view-column projects-view-column-initialized' data-channel-template='private-project-%id%:update' data-url='/projects'></section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../javascripts/static.js?1415703153" type="text/javascript"></script>
