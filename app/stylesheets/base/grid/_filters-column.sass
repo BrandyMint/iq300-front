@@ -1,6 +1,6 @@
 .filters-column
   position: absolute
-  top: $headerHeight + $topPanelHeight
+  top: $headerHeight
   bottom: 0
   left: $navColumnWidth
   height: auto
@@ -9,6 +9,8 @@
   overflow: hidden
   overflow-y: auto
   @extend %list-column-shadow
+  .docs-index &
+    top: $headerHeight + $topPanelHeight
   .task-categories
     padding-left: 15px
     &.expanded
