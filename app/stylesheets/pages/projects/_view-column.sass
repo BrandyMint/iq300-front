@@ -1,0 +1,751 @@
+// Also see pages/projects/_show.scss
+
+%overdued-block
+  border-left-color: $brand-danger
+  //background-color: lighten($brand-danger, 40%);
+  &:hover
+    //background-color: lighten($brand-danger, 35%);
+    border-left-color: $brand-danger
+
+%task-block-overdued
+  @extend %overdued-block
+  color: $brand-danger
+
+.task-overdued,
+.task-overdue
+  @extend %task-block-overdued
+
+.task-in_work
+  a
+    color: $text-color
+
+.task-draft
+  border-left-color: #a0b9be
+  font:
+    style: italic
+    size: 13px
+  color: #8d8d8d
+  a
+    color: #8d8d8d
+
+.task-completed
+  .title a
+    color: #666
+    text-decoration: line-through
+    &:hover
+      text-decoration: underline
+
+section.projects-view-column
+  .project-members-view, .project-members-form
+    .input
+      > div#s2id_project_membership_user_id
+        float: left
+        &.select2-container, &.select-two, &.select2-input
+          width: 65% !important
+  > section.task-view-column
+    display: none
+  > .tab-navigation, > .tab-navigation
+    display: block
+  &.task-view-shown
+    > section.task-view-column
+      display: block
+    > .tab-navigation, > .column-content
+      display: none
+  > .tab-navigation > ul
+    width: auto
+    margin:
+      right: 54px
+    overflow: auto
+  > .column-content
+    > .object-details
+      a.resource-inline-help-link
+        //:right 12px
+        top: 6px
+        float: right
+        position: absolute
+      > div
+        > p
+          color: #999999
+        > .description
+          margin:
+            top: 10px
+            bottom: 10px
+          background: #f1f5f6
+          padding:
+            top: 10px
+            left: 15px
+            right: 15px
+            bottom: 10px
+          font-size: 14px
+          color: #666666
+          & + p
+            margin:
+              top: 10px
+          @extend %markdown-style
+        > section.actions
+          margin:
+            top: 19px
+          line-height: 30px
+          color: #999999
+          .row
+            margin-top: 6px
+            overflow: hidden
+          a
+            +inline-block(middle)
+            margin-right: 15px
+            color: white
+            background: #338cae
+            text-decoration: none
+            padding: 0 15px
+            height: 30px
+            +transition(0.4s background-color)
+            &:hover
+              background: darken(#338cae, 3%)
+            &.template
+              background: none
+              color: #358bae
+              text-decoration: underline
+            &.cancel
+              background: none
+              float: right
+              color: #ff2021
+              text-decoration: underline
+            &.remove
+              background: none
+              float: right
+              color: #999999
+              text-decoration: none
+              > i
+                padding-right: 5px
+            & + a
+              margin:
+                left: 10px
+        > .project-details
+          background: #f8f4ed
+          border:
+            top: 1px solid #cccccc
+            bottom: 1px solid #cccccc
+          padding:
+            left: 20px
+            right: 20px
+          font:
+            size: 12px
+          line-height: 30px
+          +children-inline
+          > li
+            font:
+              weight: bold
+            & + li
+              margin:
+                left: 25px
+          & + *
+            margin:
+              top: 20px
+        > p > a
+          > i
+            color: #999999
+            +inline-block
+            margin:
+              left: 5px
+              top: 5px
+          &:hover
+            text:
+              decoration: none
+            > span
+              text:
+                decoration: underline
+        > .people
+          color: #999999
+          margin:
+            top: 10px
+          a
+            color: #358aaf
+          .admin, .moderator
+            +inline-block
+            width: 50%
+      > .tree
+        margin:
+          top: 10px
+        > .add-task
+          +inline-block
+          margin:
+            top: 10px
+          padding:
+            left: 15px
+            right: 15px
+          line-height: 30px
+          height: 30px
+          background: #3ab54a
+          border-color: #3ab54a
+          color: white
+          &:hover
+            text:
+              decoration: none
+        .new-subtask-form, .edit-task-form
+          margin:
+            left: 20px
+            right: 20px
+          padding:
+            bottom: 20px
+        .new-subtask-form
+          margin:
+            left: 65px
+        .new-task-form, .new-subtask-form, .edit-task-form
+          margin:
+            top: 20px
+          +children-list-fix
+          > form
+            +children-list-fix
+            input, select, textarea, .select-two
+              width: 100% !important
+            dl
+              margin-top: 16px
+              line-height: 29px
+              +children-inline
+              input[type=checkbox]
+                +inline-block(middle)
+                @extend %blue-ok-checkbox-without-white-border
+                &, + i
+                  position: relative
+                  top: -2px
+              > dt
+                width: 28.3%
+                text-align: right
+                color: #999999
+                +text-overflow
+                &.unordinary-big-offset
+                  margin-bottom: 14px
+                &.big-offset
+                  margin-bottom: 6px
+              > dd
+                margin-left: 1.2%
+                width: 69%
+                .date-input
+                  width: 100px !important
+                .time-input
+                  width: 60px !important
+                input[type=text]
+                  margin: 0
+                  +bordered
+                  background: #f1f5f6
+                  padding: 3px 11px
+                  line-height: 18px
+                  height: 18px
+                  color: #666666
+                  +placeholder-color(#999999)
+                  &.short
+                    padding:
+                      left: 7px
+                      right: 7px
+                    width: 25px
+                    text-align: center
+                input + label
+                  +inline-block(middle)
+                  margin-left: 17px
+                  +unselectable
+                input + a
+                  margin-left: 15px
+                  color: #328bad
+                  text-decoration: none
+                  i
+                    position: relative
+                    top: 2px
+                    color: #999999
+                    margin-left: 3px
+                label.radio
+                  margin-right: 6px
+            input[type='text']
+              +bordered
+              +box-sizing(border-box)
+              +placeholder-color(#999999)
+              background: #f1f5f6
+              padding: 5px 11px
+              line-height: 19px
+              height: 28px
+              color: #666666
+            input[type='submit']
+              +inline-block
+              +button(#348dad)
+              cursor: pointer
+              width: auto !important
+              margin: 0 !important
+            section.buttons
+              margin:
+                top: 10px
+            a.cancel
+              +inline-block
+              line-height: 30px
+              margin:
+                left: 10px
+              color: #ff2021
+            textarea
+              +bordered
+              +box-sizing(border-box)
+              //:height 117px
+              background: #f1f5f6
+              padding: 10px 11px
+              color: #666666
+              line-height: 21px
+              font-size: 13px
+            label
+              display: block
+              color: #999999
+              margin: 5px 0
+        > .tabs
+          +children-inline
+          > a
+            margin-left: 15px
+            margin-top: 9px
+          > li
+            position: relative
+            border: 1px solid transparent
+            &.project-tasks-filter
+              padding:
+                top: 9px
+                left: 15px
+                right: 0
+                bottom: 9px
+              line-height: 20px
+              color: #999999
+              input[type=checkbox]
+                @extend %blue-ok-checkbox-without-white-border
+              label
+                padding-left: 3px
+            > a
+              line-height: 20px
+              display: block
+              padding:
+                top: 9px
+                left: 9px
+                right: 9px
+                bottom: 9px
+              color: #666666
+              font:
+                size: 12px
+              +children-inline
+              > b
+                font:
+                  weight: normal
+                i
+                  vertical-align: middle
+                  margin-right: 5px
+                & + span
+                  margin:
+                    left: 4px
+              > span
+                height: 14px
+                line-height: 14px
+                margin:
+                  top: 3px
+                  bottom: 3px
+                padding:
+                  left: 4px
+                  right: 4px
+                background: #a0b9be
+                color: white
+                font:
+                  weight: bold
+            &.active
+              border-color: #cccccc
+              border-bottom-color: white
+              > a
+                cursor: default
+          & + .contents
+            margin:
+              top: -1px
+        > .contents
+          min-height: 20px
+          +children-inline
+          a:hover
+            text:
+              decoration: none
+          > li
+            width: 100%
+            display: none
+            > ul
+              +children-list-fix
+              li
+                position: relative
+                z-index: 1
+                +transition(all)
+                > section
+                  background: #f8f4ed
+                  padding:
+                    left: 9px
+                  height: 44px
+                  line-height: 44px
+                  +children-list-fix
+                  > .stats
+                    width: 80px
+                    height: 44px
+                    +children-inline
+                    > i
+                      width: 17px
+                      font:
+                        size: 12px
+                        style: normal
+                      color: #666666
+                      & + .add
+                        margin:
+                          left: 5px
+                      & + .counter
+                        margin:
+                          left: 10px
+                    > .hidden-add
+                      width: 18px
+                      height: 18px
+                      line-height: 18px
+                      margin:
+                        top: 13px
+                        bottom: 13px
+                      & + .counter
+                        margin:
+                          left: 10px
+                    > .add
+                      width: 18px
+                      height: 18px
+                      line-height: 18px
+                      margin:
+                        top: 13px
+                        bottom: 13px
+                      background: #39b54a
+                      color: white
+                      text:
+                        align: center
+                      +hover-opacity
+                      > i
+                        +inline-block(top)
+                        line-height: 20px
+                        font:
+                          size: 13px
+                      & + .counter
+                        margin:
+                          left: 10px
+                    > .counter
+                      background: #a0b9be
+                      line-height: 14px
+                      color: white
+                      font:
+                        weight: bold
+                      width: 20px
+                      text:
+                        align: center
+                      margin:
+                        top: 15px
+                        bottom: 15px
+                      font:
+                        size: 12px
+                      +hover-opacity
+                  > .description
+                    height: 40px
+                    padding:
+                      top: 2px
+                      bottom: 2px
+                    margin:
+                      right: 50px
+                    line-height: 20px
+                    +children-list-fix
+                    .icon-ok
+                      padding-right: 3px
+                    > section, > aside
+                      height: 40px
+                      +children-list-fix
+                      > span
+                        display: block
+                        position: relative
+                        top: 2px
+                        font:
+                          size: 10px
+                        color: #999999
+                        +text-overflow
+                        +children-inline
+                        > a
+                          height: 15px
+                          border:
+                            bottom: 1px dashed #358bae
+                          +transition(all)
+                          &:hover
+                            border:
+                              color: transparent
+                      > p
+                        position: relative
+                        top: -3px
+                        font:
+                          size: 12px
+                        color: #666666
+                        +text-overflow
+                        &.task-title
+                          color: #358bae
+                          z-index: 11
+                          &:hover
+                            cursor: pointer
+                            text-decoration: underline
+                        > i
+                          margin:
+                            top: 2px
+                    > section
+                      > span
+                        padding:
+                          right: 125px
+                      > p
+                        padding:
+                          right: 60px
+                      & + aside
+                        margin:
+                          top: -40px
+                    > aside
+                      text:
+                        align: right
+                    & + .settings
+                      margin:
+                        top: -44px
+                  > .settings
+                    width: 100%
+                    text:
+                      align: right
+                    +children-inline
+                    > section
+                      width: 44px
+                      text:
+                        align: left
+                      white-space: nowrap
+                      +children-inline
+                      > .popup
+                        position: relative
+                        width: 22px
+                        text:
+                          align: center
+                        > .list
+                          width: 100%
+                          +inline-block
+                          +children-inline
+                          > i
+                            color: #a0b9be
+                            font:
+                              size: 14px
+                            line-height: 44px
+                        > ul
+                          position: absolute
+                          z-index: 10
+                          top: 100%
+                          left: 100%
+                          margin:
+                            top: -10px
+                            left: -185px
+                          width: 180px
+                          padding:
+                            top: 14px
+                            left: 9px
+                            right: 9px
+                            bottom: 14px
+                          border: 1px solid #cccccc
+                          background: white
+                          text:
+                            align: left
+                          +box-shadow(2px 2px 0 rgba(204, 204, 204, 0.5))
+                          +opacity(0)
+                          visibility: hidden
+                          +transition(all)
+                          +children-list-fix
+                          > li
+                            position: relative
+                            height: 22px
+                            line-height: 22px
+                            white-space: nowrap
+                            font:
+                              size: 12px
+                            > a
+                              position: relative
+                              display: block
+                              padding:
+                                left: 24px
+                              height: 100%
+                              color: #666666
+                              > i
+                                position: absolute
+                                font:
+                                  size: 14px
+                                left: 6px
+                                top: 3px
+                                &.icon-remove
+                                  color: #ff1d25
+                            & + li
+                              margin:
+                                top: 5px
+                            &.disabled
+                              > a
+                                color: #cccccc
+                              border: none
+                          &:before
+                            content: ""
+                            position: absolute
+                            width: 16px
+                            height: 9px
+                            top: -9px
+                            left: 165px
+                            background: url(#{$images-path}/backgrounds/project_popup.png) no-repeat center
+                        &:hover > ul, &.expanded > ul
+                          +opacity(1)
+                          visibility: visible
+                          margin:
+                            top: -5px
+                      > .position
+                        overflow: hidden
+                        width: 22px
+                        +children-list-fix
+                        > a
+                          display: block
+                          width: 20px
+                          height: 20px
+                          line-height: 20px
+                          border: 1px solid transparent
+                          text:
+                            align: center
+                          +hover-opacity
+                          +children-inline
+                          > i
+                            color: #666666
+                            font:
+                              size: 10px
+                            line-height: 18px
+                        &:hover > a
+                          border:
+                            color: #338bae
+                > ul
+                  position: relative
+                  border:
+                    top: 1px solid #999999
+                  > li
+                    > section
+                      padding:
+                        left: 29px
+                      background: #f0e6dc
+                    > ul
+                      border:
+                        top: 0
+                      > li
+                        > section
+                          background: #f1f5f6
+                          border:
+                            left: 5px solid transparent
+                          padding:
+                            left: 14px
+                          & + aside
+                            margin:
+                              top: -44px
+                        > aside
+                          padding:
+                            right: 9px
+                          height: 44px
+                          line-height: 44px
+                          text:
+                            align: right
+                          +children-inline
+                          > .stats
+                            line-height: 22px
+                            +children-list-fix
+                            > p
+                              position: relative
+                              top: 3px
+                              font:
+                                size: 10px
+                              color: #666666
+                              &.new
+                                color: #4caee2
+                              & + p
+                                top: -1px
+                            & + time
+                              margin:
+                                left: 15px
+                          > time
+                            font:
+                              size: 12px
+                            color: #666666
+                        &.new > section
+                          background: #e3ebed
+                          border:
+                            color: #4caee2
+                          > .description > p
+                            font:
+                              weight: bold
+                            color: #358bae
+                        &.finished
+                          > section
+                            background: white
+                            > .description > p
+                              text:
+                                decoration: line-through
+                              color: #8d8d8d
+                          > aside
+                            > .stats > p
+                              color: #999999
+                            > time
+                              color: #999999
+                              text:
+                                decoration: line-through
+                      &:before
+                        display: none
+                  &:before
+                    content: ""
+                    position: absolute
+                    width: 16px
+                    height: 9px
+                    top: -9px
+                    left: 60px
+                    background: url(#{$images-path}/backgrounds/project.png) no-repeat center
+                  &.zero-element
+                    display: none
+                &.new > section > .description > section > p
+                  font:
+                    weight: bold
+                &.draft
+                  > section
+                    border:
+                      left: 5px solid #a0b9be
+                    > .description > section > p
+                      font:
+                        style: italic
+                        size: 13px
+                      color: #8d8d8d
+                    .add
+                      background: #a0b9be
+                  > ul:before
+                    left: 65px
+                &.completed > section > .description
+                  > section > p, > aside > span
+                    color: #666666
+                    text:
+                      decoration: line-through
+                &.overdued > section > .description
+                  > section > p, > aside > span
+                    @extend %overdued-block
+                & + li
+                  margin:
+                    top: -2px
+            &.active
+              display: block
+            & + li
+              margin:
+                left: -100%
+      > ul.actions
+        margin:
+          top: 40px
+        +children-inline
+        > li
+          > a
+            color: #666666
+            &.cancel
+              color: #ff2021
+          & + li
+            margin:
+              left: 40px
+
+//@media only screen and (min-width: 320px) and (max-width: 640px)
+  section.projects-view-column > .column-content > .object-details > .tree
+    .new-subtask-form
+      margin:
+        left: 20px
+
+.project-header-status-date
+  &.with_year
+    padding: 15px 5px

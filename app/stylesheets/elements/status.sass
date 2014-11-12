@@ -1,0 +1,46 @@
+// Status box
+.title-status-box
+  max-width: 40%
+
+.status-box
+  white-space: nowrap
+  .status-label, .status-date
+    display: inline-block
+    vertical-align: middle
+    white-space: normal
+    text-align: center
+    font-size: 12px
+    border: solid 1px transparent
+    +box-sizing(border-box)
+    +border-radius($border-radius-base)
+  .label
+    font-size: 11px
+
+// @end
+
+// Status label
+.status-label
+  text-align: center
+  padding: 0 1em
+  margin: 8px 0
+  &:first-child
+    padding-left: 0
+  &:last-child
+    padding-right: 0
+
+// @end
+
+.status-date
+  text-align: center
+  padding: 5px
+  min-width: 50px
+  sup
+    width: 40px
+    margin-right: -40px
+    font-size: 80%
+  .day
+    font-size: 1.2em
+  .day-list
+    font-size: 2.7em
+  .month
+    display: block

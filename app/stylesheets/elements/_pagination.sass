@@ -1,0 +1,17 @@
+.pagination
+  nav > span
+    +inline-block
+    +bordered
+    min-width: 25px
+    line-height: 25px
+    text-align: center
+    &.current
+      font-weight: bold
+      color: white
+      background: #348dad
+    a
+      +inline-block
+      width: 100%
+      line-height: 25px
+    &.next, &.last, &.prev, &.first
+      padding: 0 10px

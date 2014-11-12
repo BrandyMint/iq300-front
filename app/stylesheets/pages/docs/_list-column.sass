@@ -1,0 +1,368 @@
+//$docs_name_column: 175px
+$docs_name_column: 165px
+$docs_name_column: 160px
+
+//$docs_name_column: 455px
+
+$docs_file_name_color: #666666
+$docs_file_description_color: #999999
+
+$docs_file_name_color: #555555
+$docs_file_description_color: #777777
+
+.attachment-members
+  @extend .accessor-users
+
+.share-link-popup
+  display: none
+  padding: 40px 40px 10px
+  +box-sizing(border-box)
+  &.shown
+    +box-shadow(0px 2px 9px rgba(0, 0, 0, 0.2))
+    display: block
+    position: fixed
+    height: 110px
+    width: 60%
+    background-color: white
+    +bordered
+    top: 40%
+    left: 20%
+    z-index: 1000
+    .close
+      float: right
+      margin-top: 20px
+      i
+        color: #666666
+        position: absolute
+        right: 10px
+        top: 10px
+    label
+      display: block
+      margin-bottom: 7px
+      color: #999999
+    input
+      +bordered
+      background: #f1f5f6
+      padding: 5px 11px
+      line-height: 19px
+      height: 31px
+      +box-sizing(border-box)
+      +placeholder-color(#999999)
+      color: #666666
+      width: 450px
+      +inline-block
+      &.full-width
+        width: 100%
+
+.folders-list-column
+  ul
+    > li.header
+      cursor: default
+      font-size: 14px
+      > .name
+        padding-top: 0 !important
+        padding-bottom: 0 !important
+        line-height: 44px
+        height: 44px
+    > li
+      position: relative
+      cursor: pointer
+      color: $docs_file_name_color
+      border-color: transparent !important
+      line-height: 44px
+      &.is-folder > .name > strong
+        padding-top: 8px
+      &.active
+        > .name
+          > strong, > small, > span
+            color: white !important
+            font-weight: normal
+        > .opener, > .community, > .author, > .date
+          color: white !important
+      > *
+        +inline-block
+        padding-left: 5px
+      > .opener
+        padding-right: 3px
+        text-align: center
+        width: 26px
+        min-width: 32px
+        &, a
+          color: $docs_file_name_color
+          text-decoration: none
+        a.folder
+          +unselectable
+          i + i
+            margin-left: 2px
+          .if-open
+            display: none
+      > .name
+        width: $docs_name_column
+        position: relative
+        padding-top: 2px
+        padding-bottom: 2px
+        line-height: 20px
+        height: 40px
+        > strong
+          position: relative
+          top: 2px
+          display: block
+          font-weight: normal
+          +truncate
+          color: $docs_file_description_color
+          +text-overflow
+          form.form_in_place
+            input[type="text"]
+              width: 200px
+              +bordered
+              //:background #f1f5f6
+              padding: 1px 11px
+              line-height: 18px
+              height: 20px
+              +box-sizing(border-box)
+              color: #666666
+          //&:hover
+          //  :color #3489b0
+          //  :text-decoration underline
+          &.with-size
+            margin-right: 45px
+        > span
+          position: relative
+          top: -1px
+          font-size: 10px
+          display: block
+          color: $docs_file_description_color
+          +truncate
+          +text-overflow
+          &.with-size
+            margin-right: 45px
+        > small.file-size
+          line-height: 44px
+          position: absolute
+          bottom: 0
+          right: 0px
+          +inline-block
+          text-align: right
+          color: $docs_file_description_color
+          width: 43px
+          +truncate
+      > .actions
+        width: 22px
+        text-align: center
+        position: relative
+        &.shown
+          > ul
+            display: block
+        a
+          color: #a0b9be
+          text-decoration: none
+          +unselectable
+        // context-menu overrides
+        > ul
+          display: none
+          right: -67px
+          &:before
+            right: 70px
+          &:after
+            right: 71px
+          > li
+            text-align: left
+            > a
+              display: block
+              color: #666666 !important
+              &.delete i
+                color: #fe1d23
+            &.disabled
+              a
+                cursor: default
+                color: #cccccc
+              &:hover
+                border-color: white
+      > .community, > .author
+        display: none
+        color: $docs_file_name_color !important
+        +truncate
+        +text-overflow
+      > .date
+        display: none
+        margin-right: -20px
+        width: 70px
+        color: $docs_file_name_color !important
+        +text-overflow
+      > ul
+        display: none
+        padding-left: 0
+      &.is-open
+        > ul
+          display: block
+        > .opener
+          > a.folder
+            .if-open
+              display: block
+            .if-close
+              display: none
+  ul.infinite-list
+    position: absolute
+    top: 45px
+    bottom: 0
+    overflow-y: auto
+    overflow-x: hidden
+    ul.nested-list
+      margin-left: -1px
+      margin-right: -1px
+  ul.infinite-list, ul.nested-list
+    line-height: 44px
+    height: auto
+    > li
+      > div
+        min-height: 40px
+      &.hovered
+        position: relative
+        &:before
+          content: ""
+          display: block
+          position: absolute
+          top: -1px
+          left: -1px
+          right: -1px
+          border: 1px solid #338baf
+          height: 44px
+      &.active.hovered
+        .name strong
+          text-decoration: none
+          span
+            color: white
+        &:before
+          display: none
+    ul.nesting-level-1
+      background: #dbe3e6
+      background: lighten(#dbe3e6, 3%)
+      li > .opener
+        padding-left: 16px + 5px
+    ul.nesting-level-2
+      background: #b4c7cb
+      background: lighten(#b4c7cb, 5%)
+      li > .opener
+        padding-left: 32px + 5px
+      li > .actions a
+        color: darken(#a0b9be, 5%)
+    ul.nesting-level-3
+      background: darken(#b4c7cb, 5%)
+      li > .name
+        &, a
+          color: darken($docs_file_name_color, 5%)
+        > span, > small
+          color: $docs_file_description_color
+      li > .opener
+        padding-left: 48px + 5px
+      li > .actions a
+        color: darken(#a0b9be, 13%)
+
+$spx: 907
+
+// when smallest screen its 891
+
+=width-percent($val)
+  width: percentage($val / $spx)
+
+=padding-left-percent($val)
+  padding-left: percentage($val / $spx)
+
+=padding-right-percent($val)
+  padding-right: percentage($val / $spx)
+
+=folders-list-offsets($name-column, $offset: 16px, $padding: 5px)
+  ul > li > .name
+    width: $name-column
+  ul.infinite-list, ul.nested-list
+    ul.nesting-level-1
+      li > .name
+        width: $name-column - $offset
+      li > .opener
+        padding-left: $offset + $padding
+    ul.nesting-level-2
+      li > .name
+        width: $name-column - $offset * 2
+      li > .opener
+        padding-left: $offset * 2 + $padding
+    ul.nesting-level-3
+      li > .name
+        width: $name-column - $offset * 3
+      li > .opener
+        padding-left: $offset * 3 + $padding
+
+.folders-list-column
+  +folders-list-offsets($docs_name_column + 70px)
+
+#wrapper > .content
+  &[filters=false]
+    .add-folder-topup
+      left: 250px
+
+#wrapper > .content
+  &[filters=true][list=true][view=true]
+    .folders-list-column ul > li > .actions
+      margin-right: -15px
+      > ul
+        right: 3px
+        &:before
+          right: 0px
+        &:after
+          right: 1px
+
+#wrapper > .content
+  &[filters=false][list=true][view=true]
+    .folders-list-column
+      +folders-list-offsets($docs_name_column + 88px)
+  &[filters=false][list=true][view=false]
+    .folders-list-column ul > li
+      > *
+        +padding-left-percent(5)
+      > .opener
+        +padding-right-percent(5)
+        +width-percent(36)
+      > .actions
+        +width-percent(28)
+        +padding-right-percent(5)
+      > .community
+        +inline-block
+        +width-percent(197)
+      > .author
+        +inline-block
+        +width-percent(190)
+      > .date
+        +width-percent(70)
+        //:display black
+        +inline-block
+    ul > li > ul
+      padding-left: 0
+    .folders-list-column
+      +folders-list-offsets(percentage(338 / $spx), percentage(16 / $spx), percentage(5 / $spx))
+
+$less_spx: 710
+
+#wrapper > .content
+  &[filters=true][list=true][view=false]
+    .folders-list-column ul > li
+      > *
+        padding-left: percentage(5 / $less_spx)
+      > .opener
+        padding-right: percentage(5 / $less_spx)
+        width: percentage(33 / $less_spx)
+      > .actions
+        width: percentage(23 / $less_spx)
+        padding-right: percentage(3 / $less_spx)
+      > .community
+        width: percentage(135 / $less_spx)
+        +inline-block
+      > .author
+        width: percentage(130 / $less_spx)
+        +inline-block
+      > .date
+        width: percentage(68 / $less_spx)
+        //:display black
+        +inline-block
+    .folders-list-column ul > li > ul
+      padding-left: 0
+    .folders-list-column
+      +folders-list-offsets(percentage(278 / $less_spx), percentage(16 / $less_spx), percentage(5 / $less_spx))

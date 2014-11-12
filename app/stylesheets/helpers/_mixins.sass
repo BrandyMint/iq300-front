@@ -1,0 +1,258 @@
+=inline-block($align: top)
+  zoom: 1
+  display: inline
+  display: -moz-inline-box
+  display: inline-block
+  *display: inline
+  vertical-align: $align
+
+=children-inline($align: top)
+  > *
+    +inline-block($align)
+
+=list-fix
+  zoom: 1
+  vertical-align: top
+
+=children-list-fix
+  > *
+    +list-fix
+
+=box-shadow($value)
+  box-shadow: $value
+  -moz-box-shadow: $value
+  -webkit-box-shadow: $value
+
+$base_transition: all 0.1s ease-out !default
+
+=transition($transition: $base_transition)
+  -webkit-transition: $transition
+  -moz-transition: $transition
+  -o-transition: $transition
+  transition: $transition
+
+=rotation($time: 2s)
+  -moz-animation: spin #{$time} infinite linear
+  -o-animation: spin #{$time} infinite linear
+  -webkit-animation: spin #{$time} infinite linear
+  animation: spin #{$time} infinite linear
+
+=absoluted($left: 0, $top: 0, $right: 0, $bottom: 0)
+  position: absolute
+  top: $top
+  left: $left
+  right: $right
+  bottom: $bottom
+
+$main_radius: 3px !default
+
+=border-radius($radius: $main_radius, $y: false, $x: false)
+  @if $x
+    -moz-border-radius-#{$y}#{$x}: $radius
+    -o-border-radius-#{$y}-#{$x}: $radius
+    -khtml-border-radius-#{$y}-#{$x}: $radius
+    -ms-border-radius-#{$y}-#{$x}: $radius
+    -webkit-border-#{$y}-#{$x}-radius: $radius
+    border-#{$y}-#{$x}-radius: $radius
+  @else
+    -moz-border-radius: $radius
+    -o-border-radius: $radius
+    -ms-border-radius: $radius
+    -khtml-border-radius: $radius
+    -webkit-border-radius: $radius
+    border-radius: $radius
+
+=opacity($value, $ie: false)
+  opacity: $value
+  -moz-opacity: $value
+  @if $ie
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=#{$value * 100})
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=#{$value * 100})"
+
+=hover-opacity($value: 0.9)
+  +opacity($value)
+  +transition(opacity 0.25s ease-out)
+  &:hover
+    +opacity(1)
+
+=text-overflow
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  -o-text-overflow: ellipsis
+  -icab-text-overflow: ellipsis
+  -khtml-text-overflow: ellipsis
+  -moz-text-overflow: ellipsis
+  -webkit-text-overflow: ellipsis
+
+=truncate
+  +text-overflow
+
+=unselectable
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: -moz-none
+  -o-user-select: none
+  user-select: none
+
+=selectable
+  -webkit-user-select: text
+  -khtml-user-select: text
+  -moz-user-select: -moz-text
+  -o-user-select: text
+  user-select: text
+
+=clear($overflow_visible: true)
+  zoom: 1
+  *display: block
+  @if $overflow_visible
+    overflow: visible !important
+  @else
+    overflow: hidden
+  &:after
+    content: ""
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+=safe-clear
+  &:after
+    content: ""
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+=placeholder-color($color)
+  &::-webkit-input-placeholder
+    color: $color
+  &:-moz-placeholder
+    color: $color
+  &:-ms-input-placeholder
+    color: $color
+
+=horisontal-gradient($from, $to)
+  background-color: $from
+  filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}')"
+  background: -webkit-gradient(linear, left top, right top, from($from), to($to))
+  background: -moz-linear-gradient(left, $from, $to)
+  background: linear-gradient(left, $from, $to)
+
+=gradient($from, $to)
+  background-color: $from
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}')
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}')"
+  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to))
+  background: -moz-linear-gradient(top, $from, $to)
+  background: linear-gradient(top, $from, $to)
+
+=box-sizing($value)
+  -moz-box-sizing: $value
+  -webkit-box-sizing: $value
+  box-sizing: $value
+
+=scale($value: 0)
+  -moz-transform: scale($value)
+  -webkit-transform: scale($value)
+  -o-transform: scale($value)
+  -ms-transform: scale($value)
+  transform: scale($value)
+
+=set-responsive($from: 0, $to: 1280px)
+  //@media only screen and (min-width: $from) and (max-width: $to)
+    @content
+
+=when-big-screen
+  //@media only screen and (min-width: 1024px)
+  @content
+
+=when-medium-screen
+  @media only screen and (min-width: 641px) and (max-width: 1024px)
+    @content
+
+=when-small-screen
+  @media only screen and (max-width: 640px)
+    @content
+
+=when-retina
+  body.retina-display
+    @content
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+    @content
+
+@function arrow-direction($direction)
+  @if $direction == bottom
+    @return top left
+  @if $direction == top
+    @return bottom left
+
+=arrow($direction: bottom, $arrow-size: $grid-gutter-width, $arrow-color: white, $arrow-border-color: $gray-lighter)
+  position: relative
+  background: $arrow-color
+  //border: 1px solid $arrow-color;
+  &:after, &:before
+    #{nth(arrow-direction($direction), 1)}: 100%
+    #{nth(arrow-direction($direction), 2)}: 50%
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+  &:after
+    border-color: rgba($arrow-color, 0)
+    border-#{nth(arrow-direction($direction), 1)}-color: $arrow-color
+    border-width: $arrow-size
+    margin-#{nth(arrow-direction($direction), 2)}: -$arrow-size
+  &:before
+    border-color: rgba($arrow-border-color, 0)
+    border-#{nth(arrow-direction($direction), 1)}-color: $arrow-border-color
+    border-width: $arrow-size + 1px
+    margin-#{nth(arrow-direction($direction), 2)}: -$arrow-size - 1px
+
+=arrow-position-left($left: 50%)
+  &:after, &:before
+    left: $left
+
+=arrow-position-top($top: 50%)
+  &:after, &:before
+    top: $top
+
+=badge-style($bg-color)
+  color: $base-color
+  font-size: 10px
+  font-weight: 700
+  padding-left: 0.5em
+  padding-right: 0.5em
+  padding: 0.2em 1em
+  background-color: $bg-color
+  display: inline-block
+  border-radius: 2px
+
+=container-color-variant($bg, $padding-vertical: $space-small)
+  background-color: $bg
+  padding-top: $padding-vertical
+  padding-bottom: $padding-vertical
+
+=image-holder($width, $height, $border-color: $input-border)
+  border: solid 1px $border-color
+  text-align: center
+  width: $width
+  height: $height
+  overflow: hidden
+  img
+    width: 100%
+
+=center-block-container
+  text-align: center
+  &:before
+    content: ''
+    display: inline-block
+    height: 100%
+    vertical-align: middle
+    margin-right: -0.25em
+
+=center-block-content
+  display: inline-block
+  vertical-align: middle

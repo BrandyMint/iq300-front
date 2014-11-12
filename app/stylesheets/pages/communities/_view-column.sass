@@ -1,0 +1,240 @@
+section.community-view-column
+  margin-left: 0 !important
+  a
+    color: #338cac
+  .column-content
+    .object-details
+      .complaint
+        .error-messages
+          color: rgba(255, 36, 37, 0.9)
+        position: relative
+        min-height: 35px
+        &:hover > a
+          color: #666666
+        > .new-complaint
+          z-index: 1
+          background: white
+          width: 250px
+          padding: 10px
+          position: absolute
+          top: -10px
+          left: -60px
+          +bordered
+          +box-shadow(0 5px 10px rgba(0, 0, 0, 0.2))
+        .buttons
+          +children-inline
+          input
+            padding: 5px 21px
+            -webkit-appearance: none
+            color: white
+            background: #338cae
+            border: none
+            cursor: pointer
+          .cancel
+            color: #ff2021
+            padding: 5px 21px
+            float: right
+        .input
+          margin-bottom: 18px
+          label
+            display: block
+            margin-bottom: 7px
+            color: #999999
+          textarea
+            +bordered
+            background: #f1f5f6
+            padding: 5px 11px
+            font-size: 12px
+            line-height: 19px
+            height: 88px
+            +box-sizing(border-box)
+            +placeholder-color(#999999)
+            color: #666666
+            width: 326px
+            +inline-block
+            &.full-width
+              width: 100%
+      padding-top: 19px
+      p.membership-status
+        color: #666666
+        margin-bottom: 14px
+      > header
+        position: relative
+        .community-cart
+          +children-inline
+          margin-bottom: 20px
+          .leave-from-community
+            float: right
+            background: #f84a4a
+            text-align: center
+            padding: 5px 11px
+            text-decoration: none
+            &:hover
+              background-color: lighten(#f84a4a, 4%)
+            span
+              color: white
+          .community-avatar
+            min-height: 118px
+            max-height: 118px
+            min-width: 118px
+            max-width: 118px
+            overflow: hidden
+            line-height: 118px
+            +bordered
+            > img
+              max-height: 116px
+              max-width: 116px
+              vertical-align: middle
+          > .info
+            margin-left: 15px
+            font-size: 12px
+            p
+              color: #999999
+              > span
+                color: #666666
+              &.status
+                margin-top: 9px
+                span.company
+                  +inline-block
+                  line-height: 18px
+                  padding: 0 6px
+                  color: white
+                  background: #328cae
+                  i
+                    margin-right: 2px
+                    position: relative
+                    top: 1px
+                i.paid
+                  color: #fcaf3b
+                  font-size: 15px
+                  line-height: 18px
+                i.paid ~ span.favorite
+                  margin-left: 4px
+                span.favorite
+                  font-size: 15px
+                  a
+                    text-decoration: none
+                    color: #666666
+                  &.starred a
+                    color: #fab035
+                span ~ i
+                  margin-left: 4px
+      h2
+        margin:
+          top: 5px
+          bottom: 0
+      h4
+        color: #999999
+        font-size: 12px
+        margin:
+          top: -2px
+          bottom: 4px
+      .community-description
+        > div
+          p
+            line-height: 21px
+            font-size: 13px
+            margin-top: 9px
+      section.people
+        color: #999999
+        margin-bottom: 19px
+        a
+          color: #358aaf
+        .admin, .moderator
+          +inline-block
+          width: 50%
+      section.actions
+        text-align: center
+        margin:
+          top: 25px
+          bottom: 35px
+        ul
+          width: 100%
+          max-width: 464px
+          +inline-block
+          li
+            +box-sizing(border-box)
+            margin: 0
+            ~ li
+              padding-left: 1px
+            &, a
+              +inline-block
+            width: 25%
+            a
+              width: 90%
+              padding: 4px 5%
+              height: 31px
+              font-size: 13px
+              color: white
+              text-align: center
+              &:hover
+                text-decoration: none
+              span
+                display: block
+                font-size: 11px
+                line-height: 12px
+                margin-top: -2px
+              &.blue
+                background: #338cae
+              &.green
+                background: #3ab54a
+              &.ochre
+                background: #cabd86
+              &.red
+                background: #fe0000
+                background: #e34545
+                background: #f84a4a
+  #community-participants
+    color: #999999
+    .user
+      +inline-block
+      width: 280px
+      margin:
+        right: 2%
+        bottom: 14px
+    .icon-remove
+      display: inline
+      color: #ff2021
+      text-decoration: none
+      padding-left: 5px
+  #community-services
+    ul
+      margin-bottom: 16px
+      li
+        padding: 5px 0
+        font-size: 14px
+        line-height: 30px
+        ~ li
+          +bordered-top
+        a
+          margin-left: 8px
+          @extend %green-link-button
+    > a
+      +inline-block
+      +button(#3ab54a)
+      line-height: 30px
+  .destroy-button
+    float: right
+    color: #ff0101
+
+section.destroy-confirmation
+  padding: 15px
+  h2
+    color: #ff0101 !important
+  h3
+    color: #999999
+  .modal-footer
+    padding: 10px
+    text-align: right
+    a
+      padding-left: 7px
+      color: #ff0101
+
+// Communities content column
+.communities-content-column
+  @extend %list-column-block
+  top: $headerHeight + $topPanelHeight
+  bottom: 0
+  height: auto
+
+// @end

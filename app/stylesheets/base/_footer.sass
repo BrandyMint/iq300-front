@@ -1,0 +1,97 @@
+.footer-global
+  padding: 0
+  color: #888888
+  margin-top: -$footerHeight
+  height: $footerHeight
+  line-height: $footerHeight
+  +children-inline
+  z-index: 16
+  position: relative
+  a
+    text-decoration: none
+  .website-tips
+    +bordered-right
+    width: $navColumnWidth + $filtersColumnWidth
+    background: $voronkaBackground
+    font-weight: bold
+    position: relative
+    z-index: 16
+    a
+      +inline-block
+      color: #666666
+      span, i, div
+        line-height: $footerHeight
+        +inline-block
+      .block
+        +bordered-right
+        width: $footerHeight
+        text-align: center
+      span
+        margin-left: 8px
+        width: 228px
+    &:hover
+      a
+        color: $voronkaBackgroundHover
+  .middle
+    position: absolute
+    z-index: 14
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    text-align: center
+    a
+      color: inherit
+  #Intercom
+    position: relative
+    z-index: 16
+    float: right
+    color: $navigationBackground
+    // color: #91a8ae;
+    width: $footerHeight
+    height: $footerHeight
+    line-height: $footerHeight + 8
+    text-align: center
+    > i
+      font-size: 18px
+  .feedback
+    position: relative
+    z-index: 16
+    float: right
+    color: $navigationBackground
+    border-color: #e3ebed
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      left: 3px
+      top: 8px
+      bottom: 8px
+      width: 1px
+      background-color: $navigationBackground
+    // @include bordered-left;
+    // &.active {
+    //   background: #338cae;
+    //   a {
+    //     color: white;
+    //   }
+    // }
+    a
+      display: block
+      text-align: left
+      padding-left: 15px
+      padding-right: 15px
+      color: $navigationBackground
+      i, span
+        position: relative
+        top: 1px
+      i + span
+        margin-left: 8px
+
+//@media only screen and (min-width: 320px) and (max-width: 640px)
+  .footer-global .feedback a span
+    display: none
+
+//@media only screen and (min-width: 320px) and (max-width: 480px)
+  .footer-global
+    display: none

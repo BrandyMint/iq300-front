@@ -1,0 +1,288 @@
+$notifications_header: 44px
+$notifications_avatar: 36px
+
+section.list-column > div.notifications-table
+  line-height: 20px
+  +children-list-fix
+  > a.notifications-header
+    display: block
+    height: 20px
+    padding-top: ($notifications_header - 20px) / 2
+    padding-bottom: ($notifications_header - 20px) / 2
+    background: #dbe3e6
+    text-align: center
+    +box-shadow(inset 0 5px 5px rgba(0, 0, 0, 0.05))
+    +children-inline
+    > p
+      color: #338bae
+      & + *
+        margin-left: 10px
+    > span
+      line-height: 17px
+      height: 16px
+      padding-left: 10px
+      padding-right: 10px
+      color: white
+      background: #4caee2
+      border: 2px solid white
+      +border-radius(10px)
+      & + *
+        margin-left: 10px
+    > i
+      width: 20px
+      height: 20px
+      line-height: 18px
+      color: #757575
+    &:hover > p
+      text-decoration: underline
+  > ul
+    border: 1px solid transparent
+    +children-list-fix
+    li
+      position: relative
+      border: 1px solid #f1f5f6
+      margin: -1px
+      +children-list-fix
+      > section
+        position: relative
+        background: #f1f5f6
+        padding: 9px 14px 9px 19px
+        +children-inline
+        > input[type="checkbox"]
+          display: none
+          &:checked + label
+            background: #4caee2
+            border-color: #4caee2
+            > i
+              +opacity(1)
+          &:disabled + label
+            background: #eeeeee
+            cursor: default
+            > i
+              +opacity(0.5)
+        > label
+          margin-top: ($notifications_avatar - 14px) / 2
+          margin-bottom: ($notifications_avatar - 14px) / 2
+          width: 12px
+          height: 12px
+          background: white no-repeat center
+          border: 1px solid #dddddd
+          cursor: pointer
+          +transition(all)
+          > i
+            display: block
+            width: 100%
+            height: 100%
+            color: white
+            line-height: 10px
+            font-size: 11px
+            text-align: center
+            +opacity(0)
+            +transition(all)
+          & + *
+            margin-top: -36px
+            margin-left: 29px
+        > section
+          display: inline-block
+          width: 100%
+          > .notification-user
+            position: relative
+            width: 160px
+            height: $notifications_avatar
+            line-height: $notifications_avatar / 2
+            +children-list-fix
+            > a
+              position: relative
+              display: inline-block
+              max-width: 114px
+              height: 100%
+              padding-left: $notifications_avatar + 10px
+              color: #338bae
+              +children-list-fix
+              > img
+                position: absolute
+                width: $notifications_avatar
+                height: $notifications_avatar
+                left: 0
+                top: 0
+              > span
+                position: relative
+                top: 1px
+                display: block
+                +text-overflow
+                +transition(all)
+              &:hover
+                > span
+                  text-decoration: underline
+              & + span
+                margin-top: -$notifications_avatar / 2
+                margin-left: $notifications_avatar + 10px
+            > span
+              position: relative
+              top: 3px
+              font-size: 10px
+              display: block
+            > sup
+              position: absolute
+              top: 22px
+              right: 120px
+              cursor: pointer
+              height: 14px
+              line-height: 15px
+              color: white
+              font-weight: bold
+              padding: 0 5px
+              background: #a0b9be
+            & + .notification-description
+              margin-top: -$notifications_avatar
+              margin-left: 170px
+          > .notification-description
+            line-height: $notifications_avatar / 2
+            position: relative
+            +children-list-fix
+            .action-buttons
+              width: 186px
+              position: absolute
+              right: 0
+              bottom: 0
+            > span
+              width: calc(100% - 186px)
+              display: block
+              position: relative
+              top: 1px
+              color: #999999
+              font-weight: bold
+              +children-inline
+              > i
+                line-height: 12px
+                & + span
+                  margin-left: 5px
+                &.icon-list-alt
+                  line-height: 14px
+            > p
+              width: calc(100% - 186px)
+              position: relative
+              top: 2px
+              background: no-repeat left center
+              > a
+                //:padding-left 5px
+                color: #338bae
+                &:hover
+                  text-decoration: underline
+                > span
+                  color: #666666
+              > i
+                color: #00b0e5
+                line-height: 12px
+        .no-action-buttons.notification-description
+          p
+            width: 100%
+          .action-buttons
+            display: none
+        &:before
+          content: ""
+          position: absolute
+          left: -1px
+          top: -1px
+          bottom: -1px
+          width: 0
+          border-left: 5px solid transparent
+      > ul
+        position: relative
+        display: none
+        border-top: 1px solid #999999
+        border-left: 1px solid #cad9dc
+        border-right: 1px solid #cad9dc
+        margin-left: -1px
+        margin-right: -1px
+        > li
+          border-color: #cad9dc
+          > section
+            background: #cad9dc
+          &.new
+            border-color: #cad9dc
+            > section
+              background: #cad9dc
+              &:before
+                border-color: #3c94c3
+          &:first-child
+            border-top: 1px solid #999999
+            > section > section > .notification-user:before
+              content: ""
+              position: absolute
+              left: 9px
+              top: -17px
+              width: 0
+              height: 0
+              border-left: 8px solid transparent
+              border-right: 8px solid transparent
+              border-bottom: 8px solid #cad9dc
+              z-index: 51
+            > section > section > .notification-user:after
+              content: ""
+              position: absolute
+              left: 8px
+              top: -18px
+              width: 0
+              height: 0
+              border-left: 9px solid transparent
+              border-right: 9px solid transparent
+              border-bottom: 9px solid #999999
+              z-index: 50
+          &:hover
+            border-color: #338bae
+        &:hover
+          border-color: #338bae
+          > li:first-child
+            border-top-color: #338bae
+            > section > section > .notification-user:after
+              border-bottom-color: #338bae
+      &.new
+        border-color: #e3ebed
+        > section
+          background: #e3ebed
+          &:before
+            border-color: #4caee2
+      &.system
+        border-color: #d8e9f2
+        > section
+          background: #d8e9f2
+      &.expanded > ul
+        display: block
+      &:hover
+        border-color: #338bae
+        z-index: 1
+        > section:before
+          top: 0
+          bottom: 0
+        > section > section > .notification-description > p
+          white-space: normal
+        > ul
+          border-left-color: #338bae
+          border-right-color: #338bae
+          > li
+            border-left-color: #338bae
+            border-right-color: #338bae
+            &:last-child
+              border-bottom-color: #338bae
+      & + li
+        margin-top: -1px
+  & + *
+    margin-top: 10px
+
+//@media only screen and (min-width: 320px) and (max-width: 640px)
+  section.list-column > div.notifications-table > ul li > section > section > .notification-user
+    width: $notifications_avatar
+    > a
+      width: 0
+      padding-left: $notifications_avatar
+      > img
+        display: block
+      > span
+        display: none
+    > span
+      display: none
+    > sup
+      right: -4px
+    & + .notification-description
+      margin-left: $notifications_avatar + 10px

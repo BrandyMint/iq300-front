@@ -1,0 +1,170 @@
+$project-task-padding-left: $grid-gutter-width
+$project-task-padding-right: $grid-gutter-width * 2
+$project-task-padding-left-nested: $grid-gutter-width * 1.75
+$project-task-checkbox-width: 10px
+
+.project-task-box
+  &, &.task-box
+    padding:
+      left: $project-task-padding-left
+      right: $project-task-padding-right
+    margin-bottom: 1px
+  a
+    text-decoration: none
+  @each $c in new $brand-primary, overdued $brand-danger, overdue $brand-danger
+    &.task-#{nth($c, 1)}
+      &,
+      .status-date
+        color: desaturate(darken(nth($c, 2), 10%), 10%)
+
+.project-task-box-template
+  &, &:hover, &.task-box
+    background: #fff
+    border: 1px dashed $gray-light
+    margin: 2em 0
+    margin-bottom: 2em
+    padding:
+      top: 1.5em
+      bottom: 1.5em
+
+.project-task-box-checkbox,
+.project-task-box-child-counter
+  margin-left: -$project-task-padding-left + $project-task-checkbox-width
+
+.project-task-box-actions
+  margin-right: -$project-task-padding-right
+
+.project-tasks-list-navbar-checkbox
+  margin:
+    right: 1em
+  label
+    padding:
+      top: 5px
+      bottom: 5px
+
+.project-tasks-list-navbar-checkbox-input
+  margin-right: 3px
+
+.project-task-box-stats
+  padding-right: 5px
+  font-size: 11px
+
+.project-task-box-level
+  padding: 0 5px
+
+.project-task-box-add-subtask-btn
+  padding: 0 5px
+  display: inline-block
+  color: lighten($gray-light, 10%)
+  &:hover
+    color: $gray-light
+
+.placeholder
+  outline: 1px dashed #4183C4
+
+.mjs-nestedSortable-error
+  background: #fbe3e4
+  border-color: transparent
+
+li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
+  border-color: #999
+
+.disclose, .expandEditor
+  cursor: pointer
+  width: 20px
+  display: none
+
+.sortable li.mjs-nestedSortable-collapsed > ol
+  display: none
+
+.sortable li.mjs-nestedSortable-branch > div > .disclose
+  display: inline-block
+
+.project-tasks-list-sortable li ol
+  li:first-child
+    +arrow(top, 8px, white, $gray-lighter)
+    +arrow-position-left(25px)
+  li.placeholder
+    margin-left: 25px
+  &:before
+    border-bottom-color: darken($gray-lighter, 10%)
+  .project-task-box
+    border-left-color: $gray-lighter
+    padding-left: $project-task-padding-left-nested
+    &:hover
+      border-left-color: darken($gray-lighter, 10%)
+      background-color: $gray-lighter
+    &.task-new
+      border-left-color: desaturate(darken($brand-primary, 0%), 30%)
+      a
+        color: desaturate(darken($brand-primary, 0%), 30%)
+    &.task-overdued,
+    &.task-overdue
+      border-left-color: desaturate(darken($brand-danger, 0%), 30%)
+      a
+        color: desaturate(darken($brand-danger, 0%), 30%)
+    &.task-draft
+      border-left-color: desaturate(darken(#a0b9be, 0%), 30%)
+      color: #8d8d8d
+  .project-task-box-checkbox,
+  .project-task-box-child-counter
+    margin-left: -$project-task-padding-left-nested + $project-task-checkbox-width
+
+.project-task-box-child-counter
+  @extend .badge
+  @extend .badge-default
+  background: $gray-light
+  padding: 3px 5px
+  font-size: 11px
+
+.project-tasks-group-header
+  padding: 8px $grid-gutter-width / 2
+  +box-sizing(border-box)
+  list-style: none
+  cursor: pointer
+  background-color: $gray-lighter
+  +transition(background 0.2s ease)
+  &:hover
+    background-color: darken($gray-lighter, 5%)
+
+.project-tasks-group-title
+  margin: 0
+  height: 32px
+  line-height: 32px
+
+.project-tasks-group-header-form
+  margin:
+    top: 10px
+    bottom: 10px
+
+.project-tasks-list
+  li
+    list-style-type: none
+    display: block
+
+.project-task-box-form
+  padding:
+    top: $grid-gutter-width / 2
+    bottom: $grid-gutter-width
+  &, &:hover
+    background-color: $gray-lightest
+    border:
+      left: 5px solid $gray-lighter
+  .project-task-box-template &
+    margin-top: $grid-gutter-width / 2
+    &, &:hover
+      background: none
+      border-left: none
+
+.project-group-header-actions-fixed
+  @extend .navbar
+  @extend .navbar-default
+  @extend .navbar-bottom-fixed
+  position: fixed
+  z-index: 1000
+  bottom: 0
+  left: inherit
+  right: inherit
+  width: inherit
+  background-color: $gray-lighter
+  margin-left: -$grid-gutter-width / 2

@@ -1,0 +1,23 @@
+// item view
+.department-jobs-view-column
+  > h2
+    margin-top: 15px
+    margin-bottom: 15px
+  > header
+    > ul
+      > li
+        +children-inline
+        color: #666666
+        > label
+          color: #888888
+          font-weight: bold
+          width: 147px
+        > span
+          margin-left: 10px
+
+.departments-relations-list-column
+  @extend .departments-jobs-list-column
+  ul
+    li
+      & .bosses, .users
+        width: 40%
