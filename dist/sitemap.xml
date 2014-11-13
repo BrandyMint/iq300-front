@@ -10,7 +10,7 @@
   <head>
     <title>iq300 frontend</title>
     <meta charset='utf-8' content='text/html' http-equiv='content-type'>
-    <link href="stylesheets/app.css?1415810587" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/app.css?1415859208" rel="stylesheet" type="text/css" />
     <link href="stylesheets/static_fixes.css?1415804608" rel="stylesheet" type="text/css" />
   </head>
   <body class='page'>
@@ -20,229 +20,229 @@
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
           <url>
             <loc>http://www.brandymint.com/communities/contacts/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/communities/edit/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/communities/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/communities/invites/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/communities/invites/index_old.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/communities/new/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/communities/profile/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/communities/profile/tasks_rules.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/contacts/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/conversations/dialog/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/conversations/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/documents_columns.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/notifications/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/profile.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/profile_new/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/new/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show/details.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show/discussions.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show/participants.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show/reports.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show/reports_responsible.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show/reports_tasks.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show/reports_tasks_extended.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/show/tasks.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/projects/tasks_new.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/registration/enter.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/registration/forgot_password.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/registration/send_confirmation_instructions.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/registration/step1.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/registration/step2.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/registration/step3.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/tasks/edit.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/tasks/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/tasks/show/accessor_users.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
           <url>
             <loc>http://www.brandymint.com/tasks/show/index.html</loc>
-            <lastmod>2014-11-12T00:00:00+03:00</lastmod>
+            <lastmod>2014-11-13T00:00:00+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
           </url>
