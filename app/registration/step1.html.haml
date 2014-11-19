@@ -7,8 +7,8 @@ layout: input_registration
       %img{src: '/images/login/logo-blue.png', class: 'main-logo'}
       %p.registration-page-header-title
         Система проектного управления
-    .registration-page-body
-      .registration-page-body-internal-container
+    .registration-page-body-content
+      .registration-page-body
         .registration-form-title-wrapper
           %p.registration-form-title.registration-form-title-step1
             Пожалуйста представтесь
@@ -27,18 +27,18 @@ layout: input_registration
                 Имеется промо код?
               %input.form-control.registration-form-input{placeholder: 'Промо код'}
           .buttons
-            %a{href: '', class: 'btn one-big-btn registration-next-step registration-step-one-next'} Далее
-            %a{href: '', class: 'one-big-btn registration-previous-step registration-step-one-prev registration-step-one-back'} Назад
+            %a.registration-next-step{href: '', class: ''} Далее
+            %a.registration-previous-step.registration-step-one-back{href: ''} Назад
         .registration-page-body-footer
 
-    .registration-page-footer
-      .enter-container
-        .registration-delimeter
-        .registration-steps-status-block
-          %ol
-            %li.registration-steps-status
-              .registration-steps-status-link.active
-            %li.registration-steps-status
-              .registration-steps-status-link
-            %li.registration-steps-status
-              .registration-steps-status-link
+        .registration-page-footer
+          .enter-container
+            .registration-delimeter
+            .registration-steps-status-block
+              %ol
+                %li.registration-steps-status
+                  .registration-steps-status-link.active
+                %li.registration-steps-status
+                  .registration-steps-status-link
+                %li.registration-steps-status
+                  .registration-steps-status-link

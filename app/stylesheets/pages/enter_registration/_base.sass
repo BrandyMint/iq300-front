@@ -1,21 +1,44 @@
-$registration-font-family-normal: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
-$registration-font-family-light: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
-$wide-screen: "screen and (min-width: 768px)"
+@import variables
+@import buttons
 
-/******** COLORS *********
-$registration-main-color: #375a6e
+body
+  @media screen and (min-width: $screen-sm)
+    background-color: $registration-background-desktop
+    width: 100%
+    height: 100%
 
-$registration-alert-info-font-color: #31708f
-$registration-alert-info-background-color: #d9edf7
-$registration-alert-info-border-color: #bce8f1
+.registration-page
+  @extend .container-fluid
 
-$registration-alert-danger-font-color: #a94442
-$registration-alert-danger-background-color: #f2dede
-$registration-alert-danger-border-color: #ebccd1
+.registration-page-container
+  @media screen and (min-width: $screen-sm)
+    margin: 0 auto !important
+    position: relative
+    max-width: 1000px
 
 .registration-page-body
   width: 70%
   margin: 0 auto
+  @media screen and (min-width: $screen-sm)
+    position: relative
+    width: 78%
+    background-color: #fff
+    padding-bottom: $registration-page-body-footer-height
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5)
+    border-radius: 3px
+
+.registration-page-body-footer
+  @media screen and (min-width: $screen-sm)
+    background-color: $registration-header-background-desktop
+    width: 100%
+    bottom: 0
+    height: $registration-page-body-footer-height
+    position: absolute
+    border-top: 1px solid #DBDBDB
+
+.registration-page-footer
+  clear: both
+  padding: 2em 0
 
 .registration-form-title-wrapper
   text-align: center
@@ -28,14 +51,10 @@ $registration-alert-danger-border-color: #ebccd1
   position: relative
   top: 8em
 
+
+
 .registration-form-title-step1
   top: 11em
-
-.registration-page
-  height: 80%
-  margin-top: 3%
-  margin-bottom: 5%
-  overflow: hidden
 
 .registration-choose-avatar
   max-width: 150px
@@ -49,12 +68,7 @@ $registration-alert-danger-border-color: #ebccd1
 .registration-top-title
   top: 0
 
-.registration-page-footer
-  clear: both
-  padding-top: 0.4em
-
 .registration-steps-status-block
-  overflow: auto
   display: inline-block
   margin-left: 43%
 
@@ -110,44 +124,6 @@ $registration-alert-danger-border-color: #ebccd1
   clear: both
   visibility: hidden
 
-.registration-previous-step
-  margin-left: 7%
-  text-decoration: none
-  text-color: black
-  font-size: 0.9em
-  margin-top: 1em
-  width: 43%
-  display: block
-  float: left
-  &:visited
-    color: black
-
-.registration-next-step
-  min-width: 47%
-  float: right
-  margin: 0.6em auto
-  display: block
-  background-color: $registration-main-color
-  color: white
-  font-size: 0.8em
-  font-weight: 300
-  text-decoration: none
-  &:hover
-    color: white
-
-.registration-finish-step
-  min-width: 47%
-  float: right
-  margin: 0.6em auto
-  display: block
-  background-color: $registration-main-color
-  color: white
-  font-size: 0.8em
-  font-weight: 300
-  text-decoration: none
-  &:hover
-    color: white
-
 .registration-alert
   padding: 0.5em 0.8em
   margin-top: 0.7em
@@ -197,7 +173,6 @@ $registration-alert-danger-border-color: #ebccd1
 
 .enter-through-social-links
   margin: 0 auto
-  overflow: auto
   display: inline-block
 
 .enter-container
@@ -213,17 +188,6 @@ $registration-alert-danger-border-color: #ebccd1
   font-weight: 300
   font-size: 0.9em
   font-family: $registration-font-family-normal
-
-.one-big-btn
-  display: block
-  width: 100%
-  background-color: $registration-main-color
-  color: white
-  font-size: 0.8em
-  font-weight: 500
-  text-decoration: none
-  &:hover
-    color: white
 
 .registration-enter-title
   color: #808080
@@ -242,7 +206,12 @@ $registration-alert-danger-border-color: #ebccd1
 .registration-page-header
   margin: 0 auto
   width: 73%
+  height: $registration-page-header-height
   display: none
+  @media screen and (min-width: $screen-sm)
+    display: block
+    margin-top: 1em
+    margin-bottom: -1em
 
 .registration-page-header-title
   font-family: $registration-font-family-light
@@ -250,6 +219,13 @@ $registration-alert-danger-border-color: #ebccd1
   font-weight: lighter
   color: #385A74
   display: inline
+  @media screen and (min-width: $screen-sm)
+    top: -7px
+    display: inline-block
+    position: relative
+    left: 29px
+    font-size: 1.5em
+    font-weight: 300
 
 .registration-header
   display: inline
@@ -257,11 +233,7 @@ $registration-alert-danger-border-color: #ebccd1
 .registration-step-one-back
   display: none
 
-@media #{$wide-screen}
-  body
-    background-color: #F7F8F3
-    width: 100%
-    height: 100%
+@media screen and (min-width: $screen-sm)
   .enter-container
     width: 70%
     margin: 0 auto
@@ -269,44 +241,9 @@ $registration-alert-danger-border-color: #ebccd1
   .registration-page
     margin: 0
   .registration-steps-status-block
-    margin: -25px auto
+    margin: 0 auto
   .registration-delimeter
     display: none
-  .registration-page-header
-    display: block
-    margin-top: 1em
-    margin-bottom: -1em
-  .registration-page-header-title
-    top: -7px
-    display: inline-block
-    position: relative
-    left: 29px
-    font-size: 1.5em
-    font-weight: 300
-  .registration-page-container
-    margin: 0 auto !important
-    position: relative
-    max-width: 1000px
-  .registration-page-body
-    width: 78%
-    height: 85%
-    max-height: 462px
-    background-color: white
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5)
-    border-radius: 3px
-  .registration-page-body-internal-container
-    display: block
-    position: relative
-    height: 84%
-    margin-top: 4%
-  .registration-page-footer
-    display: block
-    position: absolute
-    bottom: 2.2em
-    right: 25%
-    left: 50%
-    width: 700px
-    margin-left: -350px
   .enter-logo
     display: none
   .enter-link
@@ -323,13 +260,13 @@ $registration-alert-danger-border-color: #ebccd1
     margin: 0 auto
     font-weight: 500
   .registration-form-title-wrapper
-    position: absolute
+    //position: absolute
     top: 0px
     width: 99.99%
     box-sizing: border-box
     padding: 20px
     text-align: left
-    background-color: #F4F4F4
+    background-color: $registration-header-background-desktop
     border-bottom: 1px solid #DBDBDB
     display: block
   .registration-form-title
@@ -338,109 +275,18 @@ $registration-alert-danger-border-color: #ebccd1
     font-size: 1.8em
     font-family: $registration-font-family-light
     font-weight: 300
-  .registration-page-body-footer
-    background-color: #F4F4F4
-    width: 100%
-    bottom: -74px
-    height: 30px
-    position: absolute
-    border-top: 1px solid #DBDBDB
   .registration-page-form
-    width: 20%
-    max-width: 256px
-    max-height: 291px
+    width: 256px
     position: relative
-    bottom: 0
-    margin: 1em auto 0
-    top: 60%
-    left: 10%
-    +translate(-50%, -50%)
-  .registration-previous-step
-    background-image: image-url("registration/arrow_left.png")
-    background-repeat: no-repeat
-    background-size: contain
-    height: 100px
-    display: block
-    color: transparent
-    background-color: transparent
-    position: fixed
-    bottom: 0
-    margin: 1em auto 0
-    top: 50%
-    right: 90%
-    +translate(-50%, -50%)
-    &:hover
-      color: transparent
-  .registration-next-step
-    background-image: image-url("registration/arrow_right.png")
-    background-repeat: no-repeat
-    background-size: contain
-    height: 100px
-    display: block
-    color: transparent
-    background-color: transparent
-    position: fixed
-    bottom: 0
-    margin: 1em auto 0
-    top: 50%
-    left: 134%
-    +translate(-50%, -50%)
-    &:hover
-      color: transparent
+    margin: 1em auto
+    min-height: $registration-step-btn-desktop-width + $grid-gutter-width
   .registration-choose-avatar
     width: 85px
     height: 85px
   .main-logo
     width: 75px
     height: 31px
-  .registration-finish-step
-    min-width: 47%
-    width: 67px
-    float: right
-    display: block
-    font-size: 0.8em
-    font-weight: 300
-    text-decoration: none
-    background-image: image-url("registration/arrow_right_ending.png")
-    background-repeat: no-repeat
-    background-size: contain
-    height: 100px
-    color: transparent
-    background-color: transparent
-    position: fixed
-    margin: 1em auto 0
-    bottom: 0
-    top: 50%
-    left: 134%
-    +translate(-50%, -50%)
-    &:hover
-      color: transparent
-  .registration-step-one-back
-    display: block
-    margin-left: 7%
-    width: 43%
-  .registration-step-one-next
-    min-width: 43%
-    float: right
-    display: block
-    font-size: 0.8em
-    font-weight: 300
-    text-decoration: none
-    position: fixed
-    bottom: 0
-    top: 50%
-    left: 131%
-    width: 67px
-    +translate(-50%, -50%)
-  .registration-step-one-prev
-    background-image: image-url("registration/arrow_left_blank.png")
-    position: fixed
-    bottom: 0
-    margin: 1em auto 0
-    top: 50%
-    right: 87%
-    +translate(-50%, -50%)
-  .less-font
-    font-size: 0.6em
   .registration-step1-form-group
-    padding-top: 80%
+    padding-top: 20%
+
+

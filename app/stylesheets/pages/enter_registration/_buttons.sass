@@ -1,0 +1,74 @@
+%registration-form-btn-primary
+  @extend .btn
+  display: block
+  width: 100%
+  background-color: $registration-main-color
+  color: #fff
+  font-size: 0.9em
+  font-weight: 500
+  text-decoration: none
+  &:hover
+    color: #fff
+
+%registration-form-btn-default
+  text-decoration: none
+  color: #000
+  font-size: 0.9em
+  margin-top: 1em
+  width: 43%
+  float: left
+  &:visited
+    color: #000
+
+.one-big-btn
+  @extend %registration-form-btn-primary
+
+%registration-step-btn-desktop
+  @media screen and (min-width: $screen-sm)
+    display: block
+    position: absolute
+    width: $registration-step-btn-desktop-width
+    height: $registration-step-btn-desktop-width
+    top: 50%
+    margin-top: - $registration-step-btn-desktop-width/2
+    &, &:hover
+      color: transparent
+    background:
+      repeat: no-repeat
+      size: contain
+      color: transparent
+
+.registration-previous-step
+  margin-left: 7%
+  @extend %registration-form-btn-default
+  @extend %registration-step-btn-desktop
+  @media screen and (min-width: $screen-sm)
+    background-image: image-url("registration/arrow_left.png")
+    background-repeat: no-repeat
+    background-size: contain
+    left: - ($registration-step-btn-desktop-width + $grid-gutter-width)
+    &:hover
+      color: transparent
+
+.registration-next-step
+  @extend %registration-form-btn-primary
+  @extend %registration-step-btn-desktop
+  @media screen and (min-width: $screen-sm)
+    background-image: image-url("registration/arrow_right.png")
+    right: - ($registration-step-btn-desktop-width + $grid-gutter-width)
+
+.registration-finish-step
+  @extend %registration-form-btn-primary
+  @media screen and (max-width: $screen-xs-max)
+    min-width: 47%
+    float: right
+    margin: 0.6em auto
+  @extend %registration-step-btn-desktop
+  @media screen and (min-width: $screen-sm-min)
+    background-image: image-url("registration/arrow_right_ending.png")
+    right: - ($registration-step-btn-desktop-width + $grid-gutter-width)
+    float: none
+
+
+
+
