@@ -7,8 +7,8 @@ layout: input_registration
       %img{src: '/images/login/logo-blue.png', class: 'main-logo'}
       %p.registration-page-header-title
         Система управления задачами и проектами
-    .registration-page-body
-      .registration-page-body-internal-container
+    .registration-page-body-content
+      .registration-page-body
         .registration-form-title-wrapper
           %p.registration-form-title
             Добавьте сотрудников
@@ -22,18 +22,18 @@ layout: input_registration
             .registration-form-input-wrapper
               %input.form-control.registration-form-input{placeholder: 'Введите e-mail'}
           .buttons.registration-steps-buttons
-            %a{href: '', class: 'btn registration-finish-step'} Начать работу
+            %a{href: '', class: 'registration-finish-step'} Начать работу
             %a{href: '', class: 'registration-previous-step'} Назад
         .registration-page-body-footer
 
-    .registration-page-footer
-      .enter-container
-        .registration-delimeter
-        .registration-steps-status-block
-          %ol
-            %li.registration-steps-status
-              .registration-steps-status-link
-            %li.registration-steps-status
-              .registration-steps-status-link
-            %li.registration-steps-status
-              .registration-steps-status-link.active
+        .registration-page-footer
+          .enter-container
+            .registration-delimeter
+            .registration-steps-status-block
+              %ol
+                %li.registration-steps-status
+                  .registration-steps-status-link
+                %li.registration-steps-status
+                  .registration-steps-status-link
+                %li.registration-steps-status
+                  .registration-steps-status-link.active
