@@ -51,12 +51,12 @@
         .col-xs-1.text-right
           .message-box-user-avatar
             %a{:href => "#"}
-              %img.img-circle{:src => "/images/community/1.png", :alt => "", :width => "40px", :height => "40px"}/
+              %img.img-circle{:src => "/images/community/1.png", :alt => "", :width => "40px", :height => "40px"}
             .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right.user-status-bullet-online
         .col-xs-11
           .message-box-header
             %h4 
-              %a{:href => "#"}Екатерина Федорова
+              %a{:href => "#"} Екатерина Федорова
               %small.text-muted 21 июля, 14:59
           .message-body
             .row
@@ -68,3 +68,85 @@
                     Имя_файла1.doc
               .col-xs-1.text-right
                 .badge 245                  
+
+    .message-box.comment-item{"data-author" => "МещеряковАлександр", "data-id" => "3484"}
+      .media
+        .pull-left
+          .message-box-user-avatar
+            %img.img-circle{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/medium_749d529a-c50d-4757-8dc2-7f4942bc6b04.jpg", :style => "width: 40px; height: 40px", :title => "Мещеряков Александр "}/
+            .user-status-bullet.user-status-bullet-bottom-right.user-status-bullet-online.user-status-bullet-sm
+        .media-body
+          .message-box-header.group
+            %h4.pull-left
+              %a{:href => "/users/203"} Александр Мещеряков
+            .pull-right
+              %a{"data-confirmation" => "Подтвердите действие", "data-url" => "/discussions/4680/comments/3484", :href => "#", :role => "delete-btn"}
+                %i.fa.fa-times-circle.text-muted
+            %p.pull-right.text-muted
+              Сегодня, 08:39
+          .message-body
+            .message-body-text
+              %h1 h1
+              %h2 h2
+              %h1 h1
+              %h2 h2
+              %h1 h1
+              %h2 h2
+              %p quote, quote
+              %ul
+                %li list
+                %li list
+                %li
+                  %p list
+                %li
+                  %p list
+                %li
+                  %p list
+                %li
+                  %p list
+                %li
+                  %p one
+                %li
+                  %p two
+                %li
+                  %p three
+    .message-box.comment-item{"data-author" => "МещеряковАлександр", "data-id" => "3485"}
+      .media
+        .pull-left
+          .message-box-user-avatar
+            %img.img-circle{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/medium_749d529a-c50d-4757-8dc2-7f4942bc6b04.jpg", :style => "width: 40px; height: 40px", :title => "Мещеряков Александр "}/
+            .user-status-bullet.user-status-bullet-bottom-right.user-status-bullet-online.user-status-bullet-sm
+        .media-body
+          .message-box-header.group
+            %h4.pull-left
+              %a{:href => "/users/203"} Александр Мещеряков
+            .pull-right
+                
+              %a{"data-confirmation" => "Подтвердите действие", "data-url" => "/discussions/4680/comments/3485", :href => "#", :role => "delete-btn"}
+                %i.fa.fa-times-circle.text-muted
+            %p.pull-right.text-muted
+              Сегодня, 08:43
+          .message-body
+            .message-body-text
+              %hr/
+              %hr/
+              %hr/
+              %hr/
+              %p
+                This is
+                %a{:href => "http://example.com/%20"} an example
+                inline link.
+              %p
+                %a{:href => "http://example.net/"} This link
+                has no title attribute.
+              %p
+                %em single asterisks
+              %p
+                %em single underscores
+              %p
+                %strong double asterisks
+              %p
+                %strong double underscores
+              %p
+                %code There is a literal backtick (`) here.
+

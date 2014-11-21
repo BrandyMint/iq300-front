@@ -4,6 +4,20 @@
     background-color: darken($gray-lighter, 3%)
   &.message-box-new
     background-color: lighten($brand-primary, 53%)
+  ol, ul
+    margin:
+      top: 1em
+      bottom: 1em
+    padding-left: $grid-gutter-width/2
+    ol, ul
+      margin:
+        top: 0
+        bottom: 0
+      li
+        list-style-type: circle
+    li
+      margin-left: $grid-gutter-width/2
+      list-style-type: disc
 
 .messages-list
   .message-box
