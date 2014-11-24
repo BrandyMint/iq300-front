@@ -4211,24 +4211,24 @@ a.thumbnail.active {
 .alert-warning {
   background-color: #f8931f;
   border-color: #f65f08;
-  color: #f8931f; }
+  color: white; }
   .alert-warning a {
-    color: #f8931f; }
+    color: white; }
   .alert-warning hr {
     border-top-color: #dd5607; }
   .alert-warning .alert-link {
-    color: #dd7907; }
+    color: #e6e6e6; }
 
 .alert-danger {
   background-color: #ff0101;
   border-color: #e70026;
-  color: #ff1d25; }
+  color: white; }
   .alert-danger a {
-    color: #ff1d25; }
+    color: white; }
   .alert-danger hr {
     border-top-color: #cd0022; }
   .alert-danger .alert-link {
-    color: #e90008; }
+    color: #e6e6e6; }
 
 @keyframes progress-bar-stripes {
   from {

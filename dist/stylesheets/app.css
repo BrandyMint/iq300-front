@@ -3771,24 +3771,24 @@ a.thumbnail.active {
 .alert-warning {
   background-color: #f8931f;
   border-color: #f65f08;
-  color: #f8931f; }
+  color: white; }
   .alert-warning a {
-    color: #f8931f; }
+    color: white; }
   .alert-warning hr {
     border-top-color: #dd5607; }
   .alert-warning .alert-link {
-    color: #dd7907; }
+    color: #e6e6e6; }
 
 .alert-danger {
   background-color: #ff0101;
   border-color: #e70026;
-  color: #ff1d25; }
+  color: white; }
   .alert-danger a {
-    color: #ff1d25; }
+    color: white; }
   .alert-danger hr {
     border-top-color: #cd0022; }
   .alert-danger .alert-link {
-    color: #e90008; }
+    color: #e6e6e6; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -14117,9 +14117,14 @@ section.view-column {
 .task-overdue .task-box-title-block,
 .task-overdue .task-box-status-date {
   color: #ff0101; }
-.task-overdued.task-new .task-box-title-block,
+.task-overdued .task-box-title-block, .task-overdued.task-new .task-box-title-block,
+.task-overdue .task-box-title-block,
 .task-overdue.task-new .task-box-title-block {
   font-weight: bold; }
+.task-overdued a, .task-overdued.task-new a,
+.task-overdue a,
+.task-overdue.task-new a {
+  color: #ff0101; }
 
 .task-with-change, .project-with-change {
   background-color: #e3ebed; }
@@ -20792,10 +20797,10 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
     border-left-color: #557d8c; }
     .project-tasks-list-sortable li ol .project-task-box.task-new a, .project-tasks-list-sortable li ol .task-new.project-box a {
       color: #557d8c; }
-  .project-tasks-list-sortable li ol .project-task-box.task-overdued, .project-tasks-list-sortable li ol .task-overdued.project-box, .project-tasks-list-sortable li ol .project-task-box.task-overdue, .project-tasks-list-sortable li ol .task-overdue.project-box {
-    border-left-color: #d92727; }
-    .project-tasks-list-sortable li ol .project-task-box.task-overdued a, .project-tasks-list-sortable li ol .task-overdued.project-box a, .project-tasks-list-sortable li ol .project-task-box.task-overdue a, .project-tasks-list-sortable li ol .task-overdue.project-box a {
-      color: #d92727; }
+  .project-tasks-list-sortable li ol .project-task-box.task-overdued, .project-tasks-list-sortable li ol .task-overdued.project-box, .project-tasks-list-sortable li ol .project-task-box.task-overdued.task-new, .project-tasks-list-sortable li ol .task-overdued.task-new.project-box, .project-tasks-list-sortable li ol .project-task-box.task-overdue, .project-tasks-list-sortable li ol .task-overdue.project-box, .project-tasks-list-sortable li ol .project-task-box.task-overdue.task-new, .project-tasks-list-sortable li ol .task-overdue.task-new.project-box {
+    border-left-color: #ff0101; }
+    .project-tasks-list-sortable li ol .project-task-box.task-overdued a, .project-tasks-list-sortable li ol .task-overdued.project-box a, .project-tasks-list-sortable li ol .project-task-box.task-overdued.task-new a, .project-tasks-list-sortable li ol .task-overdued.task-new.project-box a, .project-tasks-list-sortable li ol .project-task-box.task-overdue a, .project-tasks-list-sortable li ol .task-overdue.project-box a, .project-tasks-list-sortable li ol .project-task-box.task-overdue.task-new a, .project-tasks-list-sortable li ol .task-overdue.task-new.project-box a {
+      color: #ff0101; }
   .project-tasks-list-sortable li ol .project-task-box.task-draft, .project-tasks-list-sortable li ol .task-draft.project-box {
     border-left-color: #afafaf;
     color: #8d8d8d; }
