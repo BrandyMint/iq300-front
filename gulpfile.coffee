@@ -58,7 +58,7 @@ gulp.task "sass:watch", ->
 
 gulp.task "sass:dist", ->
   gulp
-    .src("./app/stylesheets/*.sass")
+    .src(["./app/stylesheets/*.sass", "./app/stylesheets/mailers/*.sass"])
     .pipe(sass(options.sassDist))
     .pipe(rewriteCSS(options.rewriteCSSDist))
     .pipe(gulp.dest("./dist/stylesheets"))
