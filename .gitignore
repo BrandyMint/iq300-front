@@ -6,16 +6,21 @@
 
 .DS_Store
 /.idea/
+/node_modules/
+npm-debug.log
 
 # Ignore bundler config
 /.bundle
 
 # Ignore the build directory
 /build
+build/
 *~
 # Ignore Sass' cache
 /.sass-cache
 
+/app/.tmp
+/app/tmp
 /app/vendor/components
 /app/vendor
 .*~imageoptim.*
