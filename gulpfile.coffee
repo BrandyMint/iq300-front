@@ -7,6 +7,7 @@ handleError = (err) ->
 gulp = require("gulp")
 path = require("path")
 sass = require('gulp-sass')
+rubysass = require('gulp-ruby-sass')
 haml = require('gulp-haml-coffee')
 flatten = require('gulp-flatten')
 include = require('gulp-file-include')
@@ -35,21 +36,18 @@ options.sassBasePaths = ['./app/stylesheets']
 options.sassDev =
   errLogToConsole: true
   sourceComments: 'normal'
-  outputStyle: 'nested'
-  includePaths:
-    './app/stylesheets'
+  outputStyle: 'compact'
 
 options.sassDist =
   errLogToConsole: true
   sourceComments: 'normal'
   outputStyle: 'compact'
-  includePaths:
-    './app/stylesheets'
 
 gulp.task "sass:watch", ->
   gulp
-    .src("./app/stylesheets/*.sass")
-    .pipe(sass(options.sassDev))
+    .src("./app/stylesheets/**/*.sass")
+    #.pipe(sass(options.sassDev))
+    .pipe(rubysass())
     .pipe(rewriteCSS(options.rewriteCSSDev))
     .pipe(gulp.dest("./app/tmp/stylesheets"))
     .pipe($.connect.reload())
@@ -59,7 +57,8 @@ gulp.task "sass:watch", ->
 gulp.task "sass:dist", ->
   gulp
     .src(["./app/stylesheets/**/*.sass"])
-    .pipe(sass(options.sassDist))
+    #.pipe(sass(options.sassDist))
+    .pipe(rubysass())
     .pipe(rewriteCSS(options.rewriteCSSDist))
     .pipe(gulp.dest("./dist/stylesheets"))
     .on "error", $.util.log

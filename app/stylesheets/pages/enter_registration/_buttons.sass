@@ -43,7 +43,7 @@
   @extend %registration-form-btn-default
   @extend %registration-step-btn-desktop
   @media screen and (min-width: $screen-sm)
-    background-image: image-url("registration/arrow_left.png")
+    background-image: url("registration/arrow_left.png")
     background-repeat: no-repeat
     background-size: contain
     left: - ($registration-step-btn-desktop-width + $grid-gutter-width)
@@ -54,7 +54,7 @@
   @extend %registration-form-btn-primary
   @extend %registration-step-btn-desktop
   @media screen and (min-width: $screen-sm)
-    background-image: image-url("registration/arrow_right.png")
+    background-image: url("registration/arrow_right.png")
     right: - ($registration-step-btn-desktop-width + $grid-gutter-width)
 
 .registration-finish-step
@@ -65,7 +65,7 @@
     margin: 0.6em auto
   @extend %registration-step-btn-desktop
   @media screen and (min-width: $screen-sm-min)
-    background-image: image-url("registration/arrow_right_ending.png")
+    background-image: url("registration/arrow_right_ending.png")
     right: - ($registration-step-btn-desktop-width + $grid-gutter-width)
     float: none
 

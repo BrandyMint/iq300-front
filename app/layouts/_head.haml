@@ -4,6 +4,6 @@
 -#%meta{:name => "viewport", :content => "initial-scale=1.0"}
 
 - if build?
-  %link{rel: 'stylesheet', href: '/stylesheets/app.css'}
+  = stylesheet_link_tag '/stylesheets/app'
 - else
-  %link{rel: 'stylesheet', href: '/tmp/stylesheets/app.css'}
+  = stylesheet_link_tag '/tmp/stylesheets/app'

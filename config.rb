@@ -74,7 +74,7 @@ set :markdown, :fenced_code_blocks => true,
                :smartypants => true
 
 
-set :css_dir, 'cssdir'
+set :css_dir, 'tmp/stylesheets'
 
 set :js_dir, 'javascripts'
 
