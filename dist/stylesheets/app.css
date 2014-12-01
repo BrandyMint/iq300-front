@@ -14117,13 +14117,15 @@ section.view-column {
 .task-overdue .task-box-title-block,
 .task-overdue .task-box-status-date {
   color: #ff0101; }
-.task-overdued .task-box-title-block, .task-overdued.task-new .task-box-title-block,
+.task-overdued .task-box-title-block, .task-overdued.task-new .task-box-title-block, .task-overdued.task-in_work .task-box-title-block,
 .task-overdue .task-box-title-block,
-.task-overdue.task-new .task-box-title-block {
+.task-overdue.task-new .task-box-title-block,
+.task-overdue.task-in_work .task-box-title-block {
   font-weight: bold; }
-.task-overdued a, .task-overdued.task-new a,
+.task-overdued a, .task-overdued.task-new a, .task-overdued.task-in_work a,
 .task-overdue a,
-.task-overdue.task-new a {
+.task-overdue.task-new a,
+.task-overdue.task-in_work a {
   color: #ff0101; }
 
 .task-with-change, .project-with-change {
@@ -20797,10 +20799,6 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
     border-left-color: #557d8c; }
     .project-tasks-list-sortable li ol .project-task-box.task-new a, .project-tasks-list-sortable li ol .task-new.project-box a {
       color: #557d8c; }
-  .project-tasks-list-sortable li ol .project-task-box.task-overdued, .project-tasks-list-sortable li ol .task-overdued.project-box, .project-tasks-list-sortable li ol .project-task-box.task-overdued.task-new, .project-tasks-list-sortable li ol .task-overdued.task-new.project-box, .project-tasks-list-sortable li ol .project-task-box.task-overdue, .project-tasks-list-sortable li ol .task-overdue.project-box, .project-tasks-list-sortable li ol .project-task-box.task-overdue.task-new, .project-tasks-list-sortable li ol .task-overdue.task-new.project-box {
-    border-left-color: #ff0101; }
-    .project-tasks-list-sortable li ol .project-task-box.task-overdued a, .project-tasks-list-sortable li ol .task-overdued.project-box a, .project-tasks-list-sortable li ol .project-task-box.task-overdued.task-new a, .project-tasks-list-sortable li ol .task-overdued.task-new.project-box a, .project-tasks-list-sortable li ol .project-task-box.task-overdue a, .project-tasks-list-sortable li ol .task-overdue.project-box a, .project-tasks-list-sortable li ol .project-task-box.task-overdue.task-new a, .project-tasks-list-sortable li ol .task-overdue.task-new.project-box a {
-      color: #ff0101; }
   .project-tasks-list-sortable li ol .project-task-box.task-draft, .project-tasks-list-sortable li ol .task-draft.project-box {
     border-left-color: #afafaf;
     color: #8d8d8d; }
