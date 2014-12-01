@@ -33,6 +33,9 @@ options.rewriteCSSDist =
 
 options.sassBasePaths = ['./app/stylesheets']
 
+options.rubysass =
+  sorucemap: true
+
 options.sassDev =
   errLogToConsole: true
   sourceComments: 'normal'
