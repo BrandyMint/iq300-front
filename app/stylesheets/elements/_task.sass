@@ -78,7 +78,6 @@
   display: block
   padding: 0
   min-height: 0
-  color: $brand-primary
 
 .task-box-status-date-days
   font-size: 0.8em
@@ -104,13 +103,21 @@
 
 .task-new
   @extend %task-new-style
+  .task-box-title-block,
+  .task-box-title-block a,
+  .status-date
+    color: $brand-primary
+  .task-box-title-block,
+  .task-box-title-block a
+    font-weight: bold
 
 .task-overdued,
 .task-overdue
   @extend %task-overdued-style
   &, &.task-new, &.task-in_work
     .task-box-title-block,
-    .task-box-status-date
+    .task-box-title-block a,
+    .status-date
       color: $brand-danger
 
 .task-with-change, .project-with-change

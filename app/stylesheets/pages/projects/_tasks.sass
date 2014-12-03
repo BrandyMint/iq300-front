@@ -11,11 +11,7 @@ $project-task-checkbox-width: 10px
     margin-bottom: 1px
   a
     text-decoration: none
-  @each $c in new $brand-primary, overdued $brand-danger, overdue $brand-danger
-    &.task-#{nth($c, 1)}
-      &,
-      .status-date
-        color: desaturate(darken(nth($c, 2), 10%), 10%)
+  //@each $c in new $brand-primary, overdued $brand-danger, overdue $brand-danger
 
 .project-task-box-template
   &, &:hover, &.task-box
