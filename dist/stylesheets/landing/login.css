@@ -20,9 +20,9 @@ header {
 
 .black {
   display: none;
-  background: #222222;
+  background: #222;
   padding: 50px 0;
-  color: white; }
+  color: #fff; }
 
 .block {
   width: 960px;
@@ -80,7 +80,7 @@ header {
   margin: -6px 0 8px 0; }
   .social img {
     padding: 10px;
-    background: #222222;
+    background: #222;
     margin-left: 5px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -100,7 +100,7 @@ header {
   background: #da2713; }
 
 .vk img:hover {
-  background: #45688e; }
+  background: #45688E; }
 
 .blockport1 {
   width: 260px;
@@ -144,7 +144,7 @@ header {
 .pricetop {
   background: #3b5a76;
   height: 120px;
-  color: white; }
+  color: #fff; }
 
 .priceline {
   width: 201px;
@@ -159,14 +159,14 @@ header {
   margin: 20px 0 20px 12px; }
 
 .pricewhite {
-  background: white;
+  background: #fff;
   color: grey;
   padding: 20px 0;
   font-size: 13px; }
 
 .start {
   height: 50px;
-  color: white;
+  color: #fff;
   font-size: 18px;
   line-height: 50px;
   text-decoration: none;
@@ -222,7 +222,7 @@ header {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
-  color: white;
+  color: #fff;
   background: #689ecf;
   width: 130px;
   text-align: center;
@@ -247,7 +247,7 @@ header {
   padding-left: 20px;
   height: 50px;
   text-align: center;
-  color: white;
+  color: #fff;
   background: #6c9dca;
   display: inline-block;
   position: relative;
@@ -317,7 +317,7 @@ h2 {
   line-height: 40px; }
 
 .sin h2 {
-  color: white;
+  color: #fff;
   margin: 30px 0 20px 0;
   text-align: right;
   font-size: 38px;
@@ -326,13 +326,13 @@ h2 {
   text-transform: uppercase; }
 
 .black h3 {
-  color: white;
+  color: #fff;
   margin: 20px 0 50px 0;
   font-size: 24px;
   font-weight: bold;
   line-height: 26px; }
 .black a {
-  color: white;
+  color: #fff;
   font-size: 18px;
   text-decoration: none;
   display: block; }
@@ -401,7 +401,7 @@ h2 {
   background: #6c9dca;
   border: none;
   border-bottom: 4px solid #3b5a76;
-  color: white;
+  color: #fff;
   outline: none;
   cursor: pointer;
   -webkit-border-radius: 10px;
@@ -429,7 +429,7 @@ h2 {
   display: block;
   font-weight: bold;
   font-size: 24px;
-  background: white;
+  background: #fff;
   border: none;
   outline: none;
   cursor: pointer;
@@ -440,13 +440,13 @@ h2 {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  border: 2px solid white;
+  border: 2px solid #fff;
   margin: 50px 0 20px 0;
   color: #3b5a76; }
   .submit2:hover {
     background: #3b5a76;
-    border: 2px solid white;
-    color: white; }
+    border: 2px solid #fff;
+    color: #fff; }
 
 .line {
   height: 15px;
@@ -467,12 +467,12 @@ h2 {
   .logos img {
     margin-right: 50px; }
 
-/** BLOG ** */
+/*** BLOG ** */
 .head {
   height: 70px;
   background: #2f617e;
   padding: 7px 0;
-  color: white;
+  color: #fff;
   text-shadow: 0 1px 0 #2f475e; }
   .head h1 {
     margin: 0px;
@@ -480,13 +480,13 @@ h2 {
     font-weight: normal;
     font-size: 30px; }
   .head a:link {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 15px; }
   .head a:hover {
     text-decoration: underline; }
   .head a:visited {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 15px; }
   .head span {
@@ -512,7 +512,7 @@ h2 {
   font-size: 13px;
   padding: 20px 0 0 15px;
   background: url("/assets/login/strelka.png") no-repeat;
-  color: white; }
+  color: #fff; }
 
 .meta {
   float: left;
@@ -561,7 +561,7 @@ h2 {
   color: #9b9b9b;
   text-decoration: none;
   padding: 0 20px 0 8px;
-  text-shadow: 0px 1px 0 white;
+  text-shadow: 0px 1px 0 #fff;
   white-space: nowrap;
   position: relative;
   text-transform: uppercase; }
@@ -621,7 +621,7 @@ h2 {
   width: 230px;
   border: 0;
   background: #e8e8e8;
-  color: #222222;
+  color: #222;
   padding-left: 15px;
   height: 40px;
   outline: none;
@@ -669,9 +669,9 @@ h2 {
   font-size: 14px; }
 #sidebar li {
   padding: 10px 0;
-  border-bottom: 1px dotted #222222; }
+  border-bottom: 1px dotted #222; }
   #sidebar li a {
-    color: #222222;
+    color: #222;
     text-decoration: none; }
     #sidebar li a:hover {
       color: #2f617e;
@@ -683,9 +683,9 @@ h2 {
   margin: 50px 0 40px 0; }
 
 .Pag {
-  color: #444444;
-  border: 1px solid #bebebe;
-  background: #fafafa;
+  color: #444;
+  border: 1px solid #BEBEBE;
+  background: #FAFAFA;
   margin-left: -1px; }
 
 .Pag1, .Pag {
@@ -693,10 +693,10 @@ h2 {
   text-decoration: none; }
 
 .Pag1, .Pag:hover {
-  border: 1px solid #bebebe;
+  border: 1px solid #BEBEBE;
   background: #e2e2e2; }
 
-/** LOGIN, RACOVERY, WHAT ** */
+/*** LOGIN, RACOVERY, WHAT ** */
 .bgform {
   width: 524px;
   background: url("/assets/login/bgform.png") no-repeat center;
@@ -783,7 +783,7 @@ header aside {
     border-color: #97b1c7; }
   .header-button:active {
     background: #355f84;
-    color: white; }
+    color: #fff; }
 
 .after-form-note {
   background: url("/assets/login/screamer.png") no-repeat;
@@ -808,3 +808,5 @@ ul.errors {
     margin: 0; }
     ul.errors li.good {
       color: green; }
+
+/*# sourceMappingURL=login.css.map */

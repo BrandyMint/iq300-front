@@ -4,7 +4,6 @@
   src: url("/assets/icomoon-iq300.eot?#iefix") format("embedded-opentype"), url("/assets/icomoon-iq300.woff") format("woff"), url("/assets/icomoon-iq300.ttf") format("truetype"), url("/assets/icomoon-iq300.svg#icomoon-iq300") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: "icomoon-iq300";
@@ -70,15 +69,15 @@
   vertical-align: bottom; }
 
 .icon-color-white {
-  color: white; }
+  color: #fff; }
   .icon-color-white:hover {
     color: #e6e6e6; }
 
 .text-color-white {
-  color: white; }
+  color: #fff; }
 
 .link-white {
-  color: white; }
+  color: #fff; }
   .link-white:hover {
     color: #e6e6e6; }
 
@@ -1015,7 +1014,7 @@ div.dhx_modal_cover {
 .gantt_grid div,
 .gantt_data_area div {
   -ms-touch-action: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 .gantt_data_area {
   position: relative;
@@ -1974,3 +1973,5 @@ body {
       list-style-type: none; }
     body .paragraphs.sublist {
       margin-left: 30px; }
+
+/*# sourceMappingURL=print.css.map */

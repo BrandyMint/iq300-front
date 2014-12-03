@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIQ,uCAAU;EACR,OAAO,EAAE,IAAI",
+"sources": ["../printer.sass"],
+"names": [],
+"file": "printer.css"
+}
