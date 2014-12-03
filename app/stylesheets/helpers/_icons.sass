@@ -41,7 +41,7 @@
   .v-align-#{$align}
     vertical-align: #{$align}
 
-@each $color in white white, gray-lighter $gray-lighter, gray-light $gray-light, gray $gray, gray-dark $gray-dark, gray-darker $gray-darker, success $brand-success, danger $brand-danger, warning $brand-warning, primary $brand-primary
+@each $color in "white" #fff, "gray-lighter" $gray-lighter, "gray-light" $gray-light, "gray" $gray, "gray-dark" $gray-dark, "gray-darker" $gray-darker, "success" $brand-success, "danger" $brand-danger, "warning" $brand-warning, "primary" $brand-primary
   .icon-color-#{nth($color, 1)}
     color: nth($color, 2)
     &:hover

@@ -18,8 +18,6 @@
     border-left-color: $brand-primary
   .task-box-title-block
     font-weight: bold
-  a
-    color: $brand-primary
 
 %task-overdued-style
   border-left-color: $brand-danger
@@ -110,13 +108,9 @@
 .task-overdued,
 .task-overdue
   @extend %task-overdued-style
-  .task-box-title-block,
-  .task-box-status-date
-    color: $brand-danger
   &, &.task-new, &.task-in_work
-    .task-box-title-block
-      font-weight: bold
-    a
+    .task-box-title-block,
+    .task-box-status-date
       color: $brand-danger
 
 .task-with-change, .project-with-change

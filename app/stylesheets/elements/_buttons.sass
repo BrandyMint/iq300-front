@@ -11,7 +11,7 @@
   &:hover
     color: $base-color
   &:active
-    color: white !important
+    color: #fff !important
 
 .community-invites-btn-check
   @extend .community-invites-btn-base
@@ -35,14 +35,14 @@
     z-index: 0
     font-size: 300%
 
-@each $color in white white, gray-lighter $gray-lighter, gray-light $gray-light, gray $gray, success $brand-success, danger $brand-danger, warning $brand-warning, primary $brand-primary
+@each $color in "white" #fff, "gray-lighter" $gray-lighter, "gray-light" $gray-light, "gray" $gray, "success" $brand-success, "danger" $brand-danger, "warning" $brand-warning, "primary" $brand-primary
   .btn-link-#{nth($color, 1)}
     @extend .btn-link
     color: nth($color, 2)
     &:hover
       color: darken(nth($color, 2), 10%)
 
-@each $color in gray-light $gray-light, gray $gray, danger $brand-danger
+@each $color in "gray-light" $gray-light, "gray" $gray, "danger" $brand-danger
   .btn-outline-#{nth($color, 1)}
     @extend .btn-default
     color: nth($color, 2)

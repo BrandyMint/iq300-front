@@ -89,16 +89,14 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
   &:before
     border-bottom-color: darken($gray-lighter, 10%)
   .project-task-box
-    border-left-color: $gray-lighter
+    //border-left-color: $gray-lighter
     padding-left: $project-task-padding-left-nested
-    &:hover
+    //&:hover
       border-left-color: darken($gray-lighter, 10%)
       background-color: $gray-lighter
-    &.task-new
+    //&.task-new
       border-left-color: desaturate(darken($brand-primary, 0%), 30%)
-      a
-        color: desaturate(darken($brand-primary, 0%), 30%)
-    &.task-draft
+    //&.task-draft
       border-left-color: desaturate(darken(#a0b9be, 0%), 30%)
       color: #8d8d8d
   .project-task-box-checkbox,
@@ -107,7 +105,6 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
 
 .project-task-box-child-counter
   @extend .badge
-  @extend .badge-default
   background: $gray-light
   padding: 3px 5px
   font-size: 11px
@@ -154,7 +151,6 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
 .project-group-header-actions-fixed
   @extend .navbar
   @extend .navbar-default
-  @extend .navbar-bottom-fixed
   position: fixed
   z-index: 1000
   bottom: 0
