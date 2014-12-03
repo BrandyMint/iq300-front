@@ -33,6 +33,13 @@ options.rewriteCSSDist =
 
 options.sassBasePaths = ['./app/stylesheets']
 
+options.rubysassDev =
+  sourcemap: true
+
+options.rubysassDist =
+  sourcemap: false
+  'sourcemap=none': true
+
 options.sassDev =
   errLogToConsole: true
   sourceComments: 'normal'
@@ -47,7 +54,7 @@ gulp.task "sass:watch", ->
   gulp
     .src("./app/stylesheets/**/*.sass")
     #.pipe(sass(options.sassDev))
-    .pipe(rubysass())
+    .pipe(rubysass(options.rubysassDev))
     .pipe(rewriteCSS(options.rewriteCSSDev))
     .pipe(gulp.dest("./app/tmp/stylesheets"))
     .pipe($.connect.reload())
@@ -58,7 +65,7 @@ gulp.task "sass:dist", ->
   gulp
     .src(["./app/stylesheets/**/*.sass"])
     #.pipe(sass(options.sassDist))
-    .pipe(rubysass())
+    .pipe(rubysass(options.rubysassDist))
     .pipe(rewriteCSS(options.rewriteCSSDist))
     .pipe(gulp.dest("./dist/stylesheets"))
     .on "error", $.util.log

@@ -1,10 +1,11 @@
 - status = locals[:status]
+- status_accented = locals[:status_accented]
 - children_count = locals[:children_count]
 - number = locals[:number] || "1.1"
 - is_root = locals[:is_root] || false
 - project_id = 1 + rand(1000)
 
-.task-box.project-task-box{class: "task-#{status}", role: 'jump project-task-box', data: {href: '../../../tasks/show', project_id: project_id}}
+.task-box.project-task-box{class: "task-#{status} task-#{status_accented}", role: 'jump project-task-box', data: {href: '../../../tasks/show', project_id: project_id}}
   .row
     .col-md-1.col-sm-2
       %label.project-task-box-checkbox.pull-left

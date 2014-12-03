@@ -10,6 +10,14 @@
   %head
     = partial 'layouts/head'
   %body{class: current_page.data.body_class || 'page'}
+    :sass
+      body
+        overflow: auto !important
+        background: #fff
+        height: auto
+        padding: 0
+        margin: 0
+
     .application-container
       %a{name: :top}
       = partial 'layouts/navbar'

@@ -1,4 +1,5 @@
 - status = locals[:status]
+- status_accented = locals[:status_accented]
 - root_number = locals[:root_number]
 
 .project-task-view.project-task-view-initialized{"data-id" => "10", "data-status" => status, class: "#{status}"}
@@ -10,7 +11,7 @@
     - statuses.each_with_index do |status, i|
       %li.project-tasks-list-item
         .project-task-view.project-task-view-initialized{"data-id" => "10", "data-status" => status, class: "#{status}"}
-          = partial 'projects/tasks/item_body', locals: {status: status, children_count: 0, number: "#{root_number}.#{i + 1}"}
+          = partial 'projects/tasks/item_body', locals: {status: status, status_accented: status_accented, children_count: 0, number: "#{root_number}.#{i + 1}"}
           .edit-task-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/10/edit", :style => "display: none;"}
           .new-subtask-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/new?parent_id=10", :style => "display: none;"}
 

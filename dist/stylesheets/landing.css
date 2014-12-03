@@ -4,7 +4,6 @@
   src: url("/assets/icomoon-iq300.eot?#iefix") format("embedded-opentype"), url("/assets/icomoon-iq300.woff") format("woff"), url("/assets/icomoon-iq300.ttf") format("truetype"), url("/assets/icomoon-iq300.svg#icomoon-iq300") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: "icomoon-iq300";
@@ -70,15 +69,15 @@
   vertical-align: bottom; }
 
 .icon-color-white {
-  color: white; }
+  color: #fff; }
   .icon-color-white:hover {
     color: #e6e6e6; }
 
 .text-color-white {
-  color: white; }
+  color: #fff; }
 
 .link-white {
-  color: white; }
+  color: #fff; }
   .link-white:hover {
     color: #e6e6e6; }
 
@@ -360,7 +359,7 @@ p {
   padding: 3px 0 5px 0;
   color: white; }
   .dev a {
-    color: white;
+    color: #ffffff;
     text-decoration: underline; }
     .dev a:hover {
       color: white; }
@@ -382,7 +381,7 @@ header a {
   border-radius: 0px !important; }
 
 body {
-  color: #666666;
+  color: #666;
   font-size: 15px;
   line-height: 25px;
   font-weight: 400; }
@@ -392,7 +391,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal !important;
   margin: 2px 0px 5px 0px;
   padding: 2px 0px;
-  color: black;
+  color: #000000;
   letter-spacing: -1px;
   font-weight: 300; }
 
@@ -401,7 +400,7 @@ h1, h2 {
 
 h3, h4, h5, h6 {
   font-weight: 400 !important;
-  color: black; }
+  color: #000000; }
 
 h2 {
   font-size: 40px;
@@ -425,7 +424,7 @@ h6 {
 
 p {
   margin: 2px 0px;
-  color: black; }
+  color: #000000; }
 
 a:hover, a:active, a:focus {
   outline: 0; }
@@ -458,7 +457,7 @@ hr {
   text-align: center; }
 
 .grey {
-  color: #666666; }
+  color: #666; }
 
 .big {
   font-size: 20px !important;
@@ -509,28 +508,28 @@ a.btn {
 
 /* Button */
 .button a {
-  color: white;
+  color: #fff;
   font-size: 18px;
   line-height: 20px;
   display: inline-block;
   padding: 0px 8px 5px 8px;
   margin-top: 3px; }
   .button a:visited {
-    color: white;
+    color: #fff;
     font-size: 18px;
     line-height: 20px;
     display: inline-block;
     padding: 0px 8px 5px 8px;
     margin-top: 3px; }
   .button a:hover {
-    color: white;
+    color: #fff;
     text-decoration: none; }
 
 /* Well */
 .well {
   background: #f2f2f2;
   padding: 15px;
-  border: 1px solid #eeeeee; }
+  border: 1px solid #eee; }
 
 /* Colors */
 .orange {
@@ -554,7 +553,7 @@ a.btn {
 /* Background colors */
 .b-orange {
   background: #fe781e;
-  color: white;
+  color: #fff;
   margin: 3px 0px;
   display: inline-block;
   -webkit-transition: background 1s ease;
@@ -571,7 +570,7 @@ a.btn {
 
 .b-purple {
   background: #9b59bb;
-  color: white;
+  color: #fff;
   margin: 3px 0px;
   display: inline-block;
   -webkit-transition: background 1s ease;
@@ -588,7 +587,7 @@ a.btn {
 
 .b-blue {
   background: #1570a6;
-  color: white;
+  color: #fff;
   margin: 3px 0px;
   display: inline-block;
   -webkit-transition: background 1s ease;
@@ -605,7 +604,7 @@ a.btn {
 
 .b-green {
   background: #41bb19;
-  color: white;
+  color: #fff;
   margin: 3px 0px;
   display: inline-block;
   -webkit-transition: background 1s ease;
@@ -622,7 +621,7 @@ a.btn {
 
 .b-black {
   background: #333333;
-  color: white;
+  color: #fff;
   margin: 3px 0px;
   display: inline-block;
   -webkit-transition: background 1s ease;
@@ -631,7 +630,7 @@ a.btn {
   transition: background 1s ease;
   cursor: default; }
   .b-black:hover {
-    background: black;
+    background: #000000;
     -webkit-transition: background 1s ease;
     -moz-transition: background 1s ease;
     -o-transition: background 1s ease;
@@ -639,7 +638,7 @@ a.btn {
 
 .b-lblue {
   background: #1ba1e2;
-  color: white;
+  color: #fff;
   margin: 3px 0px;
   display: inline-block;
   -webkit-transition: background 1s ease;
@@ -656,7 +655,7 @@ a.btn {
 
 .b-red {
   background: #ff3738;
-  color: white;
+  color: #fff;
   margin: 3px 0px;
   display: inline-block;
   -webkit-transition: background 1s ease;
@@ -705,7 +704,7 @@ form button, form input {
 
 /* Header */
 header {
-  background: white; }
+  background: #fff; }
   header .logo {
     padding: 15px 0px; }
     header .logo h1 {
@@ -713,13 +712,13 @@ header {
       line-height: 45px;
       margin-bottom: 5px; }
       header .logo h1 a {
-        color: #666666;
+        color: #666;
         text-decoration: none; }
         header .logo h1 a:visited, header .logo h1 a:hover {
-          color: #666666;
+          color: #666;
           text-decoration: none; }
     header .logo .hmeta {
-      color: #777777; }
+      color: #777; }
   header .form {
     text-align: center;
     max-width: 270px;
@@ -758,21 +757,21 @@ header {
   .navbar .btn {
     font-size: 13px;
     padding: 6px 10px;
-    color: white !important; }
+    color: #fff !important; }
   .navbar .caret {
-    border-top-color: #999999 !important;
-    border-bottom-color: #999999 !important; }
+    border-top-color: #999 !important;
+    border-bottom-color: #999 !important; }
   .navbar a {
-    color: #666666 !important; }
+    color: #666 !important; }
     .navbar a:visited {
-      color: #666666 !important; }
+      color: #666 !important; }
   .navbar .nav > li > a {
-    color: black !important;
+    color: #000000 !important;
     padding: 0px 15px 25px 7px;
     filter: none !important;
     border-left: 4px solid white; }
     .navbar .nav > li > a:visited {
-      color: black !important;
+      color: #000000 !important;
       padding: 0px 15px 25px 7px;
       filter: none !important;
       border-left: 4px solid white; }
@@ -807,14 +806,14 @@ header {
   margin: 0px;
   z-index: 3000;
   background: #fafafa;
-  border: 1px solid #eeeeee !important;
+  border: 1px solid #eee !important;
   border-top: 0px !important; }
   .dropdown-menu a {
     padding: 9px 10px !important;
-    color: #666666 !important;
+    color: #666 !important;
     text-shadow: none !important;
     background: #fafafa !important;
-    border-bottom: 1px solid #eeeeee; }
+    border-bottom: 1px solid #eee; }
     .dropdown-menu a:hover, .dropdown-menu a:focus {
       filter: none !important;
       background: #f3f3f3 !important; }
@@ -835,12 +834,12 @@ header {
 
 .accordion-heading a {
   border: none;
-  color: white;
+  color: #fff;
   text-decoration: none;
   margin: 10px 15px; }
   .accordion-heading a:visited, .accordion-heading a:hover {
     border: none;
-    color: white;
+    color: #fff;
     text-decoration: none;
     margin: 10px 15px; }
 
@@ -848,22 +847,22 @@ header {
 blockquote {
   background: #f9f9f9;
   margin-bottom: 5px;
-  color: #777777; }
+  color: #777; }
   blockquote p {
     font-size: 13px;
     font-weight: 400;
     margin-bottom: 5px; }
   blockquote small {
-    color: #555555; }
+    color: #555; }
 
 /* Support */
 #slist p {
   display: none;
   margin: 5px 0px;
   padding: 5px 10px;
-  background: white;
+  background: #fff;
   line-height: 30px;
-  border: 1px solid #eeeeee; }
+  border: 1px solid #eee; }
 #slist li a {
   display: block;
   font-size: 16px !important;
@@ -873,7 +872,7 @@ blockquote {
   margin-bottom: 10px; }
 
 /* Portfolio */
-/*** Isotope Filtering *** */
+/**** Isotope Filtering *** */
 .isotope-item {
   z-index: 2; }
 
@@ -881,7 +880,7 @@ blockquote {
   pointer-events: none;
   z-index: 1; }
 
-/*** Isotope CSS3 transitions *** */
+/**** Isotope CSS3 transitions *** */
 .isotope {
   -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
@@ -929,22 +928,22 @@ blockquote {
     -o-transition: none;
     transition: none; }
 
-/*** disabling Isotope CSS3 transitions *** */
+/**** disabling Isotope CSS3 transitions *** */
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling */
 .portfolio li {
   display: inline !important;
   border: none !important; }
   .portfolio li a {
-    color: white;
+    color: #fff;
     padding: 5px 10px;
     margin: 0px 5px; }
     .portfolio li a:visited {
-      color: white;
+      color: #fff;
       padding: 5px 10px;
       margin: 0px 5px; }
     .portfolio li a:hover {
-      color: white; }
+      color: #fff; }
 
 #portfolio {
   text-align: center; }
@@ -954,17 +953,17 @@ blockquote {
   #portfolio h4 {
     margin: 4px 0px;
     padding: 0px;
-    color: white;
+    color: #fff;
     font-size: 16px; }
   #portfolio .pcap {
     background: #370a19;
     border-top: 2px solid #e9004d;
     padding: 3px 0px; }
   #portfolio a {
-    color: white;
+    color: #fff;
     text-decoration: none; }
     #portfolio a:visited, #portfolio a:hover {
-      color: white;
+      color: #fff;
       text-decoration: none; }
   #portfolio .pcap {
     max-width: 200px;
@@ -1002,39 +1001,39 @@ blockquote {
     max-width: 170px;
     margin: 5px;
     padding: 1px;
-    border: 1px solid #aaaaaa; }
+    border: 1px solid #aaa; }
 
 /* Process */
 .process-meta {
   display: block;
   margin-bottom: 5px;
   padding: 5px 10px;
-  color: white;
+  color: #fff;
   margin-top: 15px; }
 
 /* Blog */
 .blog .entry h2 {
   font-size: 30px;
   line-height: 40px;
-  color: #777777; }
+  color: #777; }
   .blog .entry h2 a {
     text-decoration: none;
-    color: #777777; }
+    color: #777; }
     .blog .entry h2 a:visited, .blog .entry h2 a:hover {
       text-decoration: none;
-      color: #777777; }
+      color: #777; }
 .blog .meta {
   border-top: 1px solid #f7f7f7;
   border-bottom: 1px solid #f7f7f7;
   margin: 8px 0px;
   padding: 5px 8px;
-  color: #777777;
+  color: #777;
   text-transform: uppercase;
   font-size: 11px; }
   .blog .meta a {
-    color: #555555; }
+    color: #555; }
     .blog .meta a:visited {
-      color: #555555; }
+      color: #555; }
   .blog .meta i {
     margin-left: 3px;
     position: relative;
@@ -1042,12 +1041,12 @@ blockquote {
 .blog .bthumb {
   margin: 10px 0px 5px 0px;
   padding: 1px;
-  box-shadow: 0px 0px 1px #777777; }
+  box-shadow: 0px 0px 1px #777; }
 .blog .bthumb2 {
   float: left;
   margin-top: 8px;
   margin-right: 8px;
-  border: 1px solid #aaaaaa; }
+  border: 1px solid #aaa; }
   .blog .bthumb2 img {
     margin: 0px;
     width: 180px;
@@ -1055,13 +1054,13 @@ blockquote {
 .blog .entry {
   margin-bottom: 25px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
   font-size: 13px;
   line-height: 25px; }
   .blog .entry p {
     margin: 0px 0px 4px 0px; }
 .blog .post-foot {
-  border-left: 2px solid #eeeeee;
+  border-left: 2px solid #eee;
   padding: 15px 15px; }
   .blog .post-foot .social {
     margin-top: 0px; }
@@ -1073,14 +1072,14 @@ blockquote {
   margin-top: 10px; }
   .sidebar h4 {
     font-size: 14px;
-    color: #777777;
+    color: #777;
     line-height: 18px;
     margin-bottom: 5px;
     padding-bottom: 10px;
     text-transform: uppercase;
-    border-bottom: 1px solid #eeeeee; }
+    border-bottom: 1px solid #eee; }
   .sidebar .widget {
-    background: white;
+    background: #fff;
     padding: 8px;
     font-size: 13px;
     line-height: 23px;
@@ -1106,7 +1105,7 @@ blockquote {
     margin: 15px 0px;
     padding: 13px 16px;
     background: #f8f8f8;
-    border-left: 2px solid #dddddd; }
+    border-left: 2px solid #ddd; }
 
 .comment .avatar {
   margin-top: 5px;
@@ -1121,7 +1120,7 @@ blockquote {
   margin-left: 15px; }
 
 .respond {
-  border-top: 2px solid #eeeeee; }
+  border-top: 2px solid #eee; }
   .respond .title {
     padding: 5px 0px;
     margin-bottom: 0px; }
@@ -1140,9 +1139,9 @@ blockquote {
     padding: 5px 8px;
     text-decoration: none;
     width: auto;
-    color: #666666;
-    background: white;
-    border: 1px solid #dddddd;
+    color: #666;
+    background: #fff;
+    border: 1px solid #ddd;
     font-weight: normal; }
   .paging a {
     display: block;
@@ -1151,15 +1150,15 @@ blockquote {
     padding: 5px 8px;
     text-decoration: none;
     width: auto;
-    color: #666666;
-    background: white;
-    border: 1px solid #dddddd;
+    color: #666;
+    background: #fff;
+    border: 1px solid #ddd;
     font-weight: normal; }
     .paging a:hover {
-      color: white; }
+      color: #fff; }
   .paging .current {
     padding: 5px 8px;
-    color: white; }
+    color: #fff; }
 
 /* Career */
 .career .nav > li {
@@ -1167,13 +1166,13 @@ blockquote {
   padding: 0px;
   list-style-type: none; }
 .career .nav-tabs > li > a:hover {
-  color: white; }
+  color: #fff; }
 
 /* Error log */
 .error-log {
   background: #fafafa;
   padding: 10px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   height: 300px;
   overflow: auto;
   font-family: "Courier New", monospace; }
@@ -1184,7 +1183,7 @@ blockquote {
   .error-log .green {
     color: #61c221; }
   .error-log .red {
-    color: red; }
+    color: #ff0000; }
 
 /* Features one */
 .features-one h4 {
@@ -1198,7 +1197,7 @@ blockquote {
 .features-two .feat {
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #eeeeee; }
+  border-bottom: 1px solid #eee; }
 
 /* Features three */
 .features-three .feat-inner {
@@ -1207,7 +1206,7 @@ blockquote {
   padding: 20px 10px 10px 10px;
   background: #fafafa;
   margin-bottom: 20px;
-  border: 1px solid #dddddd; }
+  border: 1px solid #ddd; }
 .features-three i {
   font-size: 35px;
   margin-bottom: 10px; }
@@ -1223,16 +1222,16 @@ blockquote {
   display: block;
   margin-bottom: 10px; }
 .features-four h4 {
-  color: white; }
+  color: #fff; }
 .features-four .f-block {
   padding: 25px 20px 40px 20px;
   margin-bottom: 10px;
   min-height: 180px; }
 .features-four a {
-  color: white;
+  color: #fff;
   text-decoration: none; }
   .features-four a:hover {
-    color: white;
+    color: #fff;
     text-decoration: none; }
 .features-four p {
   font-size: 14px;
@@ -1268,17 +1267,17 @@ blockquote {
   .service-three .row hr {
     margin: 10px 0px; }
   .service-three .row .grey {
-    color: #999999; }
+    color: #999; }
 
 /* Testimonial */
 .testi {
-  background: white;
-  border: 1px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
+  background: #fff;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #eee;
   padding: 12px;
   margin-bottom: 20px; }
   .testi .tauthor {
-    color: #777777;
+    color: #777;
     font-size: 13px;
     margin-top: 5px; }
 
@@ -1293,7 +1292,7 @@ blockquote {
   .testimonials i {
     margin-right: 5px; }
   .testimonials .color {
-    color: white;
+    color: #fff;
     font-weight: 600; }
 
 .tquote {
@@ -1303,13 +1302,13 @@ blockquote {
 
 /* Color blocks */
 .c-block a {
-  color: white;
+  color: #fff;
   text-decoration: none; }
   .c-block a:hover {
-    color: white;
+    color: #fff;
     text-decoration: none; }
 .c-block > div {
-  color: white;
+  color: #fff;
   min-height: 100px;
   font-size: 16px;
   text-align: center;
@@ -1327,7 +1326,7 @@ blockquote {
 .rskills span {
   display: inline-block;
   background: #f8f8f8;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   margin: 5px;
   padding: 3px 10px;
   font-size: 12px; }
@@ -1341,7 +1340,7 @@ blockquote {
     width: 25px;
     line-height: 25px;
     margin: 0px 5px 0px 0px;
-    color: white;
+    color: #fff;
     -webkit-transition: background 1s ease;
     -moz-transition: background 1s ease;
     -o-transition: background 1s ease;
@@ -1360,16 +1359,16 @@ i.linkedin {
   background: #0173b2; }
 
 .social i:hover {
-  background: black;
+  background: #000;
   -webkit-transition: background 1s ease;
   -moz-transition: background 1s ease;
   -o-transition: background 1s ease;
   transition: background 1s ease; }
 .social a {
-  color: white;
+  color: #fff;
   text-decoration: none; }
   .social a:visited, .social a:hover {
-    color: white;
+    color: #fff;
     text-decoration: none; }
 
 /* Coming soon */
@@ -1393,8 +1392,8 @@ i.linkedin {
   margin: 10px auto; }
 
 .soon-tweet {
-  background: white;
-  border: 1px solid #eeeeee;
+  background: #fff;
+  border: 1px solid #eee;
   padding: 12px 12px 5px 12px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -1414,7 +1413,7 @@ i.linkedin {
   content: '"';
   font-size: 16px;
   font-family: Arial, sans-serif;
-  color: #888888; }
+  color: #888; }
 
 .csoon-page form input, .csoon-page form button {
   font-size: 12px; }
@@ -1434,7 +1433,7 @@ i.linkedin {
     padding: 0px;
     margin: 0px; }
   .about-two .details em {
-    color: #888888;
+    color: #888;
     font-size: 13px;
     line-height: 20px; }
 .about-two .asocial i {
@@ -1445,15 +1444,15 @@ i.linkedin {
   width: 20px;
   height: 20px; }
 .about-two .asocial a {
-  color: white;
+  color: #fff;
   text-decoration: none; }
   .about-two .asocial a:visited, .about-two .asocial a:hover {
-    color: white;
+    color: #fff;
     text-decoration: none; }
 .about-two .details .adesc {
   max-width: 300px;
   margin: 0 auto;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #eee;
   margin-top: 5px;
   padding-top: 5px; }
 
@@ -1461,7 +1460,7 @@ i.linkedin {
 .da-slide h2 span {
   padding-bottom: 5px;
   margin-bottom: 5px;
-  border-bottom: 1px solid #eeeeee; }
+  border-bottom: 1px solid #eee; }
 
 /* Slider 2 (Nivo slider) */
 .full-slider i {
@@ -1482,12 +1481,12 @@ i.linkedin {
   bottom: 10px; }
 
 .flex-control-paging li a {
-  background: white;
+  background: #fff;
   box-shadow: none;
   width: 8px;
   height: 8px; }
   .flex-control-paging li a:hover, .flex-control-paging li a.flex-active {
-    background: #dddddd; }
+    background: #ddd; }
 
 .flex-center {
   text-align: center; }
@@ -1495,7 +1494,7 @@ i.linkedin {
 .flex-caption {
   margin: 60px 0px 40px 0px; }
   .flex-caption h2, .flex-caption h5, .flex-caption h6 {
-    color: white; }
+    color: #fff; }
   .flex-caption p {
     font-size: 14px;
     line-height: 23px;
@@ -1508,7 +1507,7 @@ i.linkedin {
 /* Clients page */
 .cclient {
   padding: 10px 0px 15px 0px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
   margin: 10px 0px 15px 0px; }
 
 .cimage img {
@@ -1529,18 +1528,18 @@ ul.hover-block li {
     overflow: hidden;
     width: 225px;
     height: 170px;
-    color: black;
+    color: #000;
     text-decoration: none; }
   ul.hover-block li .hover-content {
     position: absolute;
     z-index: 1000;
     height: 170px;
     top: 125px;
-    color: white;
+    color: #fff;
     padding: 5px 10px;
     cursor: pointer; }
     ul.hover-block li .hover-content h6 {
-      color: white; }
+      color: #fff; }
   ul.hover-block li img {
     position: absolute;
     top: 0;
@@ -1562,21 +1561,21 @@ ul.hover-block li {
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 10px;
-  color: white; }
+  color: #fff; }
 
 .dis-content div {
   display: none;
   padding: 15px 15px 20px 15px;
   margin: 10px 0px;
   background: #f8f8f8;
-  color: #777777;
-  border: 1px solid #eeeeee; }
+  color: #777;
+  border: 1px solid #eee; }
 .dis-content h3 {
   margin-bottom: 5px;
-  color: #666666; }
+  color: #666; }
 .dis-content a.btn {
   margin-top: 6px;
-  color: white !important; }
+  color: #fff !important; }
 .dis-content i {
   position: relative;
   top: -2px; }
@@ -1585,14 +1584,14 @@ ul.hover-block li {
 .lp .lp-image {
   max-width: 600px;
   margin: 40px auto;
-  box-shadow: 0px 0px 30px #cccccc; }
+  box-shadow: 0px 0px 30px #ccc; }
 
 /* Task */
 .task {
   background: #fcfcfc;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   margin-bottom: 10px;
-  border-left: 3px solid #eeeeee;
+  border-left: 3px solid #eee;
   padding: 10px 15px;
   font-size: 13px; }
   .task:hover {
@@ -1622,16 +1621,16 @@ ul.hover-block li {
     padding: 10px 10px;
     background-color: white; }
     .pricel .phead-top h4 {
-      color: black;
+      color: #000;
       font-weight: 300 !important;
       text-align: center; }
   .pricel .phead-bottom {
     background: #f1f1f1;
-    border-bottom: 1px solid #dddddd;
-    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
     margin: 0px;
     padding: 10px 10px 5px 10px;
-    color: #777777;
+    color: #777;
     font-weight: 300;
     font-size: 35px;
     line-height: 27px;
@@ -1649,7 +1648,7 @@ ul.hover-block li {
   .pricel .pbutton {
     background: #39b54a;
     padding: 10px 0px 10px 0px;
-    color: #777777;
+    color: #777;
     font-size: 20px;
     text-align: center;
     margin-top: 0px; }
@@ -1673,7 +1672,7 @@ ul.hover-block li {
 
 /* Products */
 .prod {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
   padding-bottom: 20px;
   margin-bottom: 10px; }
   .prod h3 {
@@ -1688,19 +1687,19 @@ ul.hover-block li {
   padding: 10px 10px;
   background: #fefefe;
   margin-top: 20px;
-  color: #777777;
-  border: 1px solid #eeeeee; }
+  color: #777;
+  border: 1px solid #eee; }
   .pdetails i {
     margin-right: 3px; }
   .pdetails .ptable {
     font-size: 13px;
     border-radius: 10px;
     background: #fafafa;
-    border: 1px solid #eeeeee;
+    border: 1px solid #eee;
     margin-bottom: 10px; }
   .pdetails .pline {
     padding: 5px 10px;
-    border-bottom: 1px solid #eeeeee; }
+    border-bottom: 1px solid #eee; }
 
 /* Projects */
 .projects h3 {
@@ -1710,7 +1709,7 @@ ul.hover-block li {
   max-width: 100px;
   margin: 5px;
   padding: 5px;
-  border: 1px solid #dddddd; }
+  border: 1px solid #ddd; }
 .projects .prdetails {
   margin-top: 10px;
   font-size: 13px; }
@@ -1719,17 +1718,17 @@ ul.hover-block li {
 .formy {
   padding: 15px 20px;
   display: block;
-  color: white; }
+  color: #fff; }
   .formy h5 {
-    color: white; }
+    color: #fff; }
   .formy a {
-    color: #eeeeee;
+    color: #eee;
     text-decoration: underline; }
     .formy a:visited {
-      color: #eeeeee;
+      color: #eee;
       text-decoration: underline; }
     .formy a:hover {
-      color: white;
+      color: #fff;
       text-decoration: none; }
 
 /* Login and register form #2 */
@@ -1738,11 +1737,11 @@ ul.hover-block li {
   margin: 30px auto;
   background: #fafafa;
   padding: 15px 15px;
-  border: 1px solid #eeeeee; }
+  border: 1px solid #eee; }
 
 /* Events */
 .events .accordion-heading h5 {
-  color: white;
+  color: #fff;
   padding: 10px;
   margin: 0px; }
   .events .accordion-heading h5 span {
@@ -1756,7 +1755,7 @@ ul.hover-block li {
   background: #fafafa;
   font-size: 12px;
   padding: 5px 10px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   margin-bottom: 10px;
   display: block; }
 
@@ -1766,7 +1765,7 @@ ul.hover-block li {
 
 .home-product {
   padding: 7px 12px 14px 12px;
-  color: white; }
+  color: #fff; }
   .home-product .home-prod-img {
     width: 150px;
     height: 150px;
@@ -1774,12 +1773,12 @@ ul.hover-block li {
     margin-right: 10px;
     margin-top: 10px; }
   .home-product h3 {
-    color: white; }
+    color: #fff; }
 
 .home-links a {
-  color: #999999; }
+  color: #999; }
   .home-links a:hover {
-    clear: #444444; }
+    clear: #444; }
 
 /* Timeline */
 .tidate {
@@ -1794,7 +1793,7 @@ ul.hover-block li {
   padding: 5px 10px;
   margin-bottom: 20px;
   font-size: 13px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   border-top: 0px; }
   .timatter h5 {
     font-size: 15px; }
@@ -1805,7 +1804,7 @@ ul.hover-block li {
   text-align: center;
   margin-bottom: 10px; }
   .serv-block h3 {
-    color: white;
+    color: #fff;
     padding-bottom: 20px; }
   .serv-block i {
     display: block;
@@ -1824,19 +1823,19 @@ ul.hover-block li {
 .social-links {
   margin-top: 20px;
   padding: 20px 0px 10px 0px;
-  color: white;
+  color: #fff;
   line-height: 30px; }
   .social-links a {
     font-size: 15px;
     margin: 0px 15px;
-    color: white;
+    color: #fff;
     font-weight: 400;
     text-decoration: none;
     display: inline-block; }
     .social-links a:visited, .social-links a:hover {
       font-size: 15px;
       margin: 0px 15px;
-      color: white;
+      color: #fff;
       font-weight: 400;
       text-decoration: none;
       display: inline-block; }
@@ -1855,7 +1854,7 @@ ul.hover-block li {
   margin-top: 10px;
   border: 1px solid #f1f1f1; }
   .cwell h5 {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
     padding-bottom: 10px; }
   .cwell address {
     font-size: 13px; }
@@ -1869,20 +1868,20 @@ ul.hover-block li {
 .big-text {
   font-size: 150px;
   line-height: 160px;
-  color: #888888; }
+  color: #888; }
 
 /* Footer */
 footer {
   font-size: 13px;
   background: #f6f6f6;
-  color: #444444;
+  color: #444;
   margin-top: 35px; }
   footer a {
-    color: #777777; }
+    color: #777; }
     footer a:hover {
-      color: #666666; }
+      color: #666; }
   footer .color, footer h6 {
-    color: #444444; }
+    color: #444; }
   footer ul {
     list-style-type: none;
     margin-left: 0px; }
@@ -1891,7 +1890,7 @@ footer {
   footer .widgets {
     margin-top: 20px; }
   footer .copy {
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid #ddd;
     padding: 10px 0px;
     margin-top: 10px; }
 

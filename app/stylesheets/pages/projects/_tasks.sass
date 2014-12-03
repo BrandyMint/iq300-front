@@ -11,11 +11,7 @@ $project-task-checkbox-width: 10px
     margin-bottom: 1px
   a
     text-decoration: none
-  @each $c in new $brand-primary, overdued $brand-danger, overdue $brand-danger
-    &.task-#{nth($c, 1)}
-      &,
-      .status-date
-        color: desaturate(darken(nth($c, 2), 10%), 10%)
+  //@each $c in new $brand-primary, overdued $brand-danger, overdue $brand-danger
 
 .project-task-box-template
   &, &:hover, &.task-box
@@ -89,21 +85,14 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
   &:before
     border-bottom-color: darken($gray-lighter, 10%)
   .project-task-box
-    border-left-color: $gray-lighter
+    //border-left-color: $gray-lighter
     padding-left: $project-task-padding-left-nested
-    &:hover
+    //&:hover
       border-left-color: darken($gray-lighter, 10%)
       background-color: $gray-lighter
-    &.task-new
+    //&.task-new
       border-left-color: desaturate(darken($brand-primary, 0%), 30%)
-      a
-        color: desaturate(darken($brand-primary, 0%), 30%)
-    &.task-overdued,
-    &.task-overdue
-      border-left-color: desaturate(darken($brand-danger, 0%), 30%)
-      a
-        color: desaturate(darken($brand-danger, 0%), 30%)
-    &.task-draft
+    //&.task-draft
       border-left-color: desaturate(darken(#a0b9be, 0%), 30%)
       color: #8d8d8d
   .project-task-box-checkbox,
@@ -112,7 +101,6 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
 
 .project-task-box-child-counter
   @extend .badge
-  @extend .badge-default
   background: $gray-light
   padding: 3px 5px
   font-size: 11px
@@ -159,7 +147,6 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
 .project-group-header-actions-fixed
   @extend .navbar
   @extend .navbar-default
-  @extend .navbar-bottom-fixed
   position: fixed
   z-index: 1000
   bottom: 0
