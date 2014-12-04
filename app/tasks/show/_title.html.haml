@@ -12,10 +12,18 @@
   .pull-right.task-status
     .status-box
       .status-label{"test-task-status" => ""}
+        %i.fa.fa-eye
         Просмотрена
-      .status-label
-        Просрочена
-        на 2 дня
       .status-date
-        18 Августа
-
+        %i.fa.fa-calendar
+        18 Августа в 13.00
+        %i.fa.fa-pencil-square-o.fa-2
+      .task-status-badge
+        %i.task-status-badge-icon.fa.fa-clock-o.fa-2
+        Осталось 12 дней
+      -#.task-status-badge.task-status-badge-overdued
+        -#%i.task-status-badge-icon.fa.fa-clock-o.fa-2
+        -#Просрочено 2 дня
+      -#.task-status-badge.task-status-badge-close-deadline
+        -#%i.task-status-badge-icon.fa.fa-clock-o.fa-2
+        -#Остался 1 день
