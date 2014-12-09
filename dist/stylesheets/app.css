@@ -13954,7 +13954,6 @@ section.view-column {
 
 .status-date {
   text-align: center;
-  padding: 5px;
   min-width: 50px; }
   .status-date sup {
     width: 40px;
@@ -19819,10 +19818,12 @@ a.project-box-details-item-new {
   .task-draft a {
     color: #8d8d8d; }
 
-.task-completed .title a {
+.task-completed .title a,
+.task-accepted .title a {
   color: #666;
   text-decoration: line-through; }
-  .task-completed .title a:hover {
+  .task-completed .title a:hover,
+  .task-accepted .title a:hover {
     text-decoration: underline; }
 
 section.projects-view-column .project-members-view .input > div#s2id_project_membership_user_id, section.projects-view-column .project-members-form .input > div#s2id_project_membership_user_id {
