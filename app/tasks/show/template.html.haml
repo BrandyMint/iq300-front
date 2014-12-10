@@ -1,0 +1,43 @@
+---
+layout: application
+body_class: tasks-show
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode{"data-initial-action" => "show", :filters => "false", :full_view => "true", :list => "false", "role-display-mode" => "ready", :view => "true"}
+  %section.top-panel
+    .pull-left
+      %a.navigation{:href => "#", :onclick => "$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;"}
+        %i.icon-reorder
+      %a.btn.btn-lg{:href => "/tasks"}
+        %span.fa.fa-reply
+        Список задач
+  = partial 'shared/navigation'
+  %section.view-column.task-view-column.task-view-column-task-template{"data-channel" => "private-base_task-65590:update", "data-channel-template" => "private-base_task-%id%:update", "data-status" => "completed", "data-url" => "/tasks/65590", "role-task-view-column" => "ready", "test-task-view" => ""}
+    .form-container
+      = partial 'tasks/show/template_title'
+
+    %ul.nav.nav-tabs.tabnav{"data-channel" => "presence-5:base_task-121", "data-container" => ".tab-content", "data-read-changes-url" => "/changes/read?base_task_id=121", "role-ready" => "tabnav", "test-tabnav" => ""}
+      %li.active{"data-changes" => "base_tasks,todo_items,attachment_links"}
+        -#%a{"data-target" => "task-details", :href => "/tasks/121"}
+        %a{"data-target" => "task-details", :href => "/tasks/show"}
+          Детали
+          %span.badge{:role => "counter"}
+      %li#accessor_users_tab{"data-changes" => "accessor_users"}
+        -#%a{"data-class" => "accessor-users-view", "data-target" => "task_accessor_users", :href => "/tasks/121/accessor_users"}
+        %a{"data-class" => "accessor-users-view", "data-target" => "task_accessor_users", :href => "/tasks/show/accessor_users"}
+          Участники
+          %span.badge{:role => "counter"}
+      %li
+        %a{"data-target" => "task_activities", :href => "/tasks/121/activities?initial=true"} История
+      %li.discussion.discussion-initialized{"data-changes" => "comments"}
+        %a{"data-target" => "task-discussions", :href => "/tasks/121/discussion?initial=true"}
+          Обсуждения
+          %span.badge{:role => "counter"} 1
+    
+    .tab-content
+      #task-details.tab-pane.active
+        = partial 'tasks/show/details'
+    
+
+

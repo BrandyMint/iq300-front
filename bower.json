@@ -15,6 +15,21 @@
   },
   "ignore": [
     "**/.*",
+    ".*",
+    "build",
+    "Gemfile",
+    "Gemfile.lock",
+    "Guardfile",
+    "build",
+    "config",
+    "config.*",
+    "data",
+    "frontend_*",
+    "gulpfile.coffee",
+    "lib",
+    "node_modules",
+    "package.json",
+    "tmp",
     "components"
   ],
   "devDependencies": {

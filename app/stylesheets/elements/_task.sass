@@ -1,24 +1,3 @@
-.task-status-badge
-  padding: 2px 6px
-  display: inline-block
-  text-align: center
-  font:
-    size: 12px
-    weight: 500
-  background-color: $brand-status-info-light
-  border-radius: 5px
-  border: 2px solid rgba(#000, .1)
-  color: $brand-caption-clarified
-  margin-left: auto
-  &.task-status-badge-overdued
-    background-color: $brand-status-danger-light
-  &.task-status-badge-close-deadline
-    background-color: $brand-status-warning-light
-  .task-status-badge-icon
-    font-size: 16px
-    font-weight: 600
-
-
 %task-box-style
   border-left: solid 5px #eee
   padding: 10px 10px 10px 25px
@@ -66,7 +45,8 @@
     max-width: 75%
   .label, .status-date
     vertical-align: middle
-  .fa-star, .icon-star-empty, .fa-star-o
+  .fa-star, .icon-star-empty, .fa-star-o,
+  .task-box-title-icon
     float: left
     margin: 3px 0 0 -23px
   .task-details-subtasks-list &
@@ -92,13 +72,20 @@
     text-align: left
     padding-top: 10px
 
-.task-box-status-date
-  white-space: nowrap
+.task-box-status-date,
+.task-box-status-repeat
   position: relative
   +center-block-content
   display: block
   padding: 0
   min-height: 0
+
+.task-box-status-date
+  white-space: nowrap
+
+.task-box-status-repeat
+  @extend .text-muted
+  padding-top: 1em
 
 .task-box-status-date-days
   font-size: 0.8em
@@ -132,6 +119,12 @@
   .task-box-title-block a
     font-weight: bold
 
+.task-template
+  background-color: $template-item-background
+  border-left-color: $template-item-border-color
+  .status-date
+    color: $brand-success
+
 .task-overdued,
 .task-overdue
   @extend %task-overdued-style
@@ -141,5 +134,29 @@
     .status-date
       color: $brand-danger
 
-.task-with-change, .project-with-change
-  background-color: $contentBackgroundColor
+.task-with-change,
+.project-with-change
+  background-color: $new-item-background
+
+.task-status-badge
+  padding: 2px 6px
+  display: inline-block
+  text-align: center
+  font:
+    size: 12px
+    weight: 500
+  background-color: $brand-status-info-light
+  border-radius: 5px
+  border: 2px solid rgba(#000, .1)
+  color: $brand-caption-clarified
+  margin-left: auto
+  &.task-status-badge-overdued
+    background-color: $brand-status-danger-light
+  &.task-status-badge-close-deadline
+    background-color: $brand-status-warning-light
+  .task-status-badge-icon
+    font-size: 16px
+    font-weight: 600
+
+
+
