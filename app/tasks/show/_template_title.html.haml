@@ -1,0 +1,16 @@
+.page-title
+  .pull-left.title
+    %h3.task-title
+      .favorite.favorite-view{"role-favorite-view" => "ready"}
+        %a{"data-method" => "put", :href => "/favorites?base_task_id=65590", :rel => "nofollow"}
+          %span.fa.fa-big.icon-star-empty.star-favourite
+      %span Сделать обзор макета страницы Задача
+    .bread-crumbs
+      %a{:href => "/users/76"} Алмаз Бикчурин
+      %span.fa.fa-long-arrow-right
+      %a{:href => "/users/1757"} Александр Владимирогородский
+  .pull-right.task-status
+    .status-box
+      .status-label{"test-task-status" => ""}
+        %i.fa.fa-tasks
+        Шаблон

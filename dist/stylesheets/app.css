@@ -511,7 +511,7 @@ cite {
 .text-justify {
   text-align: justify; }
 
-.text-muted, .project-discussion-label, .project-discussion-comments-counter {
+.text-muted, .task-box-status-repeat, .project-discussion-label, .project-discussion-comments-counter {
   color: #999999; }
 
 .text-primary {
@@ -13966,25 +13966,6 @@ section.view-column {
   .status-date .month {
     display: block; }
 
-.task-status-badge {
-  padding: 2px 6px;
-  display: inline-block;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 500;
-  background-color: #D7EBF8;
-  border-radius: 5px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  color: #939290;
-  margin-left: auto; }
-  .task-status-badge.task-status-badge-overdued {
-    background-color: #F2DCDB; }
-  .task-status-badge.task-status-badge-close-deadline {
-    background-color: #FCF8E2; }
-  .task-status-badge .task-status-badge-icon {
-    font-size: 16px;
-    font-weight: 600; }
-
 .task-box, .notification-list-item, .project-box {
   border-left: solid 5px #eee;
   padding: 10px 10px 10px 25px;
@@ -14044,7 +14025,8 @@ section.view-column {
       display: inline-block; }
 .task-box .label, .task-box .status-date {
   vertical-align: middle; }
-.task-box .fa-star, .task-box .icon-star-empty, .task-box .fa-star-o {
+.task-box .fa-star, .task-box .icon-star-empty, .task-box .fa-star-o,
+.task-box .task-box-title-icon {
   float: left;
   margin: 3px 0 0 -23px; }
 .task-details-subtasks-list .task-box {
@@ -14072,14 +14054,20 @@ section.view-column {
     display: none;
     content: none; }
 
-.task-box-status-date {
-  white-space: nowrap;
+.task-box-status-date,
+.task-box-status-repeat {
   position: relative;
   display: inline-block;
   vertical-align: middle;
   display: block;
   padding: 0;
   min-height: 0; }
+
+.task-box-status-date {
+  white-space: nowrap; }
+
+.task-box-status-repeat {
+  padding-top: 1em; }
 
 .task-box-status-date-days {
   font-size: 0.8em; }
@@ -14109,6 +14097,12 @@ section.view-column {
 .task-new .task-box-title-block a {
   font-weight: bold; }
 
+.task-template {
+  background-color: #f4ffee;
+  border-left-color: #a6e2ae; }
+  .task-template .status-date {
+    color: #3ab54a; }
+
 .task-overdued .task-box-title-block,
 .task-overdued .task-box-title-block a,
 .task-overdued .status-date, .task-overdued.task-new .task-box-title-block,
@@ -14127,8 +14121,28 @@ section.view-column {
 .task-overdue.task-in_work .status-date {
   color: #ff0101; }
 
-.task-with-change, .project-with-change {
-  background-color: #e3ebed; }
+.task-with-change,
+.project-with-change {
+  background-color: #cfebf1; }
+
+.task-status-badge {
+  padding: 2px 6px;
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #D7EBF8;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  color: #939290;
+  margin-left: auto; }
+  .task-status-badge.task-status-badge-overdued {
+    background-color: #F2DCDB; }
+  .task-status-badge.task-status-badge-close-deadline {
+    background-color: #FCF8E2; }
+  .task-status-badge .task-status-badge-icon {
+    font-size: 16px;
+    font-weight: 600; }
 
 .community-invites-btn-base, .community-invites-btn-check, .community-invites-btn-send {
   width: 20%;
@@ -16666,6 +16680,9 @@ section.tasks-list-column ul.infinite-list {
       cursor: pointer; }
       .tasks-time-period-filters .filter label:hover {
         text-decoration: underline; }
+
+.task-view-column.task-view-column-task-template, body.tasks-show .task-view-column.task-view-column-task-template {
+  background-color: #f4ffee; }
 
 section.task-view-column .title, .folders-view-column .title {
   width: 60%; }
