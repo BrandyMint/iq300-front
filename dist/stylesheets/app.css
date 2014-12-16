@@ -657,7 +657,8 @@ blockquote {
       content: '\2014 \00A0'; }
 
 .blockquote-reverse,
-blockquote.pull-right {
+blockquote.pull-right,
+blockquote.filter-item-counter {
   padding-right: 15px;
   padding-left: 0;
   border-right: 5px solid #eeeeee;
@@ -668,18 +669,26 @@ blockquote.pull-right {
   .blockquote-reverse .project-discussion-comments-hide:before,
   .blockquote-reverse .small:before,
   blockquote.pull-right footer:before,
+  blockquote.filter-item-counter footer:before,
   blockquote.pull-right small:before,
+  blockquote.filter-item-counter small:before,
   blockquote.pull-right .project-discussion-comments-hide:before,
-  blockquote.pull-right .small:before {
+  blockquote.filter-item-counter .project-discussion-comments-hide:before,
+  blockquote.pull-right .small:before,
+  blockquote.filter-item-counter .small:before {
     content: ''; }
   .blockquote-reverse footer:after,
   .blockquote-reverse small:after,
   .blockquote-reverse .project-discussion-comments-hide:after,
   .blockquote-reverse .small:after,
   blockquote.pull-right footer:after,
+  blockquote.filter-item-counter footer:after,
   blockquote.pull-right small:after,
+  blockquote.filter-item-counter small:after,
   blockquote.pull-right .project-discussion-comments-hide:after,
-  blockquote.pull-right .small:after {
+  blockquote.filter-item-counter .project-discussion-comments-hide:after,
+  blockquote.pull-right .small:after,
+  blockquote.filter-item-counter .small:after {
     content: '\00A0 \2014'; }
 
 blockquote:before,
@@ -2440,7 +2449,7 @@ tbody.collapse.in {
   -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box; }
-  .dropdown-menu.pull-right {
+  .dropdown-menu.pull-right, .dropdown-menu.filter-item-counter {
     right: 0;
     left: auto; }
   .dropdown-menu .divider {
@@ -2506,7 +2515,7 @@ tbody.collapse.in {
   top: 0;
   z-index: 990; }
 
-.pull-right > .dropdown-menu {
+.pull-right > .dropdown-menu, .filter-item-counter > .dropdown-menu {
   right: 0;
   left: auto; }
 
@@ -3890,7 +3899,7 @@ a.thumbnail.active {
 
 .media > .pull-left {
   margin-right: 10px; }
-.media > .pull-right {
+.media > .pull-right, .media > .filter-item-counter {
   margin-left: 10px; }
 
 .media-list {
@@ -4845,7 +4854,7 @@ button.close {
   margin-left: auto;
   margin-right: auto; }
 
-.pull-right {
+.pull-right, .filter-item-counter {
   float: right !important; }
 
 .pull-left {
@@ -6884,7 +6893,7 @@ body {
   border: solid 0.08em #eee;
   border-radius: .1em; }
 
-.pull-right {
+.pull-right, .filter-item-counter {
   float: right; }
 
 .pull-left {
@@ -6892,7 +6901,7 @@ body {
 
 .fa.pull-left {
   margin-right: .3em; }
-.fa.pull-right {
+.fa.pull-right, .fa.filter-item-counter {
   margin-left: .3em; }
 
 .fa-spin {
@@ -12234,10 +12243,10 @@ body:after {
     left: 7px; }
   .bootstrap-datetimepicker-widget .dow {
     width: 14.2857%; }
-  .bootstrap-datetimepicker-widget.pull-right:before {
+  .bootstrap-datetimepicker-widget.pull-right:before, .bootstrap-datetimepicker-widget.filter-item-counter:before {
     left: auto;
     right: 6px; }
-  .bootstrap-datetimepicker-widget.pull-right:after {
+  .bootstrap-datetimepicker-widget.pull-right:after, .bootstrap-datetimepicker-widget.filter-item-counter:after {
     left: auto;
     right: 7px; }
   .bootstrap-datetimepicker-widget > ul {
@@ -12492,30 +12501,31 @@ span.twitter-typeahead {
     .popover[class*="tour-"].orphan .arrow {
       display: none; }
 
-.nav-global ul > li a .picture > sup, .filters-column .with-subfolders li .counter, section.conversations-list-column > ul > li > .sender sup, .unallocated-btn .btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn > span, .unallocated-btn .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base > span, .unallocated-btn .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check > span, .unallocated-btn .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send > span, .unallocated-btn .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn > span, .unallocated-btn .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn > span, .unallocated-btn .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn > span {
+.filter-item-counter, .nav-global ul > li a .picture > sup, .filters-column .with-subfolders li .counter, section.conversations-list-column > ul > li > .sender sup, .unallocated-btn .btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn > span, .unallocated-btn .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base > span, .unallocated-btn .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check > span, .unallocated-btn .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send > span, .unallocated-btn .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn > span, .unallocated-btn .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn > span, .unallocated-btn .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn > span {
   zoom: 1;
   display: inline;
   display: -moz-inline-box;
   display: inline-block;
   *display: inline;
   vertical-align: top;
-  font-size: 11px;
-  font-weight: bold;
-  height: 16px;
-  line-height: 17px;
-  padding: 0 6px;
-  color: white;
-  border: 2px solid white;
+  padding: 3px 2px;
+  width: 26px;
   -moz-border-radius: 20px;
   -o-border-radius: 20px;
   -ms-border-radius: 20px;
   -khtml-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
-  background: #1adb88;
-  border: 1px solid #fff; }
-  .nav-global ul > li a .picture > sup.red, .filters-column .with-subfolders li .red.counter, section.conversations-list-column > ul > li > .sender sup.red, .unallocated-btn .btn > span.red, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn > span.red, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn > span.red, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn > span.red, .unallocated-btn .community-invites-btn-base > span.red, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base > span.red, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base > span.red, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base > span.red, .unallocated-btn .community-invites-btn-check > span.red, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check > span.red, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check > span.red, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check > span.red, .unallocated-btn .community-invites-btn-send > span.red, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send > span.red, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send > span.red, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send > span.red, .unallocated-btn .project-form-team-member-btn > span.red, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn > span.red, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn > span.red, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn > span.red, .unallocated-btn .project-form-team-member-selected-btn > span.red, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn > span.red, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn > span.red, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn > span.red, .unallocated-btn .project-discussions-form-btn > span.red, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn > span.red, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn > span.red, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn > span.red {
-    background: #ff0103; }
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1em;
+  text-align: center;
+  border: 1px solid #ff0101;
+  background-color: #ff0101;
+  color: #fff; }
 
 html, body {
   font-size: 13px;
@@ -13177,20 +13187,20 @@ body.retina-display img.image-x2 {
         background-color: #2e7d99; }
     .top-panel > .pull-left section.subtop ~ section.subtop {
       z-index: 201; }
-  .top-panel > .pull-right {
+  .top-panel > .pull-right, .top-panel > .filter-item-counter {
     display: none;
     text-align: right; }
-    .top-panel > .pull-right > * {
+    .top-panel > .pull-right > *, .top-panel > .filter-item-counter > * {
       zoom: 1;
       display: inline;
       display: -moz-inline-box;
       display: inline-block;
       *display: inline;
       vertical-align: top; }
-    .top-panel > .pull-right > .help-links {
+    .top-panel > .pull-right > .help-links, .top-panel > .filter-item-counter > .help-links {
       line-height: 48px;
       font-size: 23px; }
-      .top-panel > .pull-right > .help-links > span {
+      .top-panel > .pull-right > .help-links > span, .top-panel > .filter-item-counter > .help-links > span {
         display: block;
         width: 45px;
         height: 45px;
@@ -13198,7 +13208,7 @@ body.retina-display img.image-x2 {
         color: #666666;
         background: #dbe3e6;
         border-left: 1px solid #cccccc; }
-      .top-panel > .pull-right > .help-links > section {
+      .top-panel > .pull-right > .help-links > section, .top-panel > .filter-item-counter > .help-links > section {
         position: absolute;
         z-index: 5;
         left: -1px;
@@ -13214,47 +13224,47 @@ body.retina-display img.image-x2 {
         -moz-transition: all;
         -o-transition: all;
         transition: all; }
-        .top-panel > .pull-right > .help-links > section > * {
+        .top-panel > .pull-right > .help-links > section > *, .top-panel > .filter-item-counter > .help-links > section > * {
           zoom: 1;
           display: inline;
           display: -moz-inline-box;
           display: inline-block;
           *display: inline;
           vertical-align: top; }
-        .top-panel > .pull-right > .help-links > section > a, .top-panel > .pull-right > .help-links > section > div > a, .top-panel > .pull-right > .help-links > section > div {
+        .top-panel > .pull-right > .help-links > section > a, .top-panel > .filter-item-counter > .help-links > section > a, .top-panel > .pull-right > .help-links > section > div > a, .top-panel > .filter-item-counter > .help-links > section > div > a, .top-panel > .pull-right > .help-links > section > div, .top-panel > .filter-item-counter > .help-links > section > div {
           position: relative;
           height: 45px;
           width: 45px;
           text-decoration: none;
           text-align: center; }
-        .top-panel > .pull-right > .help-links > section a {
+        .top-panel > .pull-right > .help-links > section a, .top-panel > .filter-item-counter > .help-links > section a {
           opacity: 0.9;
           filter: alpha(opacity=90);
           -webkit-transition: opacity 0.25s ease-out;
           -moz-transition: opacity 0.25s ease-out;
           -o-transition: opacity 0.25s ease-out;
           transition: opacity 0.25s ease-out; }
-          .top-panel > .pull-right > .help-links > section a:hover {
+          .top-panel > .pull-right > .help-links > section a:hover, .top-panel > .filter-item-counter > .help-links > section a:hover {
             opacity: 1;
             filter: alpha(opacity=100); }
-        .top-panel > .pull-right > .help-links > section > a#Intercom {
+        .top-panel > .pull-right > .help-links > section > a#Intercom, .top-panel > .filter-item-counter > .help-links > section > a#Intercom {
           background: #f9f9f4;
           color: #91a8ae;
           border-left: 1px solid #cccccc; }
-        .top-panel > .pull-right > .help-links > section > a.help {
+        .top-panel > .pull-right > .help-links > section > a.help, .top-panel > .filter-item-counter > .help-links > section > a.help {
           color: #666666;
           background: #dbe3e6;
           border-left: 1px solid #cccccc; }
-        .top-panel > .pull-right > .help-links > section > .contact_support_button {
+        .top-panel > .pull-right > .help-links > section > .contact_support_button, .top-panel > .filter-item-counter > .help-links > section > .contact_support_button {
           border-left: 1px solid #cccccc; }
-          .top-panel > .pull-right > .help-links > section > .contact_support_button > a {
+          .top-panel > .pull-right > .help-links > section > .contact_support_button > a, .top-panel > .filter-item-counter > .help-links > section > .contact_support_button > a {
             display: block;
             background: #f9f9f4;
             color: #91a8ae;
             font-size: 20px; }
-            .top-panel > .pull-right > .help-links > section > .contact_support_button > a > span {
+            .top-panel > .pull-right > .help-links > section > .contact_support_button > a > span, .top-panel > .filter-item-counter > .help-links > section > .contact_support_button > a > span {
               display: none; }
-      .top-panel > .pull-right > .help-links:hover > section {
+      .top-panel > .pull-right > .help-links:hover > section, .top-panel > .filter-item-counter > .help-links:hover > section {
         visibility: visible;
         opacity: 1;
         filter: alpha(opacity=100); }
@@ -13420,15 +13430,7 @@ body.retina-display img.image-x2 {
             top: -2px;
             right: 0%;
             margin-right: 5px;
-            text-decoration: none;
-            background-color: #fff;
-            color: #3998fc;
-            border-color: #3998fc; }
-          .nav-global ul > li a .picture > sup.overdue {
-            margin-top: 25px;
-            background-color: #ff0101;
-            color: #fff;
-            border-color: #ff0101; }
+            text-decoration: none; }
         .nav-global ul > li a > span {
           display: block;
           width: 100%;
@@ -13549,37 +13551,32 @@ body.retina-display img.image-x2 {
       color: #338cae; }
   .filters-column .with-subfolders {
     padding-top: 20px; }
-    .filters-column .with-subfolders li.active a {
-      font-weight: 600;
-      color: #338cae; }
-    .filters-column .with-subfolders li > a {
-      font-weight: 400;
-      height: auto;
-      font-size: 1.1em;
-      line-height: 1em;
-      padding-right: 30px;
-      padding-left: 15px;
-      padding-top: 4px;
-      padding-bottom: 4px;
-      display: inline-block;
-      color: #666;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap; }
-      .filters-column .with-subfolders li > a:hover {
-        text-decoration: underline; }
-    .filters-column .with-subfolders li .counter {
-      font-size: 0.8em;
-      display: none;
-      margin-bottom: -4px;
-      padding: 3px 6px;
-      background-color: #fff;
-      color: #3998fc;
-      border: 1px solid #3998fc; }
-      .filters-column .with-subfolders li .counter.overdue {
-        background-color: #ff0101;
-        border-color: #ff0101;
-        color: #fff; }
+    .filters-column .with-subfolders li {
+      padding-right: 15px; }
+      .filters-column .with-subfolders li.active a {
+        font-weight: 600;
+        color: #338cae; }
+      .filters-column .with-subfolders li > a {
+        font-weight: 400;
+        height: auto;
+        font-size: 1.1em;
+        line-height: 1em;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        display: inline-block;
+        color: #666;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+        .filters-column .with-subfolders li > a:hover {
+          text-decoration: underline; }
+      .filters-column .with-subfolders li.overdue > a, .filters-column .with-subfolders li.overdue.active > a {
+        color: #ff0101; }
+      .filters-column .with-subfolders li .counter {
+        display: none;
+        margin-bottom: -4px; }
 
 section.list-column, .departments-jobs-list-column, .departments-relations-list-column, .workers-list-column {
   background: #FFFFFF;
@@ -14810,7 +14807,7 @@ td.badges-list.categories-view {
     position: absolute;
     top: -6px;
     left: 7px; }
-  .datetimepicker.dropdown-menu.pull-right {
+  .datetimepicker.dropdown-menu.pull-right, .datetimepicker.dropdown-menu.filter-item-counter {
     right: 0;
     left: auto; }
   .datetimepicker.dropdown-menu .divider {
@@ -17158,9 +17155,9 @@ section.task-form-section, .community-structure-view > .edit-job, .community-str
   section.task-form-section .attachments, .community-structure-view > .edit-job .attachments, .community-structure-panel-view .new-department .attachments {
     padding: 20px 0px 20px 0px;
     border: none; }
-  section.task-form-section .pull-right, .community-structure-view > .edit-job .pull-right, .community-structure-panel-view .new-department .pull-right {
+  section.task-form-section .pull-right, .community-structure-view > .edit-job .pull-right, .community-structure-panel-view .new-department .pull-right, section.task-form-section .filter-item-counter, .community-structure-view > .edit-job .filter-item-counter, .community-structure-panel-view .new-department .filter-item-counter {
     padding-right: 20px; }
-  section.task-form-section .form-buttons .pull-right, .community-structure-view > .edit-job .form-buttons .pull-right, .community-structure-panel-view .new-department .form-buttons .pull-right {
+  section.task-form-section .form-buttons .pull-right, .community-structure-view > .edit-job .form-buttons .pull-right, .community-structure-panel-view .new-department .form-buttons .pull-right, section.task-form-section .form-buttons .filter-item-counter, .community-structure-view > .edit-job .form-buttons .filter-item-counter, .community-structure-panel-view .new-department .form-buttons .filter-item-counter {
     padding-right: 0px; }
   section.task-form-section .checkbox.parent_task_access, .community-structure-view > .edit-job .checkbox.parent_task_access, .community-structure-panel-view .new-department .checkbox.parent_task_access {
     padding-left: 15px; }

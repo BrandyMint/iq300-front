@@ -43,13 +43,14 @@
         a
           font-weight: 600
           color: $brand-primary
+      padding-right: 15px
       > a
         font-weight: 400
         height: auto
         font-size: 1.1em
         line-height: 1em
         padding:
-          right: 30px
+          right: 15px
           left: 15px
           top: 4px
           bottom: 4px
@@ -58,16 +59,12 @@
         +text-overflow
         &:hover
           text-decoration: underline
+      &.overdue,
+        &, &.active
+          & > a
+            color: $brand-danger
       .counter
         @extend %buble-counter
-        font-size: 0.8em
         display: none
         margin-bottom: -4px
-        padding: 3px 6px
-        background-color: #fff
-        color: $blue-brand-bright
-        border: 1px solid $blue-brand-bright
-        &.overdue
-          background-color: $brand-danger
-          border-color: $brand-danger
-          color: #fff
+

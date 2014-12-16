@@ -12,6 +12,8 @@ body_class: communities-index
         %a{:href => "#"} Мои сообщества
       %li
         %a{:href => "#"} Новые
+        %span.counter.filter-item-counter.overview{"data-params" => "{\"by_status\":\"new\",\"folder\":\"inbox\"}", "data-url" => "/tasks", :role => "counter", :style => "display: inline-block;"} 2
+
       %li
         %a{:href => "#"} Каталог сообществ
 
