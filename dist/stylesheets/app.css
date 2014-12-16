@@ -13568,6 +13568,8 @@ body.retina-display img.image-x2 {
         white-space: nowrap; }
         .filters-column .with-subfolders li > a:hover {
           text-decoration: underline; }
+      .filters-column .with-subfolders li.overdue > a, .filters-column .with-subfolders li.overdue.active > a {
+        color: #ff0101; }
       .filters-column .with-subfolders li .counter {
         display: none;
         margin-bottom: -4px; }
