@@ -59,6 +59,10 @@
         +text-overflow
         &:hover
           text-decoration: underline
+      &.overdue,
+        &, &.active
+          & > a
+            color: $brand-danger
       .counter
         @extend %buble-counter
         display: none
