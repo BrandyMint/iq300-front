@@ -1,0 +1,23 @@
+%section.tasks-filters-column.filters-column.filters-label.section-navigation{role: "tasks-filter"}
+  %ul.with-subfolders.tasks-filter{"data-channel" => "presence-203:base_tasks"}
+    %li.folder.actual.active{"data-params" => "{\"folder\":\"actual\"}", role: "folder"}
+      %a Задачи
+    %li.folder.inbox{"data-params" => "{\"folder\":\"inbox\"}", :role => "folder"}
+      %a{"data-original-title" => "Задачи, которые поставлены Вам", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
+        Входящие
+      %span.counter.filter-item-counter.overview{"data-params" => "{\"by_status\":\"new\",\"folder\":\"inbox\"}", "data-url" => "/tasks", :role => "counter", :style => "display: inline-block;"} 2
+    %li.folder.outbox{"data-params" => "{\"folder\":\"outbox\"}", role: "folder"}
+      %a Исходящие
+      %span.counter.filter-item-counter{"data-params" => "{\"by_statuses\":[\"completed\",\"refused\"],\"folder\":\"outbox\"}", role: "counter", type: "to-accept-tasks"} 0
+    %li.folder.watchable{"data-params" => "{\"folder\":\"watchable\"}", role: "folder"}
+      %a Наблюдаемые
+    %li.folder.archive{"data-params" => "{\"folder\":\"archive\"}", role: "folder"}
+      %a Архив
+    %li.folder.templates{"data-params" => "{\"folder\":\"templates\"}", role: "folder"}
+      %a Шаблоны
+  .task-categories{role: "task-categories-filter"}
+    %span{role: "expander"}
+      Категории
+      %i.fa.fa-angle-right
+    .form-horizontal
+
