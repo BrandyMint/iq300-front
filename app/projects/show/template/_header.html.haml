@@ -1,0 +1,45 @@
+-#.resource-watcher-subscription.resource-watcher-subscription-initialized{"data-url" => "/subscriptions?project_id=879"}
+  %label.checkbox{title: ""}
+    %input#subscribe{checked: "checked", name: "subscribe", type: "checkbox", value: "1"}/
+    %i
+    Следить за изменениями
+.project-body
+  %h2.with-icons.project-show-title.pull-left
+    -#.icons
+      .favorite.favorite-view.favorite-view-initialized
+        %a{"data-method" => "put", href: "/favorites?project_id=879", rel: "nofollow"}
+          %i.icon-star-empty.star-favourite.icon-size-18
+    Разработка системы IQ300
+  .status-box.pull-right
+    .status-label{"test-task-status" => ""}
+      %i.fa.fa-tasks
+      Просмотрена
+    .status-label.text-color-danger
+      %i.fa.fa-warning
+      Просрочена
+      на 2 дня
+    .status-label.text-color-danger
+      %i.fa.fa-calendar
+      18 Августа
+
+  .clearfix
+  .row
+    .col-sm-4
+      = link_to '#', class: 'text-color-gray' do
+        = image_tag 'iq300-community.png', class: 'project-header-avatar pull-left'
+        .project-header-avatar-content.pull-left
+          .text-muted Сообщество
+          Iq300
+        .clearfix
+    .col-sm-4
+      = link_to '#', class: 'text-color-gray' do
+        = image_tag 'shamil.jpg', class: 'project-header-avatar pull-left'
+        .project-header-avatar-content.pull-left
+          .text-muted Руководитель проекта
+          Шамиль Хамадеев
+        .clearfix
+    .col-sm-4
+      .pull-right
+        = link_to 'Редактировать', '#', class: 'btn btn-sm btn-default text-color-gray-light'
+      .clearfix
+

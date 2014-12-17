@@ -34,28 +34,25 @@
             - caption = "Сообщество #{i} Управление организационно-аналитической и правовой работы аппарата Мэра (Городского Совета)"
             %option= truncate(caption, length: 30)
 
+.form-group{"role-datetime-field" => "ready"}
+  %label.col-sm-3
+    Продолжительность
+    %br
+    %small (дней)
+  .col-sm-9
+    .input-group-inline
+      .input-group
+        %input.form-control{:type => "number"}
+.form-group{"role-datetime-field" => "ready"}
+  %label.col-sm-3
+    Время на проект
+    %br
+    %small (часов)
+  .col-sm-9
+    .input-group-inline
+      .input-group
+        %input.form-control{:type => "number"}
 
-.form-group
-  %label.col-md-3
-    Начало проекта
-    %small
-      (обязательное поле)
-  .col-md-9
-    .input-group-above.input-group-date
-      %input#project_start_date.date-input.zebra-date-picker.form-control.date-input-short{"data-zdp_format" => "d.m.Y", :name => "project[start_date]", :placeholder => "Начало проекта (обязательно)", :readonly => "readonly", "role-zebra-date-picker" => "ready", :size => "30", :type => "text", :value => "27.08.2014"}/
-      .input-group-addon.input-group-addon-btn{:role => "calendar-trigger"}
-        .fa.fa-calendar-o.fa-lg
-.form-group
-  %label.col-md-3
-    Дата завершения
-    %small
-      (обязательное поле)
-  #project-end-date.col-md-9
-    .input-group-above.input-group-date
-      %input#project_end_date.date-input.zebra-date-picker.form-control.date-input-short{"data-errors-in" => "#project-end-date", "data-v-presence" => "true", "data-zdp_format" => "d.m.Y", :disabled => "disabled", :name => "project[end_date]", :placeholder => "Дата завершения", :readonly => "readonly", :role => "validable", "role-zebra-date-picker" => "ready", :size => "30", :type => "text", :value => ""}/
-      .input-group-addon.input-group-addon-btn{"end-date" => "", :role => "calendar-trigger"}
-        .fa.fa-calendar-o.fa-lg
-    %ul.errors-list{:role => "errors-list"}
 .form-group.underline
   %label.col-md-3
     Руководитель
