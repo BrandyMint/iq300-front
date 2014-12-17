@@ -10,14 +10,14 @@
   &:hover
     border-left-color: $item-hover-border-color
     background-color: $item-hover-background
-  &.project-box-overdued
+  &.project-box-project-overdued
     @extend %task-overdued-style
     border-left-color: $overdued-item-border-color
     background-color: #fff
     .project-box-title-block,
     .status-date
       color: $overdued-item-text-color
-  &.project-box-new
+  &.project-box-project-new
     @extend %task-new-style
     background-color: $new-item-background
     border-left-color: $new-item-border-color
@@ -26,7 +26,7 @@
     .project-box-title-block,
     .status-date
       color: desaturate(darken($brand-primary, 0%), 30%)
-  &.project-box-draft
+  &.project-box-project-draft
     border-left-color: desaturate(darken(#a0b9be, 0%), 30%)
     &, 
     .project-box-title-block,
@@ -34,6 +34,15 @@
       color: #8d8d8d
     .project-box-title-block
       font-style: italic
+  &.project-box-project-template
+    background-color: $template-item-background
+    border-left-color: $template-item-border-color
+    .status-date
+      color: $brand-success
+
+
+a.project-box-block-link
+  color: $text-color
 
 .project-box-star
   margin-left: -1.5em

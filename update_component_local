@@ -1,0 +1,4 @@
+#!/bin/bash
+./frontend_build
+git add -A
+git commit -m 'build'

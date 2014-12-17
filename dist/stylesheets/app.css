@@ -13988,20 +13988,23 @@ section.view-column {
     border-left-color: #d5d5d5;
     background-color: #e7e7e7; }
 
-.task-new, .project-box.project-box-new {
+.task-new, .project-box.project-box-project-new {
   border-left-color: #338cae;
   background-color: #cfebf1; }
-  .task-new:hover, .project-box.project-box-new:hover {
+  .task-new:hover, .project-box.project-box-project-new:hover {
     border-left-color: #338cae; }
-  .task-new .task-box-title-block, .project-box.project-box-new .task-box-title-block {
+  .task-new .task-box-title-block, .project-box.project-box-project-new .task-box-title-block {
     font-weight: bold; }
 
 .task-overdued,
-.task-overdue, .project-box.project-box-overdued {
+.task-overdue, .project-box.project-box-project-overdued {
   border-left-color: #ff0101; }
   .task-overdued:hover,
-  .task-overdue:hover, .project-box.project-box-overdued:hover {
+  .task-overdue:hover, .project-box.project-box-project-overdued:hover {
     border-left-color: #ff0101; }
+
+a.task-box-block-link {
+  color: #606060; }
 
 .task-box:hover {
   border-top-color: transparent; }
@@ -14119,7 +14122,7 @@ section.view-column {
   color: #ff0101; }
 
 .task-with-change,
-.project-with-change {
+.project-box-project-with-change {
   background-color: #cfebf1; }
 
 .task-status-badge {
@@ -19757,28 +19760,36 @@ section.notification-view-column .column-content .object-details {
   .project-box:hover {
     border-left-color: #d5d5d5;
     background-color: #e7e7e7; }
-  .project-box.project-box-overdued {
+  .project-box.project-box-project-overdued {
     border-left-color: #d92727;
     background-color: #fff; }
-    .project-box.project-box-overdued .project-box-title-block,
-    .project-box.project-box-overdued .status-date {
+    .project-box.project-box-project-overdued .project-box-title-block,
+    .project-box.project-box-project-overdued .status-date {
       color: #d92727; }
-  .project-box.project-box-new {
+  .project-box.project-box-project-new {
     background-color: #cfebf1;
     border-left-color: #a8dae6; }
-    .project-box.project-box-new:hover {
+    .project-box.project-box-project-new:hover {
       background-color: #f7f7f7; }
-    .project-box.project-box-new .project-box-title-block,
-    .project-box.project-box-new .status-date {
+    .project-box.project-box-project-new .project-box-title-block,
+    .project-box.project-box-project-new .status-date {
       color: #557d8c; }
-  .project-box.project-box-draft {
+  .project-box.project-box-project-draft {
     border-left-color: #afafaf; }
-    .project-box.project-box-draft,
-    .project-box.project-box-draft .project-box-title-block,
-    .project-box.project-box-draft .status-date {
+    .project-box.project-box-project-draft,
+    .project-box.project-box-project-draft .project-box-title-block,
+    .project-box.project-box-project-draft .status-date {
       color: #8d8d8d; }
-    .project-box.project-box-draft .project-box-title-block {
+    .project-box.project-box-project-draft .project-box-title-block {
       font-style: italic; }
+  .project-box.project-box-project-template {
+    background-color: #f4ffee;
+    border-left-color: #a6e2ae; }
+    .project-box.project-box-project-template .status-date {
+      color: #3ab54a; }
+
+a.project-box-block-link {
+  color: #606060; }
 
 .project-box-star {
   margin-left: -1.5em; }
