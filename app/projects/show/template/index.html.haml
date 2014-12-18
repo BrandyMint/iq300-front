@@ -1,0 +1,73 @@
+---
+body_class: projects-show
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "show", filters: "false", full_view: "true", list: "false", view: "true"}
+  = partial 'projects/top_panel'
+  = partial 'shared/_navigation'
+  = partial 'projects/list_filters'
+  = partial 'projects/projects_list'
+  %section.view-column.project-view-column.project-view-column-project-template{"data-channel" => "private-project-879:update", "data-channel-template" => "private-project-%id%:update", "data-id" => "879", "data-url" => "/projects"}
+    .column-content-fluid
+      .project-show-header
+        .container-fluid
+          .row
+            .col-lg-10.col-lg-offset-1
+              = partial 'projects/show/template/header'
+              = partial 'projects/tab_navigation', locals: {active_item: 0}
+      .project-show-content
+        .container-fluid
+          .row
+            .col-lg-10.col-lg-offset-1
+              .project-body
+                %section.project-state-block
+                  .row
+                    .col-md-6
+                      %span.project-state-title
+                        %strong
+                          Статус:
+                      %span.active.project-state{"data-state" => "template"}
+                        Шаблон
+                    .col-md-6
+                      = link_to 'Создать проект по этому шаблону', '#', class: 'btn btn-default btn-sm pull-right'
+                      .clearfix
+                .row
+                  .col-md-12
+                    %h4.project-show-section-title Сводная информация
+                    %table.table.table-condensed
+                      %tr
+                        %td{width: '25%'} Руководитель проекта
+                        %td{width: '75%'}= link_to 'Василий Петров', '#'
+                      %tr
+                        %td Начало проекта
+                        %td 12 июня 2014
+                      %tr
+                        %td Инициатор проекта
+                        %td= link_to 'Михаил Васильев', '#'
+                      %tr
+                        %td Основное сообщество
+                        %td= link_to 'Название сообщества', '#'
+                      %tr
+                        %td Сообщества&ndash;участники
+                        %td
+                          %small
+                            - for i in 0..4 do
+                              %nobr= link_to 'Название сообщества', '#'
+                              - unless i == 4
+                                &middot;
+                -#%hr
+                -#%h4 Участники
+                %hr
+                .project-show-information
+                  - project_sections = ['Описание проекта', 'Основание проекта', 'Цель', 'Результаты', 'Критерии успеха', 'Риски']
+                  - project_sections.each do |section|
+                    .row
+                      .col-md-3
+                        %h5
+                          %strong= "#{section}"
+                      .col-md-9
+                        = data.projects.project.description
+                    %hr
+
+                -#= partial 'projects/people_section'

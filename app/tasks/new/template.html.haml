@@ -1,0 +1,272 @@
+---
+layout: application
+body_class: tasks-show
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode{"data-initial-action" => "edit", :filters => "true", :full_view => "true", :list => "true", "role-display-mode" => "ready", :view => "true"}
+  %section.top-panel
+    .pull-left
+      %a.navigation{:href => "#", :onclick => "$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;"}
+        %i.icon-reorder
+      %a.btn.btn-lg{:href => "/tasks"}
+        %span.fa.fa-reply
+          Список задач
+  = partial 'shared/navigation'
+  %section.one-big-column.task-form-section.form-container{"data-default-community" => "290", "data-default-executor" => "203", "role-task-form" => "ready"}
+    %form#edit_base_task_2330.form-horizontal{"accept-charset" => "UTF-8", :action => "/tasks/2330", :enctype => "multipart/form-data", :method => "post"}
+      %div{:style => "margin:0;padding:0;display:inline"}
+        %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+        %input{:name => "_method", :type => "hidden", :value => "put"}/
+        %input{:name => "authenticity_token", :type => "hidden", :value => "c7G+eXfYvyf3DE8wZOs6br5Ie9CYtG4AUUsidktbgA8="}/
+      %input#base_task_kind.task-kind-input{:name => "base_task[kind]", :type => "hidden", :value => "Task"}/
+      %input#base_task_template_id{:name => "base_task[template_id]", :type => "hidden"}/
+      .form-group
+        .page-title.col-md-12
+          .pull-left
+            %h3 Новый шаблон задачи
+      .form-group
+        %label.control-label.col-sm-2
+          Название
+        .col-sm-10
+          .input-group
+            %input#base_task_title.form-control{:name => "base_task[title]", :placeholder => "Новая задача", :role => "title", :size => "30", :type => "text", :value => "Test test test task"}/
+            .input-group-addon{"data-original-title" => "Формулировка задачи должна быть понятна исполнителю. Правильно поставленная задача - половина успеха! Ознакомьтесь с нашими рекомендациями по формулировке задач в разделе Помощь.", "role-bootstrap-tooltip" => "ready", :title => ""}
+              .fa.fa-question-circle
+          .btn-line
+            %a.btn.btn-deffault{:href => "#", :role => "add-description-btn"}
+              %span.fa.fa-arrow-circle-o-down{:role => "description-icon"}
+              %span{"data-original-title" => "В описании Вы можете детализировать задачу", :role => "text", "role-bootstrap-tooltip" => "ready", "test-add-descr-btn" => "", :title => ""}
+                Добавить описание
+      .form-group.description{:role => "description"}
+        %label.control-label.col-sm-2
+          Описание
+        .col-sm-10
+          %textarea#base_task_description.form-control{:cols => "40", :name => "base_task[description]", :rows => "5"}
+      .form-group{:role => "community"}
+        %label.control-label.col-sm-2
+          Сообщество
+        .col-sm-5
+          %select#base_task_community_id.form-control{"data-allow-clear" => "true", "data-ignore-value" => "290", :name => "base_task[community_id]", :placeholder => "Выбрать сообщество"}
+            %option{:selected => "selected", :value => "290"} Личная задача
+            %option{:value => "291"} Fake community
+        .col-md-1.form-control-static.nopadding-left
+          .fa.fa-question-circle{"data-original-title" => "Укажите сообщество, в рамках которого Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
+      .form-group.show{:role => "task-executor"}
+        %label.control-label.col-sm-2
+          Исполнитель
+        .col-sm-5
+          #s2id_base_task_executor_id.select2-container.select-two.chained-select{:style => "width: 436px;"}
+            %a.select2-choice{:href => "javascript:void(0)", :onclick => "return false;", :tabindex => "-1"}
+              %span.select2-chosen Александр Мещеряков
+              %abbr.select2-search-choice-close
+              %span.select2-arrow
+                %b
+            %input#s2id_autogen1.select2-focusser.select2-offscreen{:type => "text"}/
+            .select2-drop.select2-display-none.select2-with-searchbox
+              .select2-search
+                %input.select2-input{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :type => "text"}/
+              %ul.select2-results
+          %select#base_task_executor_id.select-two.chained-select.select2-offscreen{"data-allow-clear" => "true", "data-chained-select" => "/communities/__base_task%5Bcommunity_id%5D__/executors?per=500", "data-skip-init-req" => "true", :name => "base_task[executor_id]", :placeholder => "Выбрать исполнителя", :role => "executor-select", "role-chained-select" => "ready", "role-select-two" => "ready", :tabindex => "-1"}
+            %option{:selected => "selected", :value => "203"} Александр Мещеряков
+        .col-md-1.form-control-static.nopadding-left
+          .fa.fa-question-circle{"data-original-title" => "Укажите сотрудника, которому Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
+      .col-sm-6
+        .row
+          .form-group{"role-datetime-field" => "ready"}
+            %label.col-sm-4
+              Продолжительность
+              %br
+              %small (дней)
+            .col-sm-8
+              .input-group-inline
+                .input-group
+                  %input.form-control{:type => "number"}
+              .checkbox{:role => "task-repeat-checkbox"}
+                %label
+                  %input{:type => "checkbox"}
+                  %span{"data-original-title" => "Автоматическое повторение задачи по расписанию", "role-bootstrap-tooltip" => "ready", :title => ""}
+                    Повторять задачу
+          .form-group{"role-datetime-field" => "ready"}
+            %label.col-sm-4
+              Время на задачу
+              %br
+              %small (часов)
+            .col-sm-8
+              .input-group-inline
+                .input-group
+                  %input.form-control{:type => "number"}
+              .checkbox
+                %label
+                  %input{:type => "checkbox"}
+                  %span
+                    Позволять отслеживать время по этой задаче
+      .col-sm-6
+        .checkbox
+          %label
+            %input{type: 'checkbox', checked: 'checked'}
+            %span
+              Автоматическое принятие задачи после ее завершения исполнителем
+        .checkbox
+          %label
+            %input{type: 'checkbox', checked: 'checked'}
+            %span
+              Исполнитель не может редактировать чек-лист
+        .checkbox
+          %label
+            %input{type: 'checkbox'}
+            %span
+              Исполнитель может редактировать срок исполнения
+
+      .form-group.task-repeat-form{:role => "repeat-form"}
+        .form-field-gray.col-md-12
+          .form-group
+            .input-group-inline
+              .input-group
+                %span.align-text Раз в:
+              .input-group
+                %select#base_task_cycle_type.form-control{:name => "base_task[cycle][type]", :role => "repeat-type-select-input"}
+                  %option{:value => "days"} день
+                  %option{:value => "weeks"} неделю
+                  %option{:value => "months"} месяц
+              .input-group.days-repeat-type{:role => "fields-for-days-repeat-type"}
+                .input-group
+                  %span.align-text Повторять с интервалом:
+                .input-group
+                  %select#base_task_cycle_count.form-control{:name => "base_task[cycle][count]", :role => "input-select-day"}
+                    %option{:value => "1"} 1
+                    %option{:value => "2"} 2
+                    %option{:value => "3"} 3
+                    %option{:value => "4"} 4
+                    %option{:value => "5"} 5
+                    %option{:value => "6"} 6
+                    %option{:value => "7"} 7
+                    %option{:value => "8"} 8
+                    %option{:value => "9"} 9
+                    %option{:value => "10"} 10
+                    %option{:value => "11"} 11
+                    %option{:value => "12"} 12
+                    %option{:value => "13"} 13
+                    %option{:value => "14"} 14
+                    %option{:value => "15"} 15
+                    %option{:value => "16"} 16
+                    %option{:value => "17"} 17
+                    %option{:value => "18"} 18
+                    %option{:value => "19"} 19
+                    %option{:value => "20"} 20
+                    %option{:value => "21"} 21
+                    %option{:value => "22"} 22
+                    %option{:value => "23"} 23
+                    %option{:value => "24"} 24
+                    %option{:value => "25"} 25
+                    %option{:value => "26"} 26
+                    %option{:value => "27"} 27
+                    %option{:value => "28"} 28
+                    %option{:value => "29"} 29
+                    %option{:value => "30"} 30
+              .input-group.weeks-repeat-type{:role => "fields-for-weeks-repeat-type"}
+                .input-group
+                  %span.align-text День повтора:
+                .input-group
+                  %select#base_task_cycle_day_of_week.form-control{:name => "base_task[cycle][day_of_week]", :role => "input-select-day-of-week"}
+                    %option{:value => "Monday"} Понедельник
+                    %option{:value => "Tuesday"} Вторник
+                    %option{:value => "Wednesday"} Среда
+                    %option{:value => "Thursday"} Четверг
+                    %option{:value => "Friday"} Пятница
+                    %option{:value => "Saturday"} Суббота
+                    %option{:value => "Sunday"} Воскресенье
+              .input-group.months-repeat-type{:role => "fields-for-months-repeat-type"}
+                .input-group
+                  %span.align-text День повтора:
+                .input-group
+                  %select#base_task_cycle_day_of_month.form-control{:name => "base_task[cycle][day_of_month]", :role => "input-select-day-of-month"}
+                    %option{:value => "1"} 1
+                    %option{:value => "2"} 2
+                    %option{:value => "3"} 3
+                    %option{:value => "4"} 4
+                    %option{:value => "5"} 5
+                    %option{:value => "6"} 6
+                    %option{:value => "7"} 7
+                    %option{:value => "8"} 8
+                    %option{:value => "9"} 9
+                    %option{:value => "10"} 10
+                    %option{:value => "11"} 11
+                    %option{:value => "12"} 12
+                    %option{:value => "13"} 13
+                    %option{:value => "14"} 14
+                    %option{:value => "15"} 15
+                    %option{:value => "16"} 16
+                    %option{:value => "17"} 17
+                    %option{:value => "18"} 18
+                    %option{:value => "19"} 19
+                    %option{:value => "20"} 20
+                    %option{:value => "21"} 21
+                    %option{:value => "22"} 22
+                    %option{:value => "23"} 23
+                    %option{:value => "24"} 24
+                    %option{:value => "25"} 25
+                    %option{:value => "26"} 26
+                    %option{:value => "27"} 27
+                    %option{:value => "28"} 28
+                    %option{:value => "29"} 29
+                    %option{:value => "30"} 30
+                    %option{:value => "31"} 31
+          .form-group
+            .input-group-inline
+              .input-group
+                %span.align-text Начинается с:
+              .input-group{"role-datetime-field" => "ready"}
+                %input#base_task_cycle_next{:name => "base_task[cycle_next]", :role => "cycle-next", :type => "hidden"}/
+                %input.date-input.zebra-date-picker.form-control{"data-direction-start" => "true", "data-pair" => "cycle-end-date", "data-show-clear-date" => "false", "data-zdp_format" => "d.m.Y", :readonly => "readonly", "role-zebra-date-picker" => "ready", :type => "text"}/
+                .input-group-addon
+                  .fa.fa-calendar-o.fa-lg
+              .input-group
+                %span.align-text по:
+              .input-group{"role-datetime-field" => "ready"}
+                %input#base_task_cycle_end{:name => "base_task[cycle_end]", :role => "cycle-end", :type => "hidden"}/
+                %input.date-input.zebra-date-picker.form-control{"data-direction-start" => "true", "data-show-clear-date" => "false", "data-zdp_format" => "d.m.Y", :readonly => "readonly", :role => "cycle-end-date", "role-zebra-date-picker" => "ready", :type => "text"}/
+                .input-group-addon
+                  .fa.fa-calendar-o.fa-lg
+              .input-group{:role => "working-only"}
+                .checkbox
+                  %label
+                    %input{:name => "base_task[cycle][business_only]", :type => "checkbox", :value => "true"}/
+                    Только по рабочим
+      .clearfix
+      %hr
+      .form-group.todo-list{:role => "todo-fields-list"}
+        .page-title
+          .pull-left
+            %h3.task-page-section-title{"data-original-title" => "С помощью чек-листов Вы можете создавать список работ по задаче и отслеживать прогресс ее исполнения", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
+              Чек-лист
+          .pull-right
+            %span{"data-original-title" => "Добавьте новый пункт в чек-лист задачи", "data-placement" => "left", "role-bootstrap-tooltip" => "ready", :title => ""}
+              %a.add-todo.btn.btn-default.add-button.add_nested_fields{"data-association" => "todo_items", "data-blueprint-id" => "todo_items_fields_blueprint", "data-target" => "#todo-list", :href => "javascript:void(0)", :role => "add-todo-field"}
+                %span.fa.fa-plus-circle
+                Добавить
+        %div
+          %ul#todo-list
+      .clearfix
+      %hr
+      .form-group.task-files{"data-file-max-size" => "50", "role-task-form-files" => "ready"}
+        .form-field.col-md-12.attachments
+          .page-title.form-group
+            .pull-left
+              %h3{"data-original-title" => "Вы можете добавить файлы к задаче", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
+                Файлы к задаче
+            .pull-right{"data-original-title" => "Добавьте новый файл", "data-placement" => "left", "role-bootstrap-tooltip" => "ready", :title => ""}
+              %a.add-attachment.btn.btn-default.add-button.add_nested_fields{"data-association" => "attachments", "data-blueprint-id" => "attachments_fields_blueprint", "data-target" => "#attachment-files", :href => "javascript:void(0)", :role => "add-file"}
+                %span.fa.fa-plus-circle
+                Добавить
+          #attachment-files.attachment-files.form-group.hidden{:role => "files"}
+      .form-group.text-right.form-buttons{"test-buttons" => ""}
+        .form-field
+          .row
+            .col-sm-4
+              %a.btn.btn-lg.link-grey.pull-left{:href => "/tasks/2330"} Отменить
+            .col-sm-4.col-sm-offset-4
+              %div{"data-original-title" => "Отправьте задачу в работу", "role-bootstrap-tooltip" => "ready", :title => ""}
+                %input.btn.btn-lg.btn-block.btn-success{"data-disable-with" => "Отправка...", :name => "commit", :role => "input-submit", :type => "submit", :value => "Сохранить"}/
+      #todo_items_fields_blueprint{"data-blueprint" => "<li class='fields' role='todo-fields'>\r\n<input class=\"todo-body\" id=\"base_task_todo_items_attributes_new_todo_items_title\" name=\"base_task[todo_items_attributes][new_todo_items][title]\" placeholder=\"Добавить пункт\" role=\"todo-title\" size=\"30\" type=\"text\" />\r\n<input id=\"base_task_todo_items_attributes_new_todo_items__destroy\" name=\"base_task[todo_items_attributes][new_todo_items][_destroy]\" type=\"hidden\" value=\"false\" /><a href=\"javascript:void(0)\" class=\"delete remove_nested_fields\" data-association=\"todo_items\"><i class=\"icon-remove\" ></i></a>\r\n</li>\r\n", :style => "display: none"}
+      #attachments_fields_blueprint{"data-blueprint" => "<div class='file fields' role='file'>\r\n<a href=\"#\"><span class='fa fa-file-text-o fa-lg'></span>\r\n<span class='file-name'>\r\nfile_name\r\n</span>\r\n</a><input id=\"base_task_attachments_attributes_new_attachments_file\" name=\"base_task[attachments_attributes][new_attachments][file]\" style=\"display:none\" type=\"file\" />\r\n<input id=\"base_task_attachments_attributes_new_attachments__destroy\" name=\"base_task[attachments_attributes][new_attachments][_destroy]\" type=\"hidden\" value=\"false\" /><a href=\"javascript:void(0)\" class=\"delete remove_nested_fields\" data-association=\"attachments\" data-confirm=\"Вы уверены?\"><i class=\"icon-remove\" ></i></a>\r\n</div>\r\n", :style => "display: none"}

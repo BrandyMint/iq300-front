@@ -8,7 +8,7 @@
 .mbl {
   margin-bottom: 40px; }
 
-section.community-view-column #community-services ul li a, .calendar-page .about-day .actions a, .user-detailed-info > header > aside a.write-message, .user-detailed-info > header > aside a .edit, .folders-page .form-holder a#new-folder, .folders-view-column .column-content .object-details > .stats p.edit-remove a.edit, section.contracts-view-column .object-details .contract-actions a, .user-detailed-info > header > aside a.add-contact, .folders-view-column .column-content .object-details figure p.buttons a.download, .folders-view-column .column-content .object-details > .stats p.edit-remove a.remove, .user-detailed-info > header > aside a.delete-contact, section.contracts-view-column .object-details .contract-actions a.decline-button, .top-panel > .pull-left section.subtop input[type=submit], .badges-list .adding-form > form input[type=submit], .todo-list > div .add-todo-form > form input[type=submit], .badges-list .adding-form > form a.submit, .todo-list > div .add-todo-form > form a.submit, .badges-list .adding-form > fieldset input[type=submit], .todo-list > div .add-todo-form > fieldset input[type=submit], .badges-list .adding-form > fieldset a.submit, .todo-list > div .add-todo-form > fieldset a.submit, section.reminders .reminders-form input[type=submit], section.todo-list > div ul li form input[type=submit], .todo-list > div ul li form input[type=submit], .accessor-users > section.form input[type=submit], .attachment-members > section.form input[type=submit], .comments-form input[type=submit], .comments-form .attachment-link-popup.shown btn.close, section.community-view-column #community-services > a, .search-user-for-community .invite-by-email, .community-structure-panel-view .new-department .invite-by-email, .search-user-for-community input[type=submit], .community-structure-panel-view .new-department input[type=submit], section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='submit'], section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='submit'], section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='submit'], .folders-page .toggable-form input[type=submit], .attachment-page .pseudo-form p input[type=submit], .edit-profile-page form input[type=submit], .login-page form input[type=submit], .password-recovery-page form input[type=submit], .confirmation-resend-page form input[type=submit], section.recent-news .user-deals form input[type=submit], section.info .user-deals form input[type=submit], section.recent-news .user-deals a.register, section.info .user-deals a.register, .contract-form .form-actions input {
+section.community-view-column #community-services ul li a, .calendar-page .about-day .actions a, .user-detailed-info > header > aside a.write-message, .user-detailed-info > header > aside a .edit, .folders-page .form-holder a#new-folder, .folders-view-column .column-content .object-details > .stats p.edit-remove a.edit, section.contracts-view-column .object-details .contract-actions a, .user-detailed-info > header > aside a.add-contact, .folders-view-column .column-content .object-details figure p.buttons a.download, .folders-view-column .column-content .object-details > .stats p.edit-remove a.remove, .user-detailed-info > header > aside a.delete-contact, section.contracts-view-column .object-details .contract-actions a.decline-button, .top-panel > .pull-left section.subtop input[type=submit], .badges-list .adding-form > form input[type=submit], .todo-list > div .add-todo-form > form input[type=submit], .badges-list .adding-form > form a.submit, .todo-list > div .add-todo-form > form a.submit, .badges-list .adding-form > fieldset input[type=submit], .todo-list > div .add-todo-form > fieldset input[type=submit], .badges-list .adding-form > fieldset a.submit, .todo-list > div .add-todo-form > fieldset a.submit, section.reminders .reminders-form input[type=submit], section.todo-list > div ul li form input[type=submit], .todo-list > div ul li form input[type=submit], .accessor-users > section.form input[type=submit], .attachment-members > section.form input[type=submit], .comments-form input[type=submit], .comments-form .attachment-link-popup.shown btn.close, section.community-view-column #community-services > a, .search-user-for-community .invite-by-email, .community-structure-panel-view .new-department .invite-by-email, .search-user-for-community input[type=submit], .community-structure-panel-view .new-department input[type=submit], section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='submit'], section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='submit'], section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='submit'], .folders-page .toggable-form input[type=submit], .attachment-page .pseudo-form p input[type=submit], .edit-profile-page form input[type=submit], .login-page form input[type=submit], .password-recovery-page form input[type=submit], .confirmation-resend-page form input[type=submit], section.recent-news .user-deals form input[type=submit], section.info .user-deals form input[type=submit], section.recent-news .user-deals a.register, section.info .user-deals a.register, .contract-form .form-actions input {
   border: 0;
   color: white;
   padding: 0 15px;
@@ -155,62 +155,62 @@ a.with-plus-button {
     background-repeat: no-repeat;
     background-position: center 30%; }
 
-section.task-view-column > .column-content .object-details > .description p, .folders-view-column > .column-content .object-details > .description p, .comments-list div.comment > .body p, section.projects-view-column > .column-content > .object-details > div > .description p, .error-report-view-column section.description p {
+section.task-view-column > .column-content .object-details > .description p, .folders-view-column > .column-content .object-details > .description p, .comments-list div.comment > .body p, section.project-view-column > .column-content > .object-details > div > .description p, .error-report-view-column section.description p {
   margin: 1em 0; }
-section.task-view-column > .column-content .object-details > .description p:first-child, .folders-view-column > .column-content .object-details > .description p:first-child, .comments-list div.comment > .body p:first-child, section.projects-view-column > .column-content > .object-details > div > .description p:first-child, .error-report-view-column section.description p:first-child {
+section.task-view-column > .column-content .object-details > .description p:first-child, .folders-view-column > .column-content .object-details > .description p:first-child, .comments-list div.comment > .body p:first-child, section.project-view-column > .column-content > .object-details > div > .description p:first-child, .error-report-view-column section.description p:first-child {
   margin-top: 0; }
-section.task-view-column > .column-content .object-details > .description p:last-child, .folders-view-column > .column-content .object-details > .description p:last-child, .comments-list div.comment > .body p:last-child, section.projects-view-column > .column-content > .object-details > div > .description p:last-child, .error-report-view-column section.description p:last-child {
+section.task-view-column > .column-content .object-details > .description p:last-child, .folders-view-column > .column-content .object-details > .description p:last-child, .comments-list div.comment > .body p:last-child, section.project-view-column > .column-content > .object-details > div > .description p:last-child, .error-report-view-column section.description p:last-child {
   margin-bottom: 0; }
-section.task-view-column > .column-content .object-details > .description img, .folders-view-column > .column-content .object-details > .description img, .comments-list div.comment > .body img, section.projects-view-column > .column-content > .object-details > div > .description img, .error-report-view-column section.description img {
+section.task-view-column > .column-content .object-details > .description img, .folders-view-column > .column-content .object-details > .description img, .comments-list div.comment > .body img, section.project-view-column > .column-content > .object-details > div > .description img, .error-report-view-column section.description img {
   max-width: 100%; }
-section.task-view-column > .column-content .object-details > .description h1, .folders-view-column > .column-content .object-details > .description h1, .comments-list div.comment > .body h1, section.projects-view-column > .column-content > .object-details > div > .description h1, .error-report-view-column section.description h1, section.task-view-column > .column-content .object-details > .description h2, .folders-view-column > .column-content .object-details > .description h2, .comments-list div.comment > .body h2, section.projects-view-column > .column-content > .object-details > div > .description h2, .error-report-view-column section.description h2, section.task-view-column > .column-content .object-details > .description h3, .folders-view-column > .column-content .object-details > .description h3, .comments-list div.comment > .body h3, section.projects-view-column > .column-content > .object-details > div > .description h3, .error-report-view-column section.description h3, section.task-view-column > .column-content .object-details > .description h4, .folders-view-column > .column-content .object-details > .description h4, .comments-list div.comment > .body h4, section.projects-view-column > .column-content > .object-details > div > .description h4, .error-report-view-column section.description h4, section.task-view-column > .column-content .object-details > .description h5, .folders-view-column > .column-content .object-details > .description h5, .comments-list div.comment > .body h5, section.projects-view-column > .column-content > .object-details > div > .description h5, .error-report-view-column section.description h5, section.task-view-column > .column-content .object-details > .description h6, .folders-view-column > .column-content .object-details > .description h6, .comments-list div.comment > .body h6, section.projects-view-column > .column-content > .object-details > div > .description h6, .error-report-view-column section.description h6 {
+section.task-view-column > .column-content .object-details > .description h1, .folders-view-column > .column-content .object-details > .description h1, .comments-list div.comment > .body h1, section.project-view-column > .column-content > .object-details > div > .description h1, .error-report-view-column section.description h1, section.task-view-column > .column-content .object-details > .description h2, .folders-view-column > .column-content .object-details > .description h2, .comments-list div.comment > .body h2, section.project-view-column > .column-content > .object-details > div > .description h2, .error-report-view-column section.description h2, section.task-view-column > .column-content .object-details > .description h3, .folders-view-column > .column-content .object-details > .description h3, .comments-list div.comment > .body h3, section.project-view-column > .column-content > .object-details > div > .description h3, .error-report-view-column section.description h3, section.task-view-column > .column-content .object-details > .description h4, .folders-view-column > .column-content .object-details > .description h4, .comments-list div.comment > .body h4, section.project-view-column > .column-content > .object-details > div > .description h4, .error-report-view-column section.description h4, section.task-view-column > .column-content .object-details > .description h5, .folders-view-column > .column-content .object-details > .description h5, .comments-list div.comment > .body h5, section.project-view-column > .column-content > .object-details > div > .description h5, .error-report-view-column section.description h5, section.task-view-column > .column-content .object-details > .description h6, .folders-view-column > .column-content .object-details > .description h6, .comments-list div.comment > .body h6, section.project-view-column > .column-content > .object-details > div > .description h6, .error-report-view-column section.description h6 {
   font-weight: normal;
   color: #666666;
   line-height: 1em; }
-section.task-view-column > .column-content .object-details > .description h4, .folders-view-column > .column-content .object-details > .description h4, .comments-list div.comment > .body h4, section.projects-view-column > .column-content > .object-details > div > .description h4, .error-report-view-column section.description h4, section.task-view-column > .column-content .object-details > .description h5, .folders-view-column > .column-content .object-details > .description h5, .comments-list div.comment > .body h5, section.projects-view-column > .column-content > .object-details > div > .description h5, .error-report-view-column section.description h5, section.task-view-column > .column-content .object-details > .description h6, .folders-view-column > .column-content .object-details > .description h6, .comments-list div.comment > .body h6, section.projects-view-column > .column-content > .object-details > div > .description h6, .error-report-view-column section.description h6 {
+section.task-view-column > .column-content .object-details > .description h4, .folders-view-column > .column-content .object-details > .description h4, .comments-list div.comment > .body h4, section.project-view-column > .column-content > .object-details > div > .description h4, .error-report-view-column section.description h4, section.task-view-column > .column-content .object-details > .description h5, .folders-view-column > .column-content .object-details > .description h5, .comments-list div.comment > .body h5, section.project-view-column > .column-content > .object-details > div > .description h5, .error-report-view-column section.description h5, section.task-view-column > .column-content .object-details > .description h6, .folders-view-column > .column-content .object-details > .description h6, .comments-list div.comment > .body h6, section.project-view-column > .column-content > .object-details > div > .description h6, .error-report-view-column section.description h6 {
   font-weight: bold; }
-section.task-view-column > .column-content .object-details > .description h1, .folders-view-column > .column-content .object-details > .description h1, .comments-list div.comment > .body h1, section.projects-view-column > .column-content > .object-details > div > .description h1, .error-report-view-column section.description h1 {
+section.task-view-column > .column-content .object-details > .description h1, .folders-view-column > .column-content .object-details > .description h1, .comments-list div.comment > .body h1, section.project-view-column > .column-content > .object-details > div > .description h1, .error-report-view-column section.description h1 {
   font-size: 2.5em; }
-section.task-view-column > .column-content .object-details > .description h2, .folders-view-column > .column-content .object-details > .description h2, .comments-list div.comment > .body h2, section.projects-view-column > .column-content > .object-details > div > .description h2, .error-report-view-column section.description h2 {
+section.task-view-column > .column-content .object-details > .description h2, .folders-view-column > .column-content .object-details > .description h2, .comments-list div.comment > .body h2, section.project-view-column > .column-content > .object-details > div > .description h2, .error-report-view-column section.description h2 {
   font-size: 2em; }
-section.task-view-column > .column-content .object-details > .description h3, .folders-view-column > .column-content .object-details > .description h3, .comments-list div.comment > .body h3, section.projects-view-column > .column-content > .object-details > div > .description h3, .error-report-view-column section.description h3 {
+section.task-view-column > .column-content .object-details > .description h3, .folders-view-column > .column-content .object-details > .description h3, .comments-list div.comment > .body h3, section.project-view-column > .column-content > .object-details > div > .description h3, .error-report-view-column section.description h3 {
   font-size: 1.5em; }
-section.task-view-column > .column-content .object-details > .description h4, .folders-view-column > .column-content .object-details > .description h4, .comments-list div.comment > .body h4, section.projects-view-column > .column-content > .object-details > div > .description h4, .error-report-view-column section.description h4 {
+section.task-view-column > .column-content .object-details > .description h4, .folders-view-column > .column-content .object-details > .description h4, .comments-list div.comment > .body h4, section.project-view-column > .column-content > .object-details > div > .description h4, .error-report-view-column section.description h4 {
   font-size: 1.2em; }
-section.task-view-column > .column-content .object-details > .description h5, .folders-view-column > .column-content .object-details > .description h5, .comments-list div.comment > .body h5, section.projects-view-column > .column-content > .object-details > div > .description h5, .error-report-view-column section.description h5 {
+section.task-view-column > .column-content .object-details > .description h5, .folders-view-column > .column-content .object-details > .description h5, .comments-list div.comment > .body h5, section.project-view-column > .column-content > .object-details > div > .description h5, .error-report-view-column section.description h5 {
   font-size: 1em; }
-section.task-view-column > .column-content .object-details > .description h6, .folders-view-column > .column-content .object-details > .description h6, .comments-list div.comment > .body h6, section.projects-view-column > .column-content > .object-details > div > .description h6, .error-report-view-column section.description h6 {
+section.task-view-column > .column-content .object-details > .description h6, .folders-view-column > .column-content .object-details > .description h6, .comments-list div.comment > .body h6, section.project-view-column > .column-content > .object-details > div > .description h6, .error-report-view-column section.description h6 {
   font-size: 0.9em; }
-section.task-view-column > .column-content .object-details > .description pre, .folders-view-column > .column-content .object-details > .description pre, .comments-list div.comment > .body pre, section.projects-view-column > .column-content > .object-details > div > .description pre, .error-report-view-column section.description pre, section.task-view-column > .column-content .object-details > .description code, .folders-view-column > .column-content .object-details > .description code, .comments-list div.comment > .body code, section.projects-view-column > .column-content > .object-details > div > .description code, .error-report-view-column section.description code, section.task-view-column > .column-content .object-details > .description kbd, .folders-view-column > .column-content .object-details > .description kbd, .comments-list div.comment > .body kbd, section.projects-view-column > .column-content > .object-details > div > .description kbd, .error-report-view-column section.description kbd, section.task-view-column > .column-content .object-details > .description samp, .folders-view-column > .column-content .object-details > .description samp, .comments-list div.comment > .body samp, section.projects-view-column > .column-content > .object-details > div > .description samp, .error-report-view-column section.description samp {
+section.task-view-column > .column-content .object-details > .description pre, .folders-view-column > .column-content .object-details > .description pre, .comments-list div.comment > .body pre, section.project-view-column > .column-content > .object-details > div > .description pre, .error-report-view-column section.description pre, section.task-view-column > .column-content .object-details > .description code, .folders-view-column > .column-content .object-details > .description code, .comments-list div.comment > .body code, section.project-view-column > .column-content > .object-details > div > .description code, .error-report-view-column section.description code, section.task-view-column > .column-content .object-details > .description kbd, .folders-view-column > .column-content .object-details > .description kbd, .comments-list div.comment > .body kbd, section.project-view-column > .column-content > .object-details > div > .description kbd, .error-report-view-column section.description kbd, section.task-view-column > .column-content .object-details > .description samp, .folders-view-column > .column-content .object-details > .description samp, .comments-list div.comment > .body samp, section.project-view-column > .column-content > .object-details > div > .description samp, .error-report-view-column section.description samp {
   color: #666666;
   font-family: monospace, monospace;
   _font-family: "courier new", monospace;
   font-size: 0.98em; }
-section.task-view-column > .column-content .object-details > .description b, .folders-view-column > .column-content .object-details > .description b, .comments-list div.comment > .body b, section.projects-view-column > .column-content > .object-details > div > .description b, .error-report-view-column section.description b, section.task-view-column > .column-content .object-details > .description strong, .folders-view-column > .column-content .object-details > .description strong, .comments-list div.comment > .body strong, section.projects-view-column > .column-content > .object-details > div > .description strong, .error-report-view-column section.description strong {
+section.task-view-column > .column-content .object-details > .description b, .folders-view-column > .column-content .object-details > .description b, .comments-list div.comment > .body b, section.project-view-column > .column-content > .object-details > div > .description b, .error-report-view-column section.description b, section.task-view-column > .column-content .object-details > .description strong, .folders-view-column > .column-content .object-details > .description strong, .comments-list div.comment > .body strong, section.project-view-column > .column-content > .object-details > div > .description strong, .error-report-view-column section.description strong {
   font-weight: bold; }
-section.task-view-column > .column-content .object-details > .description em, .folders-view-column > .column-content .object-details > .description em, .comments-list div.comment > .body em, section.projects-view-column > .column-content > .object-details > div > .description em, .error-report-view-column section.description em {
+section.task-view-column > .column-content .object-details > .description em, .folders-view-column > .column-content .object-details > .description em, .comments-list div.comment > .body em, section.project-view-column > .column-content > .object-details > div > .description em, .error-report-view-column section.description em {
   font-style: italic; }
-section.task-view-column > .column-content .object-details > .description .mention.people, .folders-view-column > .column-content .object-details > .description .mention.people, .comments-list div.comment > .body .mention.people, section.projects-view-column > .column-content > .object-details > div > .description .mention.people, .error-report-view-column section.description .mention.people {
+section.task-view-column > .column-content .object-details > .description .mention.people, .folders-view-column > .column-content .object-details > .description .mention.people, .comments-list div.comment > .body .mention.people, section.project-view-column > .column-content > .object-details > div > .description .mention.people, .error-report-view-column section.description .mention.people {
   font-style: normal; }
-section.task-view-column > .column-content .object-details > .description ul, .folders-view-column > .column-content .object-details > .description ul, .comments-list div.comment > .body ul, section.projects-view-column > .column-content > .object-details > div > .description ul, .error-report-view-column section.description ul, section.task-view-column > .column-content .object-details > .description ol, .folders-view-column > .column-content .object-details > .description ol, .comments-list div.comment > .body ol, section.projects-view-column > .column-content > .object-details > div > .description ol, .error-report-view-column section.description ol {
+section.task-view-column > .column-content .object-details > .description ul, .folders-view-column > .column-content .object-details > .description ul, .comments-list div.comment > .body ul, section.project-view-column > .column-content > .object-details > div > .description ul, .error-report-view-column section.description ul, section.task-view-column > .column-content .object-details > .description ol, .folders-view-column > .column-content .object-details > .description ol, .comments-list div.comment > .body ol, section.project-view-column > .column-content > .object-details > div > .description ol, .error-report-view-column section.description ol {
   margin: 1em 0;
   padding: 0 0 0 2em; }
-section.task-view-column > .column-content .object-details > .description ul li, .folders-view-column > .column-content .object-details > .description ul li, .comments-list div.comment > .body ul li, section.projects-view-column > .column-content > .object-details > div > .description ul li, .error-report-view-column section.description ul li {
+section.task-view-column > .column-content .object-details > .description ul li, .folders-view-column > .column-content .object-details > .description ul li, .comments-list div.comment > .body ul li, section.project-view-column > .column-content > .object-details > div > .description ul li, .error-report-view-column section.description ul li {
   list-style-type: disc;
   list-style-position: inside; }
-section.task-view-column > .column-content .object-details > .description ol li, .folders-view-column > .column-content .object-details > .description ol li, .comments-list div.comment > .body ol li, section.projects-view-column > .column-content > .object-details > div > .description ol li, .error-report-view-column section.description ol li {
+section.task-view-column > .column-content .object-details > .description ol li, .folders-view-column > .column-content .object-details > .description ol li, .comments-list div.comment > .body ol li, section.project-view-column > .column-content > .object-details > div > .description ol li, .error-report-view-column section.description ol li {
   list-style-type: decimal;
   list-style-position: inside; }
-section.task-view-column > .column-content .object-details > .description li p:last-child, .folders-view-column > .column-content .object-details > .description li p:last-child, .comments-list div.comment > .body li p:last-child, section.projects-view-column > .column-content > .object-details > div > .description li p:last-child, .error-report-view-column section.description li p:last-child {
+section.task-view-column > .column-content .object-details > .description li p:last-child, .folders-view-column > .column-content .object-details > .description li p:last-child, .comments-list div.comment > .body li p:last-child, section.project-view-column > .column-content > .object-details > div > .description li p:last-child, .error-report-view-column section.description li p:last-child {
   margin: 0; }
-section.task-view-column > .column-content .object-details > .description img, .folders-view-column > .column-content .object-details > .description img, .comments-list div.comment > .body img, section.projects-view-column > .column-content > .object-details > div > .description img, .error-report-view-column section.description img {
+section.task-view-column > .column-content .object-details > .description img, .folders-view-column > .column-content .object-details > .description img, .comments-list div.comment > .body img, section.project-view-column > .column-content > .object-details > div > .description img, .error-report-view-column section.description img {
   border: 0;
   -ms-interpolation-mode: bicubic;
   vertical-align: middle; }
-section.task-view-column > .column-content .object-details > .description table, .folders-view-column > .column-content .object-details > .description table, .comments-list div.comment > .body table, section.projects-view-column > .column-content > .object-details > div > .description table, .error-report-view-column section.description table {
+section.task-view-column > .column-content .object-details > .description table, .folders-view-column > .column-content .object-details > .description table, .comments-list div.comment > .body table, section.project-view-column > .column-content > .object-details > div > .description table, .error-report-view-column section.description table {
   border-collapse: collapse;
   border-spacing: 0; }
-section.task-view-column > .column-content .object-details > .description td, .folders-view-column > .column-content .object-details > .description td, .comments-list div.comment > .body td, section.projects-view-column > .column-content > .object-details > div > .description td, .error-report-view-column section.description td {
+section.task-view-column > .column-content .object-details > .description td, .folders-view-column > .column-content .object-details > .description td, .comments-list div.comment > .body td, section.project-view-column > .column-content > .object-details > div > .description td, .error-report-view-column section.description td {
   vertical-align: top; }
 
 .group {
@@ -16679,7 +16679,11 @@ section.tasks-list-column ul.infinite-list {
         text-decoration: underline; }
 
 .task-view-column.task-view-column-task-template, body.tasks-show .task-view-column.task-view-column-task-template {
-  background-color: #f4ffee; }
+  background-image: -webkit-linear-gradient(top, #f4ffee 220px, #fff 220px);
+  background-image: -o-linear-gradient(top, #f4ffee 220px, #fff 220px);
+  background-image: linear-gradient(to bottom, #f4ffee 220px, #fff 220px);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF4FFEE', endColorstr='#FFFFFFFF', GradientType=0); }
 
 section.task-view-column .title, .folders-view-column .title {
   width: 60%; }
@@ -19811,10 +19815,10 @@ a.project-box-details-item-new {
     background-color: #8daeba; }
 
 .task-overdued,
-.task-overdue, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li.overdued > section > .description > section > p, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li.overdued > section > .description > aside > span {
+.task-overdue, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li.overdued > section > .description > section > p, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li.overdued > section > .description > aside > span {
   border-left-color: #ff0101; }
   .task-overdued:hover,
-  .task-overdue:hover, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li.overdued > section > .description > section > p:hover, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li.overdued > section > .description > aside > span:hover {
+  .task-overdue:hover, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li.overdued > section > .description > section > p:hover, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li.overdued > section > .description > aside > span:hover {
     border-left-color: #ff0101; }
 
 .task-overdued,
@@ -19840,29 +19844,40 @@ a.project-box-details-item-new {
   .task-accepted .title a:hover {
     text-decoration: underline; }
 
-section.projects-view-column .project-members-view .input > div#s2id_project_membership_user_id, section.projects-view-column .project-members-form .input > div#s2id_project_membership_user_id {
+.project-view-column.project-view-column-project-template {
+  background-image: -webkit-linear-gradient(top, #f4ffee 219px, #fff 220px);
+  background-image: -o-linear-gradient(top, #f4ffee 219px, #fff 220px);
+  background-image: linear-gradient(to bottom, #f4ffee 219px, #fff 220px);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF4FFEE', endColorstr='#FFFFFFFF', GradientType=0); }
+
+.project-show-content {
+  background-color: #fff;
+  padding-top: 2em; }
+
+section.project-view-column .project-members-view .input > div#s2id_project_membership_user_id, section.project-view-column .project-members-form .input > div#s2id_project_membership_user_id {
   float: left; }
-  section.projects-view-column .project-members-view .input > div#s2id_project_membership_user_id.select2-container, section.projects-view-column .project-members-view .input > div#s2id_project_membership_user_id.select-two, section.projects-view-column .project-members-view .input > div#s2id_project_membership_user_id.select2-input, section.projects-view-column .project-members-form .input > div#s2id_project_membership_user_id.select2-container, section.projects-view-column .project-members-form .input > div#s2id_project_membership_user_id.select-two, section.projects-view-column .project-members-form .input > div#s2id_project_membership_user_id.select2-input {
+  section.project-view-column .project-members-view .input > div#s2id_project_membership_user_id.select2-container, section.project-view-column .project-members-view .input > div#s2id_project_membership_user_id.select-two, section.project-view-column .project-members-view .input > div#s2id_project_membership_user_id.select2-input, section.project-view-column .project-members-form .input > div#s2id_project_membership_user_id.select2-container, section.project-view-column .project-members-form .input > div#s2id_project_membership_user_id.select-two, section.project-view-column .project-members-form .input > div#s2id_project_membership_user_id.select2-input {
     width: 65% !important; }
-section.projects-view-column > section.task-view-column, section.projects-view-column > .folders-view-column {
+section.project-view-column > section.task-view-column, section.project-view-column > .folders-view-column {
   display: none; }
-section.projects-view-column > .tab-navigation, section.projects-view-column > .tab-navigation {
+section.project-view-column > .tab-navigation, section.project-view-column > .tab-navigation {
   display: block; }
-section.projects-view-column.task-view-shown > section.task-view-column, section.projects-view-column.task-view-shown > .folders-view-column {
+section.project-view-column.task-view-shown > section.task-view-column, section.project-view-column.task-view-shown > .folders-view-column {
   display: block; }
-section.projects-view-column.task-view-shown > .tab-navigation, section.projects-view-column.task-view-shown > .column-content {
+section.project-view-column.task-view-shown > .tab-navigation, section.project-view-column.task-view-shown > .column-content {
   display: none; }
-section.projects-view-column > .tab-navigation > ul {
+section.project-view-column > .tab-navigation > ul {
   width: auto;
   margin-right: 54px;
   overflow: auto; }
-section.projects-view-column > .column-content > .object-details a.resource-inline-help-link {
+section.project-view-column > .column-content > .object-details a.resource-inline-help-link {
   top: 6px;
   float: right;
   position: absolute; }
-section.projects-view-column > .column-content > .object-details > div > p {
+section.project-view-column > .column-content > .object-details > div > p {
   color: #999999; }
-section.projects-view-column > .column-content > .object-details > div > .description {
+section.project-view-column > .column-content > .object-details > div > .description {
   margin-top: 10px;
   margin-bottom: 10px;
   background: #f1f5f6;
@@ -19872,16 +19887,16 @@ section.projects-view-column > .column-content > .object-details > div > .descri
   padding-bottom: 10px;
   font-size: 14px;
   color: #666666; }
-  section.projects-view-column > .column-content > .object-details > div > .description + p {
+  section.project-view-column > .column-content > .object-details > div > .description + p {
     margin-top: 10px; }
-section.projects-view-column > .column-content > .object-details > div > section.actions {
+section.project-view-column > .column-content > .object-details > div > section.actions {
   margin-top: 19px;
   line-height: 30px;
   color: #999999; }
-  section.projects-view-column > .column-content > .object-details > div > section.actions .row {
+  section.project-view-column > .column-content > .object-details > div > section.actions .row {
     margin-top: 6px;
     overflow: hidden; }
-  section.projects-view-column > .column-content > .object-details > div > section.actions a {
+  section.project-view-column > .column-content > .object-details > div > section.actions a {
     zoom: 1;
     display: inline;
     display: -moz-inline-box;
@@ -19898,27 +19913,27 @@ section.projects-view-column > .column-content > .object-details > div > section
     -moz-transition: 0.4s background-color;
     -o-transition: 0.4s background-color;
     transition: 0.4s background-color; }
-    section.projects-view-column > .column-content > .object-details > div > section.actions a:hover {
+    section.project-view-column > .column-content > .object-details > div > section.actions a:hover {
       background: #3082a2; }
-    section.projects-view-column > .column-content > .object-details > div > section.actions a.template {
+    section.project-view-column > .column-content > .object-details > div > section.actions a.template {
       background: none;
       color: #358bae;
       text-decoration: underline; }
-    section.projects-view-column > .column-content > .object-details > div > section.actions a.cancel {
+    section.project-view-column > .column-content > .object-details > div > section.actions a.cancel {
       background: none;
       float: right;
       color: #ff2021;
       text-decoration: underline; }
-    section.projects-view-column > .column-content > .object-details > div > section.actions a.remove {
+    section.project-view-column > .column-content > .object-details > div > section.actions a.remove {
       background: none;
       float: right;
       color: #999999;
       text-decoration: none; }
-      section.projects-view-column > .column-content > .object-details > div > section.actions a.remove > i {
+      section.project-view-column > .column-content > .object-details > div > section.actions a.remove > i {
         padding-right: 5px; }
-    section.projects-view-column > .column-content > .object-details > div > section.actions a + a {
+    section.project-view-column > .column-content > .object-details > div > section.actions a + a {
       margin-left: 10px; }
-section.projects-view-column > .column-content > .object-details > div > .project-details {
+section.project-view-column > .column-content > .object-details > div > .project-details {
   background: #f8f4ed;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
@@ -19926,20 +19941,20 @@ section.projects-view-column > .column-content > .object-details > div > .projec
   padding-right: 20px;
   font-size: 12px;
   line-height: 30px; }
-  section.projects-view-column > .column-content > .object-details > div > .project-details > * {
+  section.project-view-column > .column-content > .object-details > div > .project-details > * {
     zoom: 1;
     display: inline;
     display: -moz-inline-box;
     display: inline-block;
     *display: inline;
     vertical-align: top; }
-  section.projects-view-column > .column-content > .object-details > div > .project-details > li {
+  section.project-view-column > .column-content > .object-details > div > .project-details > li {
     font-weight: bold; }
-    section.projects-view-column > .column-content > .object-details > div > .project-details > li + li {
+    section.project-view-column > .column-content > .object-details > div > .project-details > li + li {
       margin-left: 25px; }
-  section.projects-view-column > .column-content > .object-details > div > .project-details + * {
+  section.project-view-column > .column-content > .object-details > div > .project-details + * {
     margin-top: 20px; }
-section.projects-view-column > .column-content > .object-details > div > p > a > i {
+section.project-view-column > .column-content > .object-details > div > p > a > i {
   color: #999999;
   zoom: 1;
   display: inline;
@@ -19949,16 +19964,16 @@ section.projects-view-column > .column-content > .object-details > div > p > a >
   vertical-align: top;
   margin-left: 5px;
   margin-top: 5px; }
-section.projects-view-column > .column-content > .object-details > div > p > a:hover {
+section.project-view-column > .column-content > .object-details > div > p > a:hover {
   text-decoration: none; }
-  section.projects-view-column > .column-content > .object-details > div > p > a:hover > span {
+  section.project-view-column > .column-content > .object-details > div > p > a:hover > span {
     text-decoration: underline; }
-section.projects-view-column > .column-content > .object-details > div > .people {
+section.project-view-column > .column-content > .object-details > div > .people {
   color: #999999;
   margin-top: 10px; }
-  section.projects-view-column > .column-content > .object-details > div > .people a {
+  section.project-view-column > .column-content > .object-details > div > .people a {
     color: #358aaf; }
-  section.projects-view-column > .column-content > .object-details > div > .people .admin, section.projects-view-column > .column-content > .object-details > div > .people .moderator {
+  section.project-view-column > .column-content > .object-details > div > .people .admin, section.project-view-column > .column-content > .object-details > div > .people .moderator {
     zoom: 1;
     display: inline;
     display: -moz-inline-box;
@@ -19966,9 +19981,9 @@ section.projects-view-column > .column-content > .object-details > div > .people
     *display: inline;
     vertical-align: top;
     width: 50%; }
-section.projects-view-column > .column-content > .object-details > .tree {
+section.project-view-column > .column-content > .object-details > .tree {
   margin-top: 10px; }
-  section.projects-view-column > .column-content > .object-details > .tree > .add-task {
+  section.project-view-column > .column-content > .object-details > .tree > .add-task {
     zoom: 1;
     display: inline;
     display: -moz-inline-box;
@@ -19983,63 +19998,63 @@ section.projects-view-column > .column-content > .object-details > .tree {
     background: #3ab54a;
     border-color: #3ab54a;
     color: white; }
-    section.projects-view-column > .column-content > .object-details > .tree > .add-task:hover {
+    section.project-view-column > .column-content > .object-details > .tree > .add-task:hover {
       text-decoration: none; }
-  section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form {
+  section.project-view-column > .column-content > .object-details > .tree .new-subtask-form, section.project-view-column > .column-content > .object-details > .tree .edit-task-form {
     margin-left: 20px;
     margin-right: 20px;
     padding-bottom: 20px; }
-  section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form {
+  section.project-view-column > .column-content > .object-details > .tree .new-subtask-form {
     margin-left: 65px; }
-  section.projects-view-column > .column-content > .object-details > .tree .new-task-form, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form {
+  section.project-view-column > .column-content > .object-details > .tree .new-task-form, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form, section.project-view-column > .column-content > .object-details > .tree .edit-task-form {
     margin-top: 20px; }
-    section.projects-view-column > .column-content > .object-details > .tree .new-task-form > *, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > *, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > * {
+    section.project-view-column > .column-content > .object-details > .tree .new-task-form > *, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > *, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > * {
       zoom: 1;
       vertical-align: top; }
-    section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form > *, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form > *, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form > * {
+    section.project-view-column > .column-content > .object-details > .tree .new-task-form > form > *, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form > *, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form > * {
       zoom: 1;
       vertical-align: top; }
-    section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form input, section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form select, section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form textarea, section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form .select-two, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form input, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form select, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form textarea, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form .select-two, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form input, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form select, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form textarea, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form .select-two {
+    section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input, section.project-view-column > .column-content > .object-details > .tree .new-task-form > form select, section.project-view-column > .column-content > .object-details > .tree .new-task-form > form textarea, section.project-view-column > .column-content > .object-details > .tree .new-task-form > form .select-two, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form select, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form textarea, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form .select-two, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form select, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form textarea, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form .select-two {
       width: 100% !important; }
-    section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl {
+    section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl {
       margin-top: 16px;
       line-height: 29px; }
-      section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > *, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > *, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > * {
+      section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > *, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > *, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > * {
         zoom: 1;
         display: inline;
         display: -moz-inline-box;
         display: inline-block;
         *display: inline;
         vertical-align: top; }
-      section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl input[type=checkbox], section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl input[type=checkbox], section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl input[type=checkbox] {
+      section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl input[type=checkbox], section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl input[type=checkbox], section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl input[type=checkbox] {
         zoom: 1;
         display: inline;
         display: -moz-inline-box;
         display: inline-block;
         *display: inline;
         vertical-align: middle; }
-        section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl input[type=checkbox], section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl input[type=checkbox] + i, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl input[type=checkbox], section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl input[type=checkbox] + i, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl input[type=checkbox], section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl input[type=checkbox] + i {
+        section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl input[type=checkbox], section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl input[type=checkbox] + i, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl input[type=checkbox], section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl input[type=checkbox] + i, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl input[type=checkbox], section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl input[type=checkbox] + i {
           position: relative;
           top: -2px; }
-      section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dt, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dt, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dt {
+      section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dt, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dt, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dt {
         width: 28.3%;
         text-align: right;
         color: #999999;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; }
-        section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dt.unordinary-big-offset, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dt.unordinary-big-offset, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dt.unordinary-big-offset {
+        section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dt.unordinary-big-offset, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dt.unordinary-big-offset, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dt.unordinary-big-offset {
           margin-bottom: 14px; }
-        section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dt.big-offset, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dt.big-offset, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dt.big-offset {
+        section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dt.big-offset, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dt.big-offset, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dt.big-offset {
           margin-bottom: 6px; }
-      section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd {
+      section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd {
         margin-left: 1.2%;
         width: 69%; }
-        section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd .date-input, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd .date-input, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd .date-input {
+        section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd .date-input, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd .date-input, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd .date-input {
           width: 100px !important; }
-        section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd .time-input, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd .time-input, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd .time-input {
+        section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd .time-input, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd .time-input, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd .time-input {
           width: 60px !important; }
-        section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input[type=text], section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input[type=text], section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input[type=text] {
+        section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input[type=text], section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input[type=text], section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input[type=text] {
           margin: 0;
           border: 1px solid #cccccc;
           background: #f1f5f6;
@@ -20047,18 +20062,18 @@ section.projects-view-column > .column-content > .object-details > .tree {
           line-height: 18px;
           height: 18px;
           color: #666666; }
-          section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input[type=text]::-webkit-input-placeholder, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input[type=text]::-webkit-input-placeholder, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input[type=text]::-webkit-input-placeholder {
+          section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input[type=text]::-webkit-input-placeholder, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input[type=text]::-webkit-input-placeholder, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input[type=text]::-webkit-input-placeholder {
             color: #999999; }
-          section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input[type=text]:-moz-placeholder, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input[type=text]:-moz-placeholder, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input[type=text]:-moz-placeholder {
+          section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input[type=text]:-moz-placeholder, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input[type=text]:-moz-placeholder, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input[type=text]:-moz-placeholder {
             color: #999999; }
-          section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input[type=text]:-ms-input-placeholder, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input[type=text]:-ms-input-placeholder, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input[type=text]:-ms-input-placeholder {
+          section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input[type=text]:-ms-input-placeholder, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input[type=text]:-ms-input-placeholder, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input[type=text]:-ms-input-placeholder {
             color: #999999; }
-          section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input[type=text].short, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input[type=text].short, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input[type=text].short {
+          section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input[type=text].short, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input[type=text].short, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input[type=text].short {
             padding-left: 7px;
             padding-right: 7px;
             width: 25px;
             text-align: center; }
-        section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input + label, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input + label, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input + label {
+        section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input + label, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input + label, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input + label {
           zoom: 1;
           display: inline;
           display: -moz-inline-box;
@@ -20071,18 +20086,18 @@ section.projects-view-column > .column-content > .object-details > .tree {
           -moz-user-select: -moz-none;
           -o-user-select: none;
           user-select: none; }
-        section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input + a, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input + a, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input + a {
+        section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input + a, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input + a, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input + a {
           margin-left: 15px;
           color: #328bad;
           text-decoration: none; }
-          section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input + a i, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input + a i, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input + a i {
+          section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd input + a i, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd input + a i, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd input + a i {
             position: relative;
             top: 2px;
             color: #999999;
             margin-left: 3px; }
-        section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd label.radio, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd label.radio, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd label.radio {
+        section.project-view-column > .column-content > .object-details > .tree .new-task-form > form dl > dd label.radio, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form dl > dd label.radio, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form dl > dd label.radio {
           margin-right: 6px; }
-    section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='text'], section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='text'], section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='text'] {
+    section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='text'], section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='text'], section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='text'] {
       border: 1px solid #cccccc;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -20092,13 +20107,13 @@ section.projects-view-column > .column-content > .object-details > .tree {
       line-height: 19px;
       height: 28px;
       color: #666666; }
-      section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='text']::-webkit-input-placeholder, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='text']::-webkit-input-placeholder, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='text']::-webkit-input-placeholder {
+      section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='text']::-webkit-input-placeholder, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='text']::-webkit-input-placeholder, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='text']::-webkit-input-placeholder {
         color: #999999; }
-      section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='text']:-moz-placeholder, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='text']:-moz-placeholder, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='text']:-moz-placeholder {
+      section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='text']:-moz-placeholder, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='text']:-moz-placeholder, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='text']:-moz-placeholder {
         color: #999999; }
-      section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='text']:-ms-input-placeholder, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='text']:-ms-input-placeholder, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='text']:-ms-input-placeholder {
+      section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='text']:-ms-input-placeholder, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='text']:-ms-input-placeholder, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='text']:-ms-input-placeholder {
         color: #999999; }
-    section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='submit'], section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='submit'], section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='submit'] {
+    section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='submit'], section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='submit'], section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='submit'] {
       zoom: 1;
       display: inline;
       display: -moz-inline-box;
@@ -20109,14 +20124,14 @@ section.projects-view-column > .column-content > .object-details > .tree {
       cursor: pointer;
       width: auto !important;
       margin: 0 !important; }
-      section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='submit']:hover, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='submit']:hover, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='submit']:hover {
+      section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='submit']:hover, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='submit']:hover, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='submit']:hover {
         background-color: #399abd;
         text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
-      section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='submit']:active, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='submit']:active, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='submit']:active {
+      section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='submit']:active, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='submit']:active, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='submit']:active {
         background-color: #2e7d99; }
-    section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form section.buttons, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form section.buttons, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form section.buttons {
+    section.project-view-column > .column-content > .object-details > .tree .new-task-form > form section.buttons, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form section.buttons, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form section.buttons {
       margin-top: 10px; }
-    section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form a.cancel, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form a.cancel, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form a.cancel {
+    section.project-view-column > .column-content > .object-details > .tree .new-task-form > form a.cancel, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form a.cancel, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form a.cancel {
       zoom: 1;
       display: inline;
       display: -moz-inline-box;
@@ -20126,7 +20141,7 @@ section.projects-view-column > .column-content > .object-details > .tree {
       line-height: 30px;
       margin-left: 10px;
       color: #ff2021; }
-    section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form textarea, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form textarea, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form textarea {
+    section.project-view-column > .column-content > .object-details > .tree .new-task-form > form textarea, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form textarea, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form textarea {
       border: 1px solid #cccccc;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -20136,33 +20151,33 @@ section.projects-view-column > .column-content > .object-details > .tree {
       color: #666666;
       line-height: 21px;
       font-size: 13px; }
-    section.projects-view-column > .column-content > .object-details > .tree .new-task-form > form label, section.projects-view-column > .column-content > .object-details > .tree .new-subtask-form > form label, section.projects-view-column > .column-content > .object-details > .tree .edit-task-form > form label {
+    section.project-view-column > .column-content > .object-details > .tree .new-task-form > form label, section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form label, section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form label {
       display: block;
       color: #999999;
       margin: 5px 0; }
-  section.projects-view-column > .column-content > .object-details > .tree > .tabs > * {
+  section.project-view-column > .column-content > .object-details > .tree > .tabs > * {
     zoom: 1;
     display: inline;
     display: -moz-inline-box;
     display: inline-block;
     *display: inline;
     vertical-align: top; }
-  section.projects-view-column > .column-content > .object-details > .tree > .tabs > a {
+  section.project-view-column > .column-content > .object-details > .tree > .tabs > a {
     margin-left: 15px;
     margin-top: 9px; }
-  section.projects-view-column > .column-content > .object-details > .tree > .tabs > li {
+  section.project-view-column > .column-content > .object-details > .tree > .tabs > li {
     position: relative;
     border: 1px solid transparent; }
-    section.projects-view-column > .column-content > .object-details > .tree > .tabs > li.project-tasks-filter {
+    section.project-view-column > .column-content > .object-details > .tree > .tabs > li.project-tasks-filter {
       padding-top: 9px;
       padding-left: 15px;
       padding-right: 0;
       padding-bottom: 9px;
       line-height: 20px;
       color: #999999; }
-      section.projects-view-column > .column-content > .object-details > .tree > .tabs > li.project-tasks-filter label {
+      section.project-view-column > .column-content > .object-details > .tree > .tabs > li.project-tasks-filter label {
         padding-left: 3px; }
-    section.projects-view-column > .column-content > .object-details > .tree > .tabs > li > a {
+    section.project-view-column > .column-content > .object-details > .tree > .tabs > li > a {
       line-height: 20px;
       display: block;
       padding-top: 9px;
@@ -20171,21 +20186,21 @@ section.projects-view-column > .column-content > .object-details > .tree {
       padding-bottom: 9px;
       color: #666666;
       font-size: 12px; }
-      section.projects-view-column > .column-content > .object-details > .tree > .tabs > li > a > * {
+      section.project-view-column > .column-content > .object-details > .tree > .tabs > li > a > * {
         zoom: 1;
         display: inline;
         display: -moz-inline-box;
         display: inline-block;
         *display: inline;
         vertical-align: top; }
-      section.projects-view-column > .column-content > .object-details > .tree > .tabs > li > a > b {
+      section.project-view-column > .column-content > .object-details > .tree > .tabs > li > a > b {
         font-weight: normal; }
-        section.projects-view-column > .column-content > .object-details > .tree > .tabs > li > a > b i {
+        section.project-view-column > .column-content > .object-details > .tree > .tabs > li > a > b i {
           vertical-align: middle;
           margin-right: 5px; }
-        section.projects-view-column > .column-content > .object-details > .tree > .tabs > li > a > b + span {
+        section.project-view-column > .column-content > .object-details > .tree > .tabs > li > a > b + span {
           margin-left: 4px; }
-      section.projects-view-column > .column-content > .object-details > .tree > .tabs > li > a > span {
+      section.project-view-column > .column-content > .object-details > .tree > .tabs > li > a > span {
         height: 14px;
         line-height: 14px;
         margin-top: 3px;
@@ -20195,73 +20210,73 @@ section.projects-view-column > .column-content > .object-details > .tree {
         background: #a0b9be;
         color: white;
         font-weight: bold; }
-    section.projects-view-column > .column-content > .object-details > .tree > .tabs > li.active {
+    section.project-view-column > .column-content > .object-details > .tree > .tabs > li.active {
       border-color: #cccccc;
       border-bottom-color: white; }
-      section.projects-view-column > .column-content > .object-details > .tree > .tabs > li.active > a {
+      section.project-view-column > .column-content > .object-details > .tree > .tabs > li.active > a {
         cursor: default; }
-  section.projects-view-column > .column-content > .object-details > .tree > .tabs + .contents {
+  section.project-view-column > .column-content > .object-details > .tree > .tabs + .contents {
     margin-top: -1px; }
-  section.projects-view-column > .column-content > .object-details > .tree > .contents {
+  section.project-view-column > .column-content > .object-details > .tree > .contents {
     min-height: 20px; }
-    section.projects-view-column > .column-content > .object-details > .tree > .contents > * {
+    section.project-view-column > .column-content > .object-details > .tree > .contents > * {
       zoom: 1;
       display: inline;
       display: -moz-inline-box;
       display: inline-block;
       *display: inline;
       vertical-align: top; }
-    section.projects-view-column > .column-content > .object-details > .tree > .contents a:hover {
+    section.project-view-column > .column-content > .object-details > .tree > .contents a:hover {
       text-decoration: none; }
-    section.projects-view-column > .column-content > .object-details > .tree > .contents > li {
+    section.project-view-column > .column-content > .object-details > .tree > .contents > li {
       width: 100%;
       display: none; }
-      section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul > * {
+      section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul > * {
         zoom: 1;
         vertical-align: top; }
-      section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li {
+      section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li {
         position: relative;
         z-index: 1;
         -webkit-transition: all;
         -moz-transition: all;
         -o-transition: all;
         transition: all; }
-        section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section {
+        section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section {
           background: #f8f4ed;
           padding-left: 9px;
           height: 44px;
           line-height: 44px; }
-          section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > * {
+          section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > * {
             zoom: 1;
             vertical-align: top; }
-          section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats {
+          section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats {
             width: 80px;
             height: 44px; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > * {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > * {
               zoom: 1;
               display: inline;
               display: -moz-inline-box;
               display: inline-block;
               *display: inline;
               vertical-align: top; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > i {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > i {
               width: 17px;
               font-size: 12px;
               font-style: normal;
               color: #666666; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > i + .add {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > i + .add {
                 margin-left: 5px; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > i + .counter {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > i + .counter {
                 margin-left: 10px; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .hidden-add {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .hidden-add {
               width: 18px;
               height: 18px;
               line-height: 18px;
               margin-top: 13px;
               margin-bottom: 13px; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .hidden-add + .counter {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .hidden-add + .counter {
                 margin-left: 10px; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .add {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .add {
               width: 18px;
               height: 18px;
               line-height: 18px;
@@ -20276,10 +20291,10 @@ section.projects-view-column > .column-content > .object-details > .tree {
               -moz-transition: opacity 0.25s ease-out;
               -o-transition: opacity 0.25s ease-out;
               transition: opacity 0.25s ease-out; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .add:hover {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .add:hover {
                 opacity: 1;
                 filter: alpha(opacity=100); }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .add > i {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .add > i {
                 zoom: 1;
                 display: inline;
                 display: -moz-inline-box;
@@ -20288,9 +20303,9 @@ section.projects-view-column > .column-content > .object-details > .tree {
                 vertical-align: top;
                 line-height: 20px;
                 font-size: 13px; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .add + .counter {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .add + .counter {
                 margin-left: 10px; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .counter {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .counter {
               background: #a0b9be;
               line-height: 14px;
               color: white;
@@ -20306,26 +20321,26 @@ section.projects-view-column > .column-content > .object-details > .tree {
               -moz-transition: opacity 0.25s ease-out;
               -o-transition: opacity 0.25s ease-out;
               transition: opacity 0.25s ease-out; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .counter:hover {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .stats > .counter:hover {
                 opacity: 1;
                 filter: alpha(opacity=100); }
-          section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description {
+          section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description {
             height: 40px;
             padding-top: 2px;
             padding-bottom: 2px;
             margin-right: 50px;
             line-height: 20px; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > * {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > * {
               zoom: 1;
               vertical-align: top; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description .icon-ok {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description .icon-ok {
               padding-right: 3px; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside {
               height: 40px; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > *, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > * {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > *, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > * {
                 zoom: 1;
                 vertical-align: top; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > span, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > span {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > span, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > span {
                 display: block;
                 position: relative;
                 top: 2px;
@@ -20334,23 +20349,23 @@ section.projects-view-column > .column-content > .object-details > .tree {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > span > *, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > span > * {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > span > *, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > span > * {
                   zoom: 1;
                   display: inline;
                   display: -moz-inline-box;
                   display: inline-block;
                   *display: inline;
                   vertical-align: top; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > span > a, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > span > a {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > span > a, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > span > a {
                   height: 15px;
                   border-bottom: 1px dashed #358bae;
                   -webkit-transition: all;
                   -moz-transition: all;
                   -o-transition: all;
                   transition: all; }
-                  section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > span > a:hover, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > span > a:hover {
+                  section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > span > a:hover, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > span > a:hover {
                     border-color: transparent; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > p, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > p {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > p, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > p {
                 position: relative;
                 top: -3px;
                 font-size: 12px;
@@ -20358,50 +20373,50 @@ section.projects-view-column > .column-content > .object-details > .tree {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > p.task-title, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > p.task-title {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > p.task-title, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > p.task-title {
                   color: #358bae;
                   z-index: 11; }
-                  section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > p.task-title:hover, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > p.task-title:hover {
+                  section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > p.task-title:hover, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > p.task-title:hover {
                     cursor: pointer;
                     text-decoration: underline; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > p > i, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > p > i {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > p > i, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > p > i {
                   margin-top: 2px; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > span {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > span {
               padding-right: 125px; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > p {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > p {
               padding-right: 60px; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section + aside {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section + aside {
               margin-top: -40px; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside {
               text-align: right; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description + .settings {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description + .settings {
               margin-top: -44px; }
-          section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings {
+          section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings {
             width: 100%;
             text-align: right; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > * {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > * {
               zoom: 1;
               display: inline;
               display: -moz-inline-box;
               display: inline-block;
               *display: inline;
               vertical-align: top; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section {
               width: 44px;
               text-align: left;
               white-space: nowrap; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > * {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > * {
                 zoom: 1;
                 display: inline;
                 display: -moz-inline-box;
                 display: inline-block;
                 *display: inline;
                 vertical-align: top; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup {
                 position: relative;
                 width: 22px;
                 text-align: center; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > .list {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > .list {
                   width: 100%;
                   zoom: 1;
                   display: inline;
@@ -20409,18 +20424,18 @@ section.projects-view-column > .column-content > .object-details > .tree {
                   display: inline-block;
                   *display: inline;
                   vertical-align: top; }
-                  section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > .list > * {
+                  section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > .list > * {
                     zoom: 1;
                     display: inline;
                     display: -moz-inline-box;
                     display: inline-block;
                     *display: inline;
                     vertical-align: top; }
-                  section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > .list > i {
+                  section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > .list > i {
                     color: #a0b9be;
                     font-size: 14px;
                     line-height: 44px; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul {
                   position: absolute;
                   z-index: 10;
                   top: 100%;
@@ -20445,35 +20460,35 @@ section.projects-view-column > .column-content > .object-details > .tree {
                   -moz-transition: all;
                   -o-transition: all;
                   transition: all; }
-                  section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > * {
+                  section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > * {
                     zoom: 1;
                     vertical-align: top; }
-                  section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li {
+                  section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li {
                     position: relative;
                     height: 22px;
                     line-height: 22px;
                     white-space: nowrap;
                     font-size: 12px; }
-                    section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li > a {
+                    section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li > a {
                       position: relative;
                       display: block;
                       padding-left: 24px;
                       height: 100%;
                       color: #666666; }
-                      section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li > a > i {
+                      section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li > a > i {
                         position: absolute;
                         font-size: 14px;
                         left: 6px;
                         top: 3px; }
-                        section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li > a > i.icon-remove {
+                        section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li > a > i.icon-remove {
                           color: #ff1d25; }
-                    section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li + li {
+                    section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li + li {
                       margin-top: 5px; }
-                    section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li.disabled {
+                    section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li.disabled {
                       border: none; }
-                      section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li.disabled > a {
+                      section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul > li.disabled > a {
                         color: #cccccc; }
-                  section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul:before {
+                  section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup > ul:before {
                     content: "";
                     position: absolute;
                     width: 16px;
@@ -20481,18 +20496,18 @@ section.projects-view-column > .column-content > .object-details > .tree {
                     top: -9px;
                     left: 165px;
                     background: url("/assets/backgrounds/project_popup.png") no-repeat center; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup:hover > ul, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup.expanded > ul {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup:hover > ul, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .popup.expanded > ul {
                   opacity: 1;
                   filter: alpha(opacity=100);
                   visibility: visible;
                   margin-top: -5px; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position {
                 overflow: hidden;
                 width: 22px; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position > * {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position > * {
                   zoom: 1;
                   vertical-align: top; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position > a {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position > a {
                   display: block;
                   width: 20px;
                   height: 20px;
@@ -20505,86 +20520,86 @@ section.projects-view-column > .column-content > .object-details > .tree {
                   -moz-transition: opacity 0.25s ease-out;
                   -o-transition: opacity 0.25s ease-out;
                   transition: opacity 0.25s ease-out; }
-                  section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position > a:hover {
+                  section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position > a:hover {
                     opacity: 1;
                     filter: alpha(opacity=100); }
-                  section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position > a > * {
+                  section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position > a > * {
                     zoom: 1;
                     display: inline;
                     display: -moz-inline-box;
                     display: inline-block;
                     *display: inline;
                     vertical-align: top; }
-                  section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position > a > i {
+                  section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position > a > i {
                     color: #666666;
                     font-size: 10px;
                     line-height: 18px; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position:hover > a {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .settings > section > .position:hover > a {
                   border-color: #338bae; }
-        section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul {
+        section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul {
           position: relative;
           border-top: 1px solid #999999; }
-          section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > section {
+          section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > section {
             padding-left: 29px;
             background: #f0e6dc; }
-          section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul {
+          section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul {
             border-top: 0; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > section {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > section {
               background: #f1f5f6;
               border-left: 5px solid transparent;
               padding-left: 14px; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > section + aside {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > section + aside {
                 margin-top: -44px; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside {
               padding-right: 9px;
               height: 44px;
               line-height: 44px;
               text-align: right; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > * {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > * {
                 zoom: 1;
                 display: inline;
                 display: -moz-inline-box;
                 display: inline-block;
                 *display: inline;
                 vertical-align: top; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > .stats {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > .stats {
                 line-height: 22px; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > .stats > * {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > .stats > * {
                   zoom: 1;
                   vertical-align: top; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > .stats > p {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > .stats > p {
                   position: relative;
                   top: 3px;
                   font-size: 10px;
                   color: #666666; }
-                  section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > .stats > p.new {
+                  section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > .stats > p.new {
                     color: #4caee2; }
-                  section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > .stats > p + p {
+                  section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > .stats > p + p {
                     top: -1px; }
-                section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > .stats + time {
+                section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > .stats + time {
                   margin-left: 15px; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > time {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li > aside > time {
                 font-size: 12px;
                 color: #666666; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.new > section {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.new > section {
               background: #e3ebed;
               border-color: #4caee2; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.new > section > .description > p {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.new > section > .description > p {
                 font-weight: bold;
                 color: #358bae; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.finished > section {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.finished > section {
               background: white; }
-              section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.finished > section > .description > p {
+              section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.finished > section > .description > p {
                 text-decoration: line-through;
                 color: #8d8d8d; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.finished > aside > .stats > p {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.finished > aside > .stats > p {
               color: #999999; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.finished > aside > time {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.finished > aside > time {
               color: #999999;
               text-decoration: line-through; }
-            section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul:before {
+            section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul:before {
               display: none; }
-          section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul:before {
+          section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul:before {
             content: "";
             position: absolute;
             width: 16px;
@@ -20592,43 +20607,43 @@ section.projects-view-column > .column-content > .object-details > .tree {
             top: -9px;
             left: 60px;
             background: url("/assets/backgrounds/project.png") no-repeat center; }
-          section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul.zero-element {
+          section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul.zero-element {
             display: none; }
-        section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li.new > section > .description > section > p {
+        section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li.new > section > .description > section > p {
           font-weight: bold; }
-        section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li.draft > section {
+        section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li.draft > section {
           border-left: 5px solid #a0b9be; }
-          section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li.draft > section > .description > section > p {
+          section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li.draft > section > .description > section > p {
             font-style: italic;
             font-size: 13px;
             color: #8d8d8d; }
-          section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li.draft > section .add {
+          section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li.draft > section .add {
             background: #a0b9be; }
-        section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li.draft > ul:before {
+        section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li.draft > ul:before {
           left: 65px; }
-        section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li.completed > section > .description > section > p, section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li.completed > section > .description > aside > span {
+        section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li.completed > section > .description > section > p, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li.completed > section > .description > aside > span {
           color: #666666;
           text-decoration: line-through; }
-        section.projects-view-column > .column-content > .object-details > .tree > .contents > li > ul li + li {
+        section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li + li {
           margin-top: -2px; }
-      section.projects-view-column > .column-content > .object-details > .tree > .contents > li.active {
+      section.project-view-column > .column-content > .object-details > .tree > .contents > li.active {
         display: block; }
-      section.projects-view-column > .column-content > .object-details > .tree > .contents > li + li {
+      section.project-view-column > .column-content > .object-details > .tree > .contents > li + li {
         margin-left: -100%; }
-section.projects-view-column > .column-content > .object-details > ul.actions {
+section.project-view-column > .column-content > .object-details > ul.actions {
   margin-top: 40px; }
-  section.projects-view-column > .column-content > .object-details > ul.actions > * {
+  section.project-view-column > .column-content > .object-details > ul.actions > * {
     zoom: 1;
     display: inline;
     display: -moz-inline-box;
     display: inline-block;
     *display: inline;
     vertical-align: top; }
-  section.projects-view-column > .column-content > .object-details > ul.actions > li > a {
+  section.project-view-column > .column-content > .object-details > ul.actions > li > a {
     color: #666666; }
-    section.projects-view-column > .column-content > .object-details > ul.actions > li > a.cancel {
+    section.project-view-column > .column-content > .object-details > ul.actions > li > a.cancel {
       color: #ff2021; }
-  section.projects-view-column > .column-content > .object-details > ul.actions > li + li {
+  section.project-view-column > .column-content > .object-details > ul.actions > li + li {
     margin-left: 40px; }
 
 .project-header-status-date.with_year {
@@ -20645,7 +20660,7 @@ h2.project-show-title {
 
 .project-show-tabs {
   margin-top: 1.5em;
-  margin-bottom: 2em; }
+  margin-bottom: 0; }
   .project-show-tabs .nav.nav-tabs > li > a {
     font-size: 1.1em; }
   .project-show-tabs .nav.nav-tabs > li.active > a {
