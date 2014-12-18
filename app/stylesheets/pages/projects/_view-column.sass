@@ -36,6 +36,14 @@
     &:hover
       text-decoration: underline
 
+.project-view-column
+  &.project-view-column-project-template
+    +gradient-vertical($template-item-background, #fff, 219px, 220px)
+
+.project-show-content
+  background-color: #fff
+  padding-top: 2em
+
 section.project-view-column
   .project-members-view, .project-members-form
     .input
@@ -308,8 +316,6 @@ section.project-view-column
                 bottom: 9px
               line-height: 20px
               color: #999999
-              input[type=checkbox]
-                
               label
                 padding-left: 3px
             > a
