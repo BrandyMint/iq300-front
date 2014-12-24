@@ -25073,5 +25073,6 @@ text.now {
   top: 14px;
   height: 47px;
   width: 112px;
-  background: url("/assets/assets/login/logo.png") no-repeat;
+  background-image: image-url("/assets/login/logo.png");
+  background-repeat: no-repeat;
   background-size: contain; }
