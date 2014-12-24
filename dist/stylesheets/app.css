@@ -25073,6 +25073,6 @@ text.now {
   top: 14px;
   height: 47px;
   width: 112px;
-  background-image: image-url("/assets/login/logo.png");
+  background-image: url("/assets/login/logo.png");
   background-repeat: no-repeat;
   background-size: contain; }
