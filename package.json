@@ -40,12 +40,11 @@
     "gulp-react": "~0.2.0",
     "gulp-rename": "^1.2.0",
     "gulp-ruby-sass": "^0.7.1",
-    "gulp-sass": "^0.7.3",
+    "gulp-sass": "^1.2.4",
     "gulp-size": "~0.1.2",
     "gulp-useref": "^0.4.4",
     "gulp-util": "~2.2.9",
     "haml-coffee": "^1.14.1",
-    "node-sass": "^1.2.2",
     "through2": "latest",
     "vinyl-paths": "^1.0.0",
     "wiredep": "^1.7.3"

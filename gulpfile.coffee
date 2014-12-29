@@ -53,8 +53,8 @@ options.sassDist =
 gulp.task "sass:watch", ->
   gulp
     .src("./app/stylesheets/**/*.sass")
-    #.pipe(sass(options.sassDev))
-    .pipe(rubysass(options.rubysassDev))
+    .pipe(sass(options.sassDev))
+    #.pipe(rubysass(options.rubysassDev))
     .pipe(rewriteCSS(options.rewriteCSSDev))
     .pipe(gulp.dest("./app/tmp/stylesheets"))
     .pipe($.connect.reload())
@@ -64,8 +64,8 @@ gulp.task "sass:watch", ->
 gulp.task "sass:dist", ->
   gulp
     .src(["./app/stylesheets/**/*.sass"])
-    #.pipe(sass(options.sassDist))
-    .pipe(rubysass(options.rubysassDist))
+    .pipe(sass(options.sassDist))
+    #.pipe(rubysass(options.rubysassDist))
     .pipe(rewriteCSS(options.rewriteCSSDist))
     .pipe(gulp.dest("./dist/stylesheets"))
     .on "error", $.util.log
