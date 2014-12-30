@@ -1,16 +1,19 @@
+/* line 5, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-table {
   border: 0;
   border-spacing: 0;
   width: 800px;
   padding: 20px 0 0; }
 
+/* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-default-text {
-  font-family: "Helvetica Neue,Arial,sans-serif";
+  font-family: 'Helvetica Neue,Arial,sans-serif';
   margin: 0;
   font-size: 18px;
   font-weight: normal;
   color: #6e7e91; }
 
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-header-text {
   padding: 0;
   margin: 0;
@@ -18,30 +21,37 @@
   font-size: 30px;
   font-weight: bold; }
 
+/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-text {
   padding: 0;
   margin: 0;
   font-size: 18px;
   font-weight: normal; }
 
+/* line 31, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-header-cell {
   width: 470px;
   padding: 45px 20px 0; }
 
+/* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-header-blank-cell {
   width: 130px; }
 
+/* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-default-cell {
   padding: 0 20px; }
 
+/* line 41, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-table-default-cell {
   padding: 0; }
 
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-accept-button {
   padding: 10px 15px;
   border: 1px solid #114D97;
   background-color: #1F8DD6; }
 
+/* line 49, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-accept-link {
   font-size: 18px;
   font-weight: bold;
@@ -49,32 +59,41 @@
   text-align: center;
   text-decoration: none; }
 
+/* line 56, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-accept-button-blank-cell {
   width: 130px; }
 
+/* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-replacement-link-cell {
   padding: 0 20px 10px 20px; }
 
+/* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-replacement-link-message {
   font-size: 11px;
   color: #6e7e91; }
 
+/* line 66, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-not-correct-letter {
   padding: 0 20px 60px 20px; }
 
+/* line 69, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-not-correct-letter-message {
   font-size: 11px;
   color: #999999; }
 
+/* line 73, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-target-name {
   color: #212f40; }
 
+/* line 76, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-message-blank-row {
   width: 130px; }
 
+/* line 79, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-table-blank-row {
   height: 25px; }
 
+/* line 82, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-logo {
   padding-top: 30px;
   display: block;
