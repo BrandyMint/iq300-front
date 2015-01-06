@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem "middleman", "~> 3.3.4"
+gem "middleman", "~> 3.3.7"
 gem "middleman-sprockets"
 #gem "middleman-fjords"
 #gem "bourbon"
@@ -14,7 +14,6 @@ gem "therubyracer", :require => 'v8'
 gem "middleman-deploy"
 #gem "middleman-imageoptim", "~> 0.1.4"
 
-#gem "middleman-core"
 gem 'bootstrap-sass', '~> 3.2.0', :require => false
 gem 'compass-rails', require: false
 gem 'autoprefixer-rails'
@@ -26,7 +25,7 @@ gem 'select2-rails', require: false
 
 #gem "jquery-rails"
 #gem 'therubyracer'
-gem 'rb-inotify', '~> 0.9', :require => false
+#gem 'rb-inotify', '~> 0.9', :require => false
 
 gem 'git'
 gem 'better_errors'
@@ -46,8 +45,6 @@ gem 'pry-nav'
 # Добавляет show-stack
 #gem "pry-stack_explorer"
 
-
-
-group :deploy do
-   gem 'capistrano', :require => false
-end
+#group :deploy do
+#   gem 'capistrano', :require => false
+#end
