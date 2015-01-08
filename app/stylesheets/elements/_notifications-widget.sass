@@ -1,4 +1,17 @@
 $notifications-widget-popover-width: 330px
+$notifications-widget-popover-content-height: 330px
+$notifications-widget-type-icons: task check-circle, project suitcase, message envelope, mention comment, system play
+
+%notifications-widget-close-btn
+  font:
+    size: 18px
+    weight: bold
+  line-height: 12px
+  color: $gray-light
+  padding: 4px
+  &:hover
+    color: $gray
+    text-decoration: none
 
 .notifications-widget-button
   position: relative
@@ -37,19 +50,20 @@ $notifications-widget-popover-width: 330px
   +border-radius(5px 5px 0 0)
 
 .notifications-widget-popover-close
-  @extend .close
+  @extend %notifications-widget-close-btn
+  display: inline-block
   width: 20px
   height: 20px
+  margin-top: -3px
   +border-radius(100%)
+  +box-sizing(border-box)
   text-align: center
   vertical-align: middle
   +opacity(1)
-  color: $gray-light
   background-color: #fff
   border: 1px solid $line-color
   &:hover
     +opacity(1)
-    color: $gray
     border-color: $gray-light
 
 .notifications-widget-popover-footer
@@ -62,12 +76,17 @@ $notifications-widget-popover-width: 330px
 .notifications-widget-popover-content
   @extend .popover-content
   padding: 0
+  max-height: $notifications-widget-popover-content-height
+  overflow-y: auto
 
 .notifications-widget-list-item
   display: block
+  position: relative
   padding: 10px $grid-gutter-width/2
-  border-top: 1px solid $line-color
-  line-height: 1.2A
+  border:
+    top: 1px solid $line-color
+    left: 2px solid $blueLink
+  line-height: 1.2
   background-color: lighten($new-item-background, 10%)
   color: $text-color
   &:first-child
@@ -75,10 +94,27 @@ $notifications-widget-popover-width: 330px
   &:hover
     color: $text-color
     background-color: #fff
+    .notifications-widget-list-item-close
+      display: block
+
+.notifications-widget-list-item-close
+  @extend %notifications-widget-close-btn
+  position: absolute
+  top: 5px
+  right: 8px
+  display: none
 
 .notifications-widget-list-item-type
   color: $gray-light
   text-align: center
+
+.notifications-widget-list-item-type-icon
+  font-size: 16px
+
+@each $t in $notifications-widget-type-icons
+  .notifications-widget-list-item-type-icon-#{nth($t, 1)}
+    @extend .fa
+    @extend .fa-#{nth($t, 2)}
 
 .notifications-widget-list-item-content
   padding-left: $grid-gutter-width/2
