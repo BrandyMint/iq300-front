@@ -1,20 +1,21 @@
 @font-face
   font-family: 'iq-navicons'
-  src: url('iq-navicons.eot?64905085')
-  src: url('iq-navicons.eot?64905085#iefix') format("embedded-opentype"), url('iq-navicons.woff?64905085') format("woff"), url('iq-navicons.ttf?64905085') format("truetype"), url('iq-navicons.svg?64905085#iq-navicons') format("svg")
+  src: url('iq-navicons.eot?75472449')
+  src: url('iq-navicons.eot?75472449#iefix') format("embedded-opentype"), url('iq-navicons.woff?75472449') format("woff"), url('iq-navicons.ttf?75472449') format("truetype"), url('iq-navicons.svg?75472449#iq-navicons') format("svg")
   font-weight: normal
   font-style: normal
 
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it.
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be
+/*
+ *@media screen and (-webkit-min-device-pixel-ratio:0) {
+ *  @font-face {
+ *    font-family: 'iq-navicons';
+ *    src: url('../font/iq-navicons.svg?75472449#iq-navicons') format('svg');
+ *  }
+ *}
 
-// Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it.
-// Note, that will break hinting! In other OS-es font will be not as sharp as it could be
-//
-// @media screen and (-webkit-min-device-pixel-ratio:0)
-// @font-face
-//    font-family: 'iq-navicons'
-//    src: url('iq-navicons.svg?64905085#iq-navicons') format('svg')
-
-[class^="iq-navicons-"]:before, [class*=" iq-navicons-"]:before
+[class^="iq-navicons"]:before, [class*=" iq-navicons"]:before
   font-family: "iq-navicons"
   font-style: normal
   font-weight: normal
@@ -41,23 +42,44 @@
 .iq-navicons-calendar:before
   content: '\e800'
 
+/* ''
+
 .iq-navicons-communities:before
   content: '\e801'
+
+/* ''
 
 .iq-navicons-contacts:before
   content: '\e802'
 
+/* ''
+
 .iq-navicons-documents:before
   content: '\e803'
+
+/* ''
 
 .iq-navicons-messages:before
   content: '\e804'
 
+/* ''
+
 .iq-navicons-notifications:before
   content: '\e805'
+
+/* ''
 
 .iq-navicons-projects:before
   content: '\e806'
 
+/* ''
+
 .iq-navicons-tasks:before
   content: '\e807'
+
+/* ''
+
+.iq-navicons-notifications-o:before
+  content: '\e808'
+
+/* ''

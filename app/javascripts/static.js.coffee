@@ -14,6 +14,7 @@
 #= require tasks/list
 #= require communities/billing
 #= require layout/fixed_block
+#= require notifications/widget
 
 $ ->
   $('@select2').select2()

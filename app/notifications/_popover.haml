@@ -1,0 +1,27 @@
+.notifications-widget-popover{role: 'notifications-widget-popover'}
+  .arrow
+  .notifications-widget-popover-title
+    %strong Новые уведомления
+    %small (21)
+    %a.notifications-widget-popover-close{href: '#', role: 'notifications-widget-popover-close'}
+      &times;
+    .clearfix
+  %article.notifications-widget-popover-content
+    .notifications-widget-list
+      - for i in 0..2
+        %a.notifications-widget-list-item{href: '/tasks/show'}
+          .row.row-collapse
+            .col-xs-1.col-collapse
+              .notifications-widget-list-item-type
+                .notifications-widget-list-item-type-icon
+                  %i.fa.fa-comment.icon-size-16
+            .col-xs-11.col-collapse
+              .notifications-widget-list-item-content
+                %strong Иван Иванов
+                %span
+                  поставил вам задачу
+                  «Название задачи»
+
+  .notifications-widget-popover-footer
+    %a{href: '/notifications'} Посмотреть все уведомления
+
