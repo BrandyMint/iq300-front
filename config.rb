@@ -48,19 +48,13 @@ set :build_dir, 'build'
 # activate :livereload
 
 # Automatic image dimensions on image_tag helper
-activate :automatic_image_sizes
-
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.build_before = true
-end
 
 ##############################
 # Pages
-page "*", :layout => "application"
-
-#page:
-#  proxy "/#{link}.html", "/demo.html", :locals => { :src => link, :next_link => next_link, :skip_this => skip_this }
+set :layouts_dir, "layouts"
+#page "*", :layout => "application"
+set :layout, :application
+page "/", :layout => :page
 
 ##############################
 # Dynamically Generated Pages
@@ -81,9 +75,6 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 set :relative_links, true
-
-activate :sprockets
-
 
 # Development-specific configuration
 configure :development do

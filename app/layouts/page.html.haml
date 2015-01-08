@@ -22,7 +22,8 @@
       %a{name: :top}
       = partial 'layouts/navbar'
       .container
-        .page-content= yield
+        .page-content
+          = yield
 
       = partial 'layouts/footer'
 
