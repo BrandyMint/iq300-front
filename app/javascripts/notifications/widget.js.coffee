@@ -10,7 +10,7 @@ window.NotificationsWidget ||= {}
     notifications = $('@notifications-widget-popover-notifications')
     messages = $('@notifications-widget-popover-messages')
 
-    widget.fadeIn()
+    #widget.fadeIn()
     messages.hide()
     notifications.show()
     setWidgetPosition(widget, btn)
