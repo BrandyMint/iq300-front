@@ -23030,71 +23030,67 @@ section.notification-view-column .column-content .object-details {
   padding-top: 15px;
   padding-bottom: 15px; }
   /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
-  .project-box:hover {
-    border-left-color: #d5d5d5;
-    background-color: #e7e7e7; }
-  /* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
   .project-box.project-box-project-overdued {
-    border-left-color: #d92727;
-    background-color: #fff; }
-    /* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+    border-left-color: #d92727; }
+    /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
     .project-box.project-box-project-overdued .project-box-title-block, .project-box.project-box-project-overdued .status-date {
       color: #d92727; }
-  /* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+  /* line 14, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
   .project-box.project-box-project-new {
     background-color: #cfebf1;
     border-left-color: #a8dae6; }
-    /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
-    .project-box.project-box-project-new:hover {
-      background-color: #f7f7f7; }
-    /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+    /* line 19, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
     .project-box.project-box-project-new .project-box-title-block, .project-box.project-box-project-new .status-date {
       color: #557d8c; }
-  /* line 27, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
   .project-box.project-box-project-draft {
     border-left-color: #b8a9a6; }
-    /* line 31, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+    /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
     .project-box.project-box-project-draft, .project-box.project-box-project-draft .project-box-title-block, .project-box.project-box-project-draft .status-date {
       color: #8d8d8d; }
-    /* line 33, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+    /* line 27, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
     .project-box.project-box-project-draft .project-box-title-block {
       font-style: italic; }
-  /* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+  /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
   .project-box.project-box-project-template {
     background-color: #f4ffee;
     border-left-color: #a6e2ae; }
-    /* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+    /* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
     .project-box.project-box-project-template .status-date {
       color: #3ab54a; }
+  /* line 34, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+  .project-box:hover {
+    border-left-color: #d5d5d5;
+    background-color: #e7e7e7; }
 
-/* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
 a.project-box-block-link {
   color: #606060; }
 
-/* line 45, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+/* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
 .project-box-star {
   margin-left: -1.5em; }
 
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
 .project-box-details-block {
   margin: 0.5em 0; }
 
-/* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
 .project-box-details-item, a.project-box-details-item {
   color: #999999; }
-  /* line 54, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
   .project-box-details-item:hover, a.project-box-details-item:hover {
     color: #555555; }
 
-/* line 58, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+/* line 56, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
 .project-box-details-item-new, a.project-box-details-item-new {
   font-weight: bold;
   color: #619cb3; }
-  /* line 61, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+  /* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
   .project-box-details-item-new:hover, a.project-box-details-item-new:hover {
     color: #338cae; }
 
-/* line 64, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+/* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
 .project-box-progress {
   margin: 0.5em 0;
   height: 5px;
@@ -23105,15 +23101,15 @@ a.project-box-block-link {
   -webkit-border-radius: 0;
   border-radius: 0;
   background-color: #e2e2e2; }
-  /* line 69, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+  /* line 67, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
   .project-box-progress, .project-box-progress .progress-bar {
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none; }
-  /* line 71, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+  /* line 69, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
   .project-box-progress .progress-bar-danger {
     background-color: #e87e7e; }
-  /* line 73, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
+  /* line 71, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
   .project-box-progress .progress-bar-primary {
     background-color: #8daeba; }
 
