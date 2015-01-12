@@ -7,13 +7,9 @@
   padding:
     top: $grid-gutter-width / 2
     bottom: $grid-gutter-width / 2
-  &:hover
-    border-left-color: $item-hover-border-color
-    background-color: $item-hover-background
   &.project-box-project-overdued
     @extend %task-overdued-style
     border-left-color: $overdued-item-border-color
-    background-color: #fff
     .project-box-title-block,
     .status-date
       color: $overdued-item-text-color
@@ -21,8 +17,6 @@
     @extend %task-new-style
     background-color: $new-item-background
     border-left-color: $new-item-border-color
-    &:hover
-      background-color: $gray-lightest
     .project-box-title-block,
     .status-date
       color: desaturate(darken($brand-primary, 0%), 30%)
@@ -39,6 +33,10 @@
     border-left-color: $template-item-border-color
     .status-date
       color: $brand-success
+  &:hover
+    border-left-color: $item-hover-border-color
+    background-color: $item-hover-background
+
 
 
 a.project-box-block-link
