@@ -15934,7 +15934,7 @@ section.view-column {
   /* line 9, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/task */
   .task-box:hover, .notification-list-item:hover, .project-box:hover {
     border-left-color: #d5d5d5;
-    background-color: #e7e7e7; }
+    background-color: #f6f6f6; }
 
 /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/task */
 .task-new, .project-box.project-box-project-new {
@@ -23061,7 +23061,7 @@ section.notification-view-column .column-content .object-details {
   /* line 34, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
   .project-box:hover {
     border-left-color: #d5d5d5;
-    background-color: #e7e7e7; }
+    background-color: #f6f6f6; }
 
 /* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/list-column */
 a.project-box-block-link {
@@ -24424,7 +24424,7 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
     padding-bottom: 15px; }
     /* line 9, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/discussions */
     .project-discussion.rolled:hover {
-      background-color: #e7e7e7; }
+      background-color: #f6f6f6; }
     /* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/discussions */
     .project-discussion.rolled .project-discussion-info {
       display: block; }
