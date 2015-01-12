@@ -1,43 +1,43 @@
-/* line 4, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 body {
   margin: 0px;
   padding: 0px;
   font-family: Helvetica Neue, tahoma, sans-serif; }
 
-/* line 9, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 9, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 header {
   height: 80px; }
 
-/* line 12, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .blue {
   background: #ecf1f6;
   padding: 50px 0; }
 
-/* line 16, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .white {
   background: url("/assets/login/whbg.jpg") no-repeat;
   padding: 50px 0; }
 
-/* line 20, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 20, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .sin {
   background: #3b5a76;
   padding: 50px 0; }
 
-/* line 24, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 24, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .black {
   display: none;
   background: #222;
   padding: 50px 0;
   color: #fff; }
 
-/* line 30, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 30, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .block {
   width: 960px;
   text-align: left;
   zoom: 1;
   *display: block;
   overflow: visible !important; }
-  /* line 112, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/mixins */
+  /* line 112, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
   .block:after {
     content: "";
     display: block;
@@ -45,56 +45,56 @@ header {
     clear: both;
     visibility: hidden; }
 
-/* line 35, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .blockall {
   width: 1260px;
   text-align: left; }
 
-/* line 39, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .block1 {
   width: 680px;
   float: left;
   padding-top: 40px; }
 
-/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .block2 {
   width: 580px;
   float: right;
   padding-top: 40px;
   text-align: left; }
 
-/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .block3 {
   width: 320px;
   float: left;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 80px; }
-  /* line 56, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 56, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .block3 h3 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
     color: #222222; }
 
-/* line 62, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .blockfoot {
   width: 240px;
   float: left;
   text-align: left; }
 
-/* line 67, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 67, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .copy {
   float: left;
   width: 400px; }
 
-/* line 71, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 71, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .social {
   float: right;
   width: 400px;
   text-align: right;
   margin: -6px 0 8px 0; }
-  /* line 76, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 76, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .social img {
     padding: 10px;
     background: #222;
@@ -104,40 +104,40 @@ header {
     -o-transition: all 0.5s;
     transition: all 0.5s; }
 
-/* line 82, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 82, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .tw img:hover {
   background: #00aced; }
 
-/* line 85, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 85, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .fb img:hover {
   background: #3b5998; }
 
-/* line 88, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 88, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .p img:hover {
   background: #cb2028; }
 
-/* line 91, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 91, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .g img:hover {
   background: #da2713; }
 
-/* line 94, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 94, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .vk img:hover {
   background: #45688E; }
 
-/* line 97, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 97, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .blockport1 {
   width: 260px;
   float: left;
   margin-top: 50px; }
 
-/* line 102, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 102, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .blockport2 {
   width: 700px;
   float: right;
   text-align: left;
   margin-top: 50px; }
 
-/* line 108, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 108, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .otz {
   background: #ecf1f6;
   padding: 20px;
@@ -145,59 +145,59 @@ header {
   text-align: center;
   margin-top: 15px;
   color: #666666; }
-  /* line 115, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 115, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .otz span {
     font-size: 24px;
     color: #3b5a76;
     margin-top: 10px;
     display: block; }
 
-/* line 121, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 121, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .price {
   width: 225px;
   float: left;
   margin: 50px 20px 50px 0;
   text-align: center; }
 
-/* line 127, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 127, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .pricetoo {
   width: 225px;
   float: left;
   margin: 50px 0;
   text-align: center; }
 
-/* line 133, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 133, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .price a, .pricetoo a {
   text-decoration: none; }
 
-/* line 136, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 136, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .pricetop {
   background: #3b5a76;
   height: 120px;
   color: #fff; }
 
-/* line 141, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 141, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .priceline {
   width: 201px;
   background: #2c4359;
   height: 2px;
   margin-left: 12px; }
 
-/* line 147, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 147, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .pricelinegrey {
   width: 201px;
   background: #efefef;
   height: 1px;
   margin: 20px 0 20px 12px; }
 
-/* line 153, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 153, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .pricewhite {
   background: #fff;
   color: grey;
   padding: 20px 0;
   font-size: 13px; }
 
-/* line 159, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 159, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .start {
   height: 50px;
   color: #fff;
@@ -215,40 +215,40 @@ header {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   box-shadow: 0 5px 0 #d4dce5; }
-  /* line 176, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 176, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .start:hover {
     background: #689ecf !important; }
-  /* line 178, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 178, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .start:visited {
     text-decoration: none; }
 
-/* line 181, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 181, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .tarif {
   font-weight: bold;
   padding: 12px 0;
   display: block;
   font-size: 20px; }
 
-/* line 187, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 187, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .cena {
   font-weight: bold;
   padding: 12px 0;
   display: block;
   font-size: 24px; }
 
-/* line 193, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 193, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .mini {
   font-size: 16px;
   color: grey; }
 
-/* line 197, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 197, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .formblock {
   width: 290px;
   height: 400px;
   margin-left: 80px;
   text-align: center; }
 
-/* line 203, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 203, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .logo {
   display: block;
   width: 112px;
@@ -257,7 +257,7 @@ header {
   float: left;
   margin: 17px 20px 0 0; }
 
-/* line 211, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 211, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .login {
   float: right;
   float: right;
@@ -279,12 +279,12 @@ header {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s; }
-  /* line 232, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 232, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .login:hover {
     background: #3b5a76;
     text-shadow: 0 -1px 0 black; }
 
-/* line 236, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 236, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .social-login {
   width: 115px;
   margin: 0 8px;
@@ -307,24 +307,24 @@ header {
   -o-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
   text-shadow: 0 -1px 0 #4976a0; }
-  /* line 255, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 255, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .social-login img {
     position: absolute;
     left: 15px; }
-  /* line 259, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 259, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .social-login.google img {
     top: 15px; }
-  /* line 261, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 261, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .social-login.google:hover {
     background: #da2713; }
-  /* line 264, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 264, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .social-login.facebook img {
     bottom: 0; }
-  /* line 266, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 266, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .social-login.facebook:hover {
     background: #3b5998; }
 
-/* line 269, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 269, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 h1.title {
   font-weight: normal;
   font-size: 24px;
@@ -334,7 +334,7 @@ h1.title {
   padding: 0px;
   line-height: 80px; }
 
-/* line 278, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 278, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 h2 {
   font-weight: normal;
   font-size: 40px;
@@ -342,7 +342,7 @@ h2 {
   margin: 50 0px;
   text-align: center;
   letter-spacing: -2px; }
-  /* line 279, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 279, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   h2.popr {
     font-weight: normal;
     font-size: 30px;
@@ -352,7 +352,7 @@ h2 {
     padding: 0px;
     line-height: 30px; }
 
-/* line 294, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 294, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .blue h2 {
   color: #666666;
   margin: 30px 0 20px 0;
@@ -361,7 +361,7 @@ h2 {
   font-weight: bold;
   line-height: 40px; }
 
-/* line 302, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 302, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .white h2 {
   color: #666666;
   margin: 30px 0 20px 0;
@@ -370,7 +370,7 @@ h2 {
   font-weight: bold;
   line-height: 40px; }
 
-/* line 310, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 310, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .sin h2 {
   color: #fff;
   margin: 30px 0 20px 0;
@@ -380,20 +380,20 @@ h2 {
   line-height: 40px;
   text-transform: uppercase; }
 
-/* line 320, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 320, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .black h3 {
   color: #fff;
   margin: 20px 0 50px 0;
   font-size: 24px;
   font-weight: bold;
   line-height: 26px; }
-/* line 326, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 326, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .black a {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
   display: block; }
-  /* line 331, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 331, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .black a:hover {
     color: #86bdef;
     -webkit-transition: all 0.5s;
@@ -401,14 +401,14 @@ h2 {
     -o-transition: all 0.5s;
     transition: all 0.5s; }
 
-/* line 338, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 338, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .pod {
   font-size: 18px;
   color: #959595;
   line-height: 60px;
   font-weight: bold; }
 
-/* line 344, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 344, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .inpform {
   width: 275px;
   height: 50px;
@@ -426,21 +426,21 @@ h2 {
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
-  /* line 358, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 358, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .inpform:focus {
     border-color: #3b5a76; }
 
-/* line 361, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 361, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .check {
   text-align: left;
   color: #9a9a9a;
   margin: 10px 0 20px 0; }
-  /* line 366, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 366, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .check a:link, .check a:visited {
     text-decoration: underline;
     color: #9a9a9a; }
 
-/* line 370, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 370, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .niceCheck {
   width: 17px;
   height: 16px;
@@ -448,17 +448,17 @@ h2 {
   cursor: pointer;
   background: url("/assets/login/chb.jpg");
   background-position: 0; }
-  /* line 377, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 377, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .niceCheck input {
     filter: alpha(opacity=0);
     -moz-opacity: 0;
     -khtml-opacity: 0;
     opacity: 0; }
-  /* line 382, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 382, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .niceCheck.checked {
     background-position: 0 -16px !important; }
 
-/* line 385, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 385, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .submit {
   width: 290px;
   height: 70px;
@@ -480,20 +480,20 @@ h2 {
   -o-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
   text-shadow: 0 -1px 0 #4976a0; }
-  /* line 403, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 403, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .submit:hover {
     background: #7db4e6; }
-  /* line 405, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 405, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .submit:active {
     background: #306392;
     border-bottom: 0;
     border-top: 1px solid #3b5a76;
     border-top: 3px solid #3b5a76; }
-  /* line 410, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 410, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .submit:disabled {
     opacity: 0.5; }
 
-/* line 413, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 413, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .submit2 {
   width: 290px;
   height: 70px;
@@ -514,83 +514,83 @@ h2 {
   border: 2px solid #fff;
   margin: 50px 0 20px 0;
   color: #3b5a76; }
-  /* line 433, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 433, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .submit2:hover {
     background: #3b5a76;
     border: 2px solid #fff;
     color: #fff; }
 
-/* line 438, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 438, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .line {
   height: 15px;
   background: #dedbd9; }
 
-/* line 442, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 442, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .clear {
   clear: both; }
 
-/* line 445, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 445, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .gal {
   margin: 0 20px 10px 0; }
 
-/* line 448, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 448, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .gal2 {
   margin: 0 0 10px 20px; }
 
-/* line 451, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 451, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .logos {
   margin: 70px 0;
   text-align: center !important; }
-  /* line 454, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 454, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .logos img {
     margin-right: 50px; }
 
 /*** BLOG ** */
-/* line 459, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 459, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .head {
   height: 70px;
   background: #2f617e;
   padding: 7px 0;
   color: #fff;
   text-shadow: 0 1px 0 #2f475e; }
-  /* line 465, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 465, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .head h1 {
     margin: 0px;
     padding: 0px;
     font-weight: normal;
     font-size: 30px; }
-  /* line 471, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 471, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .head a:link {
     color: #fff;
     text-decoration: none;
     font-size: 15px; }
-  /* line 475, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 475, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .head a:hover {
     text-decoration: underline; }
-  /* line 477, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 477, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .head a:visited {
     color: #fff;
     text-decoration: none;
     font-size: 15px; }
-  /* line 481, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 481, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .head span {
     margin: 0 10px; }
 
-/* line 484, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 484, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 #content {
   width: 630px;
   float: left;
   text-align: left;
   margin: 50px 0 0 0; }
 
-/* line 490, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 490, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 #sidebar {
   width: 310px;
   float: right;
   text-align: left;
   margin: 50px 0 0 20px; }
 
-/* line 496, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 496, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .strelka {
   width: 89px;
   height: 97px;
@@ -601,22 +601,22 @@ h2 {
   background: url("/assets/login/strelka.png") no-repeat;
   color: #fff; }
 
-/* line 506, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 506, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .meta {
   float: left;
   width: 511px; }
 
-/* line 510, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 510, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .post {
   margin-bottom: 30px; }
 
-/* line 513, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 513, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .postline {
   width: 630px;
   border-bottom: 1px dotted grey;
   margin-bottom: 30px; }
 
-/* line 518, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 518, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .post h2 {
   font-size: 18px;
   margin: 0px;
@@ -625,32 +625,32 @@ h2 {
   font-weight: bold;
   color: #2a2b2c;
   line-height: 22px; }
-  /* line 526, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 526, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .post h2 a {
     text-decoration: none;
     color: #2a2b2c; }
-    /* line 529, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+    /* line 529, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
     .post h2 a:hover {
       text-decoration: none;
       color: #2f617e; }
 
-/* line 533, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 533, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .postcontent {
   font-size: 14px; }
-  /* line 535, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 535, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .postcontent a {
     text-decoration: underline;
     color: #2f617e;
     font-weight: bold; }
-    /* line 539, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+    /* line 539, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
     .postcontent a:hover {
       text-decoration: none; }
 
-/* line 542, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 542, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .tags, .iconsoc {
   margin-top: 7px; }
 
-/* line 545, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 545, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .tags a {
   display: inline-block;
   height: 22px;
@@ -663,7 +663,7 @@ h2 {
   white-space: nowrap;
   position: relative;
   text-transform: uppercase; }
-  /* line 557, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 557, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .tags a:after {
     content: '';
     position: absolute;
@@ -672,53 +672,53 @@ h2 {
     width: 20px;
     height: 22px;
     background: url("/assets/login/tag.png") 100% 0 no-repeat; }
-  /* line 565, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 565, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .tags a:hover {
     background-position: 0 -23px; }
-    /* line 567, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+    /* line 567, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
     .tags a:hover:after {
       background-position: 100% -23px; }
-  /* line 569, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 569, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .tags a:active {
     background-position: 0 -46px;
     color: #515151; }
-    /* line 572, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+    /* line 572, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
     .tags a:active:after {
       background-position: 100% -46px; }
 
-/* line 575, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 575, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .postimage {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
   margin-bottom: 30px; }
 
-/* line 581, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 581, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .iconss {
   background: url("/assets/login/postsocial.png") no-repeat;
   width: 25px;
   height: 20px;
   float: left; }
 
-/* line 587, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 587, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .iconfb {
   background-position: 0 0;
   width: 20px; }
 
-/* line 591, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 591, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .icontw {
   background-position: -22px 0; }
 
-/* line 594, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 594, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .icong {
   background-position: -59px 0;
   margin-left: 8px; }
 
-/* line 598, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 598, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .iconvk {
   background-position: -86px 0; }
 
-/* line 601, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 601, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 #sidebar h3 {
   text-transform: uppercase;
   font-size: 18px;
@@ -727,7 +727,7 @@ h2 {
   border-top: 2px solid #2f617e;
   color: #2a2b2c; }
 
-/* line 609, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 609, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .search {
   width: 230px;
   border: 0;
@@ -741,7 +741,7 @@ h2 {
   -moz-border-radius: 20px;
   border-radius: 20px; }
 
-/* line 622, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 622, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .searchbutton {
   width: 25px;
   height: 25px;
@@ -757,7 +757,7 @@ h2 {
   padding-right: 10px;
   margin-right: 15px; }
 
-/* line 637, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 637, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .searchbox {
   background: #e8e8e8;
   margin: 15px 0 25px 15px;
@@ -770,138 +770,138 @@ h2 {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s; }
-  /* line 649, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 649, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .searchbox:hover {
     box-shadow: 0 3px #d1d1d1; }
 
-/* line 653, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 653, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 #sidebar ul, #sidebar li {
   margin: 0px;
   padding: 0px;
   list-style: none; }
-/* line 657, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 657, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 #sidebar ul {
   margin-left: 10px;
   font-size: 14px; }
-/* line 660, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 660, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 #sidebar li {
   padding: 10px 0;
   border-bottom: 1px dotted #222; }
-  /* line 663, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 663, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   #sidebar li a {
     color: #222;
     text-decoration: none; }
-    /* line 666, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+    /* line 666, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
     #sidebar li a:hover {
       color: #2f617e;
       text-decoration: none; }
 
-/* line 670, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 670, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .pagination {
   height: 30px;
   text-align: center;
   margin: 50px 0 40px 0; }
 
-/* line 675, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 675, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .Pag {
   color: #444;
   border: 1px solid #BEBEBE;
   background: #FAFAFA;
   margin-left: -1px; }
 
-/* line 681, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 681, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .Pag1, .Pag {
   padding: 6px 15px;
   text-decoration: none; }
 
-/* line 685, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 685, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .Pag1, .Pag:hover {
   border: 1px solid #BEBEBE;
   background: #e2e2e2; }
 
 /*** LOGIN, RACOVERY, WHAT ** */
-/* line 691, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 691, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .bgform {
   width: 524px;
   background: url("/assets/login/bgform.png") no-repeat center;
   margin: 30px 0 70px 0; }
 
-/* line 696, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 696, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .bgform1 {
   clear: both;
   width: 354px;
   height: 83px;
   background: url("/assets/login/bgform1.png") no-repeat; }
-  /* line 697, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 697, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .bgform1 span {
     padding-top: 22px;
     display: block;
     color: #b8b8b8;
     font-size: 27px; }
 
-/* line 707, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 707, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .bgform2 {
   width: 354px;
   background: url("/assets/login/bgform2.png") repeat-y;
   padding-top: 30px; }
-  /* line 711, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 711, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .bgform2 form {
     margin-bottom: 0; }
-  /* line 713, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 713, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .bgform2 .check {
     margin-left: 31px; }
-  /* line 716, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 716, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .bgform2.accept-invitation form {
     padding-bottom: 30px; }
 
-/* line 719, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 719, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .bgform3 {
   width: 354px;
   height: 20px;
   background: url("/assets/login/bgform3.png") no-repeat; }
 
-/* line 724, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 724, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .socauth {
   overflow: hidden; }
 
-/* line 727, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 727, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .grey {
   color: grey;
   font-size: 14px;
   padding: 10px 30px; }
-  /* line 731, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 731, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .grey a {
     color: grey;
     text-decoration: underline; }
 
-/* line 735, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 735, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .grey.light {
   color: #bdbdbd; }
 
-/* line 738, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 738, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .verification {
   background: url("/assets/login/blue.png") no-repeat 97%; }
 
-/* line 741, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 741, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .smallbutton {
   height: 50px !important; }
 
-/* line 744, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 744, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .please {
   font-weight: 600;
   color: #707070;
   font-size: 18px; }
 
-/* line 750, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 750, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 header aside {
   float: right; }
-  /* line 752, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 752, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   header aside a {
     margin-top: 21px;
     margin-left: 18px;
     display: inline-block; }
 
-/* line 757, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 757, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .header-button {
   padding: 7px;
   border: 1px solid #cccccb;
@@ -920,15 +920,15 @@ header aside {
   box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.15); }
-  /* line 768, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 768, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .header-button:hover {
     border-color: #97b1c7; }
-  /* line 770, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 770, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .header-button:active {
     background: #355f84;
     color: #fff; }
 
-/* line 774, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 774, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .after-form-note {
   background: url("/assets/login/screamer.png") no-repeat;
   padding-left: 23px;
@@ -942,16 +942,16 @@ header aside {
   opacity: 0.9;
   -moz-opacity: 0.9; }
 
-/* line 786, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+/* line 786, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 ul.errors {
   margin: -11px 0 21px;
   color: red;
   list-style-type: none;
   padding: 0 15px; }
-  /* line 791, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+  /* line 791, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   ul.errors li {
     padding: 0;
     margin: 0; }
-    /* line 794, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/login.sass */
+    /* line 794, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
     ul.errors li.good {
       color: green; }
