@@ -1910,7 +1910,7 @@ output {
   color: #555555; }
 
 /* line 117, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-.form-control {
+.form-control, .tasks-list-filters-block-select {
   display: block;
   width: 100%;
   height: 30px;
@@ -1930,27 +1930,27 @@ output {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
   /* line 53, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-  .form-control:focus {
+  .form-control:focus, .tasks-list-filters-block-select:focus {
     border-color: #4aaee4;
     outline: 0; }
   /* line 104, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/vendor-prefixes */
-  .form-control::-moz-placeholder {
+  .form-control::-moz-placeholder, .tasks-list-filters-block-select::-moz-placeholder {
     color: #999999;
     opacity: 1; }
   /* line 106, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/vendor-prefixes */
-  .form-control:-ms-input-placeholder {
+  .form-control:-ms-input-placeholder, .tasks-list-filters-block-select:-ms-input-placeholder {
     color: #999999; }
   /* line 107, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/vendor-prefixes */
-  .form-control::-webkit-input-placeholder {
+  .form-control::-webkit-input-placeholder, .tasks-list-filters-block-select::-webkit-input-placeholder {
     color: #999999; }
   /* line 146, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-  .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  .form-control[disabled], [disabled].tasks-list-filters-block-select, .form-control[readonly], [readonly].tasks-list-filters-block-select, fieldset[disabled] .form-control, fieldset[disabled] .tasks-list-filters-block-select {
     cursor: not-allowed;
     background-color: #eeeeee;
     opacity: 1; }
 
 /* line 156, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-textarea.form-control {
+textarea.form-control, textarea.tasks-list-filters-block-select {
   height: auto; }
 
 /* line 168, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
@@ -1962,10 +1962,10 @@ input[type="date"], input[type="time"], input[type="datetime-local"], input[type
   line-height: 30px;
   line-height: 1.42857 \0; }
   /* line 189, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, .input-group-sm > input[type="date"].input-group-addon, .input-group-sm > .input-group-btn > input[type="date"].btn, .input-group-sm > .input-group-btn > input[type="date"].community-invites-btn-base, .input-group-sm > .input-group-btn > input[type="date"].community-invites-btn-check, .input-group-sm > .input-group-btn > input[type="date"].community-invites-btn-send, .input-group-sm > .input-group-btn > input[type="date"].project-form-team-member-btn, .input-group-sm > .input-group-btn > input[type="date"].project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > input[type="date"].project-discussions-form-btn, input[type="time"].input-sm, .input-group-sm > input[type="time"].form-control, .input-group-sm > input[type="time"].input-group-addon, .input-group-sm > .input-group-btn > input[type="time"].btn, .input-group-sm > .input-group-btn > input[type="time"].community-invites-btn-base, .input-group-sm > .input-group-btn > input[type="time"].community-invites-btn-check, .input-group-sm > .input-group-btn > input[type="time"].community-invites-btn-send, .input-group-sm > .input-group-btn > input[type="time"].project-form-team-member-btn, .input-group-sm > .input-group-btn > input[type="time"].project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > input[type="time"].project-discussions-form-btn, input[type="datetime-local"].input-sm, .input-group-sm > input[type="datetime-local"].form-control, .input-group-sm > input[type="datetime-local"].input-group-addon, .input-group-sm > .input-group-btn > input[type="datetime-local"].btn, .input-group-sm > .input-group-btn > input[type="datetime-local"].community-invites-btn-base, .input-group-sm > .input-group-btn > input[type="datetime-local"].community-invites-btn-check, .input-group-sm > .input-group-btn > input[type="datetime-local"].community-invites-btn-send, .input-group-sm > .input-group-btn > input[type="datetime-local"].project-form-team-member-btn, .input-group-sm > .input-group-btn > input[type="datetime-local"].project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > input[type="datetime-local"].project-discussions-form-btn, input[type="month"].input-sm, .input-group-sm > input[type="month"].form-control, .input-group-sm > input[type="month"].input-group-addon, .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm > .input-group-btn > input[type="month"].community-invites-btn-base, .input-group-sm > .input-group-btn > input[type="month"].community-invites-btn-check, .input-group-sm > .input-group-btn > input[type="month"].community-invites-btn-send, .input-group-sm > .input-group-btn > input[type="month"].project-form-team-member-btn, .input-group-sm > .input-group-btn > input[type="month"].project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > input[type="month"].project-discussions-form-btn {
+  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, .input-group-sm > input[type="date"].tasks-list-filters-block-select, .input-group-sm > input[type="date"].input-group-addon, .input-group-sm > .input-group-btn > input[type="date"].btn, .input-group-sm > .input-group-btn > input[type="date"].community-invites-btn-base, .input-group-sm > .input-group-btn > input[type="date"].community-invites-btn-check, .input-group-sm > .input-group-btn > input[type="date"].community-invites-btn-send, .input-group-sm > .input-group-btn > input[type="date"].project-form-team-member-btn, .input-group-sm > .input-group-btn > input[type="date"].project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > input[type="date"].project-discussions-form-btn, input[type="time"].input-sm, .input-group-sm > input[type="time"].form-control, .input-group-sm > input[type="time"].tasks-list-filters-block-select, .input-group-sm > input[type="time"].input-group-addon, .input-group-sm > .input-group-btn > input[type="time"].btn, .input-group-sm > .input-group-btn > input[type="time"].community-invites-btn-base, .input-group-sm > .input-group-btn > input[type="time"].community-invites-btn-check, .input-group-sm > .input-group-btn > input[type="time"].community-invites-btn-send, .input-group-sm > .input-group-btn > input[type="time"].project-form-team-member-btn, .input-group-sm > .input-group-btn > input[type="time"].project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > input[type="time"].project-discussions-form-btn, input[type="datetime-local"].input-sm, .input-group-sm > input[type="datetime-local"].form-control, .input-group-sm > input[type="datetime-local"].tasks-list-filters-block-select, .input-group-sm > input[type="datetime-local"].input-group-addon, .input-group-sm > .input-group-btn > input[type="datetime-local"].btn, .input-group-sm > .input-group-btn > input[type="datetime-local"].community-invites-btn-base, .input-group-sm > .input-group-btn > input[type="datetime-local"].community-invites-btn-check, .input-group-sm > .input-group-btn > input[type="datetime-local"].community-invites-btn-send, .input-group-sm > .input-group-btn > input[type="datetime-local"].project-form-team-member-btn, .input-group-sm > .input-group-btn > input[type="datetime-local"].project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > input[type="datetime-local"].project-discussions-form-btn, input[type="month"].input-sm, .input-group-sm > input[type="month"].form-control, .input-group-sm > input[type="month"].tasks-list-filters-block-select, .input-group-sm > input[type="month"].input-group-addon, .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm > .input-group-btn > input[type="month"].community-invites-btn-base, .input-group-sm > .input-group-btn > input[type="month"].community-invites-btn-check, .input-group-sm > .input-group-btn > input[type="month"].community-invites-btn-send, .input-group-sm > .input-group-btn > input[type="month"].project-form-team-member-btn, .input-group-sm > .input-group-btn > input[type="month"].project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > input[type="month"].project-discussions-form-btn {
     line-height: 30px; }
   /* line 192, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, .input-group-lg > input[type="date"].input-group-addon, .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg > .input-group-btn > input[type="date"].community-invites-btn-base, .input-group-lg > .input-group-btn > input[type="date"].community-invites-btn-check, .input-group-lg > .input-group-btn > input[type="date"].community-invites-btn-send, .input-group-lg > .input-group-btn > input[type="date"].project-form-team-member-btn, .input-group-lg > .input-group-btn > input[type="date"].project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > input[type="date"].project-discussions-form-btn, input[type="time"].input-lg, .input-group-lg > input[type="time"].form-control, .input-group-lg > input[type="time"].input-group-addon, .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg > .input-group-btn > input[type="time"].community-invites-btn-base, .input-group-lg > .input-group-btn > input[type="time"].community-invites-btn-check, .input-group-lg > .input-group-btn > input[type="time"].community-invites-btn-send, .input-group-lg > .input-group-btn > input[type="time"].project-form-team-member-btn, .input-group-lg > .input-group-btn > input[type="time"].project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > input[type="time"].project-discussions-form-btn, input[type="datetime-local"].input-lg, .input-group-lg > input[type="datetime-local"].form-control, .input-group-lg > input[type="datetime-local"].input-group-addon, .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg > .input-group-btn > input[type="datetime-local"].community-invites-btn-base, .input-group-lg > .input-group-btn > input[type="datetime-local"].community-invites-btn-check, .input-group-lg > .input-group-btn > input[type="datetime-local"].community-invites-btn-send, .input-group-lg > .input-group-btn > input[type="datetime-local"].project-form-team-member-btn, .input-group-lg > .input-group-btn > input[type="datetime-local"].project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > input[type="datetime-local"].project-discussions-form-btn, input[type="month"].input-lg, .input-group-lg > input[type="month"].form-control, .input-group-lg > input[type="month"].input-group-addon, .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg > .input-group-btn > input[type="month"].community-invites-btn-base, .input-group-lg > .input-group-btn > input[type="month"].community-invites-btn-check, .input-group-lg > .input-group-btn > input[type="month"].community-invites-btn-send, .input-group-lg > .input-group-btn > input[type="month"].project-form-team-member-btn, .input-group-lg > .input-group-btn > input[type="month"].project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > input[type="month"].project-discussions-form-btn {
+  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, .input-group-lg > input[type="date"].tasks-list-filters-block-select, .input-group-lg > input[type="date"].input-group-addon, .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg > .input-group-btn > input[type="date"].community-invites-btn-base, .input-group-lg > .input-group-btn > input[type="date"].community-invites-btn-check, .input-group-lg > .input-group-btn > input[type="date"].community-invites-btn-send, .input-group-lg > .input-group-btn > input[type="date"].project-form-team-member-btn, .input-group-lg > .input-group-btn > input[type="date"].project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > input[type="date"].project-discussions-form-btn, input[type="time"].input-lg, .input-group-lg > input[type="time"].form-control, .input-group-lg > input[type="time"].tasks-list-filters-block-select, .input-group-lg > input[type="time"].input-group-addon, .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg > .input-group-btn > input[type="time"].community-invites-btn-base, .input-group-lg > .input-group-btn > input[type="time"].community-invites-btn-check, .input-group-lg > .input-group-btn > input[type="time"].community-invites-btn-send, .input-group-lg > .input-group-btn > input[type="time"].project-form-team-member-btn, .input-group-lg > .input-group-btn > input[type="time"].project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > input[type="time"].project-discussions-form-btn, input[type="datetime-local"].input-lg, .input-group-lg > input[type="datetime-local"].form-control, .input-group-lg > input[type="datetime-local"].tasks-list-filters-block-select, .input-group-lg > input[type="datetime-local"].input-group-addon, .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg > .input-group-btn > input[type="datetime-local"].community-invites-btn-base, .input-group-lg > .input-group-btn > input[type="datetime-local"].community-invites-btn-check, .input-group-lg > .input-group-btn > input[type="datetime-local"].community-invites-btn-send, .input-group-lg > .input-group-btn > input[type="datetime-local"].project-form-team-member-btn, .input-group-lg > .input-group-btn > input[type="datetime-local"].project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > input[type="datetime-local"].project-discussions-form-btn, input[type="month"].input-lg, .input-group-lg > input[type="month"].form-control, .input-group-lg > input[type="month"].tasks-list-filters-block-select, .input-group-lg > input[type="month"].input-group-addon, .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg > .input-group-btn > input[type="month"].community-invites-btn-base, .input-group-lg > .input-group-btn > input[type="month"].community-invites-btn-check, .input-group-lg > .input-group-btn > input[type="month"].community-invites-btn-send, .input-group-lg > .input-group-btn > input[type="month"].project-form-team-member-btn, .input-group-lg > .input-group-btn > input[type="month"].project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > input[type="month"].project-discussions-form-btn {
     line-height: 45px; }
 
 /* line 203, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
@@ -2013,7 +2013,7 @@ input[type="radio"][disabled], fieldset[disabled] input[type="radio"], input[typ
   cursor: not-allowed; }
 
 /* line 67, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-.input-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn, .input-group-sm > .input-group-btn > .community-invites-btn-base, .input-group-sm > .input-group-btn > .community-invites-btn-check, .input-group-sm > .input-group-btn > .community-invites-btn-send, .input-group-sm > .input-group-btn > .project-form-team-member-btn, .input-group-sm > .input-group-btn > .project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > .project-discussions-form-btn {
+.input-sm, .input-group-sm > .form-control, .input-group-sm > .tasks-list-filters-block-select, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn, .input-group-sm > .input-group-btn > .community-invites-btn-base, .input-group-sm > .input-group-btn > .community-invites-btn-check, .input-group-sm > .input-group-btn > .community-invites-btn-send, .input-group-sm > .input-group-btn > .project-form-team-member-btn, .input-group-sm > .input-group-btn > .project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > .project-discussions-form-btn {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -2021,16 +2021,16 @@ input[type="radio"][disabled], fieldset[disabled] input[type="radio"], input[typ
   border-radius: 3px; }
 
 /* line 75, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-select.input-sm, .input-group-sm > select.form-control, .input-group-sm > select.input-group-addon, .input-group-sm > .input-group-btn > select.btn, .input-group-sm > .input-group-btn > select.community-invites-btn-base, .input-group-sm > .input-group-btn > select.community-invites-btn-check, .input-group-sm > .input-group-btn > select.community-invites-btn-send, .input-group-sm > .input-group-btn > select.project-form-team-member-btn, .input-group-sm > .input-group-btn > select.project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > select.project-discussions-form-btn {
+select.input-sm, .input-group-sm > select.form-control, .input-group-sm > select.tasks-list-filters-block-select, .input-group-sm > select.input-group-addon, .input-group-sm > .input-group-btn > select.btn, .input-group-sm > .input-group-btn > select.community-invites-btn-base, .input-group-sm > .input-group-btn > select.community-invites-btn-check, .input-group-sm > .input-group-btn > select.community-invites-btn-send, .input-group-sm > .input-group-btn > select.project-form-team-member-btn, .input-group-sm > .input-group-btn > select.project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > select.project-discussions-form-btn {
   height: 30px;
   line-height: 30px; }
 
 /* line 80, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-textarea.input-sm, .input-group-sm > textarea.form-control, .input-group-sm > textarea.input-group-addon, .input-group-sm > .input-group-btn > textarea.btn, .input-group-sm > .input-group-btn > textarea.community-invites-btn-base, .input-group-sm > .input-group-btn > textarea.community-invites-btn-check, .input-group-sm > .input-group-btn > textarea.community-invites-btn-send, .input-group-sm > .input-group-btn > textarea.project-form-team-member-btn, .input-group-sm > .input-group-btn > textarea.project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > textarea.project-discussions-form-btn, select[multiple].input-sm, .input-group-sm > select[multiple].form-control, .input-group-sm > select[multiple].input-group-addon, .input-group-sm > .input-group-btn > select[multiple].btn, .input-group-sm > .input-group-btn > select[multiple].community-invites-btn-base, .input-group-sm > .input-group-btn > select[multiple].community-invites-btn-check, .input-group-sm > .input-group-btn > select[multiple].community-invites-btn-send, .input-group-sm > .input-group-btn > select[multiple].project-form-team-member-btn, .input-group-sm > .input-group-btn > select[multiple].project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > select[multiple].project-discussions-form-btn {
+textarea.input-sm, .input-group-sm > textarea.form-control, .input-group-sm > textarea.tasks-list-filters-block-select, .input-group-sm > textarea.input-group-addon, .input-group-sm > .input-group-btn > textarea.btn, .input-group-sm > .input-group-btn > textarea.community-invites-btn-base, .input-group-sm > .input-group-btn > textarea.community-invites-btn-check, .input-group-sm > .input-group-btn > textarea.community-invites-btn-send, .input-group-sm > .input-group-btn > textarea.project-form-team-member-btn, .input-group-sm > .input-group-btn > textarea.project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > textarea.project-discussions-form-btn, select[multiple].input-sm, .input-group-sm > select[multiple].form-control, .input-group-sm > select[multiple].tasks-list-filters-block-select, .input-group-sm > select[multiple].input-group-addon, .input-group-sm > .input-group-btn > select[multiple].btn, .input-group-sm > .input-group-btn > select[multiple].community-invites-btn-base, .input-group-sm > .input-group-btn > select[multiple].community-invites-btn-check, .input-group-sm > .input-group-btn > select[multiple].community-invites-btn-send, .input-group-sm > .input-group-btn > select[multiple].project-form-team-member-btn, .input-group-sm > .input-group-btn > select[multiple].project-form-team-member-selected-btn, .input-group-sm > .input-group-btn > select[multiple].project-discussions-form-btn {
   height: auto; }
 
 /* line 67, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-.input-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn, .input-group-lg > .input-group-btn > .community-invites-btn-base, .input-group-lg > .input-group-btn > .community-invites-btn-check, .input-group-lg > .input-group-btn > .community-invites-btn-send, .input-group-lg > .input-group-btn > .project-form-team-member-btn, .input-group-lg > .input-group-btn > .project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > .project-discussions-form-btn {
+.input-lg, .input-group-lg > .form-control, .input-group-lg > .tasks-list-filters-block-select, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn, .input-group-lg > .input-group-btn > .community-invites-btn-base, .input-group-lg > .input-group-btn > .community-invites-btn-check, .input-group-lg > .input-group-btn > .community-invites-btn-send, .input-group-lg > .input-group-btn > .project-form-team-member-btn, .input-group-lg > .input-group-btn > .project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > .project-discussions-form-btn {
   height: 45px;
   padding: 10px 16px;
   font-size: 17px;
@@ -2038,19 +2038,19 @@ textarea.input-sm, .input-group-sm > textarea.form-control, .input-group-sm > te
   border-radius: 6px; }
 
 /* line 75, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-select.input-lg, .input-group-lg > select.form-control, .input-group-lg > select.input-group-addon, .input-group-lg > .input-group-btn > select.btn, .input-group-lg > .input-group-btn > select.community-invites-btn-base, .input-group-lg > .input-group-btn > select.community-invites-btn-check, .input-group-lg > .input-group-btn > select.community-invites-btn-send, .input-group-lg > .input-group-btn > select.project-form-team-member-btn, .input-group-lg > .input-group-btn > select.project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > select.project-discussions-form-btn {
+select.input-lg, .input-group-lg > select.form-control, .input-group-lg > select.tasks-list-filters-block-select, .input-group-lg > select.input-group-addon, .input-group-lg > .input-group-btn > select.btn, .input-group-lg > .input-group-btn > select.community-invites-btn-base, .input-group-lg > .input-group-btn > select.community-invites-btn-check, .input-group-lg > .input-group-btn > select.community-invites-btn-send, .input-group-lg > .input-group-btn > select.project-form-team-member-btn, .input-group-lg > .input-group-btn > select.project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > select.project-discussions-form-btn {
   height: 45px;
   line-height: 45px; }
 
 /* line 80, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > textarea.input-group-addon, .input-group-lg > .input-group-btn > textarea.btn, .input-group-lg > .input-group-btn > textarea.community-invites-btn-base, .input-group-lg > .input-group-btn > textarea.community-invites-btn-check, .input-group-lg > .input-group-btn > textarea.community-invites-btn-send, .input-group-lg > .input-group-btn > textarea.project-form-team-member-btn, .input-group-lg > .input-group-btn > textarea.project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > textarea.project-discussions-form-btn, select[multiple].input-lg, .input-group-lg > select[multiple].form-control, .input-group-lg > select[multiple].input-group-addon, .input-group-lg > .input-group-btn > select[multiple].btn, .input-group-lg > .input-group-btn > select[multiple].community-invites-btn-base, .input-group-lg > .input-group-btn > select[multiple].community-invites-btn-check, .input-group-lg > .input-group-btn > select[multiple].community-invites-btn-send, .input-group-lg > .input-group-btn > select[multiple].project-form-team-member-btn, .input-group-lg > .input-group-btn > select[multiple].project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > select[multiple].project-discussions-form-btn {
+textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > textarea.tasks-list-filters-block-select, .input-group-lg > textarea.input-group-addon, .input-group-lg > .input-group-btn > textarea.btn, .input-group-lg > .input-group-btn > textarea.community-invites-btn-base, .input-group-lg > .input-group-btn > textarea.community-invites-btn-check, .input-group-lg > .input-group-btn > textarea.community-invites-btn-send, .input-group-lg > .input-group-btn > textarea.project-form-team-member-btn, .input-group-lg > .input-group-btn > textarea.project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > textarea.project-discussions-form-btn, select[multiple].input-lg, .input-group-lg > select[multiple].form-control, .input-group-lg > select[multiple].tasks-list-filters-block-select, .input-group-lg > select[multiple].input-group-addon, .input-group-lg > .input-group-btn > select[multiple].btn, .input-group-lg > .input-group-btn > select[multiple].community-invites-btn-base, .input-group-lg > .input-group-btn > select[multiple].community-invites-btn-check, .input-group-lg > .input-group-btn > select[multiple].community-invites-btn-send, .input-group-lg > .input-group-btn > select[multiple].project-form-team-member-btn, .input-group-lg > .input-group-btn > select[multiple].project-form-team-member-selected-btn, .input-group-lg > .input-group-btn > select[multiple].project-discussions-form-btn {
   height: auto; }
 
 /* line 284, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
 .has-feedback {
   position: relative; }
   /* line 289, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-  .has-feedback .form-control {
+  .has-feedback .form-control, .has-feedback .tasks-list-filters-block-select {
     padding-right: 37.5px; }
 
 /* line 294, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
@@ -2066,13 +2066,13 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
   text-align: center; }
 
 /* line 305, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .input-group-lg > .input-group-addon + .form-control-feedback, .input-group-lg > .input-group-btn > .btn + .form-control-feedback, .input-group-lg > .input-group-btn > .community-invites-btn-base + .form-control-feedback, .input-group-lg > .input-group-btn > .community-invites-btn-check + .form-control-feedback, .input-group-lg > .input-group-btn > .community-invites-btn-send + .form-control-feedback, .input-group-lg > .input-group-btn > .project-form-team-member-btn + .form-control-feedback, .input-group-lg > .input-group-btn > .project-form-team-member-selected-btn + .form-control-feedback, .input-group-lg > .input-group-btn > .project-discussions-form-btn + .form-control-feedback {
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .input-group-lg > .tasks-list-filters-block-select + .form-control-feedback, .input-group-lg > .input-group-addon + .form-control-feedback, .input-group-lg > .input-group-btn > .btn + .form-control-feedback, .input-group-lg > .input-group-btn > .community-invites-btn-base + .form-control-feedback, .input-group-lg > .input-group-btn > .community-invites-btn-check + .form-control-feedback, .input-group-lg > .input-group-btn > .community-invites-btn-send + .form-control-feedback, .input-group-lg > .input-group-btn > .project-form-team-member-btn + .form-control-feedback, .input-group-lg > .input-group-btn > .project-form-team-member-selected-btn + .form-control-feedback, .input-group-lg > .input-group-btn > .project-discussions-form-btn + .form-control-feedback {
   width: 45px;
   height: 45px;
   line-height: 45px; }
 
 /* line 310, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .input-group-sm > .input-group-addon + .form-control-feedback, .input-group-sm > .input-group-btn > .btn + .form-control-feedback, .input-group-sm > .input-group-btn > .community-invites-btn-base + .form-control-feedback, .input-group-sm > .input-group-btn > .community-invites-btn-check + .form-control-feedback, .input-group-sm > .input-group-btn > .community-invites-btn-send + .form-control-feedback, .input-group-sm > .input-group-btn > .project-form-team-member-btn + .form-control-feedback, .input-group-sm > .input-group-btn > .project-form-team-member-selected-btn + .form-control-feedback, .input-group-sm > .input-group-btn > .project-discussions-form-btn + .form-control-feedback {
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .input-group-sm > .tasks-list-filters-block-select + .form-control-feedback, .input-group-sm > .input-group-addon + .form-control-feedback, .input-group-sm > .input-group-btn > .btn + .form-control-feedback, .input-group-sm > .input-group-btn > .community-invites-btn-base + .form-control-feedback, .input-group-sm > .input-group-btn > .community-invites-btn-check + .form-control-feedback, .input-group-sm > .input-group-btn > .community-invites-btn-send + .form-control-feedback, .input-group-sm > .input-group-btn > .project-form-team-member-btn + .form-control-feedback, .input-group-sm > .input-group-btn > .project-form-team-member-selected-btn + .form-control-feedback, .input-group-sm > .input-group-btn > .project-discussions-form-btn + .form-control-feedback {
   width: 30px;
   height: 30px;
   line-height: 30px; }
@@ -2081,13 +2081,13 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 .has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline {
   color: #fff; }
 /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-.has-success .form-control {
+.has-success .form-control, .has-success .tasks-list-filters-block-select {
   border-color: #fff;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   /* line 20, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-  .has-success .form-control:focus {
+  .has-success .form-control:focus, .has-success .tasks-list-filters-block-select:focus {
     border-color: #e6e6e6;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
@@ -2105,13 +2105,13 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 .has-warning .help-block, .has-warning .control-label, .has-warning .radio, .has-warning .checkbox, .has-warning .radio-inline, .has-warning .checkbox-inline {
   color: #f8931f; }
 /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-.has-warning .form-control {
+.has-warning .form-control, .has-warning .tasks-list-filters-block-select {
   border-color: #f8931f;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   /* line 20, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-  .has-warning .form-control:focus {
+  .has-warning .form-control:focus, .has-warning .tasks-list-filters-block-select:focus {
     border-color: #dd7907;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #fbc382;
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #fbc382;
@@ -2129,13 +2129,13 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
   color: #ff1d25; }
 /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-.has-error .form-control {
+.has-error .form-control, .has-error .tasks-list-filters-block-select {
   border-color: #ff1d25;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   /* line 20, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/forms */
-  .has-error .form-control:focus {
+  .has-error .form-control:focus, .has-error .tasks-list-filters-block-select:focus {
     border-color: #e90008;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ff8387;
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ff8387;
@@ -2175,51 +2175,51 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 
 @media (min-width: 768px) {
   /* line 383, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-  .form-inline .form-group, .navbar-form .form-group {
+  .form-inline .form-group, .navbar-form .form-group, .tasks-list-filters-block-content .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle; }
 
   /* line 390, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-  .form-inline .form-control, .navbar-form .form-control {
+  .form-inline .form-control, .navbar-form .form-control, .tasks-list-filters-block-content .form-control, .form-inline .tasks-list-filters-block-select, .navbar-form .tasks-list-filters-block-select, .tasks-list-filters-block-content .tasks-list-filters-block-select {
     display: inline-block;
     width: auto;
     vertical-align: middle; }
 
   /* line 396, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-  .form-inline .input-group, .navbar-form .input-group {
+  .form-inline .input-group, .navbar-form .input-group, .tasks-list-filters-block-content .input-group {
     display: inline-table;
     vertical-align: middle; }
     /* line 402, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-    .form-inline .input-group .input-group-addon, .navbar-form .input-group .input-group-addon, .form-inline .input-group .input-group-btn, .navbar-form .input-group .input-group-btn, .form-inline .input-group .form-control, .navbar-form .input-group .form-control {
+    .form-inline .input-group .input-group-addon, .navbar-form .input-group .input-group-addon, .tasks-list-filters-block-content .input-group .input-group-addon, .form-inline .input-group .input-group-btn, .navbar-form .input-group .input-group-btn, .tasks-list-filters-block-content .input-group .input-group-btn, .form-inline .input-group .form-control, .navbar-form .input-group .form-control, .tasks-list-filters-block-content .input-group .form-control, .form-inline .input-group .tasks-list-filters-block-select, .navbar-form .input-group .tasks-list-filters-block-select, .tasks-list-filters-block-content .input-group .tasks-list-filters-block-select {
       width: auto; }
 
   /* line 408, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control {
+  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control, .tasks-list-filters-block-content .input-group > .form-control, .form-inline .input-group > .tasks-list-filters-block-select, .navbar-form .input-group > .tasks-list-filters-block-select, .tasks-list-filters-block-content .input-group > .tasks-list-filters-block-select {
     width: 100%; }
 
   /* line 412, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-  .form-inline .control-label, .navbar-form .control-label {
+  .form-inline .control-label, .navbar-form .control-label, .tasks-list-filters-block-content .control-label {
     margin-bottom: 0;
     vertical-align: middle; }
 
   /* line 421, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-  .form-inline .radio, .navbar-form .radio, .form-inline .checkbox, .navbar-form .checkbox {
+  .form-inline .radio, .navbar-form .radio, .tasks-list-filters-block-content .radio, .form-inline .checkbox, .navbar-form .checkbox, .tasks-list-filters-block-content .checkbox {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     vertical-align: middle; }
     /* line 427, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-    .form-inline .radio label, .navbar-form .radio label, .form-inline .checkbox label, .navbar-form .checkbox label {
+    .form-inline .radio label, .navbar-form .radio label, .tasks-list-filters-block-content .radio label, .form-inline .checkbox label, .navbar-form .checkbox label, .tasks-list-filters-block-content .checkbox label {
       padding-left: 0; }
 
   /* line 432, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-  .form-inline .radio input[type="radio"], .navbar-form .radio input[type="radio"], .form-inline .checkbox input[type="checkbox"], .navbar-form .checkbox input[type="checkbox"] {
+  .form-inline .radio input[type="radio"], .navbar-form .radio input[type="radio"], .tasks-list-filters-block-content .radio input[type="radio"], .form-inline .checkbox input[type="checkbox"], .navbar-form .checkbox input[type="checkbox"], .tasks-list-filters-block-content .checkbox input[type="checkbox"] {
     float: none;
     margin-left: 0; }
 
   /* line 441, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/forms */
-  .form-inline .has-feedback .form-control-feedback, .navbar-form .has-feedback .form-control-feedback {
+  .form-inline .has-feedback .form-control-feedback, .navbar-form .has-feedback .form-control-feedback, .tasks-list-filters-block-content .has-feedback .form-control-feedback {
     top: 0; }
  }
 
@@ -2449,27 +2449,27 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     background-color: #fff; }
 
 /* line 93, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
-.btn-link, .btn-link-white, .btn-link-gray-lighter, .btn-link-gray-light, .btn-link-gray, .btn-link-success, .btn-link-danger, .btn-link-warning, .btn-link-primary {
+.btn-link, .btn-link-plain, .btn-link-white, .btn-link-gray-lighter, .btn-link-gray-light, .btn-link-gray, .btn-link-success, .btn-link-danger, .btn-link-warning, .btn-link-primary {
   color: black;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0; }
   /* line 102, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
-  .btn-link, .btn-link-white, .btn-link-gray-lighter, .btn-link-gray-light, .btn-link-gray, .btn-link-success, .btn-link-danger, .btn-link-warning, .btn-link-primary, .btn-link:active, .btn-link-white:active, .btn-link-gray-lighter:active, .btn-link-gray-light:active, .btn-link-gray:active, .btn-link-success:active, .btn-link-danger:active, .btn-link-warning:active, .btn-link-primary:active, .btn-link[disabled], [disabled].btn-link-white, [disabled].btn-link-gray-lighter, [disabled].btn-link-gray-light, [disabled].btn-link-gray, [disabled].btn-link-success, [disabled].btn-link-danger, [disabled].btn-link-warning, [disabled].btn-link-primary, fieldset[disabled] .btn-link, fieldset[disabled] .btn-link-white, fieldset[disabled] .btn-link-gray-lighter, fieldset[disabled] .btn-link-gray-light, fieldset[disabled] .btn-link-gray, fieldset[disabled] .btn-link-success, fieldset[disabled] .btn-link-danger, fieldset[disabled] .btn-link-warning, fieldset[disabled] .btn-link-primary {
+  .btn-link, .btn-link-plain, .btn-link-white, .btn-link-gray-lighter, .btn-link-gray-light, .btn-link-gray, .btn-link-success, .btn-link-danger, .btn-link-warning, .btn-link-primary, .btn-link:active, .btn-link-plain:active, .btn-link-white:active, .btn-link-gray-lighter:active, .btn-link-gray-light:active, .btn-link-gray:active, .btn-link-success:active, .btn-link-danger:active, .btn-link-warning:active, .btn-link-primary:active, .btn-link[disabled], [disabled].btn-link-plain, [disabled].btn-link-white, [disabled].btn-link-gray-lighter, [disabled].btn-link-gray-light, [disabled].btn-link-gray, [disabled].btn-link-success, [disabled].btn-link-danger, [disabled].btn-link-warning, [disabled].btn-link-primary, fieldset[disabled] .btn-link, fieldset[disabled] .btn-link-plain, fieldset[disabled] .btn-link-white, fieldset[disabled] .btn-link-gray-lighter, fieldset[disabled] .btn-link-gray-light, fieldset[disabled] .btn-link-gray, fieldset[disabled] .btn-link-success, fieldset[disabled] .btn-link-danger, fieldset[disabled] .btn-link-warning, fieldset[disabled] .btn-link-primary {
     background-color: transparent;
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none; }
   /* line 109, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
-  .btn-link, .btn-link-white, .btn-link-gray-lighter, .btn-link-gray-light, .btn-link-gray, .btn-link-success, .btn-link-danger, .btn-link-warning, .btn-link-primary, .btn-link:hover, .btn-link-white:hover, .btn-link-gray-lighter:hover, .btn-link-gray-light:hover, .btn-link-gray:hover, .btn-link-success:hover, .btn-link-danger:hover, .btn-link-warning:hover, .btn-link-primary:hover, .btn-link:focus, .btn-link-white:focus, .btn-link-gray-lighter:focus, .btn-link-gray-light:focus, .btn-link-gray:focus, .btn-link-success:focus, .btn-link-danger:focus, .btn-link-warning:focus, .btn-link-primary:focus, .btn-link:active, .btn-link-white:active, .btn-link-gray-lighter:active, .btn-link-gray-light:active, .btn-link-gray:active, .btn-link-success:active, .btn-link-danger:active, .btn-link-warning:active, .btn-link-primary:active {
+  .btn-link, .btn-link-plain, .btn-link-white, .btn-link-gray-lighter, .btn-link-gray-light, .btn-link-gray, .btn-link-success, .btn-link-danger, .btn-link-warning, .btn-link-primary, .btn-link:hover, .btn-link-plain:hover, .btn-link-white:hover, .btn-link-gray-lighter:hover, .btn-link-gray-light:hover, .btn-link-gray:hover, .btn-link-success:hover, .btn-link-danger:hover, .btn-link-warning:hover, .btn-link-primary:hover, .btn-link:focus, .btn-link-plain:focus, .btn-link-white:focus, .btn-link-gray-lighter:focus, .btn-link-gray-light:focus, .btn-link-gray:focus, .btn-link-success:focus, .btn-link-danger:focus, .btn-link-warning:focus, .btn-link-primary:focus, .btn-link:active, .btn-link-plain:active, .btn-link-white:active, .btn-link-gray-lighter:active, .btn-link-gray-light:active, .btn-link-gray:active, .btn-link-success:active, .btn-link-danger:active, .btn-link-warning:active, .btn-link-primary:active {
     border-color: transparent; }
   /* line 113, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
-  .btn-link:hover, .btn-link-white:hover, .btn-link-gray-lighter:hover, .btn-link-gray-light:hover, .btn-link-gray:hover, .btn-link-success:hover, .btn-link-danger:hover, .btn-link-warning:hover, .btn-link-primary:hover, .btn-link:focus, .btn-link-white:focus, .btn-link-gray-lighter:focus, .btn-link-gray-light:focus, .btn-link-gray:focus, .btn-link-success:focus, .btn-link-danger:focus, .btn-link-warning:focus, .btn-link-primary:focus {
+  .btn-link:hover, .btn-link-plain:hover, .btn-link-white:hover, .btn-link-gray-lighter:hover, .btn-link-gray-light:hover, .btn-link-gray:hover, .btn-link-success:hover, .btn-link-danger:hover, .btn-link-warning:hover, .btn-link-primary:hover, .btn-link:focus, .btn-link-plain:focus, .btn-link-white:focus, .btn-link-gray-lighter:focus, .btn-link-gray-light:focus, .btn-link-gray:focus, .btn-link-success:focus, .btn-link-danger:focus, .btn-link-warning:focus, .btn-link-primary:focus {
     color: #225c73;
     text-decoration: underline;
     background-color: transparent; }
   /* line 121, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
-  .btn-link[disabled]:hover, [disabled].btn-link-white:hover, [disabled].btn-link-gray-lighter:hover, [disabled].btn-link-gray-light:hover, [disabled].btn-link-gray:hover, [disabled].btn-link-success:hover, [disabled].btn-link-danger:hover, [disabled].btn-link-warning:hover, [disabled].btn-link-primary:hover, .btn-link[disabled]:focus, [disabled].btn-link-white:focus, [disabled].btn-link-gray-lighter:focus, [disabled].btn-link-gray-light:focus, [disabled].btn-link-gray:focus, [disabled].btn-link-success:focus, [disabled].btn-link-danger:focus, [disabled].btn-link-warning:focus, [disabled].btn-link-primary:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link-white:hover, fieldset[disabled] .btn-link-gray-lighter:hover, fieldset[disabled] .btn-link-gray-light:hover, fieldset[disabled] .btn-link-gray:hover, fieldset[disabled] .btn-link-success:hover, fieldset[disabled] .btn-link-danger:hover, fieldset[disabled] .btn-link-warning:hover, fieldset[disabled] .btn-link-primary:hover, fieldset[disabled] .btn-link:focus, fieldset[disabled] .btn-link-white:focus, fieldset[disabled] .btn-link-gray-lighter:focus, fieldset[disabled] .btn-link-gray-light:focus, fieldset[disabled] .btn-link-gray:focus, fieldset[disabled] .btn-link-success:focus, fieldset[disabled] .btn-link-danger:focus, fieldset[disabled] .btn-link-warning:focus, fieldset[disabled] .btn-link-primary:focus {
+  .btn-link[disabled]:hover, [disabled].btn-link-plain:hover, [disabled].btn-link-white:hover, [disabled].btn-link-gray-lighter:hover, [disabled].btn-link-gray-light:hover, [disabled].btn-link-gray:hover, [disabled].btn-link-success:hover, [disabled].btn-link-danger:hover, [disabled].btn-link-warning:hover, [disabled].btn-link-primary:hover, .btn-link[disabled]:focus, [disabled].btn-link-plain:focus, [disabled].btn-link-white:focus, [disabled].btn-link-gray-lighter:focus, [disabled].btn-link-gray-light:focus, [disabled].btn-link-gray:focus, [disabled].btn-link-success:focus, [disabled].btn-link-danger:focus, [disabled].btn-link-warning:focus, [disabled].btn-link-primary:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link-plain:hover, fieldset[disabled] .btn-link-white:hover, fieldset[disabled] .btn-link-gray-lighter:hover, fieldset[disabled] .btn-link-gray-light:hover, fieldset[disabled] .btn-link-gray:hover, fieldset[disabled] .btn-link-success:hover, fieldset[disabled] .btn-link-danger:hover, fieldset[disabled] .btn-link-warning:hover, fieldset[disabled] .btn-link-primary:hover, fieldset[disabled] .btn-link:focus, fieldset[disabled] .btn-link-plain:focus, fieldset[disabled] .btn-link-white:focus, fieldset[disabled] .btn-link-gray-lighter:focus, fieldset[disabled] .btn-link-gray-light:focus, fieldset[disabled] .btn-link-gray:focus, fieldset[disabled] .btn-link-success:focus, fieldset[disabled] .btn-link-danger:focus, fieldset[disabled] .btn-link-warning:focus, fieldset[disabled] .btn-link-primary:focus {
     color: #999999;
     text-decoration: none; }
 
@@ -2794,7 +2794,7 @@ tbody.collapse.in {
   -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
   /* line 123, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/button-groups */
-  .btn-group.open .dropdown-toggle.btn-link, .btn-group.open .dropdown-toggle.btn-link-white, .btn-group.open .dropdown-toggle.btn-link-gray-lighter, .btn-group.open .dropdown-toggle.btn-link-gray-light, .btn-group.open .dropdown-toggle.btn-link-gray, .btn-group.open .dropdown-toggle.btn-link-success, .btn-group.open .dropdown-toggle.btn-link-danger, .btn-group.open .dropdown-toggle.btn-link-warning, .btn-group.open .dropdown-toggle.btn-link-primary {
+  .btn-group.open .dropdown-toggle.btn-link, .btn-group.open .dropdown-toggle.btn-link-plain, .btn-group.open .dropdown-toggle.btn-link-white, .btn-group.open .dropdown-toggle.btn-link-gray-lighter, .btn-group.open .dropdown-toggle.btn-link-gray-light, .btn-group.open .dropdown-toggle.btn-link-gray, .btn-group.open .dropdown-toggle.btn-link-success, .btn-group.open .dropdown-toggle.btn-link-danger, .btn-group.open .dropdown-toggle.btn-link-warning, .btn-group.open .dropdown-toggle.btn-link-primary {
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none; }
@@ -2897,7 +2897,7 @@ tbody.collapse.in {
     padding-left: 0;
     padding-right: 0; }
   /* line 19, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/input-groups */
-  .input-group .form-control {
+  .input-group .form-control, .input-group .tasks-list-filters-block-select {
     position: relative;
     z-index: 2;
     float: left;
@@ -2905,7 +2905,7 @@ tbody.collapse.in {
     margin-bottom: 0; }
 
 /* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/input-groups */
-.input-group-inline .form-control, .input-group-inline-block .form-control, .input-group-inline .input-group, .input-group-inline-block .input-group {
+.input-group-inline .form-control, .input-group-inline-block .form-control, .input-group-inline .tasks-list-filters-block-select, .input-group-inline-block .tasks-list-filters-block-select, .input-group-inline .input-group, .input-group-inline-block .input-group {
   width: auto;
   margin: 0; }
 /* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/input-groups */
@@ -2942,17 +2942,17 @@ tbody.collapse.in {
   line-height: 0;
   position: relative; }
 /* line 74, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/input-groups */
-.input-group-inline .form-control.date-input, .input-group-inline-block .form-control.date-input {
+.input-group-inline .form-control.date-input, .input-group-inline-block .form-control.date-input, .input-group-inline .date-input.tasks-list-filters-block-select, .input-group-inline-block .date-input.tasks-list-filters-block-select {
   width: 90px; }
 /* line 75, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/input-groups */
-.input-group-inline .form-control.time-input, .input-group-inline-block .form-control.time-input {
+.input-group-inline .form-control.time-input, .input-group-inline-block .form-control.time-input, .input-group-inline .time-input.tasks-list-filters-block-select, .input-group-inline-block .time-input.tasks-list-filters-block-select {
   width: 60px; }
 
 /* line 100, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/input-groups */
-.input-group-addon, .input-group-btn, .input-group .form-control {
+.input-group-addon, .input-group-btn, .input-group .form-control, .input-group .tasks-list-filters-block-select {
   display: table-cell; }
   /* line 103, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/input-groups */
-  .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child) {
+  .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child), .input-group .tasks-list-filters-block-select:not(:first-child):not(:last-child) {
     border-radius: 0; }
 
 /* line 109, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/input-groups */
@@ -2987,7 +2987,7 @@ tbody.collapse.in {
     margin-top: 0; }
 
 /* line 155, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/input-groups */
-.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .community-invites-btn-base, .input-group-btn:first-child > .community-invites-btn-check, .input-group-btn:first-child > .community-invites-btn-send, .input-group-btn:first-child > .project-form-team-member-btn, .input-group-btn:first-child > .project-form-team-member-selected-btn, .input-group-btn:first-child > .project-discussions-form-btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .btn-group > .community-invites-btn-base, .input-group-btn:first-child > .btn-group > .community-invites-btn-check, .input-group-btn:first-child > .btn-group > .community-invites-btn-send, .input-group-btn:first-child > .btn-group > .project-form-team-member-btn, .input-group-btn:first-child > .btn-group > .project-form-team-member-selected-btn, .input-group-btn:first-child > .btn-group > .project-discussions-form-btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .community-invites-btn-base:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .community-invites-btn-check:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .community-invites-btn-send:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .project-form-team-member-btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .project-form-team-member-selected-btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .project-discussions-form-btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .input-group-btn:last-child > .btn-group:not(:last-child) > .community-invites-btn-base, .input-group-btn:last-child > .btn-group:not(:last-child) > .community-invites-btn-check, .input-group-btn:last-child > .btn-group:not(:last-child) > .community-invites-btn-send, .input-group-btn:last-child > .btn-group:not(:last-child) > .project-form-team-member-btn, .input-group-btn:last-child > .btn-group:not(:last-child) > .project-form-team-member-selected-btn, .input-group-btn:last-child > .btn-group:not(:last-child) > .project-discussions-form-btn {
+.input-group .form-control:first-child, .input-group .tasks-list-filters-block-select:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .community-invites-btn-base, .input-group-btn:first-child > .community-invites-btn-check, .input-group-btn:first-child > .community-invites-btn-send, .input-group-btn:first-child > .project-form-team-member-btn, .input-group-btn:first-child > .project-form-team-member-selected-btn, .input-group-btn:first-child > .project-discussions-form-btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .btn-group > .community-invites-btn-base, .input-group-btn:first-child > .btn-group > .community-invites-btn-check, .input-group-btn:first-child > .btn-group > .community-invites-btn-send, .input-group-btn:first-child > .btn-group > .project-form-team-member-btn, .input-group-btn:first-child > .btn-group > .project-form-team-member-selected-btn, .input-group-btn:first-child > .btn-group > .project-discussions-form-btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .community-invites-btn-base:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .community-invites-btn-check:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .community-invites-btn-send:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .project-form-team-member-btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .project-form-team-member-selected-btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .project-discussions-form-btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .input-group-btn:last-child > .btn-group:not(:last-child) > .community-invites-btn-base, .input-group-btn:last-child > .btn-group:not(:last-child) > .community-invites-btn-check, .input-group-btn:last-child > .btn-group:not(:last-child) > .community-invites-btn-send, .input-group-btn:last-child > .btn-group:not(:last-child) > .project-form-team-member-btn, .input-group-btn:last-child > .btn-group:not(:last-child) > .project-form-team-member-selected-btn, .input-group-btn:last-child > .btn-group:not(:last-child) > .project-discussions-form-btn {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
@@ -2996,7 +2996,7 @@ tbody.collapse.in {
   border-right: 0; }
 
 /* line 167, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/input-groups */
-.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .community-invites-btn-base, .input-group-btn:last-child > .community-invites-btn-check, .input-group-btn:last-child > .community-invites-btn-send, .input-group-btn:last-child > .project-form-team-member-btn, .input-group-btn:last-child > .project-form-team-member-selected-btn, .input-group-btn:last-child > .project-discussions-form-btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .btn-group > .community-invites-btn-base, .input-group-btn:last-child > .btn-group > .community-invites-btn-check, .input-group-btn:last-child > .btn-group > .community-invites-btn-send, .input-group-btn:last-child > .btn-group > .project-form-team-member-btn, .input-group-btn:last-child > .btn-group > .project-form-team-member-selected-btn, .input-group-btn:last-child > .btn-group > .project-discussions-form-btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .community-invites-btn-base:not(:first-child), .input-group-btn:first-child > .community-invites-btn-check:not(:first-child), .input-group-btn:first-child > .community-invites-btn-send:not(:first-child), .input-group-btn:first-child > .project-form-team-member-btn:not(:first-child), .input-group-btn:first-child > .project-form-team-member-selected-btn:not(:first-child), .input-group-btn:first-child > .project-discussions-form-btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .input-group-btn:first-child > .btn-group:not(:first-child) > .community-invites-btn-base, .input-group-btn:first-child > .btn-group:not(:first-child) > .community-invites-btn-check, .input-group-btn:first-child > .btn-group:not(:first-child) > .community-invites-btn-send, .input-group-btn:first-child > .btn-group:not(:first-child) > .project-form-team-member-btn, .input-group-btn:first-child > .btn-group:not(:first-child) > .project-form-team-member-selected-btn, .input-group-btn:first-child > .btn-group:not(:first-child) > .project-discussions-form-btn {
+.input-group .form-control:last-child, .input-group .tasks-list-filters-block-select:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .community-invites-btn-base, .input-group-btn:last-child > .community-invites-btn-check, .input-group-btn:last-child > .community-invites-btn-send, .input-group-btn:last-child > .project-form-team-member-btn, .input-group-btn:last-child > .project-form-team-member-selected-btn, .input-group-btn:last-child > .project-discussions-form-btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .btn-group > .community-invites-btn-base, .input-group-btn:last-child > .btn-group > .community-invites-btn-check, .input-group-btn:last-child > .btn-group > .community-invites-btn-send, .input-group-btn:last-child > .btn-group > .project-form-team-member-btn, .input-group-btn:last-child > .btn-group > .project-form-team-member-selected-btn, .input-group-btn:last-child > .btn-group > .project-discussions-form-btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .community-invites-btn-base:not(:first-child), .input-group-btn:first-child > .community-invites-btn-check:not(:first-child), .input-group-btn:first-child > .community-invites-btn-send:not(:first-child), .input-group-btn:first-child > .project-form-team-member-btn:not(:first-child), .input-group-btn:first-child > .project-form-team-member-selected-btn:not(:first-child), .input-group-btn:first-child > .project-discussions-form-btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .input-group-btn:first-child > .btn-group:not(:first-child) > .community-invites-btn-base, .input-group-btn:first-child > .btn-group:not(:first-child) > .community-invites-btn-check, .input-group-btn:first-child > .btn-group:not(:first-child) > .community-invites-btn-send, .input-group-btn:first-child > .btn-group:not(:first-child) > .project-form-team-member-btn, .input-group-btn:first-child > .btn-group:not(:first-child) > .project-form-team-member-selected-btn, .input-group-btn:first-child > .btn-group:not(:first-child) > .project-discussions-form-btn {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
@@ -3397,7 +3397,7 @@ tbody.collapse.in {
  }
 
 /* line 302, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-.navbar-form {
+.navbar-form, .tasks-list-filters-block-content {
   margin-left: -15px;
   margin-right: -15px;
   padding: 10px 15px;
@@ -3409,10 +3409,10 @@ tbody.collapse.in {
   margin-top: 10px;
   margin-bottom: 10px; }
   @media (max-width: 767px) {
-    .navbar-form .form-group {
+    .navbar-form .form-group, .tasks-list-filters-block-content .form-group {
       margin-bottom: 5px; } }
   @media (min-width: 768px) {
-    .navbar-form {
+    .navbar-form, .tasks-list-filters-block-content {
       width: auto;
       border: 0;
       margin-left: 0;
@@ -3423,7 +3423,7 @@ tbody.collapse.in {
       -moz-box-shadow: none;
       -webkit-box-shadow: none; }
       /* line 334, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-      .navbar-form.navbar-right:last-child {
+      .navbar-form.navbar-right:last-child, .navbar-right.tasks-list-filters-block-content:last-child {
         margin-right: -15px; } }
 
 /* line 344, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
@@ -3502,7 +3502,7 @@ tbody.collapse.in {
     .navbar-default .navbar-toggle .icon-bar, .project-group-header-actions-fixed .navbar-toggle .icon-bar {
       background-color: #888; }
   /* line 450, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-  .navbar-default .navbar-collapse, .project-group-header-actions-fixed .navbar-collapse, .navbar-default .navbar-form, .project-group-header-actions-fixed .navbar-form {
+  .navbar-default .navbar-collapse, .project-group-header-actions-fixed .navbar-collapse, .navbar-default .navbar-form, .project-group-header-actions-fixed .navbar-form, .navbar-default .tasks-list-filters-block-content, .project-group-header-actions-fixed .tasks-list-filters-block-content {
     border-color: #e7e7e7; }
   /* line 460, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
   .navbar-default .navbar-nav > .open > a, .project-group-header-actions-fixed .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .project-group-header-actions-fixed .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .project-group-header-actions-fixed .navbar-nav > .open > a:focus {
@@ -3532,13 +3532,13 @@ tbody.collapse.in {
     .navbar-default .navbar-link:hover, .project-group-header-actions-fixed .navbar-link:hover {
       color: #333; }
   /* line 509, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-  .navbar-default .btn-link, .project-group-header-actions-fixed .btn-link, .navbar-default .btn-link-white, .project-group-header-actions-fixed .btn-link-white, .navbar-default .btn-link-gray-lighter, .project-group-header-actions-fixed .btn-link-gray-lighter, .navbar-default .btn-link-gray-light, .project-group-header-actions-fixed .btn-link-gray-light, .navbar-default .btn-link-gray, .project-group-header-actions-fixed .btn-link-gray, .navbar-default .btn-link-success, .project-group-header-actions-fixed .btn-link-success, .navbar-default .btn-link-danger, .project-group-header-actions-fixed .btn-link-danger, .navbar-default .btn-link-warning, .project-group-header-actions-fixed .btn-link-warning, .navbar-default .btn-link-primary, .project-group-header-actions-fixed .btn-link-primary {
+  .navbar-default .btn-link, .project-group-header-actions-fixed .btn-link, .navbar-default .btn-link-plain, .project-group-header-actions-fixed .btn-link-plain, .navbar-default .btn-link-white, .project-group-header-actions-fixed .btn-link-white, .navbar-default .btn-link-gray-lighter, .project-group-header-actions-fixed .btn-link-gray-lighter, .navbar-default .btn-link-gray-light, .project-group-header-actions-fixed .btn-link-gray-light, .navbar-default .btn-link-gray, .project-group-header-actions-fixed .btn-link-gray, .navbar-default .btn-link-success, .project-group-header-actions-fixed .btn-link-success, .navbar-default .btn-link-danger, .project-group-header-actions-fixed .btn-link-danger, .navbar-default .btn-link-warning, .project-group-header-actions-fixed .btn-link-warning, .navbar-default .btn-link-primary, .project-group-header-actions-fixed .btn-link-primary {
     color: #777; }
     /* line 512, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-default .btn-link:hover, .project-group-header-actions-fixed .btn-link:hover, .navbar-default .btn-link-white:hover, .project-group-header-actions-fixed .btn-link-white:hover, .navbar-default .btn-link-gray-lighter:hover, .project-group-header-actions-fixed .btn-link-gray-lighter:hover, .navbar-default .btn-link-gray-light:hover, .project-group-header-actions-fixed .btn-link-gray-light:hover, .navbar-default .btn-link-gray:hover, .project-group-header-actions-fixed .btn-link-gray:hover, .navbar-default .btn-link-success:hover, .project-group-header-actions-fixed .btn-link-success:hover, .navbar-default .btn-link-danger:hover, .project-group-header-actions-fixed .btn-link-danger:hover, .navbar-default .btn-link-warning:hover, .project-group-header-actions-fixed .btn-link-warning:hover, .navbar-default .btn-link-primary:hover, .project-group-header-actions-fixed .btn-link-primary:hover, .navbar-default .btn-link:focus, .project-group-header-actions-fixed .btn-link:focus, .navbar-default .btn-link-white:focus, .project-group-header-actions-fixed .btn-link-white:focus, .navbar-default .btn-link-gray-lighter:focus, .project-group-header-actions-fixed .btn-link-gray-lighter:focus, .navbar-default .btn-link-gray-light:focus, .project-group-header-actions-fixed .btn-link-gray-light:focus, .navbar-default .btn-link-gray:focus, .project-group-header-actions-fixed .btn-link-gray:focus, .navbar-default .btn-link-success:focus, .project-group-header-actions-fixed .btn-link-success:focus, .navbar-default .btn-link-danger:focus, .project-group-header-actions-fixed .btn-link-danger:focus, .navbar-default .btn-link-warning:focus, .project-group-header-actions-fixed .btn-link-warning:focus, .navbar-default .btn-link-primary:focus, .project-group-header-actions-fixed .btn-link-primary:focus {
+    .navbar-default .btn-link:hover, .project-group-header-actions-fixed .btn-link:hover, .navbar-default .btn-link-plain:hover, .project-group-header-actions-fixed .btn-link-plain:hover, .navbar-default .btn-link-white:hover, .project-group-header-actions-fixed .btn-link-white:hover, .navbar-default .btn-link-gray-lighter:hover, .project-group-header-actions-fixed .btn-link-gray-lighter:hover, .navbar-default .btn-link-gray-light:hover, .project-group-header-actions-fixed .btn-link-gray-light:hover, .navbar-default .btn-link-gray:hover, .project-group-header-actions-fixed .btn-link-gray:hover, .navbar-default .btn-link-success:hover, .project-group-header-actions-fixed .btn-link-success:hover, .navbar-default .btn-link-danger:hover, .project-group-header-actions-fixed .btn-link-danger:hover, .navbar-default .btn-link-warning:hover, .project-group-header-actions-fixed .btn-link-warning:hover, .navbar-default .btn-link-primary:hover, .project-group-header-actions-fixed .btn-link-primary:hover, .navbar-default .btn-link:focus, .project-group-header-actions-fixed .btn-link:focus, .navbar-default .btn-link-plain:focus, .project-group-header-actions-fixed .btn-link-plain:focus, .navbar-default .btn-link-white:focus, .project-group-header-actions-fixed .btn-link-white:focus, .navbar-default .btn-link-gray-lighter:focus, .project-group-header-actions-fixed .btn-link-gray-lighter:focus, .navbar-default .btn-link-gray-light:focus, .project-group-header-actions-fixed .btn-link-gray-light:focus, .navbar-default .btn-link-gray:focus, .project-group-header-actions-fixed .btn-link-gray:focus, .navbar-default .btn-link-success:focus, .project-group-header-actions-fixed .btn-link-success:focus, .navbar-default .btn-link-danger:focus, .project-group-header-actions-fixed .btn-link-danger:focus, .navbar-default .btn-link-warning:focus, .project-group-header-actions-fixed .btn-link-warning:focus, .navbar-default .btn-link-primary:focus, .project-group-header-actions-fixed .btn-link-primary:focus {
       color: #333; }
     /* line 518, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-default .btn-link[disabled]:hover, .project-group-header-actions-fixed .btn-link[disabled]:hover, .navbar-default [disabled].btn-link-white:hover, .project-group-header-actions-fixed [disabled].btn-link-white:hover, .navbar-default [disabled].btn-link-gray-lighter:hover, .project-group-header-actions-fixed [disabled].btn-link-gray-lighter:hover, .navbar-default [disabled].btn-link-gray-light:hover, .project-group-header-actions-fixed [disabled].btn-link-gray-light:hover, .navbar-default [disabled].btn-link-gray:hover, .project-group-header-actions-fixed [disabled].btn-link-gray:hover, .navbar-default [disabled].btn-link-success:hover, .project-group-header-actions-fixed [disabled].btn-link-success:hover, .navbar-default [disabled].btn-link-danger:hover, .project-group-header-actions-fixed [disabled].btn-link-danger:hover, .navbar-default [disabled].btn-link-warning:hover, .project-group-header-actions-fixed [disabled].btn-link-warning:hover, .navbar-default [disabled].btn-link-primary:hover, .project-group-header-actions-fixed [disabled].btn-link-primary:hover, .navbar-default .btn-link[disabled]:focus, .project-group-header-actions-fixed .btn-link[disabled]:focus, .navbar-default [disabled].btn-link-white:focus, .project-group-header-actions-fixed [disabled].btn-link-white:focus, .navbar-default [disabled].btn-link-gray-lighter:focus, .project-group-header-actions-fixed [disabled].btn-link-gray-lighter:focus, .navbar-default [disabled].btn-link-gray-light:focus, .project-group-header-actions-fixed [disabled].btn-link-gray-light:focus, .navbar-default [disabled].btn-link-gray:focus, .project-group-header-actions-fixed [disabled].btn-link-gray:focus, .navbar-default [disabled].btn-link-success:focus, .project-group-header-actions-fixed [disabled].btn-link-success:focus, .navbar-default [disabled].btn-link-danger:focus, .project-group-header-actions-fixed [disabled].btn-link-danger:focus, .navbar-default [disabled].btn-link-warning:focus, .project-group-header-actions-fixed [disabled].btn-link-warning:focus, .navbar-default [disabled].btn-link-primary:focus, .project-group-header-actions-fixed [disabled].btn-link-primary:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link:hover, fieldset[disabled] .navbar-default .btn-link-white:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-white:hover, fieldset[disabled] .navbar-default .btn-link-gray-lighter:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-gray-lighter:hover, fieldset[disabled] .navbar-default .btn-link-gray-light:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-gray-light:hover, fieldset[disabled] .navbar-default .btn-link-gray:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-gray:hover, fieldset[disabled] .navbar-default .btn-link-success:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-success:hover, fieldset[disabled] .navbar-default .btn-link-danger:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-danger:hover, fieldset[disabled] .navbar-default .btn-link-warning:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-warning:hover, fieldset[disabled] .navbar-default .btn-link-primary:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-primary:hover, fieldset[disabled] .navbar-default .btn-link:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link:focus, fieldset[disabled] .navbar-default .btn-link-white:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-white:focus, fieldset[disabled] .navbar-default .btn-link-gray-lighter:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-gray-lighter:focus, fieldset[disabled] .navbar-default .btn-link-gray-light:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-gray-light:focus, fieldset[disabled] .navbar-default .btn-link-gray:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-gray:focus, fieldset[disabled] .navbar-default .btn-link-success:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-success:focus, fieldset[disabled] .navbar-default .btn-link-danger:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-danger:focus, fieldset[disabled] .navbar-default .btn-link-warning:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-warning:focus, fieldset[disabled] .navbar-default .btn-link-primary:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-primary:focus {
+    .navbar-default .btn-link[disabled]:hover, .project-group-header-actions-fixed .btn-link[disabled]:hover, .navbar-default [disabled].btn-link-plain:hover, .project-group-header-actions-fixed [disabled].btn-link-plain:hover, .navbar-default [disabled].btn-link-white:hover, .project-group-header-actions-fixed [disabled].btn-link-white:hover, .navbar-default [disabled].btn-link-gray-lighter:hover, .project-group-header-actions-fixed [disabled].btn-link-gray-lighter:hover, .navbar-default [disabled].btn-link-gray-light:hover, .project-group-header-actions-fixed [disabled].btn-link-gray-light:hover, .navbar-default [disabled].btn-link-gray:hover, .project-group-header-actions-fixed [disabled].btn-link-gray:hover, .navbar-default [disabled].btn-link-success:hover, .project-group-header-actions-fixed [disabled].btn-link-success:hover, .navbar-default [disabled].btn-link-danger:hover, .project-group-header-actions-fixed [disabled].btn-link-danger:hover, .navbar-default [disabled].btn-link-warning:hover, .project-group-header-actions-fixed [disabled].btn-link-warning:hover, .navbar-default [disabled].btn-link-primary:hover, .project-group-header-actions-fixed [disabled].btn-link-primary:hover, .navbar-default .btn-link[disabled]:focus, .project-group-header-actions-fixed .btn-link[disabled]:focus, .navbar-default [disabled].btn-link-plain:focus, .project-group-header-actions-fixed [disabled].btn-link-plain:focus, .navbar-default [disabled].btn-link-white:focus, .project-group-header-actions-fixed [disabled].btn-link-white:focus, .navbar-default [disabled].btn-link-gray-lighter:focus, .project-group-header-actions-fixed [disabled].btn-link-gray-lighter:focus, .navbar-default [disabled].btn-link-gray-light:focus, .project-group-header-actions-fixed [disabled].btn-link-gray-light:focus, .navbar-default [disabled].btn-link-gray:focus, .project-group-header-actions-fixed [disabled].btn-link-gray:focus, .navbar-default [disabled].btn-link-success:focus, .project-group-header-actions-fixed [disabled].btn-link-success:focus, .navbar-default [disabled].btn-link-danger:focus, .project-group-header-actions-fixed [disabled].btn-link-danger:focus, .navbar-default [disabled].btn-link-warning:focus, .project-group-header-actions-fixed [disabled].btn-link-warning:focus, .navbar-default [disabled].btn-link-primary:focus, .project-group-header-actions-fixed [disabled].btn-link-primary:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link:hover, fieldset[disabled] .navbar-default .btn-link-plain:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-plain:hover, fieldset[disabled] .navbar-default .btn-link-white:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-white:hover, fieldset[disabled] .navbar-default .btn-link-gray-lighter:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-gray-lighter:hover, fieldset[disabled] .navbar-default .btn-link-gray-light:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-gray-light:hover, fieldset[disabled] .navbar-default .btn-link-gray:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-gray:hover, fieldset[disabled] .navbar-default .btn-link-success:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-success:hover, fieldset[disabled] .navbar-default .btn-link-danger:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-danger:hover, fieldset[disabled] .navbar-default .btn-link-warning:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-warning:hover, fieldset[disabled] .navbar-default .btn-link-primary:hover, fieldset[disabled] .project-group-header-actions-fixed .btn-link-primary:hover, fieldset[disabled] .navbar-default .btn-link:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link:focus, fieldset[disabled] .navbar-default .btn-link-plain:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-plain:focus, fieldset[disabled] .navbar-default .btn-link-white:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-white:focus, fieldset[disabled] .navbar-default .btn-link-gray-lighter:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-gray-lighter:focus, fieldset[disabled] .navbar-default .btn-link-gray-light:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-gray-light:focus, fieldset[disabled] .navbar-default .btn-link-gray:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-gray:focus, fieldset[disabled] .navbar-default .btn-link-success:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-success:focus, fieldset[disabled] .navbar-default .btn-link-danger:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-danger:focus, fieldset[disabled] .navbar-default .btn-link-warning:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-warning:focus, fieldset[disabled] .navbar-default .btn-link-primary:focus, fieldset[disabled] .project-group-header-actions-fixed .btn-link-primary:focus {
       color: #ccc; }
 
 /* line 527, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
@@ -3580,7 +3580,7 @@ tbody.collapse.in {
     .navbar-inverse .navbar-toggle .icon-bar {
       background-color: #fff; }
   /* line 585, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar-inverse .tasks-list-filters-block-content {
     border-color: #101010; }
   /* line 594, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
   .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
@@ -3616,13 +3616,13 @@ tbody.collapse.in {
     .navbar-inverse .navbar-link:hover {
       color: #fff; }
   /* line 644, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-  .navbar-inverse .btn-link, .navbar-inverse .btn-link-white, .navbar-inverse .btn-link-gray-lighter, .navbar-inverse .btn-link-gray-light, .navbar-inverse .btn-link-gray, .navbar-inverse .btn-link-success, .navbar-inverse .btn-link-danger, .navbar-inverse .btn-link-warning, .navbar-inverse .btn-link-primary {
+  .navbar-inverse .btn-link, .navbar-inverse .btn-link-plain, .navbar-inverse .btn-link-white, .navbar-inverse .btn-link-gray-lighter, .navbar-inverse .btn-link-gray-light, .navbar-inverse .btn-link-gray, .navbar-inverse .btn-link-success, .navbar-inverse .btn-link-danger, .navbar-inverse .btn-link-warning, .navbar-inverse .btn-link-primary {
     color: #999999; }
     /* line 647, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link-white:hover, .navbar-inverse .btn-link-gray-lighter:hover, .navbar-inverse .btn-link-gray-light:hover, .navbar-inverse .btn-link-gray:hover, .navbar-inverse .btn-link-success:hover, .navbar-inverse .btn-link-danger:hover, .navbar-inverse .btn-link-warning:hover, .navbar-inverse .btn-link-primary:hover, .navbar-inverse .btn-link:focus, .navbar-inverse .btn-link-white:focus, .navbar-inverse .btn-link-gray-lighter:focus, .navbar-inverse .btn-link-gray-light:focus, .navbar-inverse .btn-link-gray:focus, .navbar-inverse .btn-link-success:focus, .navbar-inverse .btn-link-danger:focus, .navbar-inverse .btn-link-warning:focus, .navbar-inverse .btn-link-primary:focus {
+    .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link-plain:hover, .navbar-inverse .btn-link-white:hover, .navbar-inverse .btn-link-gray-lighter:hover, .navbar-inverse .btn-link-gray-light:hover, .navbar-inverse .btn-link-gray:hover, .navbar-inverse .btn-link-success:hover, .navbar-inverse .btn-link-danger:hover, .navbar-inverse .btn-link-warning:hover, .navbar-inverse .btn-link-primary:hover, .navbar-inverse .btn-link:focus, .navbar-inverse .btn-link-plain:focus, .navbar-inverse .btn-link-white:focus, .navbar-inverse .btn-link-gray-lighter:focus, .navbar-inverse .btn-link-gray-light:focus, .navbar-inverse .btn-link-gray:focus, .navbar-inverse .btn-link-success:focus, .navbar-inverse .btn-link-danger:focus, .navbar-inverse .btn-link-warning:focus, .navbar-inverse .btn-link-primary:focus {
       color: #fff; }
     /* line 653, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse [disabled].btn-link-white:hover, .navbar-inverse [disabled].btn-link-gray-lighter:hover, .navbar-inverse [disabled].btn-link-gray-light:hover, .navbar-inverse [disabled].btn-link-gray:hover, .navbar-inverse [disabled].btn-link-success:hover, .navbar-inverse [disabled].btn-link-danger:hover, .navbar-inverse [disabled].btn-link-warning:hover, .navbar-inverse [disabled].btn-link-primary:hover, .navbar-inverse .btn-link[disabled]:focus, .navbar-inverse [disabled].btn-link-white:focus, .navbar-inverse [disabled].btn-link-gray-lighter:focus, .navbar-inverse [disabled].btn-link-gray-light:focus, .navbar-inverse [disabled].btn-link-gray:focus, .navbar-inverse [disabled].btn-link-success:focus, .navbar-inverse [disabled].btn-link-danger:focus, .navbar-inverse [disabled].btn-link-warning:focus, .navbar-inverse [disabled].btn-link-primary:focus, fieldset[disabled] .navbar-inverse .btn-link:hover, fieldset[disabled] .navbar-inverse .btn-link-white:hover, fieldset[disabled] .navbar-inverse .btn-link-gray-lighter:hover, fieldset[disabled] .navbar-inverse .btn-link-gray-light:hover, fieldset[disabled] .navbar-inverse .btn-link-gray:hover, fieldset[disabled] .navbar-inverse .btn-link-success:hover, fieldset[disabled] .navbar-inverse .btn-link-danger:hover, fieldset[disabled] .navbar-inverse .btn-link-warning:hover, fieldset[disabled] .navbar-inverse .btn-link-primary:hover, fieldset[disabled] .navbar-inverse .btn-link:focus, fieldset[disabled] .navbar-inverse .btn-link-white:focus, fieldset[disabled] .navbar-inverse .btn-link-gray-lighter:focus, fieldset[disabled] .navbar-inverse .btn-link-gray-light:focus, fieldset[disabled] .navbar-inverse .btn-link-gray:focus, fieldset[disabled] .navbar-inverse .btn-link-success:focus, fieldset[disabled] .navbar-inverse .btn-link-danger:focus, fieldset[disabled] .navbar-inverse .btn-link-warning:focus, fieldset[disabled] .navbar-inverse .btn-link-primary:focus {
+    .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse [disabled].btn-link-plain:hover, .navbar-inverse [disabled].btn-link-white:hover, .navbar-inverse [disabled].btn-link-gray-lighter:hover, .navbar-inverse [disabled].btn-link-gray-light:hover, .navbar-inverse [disabled].btn-link-gray:hover, .navbar-inverse [disabled].btn-link-success:hover, .navbar-inverse [disabled].btn-link-danger:hover, .navbar-inverse [disabled].btn-link-warning:hover, .navbar-inverse [disabled].btn-link-primary:hover, .navbar-inverse .btn-link[disabled]:focus, .navbar-inverse [disabled].btn-link-plain:focus, .navbar-inverse [disabled].btn-link-white:focus, .navbar-inverse [disabled].btn-link-gray-lighter:focus, .navbar-inverse [disabled].btn-link-gray-light:focus, .navbar-inverse [disabled].btn-link-gray:focus, .navbar-inverse [disabled].btn-link-success:focus, .navbar-inverse [disabled].btn-link-danger:focus, .navbar-inverse [disabled].btn-link-warning:focus, .navbar-inverse [disabled].btn-link-primary:focus, fieldset[disabled] .navbar-inverse .btn-link:hover, fieldset[disabled] .navbar-inverse .btn-link-plain:hover, fieldset[disabled] .navbar-inverse .btn-link-white:hover, fieldset[disabled] .navbar-inverse .btn-link-gray-lighter:hover, fieldset[disabled] .navbar-inverse .btn-link-gray-light:hover, fieldset[disabled] .navbar-inverse .btn-link-gray:hover, fieldset[disabled] .navbar-inverse .btn-link-success:hover, fieldset[disabled] .navbar-inverse .btn-link-danger:hover, fieldset[disabled] .navbar-inverse .btn-link-warning:hover, fieldset[disabled] .navbar-inverse .btn-link-primary:hover, fieldset[disabled] .navbar-inverse .btn-link:focus, fieldset[disabled] .navbar-inverse .btn-link-plain:focus, fieldset[disabled] .navbar-inverse .btn-link-white:focus, fieldset[disabled] .navbar-inverse .btn-link-gray-lighter:focus, fieldset[disabled] .navbar-inverse .btn-link-gray-light:focus, fieldset[disabled] .navbar-inverse .btn-link-gray:focus, fieldset[disabled] .navbar-inverse .btn-link-success:focus, fieldset[disabled] .navbar-inverse .btn-link-danger:focus, fieldset[disabled] .navbar-inverse .btn-link-warning:focus, fieldset[disabled] .navbar-inverse .btn-link-primary:focus {
       color: #444; }
 
 /* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/breadcrumbs */
@@ -15074,7 +15074,7 @@ body.retina-display img.image-x2 {
   text-align: center; }
 
 /* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/header-search */
-.search-header .form-control {
+.search-header .form-control, .search-header .tasks-list-filters-block-select {
   border-radius: 4px; }
 /* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/header-search */
 .header-global .search-header {
@@ -16108,6 +16108,106 @@ a.task-box-block-link {
     font-weight: 600; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-file {
+  position: relative;
+  overflow: hidden; }
+  /* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-file input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    font-size: 300%; }
+
+/* line 14, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-plain, .btn-link-plain:hover, .btn-link-plain:focus {
+  text-decoration: none; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-white {
+  color: #fff; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-white:hover {
+    color: #e6e6e6; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-gray-lighter {
+  color: #eeeeee; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-gray-lighter:hover {
+    color: #d5d5d5; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-gray-light {
+  color: #999999; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-gray-light:hover {
+    color: gray; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-gray {
+  color: #555555; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-gray:hover {
+    color: #3c3c3c; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-success {
+  color: #3ab54a; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-success:hover {
+    color: #2e8e3a; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-danger {
+  color: #ff0101; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-danger:hover {
+    color: #cd0000; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-warning {
+  color: #f8931f; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-warning:hover {
+    color: #dd7907; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-primary {
+  color: #338cae; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-primary:hover {
+    color: #276c87; }
+
+/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-outline-gray-light {
+  color: #999999;
+  border-color: #e6e6e6; }
+  /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-outline-gray-light:hover, .btn-outline-gray-light:hover {
+    color: gray;
+    border-color: #cccccc; }
+
+/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-outline-gray {
+  color: #555555;
+  border-color: #a2a2a2; }
+  /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-outline-gray:hover, .btn-outline-gray:hover {
+    color: #3c3c3c;
+    border-color: #888888; }
+
+/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-outline-danger {
+  color: #ff0101;
+  border-color: #ff9a9a; }
+  /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-outline-danger:hover, .btn-outline-danger:hover {
+    color: #cd0000;
+    border-color: #ff6767; }
+
+/* line 33, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-base, .community-invites-btn-check, .community-invites-btn-send {
   width: 20%;
   background-color: #3daddf;
@@ -16117,119 +16217,23 @@ a.task-box-block-link {
   padding-left: 4em;
   padding-right: 4em;
   font-weight: normal; }
-  /* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .community-invites-btn-base:hover, .community-invites-btn-check:hover, .community-invites-btn-send:hover {
     color: white; }
-  /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 45, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .community-invites-btn-base:active, .community-invites-btn-check:active, .community-invites-btn-send:active {
     color: #fff !important; }
 
-/* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-check {
   margin-right: 4em;
   float: right; }
 
-/* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 53, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-send {
   margin-top: 1.8em;
   margin-right: 4em;
   float: right; }
-
-/* line 27, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-file {
-  position: relative;
-  overflow: hidden; }
-  /* line 30, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-file input[type="file"] {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-    font-size: 300%; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-white {
-  color: #fff; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-white:hover {
-    color: #e6e6e6; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-gray-lighter {
-  color: #eeeeee; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-gray-lighter:hover {
-    color: #d5d5d5; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-gray-light {
-  color: #999999; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-gray-light:hover {
-    color: gray; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-gray {
-  color: #555555; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-gray:hover {
-    color: #3c3c3c; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-success {
-  color: #3ab54a; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-success:hover {
-    color: #2e8e3a; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-danger {
-  color: #ff0101; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-danger:hover {
-    color: #cd0000; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-warning {
-  color: #f8931f; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-warning:hover {
-    color: #dd7907; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-primary {
-  color: #338cae; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-primary:hover {
-    color: #276c87; }
-
-/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-outline-gray-light {
-  color: #999999;
-  border-color: #e6e6e6; }
-  /* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-outline-gray-light:hover, .btn-outline-gray-light:hover {
-    color: gray;
-    border-color: #cccccc; }
-
-/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-outline-gray {
-  color: #555555;
-  border-color: #a2a2a2; }
-  /* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-outline-gray:hover, .btn-outline-gray:hover {
-    color: #3c3c3c;
-    border-color: #888888; }
-
-/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-outline-danger {
-  color: #ff0101;
-  border-color: #ff9a9a; }
-  /* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-outline-danger:hover, .btn-outline-danger:hover {
-    color: #cd0000;
-    border-color: #ff6767; }
 
 /* line 3, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/communities */
 .community-logo {
@@ -16476,7 +16480,7 @@ a.bg-primary-light:hover {
     .input-group-above > .input-group-addon:last-child {
       border-left: solid 1px #ccc; }
   /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/input-groups */
-  .input-group-above .form-control:focus + .input-group-addon {
+  .input-group-above .form-control:focus + .input-group-addon, .input-group-above .tasks-list-filters-block-select:focus + .input-group-addon {
     border-left-color: #4aaee4; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/panels */
@@ -19213,6 +19217,21 @@ section.tasks-list-column ul.infinite-list {
       /* line 268, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/list-column */
       .tasks-time-period-filters .filter label:hover {
         text-decoration: underline; }
+
+/* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/filters */
+.tasks-list-filters-block-section {
+  border-left: 1px solid #d5d5d5; }
+  /* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/filters */
+  .tasks-list-filters-block-section:first-child {
+    border-left: none; }
+
+/* line 9, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/filters */
+.tasks-list-filters-block-select {
+  display: block; }
+  /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/filters */
+  .tasks-list-filters-block-select, .tasks-list-filters-block-content .tasks-list-filters-block-select {
+    display: block;
+    width: 100%; }
 
 /* line 3, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/view-column */
 .task-view-column.task-view-column-task-template, body.tasks-show .task-view-column.task-view-column-task-template {
