@@ -17789,7 +17789,11 @@ section.task-form-section ul.top, .community-structure-view > .edit-job ul.top, 
     section.task-form-section ul.top li + li, .community-structure-view > .edit-job ul.top li + li, .community-structure-panel-view .new-department ul.top li + li, #community-contracts nav ul li + li, .community-contracts-modal nav ul li + li, .community-tasks-modal nav ul li + li, .user-contracts-page nav ul li + li, .contracts-list-column header nav ul li + li {
       margin-left: -1px; }
 
-/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+/* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+.nav-tabs > li > a:hover {
+  color: #368aaf; }
+
+/* line 7, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
 header.tab-navigation {
   background: #f1f5f6;
   border-bottom: 1px solid #cccccc;
@@ -17803,16 +17807,16 @@ header.tab-navigation {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12); }
-  /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+  /* line 14, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
   header.tab-navigation > ul {
     width: auto;
     height: 54px;
     white-space: nowrap;
     margin-bottom: 0; }
-    /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+    /* line 19, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
     header.tab-navigation > ul > li {
       position: relative; }
-      /* line 15, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+      /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
       header.tab-navigation > ul > li, header.tab-navigation > ul > li a {
         zoom: 1;
         display: inline;
@@ -17821,7 +17825,7 @@ header.tab-navigation {
         *display: inline;
         vertical-align: top;
         height: 54px; }
-      /* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+      /* line 24, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
       header.tab-navigation > ul > li > a {
         min-width: 30px;
         text-align: center;
@@ -17832,18 +17836,18 @@ header.tab-navigation {
         font-size: 12px;
         text-decoration: none;
         border-right: 1px solid transparent; }
-        /* line 28, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+        /* line 34, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
         header.tab-navigation > ul > li > a i {
           position: relative;
           top: 1px;
           font-size: 13px; }
-          /* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+          /* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
           header.tab-navigation > ul > li > a i + span {
             margin-left: 5px; }
-        /* line 34, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+        /* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
         header.tab-navigation > ul > li > a:hover {
           background: #fafcfc; }
-        /* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+        /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
         header.tab-navigation > ul > li > a:active {
           background: #d8f7ea;
           background: #f7f7e9;
@@ -17851,15 +17855,15 @@ header.tab-navigation {
           -moz-transition: 0.5s background-color;
           -o-transition: 0.5s background-color;
           transition: 0.5s background-color; }
-      /* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+      /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
       header.tab-navigation > ul > li.right {
         float: right;
         margin: 0; }
-        /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+        /* line 49, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
         header.tab-navigation > ul > li.right > a {
           border-right: 0 !important;
           border-left: 1px solid #cccccc; }
-        /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+        /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
         header.tab-navigation > ul > li.right i {
           zoom: 1;
           display: inline;
@@ -17870,24 +17874,24 @@ header.tab-navigation {
           font-size: 19px;
           line-height: 26px;
           padding-bottom: 3px; }
-      /* line 51, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+      /* line 57, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
       header.tab-navigation > ul > li ~ li {
         margin-left: -1px; }
-        /* line 53, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+        /* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
         header.tab-navigation > ul > li ~ li a {
           border-left: 1px solid #cccccc; }
-      /* line 56, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+      /* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
       header.tab-navigation > ul > li:hover > a {
         background: #fafcfc;
         border-right: 1px solid #cccccc; }
-      /* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+      /* line 65, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
       header.tab-navigation > ul > li.active {
         background: white; }
-        /* line 61, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+        /* line 67, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
         header.tab-navigation > ul > li.active > a {
           border-right: 1px solid #cccccc; }
 
-/* line 64, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+/* line 70, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
 header.tab-navigation > .column-controller, .view-column .object-details .column-controller {
   overflow: hidden;
   position: absolute;
@@ -17896,10 +17900,10 @@ header.tab-navigation > .column-controller, .view-column .object-details .column
   width: 53px;
   height: 54px;
   border-left: 1px solid #cccccc; }
-  /* line 71, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+  /* line 77, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
   header.tab-navigation > .column-controller.one-row, .view-column .object-details .column-controller.one-row {
     height: 27px; }
-  /* line 74, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+  /* line 80, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
   header.tab-navigation > .column-controller > a, .view-column .object-details .column-controller > a {
     display: block;
     float: left;
@@ -17907,66 +17911,66 @@ header.tab-navigation > .column-controller, .view-column .object-details .column
     line-height: 26px;
     text-align: center;
     color: #666666; }
-    /* line 81, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+    /* line 87, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
     header.tab-navigation > .column-controller > a > i, .view-column .object-details .column-controller > a > i {
       line-height: 28px !important; }
-    /* line 83, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+    /* line 89, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
     header.tab-navigation > .column-controller > a:hover, .view-column .object-details .column-controller > a:hover {
       color: #358bac;
       text-decoration: none; }
-  /* line 86, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+  /* line 92, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
   header.tab-navigation > .column-controller .u-turn-right, .view-column .object-details .column-controller .u-turn-right {
     width: 100%;
     padding-top: 1px;
     height: 27px;
     line-height: 27px; }
-  /* line 91, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+  /* line 97, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
   header.tab-navigation > .column-controller .enlarge, .view-column .object-details .column-controller .enlarge {
     width: 26px;
     border-right: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc; }
-  /* line 95, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+  /* line 101, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
   header.tab-navigation > .column-controller .close-panel, .view-column .object-details .column-controller .close-panel {
     width: 26px;
     background: #b4c7cb;
     border-bottom: 1px solid #b4c7cb; }
-  /* line 99, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+  /* line 105, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
   header.tab-navigation > .column-controller .printer, .view-column .object-details .column-controller .printer {
     width: 26px;
     height: 27px;
     line-height: 27px;
     border-right: 1px solid #cccccc; }
-    /* line 104, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+    /* line 110, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
     header.tab-navigation > .column-controller .printer > i, .view-column .object-details .column-controller .printer > i {
       line-height: 30px !important; }
-  /* line 106, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+  /* line 112, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
   header.tab-navigation > .column-controller .edit, .view-column .object-details .column-controller .edit {
     width: 26px;
     height: 27px;
     line-height: 27px; }
 
-/* line 111, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+/* line 117, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
 .view-column .object-details .column-controller {
   border-bottom: 1px solid #cccccc; }
-  /* line 113, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+  /* line 119, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
   .view-column .object-details .column-controller.one-row {
     border-bottom: 0; }
 
-/* line 117, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+/* line 123, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
 .tab-buttons {
   padding-top: 0;
   padding-bottom: 0; }
-  /* line 120, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+  /* line 126, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
   .tab-buttons > li {
     position: relative; }
-    /* line 123, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+    /* line 129, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
     .tab-buttons > li:first-child:before {
       display: none; }
-    /* line 125, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+    /* line 131, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
     .tab-buttons > li:first-child.active a {
       border-left: 0;
       padding-left: 16px; }
-    /* line 128, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+    /* line 134, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
     .tab-buttons > li:before {
       content: '';
       position: absolute;
@@ -17976,13 +17980,13 @@ header.tab-navigation > .column-controller, .view-column .object-details .column
       width: 1px;
       background-color: #e8e8e8; }
 
-/* line 138, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+/* line 144, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
 .tab-panels {
   background-color: #fff;
   padding-left: 40px;
   padding-right: 40px; }
 
-/* line 143, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
+/* line 149, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/tabnav */
 .tab-content-wide {
   margin-left: -40px;
   margin-right: -40px;
