@@ -24252,7 +24252,7 @@ section.project-view-column > .column-content > .object-details > ul.actions {
 /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
 .project-show-tabs {
   margin-top: 1.5em;
-  margin-bottom: 0; }
+  margin-bottom: 1em; }
   /* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
   .project-show-tabs .nav.nav-tabs > li > a {
     font-size: 1.1em; }
