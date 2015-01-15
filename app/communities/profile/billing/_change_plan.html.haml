@@ -1,9 +1,22 @@
 .panel.panel-default
   .panel-heading
-    %h3.panel-title
-      %a{href: '#'} Биллинг
-      = " / "
-      Планы
+    .pull-left
+      %h3.panel-title
+        %a{href: '#'} Биллинг
+        = " / "
+        Планы
+    .pull-right
+      Срок:
+      .btn-group
+        %button.btn.btn-outline-gray.panel-heading-btn.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :type => "button"}
+          Месяц
+          %span.caret
+        %ul.dropdown-menu{:role => "menu"}
+          %li
+            %a{:href => "#"} Полгода
+          %li
+            %a{:href => "#"} Год
+    .clearfix
   .panel-body
     %table.table
       - plans_table_headers = "План, Стоимость, Количество проектов".split(', ')
@@ -43,4 +56,10 @@
           %td
           %td
             %a.btn.btn-block.btn-outline-gray{href: '#', role: 'plan-select-btn', data: {upgrade: :true}} Повысить
-
+    %hr
+    %p
+      При оплате на полгода скидка составляет 10%
+      %br
+      При оплате на год скидка составляет 15%
+      %br
+      Детальную информацию по планам вы можете прочитать здесь
