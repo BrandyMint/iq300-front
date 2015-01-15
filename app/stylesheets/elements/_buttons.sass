@@ -1,3 +1,35 @@
+.btn-file
+  position: relative
+  overflow: hidden
+  input[type="file"]
+    opacity: 0
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 0
+    font-size: 300%
+
+.btn-link-plain
+  @extend .btn-link
+  &, &:hover, &:focus
+    text-decoration: none
+
+@each $color in "white" #fff, "gray-lighter" $gray-lighter, "gray-light" $gray-light, "gray" $gray, "success" $brand-success, "danger" $brand-danger, "warning" $brand-warning, "primary" $brand-primary
+  .btn-link-#{nth($color, 1)}
+    @extend .btn-link
+    color: nth($color, 2)
+    &:hover
+      color: darken(nth($color, 2), 10%)
+
+@each $color in "gray-light" $gray-light, "gray" $gray, "danger" $brand-danger
+  .btn-outline-#{nth($color, 1)}
+    @extend .btn-default
+    color: nth($color, 2)
+    border-color: lighten(nth($color, 2), 30%)
+    &:hover, &:hover
+      color: darken(nth($color, 2), 10%)
+      border-color: lighten(nth($color, 2), 20%)
+
 .community-invites-btn-base
   @extend .btn
   width: 20%
@@ -24,29 +56,4 @@
   margin-right: 4em
   float: right
 
-.btn-file
-  position: relative
-  overflow: hidden
-  input[type="file"]
-    opacity: 0
-    position: absolute
-    top: 0
-    right: 0
-    z-index: 0
-    font-size: 300%
 
-@each $color in "white" #fff, "gray-lighter" $gray-lighter, "gray-light" $gray-light, "gray" $gray, "success" $brand-success, "danger" $brand-danger, "warning" $brand-warning, "primary" $brand-primary
-  .btn-link-#{nth($color, 1)}
-    @extend .btn-link
-    color: nth($color, 2)
-    &:hover
-      color: darken(nth($color, 2), 10%)
-
-@each $color in "gray-light" $gray-light, "gray" $gray, "danger" $brand-danger
-  .btn-outline-#{nth($color, 1)}
-    @extend .btn-default
-    color: nth($color, 2)
-    border-color: lighten(nth($color, 2), 30%)
-    &:hover, &:hover
-      color: darken(nth($color, 2), 10%)
-      border-color: lighten(nth($color, 2), 20%)

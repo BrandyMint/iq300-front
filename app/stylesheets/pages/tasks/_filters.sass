@@ -1,0 +1,15 @@
+.tasks-list-filters-block-content
+  @extend .navbar-form
+
+.tasks-list-filters-block-section
+  border-left: 1px solid darken($line-color, 10%)
+  &:first-child
+    border-left: none
+
+.tasks-list-filters-block-select
+  @extend .form-control
+  display: block
+  &,
+  .tasks-list-filters-block-content &
+    display: block
+    width: 100%

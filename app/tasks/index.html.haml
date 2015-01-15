@@ -18,44 +18,7 @@ body_class: tasks-index
           %a.btn.btn-default{href: "/tasks/new"}
             %span.fa.fa-plus-circle
             Добавить задачу
-      .form-group
-        .form-field
-          .form-group
-            .row
-              .col-md-3
-                %select#status.form-control{"data-param" => "by_status", name: "status", role: "simple-filter"}
-                  %option{selected: "selected", value: ""} Все статусы
-                  %option{disabled: "disabled", value: "new"} Новые
-                  %option{disabled: "disabled", value: "browsed"} Просмотренные
-                  %option{value: "in_work"} В работе - 2
-                  %option{disabled: "disabled", value: "refused"} Отказанные
-                  %option{disabled: "disabled", value: "completed"} Ждут подтверждения
-                  %option{disabled: "disabled", value: "accepted"} Выполненные
-                  %option{disabled: "disabled", value: "declined"} Не принятые
-                  %option{disabled: "disabled", value: "canceled"} Отмененные
-              .col-md-3
-                %select#community_id.form-control{"data-param" => "by_community", name: "community_id", role: "simple-filter"}
-                  %option{selected: "selected", value: ""} Все сообщества
-                  %option{value: "290"} Личные задачи - 2
-          .form-group.form-group-sm
-            .row
-              .col-md-3
-                .input-group.input-group-sm
-                  %span.text-muted.control-label Группировать:
-                  %select#group_by.form-control{"data-param" => "group_by", name: "group_by", role: "grouper"}
-                    %option{selected: "selected", value: ""} Без группировки
-                    %option{value: "favorite"} По важности
-                    %option{value: "deadline"} По дедлайну
-                    %option{value: "projects_u"} По проектам
-              .col-md-3.pull-right{role: "tasks-sorted-panel"}
-                %span.text-muted.control-label Сортировать:
-                .input-group-above.input-group-sm{role: "sorter"}
-                  %select#sort.form-control{"data-param" => "sort", name: "sort", role: "sorter-value"}
-                    %option{value: "id"} По номеру
-                    %option{value: "updated_at"} По последней активности
-                    %option{value: "end_date"} По дедлайну
-                  .input-group-addon.btn{"data-direction" => "desc", role: "sorter-direction"}
-                    %a.fa.fa-sort-amount-desc{href: "#"}
+    = partial 'tasks/list/filters'
     .form-group{"data-url" => "/tasks", role: "tasks-list", "test-tasks-list" => ""}
       .form-group{group: "all_tasks", role: "grouped-tasks"}
         = partial 'tasks/list'

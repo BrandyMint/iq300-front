@@ -2976,27 +2976,27 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     background-color: #fff; }
 
 /* line 93, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
-.btn-link, .btn-link-white, .btn-link-gray-lighter, .btn-link-gray-light, .btn-link-gray, .btn-link-success, .btn-link-danger, .btn-link-warning, .btn-link-primary {
+.btn-link, .btn-link-plain, .btn-link-white, .btn-link-gray-lighter, .btn-link-gray-light, .btn-link-gray, .btn-link-success, .btn-link-danger, .btn-link-warning, .btn-link-primary {
   color: black;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0; }
   /* line 102, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
-  .btn-link, .btn-link-white, .btn-link-gray-lighter, .btn-link-gray-light, .btn-link-gray, .btn-link-success, .btn-link-danger, .btn-link-warning, .btn-link-primary, .btn-link:active, .btn-link-white:active, .btn-link-gray-lighter:active, .btn-link-gray-light:active, .btn-link-gray:active, .btn-link-success:active, .btn-link-danger:active, .btn-link-warning:active, .btn-link-primary:active, .btn-link[disabled], [disabled].btn-link-white, [disabled].btn-link-gray-lighter, [disabled].btn-link-gray-light, [disabled].btn-link-gray, [disabled].btn-link-success, [disabled].btn-link-danger, [disabled].btn-link-warning, [disabled].btn-link-primary, fieldset[disabled] .btn-link, fieldset[disabled] .btn-link-white, fieldset[disabled] .btn-link-gray-lighter, fieldset[disabled] .btn-link-gray-light, fieldset[disabled] .btn-link-gray, fieldset[disabled] .btn-link-success, fieldset[disabled] .btn-link-danger, fieldset[disabled] .btn-link-warning, fieldset[disabled] .btn-link-primary {
+  .btn-link, .btn-link-plain, .btn-link-white, .btn-link-gray-lighter, .btn-link-gray-light, .btn-link-gray, .btn-link-success, .btn-link-danger, .btn-link-warning, .btn-link-primary, .btn-link:active, .btn-link-plain:active, .btn-link-white:active, .btn-link-gray-lighter:active, .btn-link-gray-light:active, .btn-link-gray:active, .btn-link-success:active, .btn-link-danger:active, .btn-link-warning:active, .btn-link-primary:active, .btn-link[disabled], [disabled].btn-link-plain, [disabled].btn-link-white, [disabled].btn-link-gray-lighter, [disabled].btn-link-gray-light, [disabled].btn-link-gray, [disabled].btn-link-success, [disabled].btn-link-danger, [disabled].btn-link-warning, [disabled].btn-link-primary, fieldset[disabled] .btn-link, fieldset[disabled] .btn-link-plain, fieldset[disabled] .btn-link-white, fieldset[disabled] .btn-link-gray-lighter, fieldset[disabled] .btn-link-gray-light, fieldset[disabled] .btn-link-gray, fieldset[disabled] .btn-link-success, fieldset[disabled] .btn-link-danger, fieldset[disabled] .btn-link-warning, fieldset[disabled] .btn-link-primary {
     background-color: transparent;
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none; }
   /* line 109, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
-  .btn-link, .btn-link-white, .btn-link-gray-lighter, .btn-link-gray-light, .btn-link-gray, .btn-link-success, .btn-link-danger, .btn-link-warning, .btn-link-primary, .btn-link:hover, .btn-link-white:hover, .btn-link-gray-lighter:hover, .btn-link-gray-light:hover, .btn-link-gray:hover, .btn-link-success:hover, .btn-link-danger:hover, .btn-link-warning:hover, .btn-link-primary:hover, .btn-link:focus, .btn-link-white:focus, .btn-link-gray-lighter:focus, .btn-link-gray-light:focus, .btn-link-gray:focus, .btn-link-success:focus, .btn-link-danger:focus, .btn-link-warning:focus, .btn-link-primary:focus, .btn-link:active, .btn-link-white:active, .btn-link-gray-lighter:active, .btn-link-gray-light:active, .btn-link-gray:active, .btn-link-success:active, .btn-link-danger:active, .btn-link-warning:active, .btn-link-primary:active {
+  .btn-link, .btn-link-plain, .btn-link-white, .btn-link-gray-lighter, .btn-link-gray-light, .btn-link-gray, .btn-link-success, .btn-link-danger, .btn-link-warning, .btn-link-primary, .btn-link:hover, .btn-link-plain:hover, .btn-link-white:hover, .btn-link-gray-lighter:hover, .btn-link-gray-light:hover, .btn-link-gray:hover, .btn-link-success:hover, .btn-link-danger:hover, .btn-link-warning:hover, .btn-link-primary:hover, .btn-link:focus, .btn-link-plain:focus, .btn-link-white:focus, .btn-link-gray-lighter:focus, .btn-link-gray-light:focus, .btn-link-gray:focus, .btn-link-success:focus, .btn-link-danger:focus, .btn-link-warning:focus, .btn-link-primary:focus, .btn-link:active, .btn-link-plain:active, .btn-link-white:active, .btn-link-gray-lighter:active, .btn-link-gray-light:active, .btn-link-gray:active, .btn-link-success:active, .btn-link-danger:active, .btn-link-warning:active, .btn-link-primary:active {
     border-color: transparent; }
   /* line 113, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
-  .btn-link:hover, .btn-link-white:hover, .btn-link-gray-lighter:hover, .btn-link-gray-light:hover, .btn-link-gray:hover, .btn-link-success:hover, .btn-link-danger:hover, .btn-link-warning:hover, .btn-link-primary:hover, .btn-link:focus, .btn-link-white:focus, .btn-link-gray-lighter:focus, .btn-link-gray-light:focus, .btn-link-gray:focus, .btn-link-success:focus, .btn-link-danger:focus, .btn-link-warning:focus, .btn-link-primary:focus {
+  .btn-link:hover, .btn-link-plain:hover, .btn-link-white:hover, .btn-link-gray-lighter:hover, .btn-link-gray-light:hover, .btn-link-gray:hover, .btn-link-success:hover, .btn-link-danger:hover, .btn-link-warning:hover, .btn-link-primary:hover, .btn-link:focus, .btn-link-plain:focus, .btn-link-white:focus, .btn-link-gray-lighter:focus, .btn-link-gray-light:focus, .btn-link-gray:focus, .btn-link-success:focus, .btn-link-danger:focus, .btn-link-warning:focus, .btn-link-primary:focus {
     color: #225c73;
     text-decoration: underline;
     background-color: transparent; }
   /* line 121, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
-  .btn-link[disabled]:hover, [disabled].btn-link-white:hover, [disabled].btn-link-gray-lighter:hover, [disabled].btn-link-gray-light:hover, [disabled].btn-link-gray:hover, [disabled].btn-link-success:hover, [disabled].btn-link-danger:hover, [disabled].btn-link-warning:hover, [disabled].btn-link-primary:hover, .btn-link[disabled]:focus, [disabled].btn-link-white:focus, [disabled].btn-link-gray-lighter:focus, [disabled].btn-link-gray-light:focus, [disabled].btn-link-gray:focus, [disabled].btn-link-success:focus, [disabled].btn-link-danger:focus, [disabled].btn-link-warning:focus, [disabled].btn-link-primary:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link-white:hover, fieldset[disabled] .btn-link-gray-lighter:hover, fieldset[disabled] .btn-link-gray-light:hover, fieldset[disabled] .btn-link-gray:hover, fieldset[disabled] .btn-link-success:hover, fieldset[disabled] .btn-link-danger:hover, fieldset[disabled] .btn-link-warning:hover, fieldset[disabled] .btn-link-primary:hover, fieldset[disabled] .btn-link:focus, fieldset[disabled] .btn-link-white:focus, fieldset[disabled] .btn-link-gray-lighter:focus, fieldset[disabled] .btn-link-gray-light:focus, fieldset[disabled] .btn-link-gray:focus, fieldset[disabled] .btn-link-success:focus, fieldset[disabled] .btn-link-danger:focus, fieldset[disabled] .btn-link-warning:focus, fieldset[disabled] .btn-link-primary:focus {
+  .btn-link[disabled]:hover, [disabled].btn-link-plain:hover, [disabled].btn-link-white:hover, [disabled].btn-link-gray-lighter:hover, [disabled].btn-link-gray-light:hover, [disabled].btn-link-gray:hover, [disabled].btn-link-success:hover, [disabled].btn-link-danger:hover, [disabled].btn-link-warning:hover, [disabled].btn-link-primary:hover, .btn-link[disabled]:focus, [disabled].btn-link-plain:focus, [disabled].btn-link-white:focus, [disabled].btn-link-gray-lighter:focus, [disabled].btn-link-gray-light:focus, [disabled].btn-link-gray:focus, [disabled].btn-link-success:focus, [disabled].btn-link-danger:focus, [disabled].btn-link-warning:focus, [disabled].btn-link-primary:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link-plain:hover, fieldset[disabled] .btn-link-white:hover, fieldset[disabled] .btn-link-gray-lighter:hover, fieldset[disabled] .btn-link-gray-light:hover, fieldset[disabled] .btn-link-gray:hover, fieldset[disabled] .btn-link-success:hover, fieldset[disabled] .btn-link-danger:hover, fieldset[disabled] .btn-link-warning:hover, fieldset[disabled] .btn-link-primary:hover, fieldset[disabled] .btn-link:focus, fieldset[disabled] .btn-link-plain:focus, fieldset[disabled] .btn-link-white:focus, fieldset[disabled] .btn-link-gray-lighter:focus, fieldset[disabled] .btn-link-gray-light:focus, fieldset[disabled] .btn-link-gray:focus, fieldset[disabled] .btn-link-success:focus, fieldset[disabled] .btn-link-danger:focus, fieldset[disabled] .btn-link-warning:focus, fieldset[disabled] .btn-link-primary:focus {
     color: #999999;
     text-decoration: none; }
 
@@ -3321,7 +3321,7 @@ tbody.collapse.in {
   -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
   /* line 123, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/button-groups */
-  .btn-group.open .dropdown-toggle.btn-link, .btn-group.open .dropdown-toggle.btn-link-white, .btn-group.open .dropdown-toggle.btn-link-gray-lighter, .btn-group.open .dropdown-toggle.btn-link-gray-light, .btn-group.open .dropdown-toggle.btn-link-gray, .btn-group.open .dropdown-toggle.btn-link-success, .btn-group.open .dropdown-toggle.btn-link-danger, .btn-group.open .dropdown-toggle.btn-link-warning, .btn-group.open .dropdown-toggle.btn-link-primary {
+  .btn-group.open .dropdown-toggle.btn-link, .btn-group.open .dropdown-toggle.btn-link-plain, .btn-group.open .dropdown-toggle.btn-link-white, .btn-group.open .dropdown-toggle.btn-link-gray-lighter, .btn-group.open .dropdown-toggle.btn-link-gray-light, .btn-group.open .dropdown-toggle.btn-link-gray, .btn-group.open .dropdown-toggle.btn-link-success, .btn-group.open .dropdown-toggle.btn-link-danger, .btn-group.open .dropdown-toggle.btn-link-warning, .btn-group.open .dropdown-toggle.btn-link-primary {
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none; }
@@ -4059,13 +4059,13 @@ tbody.collapse.in {
     .navbar-default .navbar-link:hover {
       color: #333; }
   /* line 509, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-  .navbar-default .btn-link, .navbar-default .btn-link-white, .navbar-default .btn-link-gray-lighter, .navbar-default .btn-link-gray-light, .navbar-default .btn-link-gray, .navbar-default .btn-link-success, .navbar-default .btn-link-danger, .navbar-default .btn-link-warning, .navbar-default .btn-link-primary {
+  .navbar-default .btn-link, .navbar-default .btn-link-plain, .navbar-default .btn-link-white, .navbar-default .btn-link-gray-lighter, .navbar-default .btn-link-gray-light, .navbar-default .btn-link-gray, .navbar-default .btn-link-success, .navbar-default .btn-link-danger, .navbar-default .btn-link-warning, .navbar-default .btn-link-primary {
     color: #777; }
     /* line 512, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-default .btn-link:hover, .navbar-default .btn-link-white:hover, .navbar-default .btn-link-gray-lighter:hover, .navbar-default .btn-link-gray-light:hover, .navbar-default .btn-link-gray:hover, .navbar-default .btn-link-success:hover, .navbar-default .btn-link-danger:hover, .navbar-default .btn-link-warning:hover, .navbar-default .btn-link-primary:hover, .navbar-default .btn-link:focus, .navbar-default .btn-link-white:focus, .navbar-default .btn-link-gray-lighter:focus, .navbar-default .btn-link-gray-light:focus, .navbar-default .btn-link-gray:focus, .navbar-default .btn-link-success:focus, .navbar-default .btn-link-danger:focus, .navbar-default .btn-link-warning:focus, .navbar-default .btn-link-primary:focus {
+    .navbar-default .btn-link:hover, .navbar-default .btn-link-plain:hover, .navbar-default .btn-link-white:hover, .navbar-default .btn-link-gray-lighter:hover, .navbar-default .btn-link-gray-light:hover, .navbar-default .btn-link-gray:hover, .navbar-default .btn-link-success:hover, .navbar-default .btn-link-danger:hover, .navbar-default .btn-link-warning:hover, .navbar-default .btn-link-primary:hover, .navbar-default .btn-link:focus, .navbar-default .btn-link-plain:focus, .navbar-default .btn-link-white:focus, .navbar-default .btn-link-gray-lighter:focus, .navbar-default .btn-link-gray-light:focus, .navbar-default .btn-link-gray:focus, .navbar-default .btn-link-success:focus, .navbar-default .btn-link-danger:focus, .navbar-default .btn-link-warning:focus, .navbar-default .btn-link-primary:focus {
       color: #333; }
     /* line 518, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-default .btn-link[disabled]:hover, .navbar-default [disabled].btn-link-white:hover, .navbar-default [disabled].btn-link-gray-lighter:hover, .navbar-default [disabled].btn-link-gray-light:hover, .navbar-default [disabled].btn-link-gray:hover, .navbar-default [disabled].btn-link-success:hover, .navbar-default [disabled].btn-link-danger:hover, .navbar-default [disabled].btn-link-warning:hover, .navbar-default [disabled].btn-link-primary:hover, .navbar-default .btn-link[disabled]:focus, .navbar-default [disabled].btn-link-white:focus, .navbar-default [disabled].btn-link-gray-lighter:focus, .navbar-default [disabled].btn-link-gray-light:focus, .navbar-default [disabled].btn-link-gray:focus, .navbar-default [disabled].btn-link-success:focus, .navbar-default [disabled].btn-link-danger:focus, .navbar-default [disabled].btn-link-warning:focus, .navbar-default [disabled].btn-link-primary:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link-white:hover, fieldset[disabled] .navbar-default .btn-link-gray-lighter:hover, fieldset[disabled] .navbar-default .btn-link-gray-light:hover, fieldset[disabled] .navbar-default .btn-link-gray:hover, fieldset[disabled] .navbar-default .btn-link-success:hover, fieldset[disabled] .navbar-default .btn-link-danger:hover, fieldset[disabled] .navbar-default .btn-link-warning:hover, fieldset[disabled] .navbar-default .btn-link-primary:hover, fieldset[disabled] .navbar-default .btn-link:focus, fieldset[disabled] .navbar-default .btn-link-white:focus, fieldset[disabled] .navbar-default .btn-link-gray-lighter:focus, fieldset[disabled] .navbar-default .btn-link-gray-light:focus, fieldset[disabled] .navbar-default .btn-link-gray:focus, fieldset[disabled] .navbar-default .btn-link-success:focus, fieldset[disabled] .navbar-default .btn-link-danger:focus, fieldset[disabled] .navbar-default .btn-link-warning:focus, fieldset[disabled] .navbar-default .btn-link-primary:focus {
+    .navbar-default .btn-link[disabled]:hover, .navbar-default [disabled].btn-link-plain:hover, .navbar-default [disabled].btn-link-white:hover, .navbar-default [disabled].btn-link-gray-lighter:hover, .navbar-default [disabled].btn-link-gray-light:hover, .navbar-default [disabled].btn-link-gray:hover, .navbar-default [disabled].btn-link-success:hover, .navbar-default [disabled].btn-link-danger:hover, .navbar-default [disabled].btn-link-warning:hover, .navbar-default [disabled].btn-link-primary:hover, .navbar-default .btn-link[disabled]:focus, .navbar-default [disabled].btn-link-plain:focus, .navbar-default [disabled].btn-link-white:focus, .navbar-default [disabled].btn-link-gray-lighter:focus, .navbar-default [disabled].btn-link-gray-light:focus, .navbar-default [disabled].btn-link-gray:focus, .navbar-default [disabled].btn-link-success:focus, .navbar-default [disabled].btn-link-danger:focus, .navbar-default [disabled].btn-link-warning:focus, .navbar-default [disabled].btn-link-primary:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link-plain:hover, fieldset[disabled] .navbar-default .btn-link-white:hover, fieldset[disabled] .navbar-default .btn-link-gray-lighter:hover, fieldset[disabled] .navbar-default .btn-link-gray-light:hover, fieldset[disabled] .navbar-default .btn-link-gray:hover, fieldset[disabled] .navbar-default .btn-link-success:hover, fieldset[disabled] .navbar-default .btn-link-danger:hover, fieldset[disabled] .navbar-default .btn-link-warning:hover, fieldset[disabled] .navbar-default .btn-link-primary:hover, fieldset[disabled] .navbar-default .btn-link:focus, fieldset[disabled] .navbar-default .btn-link-plain:focus, fieldset[disabled] .navbar-default .btn-link-white:focus, fieldset[disabled] .navbar-default .btn-link-gray-lighter:focus, fieldset[disabled] .navbar-default .btn-link-gray-light:focus, fieldset[disabled] .navbar-default .btn-link-gray:focus, fieldset[disabled] .navbar-default .btn-link-success:focus, fieldset[disabled] .navbar-default .btn-link-danger:focus, fieldset[disabled] .navbar-default .btn-link-warning:focus, fieldset[disabled] .navbar-default .btn-link-primary:focus {
       color: #ccc; }
 
 /* line 527, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
@@ -4143,13 +4143,13 @@ tbody.collapse.in {
     .navbar-inverse .navbar-link:hover {
       color: #fff; }
   /* line 644, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-  .navbar-inverse .btn-link, .navbar-inverse .btn-link-white, .navbar-inverse .btn-link-gray-lighter, .navbar-inverse .btn-link-gray-light, .navbar-inverse .btn-link-gray, .navbar-inverse .btn-link-success, .navbar-inverse .btn-link-danger, .navbar-inverse .btn-link-warning, .navbar-inverse .btn-link-primary {
+  .navbar-inverse .btn-link, .navbar-inverse .btn-link-plain, .navbar-inverse .btn-link-white, .navbar-inverse .btn-link-gray-lighter, .navbar-inverse .btn-link-gray-light, .navbar-inverse .btn-link-gray, .navbar-inverse .btn-link-success, .navbar-inverse .btn-link-danger, .navbar-inverse .btn-link-warning, .navbar-inverse .btn-link-primary {
     color: #999999; }
     /* line 647, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link-white:hover, .navbar-inverse .btn-link-gray-lighter:hover, .navbar-inverse .btn-link-gray-light:hover, .navbar-inverse .btn-link-gray:hover, .navbar-inverse .btn-link-success:hover, .navbar-inverse .btn-link-danger:hover, .navbar-inverse .btn-link-warning:hover, .navbar-inverse .btn-link-primary:hover, .navbar-inverse .btn-link:focus, .navbar-inverse .btn-link-white:focus, .navbar-inverse .btn-link-gray-lighter:focus, .navbar-inverse .btn-link-gray-light:focus, .navbar-inverse .btn-link-gray:focus, .navbar-inverse .btn-link-success:focus, .navbar-inverse .btn-link-danger:focus, .navbar-inverse .btn-link-warning:focus, .navbar-inverse .btn-link-primary:focus {
+    .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link-plain:hover, .navbar-inverse .btn-link-white:hover, .navbar-inverse .btn-link-gray-lighter:hover, .navbar-inverse .btn-link-gray-light:hover, .navbar-inverse .btn-link-gray:hover, .navbar-inverse .btn-link-success:hover, .navbar-inverse .btn-link-danger:hover, .navbar-inverse .btn-link-warning:hover, .navbar-inverse .btn-link-primary:hover, .navbar-inverse .btn-link:focus, .navbar-inverse .btn-link-plain:focus, .navbar-inverse .btn-link-white:focus, .navbar-inverse .btn-link-gray-lighter:focus, .navbar-inverse .btn-link-gray-light:focus, .navbar-inverse .btn-link-gray:focus, .navbar-inverse .btn-link-success:focus, .navbar-inverse .btn-link-danger:focus, .navbar-inverse .btn-link-warning:focus, .navbar-inverse .btn-link-primary:focus {
       color: #fff; }
     /* line 653, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse [disabled].btn-link-white:hover, .navbar-inverse [disabled].btn-link-gray-lighter:hover, .navbar-inverse [disabled].btn-link-gray-light:hover, .navbar-inverse [disabled].btn-link-gray:hover, .navbar-inverse [disabled].btn-link-success:hover, .navbar-inverse [disabled].btn-link-danger:hover, .navbar-inverse [disabled].btn-link-warning:hover, .navbar-inverse [disabled].btn-link-primary:hover, .navbar-inverse .btn-link[disabled]:focus, .navbar-inverse [disabled].btn-link-white:focus, .navbar-inverse [disabled].btn-link-gray-lighter:focus, .navbar-inverse [disabled].btn-link-gray-light:focus, .navbar-inverse [disabled].btn-link-gray:focus, .navbar-inverse [disabled].btn-link-success:focus, .navbar-inverse [disabled].btn-link-danger:focus, .navbar-inverse [disabled].btn-link-warning:focus, .navbar-inverse [disabled].btn-link-primary:focus, fieldset[disabled] .navbar-inverse .btn-link:hover, fieldset[disabled] .navbar-inverse .btn-link-white:hover, fieldset[disabled] .navbar-inverse .btn-link-gray-lighter:hover, fieldset[disabled] .navbar-inverse .btn-link-gray-light:hover, fieldset[disabled] .navbar-inverse .btn-link-gray:hover, fieldset[disabled] .navbar-inverse .btn-link-success:hover, fieldset[disabled] .navbar-inverse .btn-link-danger:hover, fieldset[disabled] .navbar-inverse .btn-link-warning:hover, fieldset[disabled] .navbar-inverse .btn-link-primary:hover, fieldset[disabled] .navbar-inverse .btn-link:focus, fieldset[disabled] .navbar-inverse .btn-link-white:focus, fieldset[disabled] .navbar-inverse .btn-link-gray-lighter:focus, fieldset[disabled] .navbar-inverse .btn-link-gray-light:focus, fieldset[disabled] .navbar-inverse .btn-link-gray:focus, fieldset[disabled] .navbar-inverse .btn-link-success:focus, fieldset[disabled] .navbar-inverse .btn-link-danger:focus, fieldset[disabled] .navbar-inverse .btn-link-warning:focus, fieldset[disabled] .navbar-inverse .btn-link-primary:focus {
+    .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse [disabled].btn-link-plain:hover, .navbar-inverse [disabled].btn-link-white:hover, .navbar-inverse [disabled].btn-link-gray-lighter:hover, .navbar-inverse [disabled].btn-link-gray-light:hover, .navbar-inverse [disabled].btn-link-gray:hover, .navbar-inverse [disabled].btn-link-success:hover, .navbar-inverse [disabled].btn-link-danger:hover, .navbar-inverse [disabled].btn-link-warning:hover, .navbar-inverse [disabled].btn-link-primary:hover, .navbar-inverse .btn-link[disabled]:focus, .navbar-inverse [disabled].btn-link-plain:focus, .navbar-inverse [disabled].btn-link-white:focus, .navbar-inverse [disabled].btn-link-gray-lighter:focus, .navbar-inverse [disabled].btn-link-gray-light:focus, .navbar-inverse [disabled].btn-link-gray:focus, .navbar-inverse [disabled].btn-link-success:focus, .navbar-inverse [disabled].btn-link-danger:focus, .navbar-inverse [disabled].btn-link-warning:focus, .navbar-inverse [disabled].btn-link-primary:focus, fieldset[disabled] .navbar-inverse .btn-link:hover, fieldset[disabled] .navbar-inverse .btn-link-plain:hover, fieldset[disabled] .navbar-inverse .btn-link-white:hover, fieldset[disabled] .navbar-inverse .btn-link-gray-lighter:hover, fieldset[disabled] .navbar-inverse .btn-link-gray-light:hover, fieldset[disabled] .navbar-inverse .btn-link-gray:hover, fieldset[disabled] .navbar-inverse .btn-link-success:hover, fieldset[disabled] .navbar-inverse .btn-link-danger:hover, fieldset[disabled] .navbar-inverse .btn-link-warning:hover, fieldset[disabled] .navbar-inverse .btn-link-primary:hover, fieldset[disabled] .navbar-inverse .btn-link:focus, fieldset[disabled] .navbar-inverse .btn-link-plain:focus, fieldset[disabled] .navbar-inverse .btn-link-white:focus, fieldset[disabled] .navbar-inverse .btn-link-gray-lighter:focus, fieldset[disabled] .navbar-inverse .btn-link-gray-light:focus, fieldset[disabled] .navbar-inverse .btn-link-gray:focus, fieldset[disabled] .navbar-inverse .btn-link-success:focus, fieldset[disabled] .navbar-inverse .btn-link-danger:focus, fieldset[disabled] .navbar-inverse .btn-link-warning:focus, fieldset[disabled] .navbar-inverse .btn-link-primary:focus {
       color: #444; }
 
 /* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/breadcrumbs */
@@ -5940,6 +5940,106 @@ html > body > .ui-pnotify {
   margin: 0 auto; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-file {
+  position: relative;
+  overflow: hidden; }
+  /* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-file input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    font-size: 300%; }
+
+/* line 14, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-plain, .btn-link-plain:hover, .btn-link-plain:focus {
+  text-decoration: none; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-white {
+  color: #fff; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-white:hover {
+    color: #e6e6e6; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-gray-lighter {
+  color: #eeeeee; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-gray-lighter:hover {
+    color: #d5d5d5; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-gray-light {
+  color: #999999; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-gray-light:hover {
+    color: gray; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-gray {
+  color: #555555; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-gray:hover {
+    color: #3c3c3c; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-success {
+  color: #3ab54a; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-success:hover {
+    color: #2e8e3a; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-danger {
+  color: #ff0101; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-danger:hover {
+    color: #cd0000; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-warning {
+  color: #f8931f; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-warning:hover {
+    color: #dd7907; }
+
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-primary {
+  color: #338cae; }
+  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-primary:hover {
+    color: #276c87; }
+
+/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-outline-gray-light {
+  color: #999999;
+  border-color: #e6e6e6; }
+  /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-outline-gray-light:hover, .btn-outline-gray-light:hover {
+    color: gray;
+    border-color: #cccccc; }
+
+/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-outline-gray {
+  color: #555555;
+  border-color: #a2a2a2; }
+  /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-outline-gray:hover, .btn-outline-gray:hover {
+    color: #3c3c3c;
+    border-color: #888888; }
+
+/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-outline-danger {
+  color: #ff0101;
+  border-color: #ff9a9a; }
+  /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-outline-danger:hover, .btn-outline-danger:hover {
+    color: #cd0000;
+    border-color: #ff6767; }
+
+/* line 33, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-base, .community-invites-btn-check, .community-invites-btn-send {
   width: 20%;
   background-color: #3daddf;
@@ -5949,119 +6049,23 @@ html > body > .ui-pnotify {
   padding-left: 4em;
   padding-right: 4em;
   font-weight: normal; }
-  /* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .community-invites-btn-base:hover, .community-invites-btn-check:hover, .community-invites-btn-send:hover {
     color: white; }
-  /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 45, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .community-invites-btn-base:active, .community-invites-btn-check:active, .community-invites-btn-send:active {
     color: #fff !important; }
 
-/* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-check {
   margin-right: 4em;
   float: right; }
 
-/* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 53, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-send {
   margin-top: 1.8em;
   margin-right: 4em;
   float: right; }
-
-/* line 27, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-file {
-  position: relative;
-  overflow: hidden; }
-  /* line 30, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-file input[type="file"] {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-    font-size: 300%; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-white {
-  color: #fff; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-white:hover {
-    color: #e6e6e6; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-gray-lighter {
-  color: #eeeeee; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-gray-lighter:hover {
-    color: #d5d5d5; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-gray-light {
-  color: #999999; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-gray-light:hover {
-    color: gray; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-gray {
-  color: #555555; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-gray:hover {
-    color: #3c3c3c; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-success {
-  color: #3ab54a; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-success:hover {
-    color: #2e8e3a; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-danger {
-  color: #ff0101; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-danger:hover {
-    color: #cd0000; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-warning {
-  color: #f8931f; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-warning:hover {
-    color: #dd7907; }
-
-/* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-primary {
-  color: #338cae; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-primary:hover {
-    color: #276c87; }
-
-/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-outline-gray-light {
-  color: #999999;
-  border-color: #e6e6e6; }
-  /* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-outline-gray-light:hover, .btn-outline-gray-light:hover {
-    color: gray;
-    border-color: #cccccc; }
-
-/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-outline-gray {
-  color: #555555;
-  border-color: #a2a2a2; }
-  /* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-outline-gray:hover, .btn-outline-gray:hover {
-    color: #3c3c3c;
-    border-color: #888888; }
-
-/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-outline-danger {
-  color: #ff0101;
-  border-color: #ff9a9a; }
-  /* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-outline-danger:hover, .btn-outline-danger:hover {
-    color: #cd0000;
-    border-color: #ff6767; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/enter_registration/buttons */
 .one-big-btn, .registration-next-step, .registration-finish-step {

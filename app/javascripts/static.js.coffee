@@ -9,6 +9,7 @@
 #= require projects/discussions
 #= require projects/list
 #= require notifications/list
+#= require tasks/list
 
 $ ->
   $('@select2').select2()
