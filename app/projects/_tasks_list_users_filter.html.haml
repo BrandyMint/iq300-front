@@ -57,20 +57,18 @@
       .col-sm-12
         .navbar-form
           .row
-            .col-sm-3
-              .content-group
-                %input.form-control{type: 'text', placeholder: 'Добавить исполнителя'}
-              %a.btn.btn-sm.btn-default{href: '/projects/show/tasks'}
-                Все исполнители
-
-            .col-sm-9
-              - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов".split(', ')
-              - for i in 0..2
-                - filter_users.each do |user|
-                  %a.btn.btn-sm.btn-link-plain
-                    = user
-                    &nbsp;
-                    %i.fa.fa-times-circle.icon-size-16
+            .col-sm-8
+              %select{role: 'select2', :tabindex => "-1", style: "width: 100%;", multiple: ''}
+                - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов".split(', ')
+                - for i in 0..2
+                  - filter_users.each do |user|
+                    %option{selected: :selected}= user
+            .col-sm-4
+              .btn-group.pull-right
+                %a.btn.btn-outline-default{href: '/projects/show/tasks'}
+                  Все исполнители
+                %a.btn.btn-outline-default{href: '/projects/show/tasks'}
+                  Мои задачи
 
     .project-group-header-actions-fixed.hide{role: 'project-group-header-actions'}
       .navbar-form.navbar-left
