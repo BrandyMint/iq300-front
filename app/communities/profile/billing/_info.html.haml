@@ -7,9 +7,17 @@
       .col-md-2
         План
       .col-md-7
-        %p.text-paragraph-sm Стартап - использовано 2 проекта из 10
+        %p.text-paragraph-sm
+          - projects_used = rand(10) + 1
+          - progress_bar_width = (projects_used*100)/10
+          = "Стартап - использовано #{projects_used} проекта из 10"
         .progress
-          .progress-bar.progress-bar-success{style: "width: 20%"}
+          - progress_bar_class ||= 'progress-bar-success'
+          - if projects_used.between?(3,8)
+            - progress_bar_class = 'progress-bar-warning'
+          - elsif projects_used >= 8
+            - progress_bar_class = 'progress-bar-danger'
+          .progress-bar{style: "width: #{progress_bar_width}%", class: "#{progress_bar_class}"}
       .col-md-2.col-md-offset-1
         %a.btn.btn-block.btn-outline-gray{href: '#', role: 'change-plan-btn'} Сменить план
     .row.panel-body-section
