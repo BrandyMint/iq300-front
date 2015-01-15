@@ -10,6 +10,7 @@
 #= require projects/list
 #= require notifications/list
 #= require tasks/list
+#= require communities/billing
 
 $ ->
   $('@select2').select2()

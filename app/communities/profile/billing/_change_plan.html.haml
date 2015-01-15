@@ -1,0 +1,46 @@
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title
+      %a{href: '#'} Биллинг
+      = " / "
+      Планы
+  .panel-body
+    %table.table
+      - plans_table_headers = "План, Стоимость, Количество проектов".split(', ')
+      %thead
+        %tr
+          - plans_table_headers.each do |header|
+            %th
+              %strong= header
+          %th.col-md-2
+      %tbody
+        %tr
+          - "Старт, 0, 5".split(', ').each do |cell|
+            %td
+              = cell
+          %td
+            %a.btn.btn-block.btn-outline-gray{href: '#', role: 'plan-select-btn'} Понизить
+        %tr
+          - "Стартап, 1500 р./мес., 10".split(', ').each do |cell|
+            %td
+              = cell
+          %td
+            .text-center
+              %i.fa.fa-check.text-color-gray-light
+              &nbsp;
+              Ваш план
+        %tr
+          - "Компания, 2100 р./мес., 20".split(', ').each do |cell|
+            %td
+              = cell
+          %td
+            %a.btn.btn-block.btn-outline-gray{href: '#', role: 'plan-select-btn', data: {upgrade: :true}} Повысить
+        %tr
+          %td
+            Бизнес
+          %td
+            %a{href: ''} Свяжитесь с нами
+          %td
+          %td
+            %a.btn.btn-block.btn-outline-gray{href: '#', role: 'plan-select-btn', data: {upgrade: :true}} Повысить
+

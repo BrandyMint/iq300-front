@@ -1,0 +1,67 @@
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title
+      Биллинг
+  .panel-body
+    .row.panel-body-section
+      .col-md-2
+        План
+      .col-md-7
+        %p.text-paragraph-sm Стартап - использовано 2 проекта из 10
+        .progress
+          .progress-bar.progress-bar-success{style: "width: 20%"}
+      .col-md-2.col-md-offset-1
+        %a.btn.btn-block.btn-outline-gray{href: '#', role: 'change-plan-btn'} Сменить план
+    .row.panel-body-section
+      .col-md-2
+        Способ оплаты
+      .col-md-7
+        VISA 4*** **** **** 3672 Срок 2/2017
+        %br
+        Следующий платеж: 5/09/2015
+        %br
+        Размер: 1450.00 руб.
+      .col-md-2.col-md-offset-1
+        %a.btn.btn-block.btn-outline-gray{href: '#'} Оплатить
+    .row.panel-body-section
+      .col-md-2
+        Промо-код
+      .col-md-7
+        У вас нет активных промо-кодов
+      .col-md-2.col-md-offset-1
+        %a.btn.btn-block.btn-outline-gray{href: '#'} Ввести код
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title История платежей
+  .panel-body
+    %table.table
+      - billing_table_headers = "id, Дата, План, Способ оплаты, Счёт, Сумма, Статус".split(', ')
+      %thead
+        %tr
+          - billing_table_headers.each do |header|
+            %th
+              %strong= header
+      %tbody
+        - for i in 0..5
+          %tr
+            %td
+              = rand(9000) + 1
+            %td
+              05/09/2013
+            %td
+              Стартап
+            %td
+              VISA 4*** **** **** 3672
+            %td
+              %a{href: ''}
+                %i.fa.fa-arrow-circle-o-down.icon-size-20
+            %td
+              14 000.00 руб.
+            %td
+              - if rand(10)%2 == 0
+                .label.label-success
+                  успешно
+              - else
+                .label.label-danger
+                  не удалось
+

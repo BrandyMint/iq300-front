@@ -1,0 +1,12 @@
+.alert.alert-warning-light
+  %h4.content-group-sm
+    %strong Повысить план
+  .content-group
+    Ваш месячный платеж повысится с 1500 руб. до 2100 руб.
+    %br
+    с
+    = Time.now.strftime("%d/%m/%Y")
+    %br
+    Изменения наступят сразу после нажатия кнопки.
+  %a.btn.btn-warning{role: 'change-plan-confirm-btn'}
+    Поменять план
