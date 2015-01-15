@@ -16218,18 +16218,19 @@ a.task-box-block-link {
   padding-right: 4em;
   font-weight: normal; }
   /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
-  .community-invites-btn-base:hover, .community-invites-btn-check:hover, .community-invites-btn-send:hover {
-    color: white; }
-  /* line 45, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  .community-invites-btn-base:hover, .community-invites-btn-check:hover, .community-invites-btn-send:hover, .community-invites-btn-base:focus, .community-invites-btn-check:focus, .community-invites-btn-send:focus {
+    color: white;
+    background-color: #2194c8; }
+  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .community-invites-btn-base:active, .community-invites-btn-check:active, .community-invites-btn-send:active {
     color: #fff !important; }
 
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 49, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-check {
   margin-right: 4em;
   float: right; }
 
-/* line 53, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 54, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-send {
   margin-top: 1.8em;
   margin-right: 4em;
