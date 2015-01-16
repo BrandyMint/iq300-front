@@ -14155,6 +14155,64 @@ span.twitter-typeahead {
     .popover[class*="tour-"].orphan .arrow {
       display: none; }
 
+/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+.multiselect-container {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  /* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+  .multiselect-container .input-group {
+    margin: 5px; }
+  /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+  .multiselect-container > li {
+    padding: 0; }
+    /* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+    .multiselect-container > li > a.multiselect-all label {
+      font-weight: 700; }
+    /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+    .multiselect-container > li.multiselect-group label {
+      margin: 0;
+      padding: 3px 20px;
+      height: 100%;
+      font-weight: 700; }
+    /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+    .multiselect-container > li.multiselect-group-clickable label {
+      cursor: pointer; }
+    /* line 19, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+    .multiselect-container > li > a {
+      padding: 0; }
+      /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+      .multiselect-container > li > a > label {
+        margin: 0;
+        height: 100%;
+        cursor: pointer;
+        font-weight: 400;
+        padding: 3px 20px 3px 40px; }
+        /* line 27, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+        .multiselect-container > li > a > label.radio, .multiselect-container > li > a > label.checkbox {
+          margin: 0; }
+        /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+        .multiselect-container > li > a > label > input[type=checkbox] {
+          margin-bottom: 5px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+.filter .btn, .filter .community-invites-btn-base, .filter .community-invites-btn-check, .filter .community-invites-btn-send, .filter .project-form-team-member-btn, .filter .project-form-team-member-selected-btn, .filter .project-discussions-form-btn {
+  padding: 6px 3px; }
+
+/* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+.btn-group > .btn-group:nth-child(2) > .multiselect.btn, .btn-group > .btn-group:nth-child(2) > .multiselect.community-invites-btn-base, .btn-group > .btn-group:nth-child(2) > .multiselect.community-invites-btn-check, .btn-group > .btn-group:nth-child(2) > .multiselect.community-invites-btn-send, .btn-group > .btn-group:nth-child(2) > .multiselect.project-form-team-member-btn, .btn-group > .btn-group:nth-child(2) > .multiselect.project-form-team-member-selected-btn, .btn-group > .btn-group:nth-child(2) > .multiselect.project-discussions-form-btn {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+/* line 41, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+.form-inline .multiselect-container label.checkbox, .navbar-form .multiselect-container label.checkbox, .tasks-list-filters-block-content .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio, .navbar-form .multiselect-container label.radio, .tasks-list-filters-block-content .multiselect-container label.radio {
+  padding: 3px 20px 3px 40px; }
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox], .navbar-form .multiselect-container li a label.checkbox input[type=checkbox], .tasks-list-filters-block-content .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio], .navbar-form .multiselect-container li a label.radio input[type=radio], .tasks-list-filters-block-content .multiselect-container li a label.radio input[type=radio] {
+  margin-left: -20px;
+  margin-right: 0; }
+
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buble-counter */
 .filter-item-counter, .nav-global ul > li a .picture > sup, .filters-column .with-subfolders li .counter, section.conversations-list-column > ul > li > .sender sup, .unallocated-btn .btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn > span, .unallocated-btn .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base > span, .unallocated-btn .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check > span, .unallocated-btn .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send > span, .unallocated-btn .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn > span, .unallocated-btn .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn > span, .unallocated-btn .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn > span {
   zoom: 1;
@@ -16451,6 +16509,11 @@ a.task-box-block-link {
   /* line 20, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/user-status */
   .user-status-bullet.user-status-bullet-away {
     background-color: #f8931f; }
+
+/* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/multiselect */
+.multiselect-container.dropdown-menu > li > a, .multiselect-container.dropdown-menu > li.active > a {
+  background-color: transparent;
+  color: #606060; }
 
 /* line 5, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/background-variant */
 .bg-primary-light {
