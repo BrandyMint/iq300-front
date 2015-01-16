@@ -59,10 +59,11 @@
           .row
             .col-sm-8
               %select{role: 'select2', :tabindex => "-1", style: "width: 100%;", multiple: ''}
-                - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов".split(', ')
+                - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов, Ахмед Сарсенбайулов-Алтынбеков".split(', ')
                 - for i in 0..2
                   - filter_users.each do |user|
-                    %option{selected: :selected}= user
+                    %option{selected: :selected}
+                      = "#{user.split(' ')[0][0]}. #{truncate(user.split(' ')[1..-1].join(' '), length: 12)}"
             .col-sm-4
               .btn-group.pull-right
                 %a.btn.btn-outline-default{href: '/projects/show/tasks'}
