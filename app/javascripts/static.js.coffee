@@ -5,6 +5,7 @@
 #= require moment/moment
 #= require eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min
 #= require jquery-autosize/jquery.autosize.min
+#= require bootstrap-multiselect/dist/js/bootstrap-multiselect
 #= require projects/tasks
 #= require projects/new
 #= require projects/discussions
@@ -16,6 +17,37 @@
 
 $ ->
   $('@select2').select2()
+  multiselectUsers = $('@multiselect-users')
+  multiselectUsers.multiselect
+    maxHeight: 200
+    includeSelectAllOption: true
+    selectAllText: 'Все исполнители'
+    buttonText: (options, select) ->
+      if  multiselectUsers.find('option:selected').length is multiselectUsers.find('option').length
+        "<i class=\"fa fa-user\"></i> Все"
+        #else if options.length is 0
+        #"<i class=\"fa fa-user\"></i> Все"
+      else
+        "<i class=\"fa fa-user\"></i> " + options.length
+    buttonClass: (options, select) ->
+      if multiselectUsers.find('option:selected').length is multiselectUsers.find('option').length
+        "btn btn-default"
+      else
+        "btn btn-warning"
+
+      #else if options.length > 3
+      # "More than 3 options selected! "
+      #  '<> ' + options.length
+      #else
+      #  labels = []
+      #  options.each ->
+      #    if $(this).attr("label") isnt `undefined`
+      #      labels.push $(this).attr("label")
+      #    else
+      #      labels.push $(this).html()
+      #    return
+      #  labels.join(", ") + " "
+
   $('@datetimepicker').datetimepicker
     language: 'ru'
     icons:
