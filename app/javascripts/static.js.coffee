@@ -17,36 +17,34 @@
 
 $ ->
   $('@select2').select2()
+  $('@multiselect').multiselect()
+  multiselectTaskStates = $('@multiselect-task-states')
+  multiselectTaskStates.multiselect
+    includeSelectAllOption: true
+    selectAllText: 'Все задачи'
+    buttonText: (options, select) ->
+      if options.length is 0 || options.length is multiselectTaskStates.find('option').length
+        "Все задачи <b class=\"caret\"></b>"
+      else
+        labels = []
+        options.each ->
+          labels.push $(@).text()
+        labels.join(", ") + " "
+
   multiselectUsers = $('@multiselect-users')
   multiselectUsers.multiselect
     maxHeight: 200
     includeSelectAllOption: true
+    enableFiltering: true
+    enableCaseInsensitiveFiltering: true
     selectAllText: 'Все исполнители'
     buttonText: (options, select) ->
-      if  multiselectUsers.find('option:selected').length is multiselectUsers.find('option').length
-        "<i class=\"fa fa-user\"></i> Все"
+      if multiselectUsers.find('option:selected').length is 0 || multiselectUsers.find('option:selected').length is multiselectUsers.find('option').length
+        "<i class=\"fa fa-user\"></i> Все <b class=\"caret\"></b>"
         #else if options.length is 0
         #"<i class=\"fa fa-user\"></i> Все"
       else
-        "<i class=\"fa fa-user\"></i> " + options.length
-    buttonClass: (options, select) ->
-      if multiselectUsers.find('option:selected').length is multiselectUsers.find('option').length
-        "btn btn-default"
-      else
-        "btn btn-warning"
-
-      #else if options.length > 3
-      # "More than 3 options selected! "
-      #  '<> ' + options.length
-      #else
-      #  labels = []
-      #  options.each ->
-      #    if $(this).attr("label") isnt `undefined`
-      #      labels.push $(this).attr("label")
-      #    else
-      #      labels.push $(this).html()
-      #    return
-      #  labels.join(", ") + " "
+        "<i class=\"fa fa-user\"></i> " + options.length + " <b class=\"caret\"></b>"
 
   $('@datetimepicker').datetimepicker
     language: 'ru'
