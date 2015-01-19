@@ -7712,7 +7712,7 @@ body {
   font-style: normal; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/core */
-.fa {
+.fa, .multiselect-container.dropdown-menu .glyphicon {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -7784,10 +7784,10 @@ body {
   float: left; }
 
 /* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/bordered-pulled */
-.fa.pull-left {
+.fa.pull-left, .multiselect-container.dropdown-menu .pull-left.glyphicon {
   margin-right: 0.3em; }
 /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/bordered-pulled */
-.fa.pull-right, .fa.filter-item-counter {
+.fa.pull-right, .fa.filter-item-counter, .multiselect-container.dropdown-menu .filter-item-counter.glyphicon, .multiselect-container.dropdown-menu .pull-right.glyphicon {
   margin-left: 0.3em; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/spinning */
@@ -7919,7 +7919,7 @@ body {
   content: "\f001"; }
 
 /* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-search:before {
+.fa-search:before, .multiselect-container.dropdown-menu .glyphicon-search:before {
   content: "\f002"; }
 
 /* line 7, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -8239,7 +8239,7 @@ body {
   content: "\f056"; }
 
 /* line 86, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-times-circle:before {
+.fa-times-circle:before, .multiselect-container.dropdown-menu .glyphicon-remove-circle:before {
   content: "\f057"; }
 
 /* line 87, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -15892,7 +15892,7 @@ section.view-column {
   .page-title .bread-crumbs {
     margin-top: 8px; }
     /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/page-title */
-    .page-title .bread-crumbs .fa {
+    .page-title .bread-crumbs .fa, .page-title .bread-crumbs .multiselect-container.dropdown-menu .glyphicon, .multiselect-container.dropdown-menu .page-title .bread-crumbs .glyphicon {
       padding: 0 5px; }
     /* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/page-title */
     .page-title .bread-crumbs a {
@@ -16510,10 +16510,16 @@ a.task-box-block-link {
   .user-status-bullet.user-status-bullet-away {
     background-color: #f8931f; }
 
-/* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/multiselect */
+/* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/multiselect */
+.project-tasks-list-users-filter .multiselect-container.dropdown-menu {
+  min-width: 300px; }
+/* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/multiselect */
 .multiselect-container.dropdown-menu > li > a, .multiselect-container.dropdown-menu > li.active > a {
   background-color: transparent;
   color: #606060; }
+/* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/multiselect */
+.multiselect-container.dropdown-menu .filter .btn, .multiselect-container.dropdown-menu .filter .community-invites-btn-base, .multiselect-container.dropdown-menu .filter .community-invites-btn-check, .multiselect-container.dropdown-menu .filter .community-invites-btn-send, .multiselect-container.dropdown-menu .filter .project-form-team-member-btn, .multiselect-container.dropdown-menu .filter .project-form-team-member-selected-btn, .multiselect-container.dropdown-menu .filter .project-discussions-form-btn {
+  padding: 5px 12px; }
 
 /* line 5, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/background-variant */
 .bg-primary-light {
