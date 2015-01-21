@@ -24,7 +24,7 @@ $ ->
     selectAllText: 'Все задачи'
     buttonText: (options, select) ->
       if options.length is 0 || options.length is multiselectTaskStates.find('option').length
-        "Все задачи <b class=\"caret\"></b>"
+        "<i class=\"fa fa-list\"></i>&nbsp; Все задачи <b class=\"caret\"></b>"
       else
         labels = []
         options.each ->
@@ -40,11 +40,11 @@ $ ->
     selectAllText: 'Все исполнители'
     buttonText: (options, select) ->
       if multiselectUsers.find('option:selected').length is 0 || multiselectUsers.find('option:selected').length is multiselectUsers.find('option').length
-        "<i class=\"fa fa-user\"></i> Все <b class=\"caret\"></b>"
+        "<i class=\"fa fa-user\"></i>&nbsp; Все исполнители <b class=\"caret\"></b>"
         #else if options.length is 0
         #"<i class=\"fa fa-user\"></i> Все"
       else
-        "<i class=\"fa fa-user\"></i> " + options.length + " <b class=\"caret\"></b>"
+        "<i class=\"fa fa-user\"></i>&nbsp; Исполнители: " + options.length + " <b class=\"caret\"></b>"
 
   $('@datetimepicker').datetimepicker
     language: 'ru'
