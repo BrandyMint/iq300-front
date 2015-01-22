@@ -18,7 +18,7 @@ body_class: tasks-show
       = partial 'tasks/show/title'
 
     %ul.nav.nav-tabs.tabnav{"data-channel" => "presence-5:base_task-121", "data-container" => ".tab-content", "data-read-changes-url" => "/changes/read?base_task_id=121", "role-ready" => "tabnav", "test-tabnav" => ""}
-      %li.active{"data-changes" => "base_tasks,todo_items,attachment_links"}
+      %li{"data-changes" => "base_tasks,todo_items,attachment_links"}
         -#%a{"data-target" => "task-details", :href => "/tasks/121"}
         %a{"data-target" => "task-details", :href => "/tasks/show"}
           Детали
@@ -30,14 +30,14 @@ body_class: tasks-show
           %span.badge{:role => "counter"}
       %li
         %a{"data-target" => "task_activities", :href => "/tasks/121/activities?initial=true"} История
-      %li.discussion.discussion-initialized{"data-changes" => "comments"}
+      %li.active.discussion.discussion-initialized{"data-changes" => "comments"}
         %a{"data-target" => "task-discussions", :href => "/tasks/121/discussion?initial=true"}
           Обсуждения
           %span.badge{:role => "counter"} 1
     
     .tab-content
       #task-details.tab-pane.active
-        = partial 'tasks/show/details'
+        = partial 'tasks/show/discussion'
     
 
 
