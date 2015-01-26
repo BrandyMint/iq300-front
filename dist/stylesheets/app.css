@@ -24425,52 +24425,58 @@ section.project-view-column > .column-content > .object-details > ul.actions {
   margin-right: 3px; }
 
 /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+.project-tasks-list-users-filters-block {
+  display: block;
+  padding: 10px 15px;
+  border-top: 1px solid #e7e7e7; }
+
+/* line 49, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-stats {
   padding-right: 5px;
   font-size: 11px; }
 
-/* line 47, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 53, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-level {
   padding-left: 5px;
   margin-right: -5px; }
 
-/* line 51, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 57, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-add-subtask-btn {
   padding: 0 5px;
   display: inline-block;
   color: #b3b3b3; }
-  /* line 55, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 61, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-task-box-add-subtask-btn:hover {
     color: #999999; }
 
-/* line 58, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 64, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .placeholder {
   outline: 1px dashed #4183C4; }
 
-/* line 61, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 67, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .mjs-nestedSortable-error {
   background: #fbe3e4;
   border-color: transparent; }
 
-/* line 65, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 71, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
   border-color: #999; }
 
-/* line 68, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 74, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .disclose, .expandEditor {
   cursor: pointer;
   width: 20px;
   display: none; }
 
-/* line 73, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 79, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .sortable li.mjs-nestedSortable-collapsed > ol {
   display: none; }
 
-/* line 76, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 82, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .sortable li.mjs-nestedSortable-branch > div > .disclose {
   display: inline-block; }
 
-/* line 80, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 86, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-sortable li ol li:first-child {
   position: relative;
   background: white; }
@@ -24499,26 +24505,26 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
   /* line 211, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
   .project-tasks-list-sortable li ol li:first-child:after, .project-tasks-list-sortable li ol li:first-child:before {
     left: 25px; }
-/* line 83, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 89, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-sortable li ol li.placeholder {
   margin-left: 25px; }
-/* line 85, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 91, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-sortable li ol:before {
   border-bottom-color: #d5d5d5; }
-/* line 87, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 93, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-sortable li ol .project-task-box, .project-tasks-list-sortable li ol .project-box {
   padding-left: 52.5px; }
-/* line 90, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 96, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-sortable li ol .project-task-box-checkbox, .project-tasks-list-sortable li ol .project-task-box-child-counter {
   margin-left: -42.5px; }
 
-/* line 93, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 99, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-child-counter {
   background: #999999;
   padding: 3px 5px;
   font-size: 11px; }
 
-/* line 99, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 105, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-group-header {
   padding: 8px 15px;
   -moz-box-sizing: border-box;
@@ -24531,43 +24537,43 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
   -moz-transition: background 0.2s ease;
   -o-transition: background 0.2s ease;
   transition: background 0.2s ease; }
-  /* line 106, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 112, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-tasks-group-header:hover {
     background-color: #e2e2e2; }
 
-/* line 109, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 115, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-group-title {
   margin: 0;
   height: 32px;
   line-height: 32px; }
 
-/* line 114, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 120, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-group-header-form {
   margin-top: 10px;
   margin-bottom: 10px; }
 
-/* line 120, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 126, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list li {
   list-style-type: none;
   display: block; }
 
-/* line 124, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 130, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-form {
   padding-top: 15px;
   padding-bottom: 30px; }
-  /* line 128, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 134, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-task-box-form, .project-task-box-form:hover {
     background-color: #f7f7f7;
     border-left: 5px solid #eeeeee; }
-  /* line 132, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 138, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-task-box-template .project-task-box-form {
     margin-top: 15px; }
-    /* line 134, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+    /* line 140, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
     .project-task-box-template .project-task-box-form, .project-task-box-template .project-task-box-form:hover {
       background: none;
       border-left: none; }
 
-/* line 138, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 144, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-group-header-actions-fixed {
   position: fixed;
   z-index: 1000;
