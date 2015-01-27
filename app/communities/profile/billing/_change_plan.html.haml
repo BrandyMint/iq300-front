@@ -1,0 +1,65 @@
+.panel.panel-default
+  .panel-heading
+    .pull-left
+      %h3.panel-title
+        %a{href: '#'} Биллинг
+        = " / "
+        Планы
+    .pull-right
+      Срок:
+      .btn-group
+        %button.btn.btn-outline-gray.panel-heading-btn.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :type => "button"}
+          Месяц
+          %span.caret
+        %ul.dropdown-menu{:role => "menu"}
+          %li
+            %a{:href => "#"} Полгода
+          %li
+            %a{:href => "#"} Год
+    .clearfix
+  .panel-body
+    %table.table
+      - plans_table_headers = "План, Стоимость, Количество проектов".split(', ')
+      %thead
+        %tr
+          - plans_table_headers.each do |header|
+            %th
+              %strong= header
+          %th.col-md-2
+      %tbody
+        %tr
+          - "Старт, 0, 5".split(', ').each do |cell|
+            %td
+              = cell
+          %td
+            %a.btn.btn-block.btn-outline-gray{href: '#', role: 'plan-select-btn'} Понизить
+        %tr
+          - "Стартап, 1500 р./мес., 10".split(', ').each do |cell|
+            %td
+              = cell
+          %td
+            .text-center
+              %i.fa.fa-check.text-color-gray-light
+              &nbsp;
+              Ваш план
+        %tr
+          - "Компания, 2100 р./мес., 20".split(', ').each do |cell|
+            %td
+              = cell
+          %td
+            %a.btn.btn-block.btn-outline-gray{href: '#', role: 'plan-select-btn', data: {upgrade: :true}} Повысить
+        %tr
+          %td
+            Бизнес
+          %td
+            %a{href: ''} Свяжитесь с нами
+          %td
+          %td
+            %a.btn.btn-block.btn-outline-gray{href: '#', role: 'plan-select-btn', data: {upgrade: :true}} Повысить
+    %hr
+    %p
+      При оплате на полгода скидка составляет 10%
+      %br
+      При оплате на год скидка составляет 15%
+      %br
+      Детальную информацию по планам вы можете прочитать здесь

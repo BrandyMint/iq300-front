@@ -1,5 +1,16 @@
-// Colors
 .panel-warning-light
   +panel-variant(lighten($panel-warning-border, 30%), darken($panel-warning-border, 10%), lighten($panel-warning-heading-bg, 25%), lighten($panel-warning-border, 30%))
 
-// @end
+.panel-body-section
+  border-top: 1px solid $line-color
+  padding:
+    top: 1em
+    bottom: 1em
+  &:first-child
+    border-top: none
+    padding-top: 0
+
+.panel-heading-btn
+  margin:
+    top: -6px
+    bottom: -6px
