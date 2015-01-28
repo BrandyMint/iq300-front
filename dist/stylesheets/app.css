@@ -11,7 +11,7 @@
   margin-bottom: 40px; }
 
 /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.community-view-column #community-services ul li a, .calendar-page .about-day .actions a, .user-detailed-info > header > aside a.write-message, .user-detailed-info > header > aside a .edit, .folders-page .form-holder a#new-folder, .folders-view-column .column-content .object-details > .stats p.edit-remove a.edit, section.contracts-view-column .object-details .contract-actions a, .user-detailed-info > header > aside a.add-contact, .folders-view-column .column-content .object-details figure p.buttons a.download, .folders-view-column .column-content .object-details > .stats p.edit-remove a.remove, .user-detailed-info > header > aside a.delete-contact, section.contracts-view-column .object-details .contract-actions a.decline-button, .top-panel > .pull-left section.subtop input[type=submit], .badges-list .adding-form > form input[type=submit], .todo-list > div .add-todo-form > form input[type=submit], .badges-list .adding-form > form a.submit, .todo-list > div .add-todo-form > form a.submit, .badges-list .adding-form > fieldset input[type=submit], .todo-list > div .add-todo-form > fieldset input[type=submit], .badges-list .adding-form > fieldset a.submit, .todo-list > div .add-todo-form > fieldset a.submit, section.reminders .reminders-form input[type=submit], section.todo-list > div ul li form input[type=submit], .todo-list > div ul li form input[type=submit], .accessor-users > section.form input[type=submit], .attachment-members > section.form input[type=submit], .comments-form input[type=submit], .comments-form-block-fixed input[type=submit], .comments-form .attachment-link-popup.shown btn.close, .comments-form-block-fixed .attachment-link-popup.shown btn.close, section.community-view-column #community-services > a, .search-user-for-community .invite-by-email, .community-structure-panel-view .new-department .invite-by-email, .search-user-for-community input[type=submit], .community-structure-panel-view .new-department input[type=submit], section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='submit'], section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='submit'], section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='submit'], .folders-page .toggable-form input[type=submit], .attachment-page .pseudo-form p input[type=submit], .edit-profile-page form input[type=submit], .login-page form input[type=submit], .password-recovery-page form input[type=submit], .confirmation-resend-page form input[type=submit], section.recent-news .user-deals form input[type=submit], section.info .user-deals form input[type=submit], section.recent-news .user-deals a.register, section.info .user-deals a.register, .contract-form .form-actions input {
+section.community-view-column #community-services ul li a, .calendar-page .about-day .actions a, .user-detailed-info > header > aside a.write-message, .user-detailed-info > header > aside a .edit, .folders-page .form-holder a#new-folder, .folders-view-column .column-content .object-details > .stats p.edit-remove a.edit, section.contracts-view-column .object-details .contract-actions a, .user-detailed-info > header > aside a.add-contact, .folders-view-column .column-content .object-details figure p.buttons a.download, .folders-view-column .column-content .object-details > .stats p.edit-remove a.remove, .user-detailed-info > header > aside a.delete-contact, section.contracts-view-column .object-details .contract-actions a.decline-button, .top-panel > .pull-left section.subtop input[type=submit], .badges-list .adding-form > form input[type=submit], .todo-list > div .add-todo-form > form input[type=submit], .badges-list .adding-form > form a.submit, .todo-list > div .add-todo-form > form a.submit, .badges-list .adding-form > fieldset input[type=submit], .todo-list > div .add-todo-form > fieldset input[type=submit], .badges-list .adding-form > fieldset a.submit, .todo-list > div .add-todo-form > fieldset a.submit, section.reminders .reminders-form input[type=submit], section.todo-list > div ul li form input[type=submit], .todo-list > div ul li form input[type=submit], .accessor-users > section.form input[type=submit], .attachment-members > section.form input[type=submit], .comments-form input[type=submit], .comments-form-block input[type=submit], .comments-form-block-fixed input[type=submit], .comments-form .attachment-link-popup.shown btn.close, .comments-form-block .attachment-link-popup.shown btn.close, .comments-form-block-fixed .attachment-link-popup.shown btn.close, section.community-view-column #community-services > a, .search-user-for-community .invite-by-email, .community-structure-panel-view .new-department .invite-by-email, .search-user-for-community input[type=submit], .community-structure-panel-view .new-department input[type=submit], section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='submit'], section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='submit'], section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='submit'], .folders-page .toggable-form input[type=submit], .attachment-page .pseudo-form p input[type=submit], .edit-profile-page form input[type=submit], .login-page form input[type=submit], .password-recovery-page form input[type=submit], .confirmation-resend-page form input[type=submit], section.recent-news .user-deals form input[type=submit], section.info .user-deals form input[type=submit], section.recent-news .user-deals a.register, section.info .user-deals a.register, .contract-form .form-actions input {
   border: 0;
   color: white;
   padding: 0 15px;
@@ -7113,7 +7113,7 @@ body {
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-[data-icon]:before, .icon-repeat, .icon-print, .icon-calendar, .icon-bell, .icon-briefcase, .icon-bullhorn, .icon-group, .icon-paste, .icon-list-alt, .icon-cog, .icon-signout, .icon-caret-left, .icon-caret-right, .icon-caret-up, .icon-caret-down, .icon-chevron-left, .icon-chevron-right, .icon-chevron-up, .icon-chevron-down, .icon-plus, .icon-question-sign, .icon-search, .icon-reorder, .icon-resize-full, .icon-resize-small, .icon-pencil, .icon-ok, .icon-share, .icon-paper-clip, .icon-save, .icon-star-empty, .icon-star, .icon-comment-alt, .icon-comment, .icon-bell-alt, .icon-trophy, .icon-user, .icon-building, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-down, .icon-remove, .icon-exclamation-sign, .icon-folder-close-alt, .icon-folder-open-alt, .icon-file-alt, .icon-file, .icon-folder-open, .icon-folder-close, .icon-filter, .icon-share-alt, .icon-books, .icon-lock, section.list-column > ul li.active:before, .departments-jobs-list-column > ul li.active:before, .departments-relations-list-column > ul li.active:before, .workers-list-column > ul li.active:before, section.expandable > header > a.trigger:before, section.badges-list > span > a.delete:before, .badges-list > span > a.delete:before, section.tasks-list-column > ul > li .icons .comments i, section.task-view-column > .column-content .object-details > p.files span.all-files:before, .folders-view-column > .column-content .object-details > p.files span.all-files:before, section.task-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, .folders-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, section.task-view-column > .column-content .object-details > section.actions a.edit:before, .folders-view-column > .column-content .object-details > section.actions a.edit:before, section.task-view-column > .column-content .object-details > section.actions a.delete:before, .folders-view-column > .column-content .object-details > section.actions a.delete:before, section.task-view-column > .column-content .object-details > section.actions a.convert:before, .folders-view-column > .column-content .object-details > section.actions a.convert:before, .comments-form a.add:before, .comments-form-block-fixed a.add:before, .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment:before, .department input.department-toggle ~ .expander:before, .department input:checked.department-toggle ~ .expander:before, .department .d-card-title .destroy-department:before, .department .d-card-body .boss-card .memberships-contract.empty:before, .community-structure-panel-view .unallocated-workers .memberships-contract.empty:before, .unallocated-btn .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn .expander:before, .unallocated-btn .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base .expander:before, .unallocated-btn .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check .expander:before, .unallocated-btn .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send .expander:before, .unallocated-btn .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn .expander:before, .unallocated-btn .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn .expander:before, .unallocated-btn .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn .expander:before {
+[data-icon]:before, .icon-repeat, .icon-print, .icon-calendar, .icon-bell, .icon-briefcase, .icon-bullhorn, .icon-group, .icon-paste, .icon-list-alt, .icon-cog, .icon-signout, .icon-caret-left, .icon-caret-right, .icon-caret-up, .icon-caret-down, .icon-chevron-left, .icon-chevron-right, .icon-chevron-up, .icon-chevron-down, .icon-plus, .icon-question-sign, .icon-search, .icon-reorder, .icon-resize-full, .icon-resize-small, .icon-pencil, .icon-ok, .icon-share, .icon-paper-clip, .icon-save, .icon-star-empty, .icon-star, .icon-comment-alt, .icon-comment, .icon-bell-alt, .icon-trophy, .icon-user, .icon-building, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-down, .icon-remove, .icon-exclamation-sign, .icon-folder-close-alt, .icon-folder-open-alt, .icon-file-alt, .icon-file, .icon-folder-open, .icon-folder-close, .icon-filter, .icon-share-alt, .icon-books, .icon-lock, section.list-column > ul li.active:before, .departments-jobs-list-column > ul li.active:before, .departments-relations-list-column > ul li.active:before, .workers-list-column > ul li.active:before, section.expandable > header > a.trigger:before, section.badges-list > span > a.delete:before, .badges-list > span > a.delete:before, section.tasks-list-column > ul > li .icons .comments i, section.task-view-column > .column-content .object-details > p.files span.all-files:before, .folders-view-column > .column-content .object-details > p.files span.all-files:before, section.task-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, .folders-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, section.task-view-column > .column-content .object-details > section.actions a.edit:before, .folders-view-column > .column-content .object-details > section.actions a.edit:before, section.task-view-column > .column-content .object-details > section.actions a.delete:before, .folders-view-column > .column-content .object-details > section.actions a.delete:before, section.task-view-column > .column-content .object-details > section.actions a.convert:before, .folders-view-column > .column-content .object-details > section.actions a.convert:before, .comments-form a.add:before, .comments-form-block a.add:before, .comments-form-block-fixed a.add:before, .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment:before, .department input.department-toggle ~ .expander:before, .department input:checked.department-toggle ~ .expander:before, .department .d-card-title .destroy-department:before, .department .d-card-body .boss-card .memberships-contract.empty:before, .community-structure-panel-view .unallocated-workers .memberships-contract.empty:before, .unallocated-btn .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn .expander:before, .unallocated-btn .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base .expander:before, .unallocated-btn .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check .expander:before, .unallocated-btn .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send .expander:before, .unallocated-btn .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn .expander:before, .unallocated-btn .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn .expander:before, .unallocated-btn .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn .expander:before {
   font-family: "icomoon-iq300";
   speak: none;
   font-weight: normal;
@@ -7487,7 +7487,7 @@ body {
   content: "\f045"; }
 
 /* line 86, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons_icomoon */
-.icon-paper-clip:before, .comments-form a.add:before, .comments-form-block-fixed a.add:before, .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment:before {
+.icon-paper-clip:before, .comments-form a.add:before, .comments-form-block a.add:before, .comments-form-block-fixed a.add:before, .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment:before {
   content: "\f0c6"; }
 
 /* line 89, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons_icomoon */
@@ -14350,7 +14350,7 @@ hr {
     padding: 0; }
 
 /* line 140, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
-.container-grey, .comments-form-block-fixed {
+.container-grey, .comments-form-block, .comments-form-block-fixed {
   background-color: #f6f6f6;
   padding-top: 10px;
   padding-bottom: 10px; }
@@ -20856,7 +20856,7 @@ section.conversations-list-column > ul:after {
         margin-top: 5px;
         border-top: 1px solid #cccccc; }
   /* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/conversations/view-column */
-  .conversation-view-column .discussion .comments-form, .conversation-view-column .discussion .comments-form-block-fixed {
+  .conversation-view-column .discussion .comments-form, .conversation-view-column .discussion .comments-form-block, .conversation-view-column .discussion .comments-form-block-fixed {
     margin-top: 15px; }
 
 /* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/conversations/form */
@@ -21028,24 +21028,24 @@ section.conversations-list-column > ul:after {
   padding-bottom: 1em; }
 
 /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-.comments-form, .comments-form-block-fixed {
+.comments-form, .comments-form-block, .comments-form-block-fixed {
   margin-top: 3px;
   width: 350px;
   position: relative; }
   /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form .info > span, .comments-form-block-fixed .info > span {
+  .comments-form .info > span, .comments-form-block .info > span, .comments-form-block-fixed .info > span {
     display: none;
     color: red;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
   /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form a.add, .comments-form-block-fixed a.add {
+  .comments-form a.add, .comments-form-block a.add, .comments-form-block-fixed a.add {
     width: 30px;
     height: 30px;
     display: block; }
     /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-    .comments-form a.add:before, .comments-form-block-fixed a.add:before {
+    .comments-form a.add:before, .comments-form-block a.add:before, .comments-form-block-fixed a.add:before {
       position: absolute;
       font-size: 17px;
       line-height: 15px;
@@ -21057,7 +21057,7 @@ section.conversations-list-column > ul:after {
       text-align: center;
       cursor: pointer; }
   /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form .comment-body, .comments-form-block-fixed .comment-body {
+  .comments-form .comment-body, .comments-form-block .comment-body, .comments-form-block-fixed .comment-body {
     width: 325px;
     border: 1px solid #cccccc;
     padding: 5px 10px;
@@ -21068,19 +21068,19 @@ section.conversations-list-column > ul:after {
     margin-bottom: 4px;
     word-wrap: break-word; }
     /* line 128, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-    .comments-form .comment-body::-webkit-input-placeholder, .comments-form-block-fixed .comment-body::-webkit-input-placeholder {
+    .comments-form .comment-body::-webkit-input-placeholder, .comments-form-block .comment-body::-webkit-input-placeholder, .comments-form-block-fixed .comment-body::-webkit-input-placeholder {
       color: #999999; }
     /* line 130, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-    .comments-form .comment-body:-moz-placeholder, .comments-form-block-fixed .comment-body:-moz-placeholder {
+    .comments-form .comment-body:-moz-placeholder, .comments-form-block .comment-body:-moz-placeholder, .comments-form-block-fixed .comment-body:-moz-placeholder {
       color: #999999; }
     /* line 132, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-    .comments-form .comment-body:-ms-input-placeholder, .comments-form-block-fixed .comment-body:-ms-input-placeholder {
+    .comments-form .comment-body:-ms-input-placeholder, .comments-form-block .comment-body:-ms-input-placeholder, .comments-form-block-fixed .comment-body:-ms-input-placeholder {
       color: #999999; }
   /* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form input, .comments-form-block-fixed input {
+  .comments-form input, .comments-form-block input, .comments-form-block-fixed input {
     float: left; }
   /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form input[type=file], .comments-form-block-fixed input[type=file] {
+  .comments-form input[type=file], .comments-form-block input[type=file], .comments-form-block-fixed input[type=file] {
     cursor: pointer;
     width: 28px;
     opacity: 0;
@@ -21088,7 +21088,7 @@ section.conversations-list-column > ul:after {
     height: 30px;
     line-height: 30px; }
   /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form input[type=reset], .comments-form-block-fixed input[type=reset] {
+  .comments-form input[type=reset], .comments-form-block input[type=reset], .comments-form-block-fixed input[type=reset] {
     float: right;
     font-size: 12px;
     background: transparent;
@@ -21101,7 +21101,7 @@ section.conversations-list-column > ul:after {
     font-weight: normal;
     -webkit-appearance: none; }
   /* line 60, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form input[type=submit], .comments-form-block-fixed input[type=submit] {
+  .comments-form input[type=submit], .comments-form-block input[type=submit], .comments-form-block-fixed input[type=submit] {
     float: right;
     zoom: 1;
     display: inline;
@@ -21114,14 +21114,14 @@ section.conversations-list-column > ul:after {
     background-color: #348dad;
     cursor: pointer; }
     /* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-    .comments-form input[type=submit]:hover, .comments-form-block-fixed input[type=submit]:hover {
+    .comments-form input[type=submit]:hover, .comments-form-block input[type=submit]:hover, .comments-form-block-fixed input[type=submit]:hover {
       background-color: #399abd;
       text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
     /* line 41, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-    .comments-form input[type=submit]:active, .comments-form-block-fixed input[type=submit]:active {
+    .comments-form input[type=submit]:active, .comments-form-block input[type=submit]:active, .comments-form-block-fixed input[type=submit]:active {
       background-color: #2e7d99; }
   /* line 68, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form .attachment-label, .comments-form-block-fixed .attachment-label {
+  .comments-form .attachment-label, .comments-form-block .attachment-label, .comments-form-block-fixed .attachment-label {
     color: #999999;
     zoom: 1;
     display: inline;
@@ -21139,23 +21139,23 @@ section.conversations-list-column > ul:after {
     text-overflow: ellipsis;
     white-space: nowrap; }
   /* line 79, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form span.attachment-label, .comments-form-block-fixed span.attachment-label {
+  .comments-form span.attachment-label, .comments-form-block span.attachment-label, .comments-form-block-fixed span.attachment-label {
     position: absolute;
     overflow: visible;
     margin-left: 30px;
     margin-top: -30px; }
   /* line 84, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form.hidden, .hidden.comments-form-block-fixed {
+  .comments-form.hidden, .hidden.comments-form-block, .hidden.comments-form-block-fixed {
     display: none; }
   /* line 86, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form .file.hidden, .comments-form-block-fixed .file.hidden {
+  .comments-form .file.hidden, .comments-form-block .file.hidden, .comments-form-block-fixed .file.hidden {
     display: none; }
   /* line 88, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form .attachment-link-popup, .comments-form-block-fixed .attachment-link-popup {
+  .comments-form .attachment-link-popup, .comments-form-block .attachment-link-popup, .comments-form-block-fixed .attachment-link-popup {
     display: none;
     padding: 20px 20px 20px 20px; }
     /* line 120, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-    .comments-form .attachment-link-popup:before, .comments-form-block-fixed .attachment-link-popup:before {
+    .comments-form .attachment-link-popup:before, .comments-form-block .attachment-link-popup:before, .comments-form-block-fixed .attachment-link-popup:before {
       content: "";
       display: inline-block;
       border-left: 8px solid transparent;
@@ -21166,7 +21166,7 @@ section.conversations-list-column > ul:after {
       top: -8px;
       left: 8px; }
     /* line 130, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-    .comments-form .attachment-link-popup:after, .comments-form-block-fixed .attachment-link-popup:after {
+    .comments-form .attachment-link-popup:after, .comments-form-block .attachment-link-popup:after, .comments-form-block-fixed .attachment-link-popup:after {
       content: "";
       display: inline-block;
       border-left: 7px solid transparent;
@@ -21176,7 +21176,7 @@ section.conversations-list-column > ul:after {
       top: -7px;
       left: 9px; }
     /* line 92, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-    .comments-form .attachment-link-popup.shown, .comments-form-block-fixed .attachment-link-popup.shown {
+    .comments-form .attachment-link-popup.shown, .comments-form-block .attachment-link-popup.shown, .comments-form-block-fixed .attachment-link-popup.shown {
       box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
       -moz-box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
       -webkit-box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
@@ -21188,11 +21188,11 @@ section.conversations-list-column > ul:after {
       border: 1px solid #cccccc;
       z-index: 1000; }
       /* line 101, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-      .comments-form .attachment-link-popup.shown .link-attachment-id, .comments-form-block-fixed .attachment-link-popup.shown .link-attachment-id {
+      .comments-form .attachment-link-popup.shown .link-attachment-id, .comments-form-block .attachment-link-popup.shown .link-attachment-id, .comments-form-block-fixed .attachment-link-popup.shown .link-attachment-id {
         width: 250px;
         margin: 0 10px 10px; }
       /* line 105, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-      .comments-form .attachment-link-popup.shown .add-new .comment-attachment, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment {
+      .comments-form .attachment-link-popup.shown .add-new .comment-attachment, .comments-form-block .attachment-link-popup.shown .add-new .comment-attachment, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment {
         margin-left: 10px;
         width: 100px;
         z-index: 1;
@@ -21203,26 +21203,26 @@ section.conversations-list-column > ul:after {
         *display: inline;
         vertical-align: top; }
         /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-        .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment:before {
+        .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment:before {
           position: absolute;
           font-size: 17px;
           line-height: 15px;
           color: #666666; }
       /* line 112, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-      .comments-form .attachment-link-popup.shown .add-new span, .comments-form-block-fixed .attachment-link-popup.shown .add-new span {
+      .comments-form .attachment-link-popup.shown .add-new span, .comments-form-block .attachment-link-popup.shown .add-new span, .comments-form-block-fixed .attachment-link-popup.shown .add-new span {
         margin-left: -100px;
         height: 30px;
         line-height: 30px;
         color: #348dad;
         cursor: pointer; }
         /* line 118, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-        .comments-form .attachment-link-popup.shown .add-new span:hover, .comments-form-block-fixed .attachment-link-popup.shown .add-new span:hover {
+        .comments-form .attachment-link-popup.shown .add-new span:hover, .comments-form-block .attachment-link-popup.shown .add-new span:hover, .comments-form-block-fixed .attachment-link-popup.shown .add-new span:hover {
           text-decoration: underline; }
       /* line 120, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-      .comments-form .attachment-link-popup.shown .add-new span:hover, .comments-form-block-fixed .attachment-link-popup.shown .add-new span:hover {
+      .comments-form .attachment-link-popup.shown .add-new span:hover, .comments-form-block .attachment-link-popup.shown .add-new span:hover, .comments-form-block-fixed .attachment-link-popup.shown .add-new span:hover {
         cursor: pointer; }
       /* line 122, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-      .comments-form .attachment-link-popup.shown btn.close, .comments-form-block-fixed .attachment-link-popup.shown btn.close {
+      .comments-form .attachment-link-popup.shown btn.close, .comments-form-block .attachment-link-popup.shown btn.close, .comments-form-block-fixed .attachment-link-popup.shown btn.close {
         float: right;
         zoom: 1;
         display: inline;
@@ -21235,14 +21235,14 @@ section.conversations-list-column > ul:after {
         background-color: #348dad;
         cursor: pointer; }
         /* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-        .comments-form .attachment-link-popup.shown btn.close:hover, .comments-form-block-fixed .attachment-link-popup.shown btn.close:hover {
+        .comments-form .attachment-link-popup.shown btn.close:hover, .comments-form-block .attachment-link-popup.shown btn.close:hover, .comments-form-block-fixed .attachment-link-popup.shown btn.close:hover {
           background-color: #399abd;
           text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
         /* line 41, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-        .comments-form .attachment-link-popup.shown btn.close:active, .comments-form-block-fixed .attachment-link-popup.shown btn.close:active {
+        .comments-form .attachment-link-popup.shown btn.close:active, .comments-form-block .attachment-link-popup.shown btn.close:active, .comments-form-block-fixed .attachment-link-popup.shown btn.close:active {
           background-color: #2e7d99; }
       /* line 129, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-      .comments-form .attachment-link-popup.shown a.cancel, .comments-form-block-fixed .attachment-link-popup.shown a.cancel {
+      .comments-form .attachment-link-popup.shown a.cancel, .comments-form-block .attachment-link-popup.shown a.cancel, .comments-form-block-fixed .attachment-link-popup.shown a.cancel {
         float: right;
         font-size: 12px;
         background: transparent;
@@ -21301,10 +21301,10 @@ section.conversations-list-column > ul:after {
   padding-bottom: 10px; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/messages/form */
-.messages-form, .comments-form, .comments-form-block-fixed {
+.messages-form, .comments-form, .comments-form-block, .comments-form-block-fixed {
   width: 100%; }
   /* line 3, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/messages/form */
-  .messages-form .comment-body, .comments-form .comment-body, .comments-form-block-fixed .comment-body {
+  .messages-form .comment-body, .comments-form .comment-body, .comments-form-block .comment-body, .comments-form-block-fixed .comment-body {
     width: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -21312,13 +21312,27 @@ section.conversations-list-column > ul:after {
     min-height: 31px;
     line-height: 1.7; }
   /* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/messages/form */
-  .messages-form textarea.comment-body, .comments-form textarea.comment-body, .comments-form-block-fixed textarea.comment-body {
+  .messages-form textarea.comment-body, .comments-form textarea.comment-body, .comments-form-block textarea.comment-body, .comments-form-block-fixed textarea.comment-body {
     resize: vertical !important; }
   /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/messages/form */
-  .messages-form input.comment-body, .comments-form input.comment-body, .comments-form-block-fixed input.comment-body {
+  .messages-form input.comment-body, .comments-form input.comment-body, .comments-form-block input.comment-body, .comments-form-block-fixed input.comment-body {
     float: none; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form-fixed */
+.comments-form-block, .comments-form-block-fixed {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+
+/* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form-fixed */
 .comments-form-block-fixed {
   display: block;
   position: fixed;
@@ -21329,10 +21343,17 @@ section.conversations-list-column > ul:after {
   z-index: 22;
   width: auto;
   margin-left: 90px;
+  margin-bottom: 0;
   padding-top: 10px;
   padding-bottom: 30px;
   padding-left: 40px;
-  padding-right: 40px; }
+  padding-right: 40px;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/list-column */
 section.communities-list-column {
