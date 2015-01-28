@@ -17,9 +17,13 @@ body
 // defaults
 a
   // color: #4eade3;
-  color: #358bae
+  color: $blue-link-color
   &:hover
+    color: $blue-link-color-hover
     text-decoration: underline
+  &.link-plain
+    &, &:hover
+      text-decoration: none
 
 h1
   font-size: 2.75em

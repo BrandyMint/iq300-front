@@ -11,7 +11,7 @@
   margin-bottom: 40px; }
 
 /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.community-view-column #community-services ul li a, .calendar-page .about-day .actions a, .user-detailed-info > header > aside a.write-message, .user-detailed-info > header > aside a .edit, .folders-page .form-holder a#new-folder, .folders-view-column .column-content .object-details > .stats p.edit-remove a.edit, section.contracts-view-column .object-details .contract-actions a, .user-detailed-info > header > aside a.add-contact, .folders-view-column .column-content .object-details figure p.buttons a.download, .folders-view-column .column-content .object-details > .stats p.edit-remove a.remove, .user-detailed-info > header > aside a.delete-contact, section.contracts-view-column .object-details .contract-actions a.decline-button, .top-panel > .pull-left section.subtop input[type=submit], .badges-list .adding-form > form input[type=submit], .todo-list > div .add-todo-form > form input[type=submit], .badges-list .adding-form > form a.submit, .todo-list > div .add-todo-form > form a.submit, .badges-list .adding-form > fieldset input[type=submit], .todo-list > div .add-todo-form > fieldset input[type=submit], .badges-list .adding-form > fieldset a.submit, .todo-list > div .add-todo-form > fieldset a.submit, section.reminders .reminders-form input[type=submit], section.todo-list > div ul li form input[type=submit], .todo-list > div ul li form input[type=submit], .accessor-users > section.form input[type=submit], .attachment-members > section.form input[type=submit], .comments-form input[type=submit], .comments-form .attachment-link-popup.shown btn.close, section.community-view-column #community-services > a, .search-user-for-community .invite-by-email, .community-structure-panel-view .new-department .invite-by-email, .search-user-for-community input[type=submit], .community-structure-panel-view .new-department input[type=submit], section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='submit'], section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='submit'], section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='submit'], .folders-page .toggable-form input[type=submit], .attachment-page .pseudo-form p input[type=submit], .edit-profile-page form input[type=submit], .login-page form input[type=submit], .password-recovery-page form input[type=submit], .confirmation-resend-page form input[type=submit], section.recent-news .user-deals form input[type=submit], section.info .user-deals form input[type=submit], section.recent-news .user-deals a.register, section.info .user-deals a.register, .contract-form .form-actions input {
+section.community-view-column #community-services ul li a, .calendar-page .about-day .actions a, .user-detailed-info > header > aside a.write-message, .user-detailed-info > header > aside a .edit, .folders-page .form-holder a#new-folder, .folders-view-column .column-content .object-details > .stats p.edit-remove a.edit, section.contracts-view-column .object-details .contract-actions a, .user-detailed-info > header > aside a.add-contact, .folders-view-column .column-content .object-details figure p.buttons a.download, .folders-view-column .column-content .object-details > .stats p.edit-remove a.remove, .user-detailed-info > header > aside a.delete-contact, section.contracts-view-column .object-details .contract-actions a.decline-button, .top-panel > .pull-left section.subtop input[type=submit], .badges-list .adding-form > form input[type=submit], .todo-list > div .add-todo-form > form input[type=submit], .badges-list .adding-form > form a.submit, .todo-list > div .add-todo-form > form a.submit, .badges-list .adding-form > fieldset input[type=submit], .todo-list > div .add-todo-form > fieldset input[type=submit], .badges-list .adding-form > fieldset a.submit, .todo-list > div .add-todo-form > fieldset a.submit, section.reminders .reminders-form input[type=submit], section.todo-list > div ul li form input[type=submit], .todo-list > div ul li form input[type=submit], .accessor-users > section.form input[type=submit], .attachment-members > section.form input[type=submit], .comments-form input[type=submit], .comments-form-block input[type=submit], .comments-form-block-fixed input[type=submit], .comments-form .attachment-link-popup.shown btn.close, .comments-form-block .attachment-link-popup.shown btn.close, .comments-form-block-fixed .attachment-link-popup.shown btn.close, section.community-view-column #community-services > a, .search-user-for-community .invite-by-email, .community-structure-panel-view .new-department .invite-by-email, .search-user-for-community input[type=submit], .community-structure-panel-view .new-department input[type=submit], section.project-view-column > .column-content > .object-details > .tree .new-task-form > form input[type='submit'], section.project-view-column > .column-content > .object-details > .tree .new-subtask-form > form input[type='submit'], section.project-view-column > .column-content > .object-details > .tree .edit-task-form > form input[type='submit'], .folders-page .toggable-form input[type=submit], .attachment-page .pseudo-form p input[type=submit], .edit-profile-page form input[type=submit], .login-page form input[type=submit], .password-recovery-page form input[type=submit], .confirmation-resend-page form input[type=submit], section.recent-news .user-deals form input[type=submit], section.info .user-deals form input[type=submit], section.recent-news .user-deals a.register, section.info .user-deals a.register, .contract-form .form-actions input {
   border: 0;
   color: white;
   padding: 0 15px;
@@ -4000,18 +4000,18 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     color: #296c87; }
 
 /* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/alerts */
-.alert-warning, .alert-warning-light {
+.alert-warning {
   background-color: #f8931f;
   border-color: #f65f08;
   color: #fff; }
   /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/alerts */
-  .alert-warning a, .alert-warning-light a {
+  .alert-warning a {
     color: #fff; }
   /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/alerts */
-  .alert-warning hr, .alert-warning-light hr {
+  .alert-warning hr {
     border-top-color: #dd5607; }
   /* line 15, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/alerts */
-  .alert-warning .alert-link, .alert-warning-light .alert-link {
+  .alert-warning .alert-link {
     color: #e6e6e6; }
 
 /* line 65, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/alerts */
@@ -7113,7 +7113,7 @@ body {
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-[data-icon]:before, .icon-repeat, .icon-print, .icon-calendar, .icon-bell, .icon-briefcase, .icon-bullhorn, .icon-group, .icon-paste, .icon-list-alt, .icon-cog, .icon-signout, .icon-caret-left, .icon-caret-right, .icon-caret-up, .icon-caret-down, .icon-chevron-left, .icon-chevron-right, .icon-chevron-up, .icon-chevron-down, .icon-plus, .icon-question-sign, .icon-search, .icon-reorder, .icon-resize-full, .icon-resize-small, .icon-pencil, .icon-ok, .icon-share, .icon-paper-clip, .icon-save, .icon-star-empty, .icon-star, .icon-comment-alt, .icon-comment, .icon-bell-alt, .icon-trophy, .icon-user, .icon-building, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-down, .icon-remove, .icon-exclamation-sign, .icon-folder-close-alt, .icon-folder-open-alt, .icon-file-alt, .icon-file, .icon-folder-open, .icon-folder-close, .icon-filter, .icon-share-alt, .icon-books, .icon-lock, section.list-column > ul li.active:before, .departments-jobs-list-column > ul li.active:before, .departments-relations-list-column > ul li.active:before, .workers-list-column > ul li.active:before, section.expandable > header > a.trigger:before, section.badges-list > span > a.delete:before, .badges-list > span > a.delete:before, section.tasks-list-column > ul > li .icons .comments i, section.task-view-column > .column-content .object-details > p.files span.all-files:before, .folders-view-column > .column-content .object-details > p.files span.all-files:before, section.task-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, .folders-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, section.task-view-column > .column-content .object-details > section.actions a.edit:before, .folders-view-column > .column-content .object-details > section.actions a.edit:before, section.task-view-column > .column-content .object-details > section.actions a.delete:before, .folders-view-column > .column-content .object-details > section.actions a.delete:before, section.task-view-column > .column-content .object-details > section.actions a.convert:before, .folders-view-column > .column-content .object-details > section.actions a.convert:before, .comments-form a.add:before, .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .department input.department-toggle ~ .expander:before, .department input:checked.department-toggle ~ .expander:before, .department .d-card-title .destroy-department:before, .department .d-card-body .boss-card .memberships-contract.empty:before, .community-structure-panel-view .unallocated-workers .memberships-contract.empty:before, .unallocated-btn .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn .expander:before, .unallocated-btn .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base .expander:before, .unallocated-btn .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check .expander:before, .unallocated-btn .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send .expander:before, .unallocated-btn .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn .expander:before, .unallocated-btn .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn .expander:before, .unallocated-btn .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn .expander:before {
+[data-icon]:before, .icon-repeat, .icon-print, .icon-calendar, .icon-bell, .icon-briefcase, .icon-bullhorn, .icon-group, .icon-paste, .icon-list-alt, .icon-cog, .icon-signout, .icon-caret-left, .icon-caret-right, .icon-caret-up, .icon-caret-down, .icon-chevron-left, .icon-chevron-right, .icon-chevron-up, .icon-chevron-down, .icon-plus, .icon-question-sign, .icon-search, .icon-reorder, .icon-resize-full, .icon-resize-small, .icon-pencil, .icon-ok, .icon-share, .icon-paper-clip, .icon-save, .icon-star-empty, .icon-star, .icon-comment-alt, .icon-comment, .icon-bell-alt, .icon-trophy, .icon-user, .icon-building, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-down, .icon-remove, .icon-exclamation-sign, .icon-folder-close-alt, .icon-folder-open-alt, .icon-file-alt, .icon-file, .icon-folder-open, .icon-folder-close, .icon-filter, .icon-share-alt, .icon-books, .icon-lock, section.list-column > ul li.active:before, .departments-jobs-list-column > ul li.active:before, .departments-relations-list-column > ul li.active:before, .workers-list-column > ul li.active:before, section.expandable > header > a.trigger:before, section.badges-list > span > a.delete:before, .badges-list > span > a.delete:before, section.tasks-list-column > ul > li .icons .comments i, section.task-view-column > .column-content .object-details > p.files span.all-files:before, .folders-view-column > .column-content .object-details > p.files span.all-files:before, section.task-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, .folders-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, section.task-view-column > .column-content .object-details > section.actions a.edit:before, .folders-view-column > .column-content .object-details > section.actions a.edit:before, section.task-view-column > .column-content .object-details > section.actions a.delete:before, .folders-view-column > .column-content .object-details > section.actions a.delete:before, section.task-view-column > .column-content .object-details > section.actions a.convert:before, .folders-view-column > .column-content .object-details > section.actions a.convert:before, .comments-form a.add:before, .comments-form-block a.add:before, .comments-form-block-fixed a.add:before, .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment:before, .department input.department-toggle ~ .expander:before, .department input:checked.department-toggle ~ .expander:before, .department .d-card-title .destroy-department:before, .department .d-card-body .boss-card .memberships-contract.empty:before, .community-structure-panel-view .unallocated-workers .memberships-contract.empty:before, .unallocated-btn .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn .expander:before, .unallocated-btn .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base .expander:before, .unallocated-btn .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check .expander:before, .unallocated-btn .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send .expander:before, .unallocated-btn .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn .expander:before, .unallocated-btn .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn .expander:before, .unallocated-btn .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn .expander:before {
   font-family: "icomoon-iq300";
   speak: none;
   font-weight: normal;
@@ -7487,7 +7487,7 @@ body {
   content: "\f045"; }
 
 /* line 86, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons_icomoon */
-.icon-paper-clip:before, .comments-form a.add:before, .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before {
+.icon-paper-clip:before, .comments-form a.add:before, .comments-form-block a.add:before, .comments-form-block-fixed a.add:before, .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment:before {
   content: "\f0c6"; }
 
 /* line 89, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons_icomoon */
@@ -13466,7 +13466,7 @@ html > body > .ui-pnotify {
   border: 0; }
 
 /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/pnotify */
-.ui-pnotify-container.alert-warning, .ui-pnotify-container.alert-warning-light {
+.ui-pnotify-container.alert-warning {
   color: #fff;
   background-color: #f8931f;
   border: 0; }
@@ -14202,38 +14202,42 @@ body {
 
 /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 a {
-  color: #358bae; }
+  color: #368aaf; }
   /* line 19, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
   a:hover {
+    color: #2a6b88;
     text-decoration: underline; }
+  /* line 23, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+  a.link-plain, a.link-plain:hover {
+    text-decoration: none; }
 
-/* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 h1 {
   font-size: 2.75em;
   line-height: 1.2em; }
 
-/* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 30, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 h2 {
   font-size: 1.9em;
   line-height: 1.25em; }
 
-/* line 30, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 34, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 h3 {
   font-size: 1.75em;
   line-height: 1.3em; }
 
-/* line 34, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 h4 {
   font-size: 1.25em;
   line-height: 1.35em; }
 
-/* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 hr {
   margin: 1em 0;
   border: 0;
   border-top: 1px solid #eeeeee; }
 
-/* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 47, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 #container {
   position: relative;
   z-index: 2;
@@ -14263,7 +14267,7 @@ hr {
    *  @include gradient(#c7d2d8, #dee6e8);
    *} */ }
 
-/* line 70, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 74, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 #wrapper {
   position: relative;
   border-bottom: 0;
@@ -14275,15 +14279,15 @@ hr {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  /* line 79, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+  /* line 83, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
   #wrapper > .print {
     background-color: white;
     border: none;
     padding: 10px; }
-    /* line 83, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+    /* line 87, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
     #wrapper > .print .header img {
       float: right; }
-  /* line 85, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+  /* line 89, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
   #wrapper:before {
     content: "";
     position: absolute;
@@ -14299,7 +14303,7 @@ hr {
     -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); }
 
-/* line 98, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 102, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 .content-global {
   position: relative;
   height: 100%;
@@ -14310,7 +14314,7 @@ hr {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  /* line 106, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+  /* line 110, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
   .content-global > * {
     float: left;
     height: 100%;
@@ -14319,7 +14323,7 @@ hr {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
 
-/* line 112, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 116, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 .one-big-column {
   z-index: 20;
   margin-left: 90px;
@@ -14329,7 +14333,7 @@ hr {
   position: relative;
   padding: 3.5% 6%;
   display: block !important; }
-  /* line 123, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+  /* line 127, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
   .one-big-column > header.tab-navigation + .column-content {
     position: absolute;
     top: 55px;
@@ -14338,66 +14342,62 @@ hr {
     bottom: 0;
     padding: 3.5% 6%;
     overflow: auto; }
-  /* line 131, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+  /* line 135, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
   .one-big-column > h2, .one-big-column > .column-content > h2 {
     margin-bottom: 20px; }
-  /* line 133, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+  /* line 137, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
   .one-big-column.one-big-column-collapse {
     padding: 0; }
 
-/* line 136, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
-.container-grey {
+/* line 140, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+.container-grey, .comments-form-block, .comments-form-block-fixed {
   background-color: #f6f6f6;
   padding-top: 10px;
   padding-bottom: 10px; }
 
-/* line 139, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 143, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 .container-white {
   background-color: white;
   padding-top: 10px;
   padding-bottom: 10px; }
 
-/* line 142, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 146, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 .page-content {
   padding: 20px 40px; }
 
-/* line 145, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 149, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 .page-content-compact {
   padding: 20px; }
 
-/* line 151, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 155, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 .content-heading, .form-heading {
   margin-bottom: 0.5em; }
 
-/* line 155, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 159, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 .content-section, .form-section {
   margin-bottom: 40px; }
 
-/* line 158, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 162, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 .content-group {
   margin-bottom: 20px; }
 
-/* line 161, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
-.content-group-sm {
-  margin-bottom: 10px; }
-
-/* line 164, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 166, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 img.image-x2 {
   display: none; }
 
-/* line 168, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 170, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 body.retina-display img.image-x1 {
   display: none; }
-/* line 170, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 172, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 body.retina-display img.image-x2 {
   display: inline; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 168, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+  /* line 170, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
   img.image-x1 {
     display: none; }
 
-  /* line 170, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+  /* line 172, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
   img.image-x2 {
     display: inline; }
  }
@@ -14429,10 +14429,6 @@ body.retina-display img.image-x2 {
   width: 180px;
   z-index: 19;
   background-color: #f9f9f9; }
-
-/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/typography */
-.text-paragraph-sm {
-  margin-bottom: 9px; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/forms */
 .input-group-inline-label, .input-group-inline-dash {
@@ -16376,36 +16372,36 @@ a.task-box-block-link {
   border: 1px solid #eeeeee; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/messages */
-.message-box {
+.message-box, .comment-box {
   padding: 20px; }
   /* line 3, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/messages */
-  .message-box.message-box-from-current-user {
+  .message-box.message-box-from-current-user, .message-box-from-current-user.comment-box {
     background-color: #e7e7e7; }
   /* line 5, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/messages */
-  .message-box.message-box-new {
+  .message-box.message-box-new, .message-box-new.comment-box {
     background-color: #f4f9fc; }
   /* line 7, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/messages */
-  .message-box ol, .message-box ul {
+  .message-box ol, .comment-box ol, .message-box ul, .comment-box ul {
     margin-top: 1em;
     margin-bottom: 1em;
     padding-left: 15px; }
     /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/messages */
-    .message-box ol ol, .message-box ol ul, .message-box ul ol, .message-box ul ul {
+    .message-box ol ol, .comment-box ol ol, .message-box ol ul, .comment-box ol ul, .message-box ul ol, .comment-box ul ol, .message-box ul ul, .comment-box ul ul {
       margin-top: 0;
       margin-bottom: 0; }
       /* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/messages */
-      .message-box ol ol li, .message-box ol ul li, .message-box ul ol li, .message-box ul ul li {
+      .message-box ol ol li, .comment-box ol ol li, .message-box ol ul li, .comment-box ol ul li, .message-box ul ol li, .comment-box ul ol li, .message-box ul ul li, .comment-box ul ul li {
         list-style-type: circle; }
     /* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/messages */
-    .message-box ol li, .message-box ul li {
+    .message-box ol li, .comment-box ol li, .message-box ul li, .comment-box ul li {
       margin-left: 15px;
       list-style-type: disc; }
 
 /* line 23, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/messages */
-.messages-list .message-box {
+.messages-list .message-box, .messages-list .comment-box {
   border-bottom: solid 1px #ccc; }
   /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/messages */
-  .messages-list .message-box:first-child {
+  .messages-list .message-box:first-child, .messages-list .comment-box:first-child {
     border-top: solid 1px #ccc; }
 
 /* line 28, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/messages */
@@ -16492,12 +16488,6 @@ a.bg-primary-light:hover {
   .input-group-above .form-control:focus + .input-group-addon, .input-group-above .tasks-list-filters-block-select:focus + .input-group-addon {
     border-left-color: #4aaee4; }
 
-/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/alerts */
-.alert-warning-light {
-  background-color: #fde6cc;
-  border-color: #fccf9b;
-  color: #ac5e05; }
-
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/panels */
 .panel-warning-light {
   border-color: #fcbe9b; }
@@ -16512,21 +16502,6 @@ a.bg-primary-light:hover {
   /* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/panels */
   .panel-warning-light > .panel-footer + .panel-collapse > .panel-body, .panel-warning-light > .community-block-footer + .panel-collapse > .panel-body, .panel-warning-light > .panel-footer + .panel-collapse > .community-block-body, .panel-warning-light > .community-block-footer + .panel-collapse > .community-block-body, .panel-warning-light > .panel-footer + .panel-collapse > .community-profile-details-stats-body, .panel-warning-light > .community-block-footer + .panel-collapse > .community-profile-details-stats-body {
     border-bottom-color: #fcbe9b; }
-
-/* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/panels */
-.panel-body-section {
-  border-top: 1px solid #eeeeee;
-  padding-top: 1em;
-  padding-bottom: 1em; }
-  /* line 9, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/panels */
-  .panel-body-section:first-child {
-    border-top: none;
-    padding-top: 0; }
-
-/* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/panels */
-.panel-heading-btn {
-  margin-top: -6px;
-  margin-bottom: -6px; }
 
 /* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/image-cropper */
 .image-cropper .remove-picture-container {
@@ -18585,7 +18560,7 @@ ul.context-menu, .contacts-list-column ul li .actions > ul {
         margin-left: 10px; }
       /* line 49, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/context-menu */
       ul.context-menu li a:hover, .contacts-list-column ul li .actions > ul li a:hover {
-        border-color: #358bae; }
+        border-color: #368aaf; }
 
 /* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/formtastic-form */
 .formtastic-form > form, .departments-form > form, .department-job-form > form {
@@ -18786,12 +18761,12 @@ span.mention {
   border-style: solid; }
   /* line 23, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
   span.mention.people {
-    border-color: #358bae;
+    border-color: #368aaf;
     background: white;
-    color: #358bae; }
+    color: #368aaf; }
     /* line 27, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
     span.mention.people.highlight {
-      background: #358bae;
+      background: #368aaf;
       color: white; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/infinite_list_button */
@@ -19472,7 +19447,7 @@ section.task-view-column > .column-content .object-details > section.actions, .f
       background: #d22b30; }
   /* line 138, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/view-column */
   section.task-view-column > .column-content .object-details > section.actions a.delegate, .folders-view-column > .column-content .object-details > section.actions a.delegate {
-    color: #358bae; }
+    color: #368aaf; }
   /* line 140, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/view-column */
   section.task-view-column > .column-content .object-details > section.actions a.edit, .folders-view-column > .column-content .object-details > section.actions a.edit, section.task-view-column > .column-content .object-details > section.actions a.delete, .folders-view-column > .column-content .object-details > section.actions a.delete, section.task-view-column > .column-content .object-details > section.actions a.convert, .folders-view-column > .column-content .object-details > section.actions a.convert {
     position: relative;
@@ -19503,7 +19478,7 @@ section.task-view-column > .column-content .object-details > section.actions, .f
   /* line 157, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/view-column */
   section.task-view-column > .column-content .object-details > section.actions a.convert, .folders-view-column > .column-content .object-details > section.actions a.convert {
     float: right;
-    color: #358bae;
+    color: #368aaf;
     line-height: 15px;
     margin-top: 7px;
     padding-right: 17px; }
@@ -19660,6 +19635,11 @@ section.reminders {
     /* line 132, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
     section.reminders .reminders-form input[type=number]:-ms-input-placeholder {
       color: #999999; }
+
+/* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/show */
+.task-discussion .comments-list {
+  padding-bottom: 40px;
+  margin-top: 0; }
 
 /* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/subtasks */
 section.subtask-list > div {
@@ -20605,7 +20585,7 @@ section.task-view-column .best_in_place input[type='text'], .folders-view-column
 /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/accessor-users */
 .accessor-users > section > a, .attachment-members > section > a, .accessor-users > section .user-wrapper > a, .attachment-members > section .user-wrapper > a, .accessor-users > section .users-cooperation > a, .attachment-members > section .users-cooperation > a {
   font-size: 11px;
-  color: #358bae;
+  color: #368aaf;
   margin-right: 12px; }
   /* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/accessor-users */
   .accessor-users > section > a.remove, .attachment-members > section > a.remove, .accessor-users > section > a.remove-user, .attachment-members > section > a.remove-user, .accessor-users > section .user-wrapper > a.remove, .attachment-members > section .user-wrapper > a.remove, .accessor-users > section .user-wrapper > a.remove-user, .attachment-members > section .user-wrapper > a.remove-user, .accessor-users > section .users-cooperation > a.remove, .attachment-members > section .users-cooperation > a.remove, .accessor-users > section .users-cooperation > a.remove-user, .attachment-members > section .users-cooperation > a.remove-user {
@@ -20876,7 +20856,7 @@ section.conversations-list-column > ul:after {
         margin-top: 5px;
         border-top: 1px solid #cccccc; }
   /* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/conversations/view-column */
-  .conversation-view-column .discussion .comments-form {
+  .conversation-view-column .discussion .comments-form, .conversation-view-column .discussion .comments-form-block, .conversation-view-column .discussion .comments-form-block-fixed {
     margin-top: 15px; }
 
 /* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/conversations/form */
@@ -20967,7 +20947,7 @@ section.conversations-list-column > ul:after {
         color: #999999; }
       /* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/list */
       .comments-list div.comment > .name a {
-        color: #358bae; }
+        color: #368aaf; }
       /* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/list */
       .comments-list div.comment > .name .muted {
         display: inline;
@@ -21043,24 +21023,29 @@ section.conversations-list-column > ul:after {
           color: inherit; }
 
 /* line 3, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-.comments-form {
+.comments-form-actions {
+  padding-top: 0.5em;
+  padding-bottom: 1em; }
+
+/* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+.comments-form, .comments-form-block, .comments-form-block-fixed {
   margin-top: 3px;
   width: 350px;
   position: relative; }
-  /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form .info > span {
+  /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .comments-form .info > span, .comments-form-block .info > span, .comments-form-block-fixed .info > span {
     display: none;
     color: red;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
-  /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form a.add {
+  /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .comments-form a.add, .comments-form-block a.add, .comments-form-block-fixed a.add {
     width: 30px;
     height: 30px;
     display: block; }
     /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-    .comments-form a.add:before {
+    .comments-form a.add:before, .comments-form-block a.add:before, .comments-form-block-fixed a.add:before {
       position: absolute;
       font-size: 17px;
       line-height: 15px;
@@ -21071,8 +21056,8 @@ section.conversations-list-column > ul:after {
       line-height: 30px;
       text-align: center;
       cursor: pointer; }
-  /* line 24, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form .comment-body {
+  /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .comments-form .comment-body, .comments-form-block .comment-body, .comments-form-block-fixed .comment-body {
     width: 325px;
     border: 1px solid #cccccc;
     padding: 5px 10px;
@@ -21080,29 +21065,30 @@ section.conversations-list-column > ul:after {
     height: 19px;
     font-size: 12px;
     color: #666666;
-    margin-bottom: 4px; }
+    margin-bottom: 4px;
+    word-wrap: break-word; }
     /* line 128, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-    .comments-form .comment-body::-webkit-input-placeholder {
+    .comments-form .comment-body::-webkit-input-placeholder, .comments-form-block .comment-body::-webkit-input-placeholder, .comments-form-block-fixed .comment-body::-webkit-input-placeholder {
       color: #999999; }
     /* line 130, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-    .comments-form .comment-body:-moz-placeholder {
+    .comments-form .comment-body:-moz-placeholder, .comments-form-block .comment-body:-moz-placeholder, .comments-form-block-fixed .comment-body:-moz-placeholder {
       color: #999999; }
     /* line 132, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-    .comments-form .comment-body:-ms-input-placeholder {
+    .comments-form .comment-body:-ms-input-placeholder, .comments-form-block .comment-body:-ms-input-placeholder, .comments-form-block-fixed .comment-body:-ms-input-placeholder {
       color: #999999; }
-  /* line 34, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form input {
+  /* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .comments-form input, .comments-form-block input, .comments-form-block-fixed input {
     float: left; }
-  /* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form input[type=file] {
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .comments-form input[type=file], .comments-form-block input[type=file], .comments-form-block-fixed input[type=file] {
     cursor: pointer;
     width: 28px;
     opacity: 0;
     filter: alpha(opacity=0);
     height: 30px;
     line-height: 30px; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form input[type=reset] {
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .comments-form input[type=reset], .comments-form-block input[type=reset], .comments-form-block-fixed input[type=reset] {
     float: right;
     font-size: 12px;
     background: transparent;
@@ -21114,8 +21100,8 @@ section.conversations-list-column > ul:after {
     border: 0;
     font-weight: normal;
     -webkit-appearance: none; }
-  /* line 54, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form input[type=submit] {
+  /* line 60, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .comments-form input[type=submit], .comments-form-block input[type=submit], .comments-form-block-fixed input[type=submit] {
     float: right;
     zoom: 1;
     display: inline;
@@ -21128,14 +21114,14 @@ section.conversations-list-column > ul:after {
     background-color: #348dad;
     cursor: pointer; }
     /* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-    .comments-form input[type=submit]:hover {
+    .comments-form input[type=submit]:hover, .comments-form-block input[type=submit]:hover, .comments-form-block-fixed input[type=submit]:hover {
       background-color: #399abd;
       text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
     /* line 41, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-    .comments-form input[type=submit]:active {
+    .comments-form input[type=submit]:active, .comments-form-block input[type=submit]:active, .comments-form-block-fixed input[type=submit]:active {
       background-color: #2e7d99; }
-  /* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form .attachment-label {
+  /* line 68, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .comments-form .attachment-label, .comments-form-block .attachment-label, .comments-form-block-fixed .attachment-label {
     color: #999999;
     zoom: 1;
     display: inline;
@@ -21152,24 +21138,24 @@ section.conversations-list-column > ul:after {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
-  /* line 73, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form span.attachment-label {
+  /* line 79, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .comments-form span.attachment-label, .comments-form-block span.attachment-label, .comments-form-block-fixed span.attachment-label {
     position: absolute;
     overflow: visible;
     margin-left: 30px;
     margin-top: -30px; }
-  /* line 78, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form.hidden {
+  /* line 84, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .comments-form.hidden, .hidden.comments-form-block, .hidden.comments-form-block-fixed {
     display: none; }
-  /* line 80, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form .file.hidden {
+  /* line 86, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .comments-form .file.hidden, .comments-form-block .file.hidden, .comments-form-block-fixed .file.hidden {
     display: none; }
-  /* line 82, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-  .comments-form .attachment-link-popup {
+  /* line 88, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .comments-form .attachment-link-popup, .comments-form-block .attachment-link-popup, .comments-form-block-fixed .attachment-link-popup {
     display: none;
     padding: 20px 20px 20px 20px; }
     /* line 120, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-    .comments-form .attachment-link-popup:before {
+    .comments-form .attachment-link-popup:before, .comments-form-block .attachment-link-popup:before, .comments-form-block-fixed .attachment-link-popup:before {
       content: "";
       display: inline-block;
       border-left: 8px solid transparent;
@@ -21180,7 +21166,7 @@ section.conversations-list-column > ul:after {
       top: -8px;
       left: 8px; }
     /* line 130, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-    .comments-form .attachment-link-popup:after {
+    .comments-form .attachment-link-popup:after, .comments-form-block .attachment-link-popup:after, .comments-form-block-fixed .attachment-link-popup:after {
       content: "";
       display: inline-block;
       border-left: 7px solid transparent;
@@ -21189,8 +21175,8 @@ section.conversations-list-column > ul:after {
       position: absolute;
       top: -7px;
       left: 9px; }
-    /* line 86, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-    .comments-form .attachment-link-popup.shown {
+    /* line 92, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+    .comments-form .attachment-link-popup.shown, .comments-form-block .attachment-link-popup.shown, .comments-form-block-fixed .attachment-link-popup.shown {
       box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
       -moz-box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
       -webkit-box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
@@ -21201,12 +21187,12 @@ section.conversations-list-column > ul:after {
       background-color: white;
       border: 1px solid #cccccc;
       z-index: 1000; }
-      /* line 95, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-      .comments-form .attachment-link-popup.shown .link-attachment-id {
+      /* line 101, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+      .comments-form .attachment-link-popup.shown .link-attachment-id, .comments-form-block .attachment-link-popup.shown .link-attachment-id, .comments-form-block-fixed .attachment-link-popup.shown .link-attachment-id {
         width: 250px;
         margin: 0 10px 10px; }
-      /* line 99, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-      .comments-form .attachment-link-popup.shown .add-new .comment-attachment {
+      /* line 105, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+      .comments-form .attachment-link-popup.shown .add-new .comment-attachment, .comments-form-block .attachment-link-popup.shown .add-new .comment-attachment, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment {
         margin-left: 10px;
         width: 100px;
         z-index: 1;
@@ -21217,26 +21203,26 @@ section.conversations-list-column > ul:after {
         *display: inline;
         vertical-align: top; }
         /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-        .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before {
+        .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment:before {
           position: absolute;
           font-size: 17px;
           line-height: 15px;
           color: #666666; }
-      /* line 106, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-      .comments-form .attachment-link-popup.shown .add-new span {
+      /* line 112, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+      .comments-form .attachment-link-popup.shown .add-new span, .comments-form-block .attachment-link-popup.shown .add-new span, .comments-form-block-fixed .attachment-link-popup.shown .add-new span {
         margin-left: -100px;
         height: 30px;
         line-height: 30px;
         color: #348dad;
         cursor: pointer; }
-        /* line 112, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-        .comments-form .attachment-link-popup.shown .add-new span:hover {
+        /* line 118, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+        .comments-form .attachment-link-popup.shown .add-new span:hover, .comments-form-block .attachment-link-popup.shown .add-new span:hover, .comments-form-block-fixed .attachment-link-popup.shown .add-new span:hover {
           text-decoration: underline; }
-      /* line 114, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-      .comments-form .attachment-link-popup.shown .add-new span:hover {
+      /* line 120, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+      .comments-form .attachment-link-popup.shown .add-new span:hover, .comments-form-block .attachment-link-popup.shown .add-new span:hover, .comments-form-block-fixed .attachment-link-popup.shown .add-new span:hover {
         cursor: pointer; }
-      /* line 116, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-      .comments-form .attachment-link-popup.shown btn.close {
+      /* line 122, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+      .comments-form .attachment-link-popup.shown btn.close, .comments-form-block .attachment-link-popup.shown btn.close, .comments-form-block-fixed .attachment-link-popup.shown btn.close {
         float: right;
         zoom: 1;
         display: inline;
@@ -21249,14 +21235,14 @@ section.conversations-list-column > ul:after {
         background-color: #348dad;
         cursor: pointer; }
         /* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-        .comments-form .attachment-link-popup.shown btn.close:hover {
+        .comments-form .attachment-link-popup.shown btn.close:hover, .comments-form-block .attachment-link-popup.shown btn.close:hover, .comments-form-block-fixed .attachment-link-popup.shown btn.close:hover {
           background-color: #399abd;
           text-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
         /* line 41, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-        .comments-form .attachment-link-popup.shown btn.close:active {
+        .comments-form .attachment-link-popup.shown btn.close:active, .comments-form-block .attachment-link-popup.shown btn.close:active, .comments-form-block-fixed .attachment-link-popup.shown btn.close:active {
           background-color: #2e7d99; }
-      /* line 123, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-      .comments-form .attachment-link-popup.shown a.cancel {
+      /* line 129, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+      .comments-form .attachment-link-popup.shown a.cancel, .comments-form-block .attachment-link-popup.shown a.cancel, .comments-form-block-fixed .attachment-link-popup.shown a.cancel {
         float: right;
         font-size: 12px;
         background: transparent;
@@ -21269,14 +21255,14 @@ section.conversations-list-column > ul:after {
         font-weight: normal;
         -webkit-appearance: none; }
 
-/* line 137, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+/* line 143, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
 .shiftenter, .shiftenterInactive {
   z-index: 1;
   font-size: 0.8em;
   opacity: 0.4;
   filter: alpha(opacity=40); }
 
-/* line 143, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+/* line 149, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
 .shiftenter {
   display: block;
   margin-left: 30px;
@@ -21286,19 +21272,39 @@ section.conversations-list-column > ul:after {
   float: left;
   width: 100px; }
 
-/* line 153, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+/* line 159, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
 .shiftenterInactive {
   display: none; }
 
-/* line 156, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+/* line 162, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
 .new-comment-form {
   position: relative; }
 
+/* line 166, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+.message-box-files .attachment {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px; }
+  /* line 172, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .message-box-files .attachment a, .message-box-files .attachment a:hover {
+    text-decoration: none; }
+  /* line 175, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .message-box-files .attachment a:hover img {
+    border-color: #368aaf; }
+  /* line 177, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+  .message-box-files .attachment img {
+    border: 1px solid #eeeeee; }
+
+/* line 180, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
+.comment-box {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/messages/form */
-.messages-form, .comments-form {
+.messages-form, .comments-form, .comments-form-block, .comments-form-block-fixed {
   width: 100%; }
   /* line 3, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/messages/form */
-  .messages-form .comment-body, .comments-form .comment-body {
+  .messages-form .comment-body, .comments-form .comment-body, .comments-form-block .comment-body, .comments-form-block-fixed .comment-body {
     width: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -21306,11 +21312,48 @@ section.conversations-list-column > ul:after {
     min-height: 31px;
     line-height: 1.7; }
   /* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/messages/form */
-  .messages-form textarea.comment-body, .comments-form textarea.comment-body {
+  .messages-form textarea.comment-body, .comments-form textarea.comment-body, .comments-form-block textarea.comment-body, .comments-form-block-fixed textarea.comment-body {
     resize: vertical !important; }
   /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/messages/form */
-  .messages-form input.comment-body, .comments-form input.comment-body {
+  .messages-form input.comment-body, .comments-form input.comment-body, .comments-form-block input.comment-body, .comments-form-block-fixed input.comment-body {
     float: none; }
+
+/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form-fixed */
+.comments-form-block, .comments-form-block-fixed {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+
+/* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form-fixed */
+.comments-form-block-fixed {
+  display: block;
+  position: fixed;
+  left: inherit;
+  right: inherit;
+  top: auto;
+  bottom: 0;
+  z-index: 22;
+  width: auto;
+  margin-left: 90px;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/list-column */
 section.communities-list-column {
@@ -21365,7 +21408,7 @@ section.communities-list-column {
         color: #999999; }
         /* line 41, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/list-column */
         section.communities-list-column > ul > li .name .status i {
-          color: #358bae;
+          color: #368aaf;
           font-size: 10px;
           margin-right: 3px; }
       /* line 45, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/list-column */
@@ -23294,7 +23337,7 @@ section.project-view-column > .column-content > .object-details > div > section.
     /* line 109, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/view-column */
     section.project-view-column > .column-content > .object-details > div > section.actions a.template {
       background: none;
-      color: #358bae;
+      color: #368aaf;
       text-decoration: underline; }
     /* line 113, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/view-column */
     section.project-view-column > .column-content > .object-details > div > section.actions a.cancel {
@@ -23832,7 +23875,7 @@ section.project-view-column > .column-content > .object-details > .tree {
                 /* line 464, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/view-column */
                 section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > span > a, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > span > a {
                   height: 15px;
-                  border-bottom: 1px dashed #358bae;
+                  border-bottom: 1px dashed #368aaf;
                   -webkit-transition: all;
                   -moz-transition: all;
                   -o-transition: all;
@@ -23851,7 +23894,7 @@ section.project-view-column > .column-content > .object-details > .tree {
                 white-space: nowrap; }
                 /* line 479, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/view-column */
                 section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > p.task-title, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > p.task-title {
-                  color: #358bae;
+                  color: #368aaf;
                   z-index: 11; }
                   /* line 482, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/view-column */
                   section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > section > p.task-title:hover, section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > section > .description > aside > p.task-title:hover {
@@ -24112,7 +24155,7 @@ section.project-view-column > .column-content > .object-details > .tree {
               /* line 670, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/view-column */
               section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.new > section > .description > p {
                 font-weight: bold;
-                color: #358bae; }
+                color: #368aaf; }
             /* line 675, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/view-column */
             section.project-view-column > .column-content > .object-details > .tree > .contents > li > ul li > ul > li > ul > li.finished > section {
               background: white; }
@@ -28607,7 +28650,7 @@ section.subtop.create-contact-window .results {
       list-style-position: inside; }
       /* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/help */
       .help-page > ul.help-list ul li {
-        color: #358bae;
+        color: #368aaf;
         list-style-type: disc;
         list-style-position: inside; }
         /* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/help */

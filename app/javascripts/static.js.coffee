@@ -4,6 +4,7 @@
 #= require select2/select2
 #= require moment/moment
 #= require eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min
+#= require jquery-autosize/jquery.autosize.min
 #= require projects/tasks
 #= require projects/new
 #= require projects/discussions
@@ -11,6 +12,7 @@
 #= require notifications/list
 #= require tasks/list
 #= require communities/billing
+#= require layout/fixed_block
 
 $ ->
   $('@select2').select2()
@@ -41,6 +43,8 @@ $ ->
 
   $('@tooltip').tooltip
     container: 'body'
+
+  $('@autosize').autosize()
 
   @checkboxes = $('.project-task-box input[type="checkbox"], @project-tasks-list-select-all')
 

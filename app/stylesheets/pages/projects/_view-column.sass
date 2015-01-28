@@ -112,7 +112,7 @@ section.project-view-column
               background: darken(#338cae, 3%)
             &.template
               background: none
-              color: #358bae
+              color: $blue-link-color
               text-decoration: underline
             &.cancel
               background: none
@@ -469,7 +469,7 @@ section.project-view-column
                         > a
                           height: 15px
                           border:
-                            bottom: 1px dashed #358bae
+                            bottom: 1px dashed $blue-link-color
                           +transition(all)
                           &:hover
                             border:
@@ -482,7 +482,7 @@ section.project-view-column
                         color: #666666
                         +text-overflow
                         &.task-title
-                          color: #358bae
+                          color: $blue-link-color
                           z-index: 11
                           &:hover
                             cursor: pointer
@@ -675,7 +675,7 @@ section.project-view-column
                           > .description > p
                             font:
                               weight: bold
-                            color: #358bae
+                            color: $blue-link-color
                         &.finished
                           > section
                             background: white

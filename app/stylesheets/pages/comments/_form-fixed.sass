@@ -1,0 +1,32 @@
+.comments-form-block
+  @extend .comments-form
+  @extend .container-grey
+  padding:
+    top: 10px
+    bottom: 30px
+    left: $space-middle
+    right: $space-middle
+  margin:
+    bottom: $space-middle
+  +border-radius($border-radius-base)
+
+.comments-form-block-fixed
+  @extend .comments-form-block
+  display: block
+  position: fixed
+  left: inherit
+  right: inherit
+  top: auto
+  bottom: 0
+  z-index: $comment-fixed-form-z-index
+  width: auto
+  margin:
+    left: $navColumnWidth
+    bottom: 0
+  padding:
+    top: 10px
+    bottom: 30px
+    left: $space-large
+    right: $space-large
+  +border-radius(0)
+

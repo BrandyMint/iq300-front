@@ -1,5 +1,10 @@
 $docs_file_description_color: red
 
+.comments-form-actions
+  padding:
+    top: 0.5em
+    bottom: 1em
+
 .comments-form
   margin-top: 3px
   //&, form
@@ -37,6 +42,7 @@ $docs_file_description_color: red
     +placeholder-color(#999999)
     color: #666666
     margin-bottom: 4px
+    word-wrap: break-word
   input
     float: left
   input[type=file]
@@ -161,3 +167,26 @@ $docs_file_description_color: red
 
 .new-comment-form
   position: relative
+
+.message-box-files
+  .attachment
+    display: inline-block
+    margin:
+      right: $grid-gutter-width/2
+      bottom: $grid-gutter-width/2
+    a
+      &, &:hover
+        text-decoration: none
+      &:hover
+        img
+          border-color: $blue-link-color
+    img
+      border: 1px solid $line-color
+
+.comment-box
+  @extend .message-box
+  padding:
+    top: 10px
+    bottom: 10px
+
+
