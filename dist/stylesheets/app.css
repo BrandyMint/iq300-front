@@ -16066,7 +16066,7 @@ a.task-box-block-link {
     display: none; }
 
 /* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/task */
-.task-group-title {
+.task-group-title, .project-group-title {
   color: #ccc;
   margin: 10px; }
 
