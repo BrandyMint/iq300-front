@@ -13,10 +13,41 @@
                 %input.project-tasks-list-navbar-checkbox-input{type: 'checkbox'}
                 Скрыть группы
           %select.form-control.input-sm
+            - tasks_filter = ['Все задачи', 'К выполнению', 'Завершённые', 'Черновики', 'Задачи на сегодня']
+            %option{selected: 'selected'} Все задачи
+            - tasks_filter.each do |f|
+              %option= f
+          &nbsp;
+          %select.form-control.input-sm
             - tasks_filter = "По статусу, По исполнителям, По дедлайну".split(', ')
             %option{selected: 'selected'} Без группировки
             - tasks_filter.each do |f|
               %option= f
+          &nbsp;
+          -#%a.btn.btn-default{href: '#'}
+            %i.fa.fa-user
+            Все
+        .navbar-form.navbar-left{ style: 'position: relative; padding: 0;'}
+          %a.btn.btn-warning{href: '#'}
+            %i.fa.fa-user
+            3
+          .popover.bottom{style: 'display: block; margin-left: -80px; margin-top: 40px;'}
+            .arrow
+            .popover-content{style: 'max-height: 250px; overflow-y: auto;'}
+              %a.btn-block.btn-link-plain Все исполнители
+              %a.btn-block.btn-link-plain Мои задачи
+              %hr
+              .content-group
+                %input.form-control{type: 'text', placeholder: 'Добавить исполнителя'}
+              - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов".split(', ')
+              - for i in 0..2
+                - filter_users.each do |user|
+                  %a.btn-block.btn-link-plain
+                    = user
+                    &nbsp;
+                    %i.fa.fa-times-circle.icon-size-18.pull-right
+
+
       .col-sm-4
         .navbar-form.navbar-right
           = link_to 'Добавить веху', '#', class: 'btn btn-default btn-sm'
@@ -24,23 +55,20 @@
           = link_to 'Добавить задачу', '#', class: 'btn btn-default btn-sm', role: 'project-tasks-list-add-task-btn'
         .clearfix
       .col-sm-12
-        .project-tasks-list-users-filters-block
-          %select.form-control.input-sm{role: 'multiselect-task-states', multiple: 'multiple'}
-            - tasks_filter = ['Черновики', 'Новые', 'В работе', 'На проверке', 'Просроченные', 'Выполненные', 'Отменённые']
-            - tasks_filter.each do |f|
-              %option= f
-          &nbsp;
-          -#%span.project-tasks-list-users-filter{role: :tooltip, data: {'original-title' => 'Фильтровать задачи по исполнителям'}}
-          %span.project-tasks-list-users-filter
-            %select{role: 'multiselect-users', :tabindex => "-1", multiple: 'multiple'}
-              - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов, Ахмед Сарсенбайулов-Алтынбеков".split(', ')
+        .navbar-form
+          -#.row
+            .col-sm-10
+              - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов".split(', ')
               - for i in 0..2
                 - filter_users.each do |user|
-                  %option
-                    -#= "#{user.split(' ')[0][0]}. #{truncate(user.split(' ')[1..-1].join(' '), length: 12)}"
+                  %a.btn.btn-sm.btn-link-plain
                     = user
-
-
+                    &nbsp;
+                    %i.fa.fa-times-circle.icon-size-18
+            .col-sm-2
+              %a.btn.btn-sm.btn-outline-gray.pull-right
+                Сбросить фильтр по исполнителям
+              .clearfix
 
     .project-group-header-actions-fixed.hide{role: 'project-group-header-actions'}
       .navbar-form.navbar-left
@@ -56,6 +84,10 @@
           - tasks_filter.each do |f|
             %option= f
       .clearfix
+
+
+
+
 
   %ul.contents
     %li.active
