@@ -4000,18 +4000,18 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     color: #296c87; }
 
 /* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/alerts */
-.alert-warning {
+.alert-warning, .alert-warning-light {
   background-color: #f8931f;
   border-color: #f65f08;
   color: #fff; }
   /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/alerts */
-  .alert-warning a {
+  .alert-warning a, .alert-warning-light a {
     color: #fff; }
   /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/alerts */
-  .alert-warning hr {
+  .alert-warning hr, .alert-warning-light hr {
     border-top-color: #dd5607; }
   /* line 15, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/alerts */
-  .alert-warning .alert-link {
+  .alert-warning .alert-link, .alert-warning-light .alert-link {
     color: #e6e6e6; }
 
 /* line 65, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/alerts */
@@ -13466,7 +13466,7 @@ html > body > .ui-pnotify {
   border: 0; }
 
 /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/pnotify */
-.ui-pnotify-container.alert-warning {
+.ui-pnotify-container.alert-warning, .ui-pnotify-container.alert-warning-light {
   color: #fff;
   background-color: #f8931f;
   border: 0; }
@@ -14439,23 +14439,27 @@ hr {
 .content-group {
   margin-bottom: 20px; }
 
-/* line 166, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 165, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+.content-group-sm {
+  margin-bottom: 10px; }
+
+/* line 168, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 img.image-x2 {
   display: none; }
 
-/* line 170, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 172, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 body.retina-display img.image-x1 {
   display: none; }
-/* line 172, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+/* line 174, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
 body.retina-display img.image-x2 {
   display: inline; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 170, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+  /* line 172, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
   img.image-x1 {
     display: none; }
 
-  /* line 172, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
+  /* line 174, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/layout */
   img.image-x2 {
     display: inline; }
  }
@@ -14487,6 +14491,10 @@ body.retina-display img.image-x2 {
   width: 180px;
   z-index: 19;
   background-color: #f9f9f9; }
+
+/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/typography */
+.text-paragraph-sm {
+  margin-bottom: 9px; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/forms */
 .input-group-inline-label, .input-group-inline-dash {
@@ -16557,6 +16565,12 @@ a.bg-primary-light:hover {
   .input-group-above .form-control:focus + .input-group-addon, .input-group-above .tasks-list-filters-block-select:focus + .input-group-addon {
     border-left-color: #4aaee4; }
 
+/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/alerts */
+.alert-warning-light {
+  background-color: #fde6cc;
+  border-color: #fccf9b;
+  color: #ac5e05; }
+
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/panels */
 .panel-warning-light {
   border-color: #fcbe9b; }
@@ -16571,6 +16585,21 @@ a.bg-primary-light:hover {
   /* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/panels */
   .panel-warning-light > .panel-footer + .panel-collapse > .panel-body, .panel-warning-light > .community-block-footer + .panel-collapse > .panel-body, .panel-warning-light > .panel-footer + .panel-collapse > .community-block-body, .panel-warning-light > .community-block-footer + .panel-collapse > .community-block-body, .panel-warning-light > .panel-footer + .panel-collapse > .community-profile-details-stats-body, .panel-warning-light > .community-block-footer + .panel-collapse > .community-profile-details-stats-body {
     border-bottom-color: #fcbe9b; }
+
+/* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/panels */
+.panel-body-section {
+  border-top: 1px solid #eeeeee;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  /* line 9, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/panels */
+  .panel-body-section:first-child {
+    border-top: none;
+    padding-top: 0; }
+
+/* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/panels */
+.panel-heading-btn {
+  margin-top: -6px;
+  margin-bottom: -6px; }
 
 /* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/image-cropper */
 .image-cropper .remove-picture-container {
@@ -22883,18 +22912,19 @@ section.notification-view-column .column-content .object-details {
   background: #fff;
   border-bottom: 1px solid #eeeeee;
   margin-top: -20px;
+  margin-right: -40px;
   padding-left: inherit;
   padding-right: inherit;
   padding-top: 20px;
   z-index: 22; }
-  /* line 15, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/header */
+  /* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/header */
   .projects-list-header.projects-list-header-fixed .projects-list-filters {
     margin-bottom: 20px; }
-  /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/header */
+  /* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/header */
   .projects-list-header.projects-list-header-fixed .projects-list-header-filters-btn {
     display: inline-block; }
 
-/* line 20, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/header */
+/* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/header */
 .projects-list-header-filters-btn {
   display: none; }
 
