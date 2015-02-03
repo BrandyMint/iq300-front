@@ -16066,7 +16066,7 @@ a.task-box-block-link {
     display: none; }
 
 /* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/task */
-.task-group-title {
+.task-group-title, .project-group-title {
   color: #ccc;
   margin: 10px; }
 
@@ -22912,18 +22912,19 @@ section.notification-view-column .column-content .object-details {
   background: #fff;
   border-bottom: 1px solid #eeeeee;
   margin-top: -20px;
+  margin-right: -40px;
   padding-left: inherit;
   padding-right: inherit;
   padding-top: 20px;
   z-index: 22; }
-  /* line 15, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/header */
+  /* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/header */
   .projects-list-header.projects-list-header-fixed .projects-list-filters {
     margin-bottom: 20px; }
-  /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/header */
+  /* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/header */
   .projects-list-header.projects-list-header-fixed .projects-list-header-filters-btn {
     display: inline-block; }
 
-/* line 20, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/header */
+/* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/header */
 .projects-list-header-filters-btn {
   display: none; }
 
