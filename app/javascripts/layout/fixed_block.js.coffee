@@ -15,6 +15,7 @@ window.FixedBlock ||= {}
         fixedBlock: app.$fixedBlockBottom
 
   app.adjustFixedBlock = ({container: container, fixedBlock: fixedBlock}) ->
+    return unless container?.length > 0
     containerPosition = {}
     containerPosition = $(container).offset()
     containerPosition.right = $(window).width() - (containerPosition.left + $(container).width())

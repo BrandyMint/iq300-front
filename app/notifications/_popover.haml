@@ -13,7 +13,7 @@
     %article.notifications-widget-popover-content
       - for i in 0..2
         - notifications.each do |item|
-          %a.notifications-widget-list-item{href: '#', role: 'notifications-widget-popover-item'}
+          .notifications-widget-list-item{href: '#', role: 'notifications-widget-popover-item'}
             .notifications-widget-list-item-close{href: '#', role: 'notifications-widget-popover-item-close'}
               &times;
             .row.row-collapse
@@ -22,8 +22,10 @@
                   %i.notifications-widget-list-item-type-icon{class: "notifications-widget-list-item-type-icon-#{item[:type]}"}
               .col-xs-11.col-collapse
                 .notifications-widget-list-item-content
-                  %strong= item[:user]
-                  %p= item[:content]
+                  %a(href="")
+                    %strong= item[:user]
+                  %p
+                    %a(href="")= item[:content]
 
   %div{role: 'notifications-widget-popover-messages'}
     .notifications-widget-popover-title

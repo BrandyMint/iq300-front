@@ -15,15 +15,17 @@ $notifications-widget-type-icons: task check-circle, project suitcase, message e
 
 .notifications-widget-button
   position: relative
-  font-size: 20px
-  &:hover
-    color: $nav-item-highlight-color
+  font-size: 18px
+  &,
+  .header-global .user-nav > &
+    &:hover
+      color: $blue-link-color
 
 .notifications-widget-button-bullet
   display: block
   position: absolute
-  right: 3px
-  top: $headerHeight*0.27
+  right: 0
+  top: $headerHeight*0.26
   width: 6px
   height: 6px
   +border-radius(100%)
@@ -89,6 +91,7 @@ $notifications-widget-type-icons: task check-circle, project suitcase, message e
   line-height: 1.2
   background-color: lighten($new-item-background, 10%)
   color: $text-color
+  cursor: pointer
   &:first-child
     border-top: none
   &:hover
@@ -96,6 +99,9 @@ $notifications-widget-type-icons: task check-circle, project suitcase, message e
     background-color: #fff
     .notifications-widget-list-item-close
       display: block
+  &, a
+    &:hover
+      text-decoration: none
 
 .notifications-widget-list-item-close
   @extend %notifications-widget-close-btn
