@@ -26,6 +26,11 @@
                     %strong= item[:user]
                   %p
                     %a(href="")= item[:content]
+    -#.notifications-widget-list-empty
+      .notifications-widget-list-empty-content
+        .notifications-widget-list-empty-icon
+          %i.iqs-nav-notifications
+        %p Нет новых уведомлений
 
   %div{role: 'notifications-widget-popover-messages'}
     .notifications-widget-popover-title
