@@ -16760,16 +16760,19 @@ a.task-box-block-link {
 .notifications-widget-list-item-type {
   color: #999999;
   text-align: center; }
+  /* line 117, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  .notifications-widget-list-item-type:hover {
+    color: #555555; }
 
-/* line 118, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 120, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-item-type-icon {
   font-size: 16px; }
 
-/* line 126, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 128, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-item-content {
   padding-left: 15px; }
 
-/* line 129, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 131, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-empty {
   text-align: center;
   min-height: 100px; }
@@ -16781,7 +16784,7 @@ a.task-box-block-link {
     vertical-align: middle;
     margin-right: -0.25em; }
 
-/* line 133, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 135, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-empty-content {
   padding-top: 20px;
   padding-bottom: 30px;
@@ -16789,7 +16792,7 @@ a.task-box-block-link {
   display: inline-block;
   vertical-align: middle; }
 
-/* line 140, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 142, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-empty-icon {
   font-size: 40px;
   margin-bottom: 10px;
