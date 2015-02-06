@@ -19,6 +19,21 @@ items:
     type: system
     user: Уведомление системы
     content: текст уведомления
+  -
+    type: community
+    user: Уведомление системы
+    content: текст уведомления
+  -
+    type: task-new
+    user: Иван Иванов
+    content: изменил задачу «Название задачи»
+  -
+    type: task-completed
+    user: Иван Иванов
+    content: завершил задачу «Название задачи»
+
+
+
 
 
 

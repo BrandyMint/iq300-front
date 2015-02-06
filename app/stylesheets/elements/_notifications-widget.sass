@@ -1,6 +1,7 @@
 $notifications-widget-popover-width: 330px
 $notifications-widget-popover-content-height: 330px
 $notifications-widget-type-icons: task check-circle, project project, message message, mention email-sign, system iq300
+$notifications-widget-type-icons-more: community users, task-new arrow-circle-down, task-completed arrow-circle-o-up
 
 %notifications-widget-close-btn
   font:
@@ -124,6 +125,11 @@ $notifications-widget-type-icons: task check-circle, project project, message me
   .notifications-widget-list-item-type-icon-#{nth($t, 1)}
     @extend .iqs
     @extend .iqs-#{nth($t, 2)}
+@each $t in $notifications-widget-type-icons-more
+  .notifications-widget-list-item-type-icon-#{nth($t, 1)}
+    @extend .fa
+    @extend .fa-#{nth($t, 2)}
+
 
 .notifications-widget-list-item-content
   padding-left: $grid-gutter-width/2
