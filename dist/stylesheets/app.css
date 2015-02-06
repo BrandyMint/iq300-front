@@ -7799,7 +7799,7 @@ body {
   font-style: normal; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/core */
-.fa, .multiselect-container.dropdown-menu .glyphicon {
+.fa, .multiselect-container.dropdown-menu .glyphicon, .notifications-widget-list-item-type-icon-community, .notifications-widget-list-item-type-icon-task-new, .notifications-widget-list-item-type-icon-task-completed {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -7871,10 +7871,10 @@ body {
   float: left; }
 
 /* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/bordered-pulled */
-.fa.pull-left, .multiselect-container.dropdown-menu .pull-left.glyphicon {
+.fa.pull-left, .multiselect-container.dropdown-menu .pull-left.glyphicon, .pull-left.notifications-widget-list-item-type-icon-community, .pull-left.notifications-widget-list-item-type-icon-task-new, .pull-left.notifications-widget-list-item-type-icon-task-completed {
   margin-right: 0.3em; }
 /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/bordered-pulled */
-.fa.pull-right, .fa.filter-item-counter, .multiselect-container.dropdown-menu .filter-item-counter.glyphicon, .multiselect-container.dropdown-menu .pull-right.glyphicon {
+.fa.pull-right, .fa.filter-item-counter, .multiselect-container.dropdown-menu .filter-item-counter.glyphicon, .filter-item-counter.notifications-widget-list-item-type-icon-community, .filter-item-counter.notifications-widget-list-item-type-icon-task-new, .filter-item-counter.notifications-widget-list-item-type-icon-task-completed, .multiselect-container.dropdown-menu .pull-right.glyphicon, .pull-right.notifications-widget-list-item-type-icon-community, .pull-right.notifications-widget-list-item-type-icon-task-new, .pull-right.notifications-widget-list-item-type-icon-task-completed {
   margin-left: 0.3em; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/spinning */
@@ -8102,7 +8102,7 @@ body {
   content: "\f01a"; }
 
 /* line 30, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-arrow-circle-o-up:before {
+.fa-arrow-circle-o-up:before, .notifications-widget-list-item-type-icon-task-completed:before {
   content: "\f01b"; }
 
 /* line 31, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -8642,7 +8642,7 @@ body {
   content: "\f0aa"; }
 
 /* line 165, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-arrow-circle-down:before {
+.fa-arrow-circle-down:before, .notifications-widget-list-item-type-icon-task-new:before {
   content: "\f0ab"; }
 
 /* line 166, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -8670,7 +8670,7 @@ body {
   content: "\f0b2"; }
 
 /* line 172, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-group:before, .fa-users:before {
+.fa-group:before, .fa-users:before, .notifications-widget-list-item-type-icon-community:before {
   content: "\f0c0"; }
 
 /* line 173, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -15987,7 +15987,7 @@ section.view-column {
   .page-title .bread-crumbs {
     margin-top: 8px; }
     /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/page-title */
-    .page-title .bread-crumbs .fa, .page-title .bread-crumbs .multiselect-container.dropdown-menu .glyphicon, .multiselect-container.dropdown-menu .page-title .bread-crumbs .glyphicon {
+    .page-title .bread-crumbs .fa, .page-title .bread-crumbs .multiselect-container.dropdown-menu .glyphicon, .multiselect-container.dropdown-menu .page-title .bread-crumbs .glyphicon, .page-title .bread-crumbs .notifications-widget-list-item-type-icon-community, .page-title .bread-crumbs .notifications-widget-list-item-type-icon-task-new, .page-title .bread-crumbs .notifications-widget-list-item-type-icon-task-completed {
       padding: 0 5px; }
     /* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/page-title */
     .page-title .bread-crumbs a {
@@ -16616,27 +16616,27 @@ a.task-box-block-link {
 .multiselect-container.dropdown-menu .filter .btn, .multiselect-container.dropdown-menu .filter .community-invites-btn-base, .multiselect-container.dropdown-menu .filter .community-invites-btn-check, .multiselect-container.dropdown-menu .filter .community-invites-btn-send, .multiselect-container.dropdown-menu .filter .project-form-team-member-btn, .multiselect-container.dropdown-menu .filter .project-form-team-member-selected-btn, .multiselect-container.dropdown-menu .filter .project-discussions-form-btn {
   padding: 5px 12px; }
 
-/* line 5, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-popover-close, .notifications-widget-list-item-close {
   font-size: 18px;
   font-weight: bold;
   line-height: 12px;
   color: #999999;
   padding: 4px; }
-  /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
   .notifications-widget-popover-close:hover, .notifications-widget-list-item-close:hover {
     color: #555555;
     text-decoration: none; }
 
-/* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-button {
   position: relative;
   font-size: 18px; }
-  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
   .notifications-widget-button:hover, .header-global .user-nav > .notifications-widget-button:hover {
     color: #368aaf; }
 
-/* line 24, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-button-bullet {
   display: block;
   position: absolute;
@@ -16652,22 +16652,22 @@ a.task-box-block-link {
   border-radius: 100%;
   background-color: #ff0101; }
 
-/* line 34, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-popover {
   display: none;
   z-index: 30;
   width: 330px;
   padding: 0; }
-  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
   .notifications-widget-popover > .arrow:after {
     border-bottom-color: #f9f9f4; }
 
-/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 47, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-popover-title, .notifications-widget-popover-footer {
   background-color: #f9f9f4;
   border-bottom: 1px solid #eeeeee; }
 
-/* line 51, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-popover-title {
   -moz-border-radius: 5px 5px 0 0;
   -o-border-radius: 5px 5px 0 0;
@@ -16676,7 +16676,7 @@ a.task-box-block-link {
   -webkit-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0; }
 
-/* line 54, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 55, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-popover-close {
   display: inline-block;
   width: 20px;
@@ -16697,13 +16697,13 @@ a.task-box-block-link {
   filter: alpha(opacity=100);
   background-color: #fff;
   border: 1px solid #eeeeee; }
-  /* line 67, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  /* line 68, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
   .notifications-widget-popover-close:hover {
     opacity: 1;
     filter: alpha(opacity=100);
     border-color: #999999; }
 
-/* line 71, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 72, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-popover-footer {
   text-align: center;
   border-bottom: none;
@@ -16715,13 +16715,13 @@ a.task-box-block-link {
   -webkit-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px; }
 
-/* line 78, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 79, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-popover-content {
   padding: 0;
   max-height: 330px;
   overflow-y: auto; }
 
-/* line 84, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 85, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-item {
   display: block;
   position: relative;
@@ -16732,47 +16732,47 @@ a.task-box-block-link {
   background-color: #f7fcfd;
   color: #606060;
   cursor: pointer; }
-  /* line 95, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  /* line 96, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
   .notifications-widget-list-item:first-child {
     border-top: none; }
-  /* line 97, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  /* line 98, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
   .notifications-widget-list-item:hover {
     color: #606060;
     background-color: #fff; }
-    /* line 100, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+    /* line 101, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
     .notifications-widget-list-item:hover .notifications-widget-list-item-close {
       display: block; }
-  /* line 102, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  /* line 103, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
   .notifications-widget-list-item, .notifications-widget-list-item a {
     color: #606060; }
-    /* line 104, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+    /* line 105, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
     .notifications-widget-list-item:hover, .notifications-widget-list-item a:hover {
       text-decoration: none; }
 
-/* line 107, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 108, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-item-close {
   position: absolute;
   top: 5px;
   right: 8px;
   display: none; }
 
-/* line 114, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 115, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-item-type {
   color: #999999;
   text-align: center; }
-  /* line 117, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  /* line 118, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
   .notifications-widget-list-item-type:hover {
     color: #555555; }
 
-/* line 120, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 121, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-item-type-icon {
   font-size: 16px; }
 
-/* line 128, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 134, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-item-content {
   padding-left: 15px; }
 
-/* line 131, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 137, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-empty {
   text-align: center;
   min-height: 100px; }
@@ -16784,7 +16784,7 @@ a.task-box-block-link {
     vertical-align: middle;
     margin-right: -0.25em; }
 
-/* line 135, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 141, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-empty-content {
   padding-top: 20px;
   padding-bottom: 30px;
@@ -16792,7 +16792,7 @@ a.task-box-block-link {
   display: inline-block;
   vertical-align: middle; }
 
-/* line 142, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+/* line 148, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
 .notifications-widget-list-empty-icon {
   font-size: 40px;
   margin-bottom: 10px;
