@@ -1,0 +1,58 @@
+.project-body
+  = partial 'projects/status'
+  .row
+    .col-md-4
+      %h4.project-show-section-title
+        Задачи
+        %small.text-muted 5/20
+      %table.table.table-condensed
+        %tr
+          %td В работе: 5
+        %tr.text-color-danger
+          %td Просрочено: 2
+        %tr
+          %td Выполнено: 10
+        %tr
+          %td Черновики: 3
+        %tr
+          %td Отменённые: 10
+
+    .col-md-7.col-md-offset-1
+      %h4.project-show-section-title Сводная информация
+      %table.table.table-condensed
+        %tr
+          %td{width: '40%'} Руководитель проекта
+          %td{width: '60%'}= link_to 'Василий Петров', '#'
+        %tr
+          %td Начало проекта
+          %td 12 июня 2014
+        %tr
+          %td Инициатор проекта
+          %td= link_to 'Михаил Васильев', '#'
+        %tr
+          %td Основное сообщество
+          %td= link_to 'Название сообщества', '#'
+        %tr
+          %td Сообщества&ndash;участники
+          %td
+            %small
+              - for i in 0..4 do
+                %nobr= link_to 'Название сообщества', '#'
+                - unless i == 4
+                  &middot;
+  -#%hr
+  -#%h4 Участники
+  %hr
+  .project-show-information
+    - project_sections = ['Описание проекта', 'Основание проекта', 'Цель', 'Результаты', 'Критерии успеха', 'Риски']
+    - project_sections.each do |section|
+      .row
+        .col-md-3
+          %h5
+            %strong= "#{section}"
+        .col-md-9
+          = data.projects.project.description
+      %hr
+
+  -#= partial 'projects/people_section'
+
