@@ -1,0 +1,151 @@
+$notifications-widget-popover-width: 330px
+$notifications-widget-popover-content-height: 330px
+$notifications-widget-type-icons: task check-circle, project project, message message, mention email-sign, system iq300
+$notifications-widget-type-icons-more: community users, task-new arrow-circle-down, task-completed arrow-circle-o-up
+
+%notifications-widget-close-btn
+  font:
+    size: 18px
+    weight: bold
+  line-height: 12px
+  color: $gray-light
+  padding: 4px
+  &:hover
+    color: $gray
+    text-decoration: none
+
+.notifications-widget-button
+  position: relative
+  font-size: 18px
+  &,
+  .header-global .user-nav > &
+    &:hover
+      color: $blue-link-color
+
+.notifications-widget-button-bullet
+  display: block
+  position: absolute
+  right: 0
+  top: $headerHeight*0.26
+  width: 6px
+  height: 6px
+  +border-radius(100%)
+  background-color: $brand-danger
+
+.notifications-widget-popover
+  @extend .popover
+  @extend .bottom
+  display: none
+  z-index: $popover-z-index
+  width: $notifications-widget-popover-width
+  padding: 0
+  & > .arrow
+    &:after
+      border-bottom-color: $brand-beige
+
+.notifications-widget-popover-title,
+.notifications-widget-popover-footer
+  @extend .popover-title
+  background-color: $brand-beige
+  border-bottom: 1px solid $line-color
+
+.notifications-widget-popover-title
+  +border-radius(5px 5px 0 0)
+
+.notifications-widget-popover-close
+  @extend %notifications-widget-close-btn
+  display: inline-block
+  width: 20px
+  height: 20px
+  margin-top: -3px
+  +border-radius(100%)
+  +box-sizing(border-box)
+  text-align: center
+  vertical-align: middle
+  +opacity(1)
+  background-color: #fff
+  border: 1px solid $line-color
+  &:hover
+    +opacity(1)
+    border-color: $gray-light
+
+.notifications-widget-popover-footer
+  text-align: center
+  border:
+    bottom: none
+    top: 1px solid $line-color
+  +border-radius(0 0 5px 5px)
+
+.notifications-widget-popover-content
+  @extend .popover-content
+  padding: 0
+  max-height: $notifications-widget-popover-content-height
+  overflow-y: auto
+
+.notifications-widget-list-item
+  display: block
+  position: relative
+  padding: 10px $grid-gutter-width/2
+  border:
+    top: 1px solid $line-color
+    left: 2px solid $blueLink
+  line-height: 1.2
+  background-color: lighten($new-item-background, 10%)
+  color: $text-color
+  cursor: pointer
+  &:first-child
+    border-top: none
+  &:hover
+    color: $text-color
+    background-color: #fff
+    .notifications-widget-list-item-close
+      display: block
+  &, a
+    color: $text-color
+    &:hover
+      text-decoration: none
+
+.notifications-widget-list-item-close
+  @extend %notifications-widget-close-btn
+  position: absolute
+  top: 5px
+  right: 8px
+  display: none
+
+.notifications-widget-list-item-type
+  color: $gray-light
+  text-align: center
+  &:hover
+    color: $gray
+
+.notifications-widget-list-item-type-icon
+  font-size: 16px
+
+@each $t in $notifications-widget-type-icons
+  .notifications-widget-list-item-type-icon-#{nth($t, 1)}
+    @extend .iqs
+    @extend .iqs-#{nth($t, 2)}
+@each $t in $notifications-widget-type-icons-more
+  .notifications-widget-list-item-type-icon-#{nth($t, 1)}
+    @extend .fa
+    @extend .fa-#{nth($t, 2)}
+
+
+.notifications-widget-list-item-content
+  padding-left: $grid-gutter-width/2
+
+.notifications-widget-list-empty
+  +center-block-container
+  min-height: 100px
+
+.notifications-widget-list-empty-content
+  padding:
+    top: 20px
+    bottom: 30px
+  text-align: center
+  +center-block-content
+
+.notifications-widget-list-empty-icon
+  font-size: 40px
+  margin-bottom: 10px
+  color: $gray

@@ -4649,7 +4649,7 @@ button.close {
     margin-left: 3px;
     padding: 0 5px; }
   /* line 19, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/tooltip */
-  .tooltip.bottom {
+  .tooltip.bottom, .tooltip.notifications-widget-popover {
     margin-top: 3px;
     padding: 5px 0; }
   /* line 20, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/tooltip */
@@ -4709,7 +4709,7 @@ button.close {
   border-width: 5px 0 5px 5px;
   border-left-color: #338cae; }
 /* line 76, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/tooltip */
-.tooltip.bottom .tooltip-arrow {
+.tooltip.bottom .tooltip-arrow, .tooltip.notifications-widget-popover .tooltip-arrow {
   top: 0;
   left: 50%;
   margin-left: -5px;
@@ -4729,7 +4729,7 @@ button.close {
   border-bottom-color: #338cae; }
 
 /* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-.popover {
+.popover, .notifications-widget-popover {
   position: absolute;
   top: 0;
   left: 0;
@@ -4748,20 +4748,20 @@ button.close {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   white-space: normal; }
   /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-  .popover.top {
+  .popover.top, .top.notifications-widget-popover {
     margin-top: -10px; }
   /* line 27, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-  .popover.right {
+  .popover.right, .right.notifications-widget-popover {
     margin-left: 10px; }
   /* line 28, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-  .popover.bottom {
+  .popover.bottom, .notifications-widget-popover {
     margin-top: 10px; }
   /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-  .popover.left {
+  .popover.left, .left.notifications-widget-popover {
     margin-left: -10px; }
 
 /* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-.popover-title {
+.popover-title, .notifications-widget-popover-title, .notifications-widget-popover-footer {
   margin: 0;
   padding: 8px 14px;
   font-size: 13px;
@@ -4772,11 +4772,11 @@ button.close {
   border-radius: 5px 5px 0 0; }
 
 /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-.popover-content {
+.popover-content, .notifications-widget-popover-content {
   padding: 9px 14px; }
 
 /* line 53, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-.popover > .arrow, .popover > .arrow:after {
+.popover > .arrow, .notifications-widget-popover > .arrow, .popover > .arrow:after, .notifications-widget-popover > .arrow:after {
   position: absolute;
   display: block;
   width: 0;
@@ -4785,16 +4785,16 @@ button.close {
   border-style: solid; }
 
 /* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-.popover > .arrow {
+.popover > .arrow, .notifications-widget-popover > .arrow {
   border-width: 11px; }
 
 /* line 65, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-.popover > .arrow:after {
+.popover > .arrow:after, .notifications-widget-popover > .arrow:after {
   border-width: 10px;
   content: ""; }
 
 /* line 71, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-.popover.top > .arrow {
+.popover.top > .arrow, .top.notifications-widget-popover > .arrow {
   left: 50%;
   margin-left: -11px;
   border-bottom-width: 0;
@@ -4802,14 +4802,14 @@ button.close {
   border-top-color: rgba(0, 0, 0, 0.25);
   bottom: -11px; }
   /* line 78, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-  .popover.top > .arrow:after {
+  .popover.top > .arrow:after, .top.notifications-widget-popover > .arrow:after {
     content: " ";
     bottom: 1px;
     margin-left: -10px;
     border-bottom-width: 0;
     border-top-color: #fff; }
 /* line 86, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-.popover.right > .arrow {
+.popover.right > .arrow, .right.notifications-widget-popover > .arrow {
   top: 50%;
   left: -11px;
   margin-top: -11px;
@@ -4817,14 +4817,14 @@ button.close {
   border-right-color: #999999;
   border-right-color: rgba(0, 0, 0, 0.25); }
   /* line 93, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-  .popover.right > .arrow:after {
+  .popover.right > .arrow:after, .right.notifications-widget-popover > .arrow:after {
     content: " ";
     left: 1px;
     bottom: -10px;
     border-left-width: 0;
     border-right-color: #fff; }
 /* line 101, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-.popover.bottom > .arrow {
+.popover.bottom > .arrow, .notifications-widget-popover > .arrow {
   left: 50%;
   margin-left: -11px;
   border-top-width: 0;
@@ -4832,14 +4832,14 @@ button.close {
   border-bottom-color: rgba(0, 0, 0, 0.25);
   top: -11px; }
   /* line 108, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-  .popover.bottom > .arrow:after {
+  .popover.bottom > .arrow:after, .notifications-widget-popover > .arrow:after {
     content: " ";
     top: 1px;
     margin-left: -10px;
     border-top-width: 0;
     border-bottom-color: #fff; }
 /* line 117, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-.popover.left > .arrow {
+.popover.left > .arrow, .left.notifications-widget-popover > .arrow {
   top: 50%;
   right: -11px;
   margin-top: -11px;
@@ -4847,7 +4847,7 @@ button.close {
   border-left-color: #999999;
   border-left-color: rgba(0, 0, 0, 0.25); }
   /* line 124, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/popovers */
-  .popover.left > .arrow:after {
+  .popover.left > .arrow:after, .left.notifications-widget-popover > .arrow:after {
     content: " ";
     right: 1px;
     border-right-width: 0;
@@ -7595,15 +7595,24 @@ body {
   content: "\e600"; }
 
 @font-face {
-  font-family: 'iq-navicons';
-  src: url("/assets/iq-navicons.eot?64905085");
-  src: url("/assets/iq-navicons.eot?64905085#iefix") format("embedded-opentype"), url("/assets/iq-navicons.woff?64905085") format("woff"), url("/assets/iq-navicons.ttf?64905085") format("truetype"), url("/assets/iq-navicons.svg?64905085#iq-navicons") format("svg");
+  font-family: 'iqs';
+  src: url("/assets/iqs.eot?12103508");
+  src: url("/assets/iqs.eot?12103508#iefix") format("embedded-opentype"), url("/assets/iqs.woff?12103508") format("woff"), url("/assets/iqs.ttf?12103508") format("truetype"), url("/assets/iqs.svg?12103508#iqs") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-/* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons */
-[class^="iq-navicons-"]:before, [class*=" iq-navicons-"]:before {
-  font-family: "iq-navicons";
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+ *@media screen and (-webkit-min-device-pixel-ratio:0) {
+ *  @font-face {
+ *    font-family: 'iqs';
+ *    src: url("/assets/iqs.svg?12103508#iqs") format('svg');
+ *  }
+ *} */
+/* line 19, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs:before, .notifications-widget-list-item-type-icon-task:before, .notifications-widget-list-item-type-icon-project:before, .notifications-widget-list-item-type-icon-message:before, .notifications-widget-list-item-type-icon-mention:before, .notifications-widget-list-item-type-icon-system:before, [class^="iqs-"]:before, [class*=" iqs-"]:before {
+  font-family: "iqs";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -7626,78 +7635,156 @@ body {
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
-/* line 34, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons */
-.iq-navicons-calendar:before {
-  content: '\e800'; }
-
-/* line 37, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons */
-.iq-navicons-communities:before {
-  content: '\e801'; }
-
-/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons */
-.iq-navicons-contacts:before {
-  content: '\e802'; }
-
-/* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons */
-.iq-navicons-documents:before {
-  content: '\e803'; }
-
-/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons */
-.iq-navicons-messages:before {
-  content: '\e804'; }
-
-/* line 49, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons */
-.iq-navicons-notifications:before {
-  content: '\e805'; }
-
-/* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons */
-.iq-navicons-projects:before {
-  content: '\e806'; }
-
-/* line 55, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons */
-.iq-navicons-tasks:before {
-  content: '\e807'; }
-
-/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons-codes */
-.iq-navicons-calendar:before {
+/* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-notifications:before {
   content: '\e800'; }
 
 /* '' */
-/* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons-codes */
-.iq-navicons-communities:before {
+/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-email-sign:before, .notifications-widget-list-item-type-icon-mention:before {
   content: '\e801'; }
 
 /* '' */
-/* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons-codes */
-.iq-navicons-contacts:before {
+/* line 53, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-iq300:before, .notifications-widget-list-item-type-icon-system:before {
   content: '\e802'; }
 
 /* '' */
-/* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons-codes */
-.iq-navicons-documents:before {
+/* line 58, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-notifications-o:before {
   content: '\e803'; }
 
 /* '' */
-/* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons-codes */
-.iq-navicons-messages:before {
+/* line 63, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-project:before, .notifications-widget-list-item-type-icon-project:before {
   content: '\e804'; }
 
 /* '' */
-/* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons-codes */
-.iq-navicons-notifications:before {
+/* line 68, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-check-circle:before, .notifications-widget-list-item-type-icon-task:before {
   content: '\e805'; }
 
 /* '' */
-/* line 31, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons-codes */
-.iq-navicons-projects:before {
+/* line 73, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-message:before, .notifications-widget-list-item-type-icon-message:before {
   content: '\e806'; }
 
 /* '' */
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-navicons/iq-navicons-codes */
-.iq-navicons-tasks:before {
+/* line 78, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-nav-calendar:before {
   content: '\e807'; }
 
 /* '' */
+/* line 83, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-nav-communities:before {
+  content: '\e808'; }
+
+/* '' */
+/* line 88, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-nav-contacts:before {
+  content: '\e809'; }
+
+/* '' */
+/* line 93, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-nav-documents:before {
+  content: '\e80a'; }
+
+/* '' */
+/* line 98, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-nav-messages:before {
+  content: '\e80b'; }
+
+/* '' */
+/* line 103, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-nav-notifications:before {
+  content: '\e80c'; }
+
+/* '' */
+/* line 108, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-nav-projects:before {
+  content: '\e80d'; }
+
+/* '' */
+/* line 113, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs */
+.iqs-nav-tasks:before {
+  content: '\e80e'; }
+
+/* '' */
+/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-notifications:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-email-sign:before, .notifications-widget-list-item-type-icon-mention:before {
+  content: '\e801'; }
+
+/* '' */
+/* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-iq300:before, .notifications-widget-list-item-type-icon-system:before {
+  content: '\e802'; }
+
+/* '' */
+/* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-notifications-o:before {
+  content: '\e803'; }
+
+/* '' */
+/* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-project:before, .notifications-widget-list-item-type-icon-project:before {
+  content: '\e804'; }
+
+/* '' */
+/* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-check-circle:before, .notifications-widget-list-item-type-icon-task:before {
+  content: '\e805'; }
+
+/* '' */
+/* line 31, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-message:before, .notifications-widget-list-item-type-icon-message:before {
+  content: '\e806'; }
+
+/* '' */
+/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-nav-calendar:before {
+  content: '\e807'; }
+
+/* '' */
+/* line 41, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-nav-communities:before {
+  content: '\e808'; }
+
+/* '' */
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-nav-contacts:before {
+  content: '\e809'; }
+
+/* '' */
+/* line 51, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-nav-documents:before {
+  content: '\e80a'; }
+
+/* '' */
+/* line 56, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-nav-messages:before {
+  content: '\e80b'; }
+
+/* '' */
+/* line 61, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-nav-notifications:before {
+  content: '\e80c'; }
+
+/* '' */
+/* line 66, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-nav-projects:before {
+  content: '\e80d'; }
+
+/* '' */
+/* line 71, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/iq-icons/iqs-codes */
+.iqs-nav-tasks:before {
+  content: '\e80e'; }
+
+/* '' */
 /*!
  *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -7712,7 +7799,7 @@ body {
   font-style: normal; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/core */
-.fa, .multiselect-container.dropdown-menu .glyphicon {
+.fa, .multiselect-container.dropdown-menu .glyphicon, .notifications-widget-list-item-type-icon-community, .notifications-widget-list-item-type-icon-task-new, .notifications-widget-list-item-type-icon-task-completed {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -7784,10 +7871,10 @@ body {
   float: left; }
 
 /* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/bordered-pulled */
-.fa.pull-left, .multiselect-container.dropdown-menu .pull-left.glyphicon {
+.fa.pull-left, .multiselect-container.dropdown-menu .pull-left.glyphicon, .pull-left.notifications-widget-list-item-type-icon-community, .pull-left.notifications-widget-list-item-type-icon-task-new, .pull-left.notifications-widget-list-item-type-icon-task-completed {
   margin-right: 0.3em; }
 /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/bordered-pulled */
-.fa.pull-right, .fa.filter-item-counter, .multiselect-container.dropdown-menu .filter-item-counter.glyphicon, .multiselect-container.dropdown-menu .pull-right.glyphicon {
+.fa.pull-right, .fa.filter-item-counter, .multiselect-container.dropdown-menu .filter-item-counter.glyphicon, .filter-item-counter.notifications-widget-list-item-type-icon-community, .filter-item-counter.notifications-widget-list-item-type-icon-task-new, .filter-item-counter.notifications-widget-list-item-type-icon-task-completed, .multiselect-container.dropdown-menu .pull-right.glyphicon, .pull-right.notifications-widget-list-item-type-icon-community, .pull-right.notifications-widget-list-item-type-icon-task-new, .pull-right.notifications-widget-list-item-type-icon-task-completed {
   margin-left: 0.3em; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/spinning */
@@ -8015,7 +8102,7 @@ body {
   content: "\f01a"; }
 
 /* line 30, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-arrow-circle-o-up:before {
+.fa-arrow-circle-o-up:before, .notifications-widget-list-item-type-icon-task-completed:before {
   content: "\f01b"; }
 
 /* line 31, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -8555,7 +8642,7 @@ body {
   content: "\f0aa"; }
 
 /* line 165, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-arrow-circle-down:before {
+.fa-arrow-circle-down:before, .notifications-widget-list-item-type-icon-task-new:before {
   content: "\f0ab"; }
 
 /* line 166, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -8583,7 +8670,7 @@ body {
   content: "\f0b2"; }
 
 /* line 172, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-group:before, .fa-users:before {
+.fa-group:before, .fa-users:before, .notifications-widget-list-item-type-icon-community:before {
   content: "\f0c0"; }
 
 /* line 173, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -11884,7 +11971,7 @@ disabled look for disabled choices in the results dropdown
   width: 100%; }
 
 /* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.Jcrop */
-.jcrop-hline.bottom {
+.jcrop-hline.bottom, .jcrop-hline.notifications-widget-popover {
   bottom: 0; }
 
 /* Invisible click targets */
@@ -12396,7 +12483,7 @@ disabled look for disabled choices in the results dropdown
 * Copyright (c) 2013 Vitaliy Potapov; Licensed MIT */
 /* lxkuz additional css styles BEGIN */
 /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-editable */
-.popover {
+.popover, .notifications-widget-popover {
   position: absolute;
   top: 0;
   left: 0;
@@ -12420,7 +12507,7 @@ disabled look for disabled choices in the results dropdown
   background-clip: padding-box; }
 
 /* line 33, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-editable */
-.popover .btn, .popover .community-invites-btn-base, .popover .community-invites-btn-check, .popover .community-invites-btn-send, .popover .project-form-team-member-btn, .popover .project-form-team-member-selected-btn, .popover .project-discussions-form-btn {
+.popover .btn, .notifications-widget-popover .btn, .popover .community-invites-btn-base, .notifications-widget-popover .community-invites-btn-base, .popover .community-invites-btn-check, .notifications-widget-popover .community-invites-btn-check, .popover .community-invites-btn-send, .notifications-widget-popover .community-invites-btn-send, .popover .project-form-team-member-btn, .notifications-widget-popover .project-form-team-member-btn, .popover .project-form-team-member-selected-btn, .notifications-widget-popover .project-form-team-member-selected-btn, .popover .project-discussions-form-btn, .notifications-widget-popover .project-discussions-form-btn {
   display: inline-block;
   padding: 4px 12px;
   margin-bottom: 0;
@@ -12452,7 +12539,7 @@ disabled look for disabled choices in the results dropdown
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
 
 /* line 66, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-editable */
-.popover .btn-primary {
+.popover .btn-primary, .notifications-widget-popover .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #006dcc;
@@ -12671,7 +12758,7 @@ disabled look for disabled choices in the results dropdown
   /* without this rule poshytip/tooltip does not stretch */ }
 
 /* line 281, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-editable */
-.editable-container.popover {
+.editable-container.popover, .editable-container.notifications-widget-popover {
   width: auto;
   /* without this rule popover does not stretch */ }
 
@@ -13772,7 +13859,7 @@ body:after {
   width: 600px; }
 
 /* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-.bootstrap-datetimepicker-widget.bottom:before {
+.bootstrap-datetimepicker-widget.bottom:before, .bootstrap-datetimepicker-widget.notifications-widget-popover:before {
   content: '';
   display: inline-block;
   border-left: 7px solid transparent;
@@ -13784,7 +13871,7 @@ body:after {
   left: 7px; }
 
 /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-.bootstrap-datetimepicker-widget.bottom:after {
+.bootstrap-datetimepicker-widget.bottom:after, .bootstrap-datetimepicker-widget.notifications-widget-popover:after {
   content: '';
   display: inline-block;
   border-left: 6px solid transparent;
@@ -14133,26 +14220,26 @@ span.twitter-typeahead {
   border-radius: 6px; }
 
 /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-tour */
-.popover[class*="tour-"] {
+.popover[class*="tour-"], [class*="tour-"].notifications-widget-popover {
   z-index: 1100; }
   /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-tour */
-  .popover[class*="tour-"] .popover-navigation {
+  .popover[class*="tour-"] .popover-navigation, [class*="tour-"].notifications-widget-popover .popover-navigation {
     padding: 9px 14px; }
     /* line 51, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-tour */
-    .popover[class*="tour-"] .popover-navigation *[data-role="end"] {
+    .popover[class*="tour-"] .popover-navigation *[data-role="end"], [class*="tour-"].notifications-widget-popover .popover-navigation *[data-role="end"] {
       float: right; }
     /* line 53, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-tour */
-    .popover[class*="tour-"] .popover-navigation *[data-role="prev"], .popover[class*="tour-"] .popover-navigation *[data-role="next"], .popover[class*="tour-"] .popover-navigation *[data-role="end"] {
+    .popover[class*="tour-"] .popover-navigation *[data-role="prev"], [class*="tour-"].notifications-widget-popover .popover-navigation *[data-role="prev"], .popover[class*="tour-"] .popover-navigation *[data-role="next"], [class*="tour-"].notifications-widget-popover .popover-navigation *[data-role="next"], .popover[class*="tour-"] .popover-navigation *[data-role="end"], [class*="tour-"].notifications-widget-popover .popover-navigation *[data-role="end"] {
       cursor: pointer; }
     /* line 55, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-tour */
-    .popover[class*="tour-"] .popover-navigation *[data-role="prev"].disabled, .popover[class*="tour-"] .popover-navigation *[data-role="next"].disabled, .popover[class*="tour-"] .popover-navigation *[data-role="end"].disabled {
+    .popover[class*="tour-"] .popover-navigation *[data-role="prev"].disabled, [class*="tour-"].notifications-widget-popover .popover-navigation *[data-role="prev"].disabled, .popover[class*="tour-"] .popover-navigation *[data-role="next"].disabled, [class*="tour-"].notifications-widget-popover .popover-navigation *[data-role="next"].disabled, .popover[class*="tour-"] .popover-navigation *[data-role="end"].disabled, [class*="tour-"].notifications-widget-popover .popover-navigation *[data-role="end"].disabled {
       cursor: default; }
   /* line 57, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-tour */
-  .popover[class*="tour-"].orphan {
+  .popover[class*="tour-"].orphan, [class*="tour-"].orphan.notifications-widget-popover {
     position: fixed;
     margin-top: 0; }
     /* line 60, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-tour */
-    .popover[class*="tour-"].orphan .arrow {
+    .popover[class*="tour-"].orphan .arrow, [class*="tour-"].orphan.notifications-widget-popover .arrow {
       display: none; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-multiselect */
@@ -15900,7 +15987,7 @@ section.view-column {
   .page-title .bread-crumbs {
     margin-top: 8px; }
     /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/page-title */
-    .page-title .bread-crumbs .fa, .page-title .bread-crumbs .multiselect-container.dropdown-menu .glyphicon, .multiselect-container.dropdown-menu .page-title .bread-crumbs .glyphicon {
+    .page-title .bread-crumbs .fa, .page-title .bread-crumbs .multiselect-container.dropdown-menu .glyphicon, .multiselect-container.dropdown-menu .page-title .bread-crumbs .glyphicon, .page-title .bread-crumbs .notifications-widget-list-item-type-icon-community, .page-title .bread-crumbs .notifications-widget-list-item-type-icon-task-new, .page-title .bread-crumbs .notifications-widget-list-item-type-icon-task-completed {
       padding: 0 5px; }
     /* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/page-title */
     .page-title .bread-crumbs a {
@@ -16528,6 +16615,188 @@ a.task-box-block-link {
 /* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/multiselect */
 .multiselect-container.dropdown-menu .filter .btn, .multiselect-container.dropdown-menu .filter .community-invites-btn-base, .multiselect-container.dropdown-menu .filter .community-invites-btn-check, .multiselect-container.dropdown-menu .filter .community-invites-btn-send, .multiselect-container.dropdown-menu .filter .project-form-team-member-btn, .multiselect-container.dropdown-menu .filter .project-form-team-member-selected-btn, .multiselect-container.dropdown-menu .filter .project-discussions-form-btn {
   padding: 5px 12px; }
+
+/* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-popover-close, .notifications-widget-list-item-close {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 12px;
+  color: #999999;
+  padding: 4px; }
+  /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  .notifications-widget-popover-close:hover, .notifications-widget-list-item-close:hover {
+    color: #555555;
+    text-decoration: none; }
+
+/* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-button {
+  position: relative;
+  font-size: 18px; }
+  /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  .notifications-widget-button:hover, .header-global .user-nav > .notifications-widget-button:hover {
+    color: #368aaf; }
+
+/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-button-bullet {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 14.3px;
+  width: 6px;
+  height: 6px;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -khtml-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #ff0101; }
+
+/* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-popover {
+  display: none;
+  z-index: 30;
+  width: 330px;
+  padding: 0; }
+  /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  .notifications-widget-popover > .arrow:after {
+    border-bottom-color: #f9f9f4; }
+
+/* line 47, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-popover-title, .notifications-widget-popover-footer {
+  background-color: #f9f9f4;
+  border-bottom: 1px solid #eeeeee; }
+
+/* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-popover-title {
+  -moz-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -khtml-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0; }
+
+/* line 55, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-popover-close {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: -3px;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -khtml-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background-color: #fff;
+  border: 1px solid #eeeeee; }
+  /* line 68, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  .notifications-widget-popover-close:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    border-color: #999999; }
+
+/* line 72, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-popover-footer {
+  text-align: center;
+  border-bottom: none;
+  border-top: 1px solid #eeeeee;
+  -moz-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -khtml-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px; }
+
+/* line 79, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-popover-content {
+  padding: 0;
+  max-height: 330px;
+  overflow-y: auto; }
+
+/* line 85, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-list-item {
+  display: block;
+  position: relative;
+  padding: 10px 15px;
+  border-top: 1px solid #eeeeee;
+  border-left: 2px solid #3fabf3;
+  line-height: 1.2;
+  background-color: #f7fcfd;
+  color: #606060;
+  cursor: pointer; }
+  /* line 96, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  .notifications-widget-list-item:first-child {
+    border-top: none; }
+  /* line 98, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  .notifications-widget-list-item:hover {
+    color: #606060;
+    background-color: #fff; }
+    /* line 101, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+    .notifications-widget-list-item:hover .notifications-widget-list-item-close {
+      display: block; }
+  /* line 103, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  .notifications-widget-list-item, .notifications-widget-list-item a {
+    color: #606060; }
+    /* line 105, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+    .notifications-widget-list-item:hover, .notifications-widget-list-item a:hover {
+      text-decoration: none; }
+
+/* line 108, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-list-item-close {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  display: none; }
+
+/* line 115, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-list-item-type {
+  color: #999999;
+  text-align: center; }
+  /* line 118, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+  .notifications-widget-list-item-type:hover {
+    color: #555555; }
+
+/* line 121, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-list-item-type-icon {
+  font-size: 16px; }
+
+/* line 134, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-list-item-content {
+  padding-left: 15px; }
+
+/* line 137, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-list-empty {
+  text-align: center;
+  min-height: 100px; }
+  /* line 245, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
+  .notifications-widget-list-empty:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; }
+
+/* line 141, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-list-empty-content {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle; }
+
+/* line 148, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/notifications-widget */
+.notifications-widget-list-empty-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #555555; }
 
 /* line 5, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/background-variant */
 .bg-primary-light {

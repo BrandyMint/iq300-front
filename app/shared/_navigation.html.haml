@@ -12,9 +12,9 @@
         = link_to "/#{k}/" do
           .picture
             - if v.icon.present?
-              %i{class: "iq-navicons-#{v.icon}"}
+              %i{class: "iqs-nav-#{v.icon}"}
             - else
-              %i{class: "iq-navicons-#{k}"}
+              %i{class: "iqs-nav-#{k}"}
             - if v.counter.present?
               %sup= v.counter
           %span= v.title

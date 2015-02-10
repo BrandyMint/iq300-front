@@ -1,0 +1,66 @@
+- notifications = data.notifications_widget.items
+
+.notifications-widget-popover{role: 'notifications-widget-popover'}
+  .arrow
+  %div{role: 'notifications-widget-popover-notifications'}
+    .notifications-widget-popover-title
+      %strong Новые уведомления
+      %small (21)
+      %a.notifications-widget-popover-close.pull-right{href: '#', role: 'notifications-widget-popover-close'}
+        &times;
+      .clearfix
+
+    %article.notifications-widget-popover-content
+      - for i in 0..2
+        - notifications.each do |item|
+          .notifications-widget-list-item{href: '#', role: 'notifications-widget-popover-item'}
+            .notifications-widget-list-item-close{href: '#', role: 'notifications-widget-popover-item-close'}
+              &times;
+            .row.row-collapse
+              .col-xs-1.col-collapse
+                .notifications-widget-list-item-type
+                  %i.notifications-widget-list-item-type-icon{class: "notifications-widget-list-item-type-icon-#{item[:type]}"}
+              .col-xs-11.col-collapse
+                .notifications-widget-list-item-content
+                  %a(href="")
+                    %strong= item[:user]
+                  %p
+                    %a(href="")= item[:content]
+    -#.notifications-widget-list-empty
+      .notifications-widget-list-empty-content
+        .notifications-widget-list-empty-icon
+          %i.iqs-nav-notifications
+        %p Нет новых уведомлений
+
+  %div{role: 'notifications-widget-popover-messages'}
+    .notifications-widget-popover-title
+      %a.notifications-widget-popover-close{href: '#', role: 'notifications-widget-popover-back'}
+        %i.fa.fa-chevron-left.icon-size-12.v-align-top
+      &nbsp;
+      %strong Новые сообщения
+      %small (3)
+      %a.notifications-widget-popover-close.pull-right{href: '#', role: 'notifications-widget-popover-close'}
+        &times;
+      .clearfix
+
+    %article.notifications-widget-popover-content
+      - for i in 0..2
+        %a.notifications-widget-list-item{href: '#', role: 'notifications-widget-popover-item'}
+          .notifications-widget-list-item-close{href: '#', role: 'notifications-widget-popover-item-close'}
+            &times;
+          .row.row-collapse
+            .col-xs-1.col-collapse
+              .notifications-widget-list-item-type
+                %i.notifications-widget-list-item-type-icon{class: "notifications-widget-list-item-type-icon-message"}
+            .col-xs-11.col-collapse
+              .notifications-widget-list-item-content
+                %strong Евгений Дударев
+                %p
+                  написал вам
+                  &laquo;А что, если обучиться новым инструментам..&raquo;
+
+  .notifications-widget-popover-footer
+    %a{href: '/notifications'} Посмотреть все уведомления
+
+
+
