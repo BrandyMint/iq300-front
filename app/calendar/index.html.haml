@@ -23,6 +23,4 @@ body_class: calendar-show
                 = user
 
 
-
-
-      .calendar-block{role: 'fullcalendar'}
+      .calendar-block{role: 'fullcalendar', data: {'events' => "#{build? ? '../events.json' : '/events.json'}"}}

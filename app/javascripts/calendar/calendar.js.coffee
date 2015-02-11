@@ -3,8 +3,11 @@ window.Calendar ||= {}
 ((app) ->
   $(document).ready ->
     $calendar = $('@fullcalendar')
+    jsonUrl = $calendar.data('events')
+    console.log jsonUrl
     multiselectUsers = $('@multiselect-calendar-users')
     multiselectCommunities = $('@multiselect-calendar-communities')
+
     $calendar.fullCalendar
       dayClick: ->
         if $(@).data('bs.popover')?.$tip?.length > 0
@@ -37,7 +40,7 @@ window.Calendar ||= {}
       editable: true
       #eventLimit: true, // allow "more" link when too many events
       events:
-        url: 'events.json'
+        url: jsonUrl
         error: ->
           console.log 'calendar events error'
       #loading: (bool) ->
