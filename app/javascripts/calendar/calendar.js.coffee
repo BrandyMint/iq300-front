@@ -37,7 +37,7 @@ window.Calendar ||= {}
       editable: true
       #eventLimit: true, // allow "more" link when too many events
       events:
-        url: 'calendar/events.json'
+        url: 'events.json'
         error: ->
           console.log 'calendar events error'
       #loading: (bool) ->
