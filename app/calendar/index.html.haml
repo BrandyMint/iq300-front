@@ -1,0 +1,9 @@
+---
+body_class: calendar-show
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "show", filters: "false", full_view: "true", list: "false", view: "true"}
+  = partial 'shared/_navigation'
+  %section.view-column.project-view-column{"data-channel" => "private-project-879:update", "data-channel-template" => "private-project-%id%:update", "data-id" => "879", "data-url" => "/projects"}
+    .calendar-block{role: 'fullcalendar'}
