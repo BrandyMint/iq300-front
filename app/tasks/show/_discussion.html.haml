@@ -12,28 +12,50 @@
       - for i in 0..3
         = partial 'tasks/show/discussion_list'
 
-    %form#new_comment.comments-form.main-form.comments-form-block{role: 'fixed-block-bottom', data: {'fixed-block-parent' => '@fixed-block-parent-comments'},
-          "accept-charset" => "UTF-8", :action => "/discussions/137412/comments", "data-discussion-key" => "discussion-137412", "data-exist-attachment-default-name" => "Прикрепить уже загруженный", "data-users-path" => "/discussions/137412/users?for=accessors&per=500&without_current_user=true", :enctype => "multipart/form-data", :method => "post"}
-      .row
-        .col-sm-10
-          %div{:style => "margin:0;padding:0;display:inline"}
-            %input{:name => "utf8", :type => "hidden", :value => "✓"}/
-            %input{:name => "authenticity_token", :type => "hidden", :value => "uA6xR7HjabBYeN2QtkkPByY5w+mC3PIq0qRVBuwnwC0="}/
-          %input#redirect_to{:name => "redirect_to", :type => "hidden", :value => "/tasks/109472"}/
-          %textarea.comment-body.form-control.task-discussion-form-textarea{:placeholder => "Добавить комментарий", rows: 2, :role => "autosize comment-text-area", "test-comment-body" => "true", style: 'height: 36px;'}
-        .col-sm-2
-          %input#btnSubmit.btn.btn-block.btn-primary{"data-wait" => "Отправка...", :name => "commit", :role => "submit-button", "test-submit-comment" => "true", :type => "submit", :value => "Отправить"}/
-
-      .comments-form-actions
+    %form#new_comment.comments-form.main-form.comments-form-block{role: 'fixed-block-bottom comment-form', data: {'fixed-block-parent' => '@fixed-block-parent-comments'}, 
+      "accept-charset" => "UTF-8", :action => "/discussions/137412/comments", "data-discussion-key" => "discussion-137412", "data-exist-attachment-default-name" => "Прикрепить уже загруженный", "data-users-path" => "/discussions/137412/users?for=accessors&per=500&without_current_user=true", :enctype => "multipart/form-data", :method => "post"}
+      .comment-form-content{role: 'comment-form-content'}
         .row
-          .col-sm-3
-            #discussion-attachments-137412{"data-files-max-size" => "50", :role => "files"}
-              %a.link-plain.add_nested_fields{"data-association" => "attachments", "data-blueprint-id" => "attachments_fields_blueprint", "data-target" => "#discussion-attachments-137412", :href => "javascript:void(0)", :role => "add-file"}
-                %i.fa.fa-paperclip
-                &nbsp;
-                Прикрепить
-          .col-sm-3.text-center
-            %p Shift+Enter перенос строки
-          .col-sm-4.text-right
-            %a{:href => "//ru.wikipedia.org/wiki/Markdown", :target => "_blank"} Markdown
-        #attachments_fields_blueprint{"data-blueprint" => "<div class='file fields' role='file'>\r\n<a href=\"#\"><span class='fa fa-file-text-o fa-lg'></span>\r\n</a><span class='file-name' role='file-name'>\r\nfile_name\r\n</span>\r\n<input id=\"comment_attachments_attributes_new_attachments_file\" name=\"comment[attachments_attributes][new_attachments][file]\" role=\"file-input\" style=\"display:none\" type=\"file\" />\r\n<input id=\"comment_attachments_attributes_new_attachments__destroy\" name=\"comment[attachments_attributes][new_attachments][_destroy]\" type=\"hidden\" value=\"false\" /><a href=\"javascript:void(0)\" class=\"delete remove_nested_fields\" data-association=\"attachments\" data-confirm=\"Вы уверены?\"><i class=\"icon-remove \" ></i></a>\r\n</div>\r\n", :style => "display: none"}
+          .col-sm-10
+            %div{:style => "margin:0;padding:0;display:inline"}
+              %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+              %input{:name => "authenticity_token", :type => "hidden", :value => "uA6xR7HjabBYeN2QtkkPByY5w+mC3PIq0qRVBuwnwC0="}/
+            %input#redirect_to{:name => "redirect_to", :type => "hidden", :value => "/tasks/109472"}/
+            %textarea.comment-body.form-control.task-discussion-form-textarea{:placeholder => "Добавить комментарий", rows: 2, :role => "autosize comment-text-area", "test-comment-body" => "true", style: 'height: 36px;'}
+          .col-sm-2
+            %input#btnSubmit.btn.btn-block.btn-primary{"data-wait" => "Отправка...", :name => "commit", :role => "submit-button", "test-submit-comment" => "true", :type => "submit", :value => "Отправить"}/
+
+        .comments-form-actions
+          .row
+            .col-sm-10
+              %div{:style => "margin:0;padding:0;display:inline"}
+                %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+                %input{:name => "authenticity_token", :type => "hidden", :value => "uA6xR7HjabBYeN2QtkkPByY5w+mC3PIq0qRVBuwnwC0="}/
+              %input#redirect_to{:name => "redirect_to", :type => "hidden", :value => "/tasks/109472"}/
+              %textarea.comment-body.form-control.task-discussion-form-textarea{:placeholder => "Добавить комментарий", rows: 2, :role => "autosize", "test-comment-body" => "true", style: 'height: 36px;'}
+            .col-sm-2
+              %input#btnSubmit.btn.btn-block.btn-primary{"data-wait" => "Отправка...", :name => "commit", :role => "submit-button", "test-submit-comment" => "true", :type => "submit", :value => "Отправить"}/
+
+          .comments-form-actions
+            .row
+              .col-sm-5
+                #discussion-attachments-137412{"data-files-max-size" => "50", :role => "files"}
+                  %a.link-plain.add_nested_fields{"data-association" => "attachments", "data-blueprint-id" => "attachments_fields_blueprint", "data-target" => "#discussion-attachments-137412", :href => "javascript:void(0)", :role => "add-file"}
+                    %i.fa.fa-paperclip
+                    &nbsp;
+                    Прикрепить
+                .progress{role: 'comment-form-upload-block', style: 'display: none;'}
+                  .progress-bar{role: 'comment-form-upload-progress', style: 'width: 10%'}
+              .col-sm-5.text-center
+                %a.pull-right{:href => "//ru.wikipedia.org/wiki/Markdown", :target => "_blank"} Markdown
+                %span.pull-right
+                  Shift+Enter перенос строки
+                  &nbsp;&nbsp;
+                .clearfix
+            #attachments_fields_blueprint{"data-blueprint" => "<div class='file fields' role='file'>\r\n<a href=\"#\"><span class='fa fa-file-text-o fa-lg'></span>\r\n</a><span class='file-name' role='file-name'>\r\nfile_name\r\n</span>\r\n<input id=\"comment_attachments_attributes_new_attachments_file\" name=\"comment[attachments_attributes][new_attachments][file]\" role=\"file-input\" style=\"display:none\" type=\"file\" />\r\n<input id=\"comment_attachments_attributes_new_attachments__destroy\" name=\"comment[attachments_attributes][new_attachments][_destroy]\" type=\"hidden\" value=\"false\" /><a href=\"javascript:void(0)\" class=\"delete remove_nested_fields\" data-association=\"attachments\" data-confirm=\"Вы уверены?\"><i class=\"icon-remove \" ></i></a>\r\n</div>\r\n", :style => "display: none"}
+        .comment-form-content.comment-form-tip{role: 'comment-form-tip-drag', style: 'display: none;'}
+          .comment-form-tip-content
+            Перетащите файлы для загрузки сюда
+        .comment-form-content.comment-form-tip{role: 'comment-form-tip-release', style: 'display: none;'}
+          .comment-form-tip-content
+            Отпустите кнопку мыши для загрузки файлов

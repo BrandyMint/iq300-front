@@ -3,14 +3,22 @@ $comment-fixed-form-breakpoint: $container-fixed-width - $navColumnWidth
 .comments-form-block
   @extend .comments-form
   @extend .container-grey
-  padding:
-    top: 10px
-    bottom: 30px
-    left: $space-middle
-    right: $space-middle
-  margin:
-    bottom: $space-middle
+  position: relative
+  padding: 0
+  margin: 0
+  margin-bottom: $space-middle
+  border: 2px dashed transparent
   +border-radius($border-radius-base)
+  +transition(background 0.2s ease)
+  &.comments-form-drag
+    background-color: $new-item-background
+    border-color: darken($new-item-border-color, 10%)
+  .comment-form-content
+    padding:
+      top: 10px
+      bottom: 30px
+      left: $space-middle
+      right: $space-middle
 
 .comments-form-block-fixed
   @extend .comments-form-block
@@ -25,14 +33,30 @@ $comment-fixed-form-breakpoint: $container-fixed-width - $navColumnWidth
   margin:
     left: $navColumnWidth
     bottom: 0
-  padding:
-    top: 10px
-    bottom: 30px
-    left: $space-large
-    right: $space-large
   +border-radius(0)
   &.comments-form-block-fixed-zoomed
     margin:
       left: 0
       right: 0
+  .comment-form-content
+    padding:
+      top: 10px
+      bottom: 30px
+      left: $space-large
+      right: $space-large
+
+.comment-form-tip
+  display: block
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 80%
+  +center-block-container
+
+.comment-form-tip-content
+  +center-block-content
+
+
+
 

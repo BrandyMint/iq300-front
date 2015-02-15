@@ -4,7 +4,7 @@ window.FixedBlock ||= {}
   $(document).ready ->
     app.$contentGlobal = $('@content-global')
     app.$fixedBlockBottom = $('@fixed-block-bottom')
-    $fixedBlockBottomParent = $('@fixed-block-parent')
+    $fixedBlockBottomParent = $('@fixed-block-parent-comments')
     app.adjustFixedBlock
       container: app.$contentGlobal
       fixedBlock: app.$fixedBlockBottom

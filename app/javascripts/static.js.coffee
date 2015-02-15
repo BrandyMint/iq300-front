@@ -1,6 +1,7 @@
 #= require jquery/dist/jquery
 #= require bootstrap
 #= require jquery.role/lib/jquery.role
+#= require modernizr/modernizr
 #= require select2/select2
 #= require moment/moment
 #= require eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min
@@ -20,6 +21,7 @@
 #= require notifications/widget
 #= require discussions/mention
 #= require calendar/calendar
+#= require comments/form
 
 $ ->
   $('@select2').select2()
