@@ -27,12 +27,17 @@ h2.project-show-title
 .project-header-avatar-content
   line-height: 1.2em
 
-.project-header-avatar
+.project-header-community-avatar
   width: $user-avatar-width
   height: $user-avatar-width
-  +border-radius(100%)
   border: 1px solid $gray-lighter
   margin-right: 0.5em
+
+.project-header-avatar
+  @extend .project-header-community-avatar
+  +border-radius(100%)
+
+
 
 .project-show-section
   margin-bottom: 2em
