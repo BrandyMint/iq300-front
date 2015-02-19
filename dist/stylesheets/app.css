@@ -24634,55 +24634,58 @@ section.project-view-column > .column-content > .object-details > ul.actions {
   line-height: 1.2em; }
 
 /* line 30, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
-.project-header-avatar {
+.project-header-community-avatar, .project-header-avatar {
   width: 32px;
   height: 32px;
+  border: 1px solid #eeeeee;
+  margin-right: 0.5em; }
+
+/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
+.project-header-avatar {
   -moz-border-radius: 100%;
   -o-border-radius: 100%;
   -ms-border-radius: 100%;
   -khtml-border-radius: 100%;
   -webkit-border-radius: 100%;
-  border-radius: 100%;
-  border: 1px solid #eeeeee;
-  margin-right: 0.5em; }
+  border-radius: 100%; }
 
-/* line 37, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
+/* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
 .project-show-section {
   margin-bottom: 2em; }
 
-/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
+/* line 45, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
 .project-show-section-title {
   margin-top: 0.5em;
   margin-bottom: 1em; }
 
-/* line 45, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
+/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
 .project-state-block {
   margin-top: 0;
   margin-bottom: 1em; }
 
-/* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
+/* line 57, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
 .project-state, .project-state-title {
   padding: 5px 10px;
   display: inline-block; }
 
-/* line 56, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
+/* line 61, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
 .project-state-title {
   padding-left: 0; }
 
-/* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
+/* line 64, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
 .project-state {
   color: #555555;
   position: relative; }
-  /* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
+  /* line 67, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
   .project-state.active {
     color: #606060;
     font-weight: bold; }
 
-/* line 66, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
+/* line 71, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
 .project-show-information {
   margin-top: 30px;
   margin-bottom: 30px; }
-  /* line 70, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
+  /* line 75, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/show */
   .project-show-information ol li {
     list-style-position: inside;
     list-style-type: disc; }
