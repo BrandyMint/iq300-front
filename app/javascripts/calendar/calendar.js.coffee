@@ -9,6 +9,10 @@ window.Calendar ||= {}
     multiselectCommunities = $('@multiselect-calendar-communities')
 
     $calendar.fullCalendar
+      eventRender: (event, element) ->
+        if event.type == "deadline"
+          element.addClass "fullcalendar-event-type-deadline"
+
       dayClick: ->
         if $(@).data('bs.popover')?.$tip?.length > 0
           $calendar.find('td').each ->
