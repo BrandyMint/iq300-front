@@ -1,0 +1,30 @@
+---
+layout: input_registration
+---
+.registration-page
+  .registration-page-container
+    .registration-page-header
+      %img{src: '/images/login/logo-blue.png', class: 'main-logo'}
+      %p.registration-page-header-title
+        Система проектного управления
+    .registration-page-content
+      .registration-page-body
+        %img{src: '/images/login/logo-blue.png', class: 'enter-logo'}
+        .registration-form-title-wrapper
+          %p.registration-form-title.registration-top-title
+            Войти в систему
+        %form.registration-page-form
+          .row
+            .col-sm-4.col-sm-offset-1
+              .form-group
+                .registration-form-input-wrapper
+                  %input.form-control.registration-form-input{placeholder: 'Логин'}
+                .registration-form-input-wrapper
+                  %input.form-control.registration-form-input{placeholder: 'Пароль'}
+                .registration-form-actions
+                  %a{href: '', class: 'btn one-big-btn'} Войти
+            .col-sm-4.col-sm-offset-1
+              %a{href: '#', class: 'enter-link'} Забыли пароль?
+              %a{href: '#', class: 'enter-link'} Подтвердить регистрацию
+
+
