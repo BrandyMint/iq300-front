@@ -12,19 +12,20 @@ layout: input_registration
         %img{src: '/images/login/logo-blue.png', class: 'enter-logo'}
         .registration-form-title-wrapper
           %p.registration-form-title.registration-top-title
-            Войти в систему
+            Регистрация
         %form.registration-page-form
-          .row
-            .col-sm-4.col-sm-offset-1
-              .form-group
-                .registration-form-input-wrapper
-                  %input.form-control.registration-form-input{placeholder: 'Логин'}
-                .registration-form-input-wrapper
-                  %input.form-control.registration-form-input{placeholder: 'Пароль'}
-                .registration-form-actions
-                  %a{href: '', class: 'btn one-big-btn'} Войти
-            .col-sm-4.col-sm-offset-1
-              %a{href: '#', class: 'enter-link'} Забыли пароль?
-              %a{href: '#', class: 'enter-link'} Подтвердить регистрацию
+          .container-fluid
+            .row
+              .col-md-4.col-md-offset-2.col-sm-6
+                .form-group
+                  - "Имя, Фамилия, Название организации, Email, Пароль".split(", ").each do |input|
+                    .registration-form-input-wrapper
+                      %input.form-control.registration-form-input{placeholder: input}
+                  .registration-form-actions
+                    %a{href: '', class: 'registration-form-submit-btn'} Регистрация
+              .col-md-4.col-md-offset-1.col-sm-5.col-sm-offset-1
+                %p.registration-form-text Уже регистрировались?
+                %a.registration-form-btn-signup{href: '/sign_up'} Войти
+
 
 
