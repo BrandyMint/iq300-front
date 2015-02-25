@@ -16,6 +16,9 @@ assetpaths = require("./lib/gulp-assetpaths/gulp-assetpaths.coffee")
 rewriteCSS = require('./lib/gulp-rewrite-css/index.coffee')
 del = require('del')
 vinylPaths = require('vinyl-paths')
+browserSync = require('browser-sync')
+reload = browserSync.reload
+
 
 
 $ = require("gulp-load-plugins")()
@@ -83,6 +86,13 @@ gulp.task "middleman:dist", ->
   middleman.build(options.middleman)
   return
 
+gulp.task 'browser-sync', ->
+  browserSync proxy: 'localhost:4567'
+  return
+
+gulp.task "browser-sync-reload", ->
+  gulp.src(paths.html).pipe reload({stream: true})
+  return
 
 # Images
 gulp.task "images:watch", ->
@@ -173,6 +183,7 @@ gulp.task "watch", [
   #"haml"
   #"bundle"
   "connect"
+  "browser-sync"
 ], ->
   # Watch .html files
   #gulp.watch "app/*.html", ["html"]
@@ -181,9 +192,10 @@ gulp.task "watch", [
   #gulp.watch('app/scripts/**/*.coffee', ['coffee', 'scripts']);
   #gulp.watch "app/scripts/**/*.coffee", ["scripts"]
   #gulp.watch "app/stylesheets/**/*.css", ["assets"]
-  gulp.watch "app/stylesheets/**/*.{sass,scss}", ["sass:watch"]
-  gulp.watch "app/fonts/**/*", ["fonts:watch"]
-  gulp.watch "app/images/**/*", ["images:watch"]
+  gulp.watch "app/stylesheets/**/*.{sass,scss}", ["sass:watch", "browser-sync-reload"]
+  gulp.watch "app/fonts/**/*", ["fonts:watch", "browser-sync-reload"]
+  gulp.watch "app/images/**/*", ["images:watch", "browser-sync-reload"]
+
 
  
   # Watch .js files

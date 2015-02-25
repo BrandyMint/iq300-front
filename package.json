@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "bower": "^1.3.4",
+    "browser-sync": "^2.2.1",
     "bufferstreams": "0.0.2",
     "coffee-script": "^1.7.1",
     "coffeeify": "^0.6.0",
