@@ -91,7 +91,7 @@ gulp.task 'browser-sync', ->
   return
 
 gulp.task "browser-sync-reload", ->
-  gulp.src(paths.html).pipe reload({stream: true})
+  gulp.src(["app/tmp/stylesheets/*.css", "app/javascripts/**/*.*"]).pipe reload({stream: true})
   return
 
 # Images
@@ -187,16 +187,16 @@ gulp.task "watch", [
 ], ->
   # Watch .html files
   #gulp.watch "app/*.html", ["html"]
-  #gulp.watch "app/**/*.haml", ["haml"]
   # Watch .coffeescript files
   #gulp.watch('app/scripts/**/*.coffee', ['coffee', 'scripts']);
   #gulp.watch "app/scripts/**/*.coffee", ["scripts"]
   #gulp.watch "app/stylesheets/**/*.css", ["assets"]
-  gulp.watch "app/stylesheets/**/*.{sass,scss}", ["sass:watch", "browser-sync-reload"]
-  gulp.watch "app/fonts/**/*", ["fonts:watch", "browser-sync-reload"]
-  gulp.watch "app/images/**/*", ["images:watch", "browser-sync-reload"]
-
-
+  gulp.watch "app/stylesheets/**/*.{sass,scss}", ["sass:watch"]
+  gulp.watch "app/fonts/**/*", ["fonts:watch"]
+  gulp.watch "app/images/**/*", ["images:watch"]
+  #gulp.watch ["app/**/*.haml"], ["browser-sync-reload"]
+  gulp.watch ["app/javascripts/**/*.*"], ["browser-sync-reload"]
+  gulp.watch ["app/tmp/stylesheets/*.css"], ["browser-sync-reload"]
  
   # Watch .js files
   #gulp.watch "app/scripts/**/*.js", ["scripts"]

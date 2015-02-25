@@ -18,7 +18,7 @@ window.FixedBlock ||= {}
     return unless container?.length > 0
     containerPosition = {}
     containerPosition = $(container).offset()
-    containerPosition.right = $(window).width() - (containerPosition.left + $(container).width())
+    containerPosition.right = $(window).width() - (containerPosition.left + $(container).outerWidth())
     fixedBlock
       .css 'left', containerPosition.left + 'px'
       .css 'right', containerPosition.right + 'px'
