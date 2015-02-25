@@ -87,7 +87,9 @@ gulp.task "middleman:dist", ->
   return
 
 gulp.task 'browser-sync', ->
-  browserSync proxy: 'localhost:4567'
+  browserSync
+    proxy: 'localhost:4567'
+    port: 3001
   return
 
 gulp.task "browser-sync-reload", ->
