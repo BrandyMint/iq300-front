@@ -7,8 +7,6 @@ handleError = (err) ->
 gulp = require("gulp")
 path = require("path")
 sass = require('gulp-sass')
-rubysass = require('gulp-ruby-sass')
-haml = require('gulp-haml-coffee')
 flatten = require('gulp-flatten')
 include = require('gulp-file-include')
 middleman = require('gulp-middleman')
@@ -36,13 +34,6 @@ options.rewriteCSSDist =
 
 options.sassBasePaths = ['./app/stylesheets']
 
-options.rubysassDev =
-  sourcemap: true
-
-options.rubysassDist =
-  sourcemap: false
-  'sourcemap=none': true
-
 options.sassDev =
   errLogToConsole: true
   sourceComments: 'normal'
@@ -57,7 +48,6 @@ gulp.task "sass:watch", ->
   gulp
     .src("./app/stylesheets/**/*.sass")
     .pipe(sass(options.sassDev))
-    #.pipe(rubysass(options.rubysassDev))
     .pipe(rewriteCSS(options.rewriteCSSDev))
     .pipe(gulp.dest("./app/tmp/stylesheets"))
     .pipe($.connect.reload())
@@ -68,7 +58,6 @@ gulp.task "sass:dist", ->
   gulp
     .src(["./app/stylesheets/**/*.sass"])
     .pipe(sass(options.sassDist))
-    #.pipe(rubysass(options.rubysassDist))
     .pipe(rewriteCSS(options.rewriteCSSDist))
     .pipe(gulp.dest("./dist/stylesheets"))
     .on "error", $.util.log
@@ -126,19 +115,6 @@ gulp.task "fonts:dist", ->
     .pipe(gulp.dest("./dist/assets"))
     .on "error", $.util.log
 
-gulp.task "haml", ->
-  gulp
-    .src("app/**/*.haml")
-    .pipe(include(
-      prefix: "@@"
-      basepath: "@file"
-    ))
-    .pipe(haml())
-    .pipe(gulp.dest("./app/tmp"))
-    .pipe($.connect.reload())
-    .on "error", $.util.log
-  return
-
 # Clean
 gulp.task "clean:watch", (cb) ->
   gulp
@@ -157,7 +133,6 @@ gulp.task "dist", [
   #"clean:dist"
   #"middleman:dist"
   "sass:dist"
-  #"haml"
   "images:dist"
   "fonts:dist"
 ]
@@ -182,7 +157,6 @@ gulp.task "watch", [
   "fonts:watch"
   #"assets"
   #"html"
-  #"haml"
   #"bundle"
   "connect"
   "browser-sync"
