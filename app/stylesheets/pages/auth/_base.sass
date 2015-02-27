@@ -21,6 +21,7 @@ p.registration-form-text
     margin: 0 auto !important
     position: relative
     max-width: 1000px
+    height: 80vh
 
 .registration-page-form
   margin-bottom: 2em
@@ -29,16 +30,22 @@ p.registration-form-text
     margin:
       top: 2em
 
-.registration-page-body
-  width: 70%
-  margin: 0 auto
+.registration-page-content
   @media screen and (min-width: $screen-sm)
+    +center-block-container
+
+.registration-page-body
+  @media screen and (min-width: $screen-sm)
+    width: 70%
+    margin: 0 auto
     position: relative
     width: 78%
     background-color: #fff
     padding-bottom: $registration-page-body-footer-height
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.5)
     border-radius: $registration-page-body-border-radius
+    +center-block-content
+    text-align: left
 
 .registration-page-body-footer
   @media screen and (min-width: $screen-sm)
@@ -186,7 +193,7 @@ p.registration-form-text
   font-family: $registration-font-family-light
   font-size: 1.7em
   font-weight: lighter
-  color: #385A74
+  color: $registration-main-color
   display: inline
   @media screen and (min-width: $screen-sm)
     top: -7px
