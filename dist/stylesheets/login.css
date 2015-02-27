@@ -6183,27 +6183,15 @@ p.registration-form-text {
   .registration-page-container {
     margin: 0 auto !important;
     position: relative;
-    max-width: 1000px;
-    height: 80vh; } }
+    max-width: 1000px; } }
 
-/* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-page-form {
   margin-bottom: 2em; }
   @media screen and (min-width: 768px) {
     .registration-page-form {
       position: relative;
       margin-top: 2em; } }
-
-@media screen and (min-width: 768px) {
-  .registration-page-content {
-    text-align: center; }
-    /* line 245, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-    .registration-page-content:before {
-      content: '';
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-      margin-right: -0.25em; } }
 
 @media screen and (min-width: 768px) {
   .registration-page-body {
@@ -6215,8 +6203,6 @@ p.registration-form-text {
     padding-bottom: 30px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
-    display: inline-block;
-    vertical-align: middle;
     text-align: left; } }
 
 @media screen and (min-width: 768px) {
@@ -6228,12 +6214,12 @@ p.registration-form-text {
     position: absolute;
     border-top: 1px solid #DBDBDB; } }
 
-/* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 55, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-page-footer {
   clear: both;
   padding: 2em 0; }
 
-/* line 63, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-form-title-wrapper {
   text-align: center;
   display: block;
@@ -6249,7 +6235,7 @@ p.registration-form-text {
       background-color: #f4f4f4;
       border-bottom: 1px solid #DBDBDB; } }
 
-/* line 78, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 74, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-form-title {
   position: relative;
   top: 8em; }
@@ -6261,7 +6247,7 @@ p.registration-form-text {
       font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       font-weight: 300; } }
 
-/* line 88, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 84, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-choose-avatar {
   max-width: 150px;
   width: 100px;
@@ -6271,11 +6257,11 @@ p.registration-form-text {
   display: block;
   padding-bottom: 20px; }
 
-/* line 97, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 93, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-top-title {
   top: 0; }
 
-/* line 100, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 96, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-delimeter {
   display: block;
   height: 1px;
@@ -6284,27 +6270,27 @@ p.registration-form-text {
   margin: 0.5em 0;
   padding: 0; }
 
-/* line 108, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 104, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-form-input {
   border-color: #DADADA;
   border-width: 1.3px;
   height: 2.6em; }
-  /* line 112, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+  /* line 108, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
   .registration-form-input:focus {
     border-color: #008de2; }
 
-/* line 115, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 111, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-form-input-hint {
   font-size: 0.7em;
   color: #008de2;
   text-align: center;
   margin: 0.3em auto 0.7em; }
 
-/* line 121, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 117, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-form-input-wrapper {
   margin-bottom: 1em; }
 
-/* line 124, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 120, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-alert {
   padding: 0.5em 0.8em;
   margin-top: 0.7em;
@@ -6312,52 +6298,52 @@ p.registration-form-text {
   border: 1px solid transparent;
   border-radius: 4px; }
 
-/* line 131, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 127, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-alert > p {
   margin-bottom: 0;
   font-size: 0.6em; }
 
-/* line 135, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 131, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-alert > p + p {
   margin-top: 5px; }
 
-/* line 138, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 134, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-alert-info {
   color: #31708f;
   background-color: #d9edf7;
   border-color: #bce8f1; }
 
-/* line 143, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 139, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-alert-danger {
   color: #a94442;
   background-color: #f2dede;
   border-color: #ebccd1; }
 
-/* line 148, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 144, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .enter-logo {
   display: block;
   margin: 2em auto;
   width: 5.3em;
   position: relative; }
 
-/* line 154, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 150, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .enter-container {
   margin: 0 auto; }
 
-/* line 157, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 153, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .enter-container-centered {
   width: 70%;
   text-align: center;
   margin: 0 auto; }
 
-/* line 162, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 158, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .enter-page-title {
   color: black;
   font-weight: 300;
   font-size: 0.9em;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
-/* line 168, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 164, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-enter-title {
   color: #808080;
   font-weight: 300;
@@ -6367,13 +6353,13 @@ p.registration-form-text {
   display: block;
   margin: 0 auto; }
 
-/* line 177, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 173, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .enter-blue-link {
   color: #008de2;
   font-weight: 500;
   text-decoration: none; }
 
-/* line 182, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 178, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-page-header {
   margin: 0 auto;
   width: 73%;
@@ -6385,7 +6371,7 @@ p.registration-form-text {
       margin-top: 1em;
       margin-bottom: -1em; } }
 
-/* line 192, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 188, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-page-header-title {
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.7em;
@@ -6401,50 +6387,50 @@ p.registration-form-text {
       font-size: 1.5em;
       font-weight: 300; } }
 
-/* line 206, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+/* line 202, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
 .registration-header {
   display: inline; }
 
 @media screen and (min-width: 768px) {
-  /* line 210, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+  /* line 206, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
   .enter-container {
     width: 70%;
     margin: 0 auto;
     text-align: center; }
 
-  /* line 214, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+  /* line 210, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
   .registration-page {
     margin: 0; }
 
-  /* line 216, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+  /* line 212, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
   .registration-delimeter {
     display: none; }
 
-  /* line 218, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+  /* line 214, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
   .enter-logo {
     display: none; }
 
-  /* line 220, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+  /* line 216, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
   .enter-link {
     display: inline;
     margin: 0; }
-    /* line 224, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+    /* line 220, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
     .enter-link:nth-child(-n+4):after {
       content: '  |  '; }
 
-  /* line 226, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+  /* line 222, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
   .enter-page-title {
     width: 66%;
     max-width: 416px;
     margin: 0 auto;
     font-weight: 500; }
 
-  /* line 232, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+  /* line 228, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
   .registration-choose-avatar {
     width: 85px;
     height: 85px; }
 
-  /* line 235, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
+  /* line 231, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/base */
   .main-logo {
     width: 75px;
     height: 31px; }
