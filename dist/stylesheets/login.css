@@ -6112,6 +6112,11 @@ a {
   color: #333333; }
 
 /* line 37, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
+.registration-form-link-inline {
+  margin: 0;
+  font-size: 1em; }
+
+/* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
 .registration-form-actions {
   margin-bottom: 3em; }
 
@@ -6119,45 +6124,45 @@ a {
   .registration-form-social {
     margin-bottom: 2em; } }
 
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
+/* line 49, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
 .registration-form-btn-social, .registration-form-btn-signup {
   font-size: 0.8em;
   margin-bottom: 1em; }
-  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
+  /* line 53, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
   .registration-form-btn-social, .registration-form-btn-signup, .registration-form-btn-social:focus, .registration-form-btn-signup:focus {
     background: none;
     box-shadow: none;
     outline: none;
     width: auto; }
-  /* line 55, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
+  /* line 60, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
   .registration-form-btn-social.registration-form-btn-social-facebook, .registration-form-btn-social-facebook.registration-form-btn-signup, .registration-form-btn-social.registration-form-btn-social-facebook:focus, .registration-form-btn-social-facebook.registration-form-btn-signup:focus {
     color: #3b5998;
     border-color: #3b5998;
     background-color: transparent; }
-  /* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
+  /* line 64, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
   .registration-form-btn-social.registration-form-btn-social-facebook:hover, .registration-form-btn-social-facebook.registration-form-btn-signup:hover {
     color: #fff;
     background-color: #3b5998; }
-  /* line 55, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
+  /* line 60, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
   .registration-form-btn-social.registration-form-btn-social-googleplus, .registration-form-btn-social-googleplus.registration-form-btn-signup, .registration-form-btn-social.registration-form-btn-social-googleplus:focus, .registration-form-btn-social-googleplus.registration-form-btn-signup:focus {
     color: #dd4b39;
     border-color: #dd4b39;
     background-color: transparent; }
-  /* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
+  /* line 64, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
   .registration-form-btn-social.registration-form-btn-social-googleplus:hover, .registration-form-btn-social-googleplus.registration-form-btn-signup:hover {
     color: #fff;
     background-color: #dd4b39; }
 
-/* line 63, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
+/* line 68, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
 .registration-form-btn-signup {
   width: auto;
   margin-bottom: 2em; }
-  /* line 67, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
+  /* line 72, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
   .registration-form-btn-signup, .registration-form-btn-signup:focus {
     color: #008de2;
     border-color: #008de2;
     background-color: transparent; }
-  /* line 71, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
+  /* line 76, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/auth/buttons */
   .registration-form-btn-signup:hover {
     color: #fff;
     background-color: #008de2;
