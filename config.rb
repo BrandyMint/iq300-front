@@ -45,7 +45,7 @@ set :build_dir, 'build'
 # activate :navigation
 
 # Livereload
-# activate :livereload
+activate :livereload, apply_js_live: false, apply_css_live: false, port: '35739'
 
 # Automatic image dimensions on image_tag helper
 

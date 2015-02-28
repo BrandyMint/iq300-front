@@ -1,3 +1,5 @@
+$comment-fixed-form-breakpoint: $container-fixed-width - $navColumnWidth
+
 .comments-form-block
   @extend .comments-form
   @extend .container-grey
@@ -29,4 +31,8 @@
     left: $space-large
     right: $space-large
   +border-radius(0)
+  &.comments-form-block-fixed-zoomed
+    margin:
+      left: 0
+      right: 0
 

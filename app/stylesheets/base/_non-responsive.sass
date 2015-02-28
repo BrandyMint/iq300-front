@@ -1,5 +1,3 @@
-$container-fixed-width: 1024px
-
 =reset-responsive-cols
   @each $bp in xs, sm, md, lg
     @for $i from 1 through 12
@@ -13,6 +11,11 @@ body
   min-width: $container-fixed-width
   @media (min-width: $screen-lg-min)
     min-width: $container-lg
+
+#wrapper
+  max-width: $container-fixed-width
+  @media (min-width: $screen-lg-min)
+    max-width: $container-fixed-width-lg
 
 +reset-responsive-cols
 

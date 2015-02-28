@@ -7,6 +7,7 @@ body_class: tasks-index
   = partial 'shared/navigation', locals: {active: 'tasks'}
   %div{"data-scope" => "personal", "role-ready" => "tasks-list-manager"}
   = partial 'tasks/filters'
+  -#%section.projects-list-column.form-container-compact{role: "tasks-list-scroll-container"}
   %section.list-column.tasks-list-column.form-container-compact{role: "tasks-list-scroll-container"}
     .form-group{"data-channel" => "presence-203:base_tasks", "data-url" => "/tasks/list_panel", role: "tasks-list-panel"}
       .page-title.mbm
