@@ -4,7 +4,7 @@
   "dependencies": {
     "jquery": "latest",
     "jquery.role": "git://github.com/kossnocorp/role",
-    "jquery.atwho": "~0.5.0",
+    "jquery.atwho": "~1.0.1",
     "font-awesome": "~4.1.0",
     "bootstrap-sass-official": "3.2.0",
     "cal-heatmap": "~3.4.0",
@@ -14,7 +14,7 @@
     "bootstrap-tour": "~0.10.1",
     "moment": "2.8.4",
     "jquery-autosize": "~1.18.17",
-    "bootstrap-multiselect": "~0.9.10"
+    "bootstrap-multiselect": "0.9.10"
   },
   "ignore": [
     "**/.*",
