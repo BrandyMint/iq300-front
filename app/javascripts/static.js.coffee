@@ -5,6 +5,8 @@
 #= require moment/moment
 #= require eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min
 #= require jquery-autosize/jquery.autosize.min
+#= require Caret.js/dist/jquery.caret.min
+#= require jquery.atwho/dist/js/jquery.atwho.min
 #= require bootstrap-multiselect/dist/js/bootstrap-multiselect
 #= require projects/tasks
 #= require projects/new
@@ -15,6 +17,7 @@
 #= require communities/billing
 #= require layout/fixed_block
 #= require notifications/widget
+#= require discussions/mention
 
 $ ->
   $('@select2').select2()
@@ -110,7 +113,7 @@ $ ->
       .removeClass('hide')
       .find('input').first().focus()
 
-  
+
   $('@project-tasks-list-task-form-close').on 'click', (e) ->
     e.preventDefault()
     $('@project-tasks-list-new-task').addClass('hide')
