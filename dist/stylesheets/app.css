@@ -12489,6 +12489,55 @@ span.twitter-typeahead {
   margin-left: -20px;
   margin-right: 0; }
 
+/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
+.atwho-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  margin-top: 18px;
+  background: white;
+  color: black;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  min-width: 120px;
+  max-height: 200px;
+  overflow: auto;
+  z-index: 11110 !important; }
+  /* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
+  .atwho-view .cur {
+    background: #3366FF;
+    color: white; }
+    /* line 19, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
+    .atwho-view .cur small, .atwho-view .cur .project-discussion-comments-hide {
+      color: white; }
+  /* line 23, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
+  .atwho-view strong {
+    color: #3366FF; }
+  /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
+  .atwho-view .cur strong {
+    color: white;
+    font: bold; }
+  /* line 30, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
+  .atwho-view ul {
+    /* width: 100px; */
+    list-style: none;
+    padding: 0;
+    margin: auto; }
+    /* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
+    .atwho-view ul li {
+      display: block;
+      padding: 5px 10px;
+      border-bottom: 1px solid #DDD;
+      cursor: pointer;
+      /* border-top: 1px solid #C8C8C8; */ }
+  /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
+  .atwho-view small, .atwho-view .project-discussion-comments-hide {
+    font-size: smaller;
+    color: #777;
+    font-weight: normal; }
+
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buble-counter */
 .filter-item-counter, .nav-global ul > li a .picture > sup, .filters-column .with-subfolders li .counter, section.conversations-list-column > ul > li > .sender sup, .unallocated-btn .btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn > span, .unallocated-btn .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base > span, .unallocated-btn .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check > span, .unallocated-btn .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send > span, .unallocated-btn .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn > span, .unallocated-btn .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn > span, .unallocated-btn .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn > span {
   zoom: 1;
@@ -19060,86 +19109,34 @@ a.resource-inline-help-link {
   .resource-watcher-subscription i {
     top: 2px; }
 
-/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
-.atwho-view {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  margin-top: 18px;
-  background: white;
-  border: 1px solid #DDD;
-  border-radius: 3px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  min-width: 120px;
-  z-index: 11110 !important; }
-
-/* line 15, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
-.atwho-view .cur {
-  background: #3366FF;
-  color: white; }
-
-/* line 19, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
-.atwho-view .cur small, .atwho-view .cur .project-discussion-comments-hide {
-  color: white; }
-
-/* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
-.atwho-view strong {
-  color: #3366FF; }
-
-/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
-.atwho-view .cur strong {
-  color: white;
-  font: bold; }
-
-/* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
-.atwho-view ul {
-  /* width: 100px; */
-  list-style: none;
-  padding: 0;
-  margin: auto; }
-
-/* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
-.atwho-view ul li {
-  display: block;
-  padding: 5px 10px;
-  border-bottom: 1px solid #DDD;
-  cursor: pointer;
-  /* border-top: 1px solid #C8C8C8; */ }
-
-/* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/jquery.atwho */
-.atwho-view small, .atwho-view .project-discussion-comments-hide {
-  font-size: smaller;
-  color: #777;
-  font-weight: normal; }
-
-/* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
+/* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
 .atwho-view ul {
   overflow: hidden;
   white-space: nowrap;
   max-width: 30em; }
-  /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
+  /* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
   .atwho-view ul:hover {
     overflow: visible;
     max-width: 50em; }
-  /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
+  /* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
   .atwho-view ul li img.avatar {
     margin-right: 0.5em;
     height: 18px;
-    vertical-align: bottom; }
+    vertical-align: bottom;
+    border-radius: 50%; }
 
-/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
+/* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
 span.mention {
   border-radius: 5px;
   padding: 2px;
   border-width: 1px;
   border-style: solid; }
-  /* line 23, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
+  /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
   span.mention.people {
     border-color: #368aaf;
     background: white;
     color: #368aaf; }
-    /* line 27, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
+    /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/mentions */
     span.mention.people.highlight {
       background: #368aaf;
       color: white; }
