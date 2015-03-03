@@ -46,6 +46,7 @@
     "gulp-useref": "^0.4.4",
     "gulp-util": "~2.2.9",
     "haml-coffee": "^1.14.1",
+    "node-sass": "2.0.1",
     "through2": "latest",
     "vinyl-paths": "^1.0.0",
     "wiredep": "^1.7.3"

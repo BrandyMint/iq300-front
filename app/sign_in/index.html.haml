@@ -1,0 +1,38 @@
+---
+layout: input_registration
+---
+.registration-page
+  .registration-page-container
+    .registration-page-header
+      %img{src: '/images/login/logo-blue-bright.png', class: 'main-logo'}
+      %p.registration-page-header-title
+        Система проектного управления
+    .registration-page-content
+      .registration-page-body
+        %img{src: '/images/login/logo-blue-bright.png', class: 'enter-logo'}
+        .registration-form-title-wrapper
+          %p.registration-form-title.registration-top-title
+            Войти в систему
+        %form.registration-page-form
+          .container-fluid
+            .row
+              .col-md-4.col-md-offset-2.col-sm-6
+                .form-group
+                  .registration-form-input-wrapper
+                    %input.form-control.registration-form-input{placeholder: 'Логин'}
+                  .registration-form-input-wrapper
+                    %input.form-control.registration-form-input{placeholder: 'Пароль'}
+                  .registration-form-actions
+                    %a{href: '', class: 'registration-form-submit-btn'} Войти
+                  .registration-form-social
+                    %a.registration-form-btn-social.registration-form-btn-social-facebook{href: ''}
+                      Войти через Facebook
+                    %a.registration-form-btn-social.registration-form-btn-social-googleplus{href: ''}
+                      Войти через Google+
+              .col-md-4.col-md-offset-1.col-sm-5.col-sm-offset-1
+                %p.registration-form-text Зарегистрируйтесь, если ещё не пользуетесь системой
+                %a.registration-form-btn-signup{href: ''} Регистрация
+                %a{href: '#', class: 'registration-form-link'} Забыли пароль?
+                %a{href: '#', class: 'registration-form-link'} Подтвердить регистрацию
+
+

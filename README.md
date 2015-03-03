@@ -4,6 +4,7 @@
 ## Старт
 
 Должны быть установлены git, ruby, bundler, bower, nodejs.
+Работает с nodejs v0.10.32
 
 1. `bundle install`
 

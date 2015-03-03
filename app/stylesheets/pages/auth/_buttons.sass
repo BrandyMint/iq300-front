@@ -1,0 +1,81 @@
+%registration-form-btn-primary
+  @extend .btn
+  display: block
+  width: 100%
+  font-size: 1em
+  font-weight: 500
+  text-decoration: none
+  +transition-property(background, color)
+  +transition-duration(0.2s, 0.2s)
+  +transition-timing-function(ease)
+  &, &:focus
+    background-color: $registration-main-color
+    color: #fff
+  &:hover
+    color: #fff
+    background-color: lighten($registration-main-color, 10%)
+
+%registration-form-btn-default
+  text-decoration: none
+  color: #000
+  font-size: 0.9em
+  &:visited
+    color: #000
+
+.registration-form-submit-btn
+  @extend %registration-form-btn-primary
+
+.registration-form-link
+  display: block
+  margin-bottom: 1em
+  text-decoration: none
+  font-weight: 300
+  font-size: 0.8em
+  font-family: $registration-font-family-normal
+  color: $gray-dark
+
+.registration-form-link-inline
+  @extend .registration-form-link-inline
+  margin: 0
+  font-size: 1em
+
+.registration-form-actions
+  margin-bottom: 3em
+
+.registration-form-social
+  @media screen and (max-width: $screen-xs-max)
+    margin-bottom: 2em
+
+.registration-form-btn-social
+  @extend %registration-form-btn-primary
+  font-size: 0.8em
+  margin-bottom: 1em
+  &, &:focus
+    background: none
+    box-shadow: none
+    outline: none
+    width: auto
+  @each $s in facebook $facebook-color, googleplus $googleplus-color
+    &.registration-form-btn-social-#{nth($s, 1)}
+      &, &:focus
+        color: nth($s, 2)
+        border-color: nth($s, 2)
+        background-color: transparent
+      &:hover
+        color: #fff
+        background-color: nth($s, 2)
+
+.registration-form-btn-signup
+  @extend .registration-form-btn-social
+  width: auto
+  margin-bottom: 2em
+  &, &:focus
+    color: $registration-main-color
+    border-color: $registration-main-color
+    background-color: transparent
+  &:hover
+    color: #fff
+    background-color: $registration-main-color
+    border-color: $registration-main-color
+
+
