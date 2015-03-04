@@ -28,6 +28,7 @@ gem 'select2-rails', require: false
 #gem 'rb-inotify', '~> 0.9', :require => false
 
 gem 'git'
+gem 'semver2'
 gem 'better_errors'
 #gem 'middleman-pry'
 #gem 'pry-theme'
