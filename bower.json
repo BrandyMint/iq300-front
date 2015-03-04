@@ -14,7 +14,8 @@
     "bootstrap-tour": "~0.10.1",
     "moment": "2.8.4",
     "jquery-autosize": "~1.18.17",
-    "bootstrap-multiselect": "0.9.10"
+    "bootstrap-multiselect": "0.9.10",
+    "c3": "latest"
   },
   "ignore": [
     "**/.*",
