@@ -8,6 +8,7 @@
 #= require Caret.js/dist/jquery.caret.min
 #= require jquery.atwho/dist/js/jquery.atwho.min
 #= require bootstrap-multiselect/dist/js/bootstrap-multiselect
+#= require fullcalendar/dist/fullcalendar
 #= require projects/tasks
 #= require projects/new
 #= require projects/discussions
@@ -18,6 +19,7 @@
 #= require layout/fixed_block
 #= require notifications/widget
 #= require discussions/mention
+#= require calendar/calendar
 
 $ ->
   $('@select2').select2()

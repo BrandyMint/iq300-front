@@ -1,0 +1,49 @@
+.calendar-content-column
+  @extend %list-column-block
+  left: $navColumnWidth
+
+.calendar-block-container
+  padding: $grid-gutter-width
+
+
+.fullcalendar-event-popover
+  @extend .popover
+  width: 300px
+  .popover-content
+    padding: 0
+  .checkbox
+    padding:
+      left: 10px
+      right: 10px
+
+.fullcalendar-event-form-control
+  @extend .form-control
+  border-radius: 0
+  &, &:hover, &:focus
+    border: none
+    border-bottom: 1px solid $line-color
+    +box-shadow(none)
+  &:focus
+    border-bottom-color: lighten($brand-primary, 40%)
+
+.fullcalendar-event-form-control-title
+  font:
+    size: 1.2em
+    weight: bold
+  height: 36px
+  padding:
+    top: 10px
+    bottom: 10px
+
+.fullcalendar-event-form-actions
+  padding: 10px
+
+.fullcalendar-event-form-submit-btn
+  &, .popover &
+    @extend .btn
+    @extend .btn-lg
+    @extend .btn-outline-primary
+    background: #fff
+    background-image: none
+    font-size: $font-size-base
+
