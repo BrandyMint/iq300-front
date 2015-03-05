@@ -15,7 +15,7 @@
     "moment": "2.8.4",
     "jquery-autosize": "~1.18.17",
     "bootstrap-multiselect": "0.9.10",
-    "c3": "latest"
+    "c3": "latest",
     "fullcalendar": "~2.2.7"
   },
   "ignore": [
