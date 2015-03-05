@@ -4,6 +4,7 @@
 #= require modernizr/modernizr
 #= require select2/select2
 #= require moment/moment
+#= require moment/locale/ru
 #= require eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min
 #= require jquery-autosize/jquery.autosize.min
 #= require Caret.js/dist/jquery.caret.min
@@ -55,7 +56,7 @@ $ ->
         "<i class=\"fa fa-user\"></i>&nbsp; Исполнители: " + options.length + " <b class=\"caret\"></b>"
 
   $('@datetimepicker').datetimepicker
-    language: 'ru'
+    locale: 'ru'
     icons:
       time: "fa fa-clock-o datetimepicker-icon",
       date: "fa fa-calendar datetimepicker-icon",
@@ -64,8 +65,8 @@ $ ->
     format: 'DD/MM/YYYY HH:mm'
 
   $('@datetimepicker-now').datetimepicker
-    language: 'ru'
-    defaultDate: new Date()
+    locale: 'ru'
+    defaultDate: moment()
     icons:
       time: "fa fa-clock-o datetimepicker-icon",
       date: "fa fa-calendar datetimepicker-icon",
@@ -76,7 +77,7 @@ $ ->
 
   $('@datetimepicker input').on 'focus', () ->
     picker = $(@).parents().find('[role*="datetimepicker"]').first()
-    picker.data("DateTimePicker").setDate(Date.now())
+    picker.data("DateTimePicker").date(moment())
     picker.data('DateTimePicker').show()
 
   $('@tooltip').tooltip
