@@ -1,15 +1,24 @@
+<<<<<<< HEAD
 /* line 4, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+=======
+/* line 4, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+>>>>>>> build
 .subscription-mail-container {
   width: 50%;
   margin: 50px auto;
   font-size: 14px;
   font-weight: 500; }
 
+<<<<<<< HEAD
 /* line 10, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+=======
+/* line 10, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+>>>>>>> build
 .subscription-mail-logo {
   text-align: center;
   margin: 1em auto 2em; }
 
+<<<<<<< HEAD
 /* line 14, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
 .subscription-mail-header {
   margin-bottom: 1.5em; }
@@ -19,10 +28,25 @@
   margin-bottom: 2em; }
 
 /* line 20, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+=======
+/* line 14, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+.subscription-mail-header {
+  margin-bottom: 1.5em; }
+
+/* line 17, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+.subscription-mail-body {
+  margin-bottom: 2em; }
+
+/* line 20, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+>>>>>>> build
 .subscription-mail-subheader {
   font-weight: 600;
   margin: 30px auto; }
 
+<<<<<<< HEAD
 /* line 24, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+=======
+/* line 24, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+>>>>>>> build
 .subscription-mail-footer {
   color: #d3d3d3; }
