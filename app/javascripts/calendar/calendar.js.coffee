@@ -4,7 +4,6 @@ window.Calendar ||= {}
   $(document).ready ->
     $calendar = $('@fullcalendar')
     jsonUrl = $calendar.data('events')
-    console.log jsonUrl
     multiselectUsers = $('@multiselect-calendar-users')
     multiselectCommunities = $('@multiselect-calendar-communities')
 

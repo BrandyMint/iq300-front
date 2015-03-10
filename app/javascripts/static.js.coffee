@@ -60,8 +60,10 @@ $ ->
     icons:
       time: "fa fa-clock-o datetimepicker-icon",
       date: "fa fa-calendar datetimepicker-icon",
-      up: "fa fa-arrow-up datetimepicker-icon",
-      down: "fa fa-arrow-down datetimepicker-icon"
+      up: "fa fa-angle-up datetimepicker-icon",
+      down: "fa fa-angle-down datetimepicker-icon"
+      previous: 'fa fa-angle-left datetimepicker-icon'
+      next: 'fa fa-angle-right datetimepicker-icon'
     format: 'DD/MM/YYYY HH:mm'
 
   $('@datetimepicker-now').datetimepicker
@@ -70,8 +72,10 @@ $ ->
     icons:
       time: "fa fa-clock-o datetimepicker-icon",
       date: "fa fa-calendar datetimepicker-icon",
-      up: "fa fa-arrow-up datetimepicker-icon",
-      down: "fa fa-arrow-down datetimepicker-icon"
+      up: "fa fa-angle-up datetimepicker-icon",
+      down: "fa fa-angle-down datetimepicker-icon"
+      previous: 'fa fa-angle-left datetimepicker-icon'
+      next: 'fa fa-angle-right datetimepicker-icon'
     format: 'DD/MM/YYYY HH:mm'
 
 

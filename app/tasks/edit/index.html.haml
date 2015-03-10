@@ -72,41 +72,37 @@ body_class: tasks-show
         .col-md-1.form-control-static.nopadding-left
           .fa.fa-question-circle{"data-original-title" => "Укажите сотрудника, которому Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
       .form-group{"role-datetime-field" => "ready"}
-        %input#base_task_start_date{:name => "base_task[start_date]", :role => "start-date", :type => "hidden", :value => "2014-08-24 20:00:00"}/
         %label.control-label.col-sm-2
           Начинается:
         .col-sm-10
           .input-group-inline
-            .input-group
-              %input#task-start-date.date-input.zebra-date-picker.form-control{"data-pair" => "input-end-date", "data-show-clear-date" => "false", "data-zdp_format" => "d.m.Y", :disabled => "disabled", :readonly => "readonly", "role-zebra-date-picker" => "ready", :type => "text", :value => "25.08.2014"}/
-              .input-group-addon
+            .input-group{role: 'datetimepicker'}
+              %input#base_task_start_date.form-control{:name => "base_task[start_date]", :role => "start-date", :size => "30", :type => "text", :value => "10.03.2015 00:00"}/
+              .input-group-addon.input-group-addon-btn{:role => "calendar-trigger"}
                 .fa.fa-calendar-o.fa-lg
             .input-group
-              %input.time-input.form-control{:type => "text", :value => "00:00"}/
               .input-group-addon{"data-original-title" => "Срок начала задачи", "role-bootstrap-tooltip" => "ready", :title => ""}
                 .fa.fa-question-circle
       .form-group{"role-datetime-field" => "ready"}
-        %input#base_task_end_date{:name => "base_task[end_date]", :role => "end-date", :type => "hidden", :value => "2014-08-29 19:59:00"}/
         %label.control-label.col-sm-2
           Выполнить к:
         .col-sm-10
           .input-group-inline
-            .input-group
-              %input#task-end-date.date-input.zebra-date-picker.form-control{"data-direction-start" => "true", "data-show-clear-date" => "false", "data-zdp_format" => "d.m.Y", :disabled => "disabled", :readonly => "readonly", :role => "input-end-date", "role-zebra-date-picker" => "ready", :type => "text", :value => "29.08.2014"}/
-              .input-group-addon{"test-input-end-date" => ""}
+            .input-group{role: 'datetimepicker'}
+              %input#base_task_end_date.form-control{:name => "base_task[end_date]", :role => "input-end-date tour-tasks-end-date", :size => "30", :type => "text", :value => "10.03.2015 23:59"}/
+              .input-group-addon.input-group-addon-btn{:role => "calendar-trigger", "test-input-end-date" => ""}
                 .fa.fa-calendar-o.fa-lg
             .input-group
-              %input.time-input.form-control{:type => "text", :value => "23:59"}/
               .input-group-addon{"data-original-title" => "Срок, к которому Вы хотите видеть задачу выполненной", "role-bootstrap-tooltip" => "ready", :title => ""}
                 .fa.fa-question-circle
-        .col-md-5.col-md-offset-2
-          .input-group-inline.task-proposed-end-dates{:role => "task-proposed-end-dates"}
+        .col-sm-8.col-sm-offset-2
+          .input-group-inline.task-proposed-end-dates
             .input-group
-              %a{"data-date" => "25.08.2014", :href => "#"} сегодня, 25 августа
+              %a{"data-date" => "10.03.2015 23:59", :href => "#", :role => "task-proposed-end-dates"} сегодня, 10 марта
             .input-group
-              %a{"data-date" => "26.08.2014", :href => "#"} завтра, 26 августа
+              %a{"data-date" => "11.03.2015 23:59", :href => "#", :role => "task-proposed-end-dates"} завтра, 11 марта
             .input-group
-              %a{"data-date" => "27.08.2014", :href => "#"} 27 августа
+              %a{"data-date" => "12.03.2015 23:59", :href => "#", :role => "task-proposed-end-dates"} 12 марта
       .col-md-4.col-md-offset-2.task-repeat-checkbox
         .checkbox{:role => "task-repeat-checkbox"}
           %label
