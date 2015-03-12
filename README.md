@@ -83,6 +83,9 @@
 или дефолтный репо
 ```npm config set registry http://registry.npmjs.org/```
 
+Фиксируем зависимости node-модулей
+```npm shrinkwrap```
+
 ## TODO
 
 Убрать зависимости из проекта в Bower.
