@@ -73,7 +73,15 @@
 Быстрый билд и push в репо `./update_component`
 
 
+## Troubleshooting
 
+Удаляем кэш node-модулей
+```rm -rf node_modules && npm cache clean && npm install```
+
+Пробуем альтернативный репо node-модулей (помогает при fetch-ошибках)
+```npm config set registry "https://registry.nodejitsu.com"```
+или дефолтный репо
+```npm config set registry http://registry.npmjs.org/```
 
 ## TODO
 
