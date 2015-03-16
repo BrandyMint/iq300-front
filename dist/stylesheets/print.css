@@ -2101,33 +2101,40 @@ div.dhx_modal_cover {
   font-weight: bold;
   border-width: 0; }
 
-/* Customization */
-/* line 3, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 2, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+.gantt_grid_scale, .gantt_scale_cell, .gantt_cell, .gantt_task_content, .gantt_side_content {
+  font-size: 10px !important; }
+
+/* line 5, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+.gantt_tree_icon {
+  display: none; }
+
+/* line 8, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .project-gantt-tab {
   margin-left: -100px;
   margin-right: -100px; }
 
-/* line 7, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 12, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_cell.right_limit {
   border-left: 2px solid red; }
 
-/* line 10, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 15, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_cell.left_limit {
   border-right: 2px solid red; }
 
-/* line 13, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 18, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_line.in_work {
   background: #28abe3 url("/assets/backgrounds/gantt/progress.png") repeat-x left center; }
 
-/* line 16, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 21, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_line.in_work > .gantt_task_progress {
   background: #28abe3; }
 
-/* line 19, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 24, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_line.completed {
   background: #28abe3; }
 
-/* line 22, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 27, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_line.completed:before {
   content: '';
   position: absolute;
@@ -2142,44 +2149,44 @@ div.dhx_modal_cover {
   margin-top: -8px;
   margin-left: 3px; }
 
-/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 41, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_line.mailstone {
   background: #90c320 url("/assets/backgrounds/gantt/progress.png") repeat-x left center; }
 
-/* line 39, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_line.mailstone > .gantt_task_progress {
   background: #90c320; }
 
-/* line 42, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 47, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_line.canceled {
   background: gray; }
 
-/* line 45, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_line.canceled > .gantt_task_progress {
   background: #646464; }
 
-/* line 48, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 53, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_line.pending {
   background: gray; }
 
-/* line 51, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 56, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_line.overdued {
   background: #ff0103; }
 
-/* line 54, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 59, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_task_line.overdued_pending {
   background: gray;
-  border-bottom: #ff0103 5px solid; }
+  border-bottom: #ff0103 3px solid; }
 
-/* line 58, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 63, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .weekend {
   background: #f6f6f6; }
 
-/* line 61, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 66, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_selected .weekend {
   background: #f7eb91 !important; }
 
-/* line 64, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 69, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_cal_quick_info {
   white-space: nowrap;
   overflow: hidden;
@@ -2190,7 +2197,7 @@ div.dhx_modal_cover {
   -moz-text-overflow: ellipsis;
   -webkit-text-overflow: ellipsis; }
 
-/* line 67, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+/* line 72, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
 .gantt_scale_line > .gantt_scale_cell.current {
   color: red; }
 
