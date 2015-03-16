@@ -1,0 +1,57 @@
+%section.task-form-section{ style: 'padding: 0;' }
+  %form#new_report.new_report{"accept-charset" => "UTF-8", :action => "/communities/8/reports", :method => "post", "role-report-form" => "ready"}
+    %div{:style => "margin:0;padding:0;display:inline"}
+      %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+      %input{:name => "authenticity_token", :type => "hidden", :value => "ak5eZFsZ2WJJO45mbKf35Z4j4qaPnKY/ltkiRE0Y4yk="}/
+    .row.form-group
+      %label.input-group-inline-label.pull-left.col-sm-1
+        %strong
+          Тип отчета
+      .pull-left
+        #s2id_report_report_type.select2-container.select-two{:style => "width: 208px;"}
+          %a.select2-choice{:href => "javascript:void(0)", :tabindex => "-1"}
+            %span#select2-chosen-1.select2-chosen Отчет по задачам
+            %abbr.select2-search-choice-close
+            %span.select2-arrow{:role => "presentation"}
+              %b{:role => "presentation"}
+          %label.select2-offscreen{:for => "s2id_autogen1"}
+          %input#s2id_autogen1.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-1", :role => "button", :type => "text"}/
+          .select2-drop.select2-display-none.select2-with-searchbox
+            .select2-search
+              %label.select2-offscreen{:for => "s2id_autogen1_search"}
+              %input#s2id_autogen1_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-1", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+            %ul#select2-results-1.select2-results{:role => "listbox"}
+        %select#report_report_type.select-two.select2-offscreen{:name => "report[report_type]", :role => "ui-selectbox", "role-select-two" => "ready", :tabindex => "-1", :title => ""}
+          %option{:selected => "selected", :value => "tasks_report"} Отчет по задачам
+          %option{:value => "executors_report"} Отчет по исполнителям
+          %option{:value => "advanced_tasks_report"} Расширенный отчет по задачам
+    .row.form-group
+      %div{:role => "ui-period-container"}
+        %label.input-group-inline-label.pull-left.col-sm-1
+          %strong
+            За период
+        .pull-left
+          .input-group-inline-block.pull-left
+            .input-group{ role: 'datetimepicker' }
+              %input#report_begin_date.form-control.date-input.date-input-short{:name => "report[begin_date]", :size => "30", :type => "text", :value => "09.03.2015"}/
+              .input-group-addon.btn{:role => "calendar-trigger"}
+                .fa.fa-calendar-o.fa-lg
+          .input-group-inline-dash.pull-left —
+          .input-group-inline-block.pull-left
+            .input-group{ role: 'datetimepicker' }
+              %input#report_end_date.form-control.date-input.date-input-short{:name => "report[end_date]", :size => "30", :type => "text", :value => "10.03.2015"}/
+              .input-group-addon.btn{:role => "calendar-trigger"}
+                .fa.fa-calendar-o.fa-lg
+           
+           
+          .clearfix
+          %small
+            %a{"data-date" => "09.03.2015", :href => "#", :role => "ui-begin-date-helper"} День
+             
+            %a{"data-date" => "03.03.2015", :href => "#", :role => "ui-begin-date-helper"} Неделя
+             
+            %a{"data-date" => "10.02.2015", :href => "#", :role => "ui-begin-date-helper"} Месяц
+      .pull-left
+        %a.btn.btn-default.btn-sm{:href => "#", :role => "ui-submit-form"} Показать
+    .clearfix
+  %hr/
