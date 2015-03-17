@@ -23,37 +23,37 @@
     .project-task-box-title-block{"data-href" => "/tasks/show", :role => "project-task-title"}
       %a.task-box-title-block-link{href: '/tasks/show'}
         Оптимизация стилей по устранению проблемы фиксированного блока добавления комментария на планшетах и смартфонах
-    .row
-      .col-sm-4.ui-sortable-handle
-        .pull-left.ui-sortable-handle
-          Александр Мещеряков 
-          &nbsp;&nbsp;
-        .pull-left
-          %i.fa.fa-comments-o.icon-size-14
-          14
-        .clearfix
-      - unless ['draft', 'completed', 'new'].include?(status)
-        .col-sm-8.ui-sortable-handle
-          .progress.project-task-box-progress.ui-sortable-handle
-            .progress-bar.progress-bar-primary.ui-sortable-handle{"aria-valuemax" => "100", "aria-valuemin" => "0", :style => "width: 0%"}
-            .progress-bar.progress-bar-danger.ui-sortable-handle{"aria-valuemax" => "100", "aria-valuemin" => "0", :style => "width: 75.80645161290322%"}
-        .clearfix.ui-sortable-handle
+    - if data.task.status[status].present?
+      %span.label{class: "label-#{data.task.status[status].css_class}"}
+        = data.task.status[status].title
+      &nbsp;&nbsp;
+    %span.ui-sortable-handle
+      Александр Мещеряков 
+      &nbsp;&nbsp;
+      %i.fa.fa-comments-o.icon-size-14
+      14
+    - unless ['draft', 'completed', 'new'].include?(status)
+      .progress.project-task-box-progress.ui-sortable-handle
+        .progress-bar.progress-bar-primary.ui-sortable-handle{"aria-valuemax" => "100", "aria-valuemin" => "0", :style => "width: 0%"}
+        .progress-bar.progress-bar-danger.ui-sortable-handle{"aria-valuemax" => "100", "aria-valuemin" => "0", :style => "width: 75.80645161290322%"}
+      %strong.text-color-danger{role: 'tooltip', data: {'original-title' => 'негативный прогноз по дедлайну', delay: 200}}
+        %i.fa.fa-warning
 
   .project-task-box-status-block
     .row
-      .col-xs-6
+      .col-xs-6.col-collapse
         .status-date.project-task-box-status-date
           .day 12
           .month
             февраля
-      .col-xs-6
+      .col-xs-6.col-collapse
         .task-box-status-date-hypen
           %i.fa.fa-angle-right.icon-color-gray-light
         .status-date.task-box-status-date
           .day 22
           сентября
   .project-task-box-actions.dropdown.pull-right
-    = link_to '#', data: {toggle: 'dropdown', placement: 'bottom'}, class: 'btn btn-sm'  do
+    = link_to '#', data: {toggle: 'dropdown', placement: 'bottom'}, class: 'project-task-box-actions-btn'  do
       %i.fa.fa-bars.icon-color-gray-light
     %ul.dropdown-menu
       %li

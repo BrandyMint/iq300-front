@@ -106,7 +106,7 @@ a.task-box-block-link
 
 .task-box-status-date-hypen
   position: absolute
-  margin-left: -$grid-gutter-width
+  margin-left: -$grid-gutter-width/2
   width: $grid-gutter-width
   text-align: center
 
@@ -155,14 +155,13 @@ a.task-box-block-link
   @extend %task-draft-style
 
 .task-completed,
-.task-accepted
+.task-accepted,
+.task-canceled
   .title a
     color: #666
     text-decoration: line-through
     &:hover
       text-decoration: underline
-
-
 
 .task-with-change,
 .project-box-project-with-change
