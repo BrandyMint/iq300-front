@@ -1,14 +1,16 @@
-$project-task-padding-left: $grid-gutter-width
-$project-task-padding-right: $grid-gutter-width * 2
-$project-task-padding-left-nested: $grid-gutter-width * 1.75
-$project-task-checkbox-width: 10px
+$project-task-box-controls-width: 40px
+$project-task-box-status-block-width: 120px
+$project-task-box-actions-width: 30px
+$project-task-padding-left: $grid-gutter-width + $project-task-box-controls-width
+$project-task-padding-right: $grid-gutter-width + $project-task-box-status-block-width + $project-task-box-actions-width
+$project-task-padding-left-nested: $project-task-padding-left + $grid-gutter-width*0.75
+$project-task-checkbox-width: 12px
 
 .project-task-box
   &, &.task-box
     padding:
       left: $project-task-padding-left
       right: $project-task-padding-right
-    margin-bottom: 1px
   a
     text-decoration: none
   //@each $c in new $brand-primary, overdued $brand-danger, overdue $brand-danger
@@ -23,12 +25,61 @@ $project-task-checkbox-width: 10px
       top: 1.5em
       bottom: 1.5em
 
-.project-task-box-checkbox,
-.project-task-box-child-counter
-  margin-left: -$project-task-padding-left + $project-task-checkbox-width
+.project-task-box-title-block
+  @extend .task-box-title-block
+  font-size: $font-size-base + 1px
+
+.project-task-box-controls
+  @extend .col-sm-1
+  width: $project-task-box-controls-width
+  margin-left: - $project-task-box-controls-width
+  padding-left: 0
+
+.project-task-box-content
+  @extend .col-sm-1
+  @extend .task-box-description-block
+  width: 100%
+
+.project-task-box-status-block
+  @extend .task-box-status-block
+  @extend .col-sm-1
+  width: $project-task-box-status-block-width
+  margin-right: - $project-task-box-status-block-width
 
 .project-task-box-actions
-  margin-right: -$project-task-padding-right
+  @extend .task-box-status-block
+  @extend .col-sm-1
+  width: $project-task-box-actions-width
+  margin-right: - ($project-task-box-actions-width + $project-task-box-status-block-width)
+
+.project-task-box-checkbox,
+.project-task-box-child-counter
+  display: inline-block
+  //margin-left: -$project-task-padding-left + $project-task-checkbox-width
+
+.project-task-box-checkbox
+  margin-right: $project-task-checkbox-width/2
+
+.project-task-box-level
+  display: inline-block
+  margin-right: -5px
+
+.project-task-box-add-subtask-btn
+  display: block
+  text-align: center
+  padding: 3px
+  margin:
+    left: $project-task-checkbox-width*1.5
+    top: -3px
+    bottom: -3px
+  color: lighten($gray-light, 15%)
+  &:hover
+    color: $gray-light
+
+.project-task-box-status-date
+  @extend .task-box-status-date
+  .month
+    font-size: $font-size-small
 
 .project-tasks-list-navbar-checkbox
   margin:
@@ -50,17 +101,6 @@ $project-task-checkbox-width: 10px
 .project-task-box-stats
   padding-right: 5px
   font-size: 11px
-
-.project-task-box-level
-  padding-left: 5px
-  margin-right: -5px
-
-.project-task-box-add-subtask-btn
-  padding: 0 5px
-  display: inline-block
-  color: lighten($gray-light, 10%)
-  &:hover
-    color: $gray-light
 
 .placeholder
   outline: 1px dashed #4183C4
@@ -85,26 +125,17 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
 
 .project-tasks-list-sortable li ol
   li:first-child
-    +arrow(top, 8px, white, $gray-lighter)
+    +arrow(top, 8px, white, $item-border-bottom-color)
     +arrow-position-left(25px)
   li.placeholder
     margin-left: 25px
   &:before
-    border-bottom-color: darken($gray-lighter, 10%)
+    border-bottom-color: darken($item-border-bottom-color, 10%)
   .project-task-box
-    //border-left-color: $gray-lighter
     padding-left: $project-task-padding-left-nested
-    //&:hover
-      border-left-color: darken($gray-lighter, 10%)
-      background-color: $gray-lighter
-    //&.task-new
-      border-left-color: desaturate(darken($brand-primary, 0%), 30%)
-    //&.task-draft
-      border-left-color: desaturate(darken(#a0b9be, 0%), 30%)
-      color: #8d8d8d
   .project-task-box-checkbox,
   .project-task-box-child-counter
-    margin-left: -$project-task-padding-left-nested + $project-task-checkbox-width
+    margin-left: - $project-task-checkbox-width
 
 .project-task-box-child-counter
   @extend .badge
@@ -157,3 +188,7 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
   width: inherit
   background-color: $gray-lighter
   margin-left: -$grid-gutter-width / 2
+
+.project-task-box-progress
+  @extend .project-box-progress
+  margin: 0.75em 0 0 0

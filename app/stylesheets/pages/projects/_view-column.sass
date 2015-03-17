@@ -1,41 +1,5 @@
 // Also see pages/projects/_show.scss
 
-%overdued-block
-  border-left-color: $brand-danger
-  //background-color: lighten($brand-danger, 40%);
-  &:hover
-    //background-color: lighten($brand-danger, 35%);
-    border-left-color: $brand-danger
-
-%task-block-overdued
-  @extend %overdued-block
-  color: $brand-danger
-
-.task-overdued,
-.task-overdue
-  @extend %task-block-overdued
-
-.task-in_work
-  a
-    color: $text-color
-
-.task-draft
-  border-left-color: #a0b9be
-  font:
-    style: italic
-    size: 13px
-  color: #8d8d8d
-  a
-    color: #8d8d8d
-
-.task-completed,
-.task-accepted
-  .title a
-    color: #666
-    text-decoration: line-through
-    &:hover
-      text-decoration: underline
-
 .project-view-column
   &.project-view-column-project-template
     +gradient-vertical($template-item-background, #fff, 219px, 220px)
