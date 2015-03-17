@@ -89,7 +89,6 @@ configure :build do
   ignore "/javascripts/vendor/lib/*"
   ignore "stylesheets/**/*"
   ignore "stylesheets/*"
-  ignore "images/*"
   ignore "fonts/*"
   ignore "tmp/*"
   ignore "vendor/*"
