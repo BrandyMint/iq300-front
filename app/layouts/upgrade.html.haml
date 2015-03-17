@@ -1,0 +1,12 @@
+%html{lang: 'en'}
+  %head
+    %title iq300 frontend
+    %meta{:charset => "utf-8", :content => "text/html", "http-equiv" => "content-type"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"}
+    %link{href: "http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css", rel: 'stylesheet'}
+    - if build?
+      = stylesheet_link_tag '/stylesheets/upgrade'
+    - else
+      = stylesheet_link_tag '/tmp/stylesheets/upgrade'
+  %body
+    = yield
