@@ -11,14 +11,10 @@
       %input{type: 'checkbox'}
     .project-task-box-level
       = number
-    .clearfix
-    -# if children_count > 0
-      %a.project-task-box-child-counter.pull-left{:href => "#"}
-        2
-    - if is_root
+  - if is_root
+    .project-task-box-add-subtask-btn-block
       = link_to "#", role: :tooltip, data: {'original-title' => 'Добавить подзадачу'}, class: 'project-task-box-add-subtask-btn' do
         %i.icon-plus
-    .clearfix
   .project-task-box-content{"data-status" => "#{status}", :role => "project-task-box-description"}
     .project-task-box-title-block{"data-href" => "/tasks/show", :role => "project-task-title"}
       %a.task-box-title-block-link{href: '/tasks/show'}
@@ -33,13 +29,16 @@
       %i.fa.fa-comments-o.icon-size-14
       14
     - unless ['draft', 'completed', 'new'].include?(status)
-      .progress.project-task-box-progress.ui-sortable-handle
-        .progress-bar.progress-bar-primary.ui-sortable-handle{"aria-valuemax" => "100", "aria-valuemin" => "0", :style => "width: 0%"}
-        .progress-bar.progress-bar-danger.ui-sortable-handle{"aria-valuemax" => "100", "aria-valuemin" => "0", :style => "width: 75.80645161290322%"}
-      %strong.text-color-danger{role: 'tooltip', data: {'original-title' => 'негативный прогноз по дедлайну', delay: 200}}
-        %i.fa.fa-warning
+      .project-task-box-progress-block
+        .progress.project-task-box-progress.ui-sortable-handle
+          .progress-bar.progress-bar-primary.ui-sortable-handle{"aria-valuemax" => "100", "aria-valuemin" => "0", :style => "width: 0%"}
+          .progress-bar.progress-bar-danger.ui-sortable-handle{"aria-valuemax" => "100", "aria-valuemin" => "0", :style => "width: 75.80645161290322%"}
+        %span 60/50%
+        &nbsp;&nbsp;
+        %strong.text-color-danger{role: 'tooltip', data: {'original-title' => 'негативный прогноз по дедлайну', delay: 200}}
+          %i.fa.fa-warning
 
-  .project-task-box-status-block
+  .project-task-box-status-block{role: 'project-task-box-status-block'}
     .row
       .col-xs-6.col-collapse
         .status-date.project-task-box-status-date
@@ -54,7 +53,7 @@
           сентября
   .project-task-box-actions.dropdown.pull-right
     = link_to '#', data: {toggle: 'dropdown', placement: 'bottom'}, class: 'project-task-box-actions-btn'  do
-      %i.fa.fa-bars.icon-color-gray-light
+      %i.fa.fa-pencil.icon-color-gray-light
     %ul.dropdown-menu
       %li
         = link_to '#', role: 'project-task-box-edit-task-btn', data: {project_id: project_id}  do
