@@ -15,6 +15,7 @@
 #= require projects/new
 #= require projects/discussions
 #= require projects/list
+#= require projects/milestones
 #= require notifications/list
 #= require tasks/list
 #= require communities/billing

@@ -4,6 +4,48 @@
 %ol.project-tasks-list-sortable
   .hide{role: 'project-tasks-list-new-task'}
     = partial 'projects/tasks/new'
+  - milestone_colors = [:blue, :yellow, :orange, :red, :violet]
+  - for i in 0..(milestone_colors.count-1)
+    .project-tasks-group-header{role: 'project-group-header', class: "project-tasks-group-header-#{milestone_colors[i]}"}
+      %div{role: 'project-group-header-content'}
+        %h4.project-tasks-group-title
+          = "Группа #{i+1}"
+      .project-group-header-form.hide{role: 'project-group-header-form'}
+        %form.form-horizontal
+          .row
+            .col-sm-4
+              %input.form-control{type: 'text', value: "Группа #{i+1}", required: 'required', placeholder: 'Название группы задач', autofocus: 'autofocus'}
+            .col-sm-3
+              = partial 'shared/select2', locals: {title: 'Исполнитель не назначен'}
+            .col-sm-3
+              .input-group-inline
+                .input-group{role: 'tooltip', data: {'original-title' => 'Срок выполнения'}}
+                  %input.date-input.zebra-date-picker.form-control{"data-pair" => "input-end-date", "data-show-clear-date" => "false", "data-zdp_format" => "d.m.Y", :readonly => "readonly", "role-zebra-date-picker" => "ready", :type => "text", :value => "22.08.2014"}
+                  .input-group-addon
+                    .fa.fa-calendar-o.fa-lg
+            .col-sm-2
+              .btn-group
+                %button.project-tasks-group-header-color-select.dropdown-toggle{class: "project-tasks-group-header-color-select-#{milestone_colors[i]}", "aria-expanded" => "false", "data-toggle" => "dropdown", :type => "button"}
+                  %span.project-tasks-group-header-color-bullet
+                  = "Уровень #{i+1}"
+                  %b.caret
+                %ul.dropdown-menu{:role => "menu"}
+                  - milestone_colors.each_with_index do |color, ci|
+                    %li
+                      %a{class: "project-tasks-group-header-color-select-#{milestone_colors[ci]}", href: '#'}
+                        %span.project-tasks-group-header-color-bullet
+                        = "Уровень #{ci+1}"
+          .row
+            .col-sm-4
+              .row
+                .col-xs-4
+                  = link_to 'Сохранить', '', class: 'btn btn-success', role: 'project-group-header-form-close'
+                .col-xs-4
+                  = link_to 'Отменить', '', class: 'btn link-gray-light', role: 'project-group-header-form-close'
+                .col-xs-4
+                  = link_to 'Удалить', '', class: 'btn link-danger', role: 'project-group-header-form-close'
+
+
   - statuses.each_with_index do |status, i|
     - statuses_accented.each do |status_accented|
       .project-tasks-group-header{role: 'project-group-header'}

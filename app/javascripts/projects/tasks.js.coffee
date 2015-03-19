@@ -102,6 +102,4 @@ window.ProjectTasksList ||= {}
       container: container
     return pop
 
-
-
 )(window.ProjectTasksList ||= {})
