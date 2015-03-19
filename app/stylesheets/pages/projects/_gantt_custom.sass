@@ -16,59 +16,56 @@
 .gantt_task_cell.left_limit
   border-right: 2px solid $errorColor
 
-.gantt_task_line.in_work
-  background: #28abe3 url(#{$images-path}/backgrounds/gantt/progress.png) repeat-x left center
+.gantt_side_content
+  top: -3px
 
-.gantt_task_line.in_work > .gantt_task_progress
-  background: #28abe3
+.gantt_task_line
+  background: $gantt-task-color
+  .gantt_task_content
+    color: $gantt-task-text-color
 
 .gantt_task_line.completed
-  background: #28abe3
+  background: $gantt-task-progress-color
 
-.gantt_task_line.completed:before
-  content: ''
-  position: absolute
-  width: 16px
-  height: 16px
-  background: #8fc12a url(#{$images-path}/icons/gantt_check.png) no-repeat center
-  -webkit-border-radius: 8px
-  -moz-border-radius: 8px
-  border-radius: 8px
-  left: 100%
-  top: 50%
-  margin-top: -8px
-  margin-left: 3px
+.gantt_task_line
+  i.fa-exclamation-triangle
+    color: $errorColor
+  i.fa-check-circle
+    color: $gantt-task-progress-color
 
-.gantt_task_line.mailstone
-  background: #90c320 url(#{$images-path}/backgrounds/gantt/progress.png) repeat-x left center
+.gantt_task_line > .gantt_task_progress
+  background: $gantt-task-progress-color
 
-.gantt_task_line.mailstone > .gantt_task_progress
-  background: #90c320
-
-.gantt_task_line.canceled
-  background: gray
+.gantt_task_line
+  &.canceled, &.draft
+    background: $gantt-template-task-color
 
 .gantt_task_line.canceled > .gantt_task_progress
-  background: #646464
+  background: $gantt-template-task-color
 
 .gantt_task_line.pending
-  background: gray
+  background: $gantt-template-task-color
 
 .gantt_task_line.overdued
-  background: #ff0103
+  background: $gantt-overdue-color
 
 .gantt_task_line.overdued_pending
-  background: gray
-  border-bottom: #ff0103 3px solid
+  background: $gantt-template-task-color
+  border-bottom: $gantt-overdue-color 3px solid
 
 .weekend
-  background: #f6f6f6
+  background: $gantt-weekend-color
 
 .gantt_selected .weekend
-  background: #f7eb91 !important
+  background: $gantt-weekend-selected-color !important
 
 .gantt_cal_quick_info
   +text-overflow
 
-.gantt_scale_line > .gantt_scale_cell.current
-  color: red
+.gantt_scale_line
+  .gantt_scale_cell.current
+    border-left: 1px solid $errorColor
+
+.gantt_task_row
+  .gantt_task_cell.current
+    border-left: 1px solid $errorColor
