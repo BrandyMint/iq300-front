@@ -4,9 +4,14 @@
 @import settings/paths
 @import helpers/variables
 @import framework/bootstrap/variables
+@import libs/fontawesome/font-awesome
 @import helpers/mixins
 @import helpers/icons
 @import helpers/extras
+@import helpers/icons_icomoon
+@import helpers/iq-icons/iqs
+@import helpers/iq-icons/iqs-codes
+@import helpers/utils
 
 // Reset
 // --------------------------------------
@@ -19,6 +24,7 @@
 // Customize pages
 // --------------------------------------
 @import pages/projects/gantt_custom
+@import pages/projects/gantt_print
 
 html, body
   font-size: 13px
@@ -29,6 +35,7 @@ body
   padding: 4px 13px 0
   position: relative
   background-color: #c7d2d8
+  -webkit-font-smoothing: antialiased
   &:after
     content: ""
     position: absolute
@@ -43,8 +50,6 @@ body
     border-bottom: none
     min-width: 980px
     max-width: 1280px
-    &.gantt
-      max-width: 100%
     margin: 9px auto 0 auto
     padding: 0
     height: 100%
@@ -59,13 +64,14 @@ body
         text-align: right
         > a
           display: inline-block
-          margin: 0 20px
           background: #338cae
           color: white
           vertical-align: top
-          line-height: 26px
           text-decoration: none
           padding: 5px 15px
+          line-height: 19px
+          border-radius: 3px
+          margin: 0 7px
         & + *
           margin-top: 10px
       .header

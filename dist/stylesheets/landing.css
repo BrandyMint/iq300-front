@@ -6,7 +6,7 @@
   font-style: normal; }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
-/* line 12, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 12, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 [data-icon]:before {
   font-family: "icomoon-iq300";
   speak: none;
@@ -16,274 +16,274 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased; }
 
-/* line 21, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 21, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 [data-icon]:before {
   content: attr(data-icon); }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-8 {
   font-size: 8px; }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-10 {
   font-size: 10px; }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-12 {
   font-size: 12px; }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-14 {
   font-size: 14px; }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-16 {
   font-size: 16px; }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-18 {
   font-size: 18px; }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-20 {
   font-size: 20px; }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-24 {
   font-size: 24px; }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-28 {
   font-size: 28px; }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-32 {
   font-size: 32px; }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-40 {
   font-size: 40px; }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-48 {
   font-size: 48px; }
 
-/* line 36, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-64 {
   font-size: 64px; }
 
-/* line 40, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .v-align-top {
   vertical-align: top; }
 
-/* line 40, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .v-align-baseline {
   vertical-align: baseline; }
 
-/* line 40, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .v-align-middle {
   vertical-align: middle; }
 
-/* line 40, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .v-align-bottom {
   vertical-align: bottom; }
 
-/* line 44, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-white {
   color: #fff; }
-  /* line 46, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 46, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-white:hover {
     color: #e6e6e6; }
 
-/* line 48, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 48, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-white {
   color: #fff; }
 
-/* line 50, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .link-white {
   color: #fff; }
-  /* line 52, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 52, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .link-white:hover {
     color: #e6e6e6; }
 
-/* line 44, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-gray-lighter {
   color: #eeeeee; }
-  /* line 46, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 46, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-gray-lighter:hover {
     color: #d5d5d5; }
 
-/* line 48, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 48, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-gray-lighter {
   color: #eeeeee; }
 
-/* line 50, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .link-gray-lighter {
   color: #eeeeee; }
-  /* line 52, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 52, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .link-gray-lighter:hover {
     color: #d5d5d5; }
 
-/* line 44, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-gray-light {
   color: #999999; }
-  /* line 46, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 46, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-gray-light:hover {
     color: gray; }
 
-/* line 48, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 48, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-gray-light {
   color: #999999; }
 
-/* line 50, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .link-gray-light {
   color: #999999; }
-  /* line 52, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 52, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .link-gray-light:hover {
     color: gray; }
 
-/* line 44, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-gray {
   color: #555555; }
-  /* line 46, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 46, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-gray:hover {
     color: #3c3c3c; }
 
-/* line 48, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 48, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-gray {
   color: #555555; }
 
-/* line 50, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .link-gray {
   color: #555555; }
-  /* line 52, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 52, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .link-gray:hover {
     color: #3c3c3c; }
 
-/* line 44, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-gray-dark {
   color: #333333; }
-  /* line 46, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 46, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-gray-dark:hover {
     color: #1a1a1a; }
 
-/* line 48, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 48, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-gray-dark {
   color: #333333; }
 
-/* line 50, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .link-gray-dark {
   color: #333333; }
-  /* line 52, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 52, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .link-gray-dark:hover {
     color: #1a1a1a; }
 
-/* line 44, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-gray-darker {
   color: #222222; }
-  /* line 46, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 46, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-gray-darker:hover {
     color: #090909; }
 
-/* line 48, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 48, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-gray-darker {
   color: #222222; }
 
-/* line 50, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .link-gray-darker {
   color: #222222; }
-  /* line 52, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 52, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .link-gray-darker:hover {
     color: #090909; }
 
-/* line 44, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-success {
   color: #3ab54a; }
-  /* line 46, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 46, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-success:hover {
     color: #2e8e3a; }
 
-/* line 48, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 48, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-success {
   color: #3ab54a; }
 
-/* line 50, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .link-success {
   color: #3ab54a; }
-  /* line 52, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 52, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .link-success:hover {
     color: #2e8e3a; }
 
-/* line 44, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-danger {
   color: #ff0101; }
-  /* line 46, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 46, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-danger:hover {
     color: #cd0000; }
 
-/* line 48, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 48, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-danger {
   color: #ff0101; }
 
-/* line 50, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .link-danger {
   color: #ff0101; }
-  /* line 52, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 52, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .link-danger:hover {
     color: #cd0000; }
 
-/* line 44, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-warning {
   color: #f8931f; }
-  /* line 46, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 46, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-warning:hover {
     color: #dd7907; }
 
-/* line 48, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 48, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-warning {
   color: #f8931f; }
 
-/* line 50, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .link-warning {
   color: #f8931f; }
-  /* line 52, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 52, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .link-warning:hover {
     color: #dd7907; }
 
-/* line 44, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-primary {
   color: #338cae; }
-  /* line 46, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 46, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-primary:hover {
     color: #276c87; }
 
-/* line 48, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 48, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-primary {
   color: #338cae; }
 
-/* line 50, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
 .link-primary {
   color: #338cae; }
-  /* line 52, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 52, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/icons */
   .link-primary:hover {
     color: #276c87; }
 
-/* line 1, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/pages/shares/share */
+/* line 1, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/shares/share */
 section.shared-file {
   height: 586px; }
-  /* line 3, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/pages/shares/share */
+  /* line 3, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/shares/share */
   section.shared-file .file {
     margin-top: 150px; }
-    /* line 5, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/pages/shares/share */
+    /* line 5, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/shares/share */
     section.shared-file .file .preview {
       float: right; }
-      /* line 7, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/pages/shares/share */
+      /* line 7, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/shares/share */
       section.shared-file .file .preview i {
         margin-top: 45px;
         margin-right: 100px;
         font-size: 100px; }
 
-/* line 2, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 2, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .borr {
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url("/assets/data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkyJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkzJSIgc3RvcC1jb2xvcj0iI2I2YjZiNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiNmI2YjYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+");
@@ -302,21 +302,21 @@ section.shared-file {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#40b6b6b6',GradientType=0 );
   /* IE6-8 */ }
 
-/* line 20, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 20, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .secondbox .concept p {
   font-size: 16px;
   font-weight: 300;
   /*line-height: 20px; */ }
 
-/* line 25, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 25, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 section {
   margin-top: 78px; }
 
-/* line 28, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 28, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 p {
   line-height: 1.4; }
 
-/* line 31, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 31, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .flexslider {
   background-image: url("/assets/landing/iq300/image.jpg");
   min-height: 586px;
@@ -324,16 +324,16 @@ p {
   border: 0px;
   border-radius: 0px;
   box-shadow: none; }
-  /* line 38, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 38, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .flexslider h1 {
     font-size: 40px;
     font-weight: 400;
     height: 34px; }
-  /* line 42, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 42, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .flexslider h2 {
     font-size: 28px;
     font-weight: 100; }
-  /* line 45, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 45, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .flexslider p {
     margin-top: 26px;
     margin-bottom: 20px;
@@ -343,7 +343,7 @@ p {
     /*line-height: 20px; */
     color: #4d4d4d; }
 
-/* line 54, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 54, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .flexslider2 {
   background-image: url("/assets/landing/iq300/image2.jpg");
   min-height: 417px;
@@ -352,12 +352,12 @@ p {
   border-radius: 0px;
   box-shadow: none;
   padding: 20px 0 0 0; }
-  /* line 62, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 62, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .flexslider2 h2 {
     font-size: 40px;
     margin: 0 0 20px 0; }
 
-/* line 66, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 66, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .flexslider3 {
   background-image: url("/assets/landing/iq300/image3.jpg");
   min-height: 575px;
@@ -366,143 +366,143 @@ p {
   border-radius: 0px;
   box-shadow: none;
   padding: 20px 0 0 0; }
-  /* line 67, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 67, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .flexslider3 h2 {
     font-size: 40px;
     margin: 0 0 20px 0; }
 
-/* line 78, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 78, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .secondbox {
   margin-top: 30px; }
-  /* line 80, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 80, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .secondbox .span4 {
     margin: 20px 10px 0px 0px; }
-  /* line 82, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 82, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .secondbox h2 {
     font-size: 23px;
     line-height: 30px;
     font-weight: 100; }
-  /* line 86, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 86, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .secondbox .span4 p {
     font-size: 12px;
     /*line-height: 13px; */
     text-align: left; }
-  /* line 90, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 90, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .secondbox .img-rounded {
     float: left;
     padding: 8px;
     border: 1px solid #cccccc;
     margin-top: 10px; }
-  /* line 95, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 95, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .secondbox .controls {
     margin-left: 80px; }
-    /* line 97, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 97, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .secondbox .controls h2 {
       line-height: 30px; }
 
-/* line 100, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 100, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .review-list {
   margin: 35px 5px 40px 0;
   height: 105px; }
-  /* line 103, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 103, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .review-list .img-rounded {
     margin-top: 3px;
     float: left;
     border: 1px solid #e6e6e6; }
-  /* line 107, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 107, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .review-list .controls {
     margin-left: 100px; }
-  /* line 109, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 109, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .review-list p {
     font-size: 14px;
     color: #565657;
     /*line-height: 16px; */ }
-    /* line 113, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 113, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .review-list p.name {
       font-size: 14px;
       margin-top: 10px; }
 
-/* line 117, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 117, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .news-item {
   margin: 10px 15px 20px 0; }
-  /* line 119, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 119, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .news-item span {
     font-size: 13px;
     line-height: 13px; }
-  /* line 122, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 122, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .news-item h4 {
     font-weight: 300 !important;
     line-height: 21px;
     font-size: 21px; }
-  /* line 126, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 126, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .news-item p {
     font-size: 14px;
     /*line-height: 0.5; */
     color: #358ab1; }
 
-/* line 131, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 131, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .all-news a {
   color: #358ab1 !important; }
 
-/* line 134, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 134, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .nav-about {
   margin: 35px 10px; }
-  /* line 135, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 135, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .nav-about a:hover {
     text-decoration: none;
     color: #338bae; }
-  /* line 139, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 139, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .nav-about li {
     list-style: none;
     margin: 5px 0; }
-  /* line 142, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 142, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .nav-about a {
     color: #575756;
     font-size: 18px; }
 
-/* line 146, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 146, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .dev {
   background-color: #006f9d;
   height: 25px;
   padding: 3px 0 5px 0;
   color: white; }
-  /* line 151, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 151, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .dev a {
     color: #ffffff;
     text-decoration: underline; }
-    /* line 154, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 154, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .dev a:hover {
       color: white; }
 
-/* line 157, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 157, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .image-links {
   margin: 55px 0px 35px 10px; }
-  /* line 159, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 159, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .image-links a {
     margin: 0 5px;
     *display: inline;
     display: inline-block;
     text-decoration: none; }
-    /* line 164, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 164, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .image-links a:hover {
       text-decoration: none; }
 
-/* line 167, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 167, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 header a {
   cursor: pointer; }
 
-/* line 170, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 170, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 * {
   border-radius: 0px !important; }
 
-/* line 173, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 173, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 body {
   color: #666;
   font-size: 15px;
   line-height: 25px;
   font-weight: 400; }
 
-/* line 179, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 179, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal !important;
@@ -512,151 +512,151 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1px;
   font-weight: 300; }
 
-/* line 188, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 188, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 h1, h2 {
   font-weight: 300 !important; }
 
-/* line 191, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 191, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 h3, h4, h5, h6 {
   font-weight: 400 !important;
   color: #000000; }
 
-/* line 195, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 195, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 h2 {
   font-size: 40px;
   line-height: 45px; }
 
-/* line 199, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 199, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 h3 {
   font-size: 30px;
   line-height: 35px; }
 
-/* line 203, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 203, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 h4 {
   font-size: 25px;
   line-height: 30px; }
 
-/* line 207, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 207, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 h5 {
   font-size: 20px;
   line-height: 25px; }
 
-/* line 211, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 211, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 h6 {
   font-size: 16px;
   line-height: 24px; }
 
-/* line 215, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 215, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 p {
   margin: 2px 0px;
   color: #000000; }
 
-/* line 220, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 220, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 a:hover, a:active, a:focus {
   outline: 0; }
 
-/* line 223, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 223, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 hr {
   margin: 20px 0px; }
 
-/* line 226, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 226, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 \:focus {
   outline: none;
   border: 0; }
 
-/* line 230, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 230, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 \::-moz-focus-inner {
   border: 0; }
 
-/* line 233, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 233, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .border {
   background: url("/assets/landing/dots.png") repeat;
   height: 5px;
   margin: 30px 0px !important; }
 
-/* line 238, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 238, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .bor {
   height: 20px; }
 
-/* line 241, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 241, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .bold {
   font-weight: 600 !important; }
 
-/* line 244, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 244, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .caps {
   text-transform: uppercase; }
 
-/* line 247, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 247, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .center {
   text-align: center; }
 
-/* line 250, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 250, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .grey {
   color: #666; }
 
-/* line 253, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 253, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .big {
   font-size: 20px !important;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 10px;
   font-weight: 300; }
 
-/* line 259, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 259, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 a.btn {
   margin-top: 12px;
   padding: 10px 16px;
   font-size: 16px; }
 
-/* line 264, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 264, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .link-list a {
   margin-right: 20px; }
 
-/* line 267, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 267, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .padd {
   padding: 10px 15px; }
 
-/* line 270, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 270, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .label {
   font-size: 15px; }
 
-/* line 273, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 273, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .badge {
   font-size: 15px;
   padding: 5px 10px; }
 
 /* Form */
-/* line 279, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 279, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .form {
   margin: 20px 0px;
   margin-bottom: 0px; }
 
-/* line 285, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 285, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .form-horizontal input[type="email"], .form-horizontal input[type="password"] {
   width: 90%; }
-/* line 287, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 287, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .form-horizontal textarea {
   width: 90%; }
-/* line 289, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 289, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .form-horizontal .control-label {
   width: 180px; }
-/* line 291, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 291, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .form-horizontal .controls {
   margin-left: 200px; }
-  /* line 293, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 293, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .form-horizontal .controls:first-child {
     *padding-left: 100px; }
-/* line 295, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 295, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .form-horizontal .form-actions {
   padding-left: 100px; }
 
-/* line 298, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 298, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .form-actions {
   padding: 10px 20px 11px;
   background: transparent;
   border-top: 0px; }
 
 /* Button */
-/* line 305, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 305, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .button a {
   color: #fff;
   font-size: 18px;
@@ -664,7 +664,7 @@ a.btn {
   display: inline-block;
   padding: 0px 8px 5px 8px;
   margin-top: 3px; }
-  /* line 312, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 312, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .button a:visited {
     color: #fff;
     font-size: 18px;
@@ -672,45 +672,45 @@ a.btn {
     display: inline-block;
     padding: 0px 8px 5px 8px;
     margin-top: 3px; }
-  /* line 319, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 319, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .button a:hover {
     color: #fff;
     text-decoration: none; }
 
 /* Well */
-/* line 325, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 325, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .well {
   background: #f2f2f2;
   padding: 15px;
   border: 1px solid #eee; }
 
 /* Colors */
-/* line 332, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 332, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .orange {
   color: #fe781e !important; }
 
-/* line 335, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 335, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .purple {
   color: #9b59bb !important; }
 
-/* line 338, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 338, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .blue {
   color: #1570a6 !important; }
 
-/* line 341, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 341, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .green {
   color: #41bb19 !important; }
 
-/* line 344, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 344, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .lblue {
   color: #1da4e5 !important; }
 
-/* line 347, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 347, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .red {
   color: #ff3738 !important; }
 
 /* Background colors */
-/* line 352, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 352, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .b-orange {
   background: #fe781e;
   color: #fff;
@@ -721,7 +721,7 @@ a.btn {
   -o-transition: background 1s ease;
   transition: background 1s ease;
   cursor: default; }
-  /* line 362, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 362, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .b-orange:hover {
     background: #e66d1c;
     -webkit-transition: background 1s ease;
@@ -729,7 +729,7 @@ a.btn {
     -o-transition: background 1s ease;
     transition: background 1s ease; }
 
-/* line 369, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 369, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .b-purple {
   background: #9b59bb;
   color: #fff;
@@ -740,7 +740,7 @@ a.btn {
   -o-transition: background 1s ease;
   transition: background 1s ease;
   cursor: default; }
-  /* line 379, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 379, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .b-purple:hover {
     background: #81499c;
     -webkit-transition: background 1s ease;
@@ -748,7 +748,7 @@ a.btn {
     -o-transition: background 1s ease;
     transition: background 1s ease; }
 
-/* line 386, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 386, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .b-blue {
   background: #1570a6;
   color: #fff;
@@ -759,7 +759,7 @@ a.btn {
   -o-transition: background 1s ease;
   transition: background 1s ease;
   cursor: default; }
-  /* line 396, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 396, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .b-blue:hover {
     background: #11608f;
     -webkit-transition: background 1s ease;
@@ -767,7 +767,7 @@ a.btn {
     -o-transition: background 1s ease;
     transition: background 1s ease; }
 
-/* line 403, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 403, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .b-green {
   background: #41bb19;
   color: #fff;
@@ -778,7 +778,7 @@ a.btn {
   -o-transition: background 1s ease;
   transition: background 1s ease;
   cursor: default; }
-  /* line 413, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 413, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .b-green:hover {
     background: #379e15;
     -webkit-transition: background 1s ease;
@@ -786,7 +786,7 @@ a.btn {
     -o-transition: background 1s ease;
     transition: background 1s ease; }
 
-/* line 420, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 420, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .b-black {
   background: #333333;
   color: #fff;
@@ -797,7 +797,7 @@ a.btn {
   -o-transition: background 1s ease;
   transition: background 1s ease;
   cursor: default; }
-  /* line 430, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 430, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .b-black:hover {
     background: #000000;
     -webkit-transition: background 1s ease;
@@ -805,7 +805,7 @@ a.btn {
     -o-transition: background 1s ease;
     transition: background 1s ease; }
 
-/* line 437, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 437, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .b-lblue {
   background: #1ba1e2;
   color: #fff;
@@ -816,7 +816,7 @@ a.btn {
   -o-transition: background 1s ease;
   transition: background 1s ease;
   cursor: default; }
-  /* line 447, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 447, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .b-lblue:hover {
     background: #1789c1;
     -webkit-transition: background 1s ease;
@@ -824,7 +824,7 @@ a.btn {
     -o-transition: background 1s ease;
     transition: background 1s ease; }
 
-/* line 454, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 454, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .b-red {
   background: #ff3738;
   color: #fff;
@@ -835,7 +835,7 @@ a.btn {
   -o-transition: background 1s ease;
   transition: background 1s ease;
   cursor: default; }
-  /* line 464, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 464, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .b-red:hover {
     background: #e33031;
     -webkit-transition: background 1s ease;
@@ -844,37 +844,37 @@ a.btn {
     transition: background 1s ease; }
 
 /* Columns */
-/* line 473, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 473, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .col-l {
   width: 47.5%;
   float: left; }
 
-/* line 477, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 477, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .col-r {
   width: 47.5%;
   float: right; }
 
 /* Form */
-/* line 484, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 484, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 form button, form input {
   font-size: 13px !important; }
 
 /* Image alignment */
-/* line 489, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 489, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .alignleft, img.alignleft {
   margin-right: 8px;
   margin-top: 5px;
   display: inline;
   float: left; }
 
-/* line 495, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 495, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .alignright, img.alignright {
   margin-left: 8px;
   margin-top: 5px;
   display: inline;
   float: right; }
 
-/* line 501, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 501, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .aligncenter, img.aligncenter {
   margin-right: auto;
   margin-left: auto;
@@ -882,48 +882,48 @@ form button, form input {
   clear: both; }
 
 /* Header */
-/* line 509, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 509, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 header {
   background: #fff; }
-  /* line 511, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 511, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   header .logo {
     padding: 15px 0px; }
-    /* line 513, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 513, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     header .logo h1 {
       font-size: 40px;
       line-height: 45px;
       margin-bottom: 5px; }
-      /* line 517, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+      /* line 517, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
       header .logo h1 a {
         color: #666;
         text-decoration: none; }
-        /* line 520, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+        /* line 520, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
         header .logo h1 a:visited, header .logo h1 a:hover {
           color: #666;
           text-decoration: none; }
-    /* line 523, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 523, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     header .logo .hmeta {
       color: #777; }
-  /* line 525, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 525, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   header .form {
     text-align: center;
     max-width: 270px;
     margin: 0 auto;
     width: 260px;
     padding-top: 40px; }
-  /* line 531, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 531, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   header a.current_language {
     text-decoration: underline; }
 
 /* Navigation */
-/* line 536, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 536, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .navbar-inner > .container {
   width: 940px; }
 
-/* line 539, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 539, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .navbar {
   margin-bottom: 0px; }
-  /* line 541, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 541, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .navbar * {
     box-shadow: none !important;
     text-shadow: none !important;
@@ -931,7 +931,7 @@ header {
     font-weight: normal !important;
     font-size: 16px !important; }
 
-/* line 548, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 548, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .nav-collapse * {
   box-shadow: none !important;
   text-shadow: none !important;
@@ -939,72 +939,72 @@ header {
   font-weight: normal !important;
   font-size: 16px !important; }
 
-/* line 555, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 555, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .navbar-inner {
   padding-left: 0px; }
 
-/* line 558, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 558, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .navbar {
   /*border-top: 1px solid #eee !important;
    *border-bottom: 1px solid #eee !important; */ }
-  /* line 559, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 559, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .navbar .btn {
     font-size: 13px;
     padding: 6px 10px;
     color: #fff !important; }
-  /* line 563, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 563, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .navbar .caret {
     border-top-color: #999 !important;
     border-bottom-color: #999 !important; }
-  /* line 568, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 568, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .navbar a {
     color: #666 !important; }
-    /* line 570, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 570, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .navbar a:visited {
       color: #666 !important; }
-  /* line 573, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 573, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .navbar .nav > li > a {
     color: #000000 !important;
     padding: 0px 15px 25px 7px;
     filter: none !important;
     border-left: 4px solid white; }
-    /* line 578, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 578, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .navbar .nav > li > a:visited {
       color: #000000 !important;
       padding: 0px 15px 25px 7px;
       filter: none !important;
       border-left: 4px solid white; }
-  /* line 583, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 583, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .navbar .nav > li:not(.user-links) > a:hover {
     border-left: 4px solid #0093d2;
     background-color: inherit !important; }
-  /* line 586, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 586, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .navbar .nav > li > a.active {
     border-left: 4px solid #0093d2; }
-  /* line 588, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 588, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .navbar .nav > li.user-links > a {
     display: inline;
     background-color: white !important; }
-    /* line 589, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 589, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .navbar .nav > li.user-links > a.user-link {
       color: #368aaf !important;
       text-decoration: underline; }
 
-/* line 596, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 596, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .modal h2 {
   font-size: 26px !important;
   font-weight: 300 !important; }
-/* line 599, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 599, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .modal .btn-success {
   background-color: #41bb19; }
 
-/* line 602, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 602, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .modal-body > a {
   display: block;
   color: #358ab1 !important;
   font-size: 12px !important; }
 
-/* line 607, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 607, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .dropdown-menu {
   border-radius: 0px !important;
   box-shadow: none !important;
@@ -1015,43 +1015,43 @@ header {
   background: #fafafa;
   border: 1px solid #eee !important;
   border-top: 0px !important; }
-  /* line 617, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 617, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .dropdown-menu a {
     padding: 9px 10px !important;
     color: #666 !important;
     text-shadow: none !important;
     background: #fafafa !important;
     border-bottom: 1px solid #eee; }
-    /* line 623, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 623, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .dropdown-menu a:hover, .dropdown-menu a:focus {
       filter: none !important;
       background: #f3f3f3 !important; }
-  /* line 626, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 626, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .dropdown-menu::after, .dropdown-menu::before {
     border: none !important; }
 
 /* Accordion */
-/* line 631, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 631, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .accordion-group {
   border-radius: 0px;
   margin: 10px 0px; }
 
-/* line 635, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 635, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .accordion-heading .accordion-toggle {
   display: block;
   padding: 0px; }
 
-/* line 639, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 639, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .accordion li {
   line-height: 10px; }
 
-/* line 642, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 642, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .accordion-heading a {
   border: none;
   color: #fff;
   text-decoration: none;
   margin: 10px 15px; }
-  /* line 647, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 647, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .accordion-heading a:visited, .accordion-heading a:hover {
     border: none;
     color: #fff;
@@ -1059,22 +1059,22 @@ header {
     margin: 10px 15px; }
 
 /* Testimonial */
-/* line 655, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 655, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 blockquote {
   background: #f9f9f9;
   margin-bottom: 5px;
   color: #777; }
-  /* line 659, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 659, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   blockquote p {
     font-size: 13px;
     font-weight: 400;
     margin-bottom: 5px; }
-  /* line 663, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 663, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   blockquote small {
     color: #555; }
 
 /* Support */
-/* line 669, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 669, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 #slist p {
   display: none;
   margin: 5px 0px;
@@ -1082,29 +1082,29 @@ blockquote {
   background: #fff;
   line-height: 30px;
   border: 1px solid #eee; }
-/* line 676, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 676, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 #slist li a {
   display: block;
   font-size: 16px !important;
   margin-bottom: 10px; }
 
-/* line 681, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 681, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .scontact p {
   margin-bottom: 10px; }
 
 /* Portfolio */
 /**** Isotope Filtering *** */
-/* line 688, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 688, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .isotope-item {
   z-index: 2; }
 
-/* line 691, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 691, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1; }
 
 /**** Isotope CSS3 transitions *** */
-/* line 697, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 697, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .isotope {
   -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
@@ -1116,7 +1116,7 @@ blockquote {
   -ms-transition-property: height, width;
   -o-transition-property: height, width;
   transition-property: height, width; }
-  /* line 703, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 703, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .isotope .isotope-item {
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
@@ -1128,28 +1128,28 @@ blockquote {
     -ms-transition-property: -ms-transform, opacity;
     -o-transition-property: -o-transform, opacity;
     transition-property: transform, opacity; }
-  /* line 719, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 719, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .isotope.no-transition {
     -webkit-transition-duration: 0s;
     -moz-transition-duration: 0s;
     -ms-transition-duration: 0s;
     -o-transition-duration: 0s;
     transition-duration: 0s; }
-    /* line 725, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 725, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .isotope.no-transition .isotope-item {
       -webkit-transition-duration: 0s;
       -moz-transition-duration: 0s;
       -ms-transition-duration: 0s;
       -o-transition-duration: 0s;
       transition-duration: 0s; }
-  /* line 731, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 731, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .isotope .isotope-item.no-transition {
     -webkit-transition-duration: 0s;
     -moz-transition-duration: 0s;
     -ms-transition-duration: 0s;
     -o-transition-duration: 0s;
     transition-duration: 0s; }
-  /* line 737, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 737, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .isotope.infinite-scrolling {
     -webkit-transition: none;
     -moz-transition: none;
@@ -1160,92 +1160,92 @@ blockquote {
 /**** disabling Isotope CSS3 transitions *** */
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling */
-/* line 750, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 750, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .portfolio li {
   display: inline !important;
   border: none !important; }
-  /* line 753, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 753, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .portfolio li a {
     color: #fff;
     padding: 5px 10px;
     margin: 0px 5px; }
-    /* line 757, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 757, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .portfolio li a:visited {
       color: #fff;
       padding: 5px 10px;
       margin: 0px 5px; }
-    /* line 761, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 761, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .portfolio li a:hover {
       color: #fff; }
 
-/* line 764, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 764, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 #portfolio {
   text-align: center; }
-  /* line 766, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 766, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   #portfolio .element {
     margin: 20px 10px 10px 0px;
     padding: 5px; }
-  /* line 769, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 769, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   #portfolio h4 {
     margin: 4px 0px;
     padding: 0px;
     color: #fff;
     font-size: 16px; }
-  /* line 774, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 774, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   #portfolio .pcap {
     background: #370a19;
     border-top: 2px solid #e9004d;
     padding: 3px 0px; }
-  /* line 778, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 778, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   #portfolio a {
     color: #fff;
     text-decoration: none; }
-    /* line 781, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 781, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     #portfolio a:visited, #portfolio a:hover {
       color: #fff;
       text-decoration: none; }
-  /* line 784, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 784, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   #portfolio .pcap {
     max-width: 200px;
     line-height: 20px; }
-    /* line 785, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 785, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     #portfolio .pcap p {
       padding: 0px 6px 10px 6px;
       font-size: 13px; }
-  /* line 790, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 790, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   #portfolio img {
     width: 200px;
     max-width: 200px;
     height: 150px; }
 
-/* line 795, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 795, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 #filters {
   margin-left: 0px; }
-  /* line 797, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 797, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   #filters li {
     display: inline;
     padding: 0px;
     background: none; }
-  /* line 801, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 801, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   #filters a {
     font-size: 13px;
     padding: 4px 10px;
     display: inline-block; }
 
 /* Portfolio one */
-/* line 809, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 809, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .nocolor .element {
   background: transparent !important; }
-/* line 811, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 811, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .nocolor .pcap {
   background: transparent !important;
   border-top: 0px solid #379e15 !important; }
 
 /* Gallery */
-/* line 817, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 817, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .gallery {
   text-align: center; }
-  /* line 819, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 819, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .gallery img {
     max-width: 170px;
     margin: 5px;
@@ -1253,7 +1253,7 @@ blockquote {
     border: 1px solid #aaa; }
 
 /* Process */
-/* line 827, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 827, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .process-meta {
   display: block;
   margin-bottom: 5px;
@@ -1262,20 +1262,20 @@ blockquote {
   margin-top: 15px; }
 
 /* Blog */
-/* line 837, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 837, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .blog .entry h2 {
   font-size: 30px;
   line-height: 40px;
   color: #777; }
-  /* line 841, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 841, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .blog .entry h2 a {
     text-decoration: none;
     color: #777; }
-    /* line 844, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 844, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .blog .entry h2 a:visited, .blog .entry h2 a:hover {
       text-decoration: none;
       color: #777; }
-/* line 847, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 847, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .blog .meta {
   border-top: 1px solid #f7f7f7;
   border-bottom: 1px solid #f7f7f7;
@@ -1284,58 +1284,58 @@ blockquote {
   color: #777;
   text-transform: uppercase;
   font-size: 11px; }
-  /* line 855, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 855, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .blog .meta a {
     color: #555; }
-    /* line 857, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 857, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .blog .meta a:visited {
       color: #555; }
-  /* line 859, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 859, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .blog .meta i {
     margin-left: 3px;
     position: relative;
     top: -2px; }
-/* line 863, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 863, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .blog .bthumb {
   margin: 10px 0px 5px 0px;
   padding: 1px;
   box-shadow: 0px 0px 1px #777; }
-/* line 867, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 867, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .blog .bthumb2 {
   float: left;
   margin-top: 8px;
   margin-right: 8px;
   border: 1px solid #aaa; }
-  /* line 872, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 872, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .blog .bthumb2 img {
     margin: 0px;
     width: 180px;
     min-width: 180px; }
-/* line 876, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 876, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .blog .entry {
   margin-bottom: 25px;
   padding-bottom: 15px;
   border-bottom: 1px solid #eee;
   font-size: 13px;
   line-height: 25px; }
-  /* line 882, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 882, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .blog .entry p {
     margin: 0px 0px 4px 0px; }
-/* line 884, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 884, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .blog .post-foot {
   border-left: 2px solid #eee;
   padding: 15px 15px; }
-  /* line 887, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 887, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .blog .post-foot .social {
     margin-top: 0px; }
 
-/* line 890, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 890, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .sidebar {
   background: #f7f7f7;
   border: 1px solid #e1e1e1;
   padding: 8px;
   margin-top: 10px; }
-  /* line 895, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 895, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .sidebar h4 {
     font-size: 14px;
     color: #777;
@@ -1344,7 +1344,7 @@ blockquote {
     padding-bottom: 10px;
     text-transform: uppercase;
     border-bottom: 1px solid #eee; }
-  /* line 903, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 903, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .sidebar .widget {
     background: #fff;
     padding: 8px;
@@ -1352,67 +1352,67 @@ blockquote {
     line-height: 23px;
     border: 1px solid #e1e1e1;
     margin-bottom: 10px; }
-    /* line 910, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 910, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .sidebar .widget .form-search {
       margin-top: 10px;
       margin-bottom: 10px; }
-  /* line 913, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 913, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .sidebar ul li {
     padding: 3px 0px; }
 
 /* Comments */
-/* line 918, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 918, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .respond {
   padding-top: 10px;
   padding-left: 20px; }
 
-/* line 922, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 922, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .comments {
   margin-bottom: 20px; }
-  /* line 923, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 923, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .comments > ul > li {
     background: none;
     padding: 0px; }
-  /* line 927, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 927, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .comments .comment {
     margin: 15px 0px;
     padding: 13px 16px;
     background: #f8f8f8;
     border-left: 2px solid #ddd; }
 
-/* line 934, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 934, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .comment .avatar {
   margin-top: 5px;
   margin-right: 8px; }
-/* line 937, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 937, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .comment .cmeta {
   font-size: 12px; }
-/* line 939, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 939, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .comment p {
   margin-top: 5px;
   font-size: 13px; }
 
-/* line 943, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 943, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .comments .reply {
   margin-left: 15px; }
 
-/* line 946, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 946, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .respond {
   border-top: 2px solid #eee; }
-  /* line 948, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 948, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .respond .title {
     padding: 5px 0px;
     margin-bottom: 0px; }
 
 /* Pagination */
-/* line 954, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 954, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .paging {
   width: 270px;
   clear: both;
   padding: 6px 0;
   line-height: 17px;
   font-size: 13px; }
-  /* line 960, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 960, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .paging span {
     display: block;
     float: left;
@@ -1424,7 +1424,7 @@ blockquote {
     background: #fff;
     border: 1px solid #ddd;
     font-weight: normal; }
-  /* line 971, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 971, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .paging a {
     display: block;
     float: left;
@@ -1436,26 +1436,26 @@ blockquote {
     background: #fff;
     border: 1px solid #ddd;
     font-weight: normal; }
-    /* line 982, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 982, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .paging a:hover {
       color: #fff; }
-  /* line 984, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 984, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .paging .current {
     padding: 5px 8px;
     color: #fff; }
 
 /* Career */
-/* line 991, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 991, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .career .nav > li {
   background: none;
   padding: 0px;
   list-style-type: none; }
-/* line 995, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 995, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .career .nav-tabs > li > a:hover {
   color: #fff; }
 
 /* Error log */
-/* line 1000, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1000, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .error-log {
   background: #fafafa;
   padding: 10px;
@@ -1463,37 +1463,37 @@ blockquote {
   height: 300px;
   overflow: auto;
   font-family: "Courier New", monospace; }
-  /* line 1007, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1007, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .error-log ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px; }
-  /* line 1011, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1011, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .error-log .green {
     color: #61c221; }
-  /* line 1013, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1013, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .error-log .red {
     color: #ff0000; }
 
 /* Features one */
-/* line 1019, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1019, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .features-one h4 {
   margin-top: 40px; }
-/* line 1021, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1021, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .features-one img {
   text-align: center;
   display: block;
   margin: 0 auto; }
 
 /* Features two */
-/* line 1028, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1028, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .features-two .feat {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee; }
 
 /* Features three */
-/* line 1036, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1036, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .features-three .feat-inner {
   text-align: center;
   margin: 20px 0px 20px 0px;
@@ -1501,143 +1501,143 @@ blockquote {
   background: #fafafa;
   margin-bottom: 20px;
   border: 1px solid #ddd; }
-/* line 1043, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1043, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .features-three i {
   font-size: 35px;
   margin-bottom: 10px; }
-/* line 1046, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1046, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .features-three .button {
   margin-top: 10px;
   margin-bottom: 20px; }
-  /* line 1049, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1049, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .features-three .button a {
     font-size: 11px; }
 
 /* Features four */
-/* line 1055, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1055, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .features-four i {
   font-size: 30px;
   display: block;
   margin-bottom: 10px; }
-/* line 1059, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1059, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .features-four h4 {
   color: #fff; }
-/* line 1061, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1061, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .features-four .f-block {
   padding: 25px 20px 40px 20px;
   margin-bottom: 10px;
   min-height: 180px; }
-/* line 1065, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1065, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .features-four a {
   color: #fff;
   text-decoration: none; }
-  /* line 1068, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1068, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .features-four a:hover {
     color: #fff;
     text-decoration: none; }
-/* line 1071, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1071, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .features-four p {
   font-size: 14px;
   line-height: 22px; }
 
 /* Service two */
-/* line 1078, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1078, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .service-two h5 {
   margin-bottom: 2px;
   padding-bottom: 5px;
   border-bottom: 1px solid #fafafa; }
-/* line 1082, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1082, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .service-two h6 {
   margin-top: 10px;
   margin-bottom: 3px;
   padding-bottom: 3px; }
-/* line 1086, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1086, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .service-two p {
   font-size: 13px; }
 
 /* Service Three */
-/* line 1091, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1091, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .service-three {
   font-size: 13px; }
-  /* line 1093, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1093, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .service-three .service-icon {
     float: left;
     width: 40px; }
-    /* line 1096, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1096, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .service-three .service-icon i {
       font-size: 30px;
       display: block;
       margin-top: 5px; }
-  /* line 1100, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1100, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .service-three .service-content {
     position: relative;
     margin-left: 50px; }
-  /* line 1103, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1103, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .service-three h5 {
     line-height: 15px; }
-  /* line 1106, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1106, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .service-three .row hr {
     margin: 10px 0px; }
-  /* line 1108, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1108, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .service-three .row .grey {
     color: #999; }
 
 /* Testimonial */
-/* line 1113, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1113, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .testi {
   background: #fff;
   border: 1px solid #eee;
   border-bottom: 2px solid #eee;
   padding: 12px;
   margin-bottom: 20px; }
-  /* line 1119, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1119, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .testi .tauthor {
     color: #777;
     font-size: 13px;
     margin-top: 5px; }
 
-/* line 1124, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1124, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .testimonials .tauthor {
   font-size: 13px; }
 
-/* line 1127, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1127, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .testi i {
   margin-right: 5px; }
 
-/* line 1130, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1130, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .testimonials {
   padding: 10px 15px; }
-  /* line 1132, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1132, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .testimonials i {
     margin-right: 5px; }
-  /* line 1134, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1134, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .testimonials .color {
     color: #fff;
     font-weight: 600; }
 
-/* line 1138, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1138, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .tquote {
   font-style: italic;
   font-size: 13px;
   line-height: 22px; }
 
 /* Color blocks */
-/* line 1146, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1146, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .c-block a {
   color: #fff;
   text-decoration: none; }
-  /* line 1149, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1149, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .c-block a:hover {
     color: #fff;
     text-decoration: none; }
-/* line 1152, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1152, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .c-block > div {
   color: #fff;
   min-height: 100px;
   font-size: 16px;
   text-align: center;
   padding: 10px 0px; }
-/* line 1158, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1158, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .c-block i {
   font-size: 40px;
   display: block;
@@ -1645,11 +1645,11 @@ blockquote {
   margin-bottom: 10px; }
 
 /* Resume */
-/* line 1166, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1166, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .rblock .rmeta {
   font-size: 13px; }
 
-/* line 1169, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1169, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .rskills span {
   display: inline-block;
   background: #f8f8f8;
@@ -1659,11 +1659,11 @@ blockquote {
   font-size: 12px; }
 
 /* Social media icons */
-/* line 1179, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1179, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .social {
   font-size: 16px;
   margin-top: 10px; }
-  /* line 1182, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1182, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .social i {
     height: 25px;
     width: 25px;
@@ -1676,63 +1676,63 @@ blockquote {
     transition: background 1s ease;
     text-align: center; }
 
-/* line 1195, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1195, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 i.facebook {
   background: #3c5b9b; }
-/* line 1197, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1197, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 i.twitter {
   background: #2daae1; }
-/* line 1199, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1199, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 i.google-plus {
   background: #f63e28; }
-/* line 1201, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1201, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 i.pinterest {
   background: #cb2027; }
-/* line 1203, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1203, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 i.linkedin {
   background: #0173b2; }
 
-/* line 1207, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1207, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .social i:hover {
   background: #000;
   -webkit-transition: background 1s ease;
   -moz-transition: background 1s ease;
   -o-transition: background 1s ease;
   transition: background 1s ease; }
-/* line 1213, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1213, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .social a {
   color: #fff;
   text-decoration: none; }
-  /* line 1216, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1216, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .social a:visited, .social a:hover {
     color: #fff;
     text-decoration: none; }
 
 /* Coming soon */
-/* line 1222, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1222, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .c-soon {
   margin: 20px 0px;
   padding: 40px;
   text-align: center; }
 
-/* line 1227, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1227, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .soon-med {
   font-size: 20px;
   line-height: 30px; }
 
-/* line 1231, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1231, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .soon-big {
   font-size: 50px;
   line-height: 70px; }
 
-/* line 1235, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1235, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .soon-small {
   font-size: 13px;
   line-height: 20px;
   max-width: 600px;
   margin: 10px auto; }
 
-/* line 1241, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1241, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .soon-tweet {
   background: #fff;
   border: 1px solid #eee;
@@ -1742,52 +1742,52 @@ i.linkedin {
   margin-top: 20px;
   max-width: 600px;
   font-size: 14px; }
-  /* line 1250, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1250, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .soon-tweet ul li {
     padding: 0px;
     margin: 0px;
     font-style: italic; }
 
-/* line 1255, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1255, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .content .soon-tweet ul li {
   background-image: none;
   list-style-type: none; }
 
-/* line 1260, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1260, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .soon-tweet ul li:before, .soon-tweet ul li:after {
   content: '"';
   font-size: 16px;
   font-family: Arial, sans-serif;
   color: #888; }
 
-/* line 1267, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1267, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .csoon-page form input, .csoon-page form button {
   font-size: 12px; }
 
 /* Make post */
-/* line 1272, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1272, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .make-post hr {
   margin: 10px 0px; }
 
 /* About #2 */
-/* line 1278, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1278, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .about-two .pic img {
   margin-bottom: 6px; }
-/* line 1280, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1280, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .about-two .details {
   margin-top: 10px;
   margin-bottom: 20px; }
-  /* line 1283, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1283, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .about-two .details .name {
     line-height: 10px;
     padding: 0px;
     margin: 0px; }
-  /* line 1287, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1287, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .about-two .details em {
     color: #888;
     font-size: 13px;
     line-height: 20px; }
-/* line 1292, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1292, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .about-two .asocial i {
   text-align: center;
   line-height: 20px;
@@ -1795,15 +1795,15 @@ i.linkedin {
   text-align: center;
   width: 20px;
   height: 20px; }
-/* line 1299, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1299, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .about-two .asocial a {
   color: #fff;
   text-decoration: none; }
-  /* line 1302, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1302, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .about-two .asocial a:visited, .about-two .asocial a:hover {
     color: #fff;
     text-decoration: none; }
-/* line 1305, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1305, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .about-two .details .adesc {
   max-width: 300px;
   margin: 0 auto;
@@ -1812,81 +1812,81 @@ i.linkedin {
   padding-top: 5px; }
 
 /* Slider 1 (Parallax Slider) */
-/* line 1314, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1314, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .da-slide h2 span {
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-bottom: 1px solid #eee; }
 
 /* Slider 2 (Nivo slider) */
-/* line 1322, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1322, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .full-slider i {
   margin: 0px; }
-/* line 1324, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1324, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .full-slider .button {
   margin-top: 5px; }
-  /* line 1326, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1326, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .full-slider .button a {
     font-size: 15px;
     display: inline-block;
     padding: 8px 15px !important; }
 
-/* line 1332, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1332, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .flex-direction-nav .flex-next {
   right: 5px !important; }
-/* line 1334, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1334, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .flex-direction-nav .flex-prev {
   left: 5px !important; }
 
-/* line 1337, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1337, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .flex-control-nav {
   bottom: 10px; }
 
-/* line 1340, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1340, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .flex-control-paging li a {
   background: #fff;
   box-shadow: none;
   width: 8px;
   height: 8px; }
-  /* line 1345, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1345, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .flex-control-paging li a:hover, .flex-control-paging li a.flex-active {
     background: #ddd; }
 
-/* line 1348, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1348, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .flex-center {
   text-align: center; }
 
-/* line 1351, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1351, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .flex-caption {
   margin: 60px 0px 40px 0px; }
-  /* line 1353, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1353, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .flex-caption h2, .flex-caption h5, .flex-caption h6 {
     color: #fff; }
-  /* line 1355, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1355, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .flex-caption p {
     font-size: 14px;
     line-height: 23px;
     max-width: 650px;
     margin: 0 auto; }
 
-/* line 1361, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1361, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .flex-back {
   padding: 10px; }
 
 /* Clients page */
-/* line 1366, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1366, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .cclient {
   padding: 10px 0px 15px 0px;
   border-bottom: 1px solid #eee;
   margin: 10px 0px 15px 0px; }
 
-/* line 1371, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1371, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .cimage img {
   margin-bottom: 5px;
   max-height: 35px; }
 
 /* Image blocks */
-/* line 1377, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1377, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 ul.hover-block li {
   list-style: none;
   float: left;
@@ -1894,7 +1894,7 @@ ul.hover-block li {
   height: 170px;
   position: relative;
   margin: 5px 4px; }
-  /* line 1384, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1384, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   ul.hover-block li a {
     display: block;
     position: relative;
@@ -1903,7 +1903,7 @@ ul.hover-block li {
     height: 170px;
     color: #000;
     text-decoration: none; }
-  /* line 1392, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1392, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   ul.hover-block li .hover-content {
     position: absolute;
     z-index: 1000;
@@ -1912,10 +1912,10 @@ ul.hover-block li {
     color: #fff;
     padding: 5px 10px;
     cursor: pointer; }
-    /* line 1400, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1400, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     ul.hover-block li .hover-content h6 {
       color: #fff; }
-  /* line 1402, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1402, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   ul.hover-block li img {
     position: absolute;
     top: 0;
@@ -1924,26 +1924,26 @@ ul.hover-block li {
     z-index: 500; }
 
 /* Content */
-/* line 1411, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1411, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .content {
   margin-top: 20px; }
-  /* line 1413, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1413, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .content ul {
     list-style-type: none;
     margin-left: 0px; }
-    /* line 1416, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1416, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .content ul li {
       padding: 5px 0px; }
 
 /* Discover */
-/* line 1421, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1421, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .dis-nav a {
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 10px;
   color: #fff; }
 
-/* line 1428, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1428, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .dis-content div {
   display: none;
   padding: 15px 15px 20px 15px;
@@ -1951,28 +1951,28 @@ ul.hover-block li {
   background: #f8f8f8;
   color: #777;
   border: 1px solid #eee; }
-/* line 1435, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1435, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .dis-content h3 {
   margin-bottom: 5px;
   color: #666; }
-/* line 1438, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1438, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .dis-content a.btn {
   margin-top: 6px;
   color: #fff !important; }
-/* line 1441, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1441, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .dis-content i {
   position: relative;
   top: -2px; }
 
 /* Landing page */
-/* line 1447, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1447, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .lp .lp-image {
   max-width: 600px;
   margin: 40px auto;
   box-shadow: 0px 0px 30px #ccc; }
 
 /* Task */
-/* line 1454, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1454, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .task {
   background: #fcfcfc;
   border: 1px solid #eee;
@@ -1980,46 +1980,46 @@ ul.hover-block li {
   border-left: 3px solid #eee;
   padding: 10px 15px;
   font-size: 13px; }
-  /* line 1461, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1461, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .task:hover {
     background: #fafafa; }
-  /* line 1463, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1463, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .task.important {
     border-left: 3px solid #ee1635; }
-  /* line 1465, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1465, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .task.cool {
     border-left: 3px solid #30d91a; }
-  /* line 1467, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1467, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .task .tmeta {
     font-size: 12px; }
 
 /* Pricing table */
-/* line 1472, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1472, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .price-a {
   width: 48%;
   float: left;
   margin-right: 14px; }
 
-/* line 1477, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1477, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .price-b {
   width: 90%;
   float: right; }
 
-/* line 1481, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1481, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .pricel {
   text-align: left;
   margin-top: 10px; }
-  /* line 1484, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1484, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pricel .phead-top {
     margin: 0px;
     padding: 10px 10px;
     background-color: white; }
-    /* line 1488, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1488, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .pricel .phead-top h4 {
       color: #000;
       font-weight: 300 !important;
       text-align: center; }
-  /* line 1492, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1492, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pricel .phead-bottom {
     background: #f1f1f1;
     border-bottom: 1px solid #ddd;
@@ -2031,20 +2031,20 @@ ul.hover-block li {
     font-size: 35px;
     line-height: 27px;
     text-align: center; }
-    /* line 1503, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1503, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .pricel .phead-bottom p {
       color: #4d4d4d; }
-  /* line 1505, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1505, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pricel .pst {
     font-size: 14px;
     position: relative;
     top: -5px;
     font-weight: normal; }
-  /* line 1510, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1510, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pricel .psb {
     font-size: 18px;
     font-weight: normal; }
-  /* line 1513, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1513, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pricel .pbutton {
     background: #39b54a;
     padding: 10px 0px 10px 0px;
@@ -2052,17 +2052,17 @@ ul.hover-block li {
     font-size: 20px;
     text-align: center;
     margin-top: 0px; }
-  /* line 1520, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1520, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pricel .plist {
     background: #fcfcfc; }
-    /* line 1522, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1522, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .pricel .plist ul {
       list-style-type: none;
       margin-left: 0px;
       margin-bottom: 0px !important;
       padding: 15px 0 20px 0;
       height: 270px; }
-    /* line 1528, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1528, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .pricel .plist li {
       background: none;
       padding: 5px 50px;
@@ -2070,88 +2070,88 @@ ul.hover-block li {
       background-image: url("/assets/landing/iq300/cheked.png");
       background-repeat: no-repeat;
       background-position: 20px 5px; }
-  /* line 1535, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1535, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pricel .phead-top {
     display: block; }
 
 /* Products */
-/* line 1540, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1540, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .prod {
   border-bottom: 1px solid #eee;
   padding-bottom: 20px;
   margin-bottom: 10px; }
-  /* line 1541, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1541, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .prod h3 {
     margin: 0px;
     padding: 0px;
     font-size: 20px;
     line-height: 30px; }
-  /* line 1549, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1549, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .prod .pimg {
     margin-top: 10px; }
 
-/* line 1552, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1552, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .pdetails {
   padding: 10px 10px;
   background: #fefefe;
   margin-top: 20px;
   color: #777;
   border: 1px solid #eee; }
-  /* line 1558, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1558, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pdetails i {
     margin-right: 3px; }
-  /* line 1560, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1560, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pdetails .ptable {
     font-size: 13px;
     border-radius: 10px;
     background: #fafafa;
     border: 1px solid #eee;
     margin-bottom: 10px; }
-  /* line 1566, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1566, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pdetails .pline {
     padding: 5px 10px;
     border-bottom: 1px solid #eee; }
 
 /* Projects */
-/* line 1573, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1573, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .projects h3 {
   font-size: 20px;
   margin-top: 0px; }
-/* line 1576, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1576, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .projects .related-projects img {
   max-width: 100px;
   margin: 5px;
   padding: 5px;
   border: 1px solid #ddd; }
-/* line 1581, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1581, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .projects .prdetails {
   margin-top: 10px;
   font-size: 13px; }
 
 /* Reg & Login Form */
-/* line 1587, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1587, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .formy {
   padding: 15px 20px;
   display: block;
   color: #fff; }
-  /* line 1591, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1591, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .formy h5 {
     color: #fff; }
-  /* line 1593, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1593, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .formy a {
     color: #eee;
     text-decoration: underline; }
-    /* line 1596, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1596, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .formy a:visited {
       color: #eee;
       text-decoration: underline; }
-    /* line 1599, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1599, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .formy a:hover {
       color: #fff;
       text-decoration: none; }
 
 /* Login and register form #2 */
-/* line 1605, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1605, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .lrform {
   max-width: 400px;
   margin: 30px auto;
@@ -2160,22 +2160,22 @@ ul.hover-block li {
   border: 1px solid #eee; }
 
 /* Events */
-/* line 1616, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1616, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .events .accordion-heading h5 {
   color: #fff;
   padding: 10px;
   margin: 0px; }
-  /* line 1620, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1620, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .events .accordion-heading h5 span {
     display: block !important;
     font-size: 13px !important; }
-/* line 1623, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1623, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .events .accordion-heading a {
   margin: 0px; }
-  /* line 1625, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1625, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .events .accordion-heading a:visited, .events .accordion-heading a:hover {
     margin: 0px; }
-/* line 1627, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1627, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .events .accordion-inner span {
   background: #fafafa;
   font-size: 12px;
@@ -2185,34 +2185,34 @@ ul.hover-block li {
   display: block; }
 
 /* Product */
-/* line 1637, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1637, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .prod {
   margin: 20px 0px 30px 0px; }
 
-/* line 1640, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1640, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .home-product {
   padding: 7px 12px 14px 12px;
   color: #fff; }
-  /* line 1643, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1643, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .home-product .home-prod-img {
     width: 150px;
     height: 150px;
     float: left;
     margin-right: 10px;
     margin-top: 10px; }
-  /* line 1649, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1649, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .home-product h3 {
     color: #fff; }
 
-/* line 1652, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1652, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .home-links a {
   color: #999; }
-  /* line 1654, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1654, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .home-links a:hover {
     clear: #444; }
 
 /* Timeline */
-/* line 1659, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1659, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .tidate {
   padding: 3px 10px;
   font-size: 13px;
@@ -2220,7 +2220,7 @@ ul.hover-block li {
   font-weight: bold;
   margin-bottom: 0px; }
 
-/* line 1666, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1666, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .timatter {
   background: #fafafa;
   padding: 5px 10px;
@@ -2228,21 +2228,21 @@ ul.hover-block li {
   font-size: 13px;
   border: 1px solid #eee;
   border-top: 0px; }
-  /* line 1667, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1667, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .timatter h5 {
     font-size: 15px; }
 
 /* Service */
-/* line 1678, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1678, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .serv-block {
   display: block;
   text-align: center;
   margin-bottom: 10px; }
-  /* line 1682, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1682, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .serv-block h3 {
     color: #fff;
     padding-bottom: 20px; }
-  /* line 1685, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1685, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .serv-block i {
     display: block;
     font-size: 60px;
@@ -2252,19 +2252,19 @@ ul.hover-block li {
     margin: 0 auto;
     padding-top: 20px !important; }
 
-/* line 1694, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1694, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .service {
   font-size: 13px;
   line-height: 25px; }
 
 /* Social */
-/* line 1700, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1700, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .social-links {
   margin-top: 20px;
   padding: 20px 0px 10px 0px;
   color: #fff;
   line-height: 30px; }
-  /* line 1705, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1705, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .social-links a {
     font-size: 15px;
     margin: 0px 15px;
@@ -2272,7 +2272,7 @@ ul.hover-block li {
     font-weight: 400;
     text-decoration: none;
     display: inline-block; }
-    /* line 1712, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1712, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .social-links a:visited, .social-links a:hover {
       font-size: 15px;
       margin: 0px 15px;
@@ -2280,7 +2280,7 @@ ul.hover-block li {
       font-weight: 400;
       text-decoration: none;
       display: inline-block; }
-  /* line 1719, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1719, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .social-links i {
     position: relative;
     top: -2px;
@@ -2290,60 +2290,60 @@ ul.hover-block li {
     right: 3px; }
 
 /* Contact */
-/* line 1729, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1729, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .cwell {
   padding: 10px;
   background: #fafafa;
   margin-top: 10px;
   border: 1px solid #f1f1f1; }
-  /* line 1734, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1734, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .cwell h5 {
     border-bottom: 1px solid #eee;
     padding-bottom: 10px; }
-  /* line 1737, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1737, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .cwell address {
     font-size: 13px; }
 
-/* line 1740, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1740, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .gmap iframe {
   width: 100%;
   margin-bottom: 10px;
   padding-bottom: 0px !important; }
 
 /* 404 #2 */
-/* line 1747, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1747, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 .big-text {
   font-size: 150px;
   line-height: 160px;
   color: #888; }
 
 /* Footer */
-/* line 1754, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+/* line 1754, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
 footer {
   font-size: 13px;
   background: #f6f6f6;
   color: #444;
   margin-top: 35px; }
-  /* line 1759, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1759, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   footer a {
     color: #777; }
-    /* line 1761, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1761, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     footer a:hover {
       color: #666; }
-  /* line 1763, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1763, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   footer .color, footer h6 {
     color: #444; }
-  /* line 1765, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1765, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   footer ul {
     list-style-type: none;
     margin-left: 0px; }
-    /* line 1768, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1768, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     footer ul li {
       padding: 3px 0px; }
-  /* line 1770, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1770, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   footer .widgets {
     margin-top: 20px; }
-  /* line 1772, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1772, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   footer .copy {
     border-top: 1px solid #ddd;
     padding: 10px 0px;
@@ -2351,238 +2351,238 @@ footer {
 
 /* Responsive */
 @media (max-width: 480px) {
-  /* line 1780, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1780, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .flexslider {
     padding: 0 !important; }
 
-  /* line 1782, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1782, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   header .logo {
     text-align: left;
     padding: 0; }
 
-  /* line 1785, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1785, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .container {
     padding: 0 35px !important; }
 
-  /* line 1787, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1787, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .navbar-fixed-top {
     margin-bottom: 0 !important; }
 
-  /* line 1789, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1789, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .col-l, .col-r {
     width: 100%;
     float: none;
     margin: 10px 0px 5px 0px; }
 
-  /* line 1794, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1794, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .da-slide h2 {
     width: 100%;
     font-size: 30px;
     top: 40px; }
-  /* line 1798, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1798, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .da-slide p {
     width: 80%;
     font-size: 15px;
     top: 90px; }
-  /* line 1802, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1802, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .da-slide .da-link {
     top: 180px; }
-  /* line 1804, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1804, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .da-slide .da-img {
     display: none; }
 
-  /* line 1806, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1806, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   ul.hover-block li {
     display: block;
     float: none;
     margin: 0 auto;
     margin-bottom: 10px; }
 
-  /* line 1811, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1811, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .price-a {
     width: 100%;
     float: none;
     margin-right: 0px; }
 
-  /* line 1815, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1815, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .price-b {
     width: 100%;
     float: none; }
 
-  /* line 1818, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1818, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .aboutus {
     text-align: center; }
  }
 
 @media (max-width: 767px) {
-  /* line 1822, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1822, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .navbar-fixed-top {
     margin-bottom: 0 !important; }
 
-  /* line 1824, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1824, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   section:first-of-type {
     margin-top: 0px !important;
     padding-top: -78px !important; }
 
-  /* line 1827, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1827, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pricel .plist li {
     font-size: 12px; }
 
-  /* line 1829, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1829, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .button a {
     font-size: 13px; }
-    /* line 1831, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1831, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .button a:visited {
       font-size: 13px; }
 
-  /* line 1833, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1833, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .border {
     margin: 10px 0px 5px 0px; }
 
-  /* line 1835, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1835, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   header, .navbar, .social-links, .full-slider, footer {
     margin-left: -20px;
     margin-right: -20px; }
 
-  /* line 1838, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1838, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .social-links, footer, .navbar-inner, .full-slider {
     padding-left: 20px;
     padding-right: 20px; }
 
-  /* line 1841, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1841, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   header .form {
     padding-top: 0px; }
 
-  /* line 1843, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1843, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .dropdown-menu {
     border: 0px !important; }
-    /* line 1845, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1845, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .dropdown-menu a {
       border: 0px !important; }
 
-  /* line 1847, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1847, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .home-product {
     margin-top: 10px; }
 
-  /* line 1849, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1849, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .serv-block {
     margin-top: 20px; }
 
-  /* line 1851, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1851, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .social-links span {
     display: block;
     margin-bottom: 10px; }
 
-  /* line 1854, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1854, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .flex-caption {
     margin: 40px 0px 40px 0px; }
 
-  /* line 1856, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1856, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .formy {
     margin-top: 20px; }
 
-  /* line 1858, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1858, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .ainfo {
     margin-top: 10px; }
 
-  /* line 1860, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1860, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .big-text {
     font-size: 80px;
     line-height: 90px; }
 
-  /* line 1863, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1863, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .about-two .staff {
     max-width: 250px;
     margin: 0 auto; }
 
-  /* line 1866, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1866, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .features-one {
     text-align: center; }
-    /* line 1868, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1868, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .features-one h4 {
       margin-top: 10px; }
  }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 1872, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1872, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .dropdown-menu {
     border: 0px !important; }
-    /* line 1874, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1874, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .dropdown-menu a {
       border: 0px !important; }
 
-  /* line 1876, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1876, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   section:first-of-type {
     margin-top: 0px !important;
     padding-top: -78px !important; }
 
-  /* line 1879, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1879, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pricel .plist li {
     font-size: 12px; }
 
-  /* line 1881, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1881, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .button a {
     font-size: 15px; }
-    /* line 1883, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1883, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .button a:visited {
       font-size: 15px; }
 
-  /* line 1885, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1885, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .container {
     padding: 0 35px !important; }
  }
 
 @media (max-width: 979px) {
-  /* line 1889, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1889, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   section {
     padding-top: 0;
     margin-right: -20px;
     margin-left: -20px; }
 
-  /* line 1893, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1893, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .container {
     padding: 0 15px !important; }
 
-  /* line 1895, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1895, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .navbar-fixed-top {
     margin-bottom: 0 !important; }
 
-  /* line 1897, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1897, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   header .logo {
     text-align: left;
     padding: 0; }
 
-  /* line 1900, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1900, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   section:first-of-type {
     margin-top: 0px !important;
     padding-top: -78px !important; }
 
-  /* line 1903, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1903, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .pricel .plist li {
     font-size: 12px; }
 
-  /* line 1905, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1905, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .button a {
     font-size: 15px; }
-    /* line 1907, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+    /* line 1907, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
     .button a:visited {
       font-size: 15px; }
 
-  /* line 1909, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1909, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 0 !important; }
 
-  /* line 1911, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1911, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .borr {
     background: white !important; }
  }
 
 @media (max-width: 480px) {
-  /* line 1915, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1915, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .modal-backdrop {
     display: none; }
 
-  /* line 1917, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1917, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .modal {
     position: fixed;
     top: 3%;
@@ -2593,7 +2593,7 @@ footer {
     margin: 0;
     z-index: 1000; }
 
-  /* line 1926, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/style */
+  /* line 1926, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/landing/style */
   .modal-body {
     max-height: 350px;
     padding: 15px;
@@ -2601,7 +2601,7 @@ footer {
     -webkit-overflow-scrolling: touch; }
  }
 
-/* line 1, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/notice-message */
+/* line 1, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/elements/notice-message */
 .notice-message {
   color: darkgreen;
   position: absolute;
@@ -2615,7 +2615,7 @@ footer {
   height: 29px !important;
   overflow: hidden !important;
   text-align: center; }
-  /* line 14, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/notice-message */
+  /* line 14, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/elements/notice-message */
   .notice-message a {
     color: #666666;
     position: absolute;

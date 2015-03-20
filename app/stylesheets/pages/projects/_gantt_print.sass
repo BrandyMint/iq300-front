@@ -1,60 +1,30 @@
-html, body
-  font-size: 13px
-  font-family: Arial, sans-serif
-  line-height: 20px
-  margin: 0
-  padding: 0
-  position: relative
-  height: 100%
-
-body
-  color: $text-color
-  -webkit-font-smoothing: antialiased
-
-h1
-  font-size: 2.75em
-  line-height: 1.2em
-
-h2
-  font-size: 1.9em
-  line-height: 1.25em
-
-h3
-  font-size: 1.75em
-  line-height: 1.3em
-
-h4
-  font-size: 1.25em
-  line-height: 1.35em
-
-.print
-  margin: 15px
+.gantt_container
+  margin-top: 15px
 
 @media print
   @page
     margin: 0.8cm
 
-  body
+  .gantt-component
+    border: 1px solid $gantt-main-print-color !important
     font: 10pt Arial, sans-serif
     line-height: 1.3
-    font-color: $mainPrinterColor !important
+    font-color: $gantt-main-print-color !important
     background-color: none
-  .print
+  .controls
     display: none
-  .gantt_container, .gantt-component
-    border: 1px solid $mainPrinterColor !important
   .gantt_task_content
-    color: $mainPrinterColor !important
+    color: $gantt-main-print-color !important
   .gantt_task
-    border-left: 1px solid $mainPrinterColor
-    border-right: 1px solid $mainPrinterColor
+    border-left: 1px solid $gantt-main-print-color
+    border-right: 1px solid $gantt-main-print-color
   .gantt_task_line
-    border: 1px solid $mainPrinterColor !important
+    border: 1px solid $gantt-main-print-color !important
   .gantt_task_progress
-    background-color: $taskProgressPrinterColor !important
+    background-color: $gantt-progress-print-color !important
     -webkit-print-color-adjust: exact
   .gantt_link_line_down, .gantt_link_line_up, .gantt_link_line_left, .gantt_link_line_right
-    background-color: $taskLinkPrinterColor !important
+    background-color: $gantt-link-print-color !important
     -webkit-print-color-adjust: exact
   .gantt_link_arrow_right
-    border-left-color: $taskLinkPrinterColor !important
+    border-left-color: $gantt-link-print-color !important
