@@ -8,21 +8,12 @@ $project-task-padding-right: $project-task-box-spacing + $project-task-box-statu
 $project-task-padding-left-nested: $project-task-padding-left + $grid-gutter-width*0.75
 $project-task-checkbox-width: 12px
 
-//$project-tasks-group-header-blue: #1677c5
-//$project-tasks-group-header-yellow: #f1d800
-//$project-tasks-group-header-green: #75b600
-//$project-tasks-group-header-orange: #fca100
-//$project-tasks-group-header-red: #e75c3f
-//$project-tasks-group-header-violet: #c075e7
-
-$project-tasks-group-header-blue: #9acbf4
+$project-tasks-group-header-blue: #9ebdfa
 $project-tasks-group-header-yellow: #fff180
-$project-tasks-group-header-green: #9af4c2
-$project-tasks-group-header-orange: #ffb22e
-$project-tasks-group-header-red: #e75c3f
-$project-tasks-group-header-violet: #c075e7
+$project-tasks-group-header-green: #b1fbd6
+$project-tasks-group-header-orange: #ffc799
 
-$project-tasks-group-header-colors: "blue" $project-tasks-group-header-blue, "yellow" $project-tasks-group-header-yellow, "green" $project-tasks-group-header-green, "orange" $project-tasks-group-header-orange, "red" $project-tasks-group-header-red, "violet" $project-tasks-group-header-violet
+$project-tasks-group-header-colors: "blue" $project-tasks-group-header-blue, "yellow" $project-tasks-group-header-yellow, "green" $project-tasks-group-header-green, "orange" $project-tasks-group-header-orange
 
 =project-task-nested-item
   .project-tasks-list-sortable li ol
@@ -199,7 +190,7 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
     &.project-tasks-group-header-#{nth($c,1)}
       background-color: nth($c, 2)
       &:hover
-        background-color: darken(nth($c, 2), 5%)
+        background-color: darken(nth($c, 2), 10%)
       .project-tasks-group-title
         //font-weight: bold
         color: $text-color-darker
@@ -220,7 +211,24 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
 @each $c in $project-tasks-group-header-colors
   &.project-tasks-group-header-color-select-#{nth($c,1)}
     .project-tasks-group-header-color-bullet
-      background-color: nth($c, 2)
+      //background-color: nth($c, 2)
+      background-color: darken(nth($c, 2), 10%)
+
+.project-task-box-color-bullet
+  display: block
+  width: 100%
+  height: 6px
+  vertical-align: baseline
+  margin:
+    left: 0
+    top: 6px
+  +border-radius(4px)
+  @each $c in $project-tasks-group-header-colors
+    &.project-task-box-color-bullet-#{nth($c,1)}
+      background-color: darken(nth($c, 2), 10%)
++project-task-nested-item
+  .project-task-box-color-bullet
+    margin-left: -$project-task-checkbox-width
 
 .project-tasks-group-title
   margin: 0
@@ -231,6 +239,9 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
   margin:
     top: 10px
     bottom: 10px
+
+.project-group-header-form-inputs
+  margin-bottom: 10px
 
 .project-task-box-form
   padding:
