@@ -1,13 +1,13 @@
 /*!
- *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/assets/fontawesome-webfont.eot?v=4.3.0");
-  src: url("/assets/fontawesome-webfont.eot?#iefix&v=4.3.0") format('embedded-opentype'), url("/assets/fontawesome-webfont.woff2?v=4.3.0") format('woff2'), url("/assets/fontawesome-webfont.woff?v=4.3.0") format('woff'), url("/assets/fontawesome-webfont.ttf?v=4.3.0") format('truetype'), url("/assets/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format('svg');
+  src: url("/assets/fontawesome-webfont.eot?v=4.2.0");
+  src: url("/assets/fontawesome-webfont.eot?#iefix&v=4.2.0") format('embedded-opentype'), url("/assets/fontawesome-webfont.woff?v=4.2.0") format('woff'), url("/assets/fontawesome-webfont.ttf?v=4.2.0") format('truetype'), url("/assets/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -18,8 +18,7 @@
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0); }
+  -moz-osx-font-smoothing: grayscale; }
 
 /* makes the font 33% larger relative to the icon container */
 /* line 5, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/larger */
@@ -90,34 +89,29 @@
 .fa.pull-right {
   margin-left: 0.3em; }
 
-/* line 1, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/animated */
+/* line 1, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/spinning */
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear; }
 
-/* line 6, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/animated */
-.fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-  animation: fa-spin 1s infinite steps(8); }
-
 @-webkit-keyframes fa-spin {
-  /* line 12, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/animated */
+  /* line 7, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/spinning */
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 16, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/animated */
+  /* line 11, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/spinning */
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
 
 @keyframes fa-spin {
-  /* line 23, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/animated */
+  /* line 18, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/spinning */
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 27, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/animated */
+  /* line 22, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/spinning */
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
@@ -772,7 +766,7 @@
   content: "\f099"; }
 
 /* line 149, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-facebook-f:before, .fa-facebook:before {
+.fa-facebook:before {
   content: "\f09a"; }
 
 /* line 150, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -1592,7 +1586,7 @@
   content: "\f183"; }
 
 /* line 354, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-gittip:before, .fa-gratipay:before {
+.fa-gittip:before {
   content: "\f184"; }
 
 /* line 355, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -1920,7 +1914,7 @@
   content: "\f1da"; }
 
 /* line 436, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-genderless:before, .fa-circle-thin:before {
+.fa-circle-thin:before {
   content: "\f1db"; }
 
 /* line 437, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -2106,166 +2100,6 @@
 /* line 482, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
 .fa-meanpath:before {
   content: "\f20c"; }
-
-/* line 483, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-buysellads:before {
-  content: "\f20d"; }
-
-/* line 484, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-connectdevelop:before {
-  content: "\f20e"; }
-
-/* line 485, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-dashcube:before {
-  content: "\f210"; }
-
-/* line 486, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-forumbee:before {
-  content: "\f211"; }
-
-/* line 487, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-leanpub:before {
-  content: "\f212"; }
-
-/* line 488, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-sellsy:before {
-  content: "\f213"; }
-
-/* line 489, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-shirtsinbulk:before {
-  content: "\f214"; }
-
-/* line 490, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-simplybuilt:before {
-  content: "\f215"; }
-
-/* line 491, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-skyatlas:before {
-  content: "\f216"; }
-
-/* line 492, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-cart-plus:before {
-  content: "\f217"; }
-
-/* line 493, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-cart-arrow-down:before {
-  content: "\f218"; }
-
-/* line 494, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-diamond:before {
-  content: "\f219"; }
-
-/* line 495, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-ship:before {
-  content: "\f21a"; }
-
-/* line 496, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-user-secret:before {
-  content: "\f21b"; }
-
-/* line 497, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-motorcycle:before {
-  content: "\f21c"; }
-
-/* line 498, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-street-view:before {
-  content: "\f21d"; }
-
-/* line 499, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-heartbeat:before {
-  content: "\f21e"; }
-
-/* line 500, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-venus:before {
-  content: "\f221"; }
-
-/* line 501, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-mars:before {
-  content: "\f222"; }
-
-/* line 502, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-mercury:before {
-  content: "\f223"; }
-
-/* line 503, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-transgender:before {
-  content: "\f224"; }
-
-/* line 504, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-transgender-alt:before {
-  content: "\f225"; }
-
-/* line 505, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-venus-double:before {
-  content: "\f226"; }
-
-/* line 506, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-mars-double:before {
-  content: "\f227"; }
-
-/* line 507, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-venus-mars:before {
-  content: "\f228"; }
-
-/* line 508, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-mars-stroke:before {
-  content: "\f229"; }
-
-/* line 509, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-mars-stroke-v:before {
-  content: "\f22a"; }
-
-/* line 510, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-mars-stroke-h:before {
-  content: "\f22b"; }
-
-/* line 511, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-neuter:before {
-  content: "\f22c"; }
-
-/* line 512, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-facebook-official:before {
-  content: "\f230"; }
-
-/* line 513, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-pinterest-p:before {
-  content: "\f231"; }
-
-/* line 514, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-whatsapp:before {
-  content: "\f232"; }
-
-/* line 515, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-server:before {
-  content: "\f233"; }
-
-/* line 516, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-user-plus:before {
-  content: "\f234"; }
-
-/* line 517, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-user-times:before {
-  content: "\f235"; }
-
-/* line 518, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-hotel:before, .fa-bed:before {
-  content: "\f236"; }
-
-/* line 519, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-viacoin:before {
-  content: "\f237"; }
-
-/* line 520, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-train:before {
-  content: "\f238"; }
-
-/* line 521, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-subway:before {
-  content: "\f239"; }
-
-/* line 522, /Users/artur/projects/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-medium:before {
-  content: "\f23a"; }
 
 @font-face {
   font-family: "icomoon-iq300";
