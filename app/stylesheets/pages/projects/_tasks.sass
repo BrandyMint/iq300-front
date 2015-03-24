@@ -214,21 +214,6 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
       //background-color: nth($c, 2)
       background-color: darken(nth($c, 2), 10%)
 
-.project-task-box-color-bullet
-  @extend .project-tasks-group-header-color-bullet
-  width: 8px
-  height: 8px
-  +border-radius(100%)
-  margin:
-    left: 2px
-    top: 6px
-  @each $c in $project-tasks-group-header-colors
-    &.project-task-box-color-bullet-#{nth($c,1)}
-      background-color: nth($c, 2)
-+project-task-nested-item
-  .project-task-box-color-bullet
-    margin-left: -$project-task-checkbox-width + 2px
-
 .project-tasks-group-title
   margin: 0
   height: 32px

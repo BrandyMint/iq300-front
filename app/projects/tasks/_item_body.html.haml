@@ -12,8 +12,6 @@
       %input{type: 'checkbox'}
     .project-task-box-level
       = number
-    .project-task-box-color-bullet{class: "project-task-box-color-bullet-#{group_color}"}
-      &nbsp;
   - if is_root
     .project-task-box-add-subtask-btn-block
       = link_to "#", role: :tooltip, data: {'original-title' => 'Добавить подзадачу'}, class: 'project-task-box-add-subtask-btn' do
