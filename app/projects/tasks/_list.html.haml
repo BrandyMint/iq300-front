@@ -28,7 +28,7 @@
                 .btn-group.text-right
                   %button.project-tasks-group-header-color-select.dropdown-toggle{class: "project-tasks-group-header-color-select-#{milestone_color}", "aria-expanded" => "false", "data-toggle" => "dropdown", :type => "button"}
                     %span.project-tasks-group-header-color-bullet
-                  %ul.dropdown-menu{:role => "menu"}
+                  %ul.project-tasks-group-header-color-dropdown-menu{:role => "menu"}
                     - milestone_colors.each_with_index do |color, ci|
                       %li
                         %a{class: "project-tasks-group-header-color-select-#{milestone_colors[ci]}", href: '#'}
