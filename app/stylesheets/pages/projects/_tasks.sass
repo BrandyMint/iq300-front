@@ -196,6 +196,15 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
         color: $text-color-darker
         text-shadow: 0 1px 1px rgba(#fff, 0.2)
 
+.project-tasks-group-title
+  margin: 0
+  height: 32px
+  line-height: 32px
+  white-space: nowrap
+  text-overflow: ellipsis
+  overflow: hidden
+
+
 .project-tasks-group-header-color-select
   @extend .btn
   @extend .btn-default
@@ -218,11 +227,6 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
     .project-tasks-group-header-color-bullet
       //background-color: nth($c, 2)
       background-color: darken(nth($c, 2), 10%)
-
-.project-tasks-group-title
-  margin: 0
-  height: 32px
-  line-height: 32px
 
 .project-tasks-group-header-form
   margin:

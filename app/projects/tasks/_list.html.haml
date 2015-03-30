@@ -8,8 +8,15 @@
   - milestone_colors.each_with_index do |milestone_color, i|
     .project-tasks-group-header{role: 'project-group-header', class: "project-tasks-group-header-#{milestone_color}"}
       %div{role: 'project-group-header-content'}
-        %h4.project-tasks-group-title
-          = "Группа #{i+1}"
+        // Если длина название больше 108 символов, показываем тултип
+        - group_title = "Группа #{i+1} с очень длинным названием, которое не помещается в одну строку, с очень длинным названием, которое не помещается в одну строку"
+        - if group_title.length > 108
+          %h4.project-tasks-group-title{role: 'tooltip', data: {'original-title' => group_title, delay: 200}}
+            = truncate(group_title, length: 108)
+        - else
+          %h4.project-tasks-group-title
+            = group_title
+
       .project-group-header-form.hide{role: 'project-group-header-form'}
         %form.form-horizontal
           .project-group-header-form-inputs
