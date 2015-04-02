@@ -25119,6 +25119,10 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
 .gantt_task_row .gantt_task_cell.current {
   border-left: 1px solid red; }
 
+/* line 72, /Users/imir/iq300/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+.gannt-task-group {
+  visibility: hidden; }
+
 /* line 1, /Users/imir/iq300/iq300-frontend/app/stylesheets/pages/projects/participants */
 .project-participants {
   margin: 0; }
