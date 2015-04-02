@@ -4873,3 +4873,6 @@ body {
     /* line 107, /Users/imir/iq300/iq300-frontend/app/stylesheets/print.sass */
     body .paragraphs.sublist {
       margin-left: 30px; }
+  /* line 109, /Users/imir/iq300/iq300-frontend/app/stylesheets/print.sass */
+  body .gannt-task-group {
+    visibility: hidden; }
