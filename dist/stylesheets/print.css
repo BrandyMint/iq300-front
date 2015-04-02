@@ -4710,6 +4710,10 @@ div.dhx_modal_cover {
 .gantt_task_row .gantt_task_cell.current {
   border-left: 1px solid red; }
 
+/* line 72, /Users/imir/iq300/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+.gannt-task-group {
+  visibility: hidden; }
+
 /* line 1, /Users/imir/iq300/iq300-frontend/app/stylesheets/pages/projects/gantt_print */
 .gantt_container {
   margin-top: 15px; }
@@ -4873,6 +4877,3 @@ body {
     /* line 107, /Users/imir/iq300/iq300-frontend/app/stylesheets/print.sass */
     body .paragraphs.sublist {
       margin-left: 30px; }
-  /* line 109, /Users/imir/iq300/iq300-frontend/app/stylesheets/print.sass */
-  body .gannt-task-group {
-    visibility: hidden; }
