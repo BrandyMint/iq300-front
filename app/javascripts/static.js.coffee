@@ -24,6 +24,7 @@
 #= require discussions/mention
 #= require calendar/calendar
 #= require comments/form
+#= require contacts/list
 
 $ ->
   $('@select2').select2()
