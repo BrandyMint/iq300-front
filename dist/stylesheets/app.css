@@ -2575,7 +2575,7 @@ tbody.collapse.in {
   outline: 0; }
 
 /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
-.dropdown-menu {
+.dropdown-menu, .project-tasks-group-header-color-dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -2597,17 +2597,17 @@ tbody.collapse.in {
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box; }
   /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
-  .dropdown-menu.pull-right, .dropdown-menu.filter-item-counter {
+  .dropdown-menu.pull-right, .dropdown-menu.filter-item-counter, .filter-item-counter.project-tasks-group-header-color-dropdown-menu, .pull-right.project-tasks-group-header-color-dropdown-menu {
     right: 0;
     left: auto; }
   /* line 58, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
-  .dropdown-menu .divider {
+  .dropdown-menu .divider, .project-tasks-group-header-color-dropdown-menu .divider {
     height: 1px;
     margin: 8px 0;
     overflow: hidden;
     background-color: #e5e5e5; }
   /* line 63, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
-  .dropdown-menu > li > a {
+  .dropdown-menu > li > a, .project-tasks-group-header-color-dropdown-menu > li > a {
     display: block;
     padding: 3px 20px;
     clear: both;
@@ -2617,24 +2617,24 @@ tbody.collapse.in {
     white-space: nowrap; }
 
 /* line 77, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+.dropdown-menu > li > a:hover, .project-tasks-group-header-color-dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .project-tasks-group-header-color-dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #262626;
   background-color: #f5f5f5; }
 
 /* line 88, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+.dropdown-menu > .active > a, .project-tasks-group-header-color-dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .project-tasks-group-header-color-dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .project-tasks-group-header-color-dropdown-menu > .active > a:focus {
   color: #fff;
   text-decoration: none;
   outline: 0;
   background-color: #338cae; }
 
 /* line 103, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
-.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+.dropdown-menu > .disabled > a, .project-tasks-group-header-color-dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .project-tasks-group-header-color-dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus, .project-tasks-group-header-color-dropdown-menu > .disabled > a:focus {
   color: #999999; }
 
 /* line 110, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
-.dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+.dropdown-menu > .disabled > a:hover, .project-tasks-group-header-color-dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus, .project-tasks-group-header-color-dropdown-menu > .disabled > a:focus {
   text-decoration: none;
   background-color: transparent;
   background-image: none;
@@ -2642,7 +2642,7 @@ tbody.collapse.in {
   cursor: not-allowed; }
 
 /* line 122, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
-.open > .dropdown-menu {
+.open > .dropdown-menu, .open > .project-tasks-group-header-color-dropdown-menu {
   display: block; }
 /* line 127, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
 .open > a {
@@ -2676,7 +2676,7 @@ tbody.collapse.in {
   z-index: 990; }
 
 /* line 171, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
-.pull-right > .dropdown-menu, .filter-item-counter > .dropdown-menu {
+.pull-right > .dropdown-menu, .filter-item-counter > .dropdown-menu, .pull-right > .project-tasks-group-header-color-dropdown-menu, .filter-item-counter > .project-tasks-group-header-color-dropdown-menu {
   right: 0;
   left: auto; }
 
@@ -2686,14 +2686,14 @@ tbody.collapse.in {
   border-bottom: 4px solid;
   content: ""; }
 /* line 190, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
-.dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
+.dropup .dropdown-menu, .dropup .project-tasks-group-header-color-dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu, .navbar-fixed-bottom .dropdown .project-tasks-group-header-color-dropdown-menu {
   top: auto;
   bottom: 100%;
   margin-bottom: 1px; }
 
 @media (min-width: 768px) {
   /* line 204, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
-  .navbar-right .dropdown-menu {
+  .navbar-right .dropdown-menu, .navbar-right .project-tasks-group-header-color-dropdown-menu {
     right: 0;
     left: auto; }
   /* line 209, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/dropdowns */
@@ -2876,7 +2876,7 @@ tbody.collapse.in {
   .btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .popover-form-submit-btn, .btn-group-justified > .btn-group .fullcalendar-event-form-submit-btn, .btn-group-justified > .btn-group .community-invites-btn-base, .btn-group-justified > .btn-group .community-invites-btn-check, .btn-group-justified > .btn-group .community-invites-btn-send, .btn-group-justified > .btn-group .project-form-team-member-btn, .btn-group-justified > .btn-group .project-form-team-member-selected-btn, .btn-group-justified > .btn-group .project-task-box-add-subtask-btn, .btn-group-justified > .btn-group .project-task-box-actions-btn, .btn-group-justified > .btn-group .project-tasks-group-header-color-select, .btn-group-justified > .btn-group .project-discussions-form-btn {
     width: 100%; }
   /* line 220, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/button-groups */
-  .btn-group-justified > .btn-group .dropdown-menu {
+  .btn-group-justified > .btn-group .dropdown-menu, .btn-group-justified > .btn-group .project-tasks-group-header-color-dropdown-menu {
     left: auto; }
 
 /* line 236, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/button-groups */
@@ -3139,7 +3139,7 @@ tbody.collapse.in {
       text-align: center;
       margin-bottom: 5px; }
   /* line 181, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navs */
-  .nav-justified > .dropdown .dropdown-menu {
+  .nav-justified > .dropdown .dropdown-menu, .nav-justified > .dropdown .project-tasks-group-header-color-dropdown-menu {
     top: auto;
     left: auto; }
   @media (min-width: 768px) {
@@ -3184,7 +3184,7 @@ tbody.collapse.in {
   display: block; }
 
 /* line 250, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navs */
-.nav-tabs .dropdown-menu {
+.nav-tabs .dropdown-menu, .nav-tabs .project-tasks-group-header-color-dropdown-menu {
   margin-top: -1px;
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
@@ -3353,7 +3353,7 @@ tbody.collapse.in {
     line-height: 18px; }
   @media (max-width: 767px) {
     /* line 239, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-nav .open .dropdown-menu {
+    .navbar-nav .open .dropdown-menu, .navbar-nav .open .project-tasks-group-header-color-dropdown-menu {
       position: static;
       float: none;
       width: auto;
@@ -3362,13 +3362,13 @@ tbody.collapse.in {
       border: 0;
       box-shadow: none; }
       /* line 248, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-      .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
+      .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .project-tasks-group-header-color-dropdown-menu .dropdown-header {
         padding: 5px 15px 5px 25px; }
       /* line 251, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-      .navbar-nav .open .dropdown-menu > li > a {
+      .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a {
         line-height: 18px; }
         /* line 254, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-        .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
+        .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a:focus {
           background-image: none; }
  }
   @media (min-width: 768px) {
@@ -3427,13 +3427,13 @@ tbody.collapse.in {
         margin-right: -15px; } }
 
 /* line 344, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-.navbar-nav > li > .dropdown-menu {
+.navbar-nav > li > .dropdown-menu, .navbar-nav > li > .project-tasks-group-header-color-dropdown-menu {
   margin-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
 /* line 349, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu, .navbar-fixed-bottom .navbar-nav > li > .project-tasks-group-header-color-dropdown-menu {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -3510,18 +3510,18 @@ tbody.collapse.in {
     color: #555; }
   @media (max-width: 767px) {
     /* line 469, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > li > a {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > li > a, .navbar-default .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a, .project-group-header-actions-fixed .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a {
       color: #777; }
       /* line 472, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-      .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > li > a:focus {
+      .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a:hover, .project-group-header-actions-fixed .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a:focus, .project-group-header-actions-fixed .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a:focus {
         color: #333;
         background-color: transparent; }
     /* line 480, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > .active > a:focus {
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .active > a, .project-group-header-actions-fixed .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .active > a:hover, .project-group-header-actions-fixed .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .active > a:focus, .project-group-header-actions-fixed .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .active > a:focus {
       color: #555;
       background-color: #e7e7e7; }
     /* line 488, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .disabled > a, .project-group-header-actions-fixed .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .disabled > a:hover, .project-group-header-actions-fixed .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .project-group-header-actions-fixed .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .disabled > a:focus, .project-group-header-actions-fixed .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .disabled > a:focus {
       color: #ccc;
       background-color: transparent; }
  }
@@ -3588,24 +3588,24 @@ tbody.collapse.in {
     color: #fff; }
   @media (max-width: 767px) {
     /* line 603, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header, .navbar-inverse .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .dropdown-header {
       border-color: #090909; }
     /* line 606, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    .navbar-inverse .navbar-nav .open .dropdown-menu .divider, .navbar-inverse .navbar-nav .open .project-tasks-group-header-color-dropdown-menu .divider {
       background-color: #090909; }
     /* line 609, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a {
       color: #999999; }
       /* line 612, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-      .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+      .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > li > a:focus {
         color: #fff;
         background-color: transparent; }
     /* line 620, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .active > a:focus {
       color: #fff;
       background-color: #090909; }
     /* line 628, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-    .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse .navbar-nav .open .project-tasks-group-header-color-dropdown-menu > .disabled > a:focus {
       color: #444;
       background-color: transparent; }
  }
@@ -5988,7 +5988,7 @@ button.close {
   font-style: normal; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/core */
-.fa, .multiselect-container.dropdown-menu .glyphicon, .notifications-widget-list-item-type-icon-community, .notifications-widget-list-item-type-icon-task-new, .notifications-widget-list-item-type-icon-task-completed {
+.fa, .multiselect-container.dropdown-menu .glyphicon, .multiselect-container.project-tasks-group-header-color-dropdown-menu .glyphicon, .notifications-widget-list-item-type-icon-community, .notifications-widget-list-item-type-icon-task-new, .notifications-widget-list-item-type-icon-task-completed {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -6059,10 +6059,10 @@ button.close {
   float: left; }
 
 /* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/bordered-pulled */
-.fa.pull-left, .multiselect-container.dropdown-menu .pull-left.glyphicon, .pull-left.notifications-widget-list-item-type-icon-community, .pull-left.notifications-widget-list-item-type-icon-task-new, .pull-left.notifications-widget-list-item-type-icon-task-completed {
+.fa.pull-left, .multiselect-container.dropdown-menu .pull-left.glyphicon, .multiselect-container.project-tasks-group-header-color-dropdown-menu .pull-left.glyphicon, .pull-left.notifications-widget-list-item-type-icon-community, .pull-left.notifications-widget-list-item-type-icon-task-new, .pull-left.notifications-widget-list-item-type-icon-task-completed {
   margin-right: 0.3em; }
 /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/bordered-pulled */
-.fa.pull-right, .fa.filter-item-counter, .multiselect-container.dropdown-menu .filter-item-counter.glyphicon, .filter-item-counter.notifications-widget-list-item-type-icon-community, .filter-item-counter.notifications-widget-list-item-type-icon-task-new, .filter-item-counter.notifications-widget-list-item-type-icon-task-completed, .multiselect-container.dropdown-menu .pull-right.glyphicon, .pull-right.notifications-widget-list-item-type-icon-community, .pull-right.notifications-widget-list-item-type-icon-task-new, .pull-right.notifications-widget-list-item-type-icon-task-completed {
+.fa.pull-right, .fa.filter-item-counter, .multiselect-container.dropdown-menu .filter-item-counter.glyphicon, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter-item-counter.glyphicon, .filter-item-counter.notifications-widget-list-item-type-icon-community, .filter-item-counter.notifications-widget-list-item-type-icon-task-new, .filter-item-counter.notifications-widget-list-item-type-icon-task-completed, .multiselect-container.dropdown-menu .pull-right.glyphicon, .multiselect-container.project-tasks-group-header-color-dropdown-menu .pull-right.glyphicon, .pull-right.notifications-widget-list-item-type-icon-community, .pull-right.notifications-widget-list-item-type-icon-task-new, .pull-right.notifications-widget-list-item-type-icon-task-completed {
   margin-left: 0.3em; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/spinning */
@@ -6170,7 +6170,7 @@ button.close {
   content: "\f001"; }
 
 /* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-search:before, .multiselect-container.dropdown-menu .glyphicon-search:before {
+.fa-search:before, .multiselect-container.dropdown-menu .glyphicon-search:before, .multiselect-container.project-tasks-group-header-color-dropdown-menu .glyphicon-search:before {
   content: "\f002"; }
 
 /* line 7, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -6490,7 +6490,7 @@ button.close {
   content: "\f056"; }
 
 /* line 86, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
-.fa-times-circle:before, .multiselect-container.dropdown-menu .glyphicon-remove-circle:before {
+.fa-times-circle:before, .multiselect-container.dropdown-menu .glyphicon-remove-circle:before, .multiselect-container.project-tasks-group-header-color-dropdown-menu .glyphicon-remove-circle:before {
   content: "\f057"; }
 
 /* line 87, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/fontawesome/icons */
@@ -11646,17 +11646,17 @@ body:after {
  * https://github.com/Eonasdan/bootstrap-datetimepicker/
  */
 /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-.bootstrap-datetimepicker-widget.dropdown-menu {
+.bootstrap-datetimepicker-widget.dropdown-menu, .bootstrap-datetimepicker-widget.project-tasks-group-header-color-dropdown-menu {
   margin: 2px 0;
   padding: 4px;
   width: 19em; }
   /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-  .bootstrap-datetimepicker-widget.dropdown-menu:before, .bootstrap-datetimepicker-widget.dropdown-menu:after {
+  .bootstrap-datetimepicker-widget.dropdown-menu:before, .bootstrap-datetimepicker-widget.project-tasks-group-header-color-dropdown-menu:before, .bootstrap-datetimepicker-widget.dropdown-menu:after, .bootstrap-datetimepicker-widget.project-tasks-group-header-color-dropdown-menu:after {
     content: '';
     display: inline-block;
     position: absolute; }
   /* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-  .bootstrap-datetimepicker-widget.dropdown-menu.bottom:before, .bootstrap-datetimepicker-widget.dropdown-menu.notifications-widget-popover:before {
+  .bootstrap-datetimepicker-widget.dropdown-menu.bottom:before, .bootstrap-datetimepicker-widget.dropdown-menu.notifications-widget-popover:before, .bootstrap-datetimepicker-widget.notifications-widget-popover.project-tasks-group-header-color-dropdown-menu:before, .bootstrap-datetimepicker-widget.bottom.project-tasks-group-header-color-dropdown-menu:before {
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid #ccc;
@@ -11664,14 +11664,14 @@ body:after {
     top: -7px;
     left: 7px; }
   /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-  .bootstrap-datetimepicker-widget.dropdown-menu.bottom:after, .bootstrap-datetimepicker-widget.dropdown-menu.notifications-widget-popover:after {
+  .bootstrap-datetimepicker-widget.dropdown-menu.bottom:after, .bootstrap-datetimepicker-widget.dropdown-menu.notifications-widget-popover:after, .bootstrap-datetimepicker-widget.notifications-widget-popover.project-tasks-group-header-color-dropdown-menu:after, .bootstrap-datetimepicker-widget.bottom.project-tasks-group-header-color-dropdown-menu:after {
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: 6px solid white;
     top: -6px;
     left: 8px; }
   /* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-  .bootstrap-datetimepicker-widget.dropdown-menu.top:before {
+  .bootstrap-datetimepicker-widget.dropdown-menu.top:before, .bootstrap-datetimepicker-widget.top.project-tasks-group-header-color-dropdown-menu:before {
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-top: 7px solid #ccc;
@@ -11679,18 +11679,18 @@ body:after {
     bottom: -7px;
     left: 6px; }
   /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-  .bootstrap-datetimepicker-widget.dropdown-menu.top:after {
+  .bootstrap-datetimepicker-widget.dropdown-menu.top:after, .bootstrap-datetimepicker-widget.top.project-tasks-group-header-color-dropdown-menu:after {
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-top: 6px solid white;
     bottom: -6px;
     left: 7px; }
   /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-  .bootstrap-datetimepicker-widget.dropdown-menu.pull-right:before, .bootstrap-datetimepicker-widget.dropdown-menu.filter-item-counter:before {
+  .bootstrap-datetimepicker-widget.dropdown-menu.pull-right:before, .bootstrap-datetimepicker-widget.dropdown-menu.filter-item-counter:before, .bootstrap-datetimepicker-widget.filter-item-counter.project-tasks-group-header-color-dropdown-menu:before, .bootstrap-datetimepicker-widget.pull-right.project-tasks-group-header-color-dropdown-menu:before {
     left: auto;
     right: 6px; }
   /* line 56, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-  .bootstrap-datetimepicker-widget.dropdown-menu.pull-right:after, .bootstrap-datetimepicker-widget.dropdown-menu.filter-item-counter:after {
+  .bootstrap-datetimepicker-widget.dropdown-menu.pull-right:after, .bootstrap-datetimepicker-widget.dropdown-menu.filter-item-counter:after, .bootstrap-datetimepicker-widget.filter-item-counter.project-tasks-group-header-color-dropdown-menu:after, .bootstrap-datetimepicker-widget.pull-right.project-tasks-group-header-color-dropdown-menu:after {
     left: auto;
     right: 7px; }
 /* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
@@ -11970,19 +11970,19 @@ body:after {
 
 @media (min-width: 768px) {
   /* line 341, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs, .bootstrap-datetimepicker-widget.timepicker-sbs.project-tasks-group-header-color-dropdown-menu {
     width: 38em; }
  }
 
 @media (min-width: 992px) {
   /* line 347, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs, .bootstrap-datetimepicker-widget.timepicker-sbs.project-tasks-group-header-color-dropdown-menu {
     width: 38em; }
  }
 
 @media (min-width: 1200px) {
   /* line 353, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-datetimepicker */
-  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs, .bootstrap-datetimepicker-widget.timepicker-sbs.project-tasks-group-header-color-dropdown-menu {
     width: 38em; }
  }
 
@@ -16920,7 +16920,7 @@ section.view-column {
   .page-title .bread-crumbs {
     margin-top: 8px; }
     /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/page-title */
-    .page-title .bread-crumbs .fa, .page-title .bread-crumbs .multiselect-container.dropdown-menu .glyphicon, .multiselect-container.dropdown-menu .page-title .bread-crumbs .glyphicon, .page-title .bread-crumbs .notifications-widget-list-item-type-icon-community, .page-title .bread-crumbs .notifications-widget-list-item-type-icon-task-new, .page-title .bread-crumbs .notifications-widget-list-item-type-icon-task-completed {
+    .page-title .bread-crumbs .fa, .page-title .bread-crumbs .multiselect-container.dropdown-menu .glyphicon, .multiselect-container.dropdown-menu .page-title .bread-crumbs .glyphicon, .page-title .bread-crumbs .multiselect-container.project-tasks-group-header-color-dropdown-menu .glyphicon, .multiselect-container.project-tasks-group-header-color-dropdown-menu .page-title .bread-crumbs .glyphicon, .page-title .bread-crumbs .notifications-widget-list-item-type-icon-community, .page-title .bread-crumbs .notifications-widget-list-item-type-icon-task-new, .page-title .bread-crumbs .notifications-widget-list-item-type-icon-task-completed {
       padding: 0 5px; }
     /* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/page-title */
     .page-title .bread-crumbs a {
@@ -17568,14 +17568,14 @@ a.task-box-block-link {
     background-color: #f8931f; }
 
 /* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/multiselect */
-.project-tasks-list-users-filter .multiselect-container.dropdown-menu {
+.project-tasks-list-users-filter .multiselect-container.dropdown-menu, .project-tasks-list-users-filter .multiselect-container.project-tasks-group-header-color-dropdown-menu {
   min-width: 300px; }
 /* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/multiselect */
-.multiselect-container.dropdown-menu > li > a, .multiselect-container.dropdown-menu > li.active > a {
+.multiselect-container.dropdown-menu > li > a, .multiselect-container.project-tasks-group-header-color-dropdown-menu > li > a, .multiselect-container.dropdown-menu > li.active > a, .multiselect-container.project-tasks-group-header-color-dropdown-menu > li.active > a {
   background-color: transparent;
   color: #606060; }
 /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/multiselect */
-.multiselect-container.dropdown-menu .filter .btn, .multiselect-container.dropdown-menu .filter .popover-form-submit-btn, .multiselect-container.dropdown-menu .filter .fullcalendar-event-form-submit-btn, .multiselect-container.dropdown-menu .filter .community-invites-btn-base, .multiselect-container.dropdown-menu .filter .community-invites-btn-check, .multiselect-container.dropdown-menu .filter .community-invites-btn-send, .multiselect-container.dropdown-menu .filter .project-form-team-member-btn, .multiselect-container.dropdown-menu .filter .project-form-team-member-selected-btn, .multiselect-container.dropdown-menu .filter .project-task-box-add-subtask-btn, .multiselect-container.dropdown-menu .filter .project-task-box-actions-btn, .multiselect-container.dropdown-menu .filter .project-tasks-group-header-color-select, .multiselect-container.dropdown-menu .filter .project-discussions-form-btn, .multiselect-container.dropdown-menu .filter .form-control, .multiselect-container.dropdown-menu .filter .popover-form-control, .multiselect-container.dropdown-menu .filter .fullcalendar-event-form-control, .multiselect-container.dropdown-menu .filter .tasks-list-filters-block-select {
+.multiselect-container.dropdown-menu .filter .btn, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .btn, .multiselect-container.dropdown-menu .filter .popover-form-submit-btn, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .popover-form-submit-btn, .multiselect-container.dropdown-menu .filter .fullcalendar-event-form-submit-btn, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .fullcalendar-event-form-submit-btn, .multiselect-container.dropdown-menu .filter .community-invites-btn-base, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .community-invites-btn-base, .multiselect-container.dropdown-menu .filter .community-invites-btn-check, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .community-invites-btn-check, .multiselect-container.dropdown-menu .filter .community-invites-btn-send, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .community-invites-btn-send, .multiselect-container.dropdown-menu .filter .project-form-team-member-btn, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .project-form-team-member-btn, .multiselect-container.dropdown-menu .filter .project-form-team-member-selected-btn, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .project-form-team-member-selected-btn, .multiselect-container.dropdown-menu .filter .project-task-box-add-subtask-btn, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .project-task-box-add-subtask-btn, .multiselect-container.dropdown-menu .filter .project-task-box-actions-btn, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .project-task-box-actions-btn, .multiselect-container.dropdown-menu .filter .project-tasks-group-header-color-select, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .project-tasks-group-header-color-select, .multiselect-container.dropdown-menu .filter .project-discussions-form-btn, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .project-discussions-form-btn, .multiselect-container.dropdown-menu .filter .form-control, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .form-control, .multiselect-container.dropdown-menu .filter .popover-form-control, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .popover-form-control, .multiselect-container.dropdown-menu .filter .fullcalendar-event-form-control, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .fullcalendar-event-form-control, .multiselect-container.dropdown-menu .filter .tasks-list-filters-block-select, .multiselect-container.project-tasks-group-header-color-dropdown-menu .filter .tasks-list-filters-block-select {
   padding: 5px 12px;
   height: 30px; }
 
@@ -24870,118 +24870,120 @@ section.project-view-column > .column-content > .object-details > ul.actions {
   margin: 2em 0;
   margin-bottom: 2em;
   padding-top: 1.5em;
-  padding-bottom: 1.5em; }
+  padding-bottom: 1.5em;
+  padding-left: 30px;
+  padding-right: 30px; }
 
-/* line 54, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 56, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-title-block {
   margin-bottom: 4px;
   font-size: 14px; }
 
-/* line 60, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-controls {
   width: 40px;
   margin-left: -80px;
   padding-left: 0; }
 
-/* line 66, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 68, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-sortable li ol .project-task-box-controls {
   margin-left: -40px; }
 
-/* line 69, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 71, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-content {
   width: 100%; }
 
-/* line 74, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 76, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-status-block {
   width: 120px;
   margin-right: -120px;
   cursor: pointer; }
-  /* line 80, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 82, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-task-box-status-block:hover {
     color: #338cae; }
 
-/* line 83, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 85, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-actions {
   width: 40px;
   margin-right: -150px; }
 
-/* line 89, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 91, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-add-subtask-btn-block {
   width: 30px;
   margin-left: -50px; }
 
-/* line 96, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 98, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-sortable li ol .project-task-box-checkbox, .project-tasks-list-sortable li ol .project-task-box-child-counter {
   margin-left: -12px; }
 
-/* line 107, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 109, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-checkbox, .project-task-box-child-counter {
   display: inline-block; }
 
-/* line 110, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 112, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-checkbox {
   margin-right: 6px; }
 
-/* line 113, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 115, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-level {
   display: inline-block;
   margin-right: -5px; }
 
-/* line 119, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 121, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-status-date .month {
   font-size: 12px; }
 
-/* line 122, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 124, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-navbar-checkbox {
   margin-right: 1em; }
-  /* line 125, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 127, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-tasks-list-navbar-checkbox label {
     padding-top: 9px;
     padding-bottom: 9px; }
 
-/* line 130, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 132, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-navbar-checkbox-input {
   margin-right: 3px; }
 
-/* line 133, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 135, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-users-filters-block {
   display: block;
   padding: 10px 15px;
   border-top: 1px solid #e7e7e7; }
 
-/* line 138, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 140, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-stats {
   padding-right: 5px;
   font-size: 11px; }
 
-/* line 142, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 144, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .placeholder {
   outline: 1px dashed #4183C4; }
 
-/* line 145, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 147, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .mjs-nestedSortable-error {
   background: #fbe3e4;
   border-color: transparent; }
 
-/* line 149, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 151, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
   border-color: #999; }
 
-/* line 152, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 154, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .disclose, .expandEditor {
   cursor: pointer;
   width: 20px;
   display: none; }
 
-/* line 157, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 159, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .sortable li.mjs-nestedSortable-collapsed > ol {
   display: none; }
 
-/* line 160, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 162, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .sortable li.mjs-nestedSortable-branch > div > .disclose {
   display: inline-block; }
 
-/* line 164, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 166, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-sortable li ol li:first-child {
   position: relative;
   background: white; }
@@ -25010,20 +25012,20 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
   /* line 211, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
   .project-tasks-list-sortable li ol li:first-child:after, .project-tasks-list-sortable li ol li:first-child:before {
     left: 32px; }
-/* line 167, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 169, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-sortable li ol li.placeholder {
   margin-left: 30px; }
-/* line 169, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 171, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-list-sortable li ol:before {
   border-bottom-color: #c8c8c8; }
 
-/* line 172, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 174, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-child-counter {
   background: #999999;
   padding: 3px 5px;
   font-size: 11px; }
 
-/* line 178, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 180, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-group-header {
   padding: 8px 15px;
   -moz-box-sizing: border-box;
@@ -25036,51 +25038,65 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
   -moz-transition: background 0.2s ease;
   -o-transition: background 0.2s ease;
   transition: background 0.2s ease; }
-  /* line 185, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 187, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-tasks-group-header:hover {
     background-color: #e2e2e2; }
-  /* line 188, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 190, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-tasks-group-header.project-tasks-group-header-blue {
     background-color: #9ebdfa; }
-    /* line 190, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+    /* line 192, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
     .project-tasks-group-header.project-tasks-group-header-blue:hover {
       background-color: #6d9cf8; }
-    /* line 192, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+    /* line 194, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
     .project-tasks-group-header.project-tasks-group-header-blue .project-tasks-group-title {
       color: #333;
       text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2); }
-  /* line 188, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 190, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-tasks-group-header.project-tasks-group-header-yellow {
     background-color: #fff180; }
-    /* line 190, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+    /* line 192, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
     .project-tasks-group-header.project-tasks-group-header-yellow:hover {
       background-color: #ffeb4d; }
-    /* line 192, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+    /* line 194, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
     .project-tasks-group-header.project-tasks-group-header-yellow .project-tasks-group-title {
       color: #333;
       text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2); }
-  /* line 188, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 190, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-tasks-group-header.project-tasks-group-header-green {
     background-color: #b1fbd6; }
-    /* line 190, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+    /* line 192, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
     .project-tasks-group-header.project-tasks-group-header-green:hover {
       background-color: #80f9bc; }
-    /* line 192, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+    /* line 194, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
     .project-tasks-group-header.project-tasks-group-header-green .project-tasks-group-title {
       color: #333;
       text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2); }
-  /* line 188, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 190, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-tasks-group-header.project-tasks-group-header-orange {
     background-color: #ffc799; }
-    /* line 190, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+    /* line 192, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
     .project-tasks-group-header.project-tasks-group-header-orange:hover {
       background-color: #ffab66; }
-    /* line 192, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+    /* line 194, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
     .project-tasks-group-header.project-tasks-group-header-orange .project-tasks-group-title {
       color: #333;
       text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2); }
 
-/* line 200, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 198, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+.project-tasks-group-title {
+  margin: 0;
+  height: 32px;
+  line-height: 32px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+/* line 211, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+.project-tasks-group-header-color-dropdown-menu {
+  width: auto;
+  min-width: 0; }
+
+/* line 216, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-group-header-color-bullet {
   display: inline-block;
   margin: 0 5px;
@@ -25094,54 +25110,48 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
   -webkit-border-radius: 100%;
   border-radius: 100%; }
 
-/* line 210, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 226, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-group-header-color-select-blue .project-tasks-group-header-color-bullet {
   background-color: #6d9cf8; }
 
-/* line 210, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 226, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-group-header-color-select-yellow .project-tasks-group-header-color-bullet {
   background-color: #ffeb4d; }
 
-/* line 210, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 226, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-group-header-color-select-green .project-tasks-group-header-color-bullet {
   background-color: #80f9bc; }
 
-/* line 210, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 226, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-group-header-color-select-orange .project-tasks-group-header-color-bullet {
   background-color: #ffab66; }
 
-/* line 213, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
-.project-tasks-group-title {
-  margin: 0;
-  height: 32px;
-  line-height: 32px; }
-
-/* line 218, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 229, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-tasks-group-header-form {
   margin-top: 10px;
   margin-bottom: 10px; }
 
-/* line 223, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 234, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-group-header-form-inputs {
   margin-bottom: 10px; }
 
-/* line 226, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 237, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-form {
   padding-top: 15px;
   padding-bottom: 30px; }
-  /* line 230, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 241, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-task-box-form, .project-task-box-form:hover {
     background-color: #f7f7f7;
     border-left: 5px solid #eeeeee; }
-  /* line 234, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+  /* line 245, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
   .project-task-box-template .project-task-box-form {
     margin-top: 15px; }
-    /* line 236, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+    /* line 247, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
     .project-task-box-template .project-task-box-form, .project-task-box-template .project-task-box-form:hover {
       background: none;
       border-left: none; }
 
-/* line 240, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 251, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-group-header-actions-fixed {
   position: fixed;
   z-index: 1000;
@@ -25152,13 +25162,13 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
   background-color: #eeeeee;
   margin-left: -15px; }
 
-/* line 252, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 263, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-progress-block {
   display: inline-block;
   margin-left: 1em;
   margin-right: 1em; }
 
-/* line 258, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
+/* line 269, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/tasks */
 .project-task-box-progress {
   display: inline-block;
   width: 100px;
