@@ -1,23 +1,23 @@
-/* line 1, /Users/imir/iq300/iq300-frontend/app/stylesheets/pdf.sass */
+/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pdf.sass */
 html, body {
   font-size: 13px;
   font-family: Arial, sans-serif;
   line-height: 19px; }
 
-/* line 6, /Users/imir/iq300/iq300-frontend/app/stylesheets/pdf.sass */
+/* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pdf.sass */
 html {
   margin: 0;
   padding: 0; }
 
-/* line 11, /Users/imir/iq300/iq300-frontend/app/stylesheets/pdf.sass */
+/* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pdf.sass */
 body > .pdf {
   background-color: white;
   border: none;
   padding: 10px; }
-/* line 16, /Users/imir/iq300/iq300-frontend/app/stylesheets/pdf.sass */
+/* line 16, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pdf.sass */
 body .paragraphs img {
   float: right; }
-/* line 18, /Users/imir/iq300/iq300-frontend/app/stylesheets/pdf.sass */
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pdf.sass */
 body .paragraphs li {
   padding-top: 10px;
   list-style-type: none; }

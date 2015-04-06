@@ -1,8 +1,8 @@
-/* line 1, /Users/imir/iq300/iq300-frontend/app/stylesheets/upgrade.sass */
+/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/upgrade.sass */
 .upgrade-block-browser-link {
   margin-top: 5px; }
 
-/* line 4, /Users/imir/iq300/iq300-frontend/app/stylesheets/upgrade.sass */
+/* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/upgrade.sass */
 .upgrade-block-inner {
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
   font-size: 12px;
@@ -14,7 +14,7 @@
   box-sizing: content-box;
   max-width: 700px; }
 
-/* line 15, /Users/imir/iq300/iq300-frontend/app/stylesheets/upgrade.sass */
+/* line 15, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/upgrade.sass */
 .upgrade-block-header {
   text-align: center;
   display: block;
@@ -27,21 +27,21 @@
   font-size: 3.5em;
   margin-bottom: 0.5em; }
 
-/* line 28, /Users/imir/iq300/iq300-frontend/app/stylesheets/upgrade.sass */
+/* line 28, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/upgrade.sass */
 .upgrade-block-inner p {
   text-align: center;
   padding: 5px;
   margin: 0;
   font-size: 1.4em;
   line-height: 1.4em; }
-/* line 34, /Users/imir/iq300/iq300-frontend/app/stylesheets/upgrade.sass */
+/* line 34, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/upgrade.sass */
 .upgrade-block-inner ul {
   list-style-image: none;
   list-style-position: outside;
   list-style-type: none;
   margin-top: 21px;
   padding: 0; }
-  /* line 40, /Users/imir/iq300/iq300-frontend/app/stylesheets/upgrade.sass */
+  /* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/upgrade.sass */
   .upgrade-block-inner ul li {
     cursor: pointer;
     float: left;
@@ -50,17 +50,17 @@
     margin: 0 10px 10px 10px;
     padding: 0;
     text-align: center; }
-/* line 48, /Users/imir/iq300/iq300-frontend/app/stylesheets/upgrade.sass */
+/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/upgrade.sass */
 .upgrade-block-inner li a {
   color: #333;
   font-size: 0.8em;
   text-decoration: none;
   padding: 0;
   margin: 0; }
-  /* line 54, /Users/imir/iq300/iq300-frontend/app/stylesheets/upgrade.sass */
+  /* line 54, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/upgrade.sass */
   .upgrade-block-inner li a:hover {
     text-decoration: underline; }
-/* line 56, /Users/imir/iq300/iq300-frontend/app/stylesheets/upgrade.sass */
+/* line 56, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/upgrade.sass */
 .upgrade-block-inner .upgrade-block-icon {
   width: 100px;
   height: 100px;
@@ -69,7 +69,7 @@
   background: transparent no-repeat scroll left top;
   cursor: pointer; }
 
-/* line 64, /Users/imir/iq300/iq300-frontend/app/stylesheets/upgrade.sass */
+/* line 64, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/upgrade.sass */
 .upgrade-block-close {
   clear: both;
   padding: 0;
