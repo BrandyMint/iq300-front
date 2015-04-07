@@ -1,0 +1,50 @@
+// new user block
+%user-block-btn
+  @extend .btn
+  @extend .btn-xs
+  width: 20px
+  height: 20px
+  line-height: 17px
+  text-align: right
+  margin:
+    right: 5px
+
+.user-block
+  @extend .media
+
+.user-block-avatar
+  @extend .pull-left
+
+.user-block-avatar-image
+  @extend .media-object
+  @extend .img-circle
+  width: $user-avatar-width
+  height: $user-avatar-width
+  +bordered
+
+.user-block-content
+  @extend .media-body
+
+.user-block-content-name
+  display: inline-block
+  margin-right: 8px
+
+.user-block-position
+  font-size: $font-size-small
+  color: $text-muted
+
+.user-block-add-btn
+  @extend %user-block-btn
+  font-size: 10px
+  @extend .btn-outline-primary
+
+.user-block-added-btn
+  @extend %user-block-btn
+  font-size: 10px
+  @extend .btn-outline-success
+
+.user-block-compose-btn
+  @extend %user-block-btn
+  @extend .btn-outline-primary
+
+
