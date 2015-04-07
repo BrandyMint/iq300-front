@@ -8,7 +8,7 @@
       .results{"ui-result-list" => ""}
   %section.customer
     %p.accessor-users-role Заказчик:
-    = partial 'tasks/show/accessor_users_item', locals: {contact: true}
+    = partial 'tasks/show/accessor_users_item', locals: {contact: true, online: true}
   %section.responsible
     %p.accessor-users-role Исполнитель:
     = partial 'tasks/show/accessor_users_item'

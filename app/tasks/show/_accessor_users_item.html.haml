@@ -1,8 +1,10 @@
 - contact = locals[:contact]
+- online = locals[:online]
 
 .user-block
   .user-block-avatar
     %img.user-block-avatar-image.member-box-avatar-image-small.img-corrector-initialized{:alt => "Ирина", :hide_wait_message => "true", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/903/medium_3d7ff819-199b-4666-92f8-07e1a14e036b.jpg", :style => "width:34px;height:34px;", :title => "Михайлова Ирина Николаевна"}/
+    .user-block-status-bullet{class: "user-status-bullet-#{online ? 'online' : 'offline'}"}
   .user-block-content
     %a.user-block-content-name{:href => "/users/1147", :role => "member-name"} Ирина Михайлова
     - if contact
