@@ -4,7 +4,7 @@
 %ol.project-tasks-list-sortable
   .hide{role: 'project-tasks-list-new-task'}
     = partial 'projects/tasks/new'
-  - milestone_colors = [:blue, :orange, :green, :yellow]
+  - milestone_colors = [:blue, :orange, :green, :yellow, '']
   - milestone_colors.each_with_index do |milestone_color, i|
     .project-tasks-group-header{role: 'project-group-header', class: "project-tasks-group-header-#{milestone_color}"}
       %div{role: 'project-group-header-content'}
