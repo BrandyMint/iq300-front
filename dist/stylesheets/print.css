@@ -4710,6 +4710,10 @@ div.dhx_modal_cover {
 .gantt_task_row .gantt_task_cell.current {
   border-left: 1px solid red; }
 
+/* line 72, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+.gannt-task-group {
+  visibility: hidden; }
+
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/gantt_print */
 .gantt_container {
   margin-top: 15px; }

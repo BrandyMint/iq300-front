@@ -179,84 +179,84 @@ a.with-plus-button {
     background-position: center 30%; }
 
 /* line 156, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description p, .folders-view-column > .column-content .object-details > .description p, .comments-list div.comment > .body p, section.project-view-column > .column-content > .object-details > div > .description p, .error-report-view-column section.description p {
+section.task-view-column > .column-content .object-details > .description p, .folders-view-column > .column-content .object-details > .description p, .comments-list div.comment > .body p, section.project-view-column > .column-content > .object-details > div > .description p {
   margin: 1em 0; }
 /* line 158, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description p:first-child, .folders-view-column > .column-content .object-details > .description p:first-child, .comments-list div.comment > .body p:first-child, section.project-view-column > .column-content > .object-details > div > .description p:first-child, .error-report-view-column section.description p:first-child {
+section.task-view-column > .column-content .object-details > .description p:first-child, .folders-view-column > .column-content .object-details > .description p:first-child, .comments-list div.comment > .body p:first-child, section.project-view-column > .column-content > .object-details > div > .description p:first-child {
   margin-top: 0; }
 /* line 160, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description p:last-child, .folders-view-column > .column-content .object-details > .description p:last-child, .comments-list div.comment > .body p:last-child, section.project-view-column > .column-content > .object-details > div > .description p:last-child, .error-report-view-column section.description p:last-child {
+section.task-view-column > .column-content .object-details > .description p:last-child, .folders-view-column > .column-content .object-details > .description p:last-child, .comments-list div.comment > .body p:last-child, section.project-view-column > .column-content > .object-details > div > .description p:last-child {
   margin-bottom: 0; }
 /* line 162, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description img, .folders-view-column > .column-content .object-details > .description img, .comments-list div.comment > .body img, section.project-view-column > .column-content > .object-details > div > .description img, .error-report-view-column section.description img {
+section.task-view-column > .column-content .object-details > .description img, .folders-view-column > .column-content .object-details > .description img, .comments-list div.comment > .body img, section.project-view-column > .column-content > .object-details > div > .description img {
   max-width: 100%; }
 /* line 164, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description h1, .folders-view-column > .column-content .object-details > .description h1, .comments-list div.comment > .body h1, section.project-view-column > .column-content > .object-details > div > .description h1, .error-report-view-column section.description h1, section.task-view-column > .column-content .object-details > .description h2, .folders-view-column > .column-content .object-details > .description h2, .comments-list div.comment > .body h2, section.project-view-column > .column-content > .object-details > div > .description h2, .error-report-view-column section.description h2, section.task-view-column > .column-content .object-details > .description h3, .folders-view-column > .column-content .object-details > .description h3, .comments-list div.comment > .body h3, section.project-view-column > .column-content > .object-details > div > .description h3, .error-report-view-column section.description h3, section.task-view-column > .column-content .object-details > .description h4, .folders-view-column > .column-content .object-details > .description h4, .comments-list div.comment > .body h4, section.project-view-column > .column-content > .object-details > div > .description h4, .error-report-view-column section.description h4, section.task-view-column > .column-content .object-details > .description h5, .folders-view-column > .column-content .object-details > .description h5, .comments-list div.comment > .body h5, section.project-view-column > .column-content > .object-details > div > .description h5, .error-report-view-column section.description h5, section.task-view-column > .column-content .object-details > .description h6, .folders-view-column > .column-content .object-details > .description h6, .comments-list div.comment > .body h6, section.project-view-column > .column-content > .object-details > div > .description h6, .error-report-view-column section.description h6 {
+section.task-view-column > .column-content .object-details > .description h1, .folders-view-column > .column-content .object-details > .description h1, .comments-list div.comment > .body h1, section.project-view-column > .column-content > .object-details > div > .description h1, section.task-view-column > .column-content .object-details > .description h2, .folders-view-column > .column-content .object-details > .description h2, .comments-list div.comment > .body h2, section.project-view-column > .column-content > .object-details > div > .description h2, section.task-view-column > .column-content .object-details > .description h3, .folders-view-column > .column-content .object-details > .description h3, .comments-list div.comment > .body h3, section.project-view-column > .column-content > .object-details > div > .description h3, section.task-view-column > .column-content .object-details > .description h4, .folders-view-column > .column-content .object-details > .description h4, .comments-list div.comment > .body h4, section.project-view-column > .column-content > .object-details > div > .description h4, section.task-view-column > .column-content .object-details > .description h5, .folders-view-column > .column-content .object-details > .description h5, .comments-list div.comment > .body h5, section.project-view-column > .column-content > .object-details > div > .description h5, section.task-view-column > .column-content .object-details > .description h6, .folders-view-column > .column-content .object-details > .description h6, .comments-list div.comment > .body h6, section.project-view-column > .column-content > .object-details > div > .description h6 {
   font-weight: normal;
   color: #666666;
   line-height: 1em; }
 /* line 168, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description h4, .folders-view-column > .column-content .object-details > .description h4, .comments-list div.comment > .body h4, section.project-view-column > .column-content > .object-details > div > .description h4, .error-report-view-column section.description h4, section.task-view-column > .column-content .object-details > .description h5, .folders-view-column > .column-content .object-details > .description h5, .comments-list div.comment > .body h5, section.project-view-column > .column-content > .object-details > div > .description h5, .error-report-view-column section.description h5, section.task-view-column > .column-content .object-details > .description h6, .folders-view-column > .column-content .object-details > .description h6, .comments-list div.comment > .body h6, section.project-view-column > .column-content > .object-details > div > .description h6, .error-report-view-column section.description h6 {
+section.task-view-column > .column-content .object-details > .description h4, .folders-view-column > .column-content .object-details > .description h4, .comments-list div.comment > .body h4, section.project-view-column > .column-content > .object-details > div > .description h4, section.task-view-column > .column-content .object-details > .description h5, .folders-view-column > .column-content .object-details > .description h5, .comments-list div.comment > .body h5, section.project-view-column > .column-content > .object-details > div > .description h5, section.task-view-column > .column-content .object-details > .description h6, .folders-view-column > .column-content .object-details > .description h6, .comments-list div.comment > .body h6, section.project-view-column > .column-content > .object-details > div > .description h6 {
   font-weight: bold; }
 /* line 170, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description h1, .folders-view-column > .column-content .object-details > .description h1, .comments-list div.comment > .body h1, section.project-view-column > .column-content > .object-details > div > .description h1, .error-report-view-column section.description h1 {
+section.task-view-column > .column-content .object-details > .description h1, .folders-view-column > .column-content .object-details > .description h1, .comments-list div.comment > .body h1, section.project-view-column > .column-content > .object-details > div > .description h1 {
   font-size: 2.5em; }
 /* line 172, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description h2, .folders-view-column > .column-content .object-details > .description h2, .comments-list div.comment > .body h2, section.project-view-column > .column-content > .object-details > div > .description h2, .error-report-view-column section.description h2 {
+section.task-view-column > .column-content .object-details > .description h2, .folders-view-column > .column-content .object-details > .description h2, .comments-list div.comment > .body h2, section.project-view-column > .column-content > .object-details > div > .description h2 {
   font-size: 2em; }
 /* line 174, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description h3, .folders-view-column > .column-content .object-details > .description h3, .comments-list div.comment > .body h3, section.project-view-column > .column-content > .object-details > div > .description h3, .error-report-view-column section.description h3 {
+section.task-view-column > .column-content .object-details > .description h3, .folders-view-column > .column-content .object-details > .description h3, .comments-list div.comment > .body h3, section.project-view-column > .column-content > .object-details > div > .description h3 {
   font-size: 1.5em; }
 /* line 176, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description h4, .folders-view-column > .column-content .object-details > .description h4, .comments-list div.comment > .body h4, section.project-view-column > .column-content > .object-details > div > .description h4, .error-report-view-column section.description h4 {
+section.task-view-column > .column-content .object-details > .description h4, .folders-view-column > .column-content .object-details > .description h4, .comments-list div.comment > .body h4, section.project-view-column > .column-content > .object-details > div > .description h4 {
   font-size: 1.2em; }
 /* line 178, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description h5, .folders-view-column > .column-content .object-details > .description h5, .comments-list div.comment > .body h5, section.project-view-column > .column-content > .object-details > div > .description h5, .error-report-view-column section.description h5 {
+section.task-view-column > .column-content .object-details > .description h5, .folders-view-column > .column-content .object-details > .description h5, .comments-list div.comment > .body h5, section.project-view-column > .column-content > .object-details > div > .description h5 {
   font-size: 1em; }
 /* line 180, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description h6, .folders-view-column > .column-content .object-details > .description h6, .comments-list div.comment > .body h6, section.project-view-column > .column-content > .object-details > div > .description h6, .error-report-view-column section.description h6 {
+section.task-view-column > .column-content .object-details > .description h6, .folders-view-column > .column-content .object-details > .description h6, .comments-list div.comment > .body h6, section.project-view-column > .column-content > .object-details > div > .description h6 {
   font-size: 0.9em; }
 /* line 182, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description pre, .folders-view-column > .column-content .object-details > .description pre, .comments-list div.comment > .body pre, section.project-view-column > .column-content > .object-details > div > .description pre, .error-report-view-column section.description pre, section.task-view-column > .column-content .object-details > .description code, .folders-view-column > .column-content .object-details > .description code, .comments-list div.comment > .body code, section.project-view-column > .column-content > .object-details > div > .description code, .error-report-view-column section.description code, section.task-view-column > .column-content .object-details > .description kbd, .folders-view-column > .column-content .object-details > .description kbd, .comments-list div.comment > .body kbd, section.project-view-column > .column-content > .object-details > div > .description kbd, .error-report-view-column section.description kbd, section.task-view-column > .column-content .object-details > .description samp, .folders-view-column > .column-content .object-details > .description samp, .comments-list div.comment > .body samp, section.project-view-column > .column-content > .object-details > div > .description samp, .error-report-view-column section.description samp {
+section.task-view-column > .column-content .object-details > .description pre, .folders-view-column > .column-content .object-details > .description pre, .comments-list div.comment > .body pre, section.project-view-column > .column-content > .object-details > div > .description pre, section.task-view-column > .column-content .object-details > .description code, .folders-view-column > .column-content .object-details > .description code, .comments-list div.comment > .body code, section.project-view-column > .column-content > .object-details > div > .description code, section.task-view-column > .column-content .object-details > .description kbd, .folders-view-column > .column-content .object-details > .description kbd, .comments-list div.comment > .body kbd, section.project-view-column > .column-content > .object-details > div > .description kbd, section.task-view-column > .column-content .object-details > .description samp, .folders-view-column > .column-content .object-details > .description samp, .comments-list div.comment > .body samp, section.project-view-column > .column-content > .object-details > div > .description samp {
   color: #666666;
   font-family: monospace, monospace;
   _font-family: "courier new", monospace;
   font-size: 0.98em; }
 /* line 187, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description b, .folders-view-column > .column-content .object-details > .description b, .comments-list div.comment > .body b, section.project-view-column > .column-content > .object-details > div > .description b, .error-report-view-column section.description b, section.task-view-column > .column-content .object-details > .description strong, .folders-view-column > .column-content .object-details > .description strong, .comments-list div.comment > .body strong, section.project-view-column > .column-content > .object-details > div > .description strong, .error-report-view-column section.description strong {
+section.task-view-column > .column-content .object-details > .description b, .folders-view-column > .column-content .object-details > .description b, .comments-list div.comment > .body b, section.project-view-column > .column-content > .object-details > div > .description b, section.task-view-column > .column-content .object-details > .description strong, .folders-view-column > .column-content .object-details > .description strong, .comments-list div.comment > .body strong, section.project-view-column > .column-content > .object-details > div > .description strong {
   font-weight: bold; }
 /* line 189, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description em, .folders-view-column > .column-content .object-details > .description em, .comments-list div.comment > .body em, section.project-view-column > .column-content > .object-details > div > .description em, .error-report-view-column section.description em {
+section.task-view-column > .column-content .object-details > .description em, .folders-view-column > .column-content .object-details > .description em, .comments-list div.comment > .body em, section.project-view-column > .column-content > .object-details > div > .description em {
   font-style: italic; }
 /* line 191, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description .mention.people, .folders-view-column > .column-content .object-details > .description .mention.people, .comments-list div.comment > .body .mention.people, section.project-view-column > .column-content > .object-details > div > .description .mention.people, .error-report-view-column section.description .mention.people {
+section.task-view-column > .column-content .object-details > .description .mention.people, .folders-view-column > .column-content .object-details > .description .mention.people, .comments-list div.comment > .body .mention.people, section.project-view-column > .column-content > .object-details > div > .description .mention.people {
   font-style: normal; }
 /* line 193, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description ul, .folders-view-column > .column-content .object-details > .description ul, .comments-list div.comment > .body ul, section.project-view-column > .column-content > .object-details > div > .description ul, .error-report-view-column section.description ul, section.task-view-column > .column-content .object-details > .description ol, .folders-view-column > .column-content .object-details > .description ol, .comments-list div.comment > .body ol, section.project-view-column > .column-content > .object-details > div > .description ol, .error-report-view-column section.description ol {
+section.task-view-column > .column-content .object-details > .description ul, .folders-view-column > .column-content .object-details > .description ul, .comments-list div.comment > .body ul, section.project-view-column > .column-content > .object-details > div > .description ul, section.task-view-column > .column-content .object-details > .description ol, .folders-view-column > .column-content .object-details > .description ol, .comments-list div.comment > .body ol, section.project-view-column > .column-content > .object-details > div > .description ol {
   margin: 1em 0;
   padding: 0 0 0 2em; }
 /* line 196, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description ul li, .folders-view-column > .column-content .object-details > .description ul li, .comments-list div.comment > .body ul li, section.project-view-column > .column-content > .object-details > div > .description ul li, .error-report-view-column section.description ul li {
+section.task-view-column > .column-content .object-details > .description ul li, .folders-view-column > .column-content .object-details > .description ul li, .comments-list div.comment > .body ul li, section.project-view-column > .column-content > .object-details > div > .description ul li {
   list-style-type: disc;
   list-style-position: inside; }
 /* line 199, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description ol li, .folders-view-column > .column-content .object-details > .description ol li, .comments-list div.comment > .body ol li, section.project-view-column > .column-content > .object-details > div > .description ol li, .error-report-view-column section.description ol li {
+section.task-view-column > .column-content .object-details > .description ol li, .folders-view-column > .column-content .object-details > .description ol li, .comments-list div.comment > .body ol li, section.project-view-column > .column-content > .object-details > div > .description ol li {
   list-style-type: decimal;
   list-style-position: inside; }
 /* line 202, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description li p:last-child, .folders-view-column > .column-content .object-details > .description li p:last-child, .comments-list div.comment > .body li p:last-child, section.project-view-column > .column-content > .object-details > div > .description li p:last-child, .error-report-view-column section.description li p:last-child {
+section.task-view-column > .column-content .object-details > .description li p:last-child, .folders-view-column > .column-content .object-details > .description li p:last-child, .comments-list div.comment > .body li p:last-child, section.project-view-column > .column-content > .object-details > div > .description li p:last-child {
   margin: 0; }
 /* line 204, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description img, .folders-view-column > .column-content .object-details > .description img, .comments-list div.comment > .body img, section.project-view-column > .column-content > .object-details > div > .description img, .error-report-view-column section.description img {
+section.task-view-column > .column-content .object-details > .description img, .folders-view-column > .column-content .object-details > .description img, .comments-list div.comment > .body img, section.project-view-column > .column-content > .object-details > div > .description img {
   border: 0;
   -ms-interpolation-mode: bicubic;
   vertical-align: middle; }
 /* line 208, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description table, .folders-view-column > .column-content .object-details > .description table, .comments-list div.comment > .body table, section.project-view-column > .column-content > .object-details > div > .description table, .error-report-view-column section.description table {
+section.task-view-column > .column-content .object-details > .description table, .folders-view-column > .column-content .object-details > .description table, .comments-list div.comment > .body table, section.project-view-column > .column-content > .object-details > div > .description table {
   border-collapse: collapse;
   border-spacing: 0; }
 /* line 211, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
-section.task-view-column > .column-content .object-details > .description td, .folders-view-column > .column-content .object-details > .description td, .comments-list div.comment > .body td, section.project-view-column > .column-content > .object-details > div > .description td, .error-report-view-column section.description td {
+section.task-view-column > .column-content .object-details > .description td, .folders-view-column > .column-content .object-details > .description td, .comments-list div.comment > .body td, section.project-view-column > .column-content > .object-details > div > .description td {
   vertical-align: top; }
 
 /* line 215, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
@@ -11076,54 +11076,21 @@ disabled look for disabled choices in the results dropdown
   overflow: visible;
   /* allow content to popup out (i.e tooltips) */ }
 
-/* elvir additional css styles BEGIN */
-/* line 70, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
-.modal .btn, .modal .popover-form-submit-btn, .modal .fullcalendar-event-form-submit-btn, .modal .community-invites-btn-base, .modal .community-invites-btn-check, .modal .community-invites-btn-send, .modal .project-form-team-member-btn, .modal .project-form-team-member-selected-btn, .modal .project-task-box-add-subtask-btn, .modal .project-task-box-actions-btn, .modal .project-tasks-group-header-color-select, .modal .project-discussions-form-btn {
-  display: inline-block;
-  padding: 4px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 20px;
-  color: #333333;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  vertical-align: middle;
-  cursor: pointer;
-  background-color: #f5f5f5;
-  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
-  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
-  background-repeat: repeat-x;
-  border: 1px solid #cccccc;
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
-
-/* line 102, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 67, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal .modal-header h4 {
   padding: 14px; }
 
-/* line 105, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 70, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal .modal-header {
   color: #999;
   border-bottom: 1px; }
 
-/* line 109, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 74, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal .btn.close, .modal .close.popover-form-submit-btn, .modal .close.fullcalendar-event-form-submit-btn, .modal .close.community-invites-btn-base, .modal .close.community-invites-btn-check, .modal .close.community-invites-btn-send, .modal .close.project-form-team-member-btn, .modal .close.project-form-team-member-selected-btn, .modal .close.project-task-box-add-subtask-btn, .modal .close.project-task-box-actions-btn, .modal .close.project-tasks-group-header-color-select, .modal .close.project-discussions-form-btn {
   float: right; }
 
 /* elvir additional css styles END */
-/* line 115, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 81, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal.fade {
   top: -1000px;
   -webkit-transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out;
@@ -11131,21 +11098,22 @@ disabled look for disabled choices in the results dropdown
   -o-transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out;
   transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out; }
 
-/* line 123, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 89, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal.fade.in {
-  top: 50%; }
+  top: 10%;
+  left: 25%; }
 
-/* line 127, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 94, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal-body {
   max-height: none;
   overflow: visible; }
 
-/* line 132, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 99, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal.modal-absolute {
   position: absolute;
   z-index: 950; }
 
-/* line 137, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 104, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal .loading-mask {
   position: absolute;
   top: 0;
@@ -11156,50 +11124,50 @@ disabled look for disabled choices in the results dropdown
   border-radius: 6px;
   z-index: 2000; }
 
-/* line 148, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 115, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal-backdrop.modal-absolute {
   position: absolute;
   z-index: 940; }
 
-/* line 154, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 121, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal-backdrop, .modal-backdrop.fade.in {
   opacity: 0.7;
   filter: alpha(opacity=70);
   background: #fff; }
 
-/* line 160, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 127, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal.container {
   width: 940px;
   margin-left: -470px; }
 
 /* Modal Overflow */
-/* line 167, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 134, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal-overflow.modal {
   top: 1%; }
 
-/* line 171, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 138, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal-overflow.modal.fade {
   top: -100%; }
 
-/* line 175, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 142, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal-overflow.modal.fade.in {
   top: 1%; }
 
-/* line 179, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 146, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .modal-overflow .modal-body {
   overflow: auto;
   -webkit-overflow-scrolling: touch; }
 
 /* Responsive */
 @media (min-width: 1200px) {
-  /* line 187, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 154, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   .modal.container {
     width: 1170px;
     margin-left: -585px; }
  }
 
 @media (max-width: 979px) {
-  /* line 196, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 163, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   .modal, .modal.container, .modal.modal-overflow {
     top: 1%;
     right: 1%;
@@ -11210,12 +11178,12 @@ disabled look for disabled choices in the results dropdown
     margin: 0 !important;
     padding: 0 !important; }
 
-  /* line 209, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 176, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   .modal.fade.in, .modal.container.fade.in, .modal.modal-overflow.fade.in {
     top: 1%;
     bottom: auto; }
 
-  /* line 215, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 182, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   .modal-body, .modal-overflow .modal-body {
     position: static;
     margin: 0;
@@ -11223,12 +11191,13 @@ disabled look for disabled choices in the results dropdown
     max-height: none !important;
     overflow: visible !important; }
 
-  /* line 224, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 191, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   .modal-footer, .modal-overflow .modal-footer {
-    position: static; }
+    position: static;
+    padding-bottom: 10px; }
  }
 
-/* line 229, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 197, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .loading-spinner {
   position: absolute;
   top: 50%;
@@ -11240,7 +11209,7 @@ Animate.css - http://daneden.me/animate
 Licensed under the ☺ license (http://licence.visualidiot.com/)
 
 Copyright (c) 2012 Dan Eden*/
-/* line 242, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 210, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .animated {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
@@ -11252,58 +11221,58 @@ Copyright (c) 2012 Dan Eden*/
   animation-fill-mode: both; }
 
 @-webkit-keyframes shake {
-  /* line 254, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 222, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   0%, 100% {
     -webkit-transform: translateX(0); }
 
-  /* line 255, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 223, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px); }
 
-  /* line 256, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 224, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px); } }
 
 @-moz-keyframes shake {
-  /* line 260, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 228, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   0%, 100% {
     -moz-transform: translateX(0); }
 
-  /* line 261, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 229, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   10%, 30%, 50%, 70%, 90% {
     -moz-transform: translateX(-10px); }
 
-  /* line 262, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 230, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   20%, 40%, 60%, 80% {
     -moz-transform: translateX(10px); } }
 
 @-o-keyframes shake {
-  /* line 266, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 234, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   0%, 100% {
     -o-transform: translateX(0); }
 
-  /* line 267, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 235, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   10%, 30%, 50%, 70%, 90% {
     -o-transform: translateX(-10px); }
 
-  /* line 268, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 236, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   20%, 40%, 60%, 80% {
     -o-transform: translateX(10px); } }
 
 @keyframes shake {
-  /* line 272, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 240, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   0%, 100% {
     transform: translateX(0); }
 
-  /* line 273, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 241, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-10px); }
 
-  /* line 274, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+  /* line 242, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
   20%, 40%, 60%, 80% {
     transform: translateX(10px); } }
 
-/* line 277, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
+/* line 245, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
 .shake {
   -webkit-animation-name: shake;
   -moz-animation-name: shake;
@@ -17217,11 +17186,15 @@ a.task-box-block-link {
     font-size: 16px;
     font-weight: 600; }
 
-/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+input[type="submit"].btn, input[type="submit"].popover-form-submit-btn, input[type="submit"].fullcalendar-event-form-submit-btn, input[type="submit"].community-invites-btn-base, input[type="submit"].community-invites-btn-check, input[type="submit"].community-invites-btn-send, input[type="submit"].project-form-team-member-btn, input[type="submit"].project-form-team-member-selected-btn, input[type="submit"].project-task-box-add-subtask-btn, input[type="submit"].project-task-box-actions-btn, input[type="submit"].project-tasks-group-header-color-select, input[type="submit"].project-discussions-form-btn {
+  font-weight: 600; }
+
+/* line 5, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-file {
   position: relative;
   overflow: hidden; }
-  /* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-file input[type="file"] {
     opacity: 0;
     position: absolute;
@@ -17230,103 +17203,103 @@ a.task-box-block-link {
     z-index: 0;
     font-size: 300%; }
 
-/* line 14, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-link-plain, .btn-link-plain:hover, .btn-link-plain:focus {
   text-decoration: none; }
 
-/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-link-white {
   color: #fff; }
-  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-link-white:hover {
     color: #e6e6e6; }
 
-/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-link-gray-lighter {
   color: #eeeeee; }
-  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-link-gray-lighter:hover {
     color: #d5d5d5; }
 
-/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-link-gray-light {
   color: #999999; }
-  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-link-gray-light:hover {
     color: gray; }
 
-/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-link-gray {
   color: #555555; }
-  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-link-gray:hover {
     color: #3c3c3c; }
 
-/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-link-success {
   color: #3ab54a; }
-  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-link-success:hover {
     color: #2e8e3a; }
 
-/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-link-danger {
   color: #ff0101; }
-  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-link-danger:hover {
     color: #cd0000; }
 
-/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-link-warning {
   color: #f8931f; }
-  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-link-warning:hover {
     color: #dd7907; }
 
-/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-link-primary {
   color: #338cae; }
-  /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-link-primary:hover {
     color: #276c87; }
 
-/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-outline-gray-light {
   color: #999999;
   border-color: #e6e6e6; }
-  /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 33, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-outline-gray-light:hover, .btn-outline-gray-light:hover {
     color: gray;
     border-color: #cccccc; }
 
-/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-outline-gray {
   color: #555555;
   border-color: #a2a2a2; }
-  /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 33, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-outline-gray:hover, .btn-outline-gray:hover {
     color: #3c3c3c;
     border-color: #888888; }
 
-/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-outline-danger {
   color: #ff0101;
   border-color: #ff9a9a; }
-  /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 33, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-outline-danger:hover, .btn-outline-danger:hover {
     color: #cd0000;
     border-color: #ff6767; }
 
-/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-outline-primary, .popover-form-submit-btn, .fullcalendar-event-form-submit-btn, .popover .popover-form-submit-btn, .popover-form-block .popover-form-submit-btn, .fullcalendar-event-popover .popover-form-submit-btn, .notifications-widget-popover .popover-form-submit-btn, .popover .fullcalendar-event-form-submit-btn, .popover-form-block .fullcalendar-event-form-submit-btn, .fullcalendar-event-popover .fullcalendar-event-form-submit-btn, .notifications-widget-popover .fullcalendar-event-form-submit-btn {
   color: #338cae;
   border-color: #99cde1; }
-  /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 33, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-outline-primary:hover, .popover-form-submit-btn:hover, .fullcalendar-event-form-submit-btn:hover, .btn-outline-primary:hover, .popover-form-submit-btn:hover, .fullcalendar-event-form-submit-btn:hover {
     color: #276c87;
     border-color: #71bad6; }
 
-/* line 33, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 37, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-base, .community-invites-btn-check, .community-invites-btn-send {
   width: 20%;
   background-color: #3daddf;
@@ -17336,20 +17309,20 @@ a.task-box-block-link {
   padding-left: 4em;
   padding-right: 4em;
   font-weight: normal; }
-  /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 47, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .community-invites-btn-base:hover, .community-invites-btn-check:hover, .community-invites-btn-send:hover, .community-invites-btn-base:focus, .community-invites-btn-check:focus, .community-invites-btn-send:focus {
     color: white;
     background-color: #2194c8; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
   .community-invites-btn-base:active, .community-invites-btn-check:active, .community-invites-btn-send:active {
     color: #fff !important; }
 
-/* line 49, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 53, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-check {
   margin-right: 4em;
   float: right; }
 
-/* line 54, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 58, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-send {
   margin-top: 1.8em;
   margin-right: 4em;
@@ -20150,6 +20123,10 @@ section.reminders {
 .task-discussion .comments-list {
   padding-bottom: 40px;
   margin-top: 0; }
+
+/* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/show */
+.tasks-refuse-modal {
+  width: 500px; }
 
 /* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/subtasks */
 section.subtask-list > div {
@@ -25370,6 +25347,10 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
 .gantt_task_row .gantt_task_cell.current {
   border-left: 1px solid red; }
 
+/* line 72, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/gantt_custom */
+.gannt-task-group {
+  visibility: hidden; }
+
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/projects/participants */
 .project-participants {
   margin: 0; }
@@ -29498,232 +29479,33 @@ section.subtop.create-contact-window .results {
       .help-page > section.help-article > section.body img {
         max-width: 100%; }
 
-/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-.error-reports-form {
-  padding-top: 34px;
-  padding-left: 69px;
-  padding-right: 76px;
-  padding-bottom: 34px; }
-  /* line 7, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  .error-reports-form > form {
-    margin-top: 20px; }
-    /* line 9, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-    .error-reports-form > form > .input {
-      margin-bottom: 18px; }
-      /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-      .error-reports-form > form > .input label {
-        display: block;
-        margin-bottom: 7px;
-        color: #999999; }
-      /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-      .error-reports-form > form > .input input {
-        border: 1px solid #cccccc;
-        background: #f1f5f6;
-        padding: 5px 11px;
-        line-height: 19px;
-        height: 31px;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        color: #666666;
-        width: 326px;
-        zoom: 1;
-        display: inline;
-        display: -moz-inline-box;
-        display: inline-block;
-        *display: inline;
-        vertical-align: top; }
-        /* line 128, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-        .error-reports-form > form > .input input::-webkit-input-placeholder {
-          color: #999999; }
-        /* line 130, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-        .error-reports-form > form > .input input:-moz-placeholder {
-          color: #999999; }
-        /* line 132, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-        .error-reports-form > form > .input input:-ms-input-placeholder {
-          color: #999999; }
-        /* line 28, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-        .error-reports-form > form > .input input.full-width {
-          width: 100%; }
-      /* line 30, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-      .error-reports-form > form > .input > select {
-        width: 326px;
-        zoom: 1;
-        display: inline;
-        display: -moz-inline-box;
-        display: inline-block;
-        *display: inline;
-        vertical-align: top; }
-      /* line 33, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-      .error-reports-form > form > .input > span.right {
-        margin-left: 40px;
-        zoom: 1;
-        display: inline;
-        display: -moz-inline-box;
-        display: inline-block;
-        *display: inline;
-        vertical-align: top;
-        line-height: 28px; }
-        /* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-        .error-reports-form > form > .input > span.right > * {
-          zoom: 1;
-          display: inline;
-          display: -moz-inline-box;
-          display: inline-block;
-          *display: inline;
-          vertical-align: middle; }
-        /* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-        .error-reports-form > form > .input > span.right label {
-          color: #666666;
-          margin: 0 0 0 7px; }
-    /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-    .error-reports-form > form > section.description label {
-      color: #999999; }
-    /* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-    .error-reports-form > form > section.description textarea {
-      margin-top: 15px;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 100%;
-      height: 117px;
-      border: 1px solid #cccccc;
-      background: #f1f5f6;
-      padding: 10px 13px;
-      color: #666666;
-      line-height: 19px;
-      font-size: 13px;
-      font-family: Arial, sans-serif; }
-    /* line 57, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-    .error-reports-form > form > section.fileupload_multiple label {
-      color: #999999; }
-      /* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-      .error-reports-form > form > section.fileupload_multiple label.error {
-        color: red; }
-    /* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-    .error-reports-form > form > section.fileupload_multiple .info > span {
-      font-size: 10px;
-      display: block;
-      color: #999999;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap; }
-    /* line 67, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-    .error-reports-form > form > .buttons {
-      margin-top: 40px; }
-      /* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-      .error-reports-form > form > .buttons > * {
-        zoom: 1;
-        display: inline;
-        display: -moz-inline-box;
-        display: inline-block;
-        *display: inline;
-        vertical-align: top; }
-      /* line 70, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-      .error-reports-form > form > .buttons > * {
-        margin: 0;
-        line-height: 20px;
-        color: #328bab; }
-      /* line 74, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-      .error-reports-form > form > .buttons a {
-        padding: 5px;
-        margin-left: 12px; }
-        /* line 77, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-        .error-reports-form > form > .buttons a ~ a {
-          margin-left: 20px; }
-        /* line 79, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-        .error-reports-form > form > .buttons a.delete {
-          color: #ff2021; }
-      /* line 81, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-      .error-reports-form > form > .buttons input {
-        padding: 5px 21px;
-        -webkit-appearance: none;
-        color: white;
-        background: #338cae;
-        border: none;
-        cursor: pointer; }
+/* line 2, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports/show */
+.error-report-item .item-title {
+  margin: 0; }
 
-/* line 90, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-section.error-reports-list-column ul li {
-  color: #666666; }
-  /* line 91, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  section.error-reports-list-column ul li > * {
-    padding: 0 0.9%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
-  /* line 95, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  section.error-reports-list-column ul li.active {
-    color: white; }
-  /* line 97, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  section.error-reports-list-column ul li .id {
-    width: 4%; }
-  /* line 99, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  section.error-reports-list-column ul li .date {
-    width: 7%; }
-  /* line 101, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  section.error-reports-list-column ul li .status {
-    width: 8%; }
-  /* line 103, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  section.error-reports-list-column ul li .title {
-    width: 41%;
-    font-weight: bold; }
-  /* line 106, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  section.error-reports-list-column ul li .author {
-    width: 20%; }
-  /* line 108, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  section.error-reports-list-column ul li .comments {
-    width: 7%;
-    font-size: 10px; }
-    /* line 111, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-    section.error-reports-list-column ul li .comments i {
-      margin-left: 3px; }
-  /* line 114, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  section.error-reports-list-column ul li.header > div > a {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
+/* line 5, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports/show */
+.error-report-description {
+  font-size: 15px; }
 
-/* line 120, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-.error-report-view-column .report-status, section.error-reports-list-column .report-status {
-  font-weight: bold; }
-  /* line 122, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  .error-report-view-column .report-status.in_work, section.error-reports-list-column .report-status.in_work {
-    color: #1da2a2; }
-  /* line 124, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  .error-report-view-column .report-status.completed, section.error-reports-list-column .report-status.completed {
-    color: green; }
+/* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports/show */
+.error-report-link {
+  color: #3fabf3; }
 
-/* line 128, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-.error-report-view-column h2 {
-  margin-top: 15px;
-  margin-bottom: 15px; }
-/* line 134, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-.error-report-view-column .object-details > ul > li {
-  color: #666666; }
-  /* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
-  .error-report-view-column .object-details > ul > li > * {
-    zoom: 1;
-    display: inline;
-    display: -moz-inline-box;
-    display: inline-block;
-    *display: inline;
-    vertical-align: top; }
-  /* line 137, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  .error-report-view-column .object-details > ul > li > label {
-    color: #888888;
-    font-weight: bold;
-    width: 57px; }
-  /* line 141, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  .error-report-view-column .object-details > ul > li > span {
-    margin-left: 10px; }
-/* line 144, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-.error-report-view-column section.description {
-  margin: 18px 0;
-  color: #666666; }
-  /* line 147, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports */
-  .error-report-view-column section.description p ~ p {
-    margin-top: 0.75em; }
+/* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports/show */
+.error-report-modal-content {
+  padding: 15px; }
+
+/* line 14, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports/show */
+.error-report-modal-body {
+  margin-top: 20px; }
+
+/* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports/show */
+.error-report-modal-footer {
+  padding-bottom: 15px; }
+
+/* line 20, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/error_reports/show */
+.error-report-icon {
+  font-size: 20px; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/contracts/list-column */
 section.contracts-list-column {
