@@ -1,12 +1,11 @@
-//.projects-list-column {
-//}
-
 .project-box
   @extend %task-box-style
-  @extend .project-task-box
+  @extend %project-task-box-style
   padding:
     top: $grid-gutter-width / 2
     bottom: $grid-gutter-width / 2
+    left: $grid-gutter-width
+    right: $grid-gutter-width*2
   &.project-box-project-overdued
     @extend %task-overdued-style
     border-left-color: $overdued-item-border-color

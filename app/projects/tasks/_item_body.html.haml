@@ -5,14 +5,18 @@
 - is_root = locals[:is_root] || false
 - project_id = 1 + rand(1000)
 - group_color = locals[:group_color] || ''
+- subtask_btn = is_root && true
+- controls_checkbox = true
 
-.task-box.project-task-box{class: "task-#{status} task-#{status_accented}", role: 'jump project-task-box', data: {href: '../../../tasks/show', project_id: project_id}}
+.task-box.project-task-box{class: "task-#{status} task-#{status_accented} #{subtask_btn ? '' : 'project-task-box-without-subtask-btn'} #{controls_checkbox ? '' : 'project-task-box-without-checkbox'}",
+      role: 'jump project-task-box', data: {href: '../../../tasks/show', project_id: project_id}}
   .project-task-box-controls
-    %label.project-task-box-checkbox
-      %input{type: 'checkbox'}
+    - if controls_checkbox
+      %label.project-task-box-checkbox
+        %input{type: 'checkbox'}
     .project-task-box-level
       = number
-  - if is_root
+  - if is_root && subtask_btn
     .project-task-box-add-subtask-btn-block
       = link_to "#", role: :tooltip, data: {'original-title' => 'Добавить подзадачу'}, class: 'project-task-box-add-subtask-btn' do
         %i.icon-plus
