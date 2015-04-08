@@ -32,3 +32,29 @@ body.tasks-show
   .task-view-column
     padding: 0
     background-color: $bg-light-grey
+
+//From iq300 head.haml
+body
+  &.contacts-index .top-panel, &.restrictions-index .top-panel
+    display: none !important
+  &.communities-index
+    .top-panel
+      display: none !important
+    .filters-column, .communities-content-column
+      top: 55px !important
+
+.edit_user .jcrop-holder div
+  -webkit-border-radius: 50% !important
+  -moz-border-radius: 50% !important
+  border-radius: 50% !important
+
+body
+  &.conversations-index .top-panel, &.users-show .top-panel
+    display: none !important
+
+.error_reports-new .top-panel, .error_reports-index .top-panel, .calendars-index .top-panel
+  display: none !important
+
+input[type="submit"]
+  -webkit-appearance: none
+  -webkit-border-radius: 3px
