@@ -1,20 +1,28 @@
 - contact = locals[:contact]
 - online = locals[:online]
+- remove = locals[:remove]
+- img_url = "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/903/medium_8de93480-9151-4a64-8b1f-e86f68a5e2e7.jpg"
 
 .user-block
   .user-block-avatar
-    %img.user-block-avatar-image.member-box-avatar-image-small.img-corrector-initialized{:alt => "Ирина", :hide_wait_message => "true", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/903/medium_3d7ff819-199b-4666-92f8-07e1a14e036b.jpg", :style => "width:34px;height:34px;", :title => "Михайлова Ирина Николаевна"}/
+    %img.user-block-avatar-image.member-box-avatar-image-small.img-corrector-initialized{:alt => "Ирина", :hide_wait_message => "true", 
+      :src => img_url, :style => "width:34px;height:34px;", :title => "Михайлова Ирина Николаевна"}/
     .user-block-status-bullet{class: "user-status-bullet-#{online ? 'online' : 'offline'}"}
   .user-block-content
-    %a.user-block-content-name{:href => "/users/1147", :role => "member-name"} Ирина Михайлова
-    - if contact
-      %a.user-block-added-btn{href: 'javascript:confirm("Удалить из контактов?");', role: :tooltip, 'data-original-title' => 'В ваших контактах'}
-        %i.fa.fa-check
-      %a.user-block-compose-btn{href: '#', role: :tooltip, 'data-original-title' => 'Написать сообщение'}
-        %i.fa.fa-pencil
-    - else
-      %a.user-block-add-btn{href: '#', role: :tooltip, 'data-original-title' => 'Добавить в контакты'}
-        %i.fa.fa-plus
-    .user-block-position
-      Сотрудник
+    .pull-left
+      %a.user-block-content-name{:href => "/users/1147", :role => "member-name"} Ирина Михайлова
+      .user-block-position
+        Сотрудник
+    .pull-left
+      - if contact
+        %a.user-block-compose-btn{href: '#', role: :tooltip, 'data-original-title' => 'Написать сообщение'}
+          %i.fa.fa-pencil
+      - else
+        %a.user-block-add-btn{href: '#', role: :tooltip, 'data-original-title' => 'Добавить в контакты'}
+          %i.fa.fa-plus
+      - if remove
+        %a.user-block-remove-btn{href: 'javascript:confirm("Удалить из участников задачи?");', role: :tooltip, 'data-original-title' => 'Удалить из участников задачи'}
+          %i.fa.fa-times
+
+    .clearfix
 

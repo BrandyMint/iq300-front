@@ -15,6 +15,8 @@
   %section.spectator
     %p.accessor-users-role Наблюдатели:
     %ul{:role => "ui-invited-members"}
+      .user-wrapper{"ui-task-member" => ""}
+        = partial 'tasks/show/accessor_users_item', locals: {contact: true, remove: true, online: true}
       - for i in 0..10
         .user-wrapper{"ui-task-member" => ""}
-          = partial 'tasks/show/accessor_users_item'
+          = partial 'tasks/show/accessor_users_item', locals: {contact: (i % 2 == 0 ? true : false), remove: true, online: (i % 3 == 0 ? true : false) }

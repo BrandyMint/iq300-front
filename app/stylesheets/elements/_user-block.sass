@@ -1,11 +1,14 @@
 // new user block
+$user-block-btn-width: 30px
+$user-block-btn-height: $user-block-btn-width
+
 %user-block-btn
   @extend .btn
   @extend .btn-xs
-  width: 20px
-  height: 20px
-  line-height: 17px
-  text-align: right
+  width: $user-block-btn-width
+  height: $user-block-btn-height
+  line-height: $user-block-btn-height*0.9
+  text-align: center
   margin:
     right: 5px
 
@@ -43,13 +46,15 @@
 
 .user-block-add-btn
   @extend %user-block-btn
-  font-size: 10px
   @extend .btn-outline-primary
 
 .user-block-added-btn
   @extend %user-block-btn
-  font-size: 10px
   @extend .btn-outline-success
+
+.user-block-remove-btn
+  @extend %user-block-btn
+  @extend .btn-outline-danger
 
 .user-block-compose-btn
   @extend %user-block-btn
