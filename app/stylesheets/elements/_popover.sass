@@ -1,0 +1,45 @@
+.popover-form-block
+  @extend .popover
+  width: 300px
+  font-style: normal
+  color: $text-color
+  .popover-content
+    padding: 0
+  .checkbox
+    padding:
+      left: 10px
+      right: 10px
+
+
+.popover-form-control
+  @extend .form-control
+  border-radius: 0
+  &, &:hover, &:focus
+    border: none
+    border-bottom: 1px solid $line-color
+    +box-shadow(none)
+  &:focus
+    border-bottom-color: lighten($brand-primary, 40%)
+
+.popover-form-control-title
+  font:
+    size: 1.2em
+    weight: bold
+  height: 36px
+  padding:
+    top: 10px
+    bottom: 10px
+
+.popover-form-actions,
+.popover-form-content-block
+  padding: 10px
+
+.popover-form-submit-btn
+  &, .popover &
+    @extend .btn
+    @extend .btn-lg
+    @extend .btn-outline-primary
+    background: #fff
+    background-image: none
+    font-size: $font-size-base
+

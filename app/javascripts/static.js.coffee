@@ -3,8 +3,8 @@
 #= require jquery.role/lib/jquery.role
 #= require modernizr/modernizr
 #= require select2/select2
-#= require moment/moment
-#= require moment/locale/ru
+#= require momentjs/moment
+#= require momentjs/locale/ru
 #= require eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min
 #= require jquery-autosize/jquery.autosize.min
 #= require Caret.js/dist/jquery.caret.min
@@ -15,6 +15,7 @@
 #= require projects/new
 #= require projects/discussions
 #= require projects/list
+#= require projects/milestones
 #= require notifications/list
 #= require tasks/list
 #= require communities/billing

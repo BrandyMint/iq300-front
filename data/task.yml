@@ -1,0 +1,13 @@
+status:
+  template:
+    title: Шаблон
+    css_class: label label-primary
+  new:
+    title: Новая
+    css_class: label label-primary
+  in_work:
+    title: В работе
+    css_class: label label-warning
+  draft:
+    title: Черновик
+    css_class: label label-default

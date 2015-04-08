@@ -1,6 +1,6 @@
 $ ->
   @checkboxes = $('.project-task-box input[type="checkbox"], @project-tasks-list-select-all')
-
+  
   $('@project-group-header').on 'click', () ->
     $(@).find('@project-group-header-form')
       .removeClass('hide')
@@ -50,4 +50,84 @@ $ ->
     $('@project-task-box-form[data-project-id*="'+project_id+'"]').addClass('hide')
 
 
+window.ProjectTasksList ||= {}
 
+((app) ->
+  app.widgetPlacement = 
+    vertical: 'top'
+    horizontal: 'left'
+  $(document).ready ->
+    $statusBlock = $('@project-task-box-status-block')
+    $body = $('body')
+    #$statusBlock.on 'click', (e) ->
+      #e.preventDefault()
+      #e.stopPropagation()
+      #$(@).datetimepicker
+        #inline: true
+        #useCurrent: false
+        #sideBySide: true
+        #viewMode: 'days'
+        #icons:
+          #time: "fa fa-clock-o datetimepicker-icon",
+          #date: "fa fa-calendar datetimepicker-icon",
+          #up: "fa fa-arrow-up datetimepicker-icon",
+          #down: "fa fa-arrow-down datetimepicker-icon"
+          #next: 'fa fa-arrow-right datetimepicker-icon'
+          #previous: 'fa fa-arrow-left datetimepicker-icon'
+          #today: 'fa fa-crosshair datetimepicker-icon'
+        #format: 'DD/MM/YYYY'
+    #    widgetPositioning: app.widgetPlacement
+
+    $statusBlock.on 'click', (e) ->
+      if $(@).data('bs.popover')?.$tip?.length > 0
+        $body.find('td').each ->
+          $(@).popover('destroy')
+      else
+        $body.find('td').each ->
+          $(@).popover('destroy')
+        e.preventDefault()
+        e.stopPropagation(e)
+        app.pop = app.popover $(@), $(@).parent()
+        $popover = app.pop.data('bs.popover')
+        app.pop.popover('show')
+        picker = $popover.$tip.find('[role="popover-form-datetimepicker"]')
+        picker.datetimepicker({
+          inline: true
+          useCurrent: false
+          sideBySide: true
+          viewMode: 'days'
+          icons:
+            time: "fa fa-clock-o datetimepicker-icon",
+            date: "fa fa-calendar datetimepicker-icon",
+            up: "fa fa-arrow-up datetimepicker-icon",
+            down: "fa fa-arrow-down datetimepicker-icon"
+            next: 'fa fa-arrow-right datetimepicker-icon'
+            previous: 'fa fa-arrow-left datetimepicker-icon'
+            today: 'fa fa-crosshair datetimepicker-icon'
+          format: 'DD/MM/YYYY'
+        })
+        # make this as callback or with event
+        $popover.$tip.css('top', ($popover.$tip.position().top - picker.height())+'px')
+        $popover.$tip.find('[role="popover-form-submit-btn"]').on 'click', (e) ->
+          e.preventDefault()
+          e.stopPropagation()
+          app.pop.popover('hide')
+
+  app.popover = (el, container) ->
+    pop = $(el).popover
+      template: '<div class="popover-form-block" role="tooltip">
+        <div class="arrow"></div>
+        <h3 class="popover-title"></h3>
+        <div class="popover-content"></div>
+        </div>'
+      content: '<div role="popover-form-datetimepicker"></div>
+        <div class="popover-form-actions">
+          <a href="" class="popover-form-submit-btn" role="popover-form-submit-btn">сохранить</button>
+        </div>'
+      html: true
+      placement: 'top'
+      trigger: 'manual'
+      container: container
+    return pop
+
+)(window.ProjectTasksList ||= {})

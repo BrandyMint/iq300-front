@@ -4,6 +4,60 @@
 %ol.project-tasks-list-sortable
   .hide{role: 'project-tasks-list-new-task'}
     = partial 'projects/tasks/new'
+  - milestone_colors = [:blue, :orange, :green, :yellow, '']
+  - milestone_colors.each_with_index do |milestone_color, i|
+    .project-tasks-group-header{role: 'project-group-header', class: "project-tasks-group-header-#{milestone_color}"}
+      %div{role: 'project-group-header-content'}
+        // Если длина название больше 108 символов, показываем тултип
+        - group_title = "Группа #{i+1} с очень длинным названием, которое не помещается в одну строку, с очень длинным названием, которое не помещается в одну строку"
+        - if group_title.length > 108
+          %h4.project-tasks-group-title{role: 'tooltip', data: {'original-title' => group_title, delay: 200}}
+            = truncate(group_title, length: 108)
+        - else
+          %h4.project-tasks-group-title
+            = group_title
+
+      .project-group-header-form.hide{role: 'project-group-header-form'}
+        %form.form-horizontal
+          .project-group-header-form-inputs
+            .row
+              .col-sm-4
+                %input.form-control{type: 'text', value: "Группа #{i+1}", required: 'required', placeholder: 'Название группы задач', autofocus: 'autofocus'}
+              .col-sm-3
+                = partial 'shared/select2', locals: {title: 'Исполнитель не назначен'}
+              .col-sm-3
+                .input-group-inline
+                  .input-group{role: 'tooltip', data: {'original-title' => 'Срок выполнения'}}
+                    %input.date-input.zebra-date-picker.form-control{"data-pair" => "input-end-date", "data-show-clear-date" => "false", "data-zdp_format" => "d.m.Y", :readonly => "readonly", "role-zebra-date-picker" => "ready", :type => "text", :value => "22.08.2014"}
+                    .input-group-addon
+                      .fa.fa-calendar-o.fa-lg
+              .col-sm-1
+                .btn-group.text-right
+                  %button.project-tasks-group-header-color-select.dropdown-toggle{class: "project-tasks-group-header-color-select-#{milestone_color}", "aria-expanded" => "false", "data-toggle" => "dropdown", :type => "button"}
+                    %span.project-tasks-group-header-color-bullet
+                  %ul.project-tasks-group-header-color-dropdown-menu{:role => "menu"}
+                    - milestone_colors.each_with_index do |color, ci|
+                      %li
+                        %a{class: "project-tasks-group-header-color-select-#{milestone_colors[ci]}", href: '#'}
+                          %span.project-tasks-group-header-color-bullet
+          .row
+            .col-sm-4
+              .row
+                .col-xs-4
+                  = link_to 'Сохранить', '', class: 'btn btn-success', role: 'project-group-header-form-close'
+                .col-xs-4
+                  = link_to 'Отменить', '', class: 'btn btn-default link-gray-light', role: 'project-group-header-form-close'
+                .col-xs-4
+                  = link_to 'Удалить', '', class: 'btn btn-default link-danger', role: 'project-group-header-form-close'
+    - ['in_work'].each_with_index do |status, i|
+      - statuses_accented.each do |status_accented|
+        %li.project-tasks-group
+          %div
+            .project-tasks-group-content
+              = partial 'projects/tasks/item', locals: {status: status, 
+                  status_accented: status_accented, root_number: (i+987), children: true, group_color: milestone_color}
+
+
   - statuses.each_with_index do |status, i|
     - statuses_accented.each do |status_accented|
       .project-tasks-group-header{role: 'project-group-header'}
@@ -35,7 +89,7 @@
       %li.project-tasks-group
         %div
           .project-tasks-group-content
-            = partial 'projects/tasks/item', locals: {status: status, status_accented: status_accented, root_number: (i+1)}
+            = partial 'projects/tasks/item', locals: {status: status, status_accented: status_accented, root_number: (i+1), children: true}
 
 
 
