@@ -181,7 +181,6 @@
 
 
 // Transitions
-// Use custom mixin
  @mixin transition($transition...) {
    -webkit-transition: $transition;
         -o-transition: $transition;
