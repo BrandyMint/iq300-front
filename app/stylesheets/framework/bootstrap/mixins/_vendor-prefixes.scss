@@ -182,11 +182,11 @@
 
 // Transitions
 // Use custom mixin
-// @mixin transition($transition...) {
-//   -webkit-transition: $transition;
-//        -o-transition: $transition;
-//           transition: $transition;
-// }
+ @mixin transition($transition...) {
+   -webkit-transition: $transition;
+        -o-transition: $transition;
+           transition: $transition;
+ }
 @mixin transition-property($transition-property...) {
   -webkit-transition-property: $transition-property;
           transition-property: $transition-property;
