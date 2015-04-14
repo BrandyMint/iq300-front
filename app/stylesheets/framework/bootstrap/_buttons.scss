@@ -20,7 +20,7 @@
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $border-radius-base);
   @include user-select(none);
   @include box-sizing(border-box);
-  @include transition(all 0.15s linear);
+  @include transition(color 0.15s linear, border 0.15s linear, background 0.15s linear);
   
   //.fa { font-size: 1.2em;}
   
