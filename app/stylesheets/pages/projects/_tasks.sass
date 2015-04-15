@@ -57,19 +57,11 @@ $project-tasks-group-header-colors: "blue" $project-tasks-group-header-blue, "ye
     padding:
       left: $project-task-padding-left
       right: $project-task-padding-right
-    //&.project-task-box-without-subtask-btn
-      //padding-left: $project-task-padding-left - $project-task-subtask-block-width
-      //&.project-task-box-without-checkbox
-        //padding-left: $project-task-padding-left - $project-task-subtask-block-width - $project-task-checkbox-width - $project-task-spacing*2
-    //&.project-task-box-without-checkbox
-    //  padding-left: $project-task-padding-left - $project-task-checkbox-width - $project-task-spacing*2
 
 +project-task-nested-item
   .project-task-box
     &, &.task-box
       padding-left: $project-task-padding-left-nested
-      //&.project-task-box-without-checkbox
-        padding-left: $project-task-padding-left-nested - $project-task-checkbox-width - $project-task-spacing
 
 .project-task-box-template
   &, &:hover, &.task-box
@@ -94,23 +86,10 @@ $project-tasks-group-header-colors: "blue" $project-tasks-group-header-blue, "ye
   width: $project-task-controls-width
   margin-left: - ($project-task-controls-width + $project-task-subtask-block-width + $project-task-spacing)
   padding-left: 0
-//+project-task-without-subtask-btn
-  //.project-task-box-controls
-    //margin-left: - ($project-task-controls-width + $project-task-spacing)
-//+project-task-without-checkbox
-  //.project-task-box-controls
-    //width: $project-task-controls-width - $project-task-checkbox-width
-    //margin-left: - ($project-task-controls-width + $project-task-subtask-block-width - $project-task-checkbox-width)
-//+project-task-without-checkbox-and-subtask-btn
-  //.project-task-box-controls
-//    margin-left: - ($project-task-controls-width - $project-task-checkbox-width)
 +project-task-nested-item
   .project-task-box-controls
     margin-left: - $project-task-controls-width
 +project-task-nested-item
-  //+project-task-without-checkbox
-    .project-task-box-controls
-      margin-left: - $project-task-controls-width + $project-task-checkbox-width
 
 .project-task-box-content
   @extend .col-sm-1
@@ -155,7 +134,6 @@ a.project-task-box-add-subtask-btn
 .project-task-box-checkbox,
 .project-task-box-child-counter
   display: inline-block
-  //margin-left: -$project-task-padding-left + $project-task-checkbox-width
 
 .project-task-box-checkbox
   margin-right: $project-task-checkbox-width/2
