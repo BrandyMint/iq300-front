@@ -24,13 +24,13 @@ body_class: tasks-show
       .form-group
         .page-title.col-md-12
           .pull-left
-            %h3 Редактирование задачи
+            %h3 Создание задачи
       .form-group
         %label.control-label.col-sm-2
           Название
         .col-sm-10
           .input-group
-            %input#base_task_title.form-control{:name => "base_task[title]", :placeholder => "Новая задача", :role => "title", :size => "30", :type => "text", :value => "Test test test task"}/
+            %input#base_task_title.form-control{:name => "base_task[title]", :placeholder => "Новая задача", :role => "title", :size => "30", :type => "text", :value => ""}/
             .input-group-addon{"data-original-title" => "Формулировка задачи должна быть понятна исполнителю. Правильно поставленная задача - половина успеха! Ознакомьтесь с нашими рекомендациями по формулировке задач в разделе Помощь.", "role-bootstrap-tooltip" => "ready", :title => ""}
               .fa.fa-question-circle
           .btn-line
@@ -47,8 +47,8 @@ body_class: tasks-show
         %label.control-label.col-sm-2
           Сообщество
         .col-sm-5
-          %select#base_task_community_id.form-control{"data-allow-clear" => "true", "data-ignore-value" => "290", :disabled => "disabled", :name => "base_task[community_id]", :placeholder => "Выбрать сообщество"}
-            %option{:selected => "selected", :value => "290"} Личная задача
+          %select{role: 'select2', style: 'width: 100%'}
+            %option{:value => "290"} Личная задача
             %option{:value => "291"} Fake community
         .col-md-1.form-control-static.nopadding-left
           .fa.fa-question-circle{"data-original-title" => "Укажите сообщество, в рамках которого Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
@@ -57,7 +57,8 @@ body_class: tasks-show
           Проект
         .col-sm-5
           %select{role: 'select2', style: 'width: 100%'}
-            %option{:selected => "selected", :value => "290"} Test project
+            %option{selected: true}
+            %option{:value => "290"} Test project
             %option{:value => "291"} Another project
         .col-md-1.form-control-static.nopadding-left
           .fa.fa-question-circle{"data-original-title" => "Укажите проект, в рамках которого Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
@@ -66,19 +67,10 @@ body_class: tasks-show
         %label.control-label.col-sm-2
           Исполнитель
         .col-sm-5
-          #s2id_base_task_executor_id.select2-container.select-two.chained-select{:style => "width: 436px;"}
-            %a.select2-choice{:href => "javascript:void(0)", :onclick => "return false;", :tabindex => "-1"}
-              %span.select2-chosen Александр Мещеряков
-              %abbr.select2-search-choice-close
-              %span.select2-arrow
-                %b
-            %input#s2id_autogen1.select2-focusser.select2-offscreen{:type => "text"}/
-            .select2-drop.select2-display-none.select2-with-searchbox
-              .select2-search
-                %input.select2-input{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :type => "text"}/
-              %ul.select2-results
-          %select#base_task_executor_id.select-two.chained-select.select2-offscreen{"data-allow-clear" => "true", "data-chained-select" => "/communities/__base_task%5Bcommunity_id%5D__/executors?per=500", "data-skip-init-req" => "true", :name => "base_task[executor_id]", :placeholder => "Выбрать исполнителя", :role => "executor-select", "role-chained-select" => "ready", "role-select-two" => "ready", :tabindex => "-1"}
-            %option{:selected => "selected", :value => "203"} Александр Мещеряков
+          %select{role: 'select2', style: 'width: 100%'}
+            %option{selected: true}
+            %option{:value => "290"} Александр Мещеряков
+            %option{:value => "291"} Эльвир Нуриахметов
         .col-md-1.form-control-static.nopadding-left
           .fa.fa-question-circle{"data-original-title" => "Укажите сотрудника, которому Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
       .form-group{"role-datetime-field" => "ready"}
@@ -99,7 +91,7 @@ body_class: tasks-show
         .col-sm-10
           .input-group-inline
             .input-group{role: 'datetimepicker'}
-              %input#base_task_end_date.form-control{:name => "base_task[end_date]", :role => "input-end-date tour-tasks-end-date", :size => "30", :type => "text", :value => "10.03.2015 23:59"}/
+              %input#base_task_end_date.form-control{:name => "base_task[end_date]", :role => "input-end-date tour-tasks-end-date", :size => "30", :type => "text", :value => ""}/
               .input-group-addon.input-group-addon-btn{:role => "calendar-trigger", "test-input-end-date" => ""}
                 .fa.fa-calendar-o.fa-lg
             .input-group
@@ -116,7 +108,7 @@ body_class: tasks-show
       .col-md-4.col-md-offset-2.task-repeat-checkbox
         .checkbox{:role => "task-repeat-checkbox"}
           %label
-            %input{:name => "generation_cycle", :role => "input-checkbox", :type => "checkbox", :value => "true"}/
+            %input{:name => "generation_cycle", :role => "input-checkbox", :type => "checkbox", :value => ""}/
             %span{"data-original-title" => "Автоматическое повторение задачи по расписанию", "role-bootstrap-tooltip" => "ready", :title => ""}
               Повторять задачу
       .form-group.task-repeat-form{:role => "repeat-form"}
