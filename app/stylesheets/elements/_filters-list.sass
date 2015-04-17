@@ -1,0 +1,50 @@
+%filters-column-list-padding
+  padding:
+    left: $grid-gutter-width / 2
+    right: $grid-gutter-width / 2
+
+.filters-column-list
+  .counter,
+  .grey-counter
+    // TODO hide this in main app
+    display: none
+  padding-top: $grid-gutter-width / 2
+  & > li
+    & > a
+      font-size: $font-size-base * 1.1
+      @extend %filters-column-list-padding
+      padding:
+        top: 6px
+        bottom: 6px
+      display: block
+      color: $gray
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+    &.active > a
+      font-weight: bold
+      &, &:hover
+        color: $brand-primary
+
+.filters-column-list-item-expander
+  @extend .fa
+  @extend .fa-angle-down
+  padding: 3px 6px
+  &.active
+    @extend .fa-angle-up
+
+.filters-column-list-item-expandable-menu
+  @extend %filters-column-list-padding
+  padding-bottom: $grid-gutter-width / 3
+  margin-bottom: $grid-gutter-width / 3
+  border-bottom: 1px solid $line-color
+  & > li
+    & > a
+      display: block
+      padding:
+        top: 3px
+        bottom: 3px
+
+.grey-counter
+  @extend %bubble-counter
+  background-color: $gray

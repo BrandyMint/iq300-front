@@ -4,19 +4,32 @@
   bottom: 0
   overflow-y: auto
   +overflow-scrolling
+  &.content-column-block-under-top-panel
+    top: $headerHeight + $topPanelHeight
 
 %list-column-shadow
   +box-shadow(0 0 3px rgba(0, 0, 0, 0.2))
 
-%list-column-block
+%filters-column-block,
+.filters-column-block
+  @extend %content-column-block
+  left: $navColumnWidth
+  width: $filtersColumnWidth
+  z-index: $filters-column-z-index
+  background-color: $filters-column-background
+  @extend %list-column-shadow
+  @media screen and (max-width: $screen-sm-max)
+    display: none
+
+%list-column-block,
+.list-column-block
   @extend %content-column-block
   left: $navColumnWidth + $filtersColumnWidth
   right: 0
-  height: auto
   z-index: $content-column-z-index
   background-color: #fff
   @extend %list-column-shadow
-  //@media screen and (max-width: $screen-sm-max)
+  @media screen and (max-width: $screen-sm-max)
     left: $navColumnWidth
 
 %wide-column-block
@@ -24,11 +37,18 @@
   left: $navColumnWidth
 
 %filters-column-block
+%view-column-block,
+.view-column-block
   @extend %content-column-block
+  top: $headerHeight + $topPanelHeight
   left: $navColumnWidth
-  width: $filtersColumnWidth
-  z-index: $filters-column-z-index
-  background-color: $filters-column-background
+  right: 0
+  z-index: $content-column-z-index
+  background-color: #fff
   @extend %list-column-shadow
-  //@media screen and (max-width: $screen-sm-max)
-    display: none
+
+.filters-column
+  @extend %filters-column-block
+
+.list-column
+  @extend %list-column-block

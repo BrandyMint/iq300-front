@@ -1,4 +1,4 @@
-%column-content-block
+%content-column-block-wide
   position: absolute
   z-index: 1
   top: 0
@@ -9,21 +9,17 @@
   overflow-y: auto
 
 .column-content-fluid
-  @extend %column-content-block
+  @extend %content-column-block-wide
   padding:
     top: $grid-gutter-width
     bottom: $grid-gutter-width * 2
 
-section.view-column
-  float: none !important
-  background: white
-  z-index: $view-column-z-index
-  position: relative
-  @extend %list-column-shadow
+.view-column
+  @extend %view-column-block
   header.tab-navigation + .column-content
     top: 55px
   .column-content
-    @extend %column-content-block
+    @extend %content-column-block-wide
     .object-details
       padding: 26px 22px 10px 22px
       &, header

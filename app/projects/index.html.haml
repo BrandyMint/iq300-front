@@ -4,8 +4,7 @@ body_class: projects-index
 
 = partial 'shared/header'
 .content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
-  -#= partial 'projects/top_panel'
+  = partial 'projects/top_panel'
   = partial 'shared/_navigation', locals: {active: 'projects'}
-  = partial 'projects/sidebar'
+  = partial 'projects/filters'
   = partial 'projects/projects_list_column'
-  %section.view-column.project-view-column{"data-channel-template" => "private-project-%id%:update", "data-url" => "/projects"}

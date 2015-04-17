@@ -11,7 +11,11 @@
   border-bottom: solid 1px #f2f2f2
   +box-sizing(border-box)
   +clear
-  @extend %list-column-shadow
+  +box-shadow(-1px -1px 1px 0 rgba(0, 0, 0, 0.1))
+  .projects-index &,
+  .tasks-index &,
+  .communities-index &
+    display: none
   > .pull-left
     > *
       float: left
@@ -54,11 +58,9 @@
       text-align: center
       width: $topPanelHeight
       line-height: $topPanelHeight
-      background: $voronkaBackground
-      color: #666666
-      border: 1px solid $borderColor
+      color: $gray-light
       &:hover
-        border-color: $voronkaBackgroundHover
+        color: $link-hover-color
     > a.link
       line-height: 44px
       color: #338baf
@@ -289,7 +291,7 @@
   background: #338cae
   color: white
 
-//@media only screen and (min-width: 320px) and (max-width: 800px)
+@media only screen and (min-width: 320px) and (max-width: 800px)
   .top-panel
     > .pull-left
       > a.link
@@ -303,7 +305,7 @@
       > a.add-button.big
         display: none !important
 
-//@media only screen and (min-width: 320px) and (max-width: 480px)
+@media only screen and (min-width: 320px) and (max-width: 480px)
   .top-panel
     padding-left: 0
     top: 0

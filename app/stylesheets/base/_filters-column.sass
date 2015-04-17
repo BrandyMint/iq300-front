@@ -181,7 +181,7 @@
             &.red > a
               color: #ff0101
   ul > li > span.counter
-    @extend %buble-counter
+    @extend %bubble-counter
     &.overdue
       color: $brand-danger
       border-color: $brand-danger
@@ -293,6 +293,7 @@
         > .search, > ol
           display: block
 
+//TODO refactor this
 .section-navigation
   background-color: #fff
   .task-categories
@@ -337,3 +338,30 @@
         border-color: $brand-primary
         background: none
         font-size: 0.8em
+
+.section-navigation
+  .task-categories
+    padding-left: 15px
+    .form-group
+      cursor: pointer
+      margin-top: 0
+    .form-horizontal
+      padding-top: 20px !important
+      display: none
+      .checkbox
+        padding-top: 0
+    &.expanded
+      .form-horizontal
+        display: block
+    label
+      font-weight: 400 !important
+    .counter
+      margin-top: 25px !important
+      color: $brand-primary
+    > span
+      padding-top: 30px
+      cursor: pointer
+      padding-bottom: 30px
+      height: auto
+      font-size: 1.1em
+      line-height: 30px

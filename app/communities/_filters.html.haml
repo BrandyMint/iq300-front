@@ -1,0 +1,10 @@
+%section.tasks-filters-column.filters-column.filters-label.section-navigation{:role => "communities-filter" }
+  %ul.filters-column-list{"data-channel" => "presence-203:notifications"}
+    %li.folder.actual.active{"data-params" => "{\"folder\":\"my\"}", :role => "folder"}
+      %a{:href => "#"} Мои сообщества
+    %li.folder.inbox{"data-params" => "{\"folder\":\"new\"}", :role => "folder"}
+      %a{:href => "#"} Новые
+      %span.counter.overview{"data-params" => "{\"folder\":\"new\"}", "data-url" => "/communities", :role => "counter", :style => "display: none;"} 0
+    %li.folder.outbox{"data-params" => "{\"folder\":\"catalog\"}", :role => "folder"}
+      %a{:href => "#"} Каталог сообществ
+

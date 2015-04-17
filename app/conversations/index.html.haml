@@ -1,13 +1,13 @@
 ---
-body_class: dialog-index
+body_class: conversations-index
 ---
 
 = partial 'shared/header'
-.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
+.content.content-global.display-mode{"data-initial-action" => "index", :filters => "true", :full_view => "true", :list => "true", "role-display-mode" => "ready", :view => "false"}
   = partial 'communities/top_panel'
-  = partial 'shared/_navigation'
+  = partial 'shared/navigation'
 
-  %section.one-big-column.one-big-column-collapse
+  %section.view-column.content-column-block-under-top-panel
     %ul.nav.nav-tabs.tab-buttons.tabnav.container-grey
       %li.active
         %a{"data-toggle" => "tab", :href => "#messages-tab"}
@@ -23,4 +23,5 @@ body_class: dialog-index
         = partial 'conversations/messages_list'
       #comments-tab.tab-pane
         = partial 'conversations/comments_list'
+
 

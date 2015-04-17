@@ -1,0 +1,16 @@
+%section.tasks-filters-column.content-column-block-under-top-panel.filters-column
+  %ul.filters-column-list{"data-channel" => "presence-203:notifications", "role-notifications-filter" => "ready"}
+    %li.folder.nested.expanded.active{"data-folder" => "all"}
+      .expander{"role-expander" => "ready"}
+      %a Все
+      %ul.filters-column-list
+        - notifications_filters = ['Новые', 'Задачи', 'Сообщества', 'Документы', 'Прочее']
+        - notifications_filters.each do |nf|
+          %li.folder{"data-folder" => "new"}
+            %a
+              %span.pull-left= nf
+              - nf_count = rand(10)
+              - if nf_count > 0
+                %span.bubble-counter.pull-right{"data-params" => "{\"folder\":\"new\"}", "data-url" => "notifications", :type => "new-notifications"}
+                  = nf_count
+              .clearfix

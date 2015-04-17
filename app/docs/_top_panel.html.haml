@@ -1,0 +1,126 @@
+%section.top-panel
+  .pull-left
+    %a.navigation{:href => "#", :onclick => "$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;"}
+      %i.icon-reorder
+    %a.popup-window.add-button.small{"data-popup" => "add-button-target", :href => "#", "role-popup-window" => "ready"}
+      %i.icon-plus
+    %a.popup-window.add-button.big{"data-popup" => "add-button-target", :href => "#", "role-popup-window" => "ready"}
+      %i.icon-plus
+      %span Загрузить документ
+    %a.voronka.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "filters", :onclick => "$('#container').removeClass('show-navigation show-list').toggleClass('show-filters'); return false;", :state => "true"}
+      %i.icon-filter
+    %a.link.close-folders
+      %span Сложить все
+      %i.icon-folder-close
+    .share-link-popup
+      %a.close
+        %i.icon-remove
+      %label{:for => "link"} Прямая ссылка на документ
+      %input#link.full-width{:name => "link", :type => "text", :value => ""}/
+      %a.close Закрыть
+    %a.link.popup-window{"data-popup" => "add-folder-topup", "role-popup-window" => "ready"}
+      %span Добавить папку
+      %i.icon-plus
+    %section.subtop.add-ducument-topup.document-form.add-button-target.popup-window{"data-focused-input" => "input#attachment_title", "role-document-form" => "ready"}
+      %form#new_attachment.new_attachment{"accept-charset" => "UTF-8", :action => "/attachments", "data-max-size" => "50", :enctype => "multipart/form-data", :method => "post"}
+        %div{:style => "margin:0;padding:0;display:inline"}
+          %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+          %input{:name => "authenticity_token", :type => "hidden", :value => "FJIl7SVnUIvMfRIc3JznD71P3QhfOL9146/wmqx/xPI="}/
+        %p.file
+          %label{:for => "attachment_file"} Файл
+          %input#attachment_file{:name => "attachment[file]", :type => "file"}/
+        .info
+          %span.attachment-size
+            Максимальный размер загружаемого файла 50 Мегабайт
+        %p
+        %p
+          %label{:for => "attachment_title"} Название
+          %input#attachment_title.attachment-title{:maxlength => "255", :name => "attachment[title]", :size => "255", :type => "text"}/
+        %p
+          %textarea#attachment_description{:cols => "40", :maxlength => "1000", :name => "attachment[description]", :placeholder => "Описание", :rows => "20", :style => "overflow: hidden; word-wrap: break-word; resize: none; height: 30px;"}
+        %p
+          %label{:for => "community_id"} Сообщество (по умолчанию Мои документы)
+        #s2id_attachment_community_id.select2-container.select-two{:style => "width: 100%;"}
+          %a.select2-choice.select2-default{:href => "javascript:void(0)", :tabindex => "-1"}
+            %span#select2-chosen-3.select2-chosen Выбор сообщества
+            %abbr.select2-search-choice-close
+            %span.select2-arrow{:role => "presentation"}
+              %b{:role => "presentation"}
+          %label.select2-offscreen{:for => "s2id_autogen3"} Сообщество (по умолчанию Мои документы)
+          %input#s2id_autogen3.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-3", :role => "button", :type => "text"}/
+          .select2-drop.select2-display-none.select2-with-searchbox
+            .select2-search
+              %label.select2-offscreen{:for => "s2id_autogen3_search"} Сообщество (по умолчанию Мои документы)
+              %input#s2id_autogen3_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-3", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+            %ul#select2-results-3.select2-results{:role => "listbox"}
+        %select#attachment_community_id.select-two.select2-offscreen{"data-allow-clear" => "true", :name => "attachment[community_id]", :placeholder => "Выбор сообщества", "role-select-two" => "ready", :tabindex => "-1", :title => "Сообщество (по умолчанию Мои документы)"}
+          %option{:value => ""}
+          %option{:value => "291"} Fake community
+        %p
+          %label{:for => "attachment_share_parent_id"} Папка
+        #s2id_attachment_share_parent_id.select2-container.folders-chained-select
+          %a.select2-choice.select2-default{:href => "javascript:void(0)", :tabindex => "-1"}
+            %span#select2-chosen-1.select2-chosen Выбор папки
+            %abbr.select2-search-choice-close
+            %span.select2-arrow{:role => "presentation"}
+              %b{:role => "presentation"}
+          %label.select2-offscreen{:for => "s2id_autogen1"} Папка
+          %input#s2id_autogen1.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-1", :role => "button", :type => "text"}/
+          .select2-drop.select2-display-none.bigdrop.select2-with-searchbox
+            .select2-search
+              %label.select2-offscreen{:for => "s2id_autogen1_search"} Папка
+              %input#s2id_autogen1_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-1", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+            %ul#select2-results-1.select2-results{:role => "listbox"}
+        %input#attachment_share_parent_id.folders-chained-select.select2-offscreen{"data-allow-clear" => "true", "data-chained-select" => "__attachment[community_id]__", "data-null-value" => "none", "data-parent-selector" => ".document-form", "data-selected-value" => "none", "data-url" => "/docs?community=__%3Aid__&folder=folders", :name => "attachment[share_parent_id]", :placeholder => "Выбор папки", "role-folders-chained-select" => "ready", :tabindex => "-1", :title => "Папка", :type => "hidden", :value => ""}/
+        .actions.popup-window
+          %input#btnSubmit{"data-disable-with" => "Загрузка...", :name => "commit", :style => "display: none;", :type => "submit", :value => "Загрузить"}/
+    %section.subtop.add-folder-topup.folder-form.popup-window{"data-focused-input" => "input#attachment_title", "role-folder-form" => "ready"}
+      %form#new_attachment.new_attachment{"accept-charset" => "UTF-8", :action => "/attachments", :enctype => "multipart/form-data", :method => "post"}
+        %div{:style => "margin:0;padding:0;display:inline"}
+          %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+          %input{:name => "authenticity_token", :type => "hidden", :value => "FJIl7SVnUIvMfRIc3JznD71P3QhfOL9146/wmqx/xPI="}/
+        %input#attachment_is_folder{:name => "attachment[is_folder]", :type => "hidden", :value => "true"}/
+        %p
+          %label{:for => "attachment_title"} Название
+          %input#attachment_title.attachment-title{:maxlength => "255", :name => "attachment[title]", :size => "255", :type => "text"}/
+        %p
+          %label{:for => "attachment_community_id"} Сообщество (по умолчанию Мои документы)
+        #s2id_attachment_community_id.select2-container.select-two{:style => "width: 100%;"}
+          %a.select2-choice.select2-default{:href => "javascript:void(0)", :tabindex => "-1"}
+            %span#select2-chosen-4.select2-chosen Выбор сообщества
+            %abbr.select2-search-choice-close
+            %span.select2-arrow{:role => "presentation"}
+              %b{:role => "presentation"}
+          %label.select2-offscreen{:for => "s2id_autogen4"} Сообщество (по умолчанию Мои документы)
+          %input#s2id_autogen4.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-4", :role => "button", :type => "text"}/
+          .select2-drop.select2-display-none.select2-with-searchbox
+            .select2-search
+              %label.select2-offscreen{:for => "s2id_autogen4_search"} Сообщество (по умолчанию Мои документы)
+              %input#s2id_autogen4_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-4", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+            %ul#select2-results-4.select2-results{:role => "listbox"}
+        %select#attachment_community_id.select-two.select2-offscreen{"data-allow-clear" => "true", :name => "attachment[community_id]", :placeholder => "Выбор сообщества", "role-select-two" => "ready", :tabindex => "-1", :title => "Сообщество (по умолчанию Мои документы)"}
+          %option{:value => ""}
+          %option{:value => "291"} Fake community
+        %p
+          %label
+            Родительская папка
+        #s2id_attachment_share_parent_id.select2-container.folders-chained-select
+          %a.select2-choice.select2-default{:href => "javascript:void(0)", :tabindex => "-1"}
+            %span#select2-chosen-2.select2-chosen Выбор папки
+            %abbr.select2-search-choice-close
+            %span.select2-arrow{:role => "presentation"}
+              %b{:role => "presentation"}
+          %label.select2-offscreen{:for => "s2id_autogen2"} Папка
+          %input#s2id_autogen2.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-2", :role => "button", :type => "text"}/
+          .select2-drop.select2-display-none.bigdrop.select2-with-searchbox
+            .select2-search
+              %label.select2-offscreen{:for => "s2id_autogen2_search"} Папка
+              %input#s2id_autogen2_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-2", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+            %ul#select2-results-2.select2-results{:role => "listbox"}
+        %input#attachment_share_parent_id.folders-chained-select.select2-offscreen{"data-allow-clear" => "true", "data-chained-select" => "__attachment[community_id]__", "data-null-value" => "none", "data-parent-selector" => ".folder-form", "data-selected-value" => "none", "data-url" => "/docs?community=__%3Aid__&folder=roots%2Cfolders", :name => "attachment[share_parent_id]", :placeholder => "Выбор папки", "role-folders-chained-select" => "ready", :tabindex => "-1", :title => "Папка", :type => "hidden", :value => ""}/
+        .info
+          %span
+            Максимальный уровень вложенности папок - 2
+        .actions.popup-window
+          %input{"data-disable-with" => "Загрузка...", :name => "commit", :type => "submit", :value => "Добавить"}/
+

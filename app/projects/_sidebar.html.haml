@@ -1,7 +1,0 @@
-%section.projects-filters-column.filters-column.filters-label.section-navigation{role: "tasks-filter"}
-  %ul.with-subfolders.tasks-filter{"data-channel" => "presence-203:base_tasks"}
-    - project_states = {'all' => 'Все проекты', 'draft' => 'Инициализация', 'scenario' => 'Планирование', 'in_work' => 'В работе', 'templates' => 'Шаблоны', 'completed' => 'Выполненные', 'deleted' => 'Удалённые' }
-    - project_states.each_with_index do |(key, value), i|
-      %li.folder{class: "#{i == 0 ? 'active' : ''} #{key}"}
-        %a= value
-

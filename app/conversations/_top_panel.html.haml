@@ -1,0 +1,7 @@
+%section.top-panel
+  .pull-left
+    %a.navigation{:href => "#", :onclick => "$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;"}
+      %i.icon-reorder
+    %a.voronka.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "filters", :onclick => "$('#container').removeClass('show-navigation show-list').toggleClass('show-filters'); return false;", :state => "true"}
+      %i.icon-filter
+

@@ -1,0 +1,208 @@
+.filters-column-list
+  > li
+    // expander:start
+    > .expander
+      +inline-block
+      width: 34px
+      height: 34px
+      cursor: pointer
+      position: relative
+      +unselectable
+      +has-after-icon(15px, #666666)
+        +absoluted
+        line-height: 34px
+        text-align: center
+        @extend .icon-chevron-right:before
+    // expander:end
+    &.flat, &.nested
+      position: relative
+      // verical line
+      &:after
+        content: ""
+        display: block
+        position: absolute
+        z-index: 10
+        width: 1px
+        top: 0
+        height: 34px
+        left: 34px
+    &.flat
+      > a, > strong
+        padding-left: 50px
+    &.expanded
+      > .expander
+        &:before
+          @extend .icon-chevron-down:before
+    &:hover
+      z-index: 8
+    &.active
+      z-index: 8
+      &, > *
+        position: relative
+      > *
+        z-index: 8
+      +has-after-icon(21px, #e1ecf0)
+        @extend .icon-caret-left:before
+        right: -1px
+        top: 7px
+        width: 7px
+        overflow: hidden
+        z-index: 10
+
+.filters-column-list
+  ul
+    li
+      border: 1px solid transparent
+      margin: -1px
+      line-height: 34px
+      position: relative
+      &:hover
+        z-index: 9
+  li.expanded
+    > ul
+      display: block
+    ul.flat
+      > li
+        a
+          display: block
+          +truncate
+          padding-left: 35px
+        span
+          position: absolute !important
+          right: 10px
+          &.grey-counter
+            top: (34px - 14px) / 2
+          &.counter
+            top: (34px - 20px) / 2
+        &.red
+          a
+            color: #ff0101
+        &.active
+          z-index: 9
+          &, > *
+            position: relative
+          > *
+            z-index: 8
+          +has-after-icon(21px, #e1ecf0)
+            @extend .icon-caret-left:before
+            right: -2px
+            top: 7px
+            z-index: 10
+
+          &.red > a
+            color: #ff0101
+
+ul > li > span.counter
+  @extend %bubble-counter
+  &.overdue
+    color: $brand-danger
+    border-color: $brand-danger
+    &.has-overview
+      right: 35px
+
+ul > li > span.grey-counter
+  background: #a1b8be
+  color: white
+  line-height: 14px
+  font-size: 11px
+  font-weight: bold
+  padding: 0 3px
+
+ul.filters-column-list
+  > li.filters
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      display: block
+      top: 0px
+      left: 0
+      right: 0
+      height: 34px
+      background: #b4c7cb
+    > *
+      position: relative
+      z-index: 8
+    > .add
+      position: absolute
+      right: 0
+      top: 0
+      height: 34px
+      width: 35px
+      text-align: center
+      border-left: 1px solid $borderColor
+      cursor: pointer
+      +has-after-icon(17px, #666666)
+        @extend .icon-search:before
+        +absoluted
+        width: 35px
+        line-height: 34px
+        text-align: center
+    &.expanded > .add
+      background: #cad9dc
+    > .search
+      background: #cad9dc
+      padding: 4px
+      +bordered
+      > input
+        +bordered
+        background: #f1f5f6
+        width: 158px
+        padding: 3px 5px
+        line-height: 18px
+    > .communities-search
+      background: #dae2e5
+      +children-inline
+      +bordered-bottom
+      input
+        margin: 4px
+        +bordered
+        padding: 3px 3px 3px 8px
+        font-size: 11px
+        line-height: 18px
+        width: 123px
+      button
+        background: transparent
+        border: none
+        +bordered-left
+        width: 34px
+        height: 34px
+        position: relative
+        cursor: pointer
+        +has-after-icon(17px, #666666)
+          @extend .icon-search:before
+          +absoluted
+          width: 35px
+          line-height: 34px
+          text-align: center
+    > ol
+      padding-top: 10px
+      background: #cad9dc
+      > li
+        padding: 5px 0
+        line-height: 24px
+        > *
+          +inline-block(middle)
+        div.checkbox
+          @extend %fake-blue-ok-checkbox
+          margin-left: 10px
+        div.label
+          margin-left: 7px
+          font-size: 11px
+          color: #666867
+          +truncate
+          width: 108px
+          +unselectable
+          cursor: pointer
+        span
+          background: #a1b8be
+          color: white
+          line-height: 14px
+          font-size: 11px
+          font-weight: bold
+          padding: 0 3px
+    > .search, > ol
+      display: none
+    &.expanded
+      > .search, > ol
+        display: block

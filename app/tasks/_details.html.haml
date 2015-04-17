@@ -1,0 +1,217 @@
+.page-title
+  .pull-left.title
+    %h3.task-title
+      .title-block-favorite.favorite-view{"role-favorite-view" => "ready"}
+        %a{"data-method" => "put", :href => "/favorites?base_task_id=65590", :rel => "nofollow"}
+          %span.fa.fa-big.icon-star-empty.star-favourite
+      %span Сделать обзор макета страницы Задача
+    .bread-crumbs
+      %a{:href => "/users/76"} Алмаз Бикчурин
+      %span.fa.fa-long-arrow-right
+      %a{:href => "/users/1757"} Александр Владимирогородский
+  .pull-right.task-status
+    .status-box
+      .status-label{"test-task-status" => ""}
+        Просмотрена
+      .status-label
+        Просрочена
+        на 2 дня
+      .status-date
+        18 Августа
+
+.page-tabs-block
+  %ul.nav.nav-tabs.tabnav{"data-channel" => "presence-5:base_task-121", "data-container" => ".tab-content", "data-read-changes-url" => "/changes/read?base_task_id=121", "role-ready" => "tabnav", "test-tabnav" => ""}
+    %li.active{"data-changes" => "base_tasks,todo_items,attachment_links"}
+      %a{"data-target" => "task-details", :href => "/tasks/121"}
+        Детали
+        %span.badge{:role => "counter"}
+    %li#accessor_users_tab{"data-changes" => "accessor_users"}
+      %a{"data-class" => "accessor-users-view", "data-target" => "task_accessor_users", :href => "/tasks/121/accessor_users"}
+        Участники
+        %span.badge{:role => "counter"}
+    %li
+      %a{"data-target" => "task_activities", :href => "/tasks/121/activities?initial=true"} История
+    %li.discussion.discussion-initialized{"data-changes" => "comments"}
+      %a{"data-target" => "task-discussions", :href => "/tasks/121/discussion?initial=true"}
+        Обсуждения
+        %span.badge{:role => "counter"} 1
+
+.tab-content
+  #task-details.tab-pane.active
+    .form-group.events{:role => "actions-field", :style => "display: block;"}
+      .navbar.navbar-default
+        .navbar-form
+          .pull-left
+            .group
+              %a.btn.btn-default.action.force_accept{:href => "/tasks/121/change_status?do=force_accept", :role => "action"} Принять как выполненную
+              %a.btn.btn-default.action.cancel{"data-confirm" => "Вы уверены?", :href => "/tasks/121/change_status?do=cancel", :role => "action"} Отменить
+          .pull-right
+            %a.btn.btn-default{"data-method" => "put", :href => "/tasks/121/save_as_template", :rel => "nofollow"} Сохранить как шаблон
+            %a.btn.btn-default{:href => "/tasks/121/edit"}
+              %span.fa.fa-edit
+              Редактировать
+          .clearfix
+    .form-group.underline
+      .row
+        .col-md-6
+          %table.table-info.table-responsive
+            %tbody
+              %tr
+                %td
+                  Номер задачи:
+                %td
+                  65590
+              %tr
+                %td
+                  Сообщество:
+                %td
+                  %a{:href => "/communities/956"} Айкью 300, ООО
+              %tr
+                %td
+                  Создана:
+                %td
+                  17 июня 2014 в 15:46
+        .col-md-6
+          %table.table-info.table-responsive
+            %tbody
+              %tr
+                %td
+                  Базовая задача:
+                %td
+                  Компоновка раздела Задачи
+              %tr
+                %td
+                  %span{"data-original-title" => "Присваивайте категории задачам для более удобного поиска в списке задач", "role-bootstrap-tooltip" => "ready", :title => ""}
+                    Категории:
+                %td.badges-list.categories-view{"role-categories-view" => "ready"}
+                  .label-tags
+                    .add-button
+                      %a.with-plus-button.add-tag{"data-original-title" => "Добавьте новую категорию к задаче", :href => "#", "role-bootstrap-tooltip" => "ready", :title => ""}
+                        Добавить
+                        %span
+                          %i.icon-plus
+                    .adding-form
+                      %form.new-todo{"accept-charset" => "UTF-8", :action => "#", :method => "post"}
+                        %div{:style => "margin:0;padding:0;display:inline"}
+                          %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+                          %input{:name => "authenticity_token", :type => "hidden", :value => "uEWcLHYGGc3CWmAg2FbZlhOKDays7ebwCfdUXdj6d0I="}/
+                        #s2id__name.select2-container.select2-container-multi.select-two.todo-body{:style => "width: 100%;"}
+                          %ul.select2-choices
+                            %li.select2-search-field
+                              %input#s2id_autogen1.select2-input.select2-default{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :style => "width: 122%;", :type => "text"}/
+                          .select2-drop.select2-drop-multi.select2-display-none
+                            %ul.select2-results
+    .form-group.todo-list{"role-todo-list" => "ready"}
+      .page-title
+        .pull-left
+          %h3.task-page-section-title
+            %span{"data-original-title" => "С помощью чек-листов Вы можете создавать список работ по задаче и отслеживать прогресс ее исполнения", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
+              Чек-лист
+        .pull-right
+          %span.text-muted{"data-text" => "Выполнено", :role => "progress"}
+            Выполнено 0/0
+          %a.add-todo.btn.btn-default.add-button{"data-original-title" => "Добавьте новый пункт в чек-лист задачи", :href => "#", "role-bootstrap-tooltip" => "ready", :title => ""}
+            %span.fa.fa-plus-circle
+            Добавить
+      %div
+        %ul
+          %li.todo-item.todo-item-initialized{"data-url" => "/tasks/121/todo_items/66"}
+            %input#completed{:name => "completed", :type => "checkbox", :value => "1"}/
+            %i
+            .title wedwedewd
+            %span.right
+              %a{:href => "/tasks/new?parent_id=121&todo_item_id=66", :title => "Преобразовать в задачу"}
+                %i.icon-list-alt
+              %a.edit{:href => "#", :title => "Изменить"}
+                %i.icon-pencil
+              %a.remove{"data-confirmation" => "Подтвердите действие", :title => "Удалить"}
+                %i.icon-remove
+            %form#edit_todo_item_66.edit-form{"accept-charset" => "UTF-8", :action => "/tasks/121/todo_items/66", :method => "post"}
+              %div{:style => "margin:0;padding:0;display:inline"}
+                %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+                %input{:name => "_method", :type => "hidden", :value => "put"}/
+                %input{:name => "authenticity_token", :type => "hidden", :value => "axzWGG14VvSmKixUNQHEmOOUnKTdQ8z4X7tp3IX6c+I="}/
+              %input#todo_item_title.todo-body{:name => "todo_item[title]", :size => "30", :type => "text", :value => "wedwedewd"}/
+              %input{:name => "commit", :type => "submit", :value => "Сохранить"}/
+        .add-todo-form
+          %form#new_todo_item.new-todo{"accept-charset" => "UTF-8", :action => "/tasks/121/todo_items", :method => "post", :style => "display: none;"}
+            %div{:style => "margin:0;padding:0;display:inline"}
+              %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+              %input{:name => "authenticity_token", :type => "hidden", :value => "axzWGG14VvSmKixUNQHEmOOUnKTdQ8z4X7tp3IX6c+I="}/
+            %input#todo_item_title.todo-body{:name => "todo_item[title]", :placeholder => "Добавить пункт", :size => "30", :type => "text"}/
+            %input.btn.btn-primary{:name => "commit", :type => "submit", :value => "Сохранить"}/
+            %input{:type => "reset", :value => "Отменить"}/
+    .form-group
+      .page-title{"role-task-attachments" => "ready"}
+        .pull-left
+          %h3.task-page-section-title{"aria-describedby" => "tooltip155203", "data-original-title" => "Вы можете добавить файлы к задаче", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
+            Файлы к задаче
+          .files
+            %span.attached-file{"role-ready" => "task-attachment"}
+              %a{:href => "/download?file=40160815-8048-4164-af5e-4c199d6ce5d5.png"}
+                %i.fa.fa-file-text-o.attached-file-icon
+                favicon (1).png
+              %a.attached-file-delete-btn{:href => "/tasks/121/attachments/52?file=52", :role => "remove-attachment"}
+                %i.fa.fa-times
+
+        .pull-right
+          %a.btn.btn-default{"data-original-title" => "Добавьте новый файл", "data-placement" => "left", :href => "#", :role => "new-attachment-button", "role-bootstrap-tooltip" => "ready", :title => ""}
+            %span.fa.fa-plus-circle
+            %span.title
+              Добавить
+          .task-attachment-form
+            %form{"accept-charset" => "UTF-8", :action => "/tasks/65590/attachments", "data-attachment-max-size" => "50", :enctype => "multipart/form-data", :method => "post"}
+              %div{:style => "margin:0;padding:0;display:inline"}
+                %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+                %input{:name => "authenticity_token", :type => "hidden", :value => "uEWcLHYGGc3CWmAg2FbZlhOKDays7ebwCfdUXdj6d0I="}/
+              %input#attachments_attributes_file.task-attachment{:name => "attachments_attributes[file]", :type => "file"}/
+    .form-group{"test-subtasks" => ""}
+      .page-title.mbm
+        .pull-left
+          %h3.task-page-section-title Подзадачи
+        .pull-right
+          %a.btn.btn-default{"data-original-title" => "", :href => "/tasks/new?parent_id=121", :role => "add-subtask-btn", :title => ""}
+            %span.fa.fa-plus-circle
+            Добавить
+      .task-box{"data-group-id" => "all_tasks", "data-group-title" => "Все задачи", "data-href" => "https://beta.iq300.ru/tasks/66863", :role => "task-item", "test-task" => ""}
+        .col-md-10
+          .row
+            .col-md-10
+              %h4.fa.text-warning.fa-star-o{"data-url" => "/favorites?base_task_id=66863", :role => "favorite-list-view"}
+              %h4.task-box-title-block
+                %span.title{"data-original-title" => "Вместе со своим верстальщиком сделать маленький одностраничный прототип, чтобы увидеть в действии поведение холста вокруг центальной колонки", "role-bootstrap-tooltip" => "ready", "test-task-title" => "", :title => ""}
+                  Вместе со своим верстальщиком сделать маленький одностраничный прототип, чтобы увидеть в действии поведение холста вокруг центальной колонки
+                  %span.small
+                    \#66863
+          .row
+            .col-md-10
+              .text-muted
+                %span
+                  %span.fa.fa-users
+                  Айкью 300, ООО
+                %span
+                [
+                %a.user.task-box-user{"data-href" => "/users/76", :role => "user"}
+                  Алмаз Бикчурин
+                →
+                %a.user.task-box-user{"data-href" => "/users/1757", :role => "user"}
+                  Мне
+                ]
+          .row
+            .col-md-10
+              .text-muted
+                Без проекта
+                | Изменилась 17 июля
+          .row
+            .col-md-7
+              .label.label-default
+                Выполнена
+        .col-md-2
+          .task-box-status-block
+            .status-date.task-box-status-date
+              %span.day-list
+                21
+              %span.month
+                Июнь
+            %br.visible-md.visible-lg/
+            .clearfix

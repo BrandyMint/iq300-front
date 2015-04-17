@@ -6,18 +6,7 @@ body_class: contacts-index
 .content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
   / = partial 'communities/top_panel'
   = partial 'shared/_navigation', locals: {active: 'contacts'}
-  %section.filters-column.contacts-filters-column
-    %ul.with-subfolders
-      %li.active
-        %a{:href => "/contacts"} Мои контакты
-      %li
-        %a{:href => "#"} Входящие
-      %li
-        %a{:href => "#"} Исходящие
-      %li
-        %a{:href => "#"} Все контакты
-      %li
-        %a{href: '/contacts/search/'} Поиск
+  = partial 'contacts/filters'
 
   %section.contacts-content-column
     .page-content-compact
