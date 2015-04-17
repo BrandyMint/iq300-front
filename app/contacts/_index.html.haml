@@ -1,0 +1,30 @@
+.page-content-compact.container-grey.clearfix
+  .pull-left
+    %input.form-control{:type => "text", placeholder: 'Поиск по участникам'}/
+  .pull-right
+    %ul.list-inline
+      %li
+        %select{:name => "", :role => "select2"}
+          %option{:value => ""} Сообщества
+          %option{:value => ""} Сообщества
+          %option{:value => ""} Сообщества
+          %option{:value => ""} Сообщества
+      %li
+        %select{:name => "", :role => "select2"}
+          %option{:value => ""} Сортировка
+          %option{:value => ""} Сортировка
+          %option{:value => ""} Сортировка
+          %option{:value => ""} Сортировка
+
+.page-content-compact
+  .row.row-collapse
+    - user_statuses = ['online', 'offline', 'away', '']
+    - for i in 1..4
+      - user_statuses.each do |user_status|
+        .col-sm-4.col-collapse
+          = partial 'contacts/contacts_list_item', locals: {user_status: user_status, is_contact: true}
+        .col-sm-4.col-collapse
+          = partial 'contacts/contacts_list_item', locals: {user_status: user_status, is_contact: false}
+
+  .text-center
+    %a.btn.btn-default{:href => "#"} Показать Еще 100

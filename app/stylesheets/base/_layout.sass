@@ -1,3 +1,5 @@
+$app-container-background: $brand-beige
+
 html, body
   background: #cccccc
   margin: 0
@@ -7,42 +9,9 @@ html, body
 
 body
   overflow: hidden
-
-#container
-  position: relative
-  z-index: 2
-  padding: 0
-  height: 100%
-  +box-sizing(border-box)
-  transition: left 0.25s ease-out, right 0.25s ease-out
-  -webkit-transition: left 0.25s ease-out, right 0.25s ease-out
-  -moz-transition: left 0.25s ease-out, right 0.25s ease-out
-  -o-transition: left 0.25s ease-out, right 0.25s ease-out
-  background-color: #f8f9f4
-  /*&:before {
-   *  content: "";
-   *  @include absoluted;
-   *  z-index: 3;
-   *  top: 2px;
-   *  border-top: 1px solid #bfc9ce;
-   *  background: url(#{$images-path}/backgrounds/pattern.png);
-   *}
-   *&:after {
-   *  content: "";
-   *  z-index: 2;
-   *  @include absoluted;
-   *  @include gradient(#c7d2d8, #dee6e8);
-   *}
+  background-color: $app-container-background
 
 #wrapper
-  position: relative
-  border-bottom: 0
-  width: $container-fixed-width
-  margin-left: auto
-  margin-right: auto
-  height: 100%
-  +bordered
-  +box-sizing(border-box)
   > .print
     background-color: white
     border: none
@@ -62,25 +31,11 @@ body
     background: $contentBackgroundColor url(#{$images-path}/backgrounds/navigation.png) repeat-y left top
     +box-shadow(0 0 15px rgba(0, 0, 0, 0.1))
 
-.content-global
-  position: relative
-  height: 100%
-  margin-top: -$headerHeight
-  background-image: url("backgrounds/navigation.png")
-  background-repeat: repeat-y
-  padding-top: $headerHeight + $topPanelHeight
-  +box-sizing(border-box)
-
 .one-big-column
-  z-index: $content-column-z-index
   @extend %list-column-shadow
-  margin-left: $navColumnWidth
-  float: none !important
-  width: auto
-  background: white
+  background-color: #fff
   position: relative
   padding: 3.5% 6%
-  display: block !important
   > header.tab-navigation
     & + .column-content
       position: absolute
@@ -91,24 +46,17 @@ body
       padding: 3.5% 6%
       overflow: auto
 
-// Containers 
-// colors
 .container-grey
   +container-color-variant($bg-light-grey)
 
 .container-white
   +container-color-variant(white)
 
-// views
 .page-content
   padding: $space-middle $space-large
 
 .page-content-compact
   padding: $space-middle
-
-// @end
-
-// Content boxes
 
 .content-heading,
 .form-heading
@@ -123,16 +71,6 @@ body
 
 .content-group-sm
   margin-bottom: $space-small
-// @end
-
-img.image-x2
-  display: none
-
-+when-retina
-  img.image-x1
-    display: none
-  img.image-x2
-    display: inline
 
 
 @media print
@@ -142,15 +80,3 @@ img.image-x2
       border: none
   .to-project-link
     display: none
-
-@media only screen and (min-width: 320px) and (max-width: 480px)
-  body #wrapper
-    > .content
-      padding-bottom: 0
-      margin-top: 0 !important
-      &:after
-        display: none
-    &:before
-      background: $contentBackgroundColor repeat-y left top
-  .one-big-column
-    margin-left: 0

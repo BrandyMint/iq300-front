@@ -1,0 +1,17 @@
+%ul.nav.nav-tabs.tab-buttons.tabnav.container-grey
+  %li.active
+    %a{"data-toggle" => "tab", :href => "#messages-tab"}
+      Сообщения
+      %span.badge{:role => "counter"} 5
+  %li
+    %a{"data-toggle" => "tab", :href => "#comments-tab"}
+      Комментарии
+      %span.badge{:role => "counter"} 5
+
+.tab-content.tab-panels
+  #messages-tab.tab-pane.active
+    = partial 'conversations/messages_list'
+  #comments-tab.tab-pane
+    = partial 'conversations/comments_list'
+
+

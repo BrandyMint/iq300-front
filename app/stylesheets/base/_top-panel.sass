@@ -1,17 +1,10 @@
 .top-panel
-  position: absolute
-  top: $headerHeight
-  right: 0
-  left: $navColumnWidth
   background: #fff
-  z-index: $top-panel-z-index
-  height: $topPanelHeight !important
+  height: $topPanelHeight
   line-height: $topPanelHeight
-  overflow: visible !important
-  border-bottom: solid 1px #f2f2f2
+  border-bottom: solid 1px rgba(#000, 0.1)
   +box-sizing(border-box)
   +clear
-  +box-shadow(-1px -1px 1px 0 rgba(0, 0, 0, 0.1))
   .projects-index &,
   .tasks-index &,
   .communities-index &
@@ -290,30 +283,6 @@
 %active-switcher-button
   background: #338cae
   color: white
-
-@media only screen and (min-width: 320px) and (max-width: 800px)
-  .top-panel
-    > .pull-left
-      > a.link
-        > i
-          margin-left: 0 !important
-          margin-right: 0 !important
-        > span
-          display: none
-      > a.add-button.small
-        +inline-block
-      > a.add-button.big
-        display: none !important
-
-@media only screen and (min-width: 320px) and (max-width: 480px)
-  .top-panel
-    padding-left: 0
-    top: 0
-    > .pull-left
-      > a.navigation, > a.list
-        +inline-block
-    > .pull-right
-      display: block
 
 .top-panel-title
   font-size: $font-size-h4

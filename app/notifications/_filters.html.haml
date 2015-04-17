@@ -11,6 +11,6 @@
               %span.pull-left= nf
               - nf_count = rand(10)
               - if nf_count > 0
-                %span.bubble-counter.pull-right{"data-params" => "{\"folder\":\"new\"}", "data-url" => "notifications", :type => "new-notifications"}
+                %span.bubble-counter-sm.pull-right{"data-params" => "{\"folder\":\"new\"}", "data-url" => "notifications", :type => "new-notifications"}
                   = nf_count
               .clearfix

@@ -1,25 +1,12 @@
 ---
 body_class: contacts-index
+nav_item: contacts
 ---
 
-= partial 'shared/header'
-.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
-  / = partial 'communities/top_panel'
-  = partial 'shared/_navigation', locals: {active: 'contacts'}
+.application-filters
   = partial 'contacts/filters'
+.application-content
+  .application-content-block
+    %section.contacts-content-column
+      = partial 'contacts/index'
 
-  %section.contacts-content-column
-    .page-content-compact
-      .row.row-collapse
-        - user_statuses = ['online', 'offline', 'away', '']
-        - for i in 1..4
-          - user_statuses.each do |user_status|
-            .col-sm-4.col-collapse
-              = partial 'contacts/contacts_list_item', locals: {user_status: user_status, is_contact: true}
-            .col-sm-4.col-collapse
-              = partial 'contacts/contacts_list_item', locals: {user_status: user_status, is_contact: false}
-
-
-
-      .text-center
-        %a.btn.btn-default{:href => "#"} Показать Еще 100

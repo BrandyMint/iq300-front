@@ -1,11 +1,6 @@
 %content-column-block
-  position: absolute
-  top: $headerHeight
-  bottom: 0
   overflow-y: auto
   +overflow-scrolling
-  &.content-column-block-under-top-panel
-    top: $headerHeight + $topPanelHeight
 
 %list-column-shadow
   +box-shadow(0 0 3px rgba(0, 0, 0, 0.2))
@@ -13,42 +8,107 @@
 %filters-column-block,
 .filters-column-block
   @extend %content-column-block
-  left: $navColumnWidth
   width: $filtersColumnWidth
-  z-index: $filters-column-z-index
   background-color: $filters-column-background
-  @extend %list-column-shadow
-  @media screen and (max-width: $screen-sm-max)
-    display: none
 
 %list-column-block,
 .list-column-block
   @extend %content-column-block
-  left: $navColumnWidth + $filtersColumnWidth
-  right: 0
-  z-index: $content-column-z-index
   background-color: #fff
-  @extend %list-column-shadow
-  @media screen and (max-width: $screen-sm-max)
-    left: $navColumnWidth
 
 %wide-column-block
   @extend %list-column-shadow
-  left: $navColumnWidth
 
-%filters-column-block
 %view-column-block,
 .view-column-block
   @extend %content-column-block
-  top: $headerHeight + $topPanelHeight
-  left: $navColumnWidth
-  right: 0
-  z-index: $content-column-z-index
   background-color: #fff
-  @extend %list-column-shadow
 
-.filters-column
+.application-wrapper
+  width: $container-fixed-width
+  height: 100%
+  margin:
+    left: auto
+    right: auto
+  display: flex
+  flex-direction: column
+
+.application-header
+  flex:
+    grow: 0
+    shrink: 0
+    basis: $headerHeight
+  order: 1
+
+.application-container
+  display: flex
+  flex:
+    flow: row
+    grow: 3
+    shrink: 1
+    basis: auto
+  order: 2
+  overflow-y: auto
+  +overflow-scrolling
+
+.application-nav
+  flex:
+    grow: 0
+    shrink: 0
+    basis: $navColumnWidth
+  order: 1
+  overflow-y: auto
+  +overflow-scrolling
+
+.application-filters
   @extend %filters-column-block
+  flex:
+    grow: 0
+    shrink: 0
+    basis: $filtersColumnWidth
+  order: 2
+  overflow-y: auto
+  +overflow-scrolling
+  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1)
 
-.list-column
-  @extend %list-column-block
+.application-content
+  @extend %view-column-block
+  @extend %list-column-shadow
+  flex: 1 1
+  order: 3
+  display: flex
+  flex-direction: column
+  z-index: $content-column-z-index
+
+.application-content-top-panel
+  //flex: 2 8 $topPanelHeight
+  order: 1
+  z-index: $top-panel-z-index
+  //min-height: $topPanelHeight
+  width: 100%
+
+.application-content-bottom-block
+  flex: 0 0 auto
+  order: 3
+  z-index: $content-column-toolbar-z-index
+  width: 100%
+
+.application-content-block
+  position: relative
+  flex: 1 1 100%
+  order: 2
+  width: 100%
+  overflow-y: auto
+  +overflow-scrolling
+
+.application-content-column
+  @extend %view-column-block
+  @extend %list-column-shadow
+  order: 4
+
+.application-content-column-block
+  .application-content-block
+
+.application-content-column-bottom-block
+  @extend .application-content-bottom-block
+

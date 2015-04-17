@@ -8,16 +8,20 @@ gulp = require("gulp")
 path = require("path")
 sass = require('gulp-sass')
 flatten = require('gulp-flatten')
-include = require('gulp-file-include')
-middleman = require('gulp-middleman')
+#include = require('gulp-file-include')
+#middleman = require('gulp-middleman')
 assetpaths = require("./lib/gulp-assetpaths/gulp-assetpaths.coffee")
 rewriteCSS = require('./lib/gulp-rewrite-css/index.coffee')
 del = require('del')
 vinylPaths = require('vinyl-paths')
 browserSync = require('browser-sync')
 reload = browserSync.reload
-
-
+#postcss = require('gulp-postcss')
+#autoprefixer = require('autoprefixer-core')
+#autoprefixer = require('gulp-autoprefixer')
+debug = require('gulp-debug')
+shell = require('gulp-shell')
+minifyCss = require('gulp-minify-css')
 
 $ = require("gulp-load-plugins")()
 sourcemaps = require("gulp-sourcemaps")
@@ -44,6 +48,13 @@ options.sassDist =
   sourceComments: 'normal'
   outputStyle: 'compact'
 
+options.autoprefixer =
+  browsers: ['Explorer 10', 'Chrome 31', 'Firefox 27', 'Opera 27', 'Safari 7', 'iOS 7', 'Android 4.1', 'OperaMini 8']
+  cascade: false
+
+options.minifyCss = 
+  compatibility: '*'
+
 gulp.task "sass:watch", ->
   gulp
     .src("./app/stylesheets/**/*.sass")
@@ -52,16 +63,24 @@ gulp.task "sass:watch", ->
     .pipe(gulp.dest("./app/tmp/stylesheets"))
     .pipe($.connect.reload())
     .on "error", $.util.log
-  return
 
 gulp.task "sass:dist", ->
   gulp
-    .src(["./app/stylesheets/**/*.sass"])
+    .src("./app/stylesheets/**/*.sass")
     .pipe(sass(options.sassDist))
     .pipe(rewriteCSS(options.rewriteCSSDist))
+    .pipe(minifyCss(options.minifyCss))
     .pipe(gulp.dest("./dist/stylesheets"))
     .on "error", $.util.log
-  return
+
+gulp.task "prefix:watch", ["sass:watch"], shell.task([
+  './node_modules/.bin/autoprefixer ' + './app/tmp/stylesheets/*.css ' + '-b '+ '"' + options.autoprefixer.browsers.join(', ').toLowerCase() + '"'
+])
+
+gulp.task "prefix:dist", ["sass:dist"], shell.task([
+  './node_modules/.bin/autoprefixer ' + './dist/stylesheets/*.css ' + '-b '+ '"' + options.autoprefixer.browsers.join(', ').toLowerCase() + '"'
+])
+
 
 options.middleman =
   useBundler: true
@@ -135,7 +154,13 @@ gulp.task "dist", [
   "sass:dist"
   "images:dist"
   "fonts:dist"
-]
+  "prefix:dist"
+], ->
+  gulp.on 'stop', ->
+    process.nextTick ->
+      process.exit 0
+      return
+    return
 
 # Default task
 gulp.task "default", ["clean:dist"], ->
@@ -155,6 +180,7 @@ gulp.task "watch", [
   "sass:watch"
   "images:watch"
   "fonts:watch"
+  "prefix:watch"
   #"assets"
   #"html"
   #"bundle"
@@ -171,8 +197,8 @@ gulp.task "watch", [
   gulp.watch "app/fonts/**/*", ["fonts:watch"]
   gulp.watch "app/images/**/*", ["images:watch"]
   #gulp.watch ["app/**/*.haml"], ["browser-sync-reload"]
-  gulp.watch ["app/javascripts/**/*.*"], ["browser-sync-reload"]
-  gulp.watch ["app/tmp/stylesheets/*.css"], ["browser-sync-reload"]
+  gulp.watch ["app/javascripts/**/*.*", "app/tmp/stylesheets/*.css"], ["browser-sync-reload"]
+  #gulp.watch ["app/tmp/stylesheets/*.css"], ["browser-sync-reload"]
  
   # Watch .js files
   #gulp.watch "app/scripts/**/*.js", ["scripts"]

@@ -7,7 +7,5 @@
     %a.add-button.big{"data-popup" => "add-button-target", href: "/projects/new"}
       %i.icon-plus
       %span Создать проект
-    %a.voronka.mode-trigger.mode-trigger-initialized{href: "#", mode: "filters", onclick: "$('#container').removeClass('show-navigation show-list').toggleClass('show-filters'); return false;", state: "false"}
-      %i.icon-filter
     -# wtf html fix with inline style
     = partial 'shared/select2', locals: {title: 'Выберите сообщество'}

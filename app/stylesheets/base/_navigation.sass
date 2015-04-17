@@ -4,8 +4,6 @@ $nav-item-active-color: white
 
 .nav-global
   width: $navColumnWidth
-  top: -$topPanelHeight
-  padding-bottom: $topPanelHeight
   height: 100%
   position: relative
   z-index: 12
@@ -15,23 +13,6 @@ $nav-item-active-color: white
   overflow-y: auto
   +transition(opacity 0.25s ease-out)
   +box-sizing(content-box)
-  .logo
-    margin: 10px auto
-    width: $navColumnWidth / 2 - 1
-    height: $navColumnWidth / 2 - 1
-    background: $contentBackgroundColor
-    display: none
-    a
-      +inline-block
-      overflow: hidden
-      width: 100%
-      height: 100%
-      line-height: 0
-      text-align: center
-      img
-        +list-fix
-        width: 47px
-        height: 47px
   ul
     width: 100%
     > li
@@ -50,8 +31,6 @@ $nav-item-active-color: white
         border-bottom: 1px solid transparent
         color: $gray
         &:hover
-          //background: lighten($navigationBackground, 3%);
-          //border-color: lighten($navigationBackground, 10%);
           text-decoration: none
           &, .picture
             color: $nav-item-highlight-color
@@ -65,9 +44,6 @@ $nav-item-active-color: white
           color: $gray-light
           +transition(all 0.2s ease-out)
           +transition-property(color, background)
-          @media screen and (max-width: 480px) and (max-height: 740px)
-            height: auto
-            font-size: 20px
           > sup
             @extend %bubble-counter
             display: block
@@ -76,29 +52,14 @@ $nav-item-active-color: white
             right: 0%
             margin-right: 5px
             text-decoration: none
-          //> sup.overdue
-            margin-top: 25px
         > span
           display: block
           width: 100%
           font-size: 11px
           line-height: 11px
-          @media screen and (max-width: 480px) and (max-height: 740px)
-            width: auto
-            line-height: 24px
-            margin-left: 10px
-            font-size: 13px
       &.active
         background: $nav-item-active-background
         position: relative
-        // @include has-after-icon(24px, #cdd8dc) {
-        //   overflow: hidden;
-        //   right: 0;
-        //   width: 8px;
-        //   top: 50% !important;
-        //   margin-top: -11px;
-        //   @extend .icon-caret-left:before;
-        // }
         a
           font-weight: bold
           &:hover
@@ -108,96 +69,3 @@ $nav-item-active-color: white
           > span
             color: $nav-item-active-color
 
-@media only screen and (min-width: 320px) and (max-width: 480px)
-  .nav-global
-    position: fixed
-    top: 0
-    left: 0
-    z-index: -2
-    width: $filtersColumnWidth
-    +box-shadow(inset -10px 0 10px rgba(0, 0, 0, 0.15))
-    +opacity(0)
-    > .logo
-      display: block
-    ul > li
-      &.projects, &.communities, &.docs, &.calendars
-        display: none
-    > ul > li > a
-      text-align: left
-      padding-left: 10px
-      padding-right: 10px
-      > div
-        margin-bottom: 0 !important
-      > span
-  // Show nav
-  .show-navigation
-    left: $filtersColumnWidth
-    .nav-global
-      z-index: -1
-      +opacity(1)
-
-/*.nav-global-legacy {
- *
- *  @media only screen and (min-height: 675px) and (max-height: 751px) {
- *    .nav-global ul > li {
- *      a {
- *        padding-top: 14px;
- *        padding-bottom: 8px;
- *        .picture > i {
- *          font-size: 33px;
- *        }
- *      }
- *    }
- *  }
- *
- *  @media only screen and (min-height: 615px) and (max-height: 675px) {
- *    .nav-global ul > li {
- *      a {
- *        padding-top: 12px;
- *        padding-bottom: 6px;
- *        .picture > i {
- *          font-size: 30px;
- *        }
- *      }
- *    }
- *  }
- *
- *  @media only screen and (min-height: 579px) and (max-height: 625px) {
- *    .nav-global ul > li {
- *      a {
- *        padding-top: 10px;
- *        padding-bottom: 4px;
- *        .picture > i {
- *          font-size: 27px;
- *        }
- *      }
- *    }
- *  }
- *
- *  @media only screen and (min-height: 544px) and (max-height: 583px) {
- *    .nav-global ul > li {
- *      a {
- *        padding-top: 8px;
- *        padding-bottom: 2px;
- *        .picture > i {
- *          font-size: 24px;
- *        }
- *      }
- *    }
- *  }
- *
- *  @media only screen and (min-height: 220px) and (max-height: 544px) {
- *    .nav-global ul > li {
- *      a {
- *        padding-top: 8px;
- *        padding-bottom: 2px;
- *        .picture {
- *          margin-bottom: -2px;
- *          > i {
- *            font-size: 22px;
- *          }
- *        }
- *      }
- *    }
- *  }
- *}

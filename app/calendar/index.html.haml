@@ -1,26 +1,26 @@
 ---
 body_class: calendar-show
+nav_item: calendar
 ---
 
-= partial 'shared/header'
-.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "show", filters: "false", full_view: "true", list: "false", view: "true"}
-  = partial 'shared/_navigation', locals: {active: 'calendar'}
-  %section.calendar-content-column{"data-channel" => "private-project-879:update", "data-channel-template" => "private-project-%id%:update", "data-id" => "879", "data-url" => "/projects"}
-    .calendar-block-container{role: 'calendar-container'}
-      .form-group.form-inline
-        %select{role: 'multiselect-calendar-communities', :tabindex => "-1", multiple: 'multiple'}
-          %option{selected: 'selected'} Iq300
-          - for i in 1..6
-            - caption = "Сообщество #{i} Управление организационно-аналитической и правовой работы аппарата Мэра (Городского Совета)"
-            %option= truncate(caption, length: 30)
+.application-content
+  .application-content-block{role: 'application-content-block'}
+    %section.calendar-content-column{"data-channel" => "private-project-879:update", "data-channel-template" => "private-project-%id%:update", "data-id" => "879", "data-url" => "/projects"}
+      .calendar-block-container{role: 'calendar-container'}
+        .form-group.form-inline
+          %select{role: 'multiselect-calendar-communities', :tabindex => "-1", multiple: 'multiple'}
+            %option{selected: 'selected'} Iq300
+            - for i in 1..6
+              - caption = "Сообщество #{i} Управление организационно-аналитической и правовой работы аппарата Мэра (Городского Совета)"
+              %option= truncate(caption, length: 30)
 
-        %select{role: 'multiselect-calendar-users', :tabindex => "-1", multiple: 'multiple'}
-          - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов, Ахмед Сарсенбайулов-Алтынбеков".split(', ')
-          - for i in 0..2
-            - filter_users.each do |user|
-              %option
-                -#= "#{user.split(' ')[0][0]}. #{truncate(user.split(' ')[1..-1].join(' '), length: 12)}"
-                = user
+          %select{role: 'multiselect-calendar-users', :tabindex => "-1", multiple: 'multiple'}
+            - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов, Ахмед Сарсенбайулов-Алтынбеков".split(', ')
+            - for i in 0..2
+              - filter_users.each do |user|
+                %option
+                  -#= "#{user.split(' ')[0][0]}. #{truncate(user.split(' ')[1..-1].join(' '), length: 12)}"
+                  = user
 
         .checkbox.pull-right
           %label
@@ -28,4 +28,4 @@ body_class: calendar-show
               Скрыть дедлайн задач
         .clearfix
 
-      .calendar-block{role: 'fullcalendar', data: {'events' => "#{build? ? '../events.json' : '/events.json'}"}}
+        .calendar-block{role: 'fullcalendar', data: {'events' => "#{build? ? '../events.json' : '/events.json'}"}}

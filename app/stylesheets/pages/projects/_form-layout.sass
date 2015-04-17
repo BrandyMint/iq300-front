@@ -9,7 +9,7 @@ $pft-selected-header-height: 60px
 $pft-content-header-height: 60px
 
 //$pft-list-top: $topPanelHeight + $headerHeight + $project-form-navigation-height + $pft-block-gutter-fixed;
-$pft-list-top: $project-form-navigation-height + $pft-block-gutter-fixed / 2
+$pft-list-top: $pft-block-gutter-fixed / 2
 $pft-list-bottom: $pft-block-gutter-fixed
 
 $pft-width-fixed: 1280px
@@ -85,3 +85,20 @@ $pft-dims-list: $pft-header-dims $pft-sidebar-dims $pft-content-dims $pft-conten
   bottom: $pft-list-bottom
   margin-top: $pft-selected-header-height
   overflow-y: auto
+
+.project-form-navigation
+  min-height: $project-form-navigation-height
+  box-sizing: border-box
+  padding:
+    top: 5px
+    bottom: 5px
+  background-color: #fff
+  color: $greyText
+  text-align: center
+  border-bottom: solid 1px $line-color
+  &.project-form-navigation-top
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: $pft-header-z-index
+

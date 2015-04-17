@@ -1,31 +1,31 @@
-= partial 'notifications/popover'
-
-%header.header-global
-  %a.logo{href: "/", title: "IQ300 System"}
-  .search-header{"role-ready" => "search-form"}
-    %span.search-button
-      %span.icon-search
-    %form.form-search{action: "/projects/879", method: "get"}
-      / - b = button_tag raw("<span class='icon-search'></span>")
-      / #{content_tag(:i)}#{i}#{b}
-      %i
-      %input#search.search-query.form-control{name: "search", placeholder: "Поиск", role: "global-search-field", type: "search"}/
-  %span.app-version
-    = app_version
-  .user-nav
-    %a.notifications-widget-button{role: 'notifications-widget-button'}
-      %i.iqs-notifications-o
-      .notifications-widget-button-bullet
-    %a{href: "/help"} Помощь
-    %a{href: "/users/1757"}
-      %span.userpic
-        %img.userpic-image.img-corrector-initialized{alt: "Александр", hide_wait_message: "true", src: "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", title: "Мещеряков Александр Игоревич"}/
-      Александр Мещеряков
-    %a.fa.fa-sign-out{"data-method" => "delete", href: "/users/sign_out", rel: "nofollow", title: "Выйти"}
-    / %section
-    / = render "shared/user_widget"
-    / .help-link>
-    / = link_to icon('question-sign'), "/help", title: t('common.help')
-  %input#app_signed_in_user_id{name: "app_signed_in_user_id", type: "hidden", value: "1757"}/
-  %input#pusher_app_key{name: "pusher_app_key", type: "hidden", value: "7baa6a182eefe7314de0"}/
+.application-header
+  = partial 'notifications/popover'
+  %header.header-global
+    %a.logo{href: "/", title: "IQ300 System"}
+    .search-header{"role-ready" => "search-form"}
+      %span.search-button
+        %span.icon-search
+      %form.form-search{action: "/projects/879", method: "get"}
+        / - b = button_tag raw("<span class='icon-search'></span>")
+        / #{content_tag(:i)}#{i}#{b}
+        %i
+        %input#search.search-query.form-control{name: "search", placeholder: "Поиск", role: "global-search-field", type: "search"}/
+    %span.app-version
+      = app_version
+    .user-nav
+      %a.notifications-widget-button{role: 'notifications-widget-button'}
+        %i.iqs-notifications-o
+        .notifications-widget-button-bullet
+      %a{href: "/help"} Помощь
+      %a{href: "/users/1757"}
+        %span.userpic
+          %img.userpic-image.img-corrector-initialized{alt: "Александр", hide_wait_message: "true", src: "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", title: "Мещеряков Александр Игоревич"}/
+        Александр Мещеряков
+      %a.fa.fa-sign-out{"data-method" => "delete", href: "/users/sign_out", rel: "nofollow", title: "Выйти"}
+      / %section
+      / = render "shared/user_widget"
+      / .help-link>
+      / = link_to icon('question-sign'), "/help", title: t('common.help')
+    %input#app_signed_in_user_id{name: "app_signed_in_user_id", type: "hidden", value: "1757"}/
+    %input#pusher_app_key{name: "pusher_app_key", type: "hidden", value: "7baa6a182eefe7314de0"}/
 
