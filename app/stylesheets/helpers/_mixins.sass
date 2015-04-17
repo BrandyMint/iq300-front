@@ -173,43 +173,6 @@ $main_radius: 3px !default
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
     @content
 
-@function arrow-direction($direction)
-  @if $direction == bottom
-    @return top left
-  @if $direction == top
-    @return bottom left
-
-=arrow($direction: bottom, $arrow-size: $grid-gutter-width, $arrow-color: white, $arrow-border-color: $gray-lighter)
-  position: relative
-  //border: 1px solid $arrow-color;
-  &:after, &:before
-    #{nth(arrow-direction($direction), 1)}: 100%
-    #{nth(arrow-direction($direction), 2)}: 50%
-    border: solid transparent
-    content: " "
-    height: 0
-    width: 0
-    position: absolute
-    pointer-events: none
-  &:after
-    border-color: rgba($arrow-color, 0)
-    border-#{nth(arrow-direction($direction), 1)}-color: $arrow-color
-    border-width: $arrow-size
-    margin-#{nth(arrow-direction($direction), 2)}: -$arrow-size
-  &:before
-    border-color: rgba($arrow-border-color, 0)
-    border-#{nth(arrow-direction($direction), 1)}-color: $arrow-border-color
-    border-width: $arrow-size + 1px
-    margin-#{nth(arrow-direction($direction), 2)}: -$arrow-size - 1px
-
-=arrow-position-left($left: 50%)
-  &:after, &:before
-    left: $left
-
-=arrow-position-top($top: 50%)
-  &:after, &:before
-    top: $top
-
 =badge-style($bg-color)
   color: $base-color
   font-size: 10px
