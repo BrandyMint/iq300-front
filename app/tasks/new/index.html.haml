@@ -43,7 +43,7 @@ body_class: tasks-show
           Описание
         .col-sm-10
           %textarea#base_task_description.form-control{:cols => "40", :name => "base_task[description]", :rows => "5"}
-      .form-group{:role => "community"}
+      .form-group.collapse.in{:role => "task-new-community"}
         %label.control-label.col-sm-2
           Сообщество
         .col-sm-5
@@ -52,16 +52,24 @@ body_class: tasks-show
             %option{:value => "291"} Fake community
         .col-md-1.form-control-static.nopadding-left
           .fa.fa-question-circle{"data-original-title" => "Укажите сообщество, в рамках которого Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
-      .form-group{:role => "community"}
+        .col-sm-3.add-invited-executor-button
+          %a.btn{href: '[role*="task-new-community"]', data: {toggle: :collapse}}
+            или выберите проект
+      .form-group.collapse{:role => "task-new-community-project"}
         %label.control-label.col-sm-2
           Проект
         .col-sm-5
           %select{role: 'select2', style: 'width: 100%'}
             %option{selected: true}
-            %option{:value => "290"} Test project
-            %option{:value => "291"} Another project
+            - for i in 1..3
+              %optgroup{label: "Сообщество #{i}"}
+                %option{:value => "290"} Test project
+                %option{:value => "291"} Another project
         .col-md-1.form-control-static.nopadding-left
           .fa.fa-question-circle{"data-original-title" => "Укажите проект, в рамках которого Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
+        .col-sm-3.add-invited-executor-button
+          %a.btn{href: '[role*="task-new-community"]', data: {toggle: :collapse}}
+            или выберите сообщество
 
       .form-group.show{:role => "task-executor"}
         %label.control-label.col-sm-2
@@ -73,6 +81,10 @@ body_class: tasks-show
             %option{:value => "291"} Эльвир Нуриахметов
         .col-md-1.form-control-static.nopadding-left
           .fa.fa-question-circle{"data-original-title" => "Укажите сотрудника, которому Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
+        .col-sm-3.add-invited-executor-button
+          %a.btn{}
+            или добавьте нового пользователя
+
       .form-group{"role-datetime-field" => "ready"}
         %label.control-label.col-sm-2
           Начинается:
