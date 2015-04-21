@@ -2835,28 +2835,28 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     -webkit-box-shadow: none; }
 
 /* line 62, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
-.btn-default, .btn-outline-gray-light, .btn-outline-gray, .btn-outline-danger, .btn-outline-primary {
+.btn-default, .btn-outline-gray-light, .btn-outline-gray, .btn-outline-danger, .btn-outline-primary, .btn-outline-success {
   color: #338cae;
   background-color: #fff;
   border-color: #ccc; }
   /* line 15, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/buttons */
-  .btn-default:hover, .btn-outline-gray-light:hover, .btn-outline-gray:hover, .btn-outline-danger:hover, .btn-outline-primary:hover, .btn-default:focus, .btn-outline-gray-light:focus, .btn-outline-gray:focus, .btn-outline-danger:focus, .btn-outline-primary:focus, .btn-default:active, .btn-outline-gray-light:active, .btn-outline-gray:active, .btn-outline-danger:active, .btn-outline-primary:active, .btn-default.active, .active.btn-outline-gray-light, .active.btn-outline-gray, .active.btn-outline-danger, .active.btn-outline-primary, .open > .btn-default.dropdown-toggle, .open > .dropdown-toggle.btn-outline-gray-light, .open > .dropdown-toggle.btn-outline-gray, .open > .dropdown-toggle.btn-outline-danger, .open > .dropdown-toggle.btn-outline-primary {
+  .btn-default:hover, .btn-outline-gray-light:hover, .btn-outline-gray:hover, .btn-outline-danger:hover, .btn-outline-primary:hover, .btn-outline-success:hover, .btn-default:focus, .btn-outline-gray-light:focus, .btn-outline-gray:focus, .btn-outline-danger:focus, .btn-outline-primary:focus, .btn-outline-success:focus, .btn-default:active, .btn-outline-gray-light:active, .btn-outline-gray:active, .btn-outline-danger:active, .btn-outline-primary:active, .btn-outline-success:active, .btn-default.active, .active.btn-outline-gray-light, .active.btn-outline-gray, .active.btn-outline-danger, .active.btn-outline-primary, .active.btn-outline-success, .open > .btn-default.dropdown-toggle, .open > .dropdown-toggle.btn-outline-gray-light, .open > .dropdown-toggle.btn-outline-gray, .open > .dropdown-toggle.btn-outline-danger, .open > .dropdown-toggle.btn-outline-primary, .open > .dropdown-toggle.btn-outline-success {
     color: #338cae;
     background-color: white;
     border-color: #d4d4d4; }
   /* line 22, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/buttons */
-  .btn-default:active, .btn-outline-gray-light:active, .btn-outline-gray:active, .btn-outline-danger:active, .btn-outline-primary:active, .btn-default.active, .active.btn-outline-gray-light, .active.btn-outline-gray, .active.btn-outline-danger, .active.btn-outline-primary, .open > .btn-default.dropdown-toggle, .open > .dropdown-toggle.btn-outline-gray-light, .open > .dropdown-toggle.btn-outline-gray, .open > .dropdown-toggle.btn-outline-danger, .open > .dropdown-toggle.btn-outline-primary {
+  .btn-default:active, .btn-outline-gray-light:active, .btn-outline-gray:active, .btn-outline-danger:active, .btn-outline-primary:active, .btn-outline-success:active, .btn-default.active, .active.btn-outline-gray-light, .active.btn-outline-gray, .active.btn-outline-danger, .active.btn-outline-primary, .active.btn-outline-success, .open > .btn-default.dropdown-toggle, .open > .dropdown-toggle.btn-outline-gray-light, .open > .dropdown-toggle.btn-outline-gray, .open > .dropdown-toggle.btn-outline-danger, .open > .dropdown-toggle.btn-outline-primary, .open > .dropdown-toggle.btn-outline-success {
     background-image: none; }
   /* line 32, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/buttons */
-  .btn-default.disabled, .disabled.btn-outline-gray-light, .disabled.btn-outline-gray, .disabled.btn-outline-danger, .disabled.btn-outline-primary, .btn-default.disabled:hover, .disabled.btn-outline-gray-light:hover, .disabled.btn-outline-gray:hover, .disabled.btn-outline-danger:hover, .disabled.btn-outline-primary:hover, .btn-default.disabled:focus, .disabled.btn-outline-gray-light:focus, .disabled.btn-outline-gray:focus, .disabled.btn-outline-danger:focus, .disabled.btn-outline-primary:focus, .btn-default.disabled:active, .disabled.btn-outline-gray-light:active, .disabled.btn-outline-gray:active, .disabled.btn-outline-danger:active, .disabled.btn-outline-primary:active, .btn-default.disabled.active, .disabled.active.btn-outline-gray-light, .disabled.active.btn-outline-gray, .disabled.active.btn-outline-danger, .disabled.active.btn-outline-primary, .btn-default[disabled], [disabled].btn-outline-gray-light, [disabled].btn-outline-gray, [disabled].btn-outline-danger, [disabled].btn-outline-primary, .btn-default[disabled]:hover, [disabled].btn-outline-gray-light:hover, [disabled].btn-outline-gray:hover, [disabled].btn-outline-danger:hover, [disabled].btn-outline-primary:hover, .btn-default[disabled]:focus, [disabled].btn-outline-gray-light:focus, [disabled].btn-outline-gray:focus, [disabled].btn-outline-danger:focus, [disabled].btn-outline-primary:focus, .btn-default[disabled]:active, [disabled].btn-outline-gray-light:active, [disabled].btn-outline-gray:active, [disabled].btn-outline-danger:active, [disabled].btn-outline-primary:active, .btn-default[disabled].active, [disabled].active.btn-outline-gray-light, [disabled].active.btn-outline-gray, [disabled].active.btn-outline-danger, [disabled].active.btn-outline-primary, fieldset[disabled] .btn-default, fieldset[disabled] .btn-outline-gray-light, fieldset[disabled] .btn-outline-gray, fieldset[disabled] .btn-outline-danger, fieldset[disabled] .btn-outline-primary, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-outline-gray-light:hover, fieldset[disabled] .btn-outline-gray:hover, fieldset[disabled] .btn-outline-danger:hover, fieldset[disabled] .btn-outline-primary:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-outline-gray-light:focus, fieldset[disabled] .btn-outline-gray:focus, fieldset[disabled] .btn-outline-danger:focus, fieldset[disabled] .btn-outline-primary:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-outline-gray-light:active, fieldset[disabled] .btn-outline-gray:active, fieldset[disabled] .btn-outline-danger:active, fieldset[disabled] .btn-outline-primary:active, fieldset[disabled] .btn-default.active, fieldset[disabled] .active.btn-outline-gray-light, fieldset[disabled] .active.btn-outline-gray, fieldset[disabled] .active.btn-outline-danger, fieldset[disabled] .active.btn-outline-primary {
+  .btn-default.disabled, .disabled.btn-outline-gray-light, .disabled.btn-outline-gray, .disabled.btn-outline-danger, .disabled.btn-outline-primary, .disabled.btn-outline-success, .btn-default.disabled:hover, .disabled.btn-outline-gray-light:hover, .disabled.btn-outline-gray:hover, .disabled.btn-outline-danger:hover, .disabled.btn-outline-primary:hover, .disabled.btn-outline-success:hover, .btn-default.disabled:focus, .disabled.btn-outline-gray-light:focus, .disabled.btn-outline-gray:focus, .disabled.btn-outline-danger:focus, .disabled.btn-outline-primary:focus, .disabled.btn-outline-success:focus, .btn-default.disabled:active, .disabled.btn-outline-gray-light:active, .disabled.btn-outline-gray:active, .disabled.btn-outline-danger:active, .disabled.btn-outline-primary:active, .disabled.btn-outline-success:active, .btn-default.disabled.active, .disabled.active.btn-outline-gray-light, .disabled.active.btn-outline-gray, .disabled.active.btn-outline-danger, .disabled.active.btn-outline-primary, .disabled.active.btn-outline-success, .btn-default[disabled], [disabled].btn-outline-gray-light, [disabled].btn-outline-gray, [disabled].btn-outline-danger, [disabled].btn-outline-primary, [disabled].btn-outline-success, .btn-default[disabled]:hover, [disabled].btn-outline-gray-light:hover, [disabled].btn-outline-gray:hover, [disabled].btn-outline-danger:hover, [disabled].btn-outline-primary:hover, [disabled].btn-outline-success:hover, .btn-default[disabled]:focus, [disabled].btn-outline-gray-light:focus, [disabled].btn-outline-gray:focus, [disabled].btn-outline-danger:focus, [disabled].btn-outline-primary:focus, [disabled].btn-outline-success:focus, .btn-default[disabled]:active, [disabled].btn-outline-gray-light:active, [disabled].btn-outline-gray:active, [disabled].btn-outline-danger:active, [disabled].btn-outline-primary:active, [disabled].btn-outline-success:active, .btn-default[disabled].active, [disabled].active.btn-outline-gray-light, [disabled].active.btn-outline-gray, [disabled].active.btn-outline-danger, [disabled].active.btn-outline-primary, [disabled].active.btn-outline-success, fieldset[disabled] .btn-default, fieldset[disabled] .btn-outline-gray-light, fieldset[disabled] .btn-outline-gray, fieldset[disabled] .btn-outline-danger, fieldset[disabled] .btn-outline-primary, fieldset[disabled] .btn-outline-success, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-outline-gray-light:hover, fieldset[disabled] .btn-outline-gray:hover, fieldset[disabled] .btn-outline-danger:hover, fieldset[disabled] .btn-outline-primary:hover, fieldset[disabled] .btn-outline-success:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-outline-gray-light:focus, fieldset[disabled] .btn-outline-gray:focus, fieldset[disabled] .btn-outline-danger:focus, fieldset[disabled] .btn-outline-primary:focus, fieldset[disabled] .btn-outline-success:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-outline-gray-light:active, fieldset[disabled] .btn-outline-gray:active, fieldset[disabled] .btn-outline-danger:active, fieldset[disabled] .btn-outline-primary:active, fieldset[disabled] .btn-outline-success:active, fieldset[disabled] .btn-default.active, fieldset[disabled] .active.btn-outline-gray-light, fieldset[disabled] .active.btn-outline-gray, fieldset[disabled] .active.btn-outline-danger, fieldset[disabled] .active.btn-outline-primary, fieldset[disabled] .active.btn-outline-success {
     background-color: #fff;
     border-color: #ccc; }
   /* line 38, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/framework/bootstrap/mixins/buttons */
-  .btn-default .badge, .btn-outline-gray-light .badge, .btn-outline-gray .badge, .btn-outline-danger .badge, .btn-outline-primary .badge {
+  .btn-default .badge, .btn-outline-gray-light .badge, .btn-outline-gray .badge, .btn-outline-danger .badge, .btn-outline-primary .badge, .btn-outline-success .badge {
     color: #fff;
     background-color: #338cae; }
   /* line 64, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
-  .btn-default:hover, .btn-outline-gray-light:hover, .btn-outline-gray:hover, .btn-outline-danger:hover, .btn-outline-primary:hover {
+  .btn-default:hover, .btn-outline-gray-light:hover, .btn-outline-gray:hover, .btn-outline-danger:hover, .btn-outline-primary:hover, .btn-outline-success:hover {
     border-color: #338cae; }
 
 /* line 68, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/framework/bootstrap/buttons */
@@ -5939,15 +5939,124 @@ a {
   a.link-plain, a.link-plain:hover {
     text-decoration: none; }
 
-/* line 2, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 1, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-xs, .btn-group-xs > .btn, .btn-group-xs > .community-invites-btn-base, .btn-group-xs > .community-invites-btn-check, .btn-group-xs > .community-invites-btn-send, .btn-group-xs > .registration-form-submit-btn, .btn-group-xs > .registration-form-btn-social, .btn-group-xs > .registration-form-btn-signup {
+  font-size: 11px; }
+
+/* line 6, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-plain, .btn-link-plain:hover, .btn-link-plain:focus {
+  text-decoration: none; }
+
+/* line 10, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-white {
+  color: #fff; }
+  /* line 13, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-white:hover {
+    color: #e6e6e6; }
+
+/* line 10, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-gray-lighter {
+  color: #eeeeee; }
+  /* line 13, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-gray-lighter:hover {
+    color: #d5d5d5; }
+
+/* line 10, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-gray-light {
+  color: #999999; }
+  /* line 13, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-gray-light:hover {
+    color: gray; }
+
+/* line 10, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-gray {
+  color: #555555; }
+  /* line 13, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-gray:hover {
+    color: #3c3c3c; }
+
+/* line 10, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-success {
+  color: #3ab54a; }
+  /* line 13, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-success:hover {
+    color: #2e8e3a; }
+
+/* line 10, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-danger {
+  color: #ff0101; }
+  /* line 13, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-danger:hover {
+    color: #cd0000; }
+
+/* line 10, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-warning {
+  color: #f8931f; }
+  /* line 13, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-warning:hover {
+    color: #dd7907; }
+
+/* line 10, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-link-primary {
+  color: #338cae; }
+  /* line 13, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-link-primary:hover {
+    color: #276c87; }
+
+/* line 17, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-outline-gray-light {
+  color: #999999;
+  border-color: #e6e6e6; }
+  /* line 21, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-outline-gray-light:hover, .btn-outline-gray-light:hover {
+    color: gray;
+    border-color: #cccccc; }
+
+/* line 17, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-outline-gray {
+  color: #555555;
+  border-color: #a2a2a2; }
+  /* line 21, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-outline-gray:hover, .btn-outline-gray:hover {
+    color: #3c3c3c;
+    border-color: #888888; }
+
+/* line 17, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-outline-danger {
+  color: #ff0101;
+  border-color: #ff9a9a; }
+  /* line 21, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-outline-danger:hover, .btn-outline-danger:hover {
+    color: #cd0000;
+    border-color: #ff6767; }
+
+/* line 17, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-outline-primary {
+  color: #338cae;
+  border-color: #99cde1; }
+  /* line 21, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-outline-primary:hover, .btn-outline-primary:hover {
+    color: #276c87;
+    border-color: #71bad6; }
+
+/* line 17, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+.btn-outline-success {
+  color: #3ab54a;
+  border-color: #a6e2ae; }
+  /* line 21, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  .btn-outline-success:hover, .btn-outline-success:hover {
+    color: #2e8e3a;
+    border-color: #7fd68a; }
+
+/* line 26, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
 input[type="submit"].btn, input[type="submit"].community-invites-btn-base, input[type="submit"].community-invites-btn-check, input[type="submit"].community-invites-btn-send, input[type="submit"].registration-form-submit-btn, input[type="submit"].registration-form-btn-social, input[type="submit"].registration-form-btn-signup {
   font-weight: 600; }
 
-/* line 5, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 29, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
 .btn-file {
   position: relative;
   overflow: hidden; }
-  /* line 8, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 32, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
   .btn-file input[type="file"] {
     opacity: 0;
     position: absolute;
@@ -5956,103 +6065,7 @@ input[type="submit"].btn, input[type="submit"].community-invites-btn-base, input
     z-index: 0;
     font-size: 300%; }
 
-/* line 18, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-plain, .btn-link-plain:hover, .btn-link-plain:focus {
-  text-decoration: none; }
-
-/* line 22, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-white {
-  color: #fff; }
-  /* line 25, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-white:hover {
-    color: #e6e6e6; }
-
-/* line 22, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-gray-lighter {
-  color: #eeeeee; }
-  /* line 25, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-gray-lighter:hover {
-    color: #d5d5d5; }
-
-/* line 22, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-gray-light {
-  color: #999999; }
-  /* line 25, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-gray-light:hover {
-    color: gray; }
-
-/* line 22, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-gray {
-  color: #555555; }
-  /* line 25, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-gray:hover {
-    color: #3c3c3c; }
-
-/* line 22, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-success {
-  color: #3ab54a; }
-  /* line 25, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-success:hover {
-    color: #2e8e3a; }
-
-/* line 22, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-danger {
-  color: #ff0101; }
-  /* line 25, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-danger:hover {
-    color: #cd0000; }
-
-/* line 22, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-warning {
-  color: #f8931f; }
-  /* line 25, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-warning:hover {
-    color: #dd7907; }
-
-/* line 22, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-link-primary {
-  color: #338cae; }
-  /* line 25, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-link-primary:hover {
-    color: #276c87; }
-
-/* line 29, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-outline-gray-light {
-  color: #999999;
-  border-color: #e6e6e6; }
-  /* line 33, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-outline-gray-light:hover, .btn-outline-gray-light:hover {
-    color: gray;
-    border-color: #cccccc; }
-
-/* line 29, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-outline-gray {
-  color: #555555;
-  border-color: #a2a2a2; }
-  /* line 33, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-outline-gray:hover, .btn-outline-gray:hover {
-    color: #3c3c3c;
-    border-color: #888888; }
-
-/* line 29, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-outline-danger {
-  color: #ff0101;
-  border-color: #ff9a9a; }
-  /* line 33, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-outline-danger:hover, .btn-outline-danger:hover {
-    color: #cd0000;
-    border-color: #ff6767; }
-
-/* line 29, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-.btn-outline-primary {
-  color: #338cae;
-  border-color: #99cde1; }
-  /* line 33, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
-  .btn-outline-primary:hover, .btn-outline-primary:hover {
-    color: #276c87;
-    border-color: #71bad6; }
-
-/* line 37, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 42, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-base, .community-invites-btn-check, .community-invites-btn-send {
   width: 20%;
   background-color: #3daddf;
@@ -6062,20 +6075,20 @@ input[type="submit"].btn, input[type="submit"].community-invites-btn-base, input
   padding-left: 4em;
   padding-right: 4em;
   font-weight: normal; }
-  /* line 47, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 52, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
   .community-invites-btn-base:hover, .community-invites-btn-check:hover, .community-invites-btn-send:hover, .community-invites-btn-base:focus, .community-invites-btn-check:focus, .community-invites-btn-send:focus {
     color: white;
     background-color: #2194c8; }
-  /* line 50, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+  /* line 55, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
   .community-invites-btn-base:active, .community-invites-btn-check:active, .community-invites-btn-send:active {
     color: #fff !important; }
 
-/* line 53, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 58, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-check {
   margin-right: 4em;
   float: right; }
 
-/* line 58, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
+/* line 63, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/elements/buttons */
 .community-invites-btn-send {
   margin-top: 1.8em;
   margin-right: 4em;

@@ -1,60 +1,22 @@
+
 .accessor-users{"role-task-members" => "ready"}
   %section.invite-participiant
-    %a.add-button{:href => "#", "ui-invite-member-button" => "true"} Пригласить участника
-    %section.invite-community-member.search-user-for-community{:style => "display: block;", "ui-invite-form" => ""}
-      %form{:action => "/tasks/2383/candidates?for=tasks", :method => "get", "ui-search-form" => ""}
-        %span.twitter-typeahead{:style => "position: relative; display: inline-block;"}
-          %input.tt-hint{:autocomplete => "off", :disabled => "disabled", :spellcheck => "off", :style => "position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);", :type => "text"}/
-          %span.twitter-typeahead{:style => "position: relative; display: inline-block;"}
-            %input.tt-hint{:autocomplete => "off", :disabled => "disabled", :spellcheck => "off", :style => "position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);", :type => "text"}/
-            %input#search.tt-query{:autocomplete => "off", :dir => "auto", :name => "search", :placeholder => "Введите имя пользователя или его email", :spellcheck => "false", :style => "position: relative; vertical-align: top; background-color: transparent;", :type => "text", "ui-search-input" => "true", :value => ""}/
-            %span{:style => "position: absolute; left: -9999px; visibility: hidden; white-space: nowrap; font-family: Arial, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"}
-            %span.tt-dropdown-menu{:style => "position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"}
-          %span{:style => "position: absolute; left: -9999px; visibility: hidden; white-space: nowrap; font-family: Arial, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"}
-          %span.tt-dropdown-menu{:style => "position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"}
+    %a.btn.btn-primary{:href => "#", :style => "color:white;", "ui-invite-member-button" => "true"} Пригласить участника
+    %section.invite-community-member.search-user-for-community{:style => "margin-top:6px;", "ui-invite-form" => ""}
+      %form{:action => "/tasks/127468/candidates?for=tasks", :method => "get", "ui-search-form" => ""}
+        %input#search{:name => "search", :placeholder => "Введите имя пользователя или его email", :type => "text", "ui-search-input" => "true", :value => ""}/
       .results{"ui-result-list" => ""}
-      %button.invite-by-email{"data-url" => "/tasks/2383/invitations", :name => "commit", :type => "submit", "ui-invite-button" => ""}
-        Пригласить незарегистрированного пользователя
   %section.customer
-    %p Заказчик:
-    .user
-      .avatar
-        %img.member-box-avatar-image-small.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/medium_50e2e4ea-a09d-4977-8972-bf233bf0453c.jpg", :style => "width:34px;height:34px;", :title => "Мещеряков Александр "}/
-      .name
-        %a{:href => "/users/203", :role => "member-name"} Александр Мещеряков
-        %span.user-email
-          Руководитель
+    %p.accessor-users-role Заказчик:
+    = partial 'tasks/show/accessor_users_item', locals: {contact: true, online: true}
   %section.responsible
-    %p Исполнитель:
-    .user
-      .avatar
-        %img.member-box-avatar-image-small.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/141/medium_50e2e4ea-a09d-4977-8972-bf233bf0453c.jpg", :style => "width:34px;height:34px;", :title => "Мещеряков Александр "}/
-      .name
-        %a{:href => "/users/203", :role => "member-name"} Александр Мещеряков
-        %span.user-email
-          Руководитель
+    %p.accessor-users-role Исполнитель:
+    = partial 'tasks/show/accessor_users_item'
   %section.spectator
-    %p Наблюдатели:
+    %p.accessor-users-role Наблюдатели:
     %ul{:role => "ui-invited-members"}
       .user-wrapper{"ui-task-member" => ""}
-        .user
-          .avatar
-            %img.member-box-avatar-image-small.img-corrector-initialized{:alt => "Шамиль", :hide_wait_message => "true", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/2/medium_162862a3-e202-450e-b6b6-0cc50ab1aa46.jpg", :style => "width:34px;height:34px;", :title => "Хамадеев Шамиль Актасович"}/
-          .name
-            %a{:href => "/users/2", :role => "member-name"} Шамиль Хамадеев
-            %span.user-email
-              Внешний наблюдатель
-        .tabs-page-header-actions{"role-users-cooperation" => "ready"}
-          %a.btn.btn-default{"data-role" => "contact-creator", :href => "/contacts?contact%5Bcontactor_id%5D=2&from=cooperation"} Добавить в контакты
-        %a.remove-user{"data-confirmation" => "Подтвердите действие", :href => "/tasks/2383/accessor_users/5815?do=cancel", "ui-cancel-invite" => "true"} Удалить
-      .user-wrapper{"ui-task-member" => ""}
-        .user
-          .avatar
-            %img.member-box-avatar-image-small.img-corrector-initialized{:alt => "Alexander", :hide_wait_message => "true", :src => "https://iq300-edge.s3.amazonaws.com/uploads/user_profile/photo/186/medium_6b7103f9-dbb7-4906-b306-eee69765bd5b.png", :style => "width:34px;height:34px;", :title => "Mescheryakov Alexander"}/
-          .name
-            %a{:href => "/users/244", :role => "member-name"} Alexander Mescheryakov
-            %span.user-email
-              Сотрудник
-        .tabs-page-header-actions{"role-users-cooperation" => "ready"}
-          %a.btn.btn-default{"data-role" => "messenger", :href => "/conversations/new?recipient_id=244"} Написать сообщение
-        %a.remove-user{"data-confirmation" => "Подтвердите действие", :href => "/tasks/2383/accessor_users/5811?do=cancel", "ui-cancel-invite" => "true"} Удалить
+        = partial 'tasks/show/accessor_users_item', locals: {contact: true, remove: true, online: true}
+      - for i in 0..10
+        .user-wrapper{"ui-task-member" => ""}
+          = partial 'tasks/show/accessor_users_item', locals: {contact: (i % 2 == 0 ? true : false), remove: true, online: (i % 3 == 0 ? true : false) }
