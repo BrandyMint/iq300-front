@@ -1,43 +1,75 @@
+<<<<<<< HEAD
 /* line 5, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 4, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 body {
   margin: 0px;
   padding: 0px;
   font-family: Helvetica Neue, tahoma, sans-serif; }
 
+<<<<<<< HEAD
 /* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 header {
   height: 80px; }
 
 /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 9, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+header {
+  height: 80px; }
+
+/* line 12, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .blue {
   background: #ecf1f6;
   padding: 50px 0; }
 
+<<<<<<< HEAD
 /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 16, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .white {
   background: url("/assets/login/whbg.jpg") no-repeat;
   padding: 50px 0; }
 
+<<<<<<< HEAD
 /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 20, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .sin {
   background: #3b5a76;
   padding: 50px 0; }
 
+<<<<<<< HEAD
 /* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 24, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .black {
   display: none;
   background: #222;
   padding: 50px 0;
   color: #fff; }
 
+<<<<<<< HEAD
 /* line 31, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 30, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .block {
   width: 960px;
   text-align: left;
   zoom: 1;
   *display: block;
   overflow: visible !important; }
+<<<<<<< HEAD
   /* line 104, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/mixins */
+=======
+  /* line 112, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/helpers/mixins */
+>>>>>>> build
   .block:after {
     content: "";
     display: block;
@@ -45,61 +77,98 @@ header {
     clear: both;
     visibility: hidden; }
 
+<<<<<<< HEAD
 /* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 35, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .blockall {
   width: 1260px;
   text-align: left; }
 
+<<<<<<< HEAD
 /* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 39, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .block1 {
   width: 680px;
   float: left;
   padding-top: 40px; }
 
+<<<<<<< HEAD
 /* line 45, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 44, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .block2 {
   width: 580px;
   float: right;
   padding-top: 40px;
   text-align: left; }
 
+<<<<<<< HEAD
 /* line 51, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 50, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .block3 {
   width: 320px;
   float: left;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 80px; }
+<<<<<<< HEAD
   /* line 57, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 56, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .block3 h3 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
     color: #222222; }
 
+<<<<<<< HEAD
 /* line 63, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 62, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .blockfoot {
   width: 240px;
   float: left;
   text-align: left; }
 
+<<<<<<< HEAD
 /* line 68, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 67, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .copy {
   float: left;
   width: 400px; }
 
+<<<<<<< HEAD
 /* line 72, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 71, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .social {
   float: right;
   width: 400px;
   text-align: right;
   margin: -6px 0 8px 0; }
+<<<<<<< HEAD
   /* line 77, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 76, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .social img {
     padding: 10px;
     background: #222;
     margin-left: 5px;
     -webkit-transition: all 0.5s;
+<<<<<<< HEAD
     -o-transition: all 0.5s;
     transition: all 0.5s; }
 
@@ -124,19 +193,54 @@ header {
   background: #45688E; }
 
 /* line 98, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+
+/* line 82, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.tw img:hover {
+  background: #00aced; }
+
+/* line 85, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.fb img:hover {
+  background: #3b5998; }
+
+/* line 88, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.p img:hover {
+  background: #cb2028; }
+
+/* line 91, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.g img:hover {
+  background: #da2713; }
+
+/* line 94, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.vk img:hover {
+  background: #45688E; }
+
+/* line 97, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .blockport1 {
   width: 260px;
   float: left;
   margin-top: 50px; }
 
+<<<<<<< HEAD
 /* line 103, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 102, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .blockport2 {
   width: 700px;
   float: right;
   text-align: left;
   margin-top: 50px; }
 
+<<<<<<< HEAD
 /* line 109, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 108, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .otz {
   background: #ecf1f6;
   padding: 20px;
@@ -144,59 +248,95 @@ header {
   text-align: center;
   margin-top: 15px;
   color: #666666; }
+<<<<<<< HEAD
   /* line 116, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 115, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .otz span {
     font-size: 24px;
     color: #3b5a76;
     margin-top: 10px;
     display: block; }
 
+<<<<<<< HEAD
 /* line 122, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 121, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .price {
   width: 225px;
   float: left;
   margin: 50px 20px 50px 0;
   text-align: center; }
 
+<<<<<<< HEAD
 /* line 128, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 127, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .pricetoo {
   width: 225px;
   float: left;
   margin: 50px 0;
   text-align: center; }
 
+<<<<<<< HEAD
 /* line 134, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .price a, .pricetoo a {
   text-decoration: none; }
 
 /* line 137, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 133, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.price a, .pricetoo a {
+  text-decoration: none; }
+
+/* line 136, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .pricetop {
   background: #3b5a76;
   height: 120px;
   color: #fff; }
 
+<<<<<<< HEAD
 /* line 142, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 141, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .priceline {
   width: 201px;
   background: #2c4359;
   height: 2px;
   margin-left: 12px; }
 
+<<<<<<< HEAD
 /* line 148, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 147, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .pricelinegrey {
   width: 201px;
   background: #efefef;
   height: 1px;
   margin: 20px 0 20px 12px; }
 
+<<<<<<< HEAD
 /* line 154, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 153, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .pricewhite {
   background: #fff;
   color: grey;
   padding: 20px 0;
   font-size: 13px; }
 
+<<<<<<< HEAD
 /* line 160, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 159, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .start {
   height: 50px;
   color: #fff;
@@ -214,6 +354,7 @@ header {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   box-shadow: 0 5px 0 #d4dce5; }
+<<<<<<< HEAD
   /* line 177, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .start:hover {
     background: #689ecf !important; }
@@ -222,32 +363,58 @@ header {
     text-decoration: none; }
 
 /* line 182, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 176, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .start:hover {
+    background: #689ecf !important; }
+  /* line 178, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .start:visited {
+    text-decoration: none; }
+
+/* line 181, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .tarif {
   font-weight: bold;
   padding: 12px 0;
   display: block;
   font-size: 20px; }
 
+<<<<<<< HEAD
 /* line 188, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 187, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .cena {
   font-weight: bold;
   padding: 12px 0;
   display: block;
   font-size: 24px; }
 
+<<<<<<< HEAD
 /* line 194, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 193, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .mini {
   font-size: 16px;
   color: grey; }
 
+<<<<<<< HEAD
 /* line 198, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 197, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .formblock {
   width: 290px;
   height: 400px;
   margin-left: 80px;
   text-align: center; }
 
+<<<<<<< HEAD
 /* line 204, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 203, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .logo {
   display: block;
   width: 112px;
@@ -256,7 +423,11 @@ header {
   float: left;
   margin: 17px 20px 0 0; }
 
+<<<<<<< HEAD
 /* line 212, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 211, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .login {
   float: right;
   float: right;
@@ -278,12 +449,20 @@ header {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s; }
+<<<<<<< HEAD
   /* line 233, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 232, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .login:hover {
     background: #3b5a76;
     text-shadow: 0 -1px 0 black; }
 
+<<<<<<< HEAD
 /* line 237, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 236, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .social-login {
   width: 115px;
   margin: 0 8px;
@@ -302,6 +481,7 @@ header {
   -webkit-appearance: none;
   text-decoration: none;
   -webkit-transition: all 0.15s ease-out;
+<<<<<<< HEAD
   -o-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
   text-shadow: 0 -1px 0 #4976a0; }
@@ -323,6 +503,30 @@ header {
     background: #3b5998; }
 
 /* line 270, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  text-shadow: 0 -1px 0 #4976a0; }
+  /* line 255, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .social-login img {
+    position: absolute;
+    left: 15px; }
+  /* line 259, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .social-login.google img {
+    top: 15px; }
+  /* line 261, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .social-login.google:hover {
+    background: #da2713; }
+  /* line 264, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .social-login.facebook img {
+    bottom: 0; }
+  /* line 266, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .social-login.facebook:hover {
+    background: #3b5998; }
+
+/* line 269, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 h1.title {
   font-weight: normal;
   font-size: 24px;
@@ -332,7 +536,11 @@ h1.title {
   padding: 0px;
   line-height: 80px; }
 
+<<<<<<< HEAD
 /* line 279, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 278, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 h2 {
   font-weight: normal;
   font-size: 40px;
@@ -340,7 +548,11 @@ h2 {
   margin: 50 0px;
   text-align: center;
   letter-spacing: -2px; }
+<<<<<<< HEAD
   /* line 280, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 279, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   h2.popr {
     font-weight: normal;
     font-size: 30px;
@@ -350,7 +562,11 @@ h2 {
     padding: 0px;
     line-height: 30px; }
 
+<<<<<<< HEAD
 /* line 295, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 294, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .blue h2 {
   color: #666666;
   margin: 30px 0 20px 0;
@@ -359,7 +575,11 @@ h2 {
   font-weight: bold;
   line-height: 40px; }
 
+<<<<<<< HEAD
 /* line 303, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 302, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .white h2 {
   color: #666666;
   margin: 30px 0 20px 0;
@@ -368,7 +588,11 @@ h2 {
   font-weight: bold;
   line-height: 40px; }
 
+<<<<<<< HEAD
 /* line 311, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 310, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .sin h2 {
   color: #fff;
   margin: 30px 0 20px 0;
@@ -378,20 +602,32 @@ h2 {
   line-height: 40px;
   text-transform: uppercase; }
 
+<<<<<<< HEAD
 /* line 321, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 320, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .black h3 {
   color: #fff;
   margin: 20px 0 50px 0;
   font-size: 24px;
   font-weight: bold;
   line-height: 26px; }
+<<<<<<< HEAD
 /* line 327, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 326, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .black a {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
   display: block; }
+<<<<<<< HEAD
   /* line 332, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 331, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .black a:hover {
     color: #86bdef;
     -webkit-transition: all 0.5s;
@@ -399,14 +635,22 @@ h2 {
     -o-transition: all 0.5s;
     transition: all 0.5s; }
 
+<<<<<<< HEAD
 /* line 339, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 338, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .pod {
   font-size: 18px;
   color: #959595;
   line-height: 60px;
   font-weight: bold; }
 
+<<<<<<< HEAD
 /* line 345, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 344, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .inpform {
   width: 275px;
   height: 50px;
@@ -421,6 +665,7 @@ h2 {
   -moz-border-radius: 10px;
   border-radius: 10px;
   -webkit-transition: all 0.5s ease-out;
+<<<<<<< HEAD
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
   /* line 359, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
@@ -428,16 +673,34 @@ h2 {
     border-color: #3b5a76; }
 
 /* line 362, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+  /* line 358, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .inpform:focus {
+    border-color: #3b5a76; }
+
+/* line 361, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .check {
   text-align: left;
   color: #9a9a9a;
   margin: 10px 0 20px 0; }
+<<<<<<< HEAD
   /* line 367, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 366, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .check a:link, .check a:visited {
     text-decoration: underline;
     color: #9a9a9a; }
 
+<<<<<<< HEAD
 /* line 371, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 370, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .niceCheck {
   width: 17px;
   height: 16px;
@@ -445,17 +708,29 @@ h2 {
   cursor: pointer;
   background: url("/assets/login/chb.jpg");
   background-position: 0; }
+<<<<<<< HEAD
   /* line 378, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 377, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .niceCheck input {
     filter: alpha(opacity=0);
     -moz-opacity: 0;
     -khtml-opacity: 0;
     opacity: 0; }
+<<<<<<< HEAD
   /* line 383, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .niceCheck.checked {
     background-position: 0 -16px !important; }
 
 /* line 386, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 382, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .niceCheck.checked {
+    background-position: 0 -16px !important; }
+
+/* line 385, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .submit {
   width: 290px;
   height: 70px;
@@ -473,6 +748,7 @@ h2 {
   border-radius: 10px;
   -webkit-appearance: none;
   -webkit-transition: all 0.15s ease-out;
+<<<<<<< HEAD
   -o-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
   text-shadow: 0 -1px 0 #4976a0; }
@@ -480,16 +756,34 @@ h2 {
   .submit:hover {
     background: #7db4e6; }
   /* line 406, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  text-shadow: 0 -1px 0 #4976a0; }
+  /* line 403, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .submit:hover {
+    background: #7db4e6; }
+  /* line 405, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .submit:active {
     background: #306392;
     border-bottom: 0;
     border-top: 1px solid #3b5a76;
     border-top: 3px solid #3b5a76; }
+<<<<<<< HEAD
   /* line 411, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .submit:disabled {
     opacity: 0.5; }
 
 /* line 414, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 410, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .submit:disabled {
+    opacity: 0.5; }
+
+/* line 413, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .submit2 {
   width: 290px;
   height: 70px;
@@ -510,17 +804,26 @@ h2 {
   border: 2px solid #fff;
   margin: 50px 0 20px 0;
   color: #3b5a76; }
+<<<<<<< HEAD
   /* line 434, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 433, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .submit2:hover {
     background: #3b5a76;
     border: 2px solid #fff;
     color: #fff; }
 
+<<<<<<< HEAD
 /* line 439, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 438, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .line {
   height: 15px;
   background: #dedbd9; }
 
+<<<<<<< HEAD
 /* line 443, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .clear {
   clear: both; }
@@ -538,55 +841,109 @@ h2 {
   margin: 70px 0;
   text-align: center !important; }
   /* line 455, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 442, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.clear {
+  clear: both; }
+
+/* line 445, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.gal {
+  margin: 0 20px 10px 0; }
+
+/* line 448, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.gal2 {
+  margin: 0 0 10px 20px; }
+
+/* line 451, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.logos {
+  margin: 70px 0;
+  text-align: center !important; }
+  /* line 454, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .logos img {
     margin-right: 50px; }
 
 /*** BLOG ** */
+<<<<<<< HEAD
 /* line 460, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 459, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .head {
   height: 70px;
   background: #2f617e;
   padding: 7px 0;
   color: #fff;
   text-shadow: 0 1px 0 #2f475e; }
+<<<<<<< HEAD
   /* line 466, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 465, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .head h1 {
     margin: 0px;
     padding: 0px;
     font-weight: normal;
     font-size: 30px; }
+<<<<<<< HEAD
   /* line 472, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 471, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .head a:link {
     color: #fff;
     text-decoration: none;
     font-size: 15px; }
+<<<<<<< HEAD
   /* line 476, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .head a:hover {
     text-decoration: underline; }
   /* line 478, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 475, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .head a:hover {
+    text-decoration: underline; }
+  /* line 477, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .head a:visited {
     color: #fff;
     text-decoration: none;
     font-size: 15px; }
+<<<<<<< HEAD
   /* line 482, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .head span {
     margin: 0 10px; }
 
 /* line 485, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 481, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .head span {
+    margin: 0 10px; }
+
+/* line 484, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 #content {
   width: 630px;
   float: left;
   text-align: left;
   margin: 50px 0 0 0; }
 
+<<<<<<< HEAD
 /* line 491, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 490, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 #sidebar {
   width: 310px;
   float: right;
   text-align: left;
   margin: 50px 0 0 20px; }
 
+<<<<<<< HEAD
 /* line 497, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 496, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .strelka {
   width: 89px;
   height: 97px;
@@ -597,22 +954,38 @@ h2 {
   background: url("/assets/login/strelka.png") no-repeat;
   color: #fff; }
 
+<<<<<<< HEAD
 /* line 507, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 506, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .meta {
   float: left;
   width: 511px; }
 
+<<<<<<< HEAD
 /* line 511, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .post {
   margin-bottom: 30px; }
 
 /* line 514, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 510, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.post {
+  margin-bottom: 30px; }
+
+/* line 513, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .postline {
   width: 630px;
   border-bottom: 1px dotted grey;
   margin-bottom: 30px; }
 
+<<<<<<< HEAD
 /* line 519, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 518, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .post h2 {
   font-size: 18px;
   margin: 0px;
@@ -621,23 +994,39 @@ h2 {
   font-weight: bold;
   color: #2a2b2c;
   line-height: 22px; }
+<<<<<<< HEAD
   /* line 527, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .post h2 a {
     text-decoration: none;
     color: #2a2b2c; }
     /* line 530, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 526, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .post h2 a {
+    text-decoration: none;
+    color: #2a2b2c; }
+    /* line 529, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
     .post h2 a:hover {
       text-decoration: none;
       color: #2f617e; }
 
+<<<<<<< HEAD
 /* line 534, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .postcontent {
   font-size: 14px; }
   /* line 536, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 533, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.postcontent {
+  font-size: 14px; }
+  /* line 535, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .postcontent a {
     text-decoration: underline;
     color: #2f617e;
     font-weight: bold; }
+<<<<<<< HEAD
     /* line 540, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
     .postcontent a:hover {
       text-decoration: none; }
@@ -647,6 +1036,17 @@ h2 {
   margin-top: 7px; }
 
 /* line 546, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+    /* line 539, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+    .postcontent a:hover {
+      text-decoration: none; }
+
+/* line 542, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.tags, .iconsoc {
+  margin-top: 7px; }
+
+/* line 545, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .tags a {
   display: inline-block;
   height: 22px;
@@ -659,7 +1059,11 @@ h2 {
   white-space: nowrap;
   position: relative;
   text-transform: uppercase; }
+<<<<<<< HEAD
   /* line 558, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 557, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .tags a:after {
     content: '';
     position: absolute;
@@ -668,6 +1072,7 @@ h2 {
     width: 20px;
     height: 22px;
     background: url("/assets/login/tag.png") 100% 0 no-repeat; }
+<<<<<<< HEAD
   /* line 566, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .tags a:hover {
     background-position: 0 -23px; }
@@ -683,38 +1088,79 @@ h2 {
       background-position: 100% -46px; }
 
 /* line 576, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 565, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .tags a:hover {
+    background-position: 0 -23px; }
+    /* line 567, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+    .tags a:hover:after {
+      background-position: 100% -23px; }
+  /* line 569, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .tags a:active {
+    background-position: 0 -46px;
+    color: #515151; }
+    /* line 572, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+    .tags a:active:after {
+      background-position: 100% -46px; }
+
+/* line 575, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .postimage {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
   margin-bottom: 30px; }
 
+<<<<<<< HEAD
 /* line 582, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 581, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .iconss {
   background: url("/assets/login/postsocial.png") no-repeat;
   width: 25px;
   height: 20px;
   float: left; }
 
+<<<<<<< HEAD
 /* line 588, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 587, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .iconfb {
   background-position: 0 0;
   width: 20px; }
 
+<<<<<<< HEAD
 /* line 592, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .icontw {
   background-position: -22px 0; }
 
 /* line 595, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 591, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.icontw {
+  background-position: -22px 0; }
+
+/* line 594, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .icong {
   background-position: -59px 0;
   margin-left: 8px; }
 
+<<<<<<< HEAD
 /* line 599, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .iconvk {
   background-position: -86px 0; }
 
 /* line 602, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 598, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.iconvk {
+  background-position: -86px 0; }
+
+/* line 601, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 #sidebar h3 {
   text-transform: uppercase;
   font-size: 18px;
@@ -723,7 +1169,11 @@ h2 {
   border-top: 2px solid #2f617e;
   color: #2a2b2c; }
 
+<<<<<<< HEAD
 /* line 610, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 609, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .search {
   width: 230px;
   border: 0;
@@ -737,7 +1187,11 @@ h2 {
   -moz-border-radius: 20px;
   border-radius: 20px; }
 
+<<<<<<< HEAD
 /* line 623, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 622, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .searchbutton {
   width: 25px;
   height: 25px;
@@ -753,7 +1207,11 @@ h2 {
   padding-right: 10px;
   margin-right: 15px; }
 
+<<<<<<< HEAD
 /* line 638, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 637, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .searchbox {
   background: #e8e8e8;
   margin: 15px 0 25px 15px;
@@ -766,15 +1224,24 @@ h2 {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s; }
+<<<<<<< HEAD
   /* line 650, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .searchbox:hover {
     box-shadow: 0 3px #d1d1d1; }
 
 /* line 654, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 649, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .searchbox:hover {
+    box-shadow: 0 3px #d1d1d1; }
+
+/* line 653, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 #sidebar ul, #sidebar li {
   margin: 0px;
   padding: 0px;
   list-style: none; }
+<<<<<<< HEAD
 /* line 658, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 #sidebar ul {
   margin-left: 10px;
@@ -788,58 +1255,106 @@ h2 {
     color: #222;
     text-decoration: none; }
     /* line 667, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 657, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+#sidebar ul {
+  margin-left: 10px;
+  font-size: 14px; }
+/* line 660, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+#sidebar li {
+  padding: 10px 0;
+  border-bottom: 1px dotted #222; }
+  /* line 663, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  #sidebar li a {
+    color: #222;
+    text-decoration: none; }
+    /* line 666, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
     #sidebar li a:hover {
       color: #2f617e;
       text-decoration: none; }
 
+<<<<<<< HEAD
 /* line 671, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 670, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .pagination {
   height: 30px;
   text-align: center;
   margin: 50px 0 40px 0; }
 
+<<<<<<< HEAD
 /* line 676, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 675, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .Pag {
   color: #444;
   border: 1px solid #BEBEBE;
   background: #FAFAFA;
   margin-left: -1px; }
 
+<<<<<<< HEAD
 /* line 682, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 681, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .Pag1, .Pag {
   padding: 6px 15px;
   text-decoration: none; }
 
+<<<<<<< HEAD
 /* line 686, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 685, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .Pag1, .Pag:hover {
   border: 1px solid #BEBEBE;
   background: #e2e2e2; }
 
 /*** LOGIN, RACOVERY, WHAT ** */
+<<<<<<< HEAD
 /* line 692, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 691, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .bgform {
   width: 524px;
   background: url("/assets/login/bgform.png") no-repeat center;
   margin: 30px 0 70px 0; }
 
+<<<<<<< HEAD
 /* line 697, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 696, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .bgform1 {
   clear: both;
   width: 354px;
   height: 83px;
   background: url("/assets/login/bgform1.png") no-repeat; }
+<<<<<<< HEAD
   /* line 698, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 697, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .bgform1 span {
     padding-top: 22px;
     display: block;
     color: #b8b8b8;
     font-size: 27px; }
 
+<<<<<<< HEAD
 /* line 708, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 707, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .bgform2 {
   width: 354px;
   background: url("/assets/login/bgform2.png") repeat-y;
   padding-top: 30px; }
+<<<<<<< HEAD
   /* line 712, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .bgform2 form {
     margin-bottom: 0; }
@@ -851,25 +1366,51 @@ h2 {
     padding-bottom: 30px; }
 
 /* line 720, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 711, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .bgform2 form {
+    margin-bottom: 0; }
+  /* line 713, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .bgform2 .check {
+    margin-left: 31px; }
+  /* line 716, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .bgform2.accept-invitation form {
+    padding-bottom: 30px; }
+
+/* line 719, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .bgform3 {
   width: 354px;
   height: 20px;
   background: url("/assets/login/bgform3.png") no-repeat; }
 
+<<<<<<< HEAD
 /* line 725, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .socauth {
   overflow: hidden; }
 
 /* line 728, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 724, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.socauth {
+  overflow: hidden; }
+
+/* line 727, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .grey {
   color: grey;
   font-size: 14px;
   padding: 10px 30px; }
+<<<<<<< HEAD
   /* line 732, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 731, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .grey a {
     color: grey;
     text-decoration: underline; }
 
+<<<<<<< HEAD
 /* line 736, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 .grey.light {
   color: #bdbdbd; }
@@ -883,21 +1424,47 @@ h2 {
   height: 50px !important; }
 
 /* line 745, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 735, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.grey.light {
+  color: #bdbdbd; }
+
+/* line 738, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.verification {
+  background: url("/assets/login/blue.png") no-repeat 97%; }
+
+/* line 741, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+.smallbutton {
+  height: 50px !important; }
+
+/* line 744, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .please {
   font-weight: 600;
   color: #707070;
   font-size: 18px; }
 
+<<<<<<< HEAD
 /* line 751, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
 header aside {
   float: right; }
   /* line 753, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 750, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+header aside {
+  float: right; }
+  /* line 752, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   header aside a {
     margin-top: 21px;
     margin-left: 18px;
     display: inline-block; }
 
+<<<<<<< HEAD
 /* line 758, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 757, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .header-button {
   padding: 7px;
   border: 1px solid #cccccb;
@@ -916,15 +1483,26 @@ header aside {
   box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.15); }
+<<<<<<< HEAD
   /* line 769, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   .header-button:hover {
     border-color: #97b1c7; }
   /* line 771, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 768, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  .header-button:hover {
+    border-color: #97b1c7; }
+  /* line 770, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
   .header-button:active {
     background: #355f84;
     color: #fff; }
 
+<<<<<<< HEAD
 /* line 775, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 774, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 .after-form-note {
   background: url("/assets/login/screamer.png") no-repeat;
   padding-left: 23px;
@@ -938,16 +1516,28 @@ header aside {
   opacity: 0.9;
   -moz-opacity: 0.9; }
 
+<<<<<<< HEAD
 /* line 787, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+/* line 786, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
 ul.errors {
   margin: -11px 0 21px;
   color: red;
   list-style-type: none;
   padding: 0 15px; }
+<<<<<<< HEAD
   /* line 792, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
   ul.errors li {
     padding: 0;
     margin: 0; }
     /* line 795, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/landing/login.sass */
+=======
+  /* line 791, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+  ul.errors li {
+    padding: 0;
+    margin: 0; }
+    /* line 794, /Users/Ilnur/RubymineProjects/iq300-frontend/app/stylesheets/landing/login.sass */
+>>>>>>> build
     ul.errors li.good {
       color: green; }
