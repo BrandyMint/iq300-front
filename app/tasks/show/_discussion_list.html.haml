@@ -69,5 +69,31 @@
       .message-body
         .message-body-text{"test-comment-item-body" => ""}
           %p может быть убрать группировку вообще, пока она не вписывается
-
-
+.comment-box.comment-item{"data-author" => "hamadeev", "data-id" => "187074", "test-comment-item" => ""}
+  .media
+    .pull-left
+      .message-box-user-avatar
+        %img.img-circle{:alt => "Шамиль", :hide_wait_message => "true", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/2/medium_e641ce02-e837-4d54-beaa-25724ff58b98.jpg", :style => "width: 40px; height: 40px", :title => "Хамадеев Шамиль Актасович"}/
+        .user-status-bullet.user-status-bullet-bottom-right.user-status-bullet-offline.user-status-bullet-sm
+    .media-body
+      .message-box-header.group
+        %h4.pull-left
+          %a{:href => "/users/2"} Шамиль Хамадеев
+        %p.pull-right.text-muted
+          21 января, 14:01
+      .message-body
+        .message-body-text.markdown-wrapper{"test-comment-item-body" => ""}
+          %p
+            Тестирование markdown стилей
+          %em
+            Курсив
+          %strong
+            Выделенный
+          %del
+            Удаленный
+          %ul
+            %li Первый
+            %li Второй
+          %ol
+            %li Первый
+            %li Второй
