@@ -5,37 +5,21 @@ body_class: contacts-index
 = partial 'shared/header'
 .content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
   / = partial 'communities/top_panel'
-  = partial 'shared/_navigation'
+  = partial 'shared/_navigation', locals: {active: 'contacts'}
   %section.filters-column.contacts-filters-column
     %ul.with-subfolders
       %li.active
-        %a{:href => "#"} Мои контакты
+        %a{:href => "/contacts"} Мои контакты
       %li
         %a{:href => "#"} Входящие
       %li
         %a{:href => "#"} Исходящие
       %li
         %a{:href => "#"} Все контакты
+      %li
+        %a{href: '/contacts/search/'} Поиск
 
   %section.contacts-content-column
-    .page-content-compact.container-grey.clearfix
-      .pull-left
-        %input.form-control{:type => "text", placeholder: 'Поиск по участникам'}/
-      .pull-right
-        %ul.list-inline
-          %li
-            %select{:name => "", :role => "select2"}
-              %option{:value => ""} Сообщества
-              %option{:value => ""} Сообщества
-              %option{:value => ""} Сообщества
-              %option{:value => ""} Сообщества
-          %li
-            %select{:name => "", :role => "select2"}
-              %option{:value => ""} Сортировка
-              %option{:value => ""} Сортировка
-              %option{:value => ""} Сортировка
-              %option{:value => ""} Сортировка
-
     .page-content-compact
       .row.row-collapse
         - user_statuses = ['online', 'offline', 'away', '']
