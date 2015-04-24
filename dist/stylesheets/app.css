@@ -5286,284 +5286,6 @@ button.close {
     display: none !important; }
  }
 
-@font-face {
-  font-family: "icomoon-iq300";
-  src: url("/assets/icomoon-iq300.eot");
-  src: url("/assets/icomoon-iq300.eot?#iefix") format("embedded-opentype"), url("/assets/icomoon-iq300.woff") format("woff"), url("/assets/icomoon-iq300.ttf") format("truetype"), url("/assets/icomoon-iq300.svg#icomoon-iq300") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-/* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-[data-icon]:before, .icon-repeat, .icon-print, .icon-calendar, .icon-bell, .icon-briefcase, .icon-bullhorn, .icon-group, .icon-paste, .icon-list-alt, .icon-cog, .icon-signout, .icon-caret-left, .icon-caret-right, .icon-caret-up, .icon-caret-down, .icon-chevron-left, .icon-chevron-right, .icon-chevron-up, .icon-chevron-down, .icon-plus, .icon-question-sign, .icon-search, .icon-reorder, .icon-resize-full, .icon-resize-small, .icon-pencil, .icon-ok, .icon-share, .icon-paper-clip, .icon-save, .icon-star-empty, .icon-star, .icon-comment-alt, .icon-comment, .icon-bell-alt, .icon-trophy, .icon-user, .icon-building, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-down, .icon-remove, .icon-exclamation-sign, .icon-folder-close-alt, .icon-folder-open-alt, .icon-file-alt, .icon-file, .icon-folder-open, .icon-folder-close, .icon-filter, .icon-share-alt, .icon-books, .icon-lock, section.list-column > ul li.active:before, .departments-jobs-list-column > ul li.active:before, .departments-relations-list-column > ul li.active:before, .workers-list-column > ul li.active:before, section.expandable > header > a.trigger:before, section.badges-list > span > a.delete:before, .badges-list > span > a.delete:before, section.tasks-list-column > ul > li .icons .comments i, section.task-view-column > .column-content .object-details > p.files span.all-files:before, .folders-view-column > .column-content .object-details > p.files span.all-files:before, section.task-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, .folders-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, section.task-view-column > .column-content .object-details > section.actions a.edit:before, .folders-view-column > .column-content .object-details > section.actions a.edit:before, section.task-view-column > .column-content .object-details > section.actions a.delete:before, .folders-view-column > .column-content .object-details > section.actions a.delete:before, section.task-view-column > .column-content .object-details > section.actions a.convert:before, .folders-view-column > .column-content .object-details > section.actions a.convert:before, .comments-form a.add:before, .comments-form-block a.add:before, .comments-form-block-fixed a.add:before, .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment:before, .department input.department-toggle ~ .expander:before, .department input:checked.department-toggle ~ .expander:before, .department .d-card-title .destroy-department:before, .department .d-card-body .boss-card .memberships-contract.empty:before, .community-structure-panel-view .unallocated-workers .memberships-contract.empty:before, .unallocated-btn .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn .expander:before, .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .popover .popover-form-submit-btn .expander:before, .popover .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover .popover-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover .popover-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover .popover-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .popover-form-block .popover-form-submit-btn .expander:before, .popover-form-block .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-block .popover-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-block .popover-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-block .popover-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .fullcalendar-event-popover .popover-form-submit-btn .expander:before, .fullcalendar-event-popover .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-popover .popover-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-popover .popover-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-popover .popover-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .notifications-widget-popover .popover-form-submit-btn .expander:before, .notifications-widget-popover .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .notifications-widget-popover .popover-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .notifications-widget-popover .popover-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .notifications-widget-popover .popover-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .popover .fullcalendar-event-form-submit-btn .expander:before, .popover .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover .fullcalendar-event-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover .fullcalendar-event-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover .fullcalendar-event-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .popover-form-block .fullcalendar-event-form-submit-btn .expander:before, .popover-form-block .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-block .fullcalendar-event-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-block .fullcalendar-event-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-block .fullcalendar-event-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander:before, .fullcalendar-event-popover .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander:before, .notifications-widget-popover .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base .expander:before, .unallocated-btn .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check .expander:before, .unallocated-btn .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send .expander:before, .unallocated-btn .user-block-add-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-add-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-add-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-add-btn .expander:before, .unallocated-btn .user-block-added-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-added-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-added-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-added-btn .expander:before, .unallocated-btn .user-block-remove-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-remove-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-remove-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-remove-btn .expander:before, .unallocated-btn .user-block-compose-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-compose-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-compose-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-compose-btn .expander:before, .unallocated-btn .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn .expander:before, .unallocated-btn .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn .expander:before, .unallocated-btn .project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-task-box-add-subtask-btn .expander:before, .unallocated-btn a.project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column a.project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column a.project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column a.project-task-box-add-subtask-btn .expander:before, .unallocated-btn .project-task-box-actions-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-task-box-actions-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-task-box-actions-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-task-box-actions-btn .expander:before, .unallocated-btn .project-tasks-group-header-color-select .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-tasks-group-header-color-select .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-tasks-group-header-color-select .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-tasks-group-header-color-select .expander:before, .unallocated-btn .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn .expander:before {
-  font-family: "icomoon-iq300";
-  speak: none;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased; }
-
-/* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-[data-icon]:before {
-  content: attr(data-icon); }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-8 {
-  font-size: 8px; }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-10 {
-  font-size: 10px; }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-12 {
-  font-size: 12px; }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-14 {
-  font-size: 14px; }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-16 {
-  font-size: 16px; }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-18 {
-  font-size: 18px; }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-20 {
-  font-size: 20px; }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-24 {
-  font-size: 24px; }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-28 {
-  font-size: 28px; }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-32 {
-  font-size: 32px; }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-40 {
-  font-size: 40px; }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-48 {
-  font-size: 48px; }
-
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-64 {
-  font-size: 64px; }
-
-/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.v-align-top {
-  vertical-align: top; }
-
-/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.v-align-baseline {
-  vertical-align: baseline; }
-
-/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.v-align-middle {
-  vertical-align: middle; }
-
-/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.v-align-bottom {
-  vertical-align: bottom; }
-
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-color-white {
-  color: #fff; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .icon-color-white:hover {
-    color: #e6e6e6; }
-
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.text-color-white {
-  color: #fff; }
-
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.link-white {
-  color: #fff; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .link-white:hover {
-    color: #e6e6e6; }
-
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-color-gray-lighter {
-  color: #eeeeee; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .icon-color-gray-lighter:hover {
-    color: #d5d5d5; }
-
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.text-color-gray-lighter {
-  color: #eeeeee; }
-
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.link-gray-lighter {
-  color: #eeeeee; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .link-gray-lighter:hover {
-    color: #d5d5d5; }
-
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-color-gray-light {
-  color: #999999; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .icon-color-gray-light:hover {
-    color: gray; }
-
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.text-color-gray-light {
-  color: #999999; }
-
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.link-gray-light {
-  color: #999999; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .link-gray-light:hover {
-    color: gray; }
-
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-color-gray {
-  color: #555555; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .icon-color-gray:hover {
-    color: #3c3c3c; }
-
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.text-color-gray {
-  color: #555555; }
-
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.link-gray {
-  color: #555555; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .link-gray:hover {
-    color: #3c3c3c; }
-
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-color-gray-dark {
-  color: #333333; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .icon-color-gray-dark:hover {
-    color: #1a1a1a; }
-
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.text-color-gray-dark {
-  color: #333333; }
-
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.link-gray-dark {
-  color: #333333; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .link-gray-dark:hover {
-    color: #1a1a1a; }
-
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-color-gray-darker {
-  color: #222222; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .icon-color-gray-darker:hover {
-    color: #090909; }
-
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.text-color-gray-darker {
-  color: #222222; }
-
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.link-gray-darker {
-  color: #222222; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .link-gray-darker:hover {
-    color: #090909; }
-
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-color-success {
-  color: #3ab54a; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .icon-color-success:hover {
-    color: #2e8e3a; }
-
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.text-color-success {
-  color: #3ab54a; }
-
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.link-success {
-  color: #3ab54a; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .link-success:hover {
-    color: #2e8e3a; }
-
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-color-danger {
-  color: #ff0101; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .icon-color-danger:hover {
-    color: #cd0000; }
-
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.text-color-danger {
-  color: #ff0101; }
-
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.link-danger {
-  color: #ff0101; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .link-danger:hover {
-    color: #cd0000; }
-
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-color-warning {
-  color: #f8931f; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .icon-color-warning:hover {
-    color: #dd7907; }
-
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.text-color-warning {
-  color: #f8931f; }
-
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.link-warning {
-  color: #f8931f; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .link-warning:hover {
-    color: #dd7907; }
-
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-color-primary {
-  color: #338cae; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .icon-color-primary:hover {
-    color: #276c87; }
-
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.text-color-primary {
-  color: #338cae; }
-
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.link-primary {
-  color: #338cae; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-  .link-primary:hover {
-    color: #276c87; }
-
-/* line 55, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.social-icon-container {
-  width: 25px; }
-
-/* line 58, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
-.icon-size-1-5-x {
-  font-size: 1.5em; }
-
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons_icomoon */
 .icon-repeat, .icon-print, .icon-calendar, .icon-bell, .icon-briefcase, .icon-bullhorn, .icon-group, .icon-paste, .icon-list-alt, .icon-cog, .icon-signout, .icon-caret-left, .icon-caret-right, .icon-caret-up, .icon-caret-down, .icon-chevron-left, .icon-chevron-right, .icon-chevron-up, .icon-chevron-down, .icon-plus, .icon-question-sign, .icon-search, .icon-reorder, .icon-resize-full, .icon-resize-small, .icon-pencil, .icon-ok, .icon-share, .icon-paper-clip, .icon-save, .icon-star-empty, .icon-star, .icon-comment-alt, .icon-comment, .icon-bell-alt, .icon-trophy, .icon-user, .icon-building, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-down, .icon-remove, .icon-exclamation-sign, .icon-folder-close-alt, .icon-folder-open-alt, .icon-file-alt, .icon-file, .icon-folder-open, .icon-folder-close, .icon-filter, .icon-share-alt, .icon-books, .icon-lock {
   font-style: normal; }
@@ -13329,6 +13051,283 @@ a.fc-more {
 
 /* short mode, where time and title are on the same line */
 /* resizer */
+@font-face {
+  font-family: "icomoon-iq300";
+  src: url("/assets/icomoon-iq300.eot");
+  src: url("/assets/icomoon-iq300.eot?#iefix") format("embedded-opentype"), url("/assets/icomoon-iq300.woff") format("woff"), url("/assets/icomoon-iq300.ttf") format("truetype"), url("/assets/icomoon-iq300.svg#icomoon-iq300") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-repeat, .icon-print, .icon-calendar, .icon-bell, .icon-briefcase, .icon-bullhorn, .icon-group, .icon-paste, .icon-list-alt, .icon-cog, .icon-signout, .icon-caret-left, .icon-caret-right, .icon-caret-up, .icon-caret-down, .icon-chevron-left, .icon-chevron-right, .icon-chevron-up, .icon-chevron-down, .icon-plus, .icon-question-sign, .icon-search, .icon-reorder, .icon-resize-full, .icon-resize-small, .icon-pencil, .icon-ok, .icon-share, .icon-paper-clip, .icon-save, .icon-star-empty, .icon-star, .icon-comment-alt, .icon-comment, .icon-bell-alt, .icon-trophy, .icon-user, .icon-building, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-down, .icon-remove, .icon-exclamation-sign, .icon-folder-close-alt, .icon-folder-open-alt, .icon-file-alt, .icon-file, .icon-folder-open, .icon-folder-close, .icon-filter, .icon-share-alt, .icon-books, .icon-lock, [data-icon]:before, section.list-column > ul li.active:before, .departments-jobs-list-column > ul li.active:before, .departments-relations-list-column > ul li.active:before, .workers-list-column > ul li.active:before, section.expandable > header > a.trigger:before, section.badges-list > span > a.delete:before, .badges-list > span > a.delete:before, section.tasks-list-column > ul > li .icons .comments i, section.task-view-column > .column-content .object-details > p.files span.all-files:before, .folders-view-column > .column-content .object-details > p.files span.all-files:before, section.task-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, .folders-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, section.task-view-column > .column-content .object-details > section.actions a.edit:before, .folders-view-column > .column-content .object-details > section.actions a.edit:before, section.task-view-column > .column-content .object-details > section.actions a.delete:before, .folders-view-column > .column-content .object-details > section.actions a.delete:before, section.task-view-column > .column-content .object-details > section.actions a.convert:before, .folders-view-column > .column-content .object-details > section.actions a.convert:before, .comments-form a.add:before, .comments-form-block a.add:before, .comments-form-block-fixed a.add:before, .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment:before, .department input.department-toggle ~ .expander:before, .department input:checked.department-toggle ~ .expander:before, .department .d-card-title .destroy-department:before, .department .d-card-body .boss-card .memberships-contract.empty:before, .community-structure-panel-view .unallocated-workers .memberships-contract.empty:before, .unallocated-btn .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn .expander:before, .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .popover .popover-form-submit-btn .expander:before, .popover .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover .popover-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover .popover-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover .popover-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .popover-form-block .popover-form-submit-btn .expander:before, .popover-form-block .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-block .popover-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-block .popover-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-block .popover-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .fullcalendar-event-popover .popover-form-submit-btn .expander:before, .fullcalendar-event-popover .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-popover .popover-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-popover .popover-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-popover .popover-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .notifications-widget-popover .popover-form-submit-btn .expander:before, .notifications-widget-popover .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .notifications-widget-popover .popover-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .notifications-widget-popover .popover-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .notifications-widget-popover .popover-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .popover .fullcalendar-event-form-submit-btn .expander:before, .popover .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover .fullcalendar-event-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover .fullcalendar-event-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover .fullcalendar-event-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .popover-form-block .fullcalendar-event-form-submit-btn .expander:before, .popover-form-block .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-block .fullcalendar-event-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-block .fullcalendar-event-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-block .fullcalendar-event-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander:before, .fullcalendar-event-popover .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander:before, .notifications-widget-popover .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base .expander:before, .unallocated-btn .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check .expander:before, .unallocated-btn .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send .expander:before, .unallocated-btn .user-block-add-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-add-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-add-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-add-btn .expander:before, .unallocated-btn .user-block-added-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-added-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-added-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-added-btn .expander:before, .unallocated-btn .user-block-remove-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-remove-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-remove-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-remove-btn .expander:before, .unallocated-btn .user-block-compose-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-compose-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-compose-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-compose-btn .expander:before, .unallocated-btn .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn .expander:before, .unallocated-btn .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn .expander:before, .unallocated-btn .project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-task-box-add-subtask-btn .expander:before, .unallocated-btn a.project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column a.project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column a.project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column a.project-task-box-add-subtask-btn .expander:before, .unallocated-btn .project-task-box-actions-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-task-box-actions-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-task-box-actions-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-task-box-actions-btn .expander:before, .unallocated-btn .project-tasks-group-header-color-select .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-tasks-group-header-color-select .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-tasks-group-header-color-select .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-tasks-group-header-color-select .expander:before, .unallocated-btn .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn .expander:before {
+  font-family: "icomoon-iq300";
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+[data-icon]:before {
+  content: attr(data-icon); }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-8 {
+  font-size: 8px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-10 {
+  font-size: 10px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-12 {
+  font-size: 12px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-14 {
+  font-size: 14px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-16 {
+  font-size: 16px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-18 {
+  font-size: 18px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-20 {
+  font-size: 20px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-24 {
+  font-size: 24px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-28 {
+  font-size: 28px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-32 {
+  font-size: 32px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-40 {
+  font-size: 40px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-48 {
+  font-size: 48px; }
+
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-64 {
+  font-size: 64px; }
+
+/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.v-align-top {
+  vertical-align: top; }
+
+/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.v-align-baseline {
+  vertical-align: baseline; }
+
+/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.v-align-middle {
+  vertical-align: middle; }
+
+/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.v-align-bottom {
+  vertical-align: bottom; }
+
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-color-white {
+  color: #fff; }
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .icon-color-white:hover {
+    color: #e6e6e6; }
+
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.text-color-white {
+  color: #fff; }
+
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.link-white {
+  color: #fff; }
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .link-white:hover {
+    color: #e6e6e6; }
+
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-color-gray-lighter {
+  color: #eeeeee; }
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .icon-color-gray-lighter:hover {
+    color: #d5d5d5; }
+
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.text-color-gray-lighter {
+  color: #eeeeee; }
+
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.link-gray-lighter {
+  color: #eeeeee; }
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .link-gray-lighter:hover {
+    color: #d5d5d5; }
+
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-color-gray-light {
+  color: #999999; }
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .icon-color-gray-light:hover {
+    color: gray; }
+
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.text-color-gray-light {
+  color: #999999; }
+
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.link-gray-light {
+  color: #999999; }
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .link-gray-light:hover {
+    color: gray; }
+
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-color-gray {
+  color: #555555; }
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .icon-color-gray:hover {
+    color: #3c3c3c; }
+
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.text-color-gray {
+  color: #555555; }
+
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.link-gray {
+  color: #555555; }
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .link-gray:hover {
+    color: #3c3c3c; }
+
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-color-gray-dark {
+  color: #333333; }
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .icon-color-gray-dark:hover {
+    color: #1a1a1a; }
+
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.text-color-gray-dark {
+  color: #333333; }
+
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.link-gray-dark {
+  color: #333333; }
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .link-gray-dark:hover {
+    color: #1a1a1a; }
+
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-color-gray-darker {
+  color: #222222; }
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .icon-color-gray-darker:hover {
+    color: #090909; }
+
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.text-color-gray-darker {
+  color: #222222; }
+
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.link-gray-darker {
+  color: #222222; }
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .link-gray-darker:hover {
+    color: #090909; }
+
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-color-success {
+  color: #3ab54a; }
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .icon-color-success:hover {
+    color: #2e8e3a; }
+
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.text-color-success {
+  color: #3ab54a; }
+
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.link-success {
+  color: #3ab54a; }
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .link-success:hover {
+    color: #2e8e3a; }
+
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-color-danger {
+  color: #ff0101; }
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .icon-color-danger:hover {
+    color: #cd0000; }
+
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.text-color-danger {
+  color: #ff0101; }
+
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.link-danger {
+  color: #ff0101; }
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .link-danger:hover {
+    color: #cd0000; }
+
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-color-warning {
+  color: #f8931f; }
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .icon-color-warning:hover {
+    color: #dd7907; }
+
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.text-color-warning {
+  color: #f8931f; }
+
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.link-warning {
+  color: #f8931f; }
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .link-warning:hover {
+    color: #dd7907; }
+
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-color-primary {
+  color: #338cae; }
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .icon-color-primary:hover {
+    color: #276c87; }
+
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.text-color-primary {
+  color: #338cae; }
+
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.link-primary {
+  color: #338cae; }
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  .link-primary:hover {
+    color: #276c87; }
+
+/* line 51, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.social-icon-container {
+  width: 25px; }
+
+/* line 54, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+.icon-size-1-5-x {
+  font-size: 1.5em; }
+
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/buble-counter */
 .filter-item-counter, .nav-global ul > li a .picture > sup, .filters-column .with-subfolders li .counter, section.conversations-list-column > ul > li > .sender sup, .unallocated-btn .btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn > span, .unallocated-btn .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn > span, .unallocated-btn .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn > span, .unallocated-btn .popover .popover-form-submit-btn > span, .popover .unallocated-btn .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover .popover-form-submit-btn > span, .popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover .popover-form-submit-btn > span, .popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover .popover-form-submit-btn > span, .popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn > span, .unallocated-btn .popover-form-block .popover-form-submit-btn > span, .popover-form-block .unallocated-btn .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-block .popover-form-submit-btn > span, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-block .popover-form-submit-btn > span, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-block .popover-form-submit-btn > span, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn > span, .unallocated-btn .fullcalendar-event-popover .popover-form-submit-btn > span, .fullcalendar-event-popover .unallocated-btn .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-popover .popover-form-submit-btn > span, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-popover .popover-form-submit-btn > span, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-popover .popover-form-submit-btn > span, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn > span, .unallocated-btn .notifications-widget-popover .popover-form-submit-btn > span, .notifications-widget-popover .unallocated-btn .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .notifications-widget-popover .popover-form-submit-btn > span, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .notifications-widget-popover .popover-form-submit-btn > span, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .notifications-widget-popover .popover-form-submit-btn > span, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn > span, .unallocated-btn .popover .fullcalendar-event-form-submit-btn > span, .popover .unallocated-btn .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover .fullcalendar-event-form-submit-btn > span, .popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover .fullcalendar-event-form-submit-btn > span, .popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover .fullcalendar-event-form-submit-btn > span, .popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn > span, .unallocated-btn .popover-form-block .fullcalendar-event-form-submit-btn > span, .popover-form-block .unallocated-btn .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-block .fullcalendar-event-form-submit-btn > span, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-block .fullcalendar-event-form-submit-btn > span, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-block .fullcalendar-event-form-submit-btn > span, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn > span, .unallocated-btn .fullcalendar-event-popover .fullcalendar-event-form-submit-btn > span, .fullcalendar-event-popover .unallocated-btn .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn > span, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn > span, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn > span, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn > span, .unallocated-btn .notifications-widget-popover .fullcalendar-event-form-submit-btn > span, .notifications-widget-popover .unallocated-btn .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .notifications-widget-popover .fullcalendar-event-form-submit-btn > span, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .notifications-widget-popover .fullcalendar-event-form-submit-btn > span, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .notifications-widget-popover .fullcalendar-event-form-submit-btn > span, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn > span, .unallocated-btn .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base > span, .unallocated-btn .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check > span, .unallocated-btn .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send > span, .unallocated-btn .user-block-add-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-add-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-add-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-add-btn > span, .unallocated-btn .user-block-added-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-added-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-added-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-added-btn > span, .unallocated-btn .user-block-remove-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-remove-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-remove-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-remove-btn > span, .unallocated-btn .user-block-compose-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-compose-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-compose-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-compose-btn > span, .unallocated-btn .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn > span, .unallocated-btn .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn > span, .unallocated-btn .project-task-box-add-subtask-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-task-box-add-subtask-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-task-box-add-subtask-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-task-box-add-subtask-btn > span, .unallocated-btn a.project-task-box-add-subtask-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column a.project-task-box-add-subtask-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column a.project-task-box-add-subtask-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column a.project-task-box-add-subtask-btn > span, .unallocated-btn .project-task-box-actions-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-task-box-actions-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-task-box-actions-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-task-box-actions-btn > span, .unallocated-btn .project-tasks-group-header-color-select > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-tasks-group-header-color-select > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-tasks-group-header-color-select > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-tasks-group-header-color-select > span, .unallocated-btn .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn > span, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn > span {
   zoom: 1;
@@ -16580,7 +16579,7 @@ section.list-column, .departments-jobs-list-column, .departments-relations-list-
     /* line 71, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/base/grid/list-column */
     section.list-column > ul li.active, .departments-jobs-list-column > ul li.active, .departments-relations-list-column > ul li.active, .workers-list-column > ul li.active {
       background: #338cae !important; }
-      /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+      /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
       section.list-column > ul li.active:before, .departments-jobs-list-column > ul li.active:before, .departments-relations-list-column > ul li.active:before, .workers-list-column > ul li.active:before {
         position: absolute;
         font-size: 21px;
@@ -18030,7 +18029,7 @@ section.expandable {
       border-bottom: none;
       margin-top: 4px;
       position: relative; }
-      /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+      /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
       section.expandable > header > a.trigger:before {
         position: absolute;
         font-size: 14px;
@@ -18151,7 +18150,7 @@ section.badges-list > span, .badges-list > span {
     /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/elements/badges-list */
     section.badges-list > span > a.delete:hover, .badges-list > span > a.delete:hover {
       color: #fddbdc; }
-    /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+    /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
     section.badges-list > span > a.delete:before, .badges-list > span > a.delete:before {
       position: absolute;
       font-size: 13px;
@@ -19837,7 +19836,7 @@ section.task-view-column > .column-content .object-details > p.files, .folders-v
   section.task-view-column > .column-content .object-details > p.files span.all-files, .folders-view-column > .column-content .object-details > p.files span.all-files {
     position: relative;
     float: right; }
-    /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+    /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
     section.task-view-column > .column-content .object-details > p.files span.all-files:before, .folders-view-column > .column-content .object-details > p.files span.all-files:before {
       position: absolute;
       font-size: 14px;
@@ -19909,7 +19908,7 @@ section.task-view-column > .column-content .object-details > section.people-date
       /* line 92, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/view-column */
       section.task-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell, .folders-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell {
         position: relative; }
-        /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+        /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
         section.task-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before, .folders-view-column > .column-content .object-details > section.people-dates .dates > p span.with-bell:before {
           position: absolute;
           font-size: 14px;
@@ -19988,7 +19987,7 @@ section.task-view-column > .column-content .object-details > section.actions, .f
   section.task-view-column > .column-content .object-details > section.actions a.edit, .folders-view-column > .column-content .object-details > section.actions a.edit, section.task-view-column > .column-content .object-details > section.actions a.delete, .folders-view-column > .column-content .object-details > section.actions a.delete, section.task-view-column > .column-content .object-details > section.actions a.convert, .folders-view-column > .column-content .object-details > section.actions a.convert {
     position: relative;
     padding-right: 14px; }
-    /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+    /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
     section.task-view-column > .column-content .object-details > section.actions a.edit:before, .folders-view-column > .column-content .object-details > section.actions a.edit:before, section.task-view-column > .column-content .object-details > section.actions a.delete:before, .folders-view-column > .column-content .object-details > section.actions a.delete:before, section.task-view-column > .column-content .object-details > section.actions a.convert:before, .folders-view-column > .column-content .object-details > section.actions a.convert:before {
       position: absolute;
       font-size: 12px;
@@ -20005,7 +20004,7 @@ section.task-view-column > .column-content .object-details > section.actions, .f
   /* line 152, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/tasks/view-column */
   section.task-view-column > .column-content .object-details > section.actions a.delete, .folders-view-column > .column-content .object-details > section.actions a.delete {
     color: #fe1d25; }
-    /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+    /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
     section.task-view-column > .column-content .object-details > section.actions a.delete:before, .folders-view-column > .column-content .object-details > section.actions a.delete:before {
       position: absolute;
       font-size: 14px;
@@ -20018,7 +20017,7 @@ section.task-view-column > .column-content .object-details > section.actions, .f
     line-height: 15px;
     margin-top: 7px;
     padding-right: 17px; }
-    /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+    /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
     section.task-view-column > .column-content .object-details > section.actions a.convert:before, .folders-view-column > .column-content .object-details > section.actions a.convert:before {
       position: absolute;
       font-size: 12px;
@@ -21583,7 +21582,7 @@ section.conversations-list-column > ul:after {
     width: 30px;
     height: 30px;
     display: block; }
-    /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+    /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
     .comments-form a.add:before, .comments-form-block a.add:before, .comments-form-block-fixed a.add:before {
       position: absolute;
       font-size: 17px;
@@ -21742,7 +21741,7 @@ section.conversations-list-column > ul:after {
         display: inline-block;
         *display: inline;
         vertical-align: top; }
-        /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+        /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
         .comments-form .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block .attachment-link-popup.shown .add-new .comment-attachment:before, .comments-form-block-fixed .attachment-link-popup.shown .add-new .comment-attachment:before {
           position: absolute;
           font-size: 17px;
@@ -25974,7 +25973,7 @@ section.search-worker-for-community {
       -moz-user-select: -moz-none;
       -o-user-select: none;
       user-select: none; }
-      /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+      /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
       .department input.department-toggle ~ .expander:before {
         position: absolute;
         font-size: 15px;
@@ -26007,7 +26006,7 @@ section.search-worker-for-community {
     -moz-user-select: -moz-none;
     -o-user-select: none;
     user-select: none; }
-    /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+    /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
     .department input:checked.department-toggle ~ .expander:before {
       position: absolute;
       font-size: 15px;
@@ -26064,7 +26063,7 @@ section.search-worker-for-community {
     /* line 266, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/community_structure/department */
     .department .d-card-title .destroy-department {
       cursor: pointer; }
-      /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+      /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
       .department .d-card-title .destroy-department:before {
         position: absolute;
         font-size: 18px;
@@ -26096,7 +26095,7 @@ section.search-worker-for-community {
         /* line 290, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/community_structure/department */
         .department .d-card-body .boss-card .memberships-contract.empty:hover {
           border: 1px dashed #338cae !important; }
-        /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+        /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
         .department .d-card-body .boss-card .memberships-contract.empty:before {
           position: absolute;
           font-size: 18px;
@@ -26345,7 +26344,7 @@ section.search-worker-for-community {
         /* line 122, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/community_structure/panel */
         .community-structure-panel-view .unallocated-workers .memberships-contract.empty:hover {
           border: 1px dashed #338cae !important; }
-        /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+        /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
         .community-structure-panel-view .unallocated-workers .memberships-contract.empty:before {
           position: absolute;
           font-size: 18px;
@@ -26500,7 +26499,7 @@ section.search-worker-for-community {
       /* line 231, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/community_structure/panel */
       .unallocated-btn .btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn .expander.zero-workers, .unallocated-btn .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander.zero-workers, .unallocated-btn .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .unallocated-btn .popover .popover-form-submit-btn .expander.zero-workers, .popover .unallocated-btn .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover .popover-form-submit-btn .expander.zero-workers, .popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover .popover-form-submit-btn .expander.zero-workers, .popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover .popover-form-submit-btn .expander.zero-workers, .popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander.zero-workers, .unallocated-btn .popover-form-block .popover-form-submit-btn .expander.zero-workers, .popover-form-block .unallocated-btn .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-block .popover-form-submit-btn .expander.zero-workers, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-block .popover-form-submit-btn .expander.zero-workers, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-block .popover-form-submit-btn .expander.zero-workers, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander.zero-workers, .unallocated-btn .fullcalendar-event-popover .popover-form-submit-btn .expander.zero-workers, .fullcalendar-event-popover .unallocated-btn .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-popover .popover-form-submit-btn .expander.zero-workers, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-popover .popover-form-submit-btn .expander.zero-workers, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-popover .popover-form-submit-btn .expander.zero-workers, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander.zero-workers, .unallocated-btn .notifications-widget-popover .popover-form-submit-btn .expander.zero-workers, .notifications-widget-popover .unallocated-btn .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .notifications-widget-popover .popover-form-submit-btn .expander.zero-workers, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .notifications-widget-popover .popover-form-submit-btn .expander.zero-workers, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .notifications-widget-popover .popover-form-submit-btn .expander.zero-workers, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander.zero-workers, .unallocated-btn .popover .fullcalendar-event-form-submit-btn .expander.zero-workers, .popover .unallocated-btn .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover .fullcalendar-event-form-submit-btn .expander.zero-workers, .popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover .fullcalendar-event-form-submit-btn .expander.zero-workers, .popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover .fullcalendar-event-form-submit-btn .expander.zero-workers, .popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .unallocated-btn .popover-form-block .fullcalendar-event-form-submit-btn .expander.zero-workers, .popover-form-block .unallocated-btn .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-block .fullcalendar-event-form-submit-btn .expander.zero-workers, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-block .fullcalendar-event-form-submit-btn .expander.zero-workers, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-block .fullcalendar-event-form-submit-btn .expander.zero-workers, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .unallocated-btn .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander.zero-workers, .fullcalendar-event-popover .unallocated-btn .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander.zero-workers, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander.zero-workers, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander.zero-workers, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .unallocated-btn .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander.zero-workers, .notifications-widget-popover .unallocated-btn .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander.zero-workers, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander.zero-workers, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander.zero-workers, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander.zero-workers, .unallocated-btn .community-invites-btn-base .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base .expander.zero-workers, .unallocated-btn .community-invites-btn-check .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check .expander.zero-workers, .unallocated-btn .community-invites-btn-send .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send .expander.zero-workers, .unallocated-btn .user-block-add-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-add-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-add-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-add-btn .expander.zero-workers, .unallocated-btn .user-block-added-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-added-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-added-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-added-btn .expander.zero-workers, .unallocated-btn .user-block-remove-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-remove-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-remove-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-remove-btn .expander.zero-workers, .unallocated-btn .user-block-compose-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-compose-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-compose-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-compose-btn .expander.zero-workers, .unallocated-btn .project-form-team-member-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn .expander.zero-workers, .unallocated-btn .project-form-team-member-selected-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn .expander.zero-workers, .unallocated-btn .project-task-box-add-subtask-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-task-box-add-subtask-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-task-box-add-subtask-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-task-box-add-subtask-btn .expander.zero-workers, .unallocated-btn a.project-task-box-add-subtask-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column a.project-task-box-add-subtask-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column a.project-task-box-add-subtask-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column a.project-task-box-add-subtask-btn .expander.zero-workers, .unallocated-btn .project-task-box-actions-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-task-box-actions-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-task-box-actions-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-task-box-actions-btn .expander.zero-workers, .unallocated-btn .project-tasks-group-header-color-select .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-tasks-group-header-color-select .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-tasks-group-header-color-select .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-tasks-group-header-color-select .expander.zero-workers, .unallocated-btn .project-discussions-form-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn .expander.zero-workers, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn .expander.zero-workers {
         border-right: 1px solid #cccccc; }
-      /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+      /* line 22, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
       .unallocated-btn .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .btn .expander:before, .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .popover .popover-form-submit-btn .expander:before, .popover .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover .popover-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover .popover-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover .popover-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .popover-form-block .popover-form-submit-btn .expander:before, .popover-form-block .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-block .popover-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-block .popover-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-block .popover-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .fullcalendar-event-popover .popover-form-submit-btn .expander:before, .fullcalendar-event-popover .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-popover .popover-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-popover .popover-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-popover .popover-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .notifications-widget-popover .popover-form-submit-btn .expander:before, .notifications-widget-popover .unallocated-btn .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .notifications-widget-popover .popover-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .notifications-widget-popover .popover-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .notifications-widget-popover .popover-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-submit-btn .expander:before, .unallocated-btn .popover .fullcalendar-event-form-submit-btn .expander:before, .popover .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover .fullcalendar-event-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover .fullcalendar-event-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover .fullcalendar-event-form-submit-btn .expander:before, .popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .popover-form-block .fullcalendar-event-form-submit-btn .expander:before, .popover-form-block .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .popover-form-block .fullcalendar-event-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .popover-form-block .fullcalendar-event-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .popover-form-block .fullcalendar-event-form-submit-btn .expander:before, .popover-form-block .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander:before, .fullcalendar-event-popover .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-popover .fullcalendar-event-form-submit-btn .expander:before, .fullcalendar-event-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander:before, .notifications-widget-popover .unallocated-btn .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .slaves-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .masters-column .fullcalendar-event-form-submit-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .notifications-widget-popover .fullcalendar-event-form-submit-btn .expander:before, .notifications-widget-popover .community-structure-view > .personal-tree .personal-tree-body .target-column .fullcalendar-event-form-submit-btn .expander:before, .unallocated-btn .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-base .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-base .expander:before, .unallocated-btn .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-check .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-check .expander:before, .unallocated-btn .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .community-invites-btn-send .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .community-invites-btn-send .expander:before, .unallocated-btn .user-block-add-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-add-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-add-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-add-btn .expander:before, .unallocated-btn .user-block-added-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-added-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-added-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-added-btn .expander:before, .unallocated-btn .user-block-remove-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-remove-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-remove-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-remove-btn .expander:before, .unallocated-btn .user-block-compose-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .user-block-compose-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .user-block-compose-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .user-block-compose-btn .expander:before, .unallocated-btn .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-btn .expander:before, .unallocated-btn .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-form-team-member-selected-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-form-team-member-selected-btn .expander:before, .unallocated-btn .project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-task-box-add-subtask-btn .expander:before, .unallocated-btn a.project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column a.project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column a.project-task-box-add-subtask-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column a.project-task-box-add-subtask-btn .expander:before, .unallocated-btn .project-task-box-actions-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-task-box-actions-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-task-box-actions-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-task-box-actions-btn .expander:before, .unallocated-btn .project-tasks-group-header-color-select .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-tasks-group-header-color-select .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-tasks-group-header-color-select .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-tasks-group-header-color-select .expander:before, .unallocated-btn .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .slaves-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .masters-column .project-discussions-form-btn .expander:before, .community-structure-view > .personal-tree .personal-tree-body .target-column .project-discussions-form-btn .expander:before {
         position: absolute;
         font-size: 15px;

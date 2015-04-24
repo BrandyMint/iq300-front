@@ -2108,8 +2108,7 @@
   font-weight: normal;
   font-style: normal; }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-/* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 [data-icon]:before, .icon-repeat, .icon-print, .icon-calendar, .icon-bell, .icon-briefcase, .icon-bullhorn, .icon-group, .icon-paste, .icon-list-alt, .icon-cog, .icon-signout, .icon-caret-left, .icon-caret-right, .icon-caret-up, .icon-caret-down, .icon-chevron-left, .icon-chevron-right, .icon-chevron-up, .icon-chevron-down, .icon-plus, .icon-question-sign, .icon-search, .icon-reorder, .icon-resize-full, .icon-resize-small, .icon-pencil, .icon-ok, .icon-share, .icon-paper-clip, .icon-save, .icon-star-empty, .icon-star, .icon-comment-alt, .icon-comment, .icon-bell-alt, .icon-trophy, .icon-user, .icon-building, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-down, .icon-remove, .icon-exclamation-sign, .icon-folder-close-alt, .icon-folder-open-alt, .icon-file-alt, .icon-file, .icon-folder-open, .icon-folder-close, .icon-filter, .icon-share-alt, .icon-books, .icon-lock {
   font-family: "icomoon-iq300";
   speak: none;
@@ -2119,263 +2118,263 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased; }
 
-/* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 [data-icon]:before {
   content: attr(data-icon); }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-8 {
   font-size: 8px; }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-10 {
   font-size: 10px; }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-12 {
   font-size: 12px; }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-14 {
   font-size: 14px; }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-16 {
   font-size: 16px; }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-18 {
   font-size: 18px; }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-20 {
   font-size: 20px; }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-24 {
   font-size: 24px; }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-28 {
   font-size: 28px; }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-32 {
   font-size: 32px; }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-40 {
   font-size: 40px; }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-48 {
   font-size: 48px; }
 
-/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-64 {
   font-size: 64px; }
 
-/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .v-align-top {
   vertical-align: top; }
 
-/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .v-align-baseline {
   vertical-align: baseline; }
 
-/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .v-align-middle {
   vertical-align: middle; }
 
-/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 36, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .v-align-bottom {
   vertical-align: bottom; }
 
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-white {
   color: #fff; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-white:hover {
     color: #e6e6e6; }
 
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-white {
   color: #fff; }
 
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .link-white {
   color: #fff; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .link-white:hover {
     color: #e6e6e6; }
 
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-gray-lighter {
   color: #eeeeee; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-gray-lighter:hover {
     color: #d5d5d5; }
 
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-gray-lighter {
   color: #eeeeee; }
 
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .link-gray-lighter {
   color: #eeeeee; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .link-gray-lighter:hover {
     color: #d5d5d5; }
 
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-gray-light {
   color: #999999; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-gray-light:hover {
     color: gray; }
 
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-gray-light {
   color: #999999; }
 
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .link-gray-light {
   color: #999999; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .link-gray-light:hover {
     color: gray; }
 
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-gray {
   color: #555555; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-gray:hover {
     color: #3c3c3c; }
 
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-gray {
   color: #555555; }
 
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .link-gray {
   color: #555555; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .link-gray:hover {
     color: #3c3c3c; }
 
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-gray-dark {
   color: #333333; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-gray-dark:hover {
     color: #1a1a1a; }
 
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-gray-dark {
   color: #333333; }
 
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .link-gray-dark {
   color: #333333; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .link-gray-dark:hover {
     color: #1a1a1a; }
 
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-gray-darker {
   color: #222222; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-gray-darker:hover {
     color: #090909; }
 
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-gray-darker {
   color: #222222; }
 
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .link-gray-darker {
   color: #222222; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .link-gray-darker:hover {
     color: #090909; }
 
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-success {
   color: #3ab54a; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-success:hover {
     color: #2e8e3a; }
 
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-success {
   color: #3ab54a; }
 
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .link-success {
   color: #3ab54a; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .link-success:hover {
     color: #2e8e3a; }
 
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-danger {
   color: #ff0101; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-danger:hover {
     color: #cd0000; }
 
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-danger {
   color: #ff0101; }
 
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .link-danger {
   color: #ff0101; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .link-danger:hover {
     color: #cd0000; }
 
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-warning {
   color: #f8931f; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-warning:hover {
     color: #dd7907; }
 
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-warning {
   color: #f8931f; }
 
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .link-warning {
   color: #f8931f; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .link-warning:hover {
     color: #dd7907; }
 
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-color-primary {
   color: #338cae; }
-  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .icon-color-primary:hover {
     color: #276c87; }
 
-/* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .text-color-primary {
   color: #338cae; }
 
-/* line 50, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .link-primary {
   color: #338cae; }
-  /* line 52, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+  /* line 48, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
   .link-primary:hover {
     color: #276c87; }
 
-/* line 55, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 51, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .social-icon-container {
   width: 25px; }
 
-/* line 58, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
+/* line 54, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/icons */
 .icon-size-1-5-x {
   font-size: 1.5em; }
 
