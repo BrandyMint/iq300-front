@@ -13,6 +13,10 @@
 @import helpers/iq-icons/iqs-codes
 @import helpers/utils
 
+// Bootstrap components
+// --------------------------------------
+@import framework/bootstrap
+
 // Reset
 // --------------------------------------
 @import base/_reset
@@ -20,11 +24,25 @@
 // Libs and plugins
 // --------------------------------------
 @import libs/gantt
+@import libs/bootstrap-datetimepicker
+@import libs/bootstrap-multiselect
 
 // Customize pages
 // --------------------------------------
 @import pages/projects/gantt_custom
 @import pages/projects/gantt_print
+
+// Base layout partials
+// --------------------------------------
+@import base/forms
+
+// override bootstrap
+@import elements/type
+@import elements/badges
+@import elements/input-groups
+@import elements/alerts
+@import elements/panels
+@import elements/form
 
 html, body
   font-size: 13px
