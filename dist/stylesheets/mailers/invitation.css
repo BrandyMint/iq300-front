@@ -1,19 +1,11 @@
-<<<<<<< HEAD
-/* line 5, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-=======
-/* line 5, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
->>>>>>> 1a3219b... build
+/* line 5, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-table {
   border: 0;
   border-spacing: 0;
   width: 800px;
   padding: 20px 0 0; }
 
-<<<<<<< HEAD
-/* line 11, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-=======
-/* line 11, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
->>>>>>> 1a3219b... build
+/* line 11, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-default-text {
   font-family: 'Helvetica Neue,Arial,sans-serif';
   margin: 0;
@@ -21,11 +13,7 @@
   font-weight: normal;
   color: #6e7e91; }
 
-<<<<<<< HEAD
-/* line 18, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-=======
-/* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
->>>>>>> 1a3219b... build
+/* line 18, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-header-text {
   padding: 0;
   margin: 0;
@@ -33,65 +21,37 @@
   font-size: 30px;
   font-weight: bold; }
 
-<<<<<<< HEAD
-/* line 25, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-=======
-/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
->>>>>>> 1a3219b... build
+/* line 25, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-text {
   padding: 0;
   margin: 0;
   font-size: 18px;
   font-weight: normal; }
 
-<<<<<<< HEAD
-/* line 31, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-=======
-/* line 31, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
->>>>>>> 1a3219b... build
+/* line 31, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-header-cell {
   width: 470px;
   padding: 45px 20px 0; }
 
-<<<<<<< HEAD
-/* line 35, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
+/* line 35, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-header-blank-cell {
   width: 130px; }
 
-/* line 38, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
+/* line 38, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-default-cell {
   padding: 0 20px; }
 
-/* line 41, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
+/* line 41, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-table-default-cell {
   padding: 0; }
 
-/* line 44, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-=======
-/* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-.invitation-mailer-header-blank-cell {
-  width: 130px; }
-
-/* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-.invitation-mailer-default-cell {
-  padding: 0 20px; }
-
-/* line 41, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-.invitation-mailer-table-default-cell {
-  padding: 0; }
-
-/* line 44, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
->>>>>>> 1a3219b... build
+/* line 44, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-accept-button {
   padding: 10px 15px;
   border: 1px solid #114D97;
   background-color: #1F8DD6; }
 
-<<<<<<< HEAD
-/* line 49, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-=======
-/* line 49, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
->>>>>>> 1a3219b... build
+/* line 49, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-accept-link {
   font-size: 18px;
   font-weight: bold;
@@ -99,77 +59,41 @@
   text-align: center;
   text-decoration: none; }
 
-<<<<<<< HEAD
-/* line 56, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
+/* line 56, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-accept-button-blank-cell {
   width: 130px; }
 
-/* line 59, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
+/* line 59, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-replacement-link-cell {
   padding: 0 20px 10px 20px; }
 
-/* line 62, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-=======
-/* line 56, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-.invitation-mailer-accept-button-blank-cell {
-  width: 130px; }
-
-/* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-.invitation-mailer-replacement-link-cell {
-  padding: 0 20px 10px 20px; }
-
-/* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
->>>>>>> 1a3219b... build
+/* line 62, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-replacement-link-message {
   font-size: 11px;
   color: #6e7e91; }
 
-<<<<<<< HEAD
-/* line 66, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
+/* line 66, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-not-correct-letter {
   padding: 0 20px 60px 20px; }
 
-/* line 69, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-=======
-/* line 66, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-.invitation-mailer-not-correct-letter {
-  padding: 0 20px 60px 20px; }
-
-/* line 69, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
->>>>>>> 1a3219b... build
+/* line 69, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-not-correct-letter-message {
   font-size: 11px;
   color: #999999; }
 
-<<<<<<< HEAD
-/* line 73, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
+/* line 73, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-target-name {
   color: #212f40; }
 
-/* line 76, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
+/* line 76, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-message-blank-row {
   width: 130px; }
 
-/* line 79, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
+/* line 79, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-table-blank-row {
   height: 25px; }
 
-/* line 82, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-=======
-/* line 73, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-.invitation-mailer-target-name {
-  color: #212f40; }
-
-/* line 76, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-.invitation-mailer-message-blank-row {
-  width: 130px; }
-
-/* line 79, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
-.invitation-mailer-table-blank-row {
-  height: 25px; }
-
-/* line 82, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/mailers/invitation.sass */
->>>>>>> 1a3219b... build
+/* line 82, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/invitation.sass */
 .invitation-mailer-logo {
   padding-top: 30px;
   display: block;
