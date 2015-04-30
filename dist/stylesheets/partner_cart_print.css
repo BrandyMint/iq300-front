@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 /* line 4, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
 .partner-cart-page-content {
   padding: 40px; }
   /* line 6, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+=======
+/* line 4, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+.partner-cart-page-content {
+  padding: 40px; }
+  /* line 6, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+>>>>>>> 1a3219b... build
   .partner-cart-page-content .partner-cart-table {
     width: 900px;
     text-align: left;
     font-size: 12pt; }
+<<<<<<< HEAD
     /* line 10, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
     .partner-cart-page-content .partner-cart-table .partner-cart-row {
       height: 24px;
@@ -27,5 +35,28 @@
         font-size: 20pt; }
 
 /* line 25, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+=======
+    /* line 10, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+    .partner-cart-page-content .partner-cart-table .partner-cart-row {
+      height: 24px;
+      vertical-align: top; }
+      /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+      .partner-cart-page-content .partner-cart-table .partner-cart-row .partner-cart-key {
+        width: 220px; }
+      /* line 15, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+      .partner-cart-page-content .partner-cart-table .partner-cart-row .partner-cart-value {
+        width: 680px; }
+      /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+      .partner-cart-page-content .partner-cart-table .partner-cart-row .partner-cart-bank-position {
+        width: 40px; }
+      /* line 19, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+      .partner-cart-page-content .partner-cart-table .partner-cart-row .partner-cart-bank-key {
+        width: 180px; }
+      /* line 21, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+      .partner-cart-page-content .partner-cart-table .partner-cart-row .partner-cart-value-title {
+        font-size: 20pt; }
+
+/* line 25, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+>>>>>>> 1a3219b... build
 .header .print {
   color: #368aaf; }
