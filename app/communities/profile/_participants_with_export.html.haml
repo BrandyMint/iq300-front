@@ -1,16 +1,27 @@
 .content-group.clearfix
   .pull-left
-    %a.btn.btn-primary{:href => "#"}
-      Пригласить участника
-  .pull-left
-    %a.btn.btn-link-primary{"data-toggle" => "tab", :href => "#community-roles-edit"}
-      Редактировать правила доступа
+    %a.btn.btn-default{:href => "#"} Добавить участников
+    %a.btn.btn-default{:href => "#"} Управление ролями
+    %a.btn.btn-default{:href => "#"} Экспорт списка
   .pull-right
     %input.form-control{:type => "text", :placeholder => "Поиск по участникам..."}/
-
-%p.content-group.text-color-danger
-  Список участников скрыт настройками приватности
-
+.content-group
+  .tab-content-wide.container-grey
+    .clearfix
+      .pull-left
+        %select{:name => "", :role => "select2"}
+          %option{:value => ""} Роль
+          %option{:value => ""} Роль
+          %option{:value => ""} Роль
+          %option{:value => ""} Роль
+        %select{:name => "", :role => "select2"}
+          %option{:value => ""} Подразделение
+          %option{:value => ""} Подразделение
+          %option{:value => ""} Подразделение
+          %option{:value => ""} Подразделение
+      .pull-right
+        %a.btn.btn-default{:href => "#"} Экспорт
+        %a.btn.btn-default{:href => "#"} Редактировать
 .row.row-collapse
   .col-sm-4.col-collapse
     - (1..4).each do

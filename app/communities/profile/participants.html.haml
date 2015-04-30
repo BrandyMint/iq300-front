@@ -28,16 +28,13 @@ body_class: communities-profile
             .tabs-page-header-actions
               %a.btn.btn-default{:href => "#"} Написать сообщение
 
-    = partial 'communities/profile/tabs'
+    = partial 'communities/profile/tabs', locals: {active: :participants}
     .tab-content.tab-panels
       #community-profile.tab-pane.active
         = partial 'communities/profile/details'
 
       #community-members.tab-pane
         = partial 'communities/profile/participants'
-
-      #community-roles-edit.tab-pane
-        = partial 'communities/profile/roles_edit'
 
       #community-actions.tab-pane
         = partial 'communities/profile/actions'

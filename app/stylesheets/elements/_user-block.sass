@@ -35,6 +35,12 @@ $user-block-btn-height: $user-block-btn-width
 
 .user-block-content
   @extend .media-body
+  &.user-block-content-centered
+    overflow: visible
+    .user-block-content-name
+      height: 0
+      overflow: visible
+      vertical-align: middle
 
 .user-block-content-name
   display: inline-block

@@ -1,0 +1,40 @@
+%a.btn.btn-primary{:href => "#"}
+  Быстрое добавление участника
+
+- columns = ['Создавать проекты', 'Приглашать участников', 'Редактировать структуру', 'Отчёты и статистика', 'Доступ ко всем проектам и задачам']
+- roles = [:owner, :admin, :participant]
+
+%table.table.table-condensed.form-inline
+  %thead
+    %tr
+      %th
+        Участники сообщества
+      %th
+        Роль
+      - columns.each do |c|
+        %th= c
+  %tbody
+    - for i in 0..20
+      %tr
+        %td
+          - img_url = "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/903/medium_8de93480-9151-4a64-8b1f-e86f68a5e2e7.jpg"
+          .user-block
+            .user-block-avatar
+              %a{href: ''}
+                %img.user-block-avatar-image.member-box-avatar-image-small.img-corrector-initialized{:alt => "Ирина", :hide_wait_message => "true", 
+                  :src => img_url, :style => "width:34px;height:34px;", :title => "Михайлова Ирина Николаевна"}/
+            .user-block-content.user-block-content-centered
+              %a.user-block-content-name{:href => "/users/1147", :role => "member-name"} Ирина Михайлова
+        %td
+          %select.form-control
+            - roles.each do |r|
+              - if (i == 0 && r == :admin) || (i > 0 && i < 3 && r == :admin)
+                %option{selected: :selected}= r
+              - else
+                %option= r
+          - if i > 3
+            %a.btn.btn-link-primary{href: ''} Удалить
+        - columns.each do |c|
+          %td.community-roles-table-checkbox
+            .checkbox
+              %input{type: :checkbox}
