@@ -22585,22 +22585,24 @@ section.community-filters-column ul.with-subfolders > li.filters > ol {
   display: none;
   top: inherit;
   left: inherit;
+  width: 358px;
   margin-top: 15px;
-  border: 1px solid #cccccc;
-  background: white;
   padding: 15px 14px;
   z-index: 200;
+  border: 1px solid #cccccc;
+  background: white;
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
-  width: 358px; }
-  /* line 13, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+  /* line 14, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
   .search-user-for-community.create-contact-window, .community-structure-panel-view .create-contact-window.new-department {
     width: 358px; }
-  /* line 17, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+  /* line 18, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
   .search-user-for-community.shown, .community-structure-panel-view .shown.new-department {
     display: block; }
-  /* line 19, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+  /* line 20, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
   .search-user-for-community .invite-by-email, .community-structure-panel-view .new-department .invite-by-email {
     display: none;
     margin-top: 10px;
@@ -22615,17 +22617,17 @@ section.community-filters-column ul.with-subfolders > li.filters > ol {
     /* line 41, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
     .search-user-for-community .invite-by-email:active, .community-structure-panel-view .new-department .invite-by-email:active {
       background-color: #34a242; }
-  /* line 26, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+  /* line 27, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
   .search-user-for-community p, .community-structure-panel-view .new-department p {
     margin: 0;
     color: #666666; }
-    /* line 29, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+    /* line 30, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
     .search-user-for-community p ~ p, .community-structure-panel-view .new-department p ~ p {
       margin-top: 8px; }
-  /* line 31, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+  /* line 32, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
   .search-user-for-community input[type=text], .community-structure-panel-view .new-department input[type=text], .search-user-for-community input[type=email], .community-structure-panel-view .new-department input[type=email] {
     display: block; }
-  /* line 34, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+  /* line 35, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
   .search-user-for-community input[type=submit], .community-structure-panel-view .new-department input[type=submit] {
     zoom: 1;
     display: inline;
@@ -22642,16 +22644,16 @@ section.community-filters-column ul.with-subfolders > li.filters > ol {
     /* line 41, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/helpers/extras */
     .search-user-for-community input[type=submit]:active, .community-structure-panel-view .new-department input[type=submit]:active {
       background-color: #2e7d99; }
-  /* line 38, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+  /* line 39, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
   .search-user-for-community ~ section.search-user-for-community, .community-structure-panel-view .new-department ~ section.search-user-for-community, .search-user-for-community ~ section.search-worker-for-community, .community-structure-panel-view .new-department ~ section.search-worker-for-community, .community-structure-panel-view .search-user-for-community ~ section.new-department, .community-structure-panel-view .new-department ~ section.new-department {
     z-index: 201; }
-  /* line 40, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+  /* line 41, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
   .search-user-for-community .twitter-typeahead, .community-structure-panel-view .new-department .twitter-typeahead {
     width: 100%; }
-    /* line 42, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+    /* line 43, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
     .search-user-for-community .twitter-typeahead > input#search, .community-structure-panel-view .new-department .twitter-typeahead > input#search {
       width: 357px !important; }
-  /* line 45, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+  /* line 46, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
   .search-user-for-community > form > button[type=submit], .community-structure-panel-view .new-department > form > button[type=submit] {
     width: 36px;
     height: 36px;
@@ -22661,43 +22663,43 @@ section.community-filters-column ul.with-subfolders > li.filters > ol {
     padding: 0;
     background: white;
     border: none; }
-  /* line 54, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+  /* line 55, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
   .search-user-for-community .results, .community-structure-panel-view .new-department .results {
     max-height: 333px;
     overflow-y: auto; }
-    /* line 57, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+    /* line 58, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
     .search-user-for-community .results ul, .community-structure-panel-view .new-department .results ul {
       margin-top: 4px; }
-      /* line 59, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+      /* line 60, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
       .search-user-for-community .results ul li, .community-structure-panel-view .new-department .results ul li {
         padding-top: 4px;
         border-bottom: 1px solid #cccccc; }
-        /* line 62, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+        /* line 63, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
         .search-user-for-community .results ul li.contact-exists, .community-structure-panel-view .new-department .results ul li.contact-exists {
           background-color: #f1f5f6; }
-          /* line 64, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+          /* line 65, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
           .search-user-for-community .results ul li.contact-exists > form > button, .community-structure-panel-view .new-department .results ul li.contact-exists > form > button {
             background-color: #f1f5f6; }
-        /* line 66, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+        /* line 67, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
         .search-user-for-community .results ul li .user, .community-structure-panel-view .new-department .results ul li .user {
           margin-bottom: 0px !important; }
-        /* line 68, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+        /* line 69, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
         .search-user-for-community .results ul li .user-email, .community-structure-panel-view .new-department .results ul li .user-email {
           display: inline-block;
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
           color: #666666; }
-          /* line 74, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+          /* line 75, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
           .search-user-for-community .results ul li .user-email.name, .community-structure-panel-view .new-department .results ul li .user-email.name {
             width: 144px;
             font-weight: bold;
             padding-left: 11px; }
-          /* line 78, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+          /* line 79, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
           .search-user-for-community .results ul li .user-email.email, .community-structure-panel-view .new-department .results ul li .user-email.email {
             width: 125px;
             font-size: 11px; }
-        /* line 81, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+        /* line 82, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
         .search-user-for-community .results ul li .user-invite-button, .community-structure-panel-view .new-department .results ul li .user-invite-button {
           float: right;
           width: 36px;
@@ -22706,12 +22708,12 @@ section.community-filters-column ul.with-subfolders > li.filters > ol {
           margin-top: 10px;
           padding: 0;
           color: #1abc9c; }
-          /* line 89, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+          /* line 90, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
           .search-user-for-community .results ul li .user-invite-button[name=commit], .community-structure-panel-view .new-department .results ul li .user-invite-button[name=commit] {
             cursor: pointer;
             color: #338cae;
             font-size: 15px; }
-            /* line 93, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
+            /* line 94, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/communities/search_user */
             .search-user-for-community .results ul li .user-invite-button[name=commit]:hover, .community-structure-panel-view .new-department .results ul li .user-invite-button[name=commit]:hover {
               background-color: #f1f5f6;
               color: #1abc9c; }
