@@ -159,3 +159,23 @@ header.tab-navigation > .column-controller, .view-column .object-details .column
   padding-right: $space-large
 
 // @end
+
+.comment-tab-panel > .nav-tabs
+  border: none
+  margin: 0
+
+.comment-tab-panel
+  & > .nav-tabs
+    & > li.open,
+    & > li.active
+      border-top: 4px solid $blue-comment-tab
+      position: relative
+      & > a
+        border: 0
+        color: $dark-comment-tab
+
+.comment-tab-content
+  background-color: white
+  padding: 10px
+  & > .tab-pane
+    padding: 0
