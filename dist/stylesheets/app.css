@@ -21563,6 +21563,27 @@ section.conversations-list-column > ul:after {
         .comments-list div.comment.undeletable .body p a {
           color: inherit; }
 
+/* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/list-item */
+.comment-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: background 0.2s ease, border 0.2s ease;
+  -o-transition: background 0.2s ease, border 0.2s ease;
+  transition: background 0.2s ease, border 0.2s ease;
+  border-bottom: 1px solid transparent; }
+  /* line 8, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/list-item */
+  .comment-box.comment-box-new {
+    color: #474747;
+    background-color: #cfebf1;
+    border-bottom: 1px solid #a8dae6; }
+    /* line 12, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/list-item */
+    .comment-box.comment-box-new .comment-box-datetime {
+      color: gray; }
+
+/* line 15, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/list-item */
+.comment-box-datetime {
+  color: #999999; }
+
 /* line 3, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
 .comments-form-actions {
   padding-top: 0.5em;
@@ -21836,11 +21857,6 @@ section.conversations-list-column > ul:after {
   /* line 178, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
   .message-box-files .attachment img {
     border: 1px solid #eeeeee; }
-
-/* line 181, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/comments/form */
-.comment-box {
-  padding-top: 10px;
-  padding-bottom: 10px; }
 
 /* line 1, /Users/sib/Documents/code/iq300-frontend/app/stylesheets/pages/messages/form */
 .messages-form, .comments-form, .comments-form-block, .comments-form-block-fixed {

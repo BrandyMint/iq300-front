@@ -1,0 +1,17 @@
+.comment-box
+  @extend .message-box
+  padding:
+    top: 10px
+    bottom: 10px
+  +transition(background 0.2s ease, border 0.2s ease)
+  border-bottom: 1px solid transparent
+  &.comment-box-new
+    color: darken($text-color, 10%)
+    background-color: $new-item-background
+    border-bottom: 1px solid $new-item-border-color
+    .comment-box-datetime
+      color: darken($text-muted, 10%)
+
+.comment-box-datetime
+  color: $text-muted
+
