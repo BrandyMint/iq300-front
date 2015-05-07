@@ -1,3 +1,24 @@
+.popover-close-btn
+  @extend .btn-link-plain
+  display: block
+  position: absolute
+  top: -15px
+  right: -15px
+  width: 30px
+  height: 30px
+  border-radius: 100%
+  text-align: center
+  line-height: 30px
+  font:
+    size: 20px
+    weight: bold
+  color: $gray-light
+  &, &:hover, &:focus
+    background-color: #fff
+    border: 1px solid rgba(#000, 0.2)
+  &:hover
+    color: $gray
+
 .popover-form-block
   @extend .popover
   width: 300px
@@ -21,6 +42,11 @@
   &:focus
     border-bottom-color: lighten($brand-primary, 40%)
 
+.popover-form-text
+  @extend .popover-form-control
+  display: block
+  height: auto
+
 .popover-form-control-title
   font:
     size: 1.2em
@@ -34,12 +60,14 @@
 .popover-form-content-block
   padding: 10px
 
+.popover-form-actions-bottom
+  border-top: 1px solid $line-color
+
 .popover-form-submit-btn
-  &, .popover &
-    @extend .btn
-    @extend .btn-lg
-    @extend .btn-outline-primary
-    background: #fff
-    background-image: none
-    font-size: $font-size-base
+  @extend .btn
+  @extend .btn-outline-primary
+
+.popover-form-cancel-btn
+  @extend .btn
+  @extend .btn-outline-gray-light
 
