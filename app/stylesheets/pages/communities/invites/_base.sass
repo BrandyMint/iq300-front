@@ -15,6 +15,12 @@ community-invites-table
     border-radius: 4px
     color: $alert-color !important
 
+.community-invites-resend-invite-link
+  @extend .community-invites-cancel-invite-link
+  &:hover
+    border: 1px solid $blue-brand
+    color: $blue-brand !important
+
 .invite-people-list-status-invited
   +badge-style($waiting-color)
 
