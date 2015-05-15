@@ -1,28 +1,28 @@
-/* line 4, /Users/imir/iq300/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+/* line 4, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
 .subscription-mail-container {
   width: 50%;
   margin: 50px auto;
   font-size: 14px;
   font-weight: 500; }
 
-/* line 10, /Users/imir/iq300/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+/* line 10, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
 .subscription-mail-logo {
   text-align: center;
   margin: 1em auto 2em; }
 
-/* line 14, /Users/imir/iq300/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+/* line 14, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
 .subscription-mail-header {
   margin-bottom: 1.5em; }
 
-/* line 17, /Users/imir/iq300/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+/* line 17, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
 .subscription-mail-body {
   margin-bottom: 2em; }
 
-/* line 20, /Users/imir/iq300/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+/* line 20, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
 .subscription-mail-subheader {
   font-weight: 600;
   margin: 30px auto; }
 
-/* line 24, /Users/imir/iq300/iq300-frontend/app/stylesheets/mailers/subscription.sass */
+/* line 24, /Users/artur/projects/iq300-frontend/app/stylesheets/mailers/subscription.sass */
 .subscription-mail-footer {
   color: #d3d3d3; }
