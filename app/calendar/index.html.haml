@@ -7,7 +7,7 @@ body_class: calendar-show
   = partial 'shared/_navigation', locals: {active: 'calendar'}
   %section.calendar-content-column{"data-channel" => "private-project-879:update", "data-channel-template" => "private-project-%id%:update", "data-id" => "879", "data-url" => "/projects"}
     .calendar-block-container{role: 'calendar-container'}
-      .form-group
+      .form-group.form-inline
         %select{role: 'multiselect-calendar-communities', :tabindex => "-1", multiple: 'multiple'}
           %option{selected: 'selected'} Iq300
           - for i in 1..6
@@ -22,5 +22,10 @@ body_class: calendar-show
                 -#= "#{user.split(' ')[0][0]}. #{truncate(user.split(' ')[1..-1].join(' '), length: 12)}"
                 = user
 
+        .checkbox.pull-right
+          %label
+            %input{type: :checkbox}
+              Скрыть дедлайн задач
+        .clearfix
 
       .calendar-block{role: 'fullcalendar', data: {'events' => "#{build? ? '../events.json' : '/events.json'}"}}
