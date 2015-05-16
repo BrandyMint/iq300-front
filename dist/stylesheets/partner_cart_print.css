@@ -1,0 +1,31 @@
+/* line 4, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+.partner-cart-page-content {
+  padding: 40px; }
+  /* line 6, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+  .partner-cart-page-content .partner-cart-table {
+    width: 900px;
+    text-align: left;
+    font-size: 12pt; }
+    /* line 10, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+    .partner-cart-page-content .partner-cart-table .partner-cart-row {
+      height: 24px;
+      vertical-align: top; }
+      /* line 13, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+      .partner-cart-page-content .partner-cart-table .partner-cart-row .partner-cart-key {
+        width: 220px; }
+      /* line 15, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+      .partner-cart-page-content .partner-cart-table .partner-cart-row .partner-cart-value {
+        width: 680px; }
+      /* line 17, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+      .partner-cart-page-content .partner-cart-table .partner-cart-row .partner-cart-bank-position {
+        width: 40px; }
+      /* line 19, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+      .partner-cart-page-content .partner-cart-table .partner-cart-row .partner-cart-bank-key {
+        width: 180px; }
+      /* line 21, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+      .partner-cart-page-content .partner-cart-table .partner-cart-row .partner-cart-value-title {
+        font-size: 20pt; }
+
+/* line 25, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/partner_cart_print.sass */
+.header .print {
+  color: #368aaf; }
