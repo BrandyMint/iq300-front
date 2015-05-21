@@ -1,0 +1,71 @@
+%project-wizard-modal-block
+  padding: $grid-gutter-width/2 $grid-gutter-width
+  .form-group
+    .errors-list
+      color: $brand-danger
+
+.project-wizard-modal-container
+  @extend .fade
+  @extend .in
+  display: block
+  width: 100%
+  height: 100%
+  min-width: $container-fixed-width
+  +center-block-container
+
+.project-wizard-modal
+  +center-block-content
+  text-align: left
+  max-width: $container-fixed-width - $grid-gutter-width*2
+
+.project-wizard-modal-backdrop
+  position: fixed
+  z-index: $modal-z-index
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  background-color: rgba(#000, .5)
+  overflow-y: auto
+
+.project-wizard-modal-content
+  position: relative
+  height: 100%
+  background-color: #fff
+  padding-bottom: $grid-gutter-width/2
+  border-radius: $border-radius-base
+  box-shadow: 0 2px 5px rgba(#000, .5)
+
+.project-wizard-modal-header
+  @extend %project-wizard-modal-block
+  font:
+    size: $font-size-large
+    weight: bold
+  border-bottom: 1px solid $line-color
+  margin-bottom: 0.5em
+
+.project-wizard-modal-body
+  @extend %project-wizard-modal-block
+
+.project-wizard-modal-content-block
+  margin-bottom: 1em
+
+.project-wizard-step-block
+  display: none
+  max-width: 800px
+
+.project-wizard-indicators
+  @extend .carousel-indicators
+  width: 100%
+  left: 0
+  bottom: $grid-gutter-width/3
+  margin: 0
+  & > li
+    &, &.active
+      width: 8px
+      height: 8px
+      margin: 0
+      border: 1px solid $gray-light
+      cursor: default
+    &.active
+      background-color: $gray-light

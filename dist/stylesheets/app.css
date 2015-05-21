@@ -2523,28 +2523,28 @@ input[type="submit"], input[type="reset"], input[type="button"] {
     margin-bottom: 0; }
 
 /* line 10, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/component-animations */
-.fade {
+.fade, .project-wizard-modal-container {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear; }
   /* line 13, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/component-animations */
-  .fade.in {
+  .fade.in, .project-wizard-modal-container {
     opacity: 1; }
 
 /* line 18, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/component-animations */
 .collapse {
   display: none; }
   /* line 21, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/component-animations */
-  .collapse.in {
+  .collapse.in, .collapse.project-wizard-modal-container {
     display: block; }
 
 /* line 26, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/component-animations */
-tr.collapse.in {
+tr.collapse.in, tr.collapse.project-wizard-modal-container {
   display: table-row; }
 
 /* line 28, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/component-animations */
-tbody.collapse.in {
+tbody.collapse.in, tbody.collapse.project-wizard-modal-container {
   display: table-row-group; }
 
 /* line 30, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/component-animations */
@@ -3234,7 +3234,7 @@ tbody.collapse.in {
   .navbar-collapse:after {
     clear: both; }
   /* line 59, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-  .navbar-collapse.in {
+  .navbar-collapse.in, .navbar-collapse.project-wizard-modal-container {
     overflow-y: auto; }
   @media (min-width: 768px) {
     .navbar-collapse {
@@ -3248,7 +3248,7 @@ tbody.collapse.in {
         padding-bottom: 0;
         overflow: visible !important; }
       /* line 75, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
-      .navbar-collapse.in {
+      .navbar-collapse.in, .navbar-collapse.project-wizard-modal-container {
         overflow-y: visible; }
       /* line 83, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/navbar */
       .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
@@ -4636,7 +4636,7 @@ button.close {
   opacity: 0;
   filter: alpha(opacity=0); }
   /* line 16, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/tooltip */
-  .tooltip.in {
+  .tooltip.in, .tooltip.project-wizard-modal-container {
     opacity: 0.9;
     filter: alpha(opacity=90); }
   /* line 17, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/tooltip */
@@ -4966,7 +4966,7 @@ button.close {
     content: '\203a'; }
 
 /* line 148, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/carousel */
-.carousel-indicators {
+.carousel-indicators, .project-wizard-indicators {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -4977,7 +4977,7 @@ button.close {
   list-style: none;
   text-align: center; }
   /* line 159, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/carousel */
-  .carousel-indicators li {
+  .carousel-indicators li, .project-wizard-indicators li {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -4989,7 +4989,7 @@ button.close {
     background-color: #000 \9;
     background-color: rgba(0, 0, 0, 0); }
   /* line 180, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/carousel */
-  .carousel-indicators .active {
+  .carousel-indicators .active, .project-wizard-indicators .active {
     margin: 0;
     width: 12px;
     height: 12px;
@@ -5032,7 +5032,7 @@ button.close {
     padding-bottom: 30px; }
 
   /* line 240, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/framework/bootstrap/carousel */
-  .carousel-indicators {
+  .carousel-indicators, .project-wizard-indicators {
     bottom: 20px; }
  }
 
@@ -10247,7 +10247,7 @@ disabled look for disabled choices in the results dropdown
 
 /* elvir additional css styles END */
 /* line 81, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
-.modal.fade {
+.modal.fade, .modal.project-wizard-modal-container {
   top: -1000px;
   -webkit-transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out;
   -moz-transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out;
@@ -10255,7 +10255,7 @@ disabled look for disabled choices in the results dropdown
   transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out; }
 
 /* line 89, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
-.modal.fade.in {
+.modal.fade.in, .modal.project-wizard-modal-container {
   top: 10%;
   left: 25%; }
 
@@ -10286,7 +10286,7 @@ disabled look for disabled choices in the results dropdown
   z-index: 940; }
 
 /* line 121, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
-.modal-backdrop, .modal-backdrop.fade.in {
+.modal-backdrop, .modal-backdrop.fade.in, .modal-backdrop.project-wizard-modal-container {
   opacity: 0.7;
   filter: alpha(opacity=70);
   background: #fff; }
@@ -10302,11 +10302,11 @@ disabled look for disabled choices in the results dropdown
   top: 1%; }
 
 /* line 138, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
-.modal-overflow.modal.fade {
+.modal-overflow.modal.fade, .modal-overflow.modal.project-wizard-modal-container {
   top: -100%; }
 
 /* line 142, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
-.modal-overflow.modal.fade.in {
+.modal-overflow.modal.fade.in, .modal-overflow.modal.project-wizard-modal-container {
   top: 1%; }
 
 /* line 146, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
@@ -10335,7 +10335,7 @@ disabled look for disabled choices in the results dropdown
     padding: 0 !important; }
 
   /* line 176, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/libs/bootstrap-modal */
-  .modal.fade.in, .modal.container.fade.in, .modal.modal-overflow.fade.in {
+  .modal.fade.in, .modal.project-wizard-modal-container, .modal.container.fade.in, .modal.container.project-wizard-modal-container, .modal.modal-overflow.fade.in, .modal.modal-overflow.project-wizard-modal-container {
     top: 1%;
     bottom: auto; }
 
@@ -24933,6 +24933,88 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
 .project-participants-section-list-item {
   margin-top: 7.5px;
   margin-bottom: 7.5px; }
+
+/* line 1, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/wizard */
+.project-wizard-modal-header, .project-wizard-modal-body {
+  padding: 15px 30px; }
+  /* line 4, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/wizard */
+  .project-wizard-modal-header .form-group .errors-list, .project-wizard-modal-body .form-group .errors-list {
+    color: #ff0101; }
+
+/* line 7, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/wizard */
+.project-wizard-modal-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 1280px;
+  text-align: center; }
+  /* line 200, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/helpers/mixins */
+  .project-wizard-modal-container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; }
+
+/* line 16, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/wizard */
+.project-wizard-modal {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  max-width: 1220px; }
+
+/* line 21, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/wizard */
+.project-wizard-modal-backdrop {
+  position: fixed;
+  z-index: 29;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto; }
+
+/* line 31, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/wizard */
+.project-wizard-modal-content {
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  padding-bottom: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+
+/* line 39, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/wizard */
+.project-wizard-modal-header {
+  font-size: 17px;
+  font-weight: bold;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 0.5em; }
+
+/* line 50, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/wizard */
+.project-wizard-modal-content-block {
+  margin-bottom: 1em; }
+
+/* line 53, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/wizard */
+.project-wizard-step-block {
+  display: none;
+  max-width: 800px; }
+
+/* line 57, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/wizard */
+.project-wizard-indicators {
+  width: 100%;
+  left: 0;
+  bottom: 10px;
+  margin: 0; }
+  /* line 64, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/wizard */
+  .project-wizard-indicators > li, .project-wizard-indicators > li.active {
+    width: 8px;
+    height: 8px;
+    margin: 0;
+    border: 1px solid #999999;
+    cursor: default; }
+  /* line 70, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/projects/wizard */
+  .project-wizard-indicators > li.active {
+    background-color: #999999; }
 
 /* line 3, /Users/elvir/rails_projects/iq300-frontend/app/stylesheets/pages/departments/list-column */
 section.departments-list-column ul li > * {

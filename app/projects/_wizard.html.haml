@@ -1,0 +1,66 @@
+.project-wizard-modal-backdrop{role: 'project-wizard-backdrop'}
+  .project-wizard-modal-container
+    .project-wizard-modal
+      .project-wizard-modal-content
+        .project-wizard-step-block{role: 'project-wizard-step-block', style: 'display: block;', data: {step: 1}}
+          .project-wizard-modal-header
+            Отлично! Вы зарегистрировались в системе IQ300.
+          .project-wizard-modal-body
+            %p.project-wizard-modal-content-block
+              Чтобы вам было проще разобраться с нашей системой, создадим вместе новый проект.
+            .form-group
+              %label
+                Впишите название вашего первого проекта
+                %br
+                (например, &laquo;Запустить ракету на Луну&raquo;)
+              %input.form-control{type: :text, placeholder: 'Название проекта'}
+            .form-group
+              %button.btn.btn-lg.btn-primary{type: :submit, role: 'project-wizard-next-btn', data: {step: 2}} Название подходит!
+            %ol.project-wizard-indicators
+              - for i in 0..2
+                %li.project-wizard-indicators-item{class: "#{i == 0 ? 'active' : ''}"}
+        .project-wizard-step-block{role: 'project-wizard-step-block', data: {step: 2}}
+          .project-wizard-modal-header
+            Любой проект состоит из задач.
+            %br
+            Давайте распишем в трёх задачах работу нашего проекта:
+          .project-wizard-modal-body
+            - for i in 0..2
+              .form-group
+                .row
+                  .col-sm-8
+                    %label= "Задача #{i+1} (например, &laquo;Найти ракету&raquo;)"
+                    %input.form-control{type: :text, placeholder: 'Название задачи'}
+                  .col-sm-4
+                    %label Когда?
+                    .input-group{role: 'datetimepicker'}
+                      %input.form-control
+                      .input-group-addon.input-group-addon-btn
+                        .fa.fa-calendar-o.fa-lg
+            .form-group
+              %button.btn.btn-link-plain.btn-link-gray.pull-left{type: :submit, role: 'project-wizard-next-btn', data: {step: 1}}
+                %i.fa.fa-angle-left
+                &nbsp;
+                К названию проекта
+              %button.btn.btn-lg.btn-primary.pull-right{type: :submit, role: 'project-wizard-next-btn', data: {step: 3}}
+                Задачи готовы!
+              .clearfix
+            %ol.project-wizard-indicators
+              - for i in 0..2
+                %li.project-wizard-indicators-item{class: "#{i < 2 ? 'active' : ''}"}
+        .project-wizard-step-block{role: 'project-wizard-step-block', data: {step: 3}}
+          .project-wizard-modal-header
+            Вы молодец! Создать проект оказалось не так сложно!
+          .project-wizard-modal-body
+            .form-group
+              %button.btn.btn-link-plain.btn-link-gray.pull-left{type: :submit, role: 'project-wizard-next-btn', data: {step: 2}}
+                %i.fa.fa-angle-left
+                &nbsp;
+                К задачам проекта
+              %a.btn.btn-lg.btn-primary.pull-right{href: '/projects/show/details'}
+                К проекту!
+              .clearfix
+            %ol.project-wizard-indicators
+              - for i in 0..2
+                %li.project-wizard-indicators-item{class: "#{i < 3 ? 'active' : ''}"}
+
