@@ -19,6 +19,7 @@
 #= require projects/wizard
 #= require notifications/list
 #= require tasks/list
+#= require tasks/form
 #= require communities/billing
 #= require layout/fixed_block
 #= require notifications/widget

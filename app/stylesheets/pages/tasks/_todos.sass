@@ -1,96 +1,67 @@
-section.todo-list, .todo-list
-  > div
-    overflow: hidden
-    > .add-button
-      +inline-block
-      color: #999999
-      font-size: 12px
-      line-height: 23px
-      margin-top: -10px
-      > a
-        margin-top: -1px
-    ul
-      // margin-top: 10px;
-      &:empty
-        margin-top: 0
-      li
-        line-height: 14px
-        padding: 8px
-        margin-top: 10px
-        background: #e3ebed
-        +transition(0.3s)
-        &:hover
-          background: lighten(#e3ebed, 4%)
-        +children-inline(middle)
-        position: relative
-        input[type=text]
-          +bordered
-          width: 80%
-          padding: 5px 87px 5px 10px
-          line-height: 30px
-          height: 30px
-          font-size: 12px
-          color: #666666
-          +box-sizing(border-box)
-        input[type=checkbox]
-          position: absolute
-          left: 8px
-          top: 9px
-          margin: 0
-          
-          + i
-            position: absolute
-            left: 8px
-            top: 9px
-            margin: 0
-        .title
-          padding-right: 42px
-          padding-left: 24px
-          color: #666666
-        span.right
-          position: absolute
-          right: 10px
-          top: 10px
-          > a
-            color: #999999
-            text-decoration: none
-            > i
-              padding-left: 6px
-        form
-          display: none
-          background: white
-          position: relative
-          padding-top: 4px
-          padding-bottom: 10px
-          margin: 8px -8px -8px
-          height: 30px
-          input[type=text]
-            +bordered
-            width: 100%
-            padding: 5px 87px 5px 10px
-            line-height: 30px
-            height: 30px
-            font-size: 12px
-            color: #666666
-            +box-sizing(border-box)
-          input[type=submit]
-            position: absolute
-            top: 4px
-            right: 0
-            margin: 0
-            +button(#338cae)
-        &.editing
-          > form
-            display: block
-        &.done
-          .title
-            color: #999999
-            text-decoration: line-through
-          .edit
-            display: none
-          .remove
-            display: none
-    .add-todo-form
-      @extend %task-page-adding-form
-      .new-todo
-        margin-top: 20px
+$task-checklist-weight-width: 30px
+$task-checklist-title-width: 85%
+
+%task-checklist-item-input
+  float: left
+  margin-right: $grid-gutter-width/3
+
+%task-checklist-item-block
+  @extend %task-checklist-item-input
+  height: $input-height-base
+  padding:
+    top: $padding-base-vertical - 1px
+    bottom: $padding-base-vertical - 1px
+
+.task-checklist-item
+  @extend .clearfix
+  margin-bottom: $grid-gutter-width/4 + 2px
+  padding-bottom: $grid-gutter-width/4
+  border-bottom: 1px solid $line-color
+
+.task-checklist-item-form
+  float: left
+  width: 100%
+
+.task-checklist-item-form-actions
+  margin:
+    top: 5px
+    bottom: 5px
+  padding-right: $task-checklist-weight-width + $grid-gutter-width/2 + 1px
+
+.task-checklist-item-input-title
+  @extend %task-checklist-item-input
+  width: $task-checklist-title-width
+
+.task-checklist-item-weight-help
+  @extend %task-checklist-item-input
+  width: 100%
+  text-align: right
+
+.task-checklist-item-input-weight
+  @extend %task-checklist-item-input
+  width: 110px
+
+.task-checklist-item-buttons
+  float: left
+  width: $task-checklist-weight-width
+
+.task-checklist-item-title
+  @extend %task-checklist-item-block
+  width: 60%
+  .task-checklist-item-done &
+    text-decoration: line-through
+
+.task-checklist-item-weight
+  @extend %task-checklist-item-block
+
+.task-checklist-item-progress
+  @extend %task-checklist-item-block
+  padding: 0
+
+.task-checklist-item-actions
+  text-align: right
+  margin: -5px 0
+
+.task-checklist-item-checkbox
+  width: $grid-gutter-width
+

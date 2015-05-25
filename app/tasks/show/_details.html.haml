@@ -9,7 +9,8 @@
       %a.btn.btn-default{:href => "/tasks/121/edit"}
         %span.fa.fa-edit
         Редактировать
-.form-group.underline
+
+.task-page-section-block
   .row
     .col-md-6
       %table.table-info.table-responsive
@@ -59,78 +60,120 @@
                           %input#s2id_autogen1.select2-input.select2-default{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :spellcheck => "false", :style => "width: 122%;", :type => "text"}/
                       .select2-drop.select2-drop-multi.select2-display-none
                         %ul.select2-results
-.form-group.todo-list{"role-todo-list" => "ready"}
-  .page-title
-    .pull-left
-      %h3.task-page-section-title
-        %span{"data-original-title" => "С помощью чек-листов Вы можете создавать список работ по задаче и отслеживать прогресс ее исполнения", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
-          Чек-лист
-    .pull-right
-      %span.text-muted{"data-text" => "Выполнено", :role => "progress"}
+
+%hr
+.task-page-section-block
+  .todo-list{"role-todo-list" => "ready"}
+    %h3.task-page-section-title
+      %span{"data-original-title" => "С помощью чек-листов Вы можете создавать список работ по задаче и отслеживать прогресс ее исполнения", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
+        Чек-лист
+      &nbsp;
+      %small.text-muted{"data-text" => "Выполнено", :role => "progress"}
         Выполнено 0/0
-      %a.add-todo.btn.btn-default.add-button{"data-original-title" => "Добавьте новый пункт в чек-лист задачи", :href => "#", "role-bootstrap-tooltip" => "ready", :title => ""}
+    %div
+      %ul#todo-list
+        - for i in 0..2
+          %li.fields.task-checklist-item{:role => "todo-fields"}
+            .task-checklist-item-form
+              .task-checklist-item-title
+                %label.task-checklist-item-checkbox
+                  %input{type: :checkbox}
+                Сделать обзор макета страницы Задача
+              .task-checklist-item-weight
+                Вес: 25%
+              .task-checklist-item-progress
+                .form-inline
+                  Прогресс:
+                  %select.form-control
+                    - for i in 0..20
+                      %option= "#{i*5}%"
+
+              .task-checklist-item-actions
+                %a.remove_nested_fields.btn.btn-link-plain.btn-link-gray-light{"data-association" => "todo_items", :href => "javascript:void(0)"}
+                  %i.fa.fa-times
+                %a.btn.btn-link-plain.btn-link-gray-light{:href => "/tasks/new?parent_id=121&todo_item_id=66", :title => "Преобразовать в задачу"}
+                  %i.icon-list-alt
+                %a.btn.btn-link-plain.btn-link-gray-light{:href => "#", :title => "Изменить"}
+                  %i.icon-pencil
+        %li.fields.task-checklist-item.task-checklist-item-done{:role => "todo-fields"}
+          .task-checklist-item-form
+            .task-checklist-item-title
+              %label.task-checklist-item-checkbox
+                %input{type: :checkbox, checked: :checked}
+              Сделать обзор макета страницы Задача
+            .task-checklist-item-weight
+              Вес: 25%
+            .task-checklist-item-progress
+              .form-inline
+                Прогресс:
+                %select.form-control{disabled: :disabled}
+                  %option{selected: :selected} 100%
+
+            .task-checklist-item-actions
+              %a.remove_nested_fields.btn.btn-link-plain.btn-link-gray-light{"data-association" => "todo_items", :href => "javascript:void(0)"}
+                %i.fa.fa-times
+              %a.btn.btn-link-plain.btn-link-gray-light{:href => "/tasks/new?parent_id=121&todo_item_id=66", :title => "Преобразовать в задачу"}
+                %i.icon-list-alt
+              %a.btn.btn-link-plain.btn-link-gray-light{:href => "#", :title => "Изменить"}
+                %i.icon-pencil
+
+      .task-checklist-item{:role => "todo-fields"}
+        .task-checklist-item-form
+          %input#base_task_todo_items_attributes_1432543593417_title.form-control.task-checklist-item-input-title{:name => "base_task[todo_items_attributes][1432543593417][title]", :placeholder => "Новый пункт", :role => "todo-title", :size => "30", :type => "text"}/
+          .input-group.task-checklist-item-input-weight
+            %input#base_task_todo_items_attributes_1432543593417_title.form-control{:name => "base_task[todo_items_attributes][1432543593417][title]", :placeholder => "Вес", :type => "number"}/
+            %span.input-group-addon= "%"
+          %input#base_task_todo_items_attributes_1432543593417_position{:name => "base_task[todo_items_attributes][1432543593417][position]", :role => "ui-todo-position", :type => "hidden", :value => "1"}/
+          %input#base_task_todo_items_attributes_1432543593417__destroy{:name => "base_task[todo_items_attributes][1432543593417][_destroy]", :type => "hidden", :value => "false"}/
+          .task-checklist-item-buttons
+            %a.remove_nested_fields.btn.btn-link-plain.btn-link-gray-light{"data-association" => "todo_items", :href => "javascript:void(0)"}
+              %i.fa.fa-times
+        .clearfix
+        .task-checklist-item-form-actions
+          %input.btn.btn-primary.pull-right{:name => "commit", :type => "submit", :value => "Сохранить"}/
+          %input.btn.btn-link-plain.btn-link-gray-light.pull-right{:type => "reset", :value => "Отменить"}/
+          .clearfix
+
+      %a.add-todo.btn.btn-default.add-button.pull-left{"data-original-title" => "Добавьте новый пункт в чек-лист задачи", :href => "#", "role-bootstrap-tooltip" => "ready", :title => ""}
         %span.fa.fa-plus-circle
-        Добавить
-  %div
-    %ul
-      %li.todo-item.todo-item-initialized{"data-url" => "/tasks/121/todo_items/66"}
-        %input#completed{:name => "completed", :type => "checkbox", :value => "1"}/
-        %i
-        .title wedwedewd
-        %span.right
-          %a{:href => "/tasks/new?parent_id=121&todo_item_id=66", :title => "Преобразовать в задачу"}
-            %i.icon-list-alt
-          %a.edit{:href => "#", :title => "Изменить"}
-            %i.icon-pencil
-          %a.remove{"data-confirmation" => "Подтвердите действие", :title => "Удалить"}
-            %i.icon-remove
-        %form#edit_todo_item_66.edit-form{"accept-charset" => "UTF-8", :action => "/tasks/121/todo_items/66", :method => "post"}
-          %div{:style => "margin:0;padding:0;display:inline"}
-            %input{:name => "utf8", :type => "hidden", :value => "✓"}/
-            %input{:name => "_method", :type => "hidden", :value => "put"}/
-            %input{:name => "authenticity_token", :type => "hidden", :value => "axzWGG14VvSmKixUNQHEmOOUnKTdQ8z4X7tp3IX6c+I="}/
-          %input#todo_item_title.todo-body{:name => "todo_item[title]", :size => "30", :type => "text", :value => "wedwedewd"}/
-          %input{:name => "commit", :type => "submit", :value => "Сохранить"}/
-    .add-todo-form
-      %form#new_todo_item.new-todo{"accept-charset" => "UTF-8", :action => "/tasks/121/todo_items", :method => "post", :style => "display: none;"}
+        Добавить пункт
+      .pull-right
+        Прогресс задачи: 59%
+      .clearfix
+%hr
+.task-page-section-block
+  .page-title{"role-task-attachments" => "ready"}
+    %h3.task-page-section-title{"aria-describedby" => "tooltip155203", "data-original-title" => "Вы можете добавить файлы к задаче", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
+      Файлы к задаче
+    .files
+      %span.attached-file{"role-ready" => "task-attachment"}
+        %a{:href => "/download?file=40160815-8048-4164-af5e-4c199d6ce5d5.png"}
+          %i.fa.fa-file-text-o.attached-file-icon
+          favicon (1).png
+        %a.attached-file-delete-btn{:href => "/tasks/121/attachments/52?file=52", :role => "remove-attachment"}
+          %i.fa.fa-times
+    %br
+    %a.btn.btn-default{"data-original-title" => "Добавьте новый файл", "data-placement" => "left", :href => "#", :role => "new-attachment-button", "role-bootstrap-tooltip" => "ready", :title => ""}
+      %span.fa.fa-plus-circle
+      %span.title
+        Добавить файл
+    .task-attachment-form
+      %form{"accept-charset" => "UTF-8", :action => "/tasks/65590/attachments", "data-attachment-max-size" => "50", :enctype => "multipart/form-data", :method => "post"}
         %div{:style => "margin:0;padding:0;display:inline"}
           %input{:name => "utf8", :type => "hidden", :value => "✓"}/
-          %input{:name => "authenticity_token", :type => "hidden", :value => "axzWGG14VvSmKixUNQHEmOOUnKTdQ8z4X7tp3IX6c+I="}/
-        %input#todo_item_title.todo-body{:name => "todo_item[title]", :placeholder => "Добавить пункт", :size => "30", :type => "text"}/
-        %input.btn.btn-primary{:name => "commit", :type => "submit", :value => "Сохранить"}/
-        %input{:type => "reset", :value => "Отменить"}/
-.form-group
-  .page-title{"role-task-attachments" => "ready"}
-    .pull-left
-      %h3.task-page-section-title{"aria-describedby" => "tooltip155203", "data-original-title" => "Вы можете добавить файлы к задаче", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
-        Файлы к задаче
-      .files
-        %span.attached-file{"role-ready" => "task-attachment"}
-          %a{:href => "/download?file=40160815-8048-4164-af5e-4c199d6ce5d5.png"}
-            %i.fa.fa-file-text-o.attached-file-icon
-            favicon (1).png
-          %a.attached-file-delete-btn{:href => "/tasks/121/attachments/52?file=52", :role => "remove-attachment"}
-            %i.fa.fa-times
-
-    .pull-right
-      %a.btn.btn-default{"data-original-title" => "Добавьте новый файл", "data-placement" => "left", :href => "#", :role => "new-attachment-button", "role-bootstrap-tooltip" => "ready", :title => ""}
-        %span.fa.fa-plus-circle
-        %span.title
-          Добавить
-      .task-attachment-form
-        %form{"accept-charset" => "UTF-8", :action => "/tasks/65590/attachments", "data-attachment-max-size" => "50", :enctype => "multipart/form-data", :method => "post"}
-          %div{:style => "margin:0;padding:0;display:inline"}
-            %input{:name => "utf8", :type => "hidden", :value => "✓"}/
-            %input{:name => "authenticity_token", :type => "hidden", :value => "uEWcLHYGGc3CWmAg2FbZlhOKDays7ebwCfdUXdj6d0I="}/
-          %input#attachments_attributes_file.task-attachment{:name => "attachments_attributes[file]", :type => "file"}/
+          %input{:name => "authenticity_token", :type => "hidden", :value => "uEWcLHYGGc3CWmAg2FbZlhOKDays7ebwCfdUXdj6d0I="}/
+        %input#attachments_attributes_file.task-attachment{:name => "attachments_attributes[file]", :type => "file"}/
+%hr
 .task-details-subtasks-list.form-group{"test-subtasks" => ""}
   .page-title.mbm
     .pull-left
-      %h3.task-page-section-title Подзадачи
+      %h3.task-page-section-title
+        Подзадачи
     .pull-right
       %a.btn.btn-default{"data-original-title" => "", :href => "/tasks/new?parent_id=121", :role => "add-subtask-btn", :title => ""}
         %span.fa.fa-plus-circle
         Добавить
+    .clearix
   .task-box{"data-group-id" => "all_tasks", "data-group-title" => "Все задачи", "data-href" => "https://beta.iq300.ru/tasks/66863", :role => "task-item", "test-task" => ""}
     .col-md-10
       .row
