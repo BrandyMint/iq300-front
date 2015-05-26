@@ -71,9 +71,9 @@
       %small.text-muted{"data-text" => "Выполнено", :role => "progress"}
         Выполнено 0/0
     %div
-      %ul#todo-list
+      %ul#todo-list{role: 'task-checklist'}
         - for i in 0..2
-          %li.fields.task-checklist-item{:role => "todo-fields"}
+          %li.task-checklist-item{:role => "task-checklist-item"}
             .task-checklist-item-form
               .task-checklist-item-title
                 %label.task-checklist-item-checkbox
@@ -95,6 +95,7 @@
                   %i.icon-list-alt
                 %a.btn.btn-link-plain.btn-link-gray-light{:href => "#", :title => "Изменить"}
                   %i.icon-pencil
+      %ul
         %li.fields.task-checklist-item.task-checklist-item-done{:role => "todo-fields"}
           .task-checklist-item-form
             .task-checklist-item-title
