@@ -145,14 +145,13 @@
   .page-title{"role-task-attachments" => "ready"}
     %h3.task-page-section-title{"aria-describedby" => "tooltip155203", "data-original-title" => "Вы можете добавить файлы к задаче", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
       Файлы к задаче
-    .files
+    .files.task-page-subsection-block
       %span.attached-file{"role-ready" => "task-attachment"}
         %a{:href => "/download?file=40160815-8048-4164-af5e-4c199d6ce5d5.png"}
           %i.fa.fa-file-text-o.attached-file-icon
           favicon (1).png
         %a.attached-file-delete-btn{:href => "/tasks/121/attachments/52?file=52", :role => "remove-attachment"}
           %i.fa.fa-times
-    %br
     %a.btn.btn-default{"data-original-title" => "Добавьте новый файл", "data-placement" => "left", :href => "#", :role => "new-attachment-button", "role-bootstrap-tooltip" => "ready", :title => ""}
       %span.fa.fa-plus-circle
       %span.title

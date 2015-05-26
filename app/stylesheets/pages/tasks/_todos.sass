@@ -7,14 +7,13 @@ $task-checklist-title-width: 85%
 
 %task-checklist-item-block
   @extend %task-checklist-item-input
-  height: $input-height-base
   padding:
     top: $padding-base-vertical - 1px
     bottom: $padding-base-vertical - 1px
 
 .task-checklist-item
   @extend .clearfix
-  margin-bottom: $grid-gutter-width/4 + 2px
+  margin-bottom: $grid-gutter-width/4
   padding-bottom: $grid-gutter-width/4
   border-bottom: 1px solid $line-color
 
@@ -56,7 +55,7 @@ $task-checklist-title-width: 85%
 
 .task-checklist-item-progress
   @extend %task-checklist-item-block
-  padding: 0
+  padding: 1px 0
 
 .task-checklist-item-actions
   text-align: right

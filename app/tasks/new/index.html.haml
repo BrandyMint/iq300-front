@@ -218,10 +218,18 @@ body_class: tasks-show
         .task-files{"data-file-max-size" => "50", "role-task-form-files" => "ready"}
           %h3.task-form-section-title{"data-original-title" => "Вы можете добавить файлы к задаче", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
             Файлы к задаче
+          #attachment-files.attachment-files.task-form-subsection-block{:role => "files"}
+            .file.fields{:role => "file"}
+              %a{:href => "#"}
+                %span.fa.fa-file-text-o.fa-lg
+                %span.file-name Screen Shot 2015-05-25 at 14.58.59.png
+              %input#base_task_attachments_attributes_1432645912761_file{:name => "base_task[attachments_attributes][1432645912761][file]", :style => "display:none", :type => "file"}/
+              %input#base_task_attachments_attributes_1432645912761__destroy{:name => "base_task[attachments_attributes][1432645912761][_destroy]", :type => "hidden", :value => "false"}/
+              %a.delete.remove_nested_fields{"data-association" => "attachments", "data-confirm" => "Вы уверены?", :href => "javascript:void(0)"}
+                %i.icon-remove
           %a.add-attachment.btn.btn-default.add-button.add_nested_fields{"data-association" => "attachments", "data-blueprint-id" => "attachments_fields_blueprint", "data-target" => "#attachment-files", :href => "javascript:void(0)", :role => "add-file"}
             %span.fa.fa-plus-circle
             Добавить файл
-          #attachment-files.attachment-files.form-group.hidden{:role => "files"}
 
       .form-field
         .row
