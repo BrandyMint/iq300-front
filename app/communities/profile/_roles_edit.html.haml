@@ -1,0 +1,53 @@
+%a.btn.btn-primary{:href => "#"}
+  Быстрое добавление участника
+
+- columns = ['Создавать проекты', 'Приглашать участников', 'Редактировать структуру', 'Отчёты и статистика', 'Доступ ко всем проектам и задачам']
+- roles = {participant: 'Сотрудник', admin: 'Администратор', owner: 'Руководитель'}
+
+%table.table.table-condensed.form-inline
+  %thead
+    %tr
+      %th
+        %a{href: '#'}
+          Участники сообщества
+          %i.fa.fa-caret-down
+      %th
+        %a{href: '#'}
+          Роль
+          %i.fa.fa-caret-down
+
+      - columns.each do |c|
+        %th= c
+  %tbody
+    - for i in 0..20
+      - td_class = ''
+      - select_class = ''
+      - if i == 0
+        - td_class = 'community-roles-table-cell-owner'
+        - select_class = 'community-roles-select-owner'
+      - elsif i > 0 && i < 3
+        - td_class = 'community-roles-table-cell-admin'
+        - select_class = 'community-roles-select-admin'
+      %tr{class: "community-roles-table-cell #{td_class}"}
+        %td
+          - img_url = "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/903/medium_8de93480-9151-4a64-8b1f-e86f68a5e2e7.jpg"
+          .user-block
+            .user-block-avatar
+              %a{href: ''}
+                %img.user-block-avatar-image.member-box-avatar-image-small.img-corrector-initialized{:alt => "Ирина", :hide_wait_message => "true", 
+                  :src => img_url, :style => "width:34px;height:34px;", :title => "Михайлова Ирина Николаевна"}/
+            .user-block-content.user-block-content-centered
+              %a.user-block-content-name{:href => "/users/1147", :role => "member-name"} Ирина Михайлова
+        %td
+          %select.form-control{class: "#{select_class}"}
+            - roles.each_pair do |r, role|
+              - if (i == 0 && r == :owner) || (i > 0 && i < 3 && r == :admin) || (i > 3 && r == :participant)
+                %option{selected: :selected}= role
+              - else
+                %option= role
+          - if i > 3
+            %a.btn.btn-link-primary{href: ''} Удалить
+        - columns.each do |c|
+          %td.community-roles-table-checkbox
+            .checkbox
+              %input{type: :checkbox}
