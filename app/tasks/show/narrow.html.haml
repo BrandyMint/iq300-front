@@ -1,0 +1,16 @@
+---
+layout: application
+body_class: tasks-show
+---
+
+= partial 'shared/header'
+.content.content-global.display-mode{"data-initial-action" => "show", :filters => "false", :full_view => "true", :list => "false", "role-display-mode" => "ready", :view => "true"}
+  = partial 'tasks/top_panel'
+  = partial 'shared/navigation'
+  %section.tasks-view-column.task-view-column{"data-channel" => "private-base_task-65590:update", "data-channel-template" => "private-base_task-%id%:update", "data-status" => "completed", "data-url" => "/tasks/65590", "role-task-view-column" => "ready", "test-task-view" => ""}
+    .column-content-fluid
+      .container-fluid
+        .row
+          .col-lg-10.col-lg-offset-1
+            = partial 'tasks/details'
+

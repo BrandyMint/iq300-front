@@ -1,0 +1,5 @@
+#!/bin/bash
+./frontend_build_styles
+git add -A
+git commit -m 'build styles'
+git push

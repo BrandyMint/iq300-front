@@ -1,0 +1,15 @@
+---
+body_class: projects-show
+nav_item: projects
+---
+
+.application-filters
+  = partial 'projects/list_filters'
+.application-content
+  .application-content-top-panel
+    = partial 'projects/top_panel'
+  .application-content-block
+    = partial 'projects/projects_list_column'
+
+= partial 'shared/tour'
+

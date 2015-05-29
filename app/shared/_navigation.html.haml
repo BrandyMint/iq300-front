@@ -1,22 +1,18 @@
 - nav = data.navigation
 - active = locals[:active] || -1
 
-%nav.nav-global.menu-list.menu-list-initialized{"data-channel" => "presence-1757:notifications", "data-remote" => "true"}
-  .logo
-    %a{href: "/", title: "IQ300 System"}
-      = image_tag 'logo_x1_new.png'
-      = image_tag 'logo_x2_new.png'
-  %ul
-    - nav.each_with_index do |(k, v), i|
-      %li.menu-item{class: "#{k} #{active == k ? 'active' : ''}"}
-        = link_to "/#{k}/" do
-          .picture
-            - if v.icon.present?
-              %i{class: "iqs-nav-#{v.icon}"}
-            - else
-              %i{class: "iqs-nav-#{k}"}
-            - if v.counter.present?
-              %sup= v.counter
-          %span= v.title
-
+.application-nav
+  %nav.nav-global.menu-list.menu-list-initialized{"data-channel" => "presence-1757:notifications", "data-remote" => "true"}
+    %ul
+      - nav.each_with_index do |(k, v), i|
+        %li.menu-item{class: "#{k} #{active == k ? 'active' : ''}"}
+          = link_to "/#{k}/" do
+            .picture
+              - if v.icon.present?
+                %i{class: "iqs-nav-#{v.icon}"}
+              - else
+                %i{class: "iqs-nav-#{k}"}
+              - if v.counter.present?
+                %sup= v.counter
+            %span= v.title
 

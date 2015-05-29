@@ -4,10 +4,14 @@ body_class: tasks-index
 
 = partial 'shared/header'
 .content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
+  = partial 'tasks/top_panel'
   = partial 'shared/navigation', locals: {active: 'tasks'}
   %div{"data-scope" => "personal", "role-ready" => "tasks-list-manager"}
   = partial 'tasks/filters'
-  -#%section.projects-list-column.form-container-compact{role: "tasks-list-scroll-container"}
+  -# TODO refactor
+    %section.tasks-list-column.form-container-compact{role: "tasks-list-scroll-container"}
+  -# // refactor
+
   %section.list-column.tasks-list-column.form-container-compact{role: "tasks-list-scroll-container"}
     .form-group{"data-channel" => "presence-203:base_tasks", "data-url" => "/tasks/list_panel", role: "tasks-list-panel"}
       .page-title.mbm

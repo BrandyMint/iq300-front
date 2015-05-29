@@ -150,10 +150,6 @@ layout: application
             .actions.popup-window
               %input{"data-disable-with" => "Загрузка...", :name => "commit", :type => "submit", :value => "Добавить"}/
     %nav.nav-global.menu-list{"data-channel" => "presence-203:notifications", "data-remote" => "true", "role-menu-list" => "ready"}
-      .logo
-        %a{:href => "/", :title => "IQ300 System"}
-          %img.image-x1.img-corrector-initialized{:alt => "IQ300", :src => "/assets/logo_x1_new-9a31dde6832d097c3c4c0b4379c75284.png"}/
-          %img.image-x2.img-corrector-initialized{:alt => "IQ300", :src => "/assets/logo_x2_new-dc0b3d331ac4645cfb0681000f683dc1.png"}/
       %ul
         %li.menu-item.notifications{"data-extra-params" => "null", "data-params" => "null", "data-section" => "notifications", "data-url" => "/notifications"}
           .html-notifier{"data-channel" => "presence-203:notifications", "data-redirect-url" => "/notifications?folder=new", "data-url" => "/notifications.count?folder=new", "role-html-notifier" => "ready"}
@@ -209,19 +205,19 @@ layout: application
           %ul.flat
             %li.folder{"data-folder" => "roots,my,text"}
               %a Текстовые
-              %span.grey-counter
+              %span.bubble-counter-sm
             %li.folder{"data-folder" => "roots,my,sheet"}
               %a Таблицы
-              %span.grey-counter
+              %span.bubble-counter-sm
             %li.folder{"data-folder" => "roots,my,image"}
               %a Изображения
-              %span.grey-counter 1
+              %span.bubble-counter-sm 1
             %li.folder{"data-folder" => "roots,my,presentation"}
               %a Презентации
-              %span.grey-counter
+              %span.bubble-counter-sm
             %li.folder{"data-folder" => "roots,my,pdf"}
               %a PDF
-              %span.grey-counter
+              %span.bubble-counter-sm
             %li.folder{"data-folder" => "roots,my,other"}
               %a Прочее
         %li.nested.folder{"data-community" => "all", "data-folder" => "roots"}
@@ -236,19 +232,19 @@ layout: application
           %ul.flat
             %li.folder{"data-folder" => "roots,shared,text"}
               %a Текстовые
-              %span.grey-counter
+              %span.bubble-counter-sm
             %li.folder{"data-folder" => "roots,shared,sheet"}
               %a Таблицы
-              %span.grey-counter
+              %span.bubble-counter-sm
             %li.folder{"data-folder" => "roots,shared,image"}
               %a Изображения
-              %span.grey-counter
+              %span.bubble-counter-sm
             %li.folder{"data-folder" => "roots,shared,presentation"}
               %a Презентации
-              %span.grey-counter
+              %span.bubble-counter-sm
             %li.folder{"data-folder" => "roots,shared,pdf"}
               %a PDF
-              %span.grey-counter
+              %span.bubble-counter-sm
             %li.folder{"data-folder" => "roots,shared,other"}
               %a Прочее
         %li.flat.folder{"data-folder" => "trash,roots"}

@@ -30,10 +30,6 @@ body_class: tasks-new
         %span.fa.fa-reply
         Список задач
   %nav.nav-global.menu-list{"data-channel" => "presence-5:notifications", "data-remote" => "true", "role-menu-list" => "ready"}
-    .logo
-      %a{:href => "/", :title => "IQ300 System"}
-        %img.image-x1.img-corrector-initialized{:alt => "IQ300", :src => "/assets/logo_x1_new.png"}/
-        %img.image-x2.img-corrector-initialized{:alt => "IQ300", :src => "/assets/logo_x2_new.png"}/
     %ul
       %li.menu-item.notifications{"data-params" => "{\"folder\":\"new\"}", "data-url" => "/notifications"}
         .html-notifier{"data-channel" => "presence-5:notifications", "data-redirect-url" => "/notifications?folder=new", "data-url" => "/notifications.count?folder=new", "role-html-notifier" => "ready"}

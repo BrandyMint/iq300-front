@@ -1,7 +1,7 @@
 .project-show-title,
 h2.project-show-title
   &,
-  section.view-column .column-content &
+  .view-column .column-content &
     margin:
       top: 0
       bottom: 0.5em
@@ -10,15 +10,7 @@ h2.project-show-title
   max-width: 60%
 
 .project-show-tabs
-  margin:
-    top: 1.5em
-    bottom: 1em
-  .nav.nav-tabs
-    & > li
-      & > a
-        font-size: 1.1em
-      &.active > a
-        font-weight: bold
+  @extend %page-tabs-block
 
 .nav-tabs-notification-bullet
   @extend %notifications-bullet

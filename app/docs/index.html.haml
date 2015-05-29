@@ -1,0 +1,64 @@
+---
+body_class: docs-index
+nav_item: docs
+---
+
+-#.application-filters
+  = partial 'docs/filters'
+.application-content
+  .application-content-top-panel
+    = partial 'docs/top_panel'
+  .application-content-block
+    %section.list-column.content-column-block-under-top-panel.folders-list-column{"data-channel" => "presence-203:attachments", "data-url" => "/docs", "role-folders-list-column" => "ready"}
+      %ul
+        %li.header.sortable-header{"data-sortable-collection" => "docs", "data-store" => "1", "role-sortable-header" => "ready"}
+          .opener
+            %i.icon-reorder
+          .name
+            %a{"data-column" => "title", "data-direction" => "asc"}
+              %b Название
+          .actions.popup-window
+          .community
+            %a{"data-column" => "community_id", "data-direction" => "asc"}
+              %b Сообщество
+          .author
+            %a{"data-column" => "author_id", "data-direction" => "asc"}
+              %b Изменил
+          .date
+            %a{"data-column" => "updated_at", "data-direction" => "asc"}
+              %b Изменен
+      %ul.infinite-list{:role => "ui-infinite-list"}
+        %li.doc-item{"data-community-id" => "291", "data-id" => "434", "data-url" => "/docs/434"}
+          .opener
+            %i.icon-file
+          .name
+            %strong.with-size{:title => "iq-docs-bug.png"}
+              %i.rename-434{:style => "display:none"}
+              %span#best_in_place_attachment_2199_title.best_in_place.disable-initializer{"data-bip-activator" => "i.rename-434", "data-bip-attribute" => "title", "data-bip-object" => "attachment", "data-bip-original-content" => "iq-docs-bug", "data-bip-type" => "input", "data-bip-url" => "/attachments/2199", "data-bip-value" => "iq-docs-bug"} iq-docs-bug.png
+            %span.with-size
+              buggy bug
+            %small.file-size 102.0 КБ
+          .actions.popup-window
+            %a.trigger.menu{:href => "#"}
+              %i.icon-reorder.popup-window{"data-popup" => "actions", "role-popup-window" => "ready"}
+            %ul.context-menu
+              %li
+                %a.rename{"data-target" => "i.rename-434", :href => "#"}
+                  %i.icon-pencil
+                  %span Переименовать
+              %li
+                %a.share{:href => "http://edge.iq300.ru/shares?file=35644998-aa5d-49e3-9de1-7dc62daf5a7a.png"}
+                  %i.icon-share-alt
+                  %span Поделиться
+              %li
+                %a.download{:href => "/download?file=35644998-aa5d-49e3-9de1-7dc62daf5a7a.png", :target => "_blank"}
+                  %i.icon-save
+                  %span Скачать
+              %li
+                %a.delete{"data-confirm" => "Вы уверены?", :href => "/docs/434"}
+                  %i.icon-remove
+                  %span Удалить
+          .community Fake community
+          .author Александр Мещеряков
+          .date
+            02 окт.

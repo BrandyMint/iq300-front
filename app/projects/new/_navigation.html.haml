@@ -1,0 +1,25 @@
+.project-form-navigation.container-fluid
+  .row
+    .col-sm-2
+      .project-form-navigation-controls
+        %a.back-link{:href => "#", :role => "step-back-btn", data: {step: 'description', target: 'info'}, :style => "display: none;"}
+          %span.fa.fa-angle-left
+          %span{:role => "btn-title"} Назад к п.1 "Информация"
+        %a.back-link{:href => "#", :role => "step-back-btn", data: {step: 'team', target: 'description'}, :style => "display: none;"}
+          %span.fa.fa-angle-left
+            %span{:role => "btn-title"} Назад к п.2 "Параметры"
+    .col-sm-7
+      .project-form-navigation-container-centered{:role => "step-informer"}
+        %a.projects-form-step-indicator.active{"data-step" => "info", :role => "step-indicator"}
+          %span.number 1
+          %span Информация
+        %a.projects-form-step-indicator{"data-step" => "description", :role => "step-indicator"}
+          %span.number 2
+          %span Параметры
+        %a.projects-form-step-indicator{"data-step" => "team", :role => "step-indicator"}
+          %span.number 3
+          %span Команда
+    .col-sm-3
+      %input.btn.btn-success.btn-lg.pull-right{"data-disable-with" => "Сохранение проекта...", :name => "commit", "test-save-project-btn" => "true", :type => "submit", :value => "Сохранить проект"}/
+      .clearfix
+

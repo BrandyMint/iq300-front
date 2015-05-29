@@ -1,41 +1,25 @@
 ---
 body_class: projects-new
+nav_item: projects
 ---
 
-= partial 'shared/header'
-.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
-  = partial 'projects/new/top_panel'
-  = partial 'shared/_navigation'
-  %section.one-big-column.project-form-section
+.application-content
+  .application-content-top-panel
+    = partial 'projects/new/top_panel'
+    = partial 'projects/new/navigation'
+  .application-content-block
     %form#new_project.projects-form{:action => "/projects"}
-      %div{:style => "margin:0;padding:0;display:inline"}
-        %input{:name => "utf8", :type => "hidden", :value => "✓"}
-        %input{:name => "authenticity_token", :type => "hidden", :value => "c7G+eXfYvyf3DE8wZOs6br5Ie9CYtG4AUUsidktbgA8="}/
-      .project-form-navigation
-        .controls
-          %a.back-link{:href => "#", :role => "step-back-btn", data: {step: 'description', target: 'info'}, :style => "display: none;"}
-            %span.fa.fa-angle-left
-            %span{:role => "btn-title"} Назад к п.1 "Информация"
-          %a.back-link{:href => "#", :role => "step-back-btn", data: {step: 'team', target: 'description'}, :style => "display: none;"}
-            %span.fa.fa-angle-left
-            %span{:role => "btn-title"} Назад к п.2 "Параметры"
-          .pull-right
-            %input.btn.btn-success.btn-lg{"data-disable-with" => "Сохранение проекта...", :name => "commit", "test-save-project-btn" => "true", :type => "submit", :value => "Сохранить проект"}/
-        .container-centered{:role => "step-informer"}
-          %a.projects-form-step-indicator.active{"data-step" => "info", :role => "step-indicator"}
-            %span.number 1
-            %span Информация
-          %a.projects-form-step-indicator{"data-step" => "description", :role => "step-indicator"}
-            %span.number 2
-            %span Параметры
-          %a.projects-form-step-indicator{"data-step" => "team", :role => "step-indicator"}
-            %span.number 3
-            %span Команда
-      .project-form.container-centered
-        .form-horizontal.project-form-info{"data-step" => "info", :role => "form-step", :style => "display: block;", "test-project-info-form" => ""}
-          = partial 'projects/new/info'
-        .form-horizontal.project-form-description{"data-step" => "description", :role => "form-step", :style => "display: none;", "test-project-description-form" => ""}
-          = partial 'projects/new/description'
+      .container-fluid
+        .row
+          .col-sm-7.col-sm-offset-2
+            %div{:style => "margin:0;padding:0;display:inline"}
+              %input{:name => "utf8", :type => "hidden", :value => "✓"}
+              %input{:name => "authenticity_token", :type => "hidden", :value => "c7G+eXfYvyf3DE8wZOs6br5Ie9CYtG4AUUsidktbgA8="}/
+            .project-form.container-centered
+              .form-horizontal.project-form-info{"data-step" => "info", :role => "form-step", :style => "display: block;", "test-project-info-form" => ""}
+                = partial 'projects/new/info'
+              .form-horizontal.project-form-description{"data-step" => "description", :role => "form-step", :style => "display: none;", "test-project-description-form" => ""}
+                = partial 'projects/new/description'
       .form-gray.project-step-team{"data-step" => "team", :role => "form-step", :style => "display: none;"}
         = partial 'projects/new/team'
 

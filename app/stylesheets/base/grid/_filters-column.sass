@@ -1,14 +1,5 @@
 .filters-column
-  position: absolute
-  top: $headerHeight
-  bottom: 0
-  left: $navColumnWidth
-  height: auto
-  z-index: $filters-column-z-index
   background: $filters-column-background
-  overflow: hidden
-  overflow-y: auto
-  @extend %list-column-shadow
   .docs-index &
     top: $headerHeight + $topPanelHeight
   .task-categories
@@ -43,7 +34,7 @@
         a
           font-weight: 600
           color: $brand-primary
-      padding-right: 15px
+      padding-right: 5px
       > a
         font-weight: 400
         height: auto
@@ -64,7 +55,7 @@
           & > a
             color: $brand-danger
       .counter
-        @extend %buble-counter
+        @extend %bubble-counter
         display: none
         margin-bottom: -4px
 

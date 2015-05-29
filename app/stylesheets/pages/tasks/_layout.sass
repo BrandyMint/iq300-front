@@ -1,0 +1,27 @@
+//.tasks-list-column
+  @extend %list-column-block
+
+//.tasks-filters-column
+  @extend %filters-column-block
+
+//.tasks-view-column
+  @extend %view-column-block
+
+
+.tab-content
+  body.tasks-show &
+    background-color: #fff
+    padding-left: 40px
+    padding-right: 40px
+
+.task-view-column
+  &,
+  body.tasks-show &
+    +gradient-vertical($bg-light-grey, #fff, 220px, 220px)
+    padding: 0
+    &.task-view-column-task-template
+      //background-color: $template-item-background
+      +gradient-vertical($template-item-background, #fff, 220px, 220px)
+
+
+

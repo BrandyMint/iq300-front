@@ -1,4 +1,5 @@
-%buble-counter
+%bubble-counter,
+.bubble-counter
   +inline-block
   padding: 3px 2px
   width: 26px
@@ -12,6 +13,9 @@
   border: 1px solid $brand-danger
   background-color: $brand-danger
   color: #fff
+
+.bubble-counter-sm
+  @extend %bubble-counter
 
 //background: $green-cyan
 //@include box-shadow(0px 0px 1px rgba(255, 255, 255, 0.8));

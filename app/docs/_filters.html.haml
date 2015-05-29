@@ -1,0 +1,59 @@
+%section.documents-filters-column.content-column-block-under-top-panel.filters-column
+  %ul.filters-column-list{"role-documents-filter" => "ready"}
+    %li.active{"data-folder" => "roots,my,all", "role-expandable" => "ready", "role-folder" => ""}
+      %a
+        Мои документы
+        %span.filters-column-list-item-expander.pull-right{"role-expander" => "ready"}
+      .collapse.in{"role-expandable-block" => ""}
+        %ul.filters-column-list-item-expandable-menu
+          %li{"data-folder" => "roots,my,text", "role-folder" => ""}
+            %a
+              Текстовые
+          %li{"data-folder" => "roots,my,sheet", "role-folder" => ""}
+            %a
+              Таблицы
+          %li{"data-folder" => "roots,my,image", "role-folder" => ""}
+            %a
+              Изображения
+              %span.bubble-counter-sm 1
+          %li{"data-folder" => "roots,my,presentation", "role-folder" => ""}
+            %a
+              Презентации
+          %li{"data-folder" => "roots,my,pdf", "role-folder" => ""}
+            %a
+              PDF
+          %li{"data-folder" => "roots,my,other", "role-folder" => ""}
+            %a Прочее
+    %li{"data-community" => "all", "data-folder" => "roots", "role-expandable" => "ready", "role-folder" => ""}
+      %a
+        По сообществам
+        %span.filters-column-list-item-expander.pull-right{"role-expander" => "ready"}
+      .collapse.in{"role-expandable-block" => "", :style => "height: 0px;"}
+        %ul.filters-column-list-item-expandable-menu
+          %li{"data-community" => "291", "data-folder" => "roots"}
+            %a{:title => "Fake community"} Fake community
+    %li{"data-folder" => "roots,shared,all", "role-expandable" => "ready", "role-folder" => ""}
+      %a
+        Общий доступ
+        %span.filters-column-list-item-expander.pull-right{"role-expander" => "ready"}
+      .collapse.in{"role-expandable-block" => ""}
+        %ul.filters-column-list-item-expandable-menu
+          %li{"data-folder" => "roots,shared,text", "role-folder" => ""}
+            %a
+              Текстовые
+          %li{"data-folder" => "roots,shared,sheet", "role-folder" => ""}
+            %a
+              Таблицы
+          %li{"data-folder" => "roots,shared,image", "role-folder" => ""}
+            %a
+              Изображения
+          %li{"data-folder" => "roots,shared,presentation", "role-folder" => ""}
+            %a
+              Презентации
+          %li{"data-folder" => "roots,shared,pdf", "role-folder" => ""}
+            %a
+              PDF
+          %li{"data-folder" => "roots,shared,other", "role-folder" => ""}
+            %a Прочее
+    %li{"data-folder" => "trash,roots", "role-folder" => ""}
+      %a Корзина

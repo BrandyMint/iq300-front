@@ -10,8 +10,10 @@
   %head
     = partial 'layouts/head'
   %body{class: current_page.data.body_class || 'page'}
-    #container
-      #wrapper
+    .application-wrapper
+      = partial 'shared/header'
+      .application-container
+        = partial 'shared/_navigation', locals: {active: current_page.data.nav_item || ''}
         = yield
 
 = partial 'layouts/javascripts'

@@ -1,11 +1,13 @@
 ---
-body_class: projects-index
+body_class: projects-show
+nav_item: projects
 ---
 
-= partial 'shared/header'
-.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
-  -#= partial 'projects/top_panel'
-  = partial 'shared/_navigation', locals: {active: 'projects'}
-  = partial 'projects/sidebar'
-  = partial 'projects/projects_list_column'
-  %section.view-column.project-view-column{"data-channel-template" => "private-project-%id%:update", "data-url" => "/projects"}
+.application-filters
+  = partial 'projects/list_filters'
+.application-content
+  .application-content-top-panel
+    = partial 'projects/top_panel'
+  .application-content-block
+    = partial 'projects/projects_list_column'
+

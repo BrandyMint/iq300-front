@@ -1,38 +1,3 @@
-// For task/index
-// Use helpers class for body controller_action_class
-body.projects-index
-  // hide top panel
-  .top-panel
-    display: none !important
-
-body.tasks-index
-  // hide top panel
-  .top-panel
-    display: none !important
-  // Cut place of top panel
-  .tasks-list-column,
-  .task-view-column
-    margin-top: -45px
-    padding-bottom: 25px
-    @extend %list-column-shadow
-    +box-sizing(content-box)
-    +overflow-scrolling
-
-body.tasks-show
-  .top-panel
-    .mode-trigger
-      display: none
-
-// Add gray background to tasks/show form
-body.tasks-show
-  .tab-content
-    background-color: #fff
-    padding-left: 40px
-    padding-right: 40px
-  .task-view-column
-    padding: 0
-    background-color: $bg-light-grey
-
 //From iq300 head.haml
 body
   &.contacts-index .top-panel, &.restrictions-index .top-panel
@@ -58,3 +23,5 @@ body
 input[type="submit"]
   -webkit-appearance: none
   -webkit-border-radius: 3px
+
+

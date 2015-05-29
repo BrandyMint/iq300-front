@@ -1,56 +1,60 @@
 ---
 body_class: communities-profile
+nav_item: communities
 ---
 
-= partial 'shared/header'
-.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
-  = partial 'communities/top_panel'
-  = partial 'shared/_navigation'
+.application-content
+  .application-content-top-panel
+    = partial 'communities/top_panel'
 
-  %section.one-big-column.one-big-column-collapse
-    .form-container.container-grey
-      .tabs-page-header
-        .row
-          .col-sm-2
-            .fluid-square
-              %a{:href => "#"}
-                %img.fluid-square-content{:src => "/images/community/2.png", :alt => ""}/
-          .col-sm-10
-            .content-group
-              %h2.content-heading
-                ООО «Старбакс»
-                %small 123
-              %h4.content-heading Кабельные и беспроводные сети. Оборудование для IT-коммуникаций
-              %ul.list-inline
-                %li +7 (8552) 30-55-42
-                %li
-                  %a{:href => "#"} http://www.starbucks.com
-            .tabs-page-header-actions
-              %a.btn.btn-default{:href => "#"} Написать сообщение
+  .application-content-block
+    %section
+      .form-container.container-grey
+        .tabs-page-header
+          .row
+            .col-sm-2
+              .fluid-square
+                %a{:href => "#"}
+                  %img.fluid-square-content{:src => "/images/community/2.png", :alt => ""}/
+            .col-sm-10
+              .content-group
+                %h2.content-heading
+                  ООО «Старбакс»
+                  %small 123
+                %h4.content-heading Кабельные и беспроводные сети. Оборудование для IT-коммуникаций
+                %ul.list-inline
+                  %li +7 (8552) 30-55-42
+                  %li
+                    %a{:href => "#"} http://www.starbucks.com
+              .tabs-page-header-actions
+                %a.btn.btn-default{:href => "#"} Написать сообщение
 
-    = partial 'communities/profile/tabs'
-    .tab-content.tab-panels
-      #community-profile.tab-pane.active
-        = partial 'communities/profile/details'
+      = partial 'communities/profile/tabs'
+      .tab-content.tab-panels
+        #community-profile.tab-pane.active
+          = partial 'communities/profile/details'
 
-      #community-members.tab-pane
-        = partial 'communities/profile/participants'
+        #community-members.tab-pane
+          = partial 'communities/profile/participants'
 
-      #community-roles-edit.tab-pane
-        = partial 'communities/profile/roles_edit'
+        #community-departments.object-details.community-departments-tab.undefined.tab-pane
+          = partial 'communities/profile/departments'
 
-      #community-actions.tab-pane
-        = partial 'communities/profile/actions'
+        #community-roles-edit.tab-pane
+          = partial 'communities/profile/roles_edit'
 
-      #community-partners.tab-pane
-        = partial 'communities/profile/partners'
+        #community-actions.tab-pane
+          = partial 'communities/profile/actions'
 
-      #community-partners-edit.tab-pane
-        = partial 'communities/profile/partners_edit'
+        #community-partners.tab-pane
+          = partial 'communities/profile/partners'
 
-      #community-reports.tab-pane
-        = partial 'communities/profile/reports'
+        #community-partners-edit.tab-pane
+          = partial 'communities/profile/partners_edit'
 
-      .tab-pane{role: 'community-billing'}
-        = partial 'communities/profile/billing'
+        #community-reports.tab-pane
+          = partial 'communities/profile/reports'
+
+        .tab-pane{role: 'community-billing'}
+          = partial 'communities/profile/billing'
 

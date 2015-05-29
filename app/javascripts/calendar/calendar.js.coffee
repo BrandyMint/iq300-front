@@ -162,9 +162,9 @@ window.Calendar ||= {}
           </div>
           </form>'
       html: true
-      placement: 'right'
+      placement: 'auto'
       trigger: 'manual'
-      container: '[role="calendar-container"]'
+      container: '[role="application-content-block"]'
     return pop
 
   popoverBindings = ($popover) ->

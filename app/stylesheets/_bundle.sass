@@ -1,5 +1,6 @@
 // Setup: custom vars, mixins and base helpers
 // --------------------------------------
+
 @import framework/bootstrap/variables
 @import settings/paths
 @import settings/fonts
@@ -46,7 +47,7 @@
 @import helpers/icons
 
 // Elements
-@import elements/buble-counter
+@import elements/bubble-counter
 @import elements/counter
 @import elements/notification-bullet
 @import elements/overdued-block
@@ -58,9 +59,9 @@
 @import base/non-responsive
 @import base/layout-blocks
 @import base/links
+@import settings/fonts
 @import base/typography
 @import base/forms
-@import base/footer
 @import base/header
 @import base/top-panel
 @import base/header-search
@@ -70,7 +71,6 @@
 @import base/grid/filters-column
 @import base/grid/list-column
 @import base/grid/view-column
-@import base/grid/columns-grid
 @import helpers/grid
 
 // Global Elements and Modules
@@ -94,6 +94,7 @@
 @import elements/input-groups
 @import elements/alerts
 @import elements/panels
+@import elements/filters-list
 
 // old
 @import elements/image-cropper
@@ -107,6 +108,7 @@
 @import elements/member-box
 @import elements/validation_errors
 @import elements/small-tabs
+@import elements/page-tabs
 @import elements/tabnav
 @import elements/simple-table
 @import elements/pagination
@@ -122,8 +124,7 @@
 @import elements/mentions
 @import elements/infinite_list_button
 @import elements/attachment
-
-//@import "elements/select2";
+@import elements/select2
 
 // Customize pages
 // --------------------------------------
@@ -135,6 +136,7 @@
 @import pages/tasks/filters
 @import pages/tasks/view-column
 @import pages/tasks/show
+@import pages/tasks/layout
 @import pages/tasks/subtasks
 @import pages/tasks/todos
 @import pages/tasks/form
@@ -162,6 +164,7 @@
 @import pages/communities/form
 @import pages/communities/roles
 
+@import pages/notifications/layout
 @import pages/notifications/top_panel
 @import pages/notifications/notifications-table
 @import pages/notifications/list-column
@@ -207,6 +210,7 @@
 @import pages/folders
 @import pages/docs/list-column
 @import pages/docs/view-column
+@import pages/docs/list
 @import pages/projects
 @import pages/auth
 @import pages/index

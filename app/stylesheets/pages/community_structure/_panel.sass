@@ -198,16 +198,9 @@
   +inline-block
   float: left
   position: relative
-  width: 230px
   z-index: 100
   margin-top: 4px
   margin-left: 8px
-  .community-structure-panel &
-    margin-top: 0
-    margin-left: 0
-    .btn
-      margin: 4px 0
-      padding: 0
   .btn
     .counter
       display: none
@@ -249,11 +242,10 @@
         color: #666666
       font-weight: bold
       margin-left: 10px
-      margin-right: 10px
       +unselectable
       text-decoration: none
     > span
-      @extend %buble-counter
+      @extend %bubble-counter
       float: right
       margin-top: (34px - 19px) / 2
       margin-right: 6px

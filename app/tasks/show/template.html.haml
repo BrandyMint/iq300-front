@@ -5,13 +5,7 @@ body_class: tasks-show
 
 = partial 'shared/header'
 .content.content-global.display-mode{"data-initial-action" => "show", :filters => "false", :full_view => "true", :list => "false", "role-display-mode" => "ready", :view => "true"}
-  %section.top-panel
-    .pull-left
-      %a.navigation{:href => "#", :onclick => "$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;"}
-        %i.icon-reorder
-      %a.btn.btn-lg{:href => "/tasks"}
-        %span.fa.fa-reply
-        Список задач
+  = partial 'tasks/top_panel'
   = partial 'shared/navigation'
   %section.view-column.task-view-column.task-view-column-task-template{"data-channel" => "private-base_task-65590:update", "data-channel-template" => "private-base_task-%id%:update", "data-status" => "completed", "data-url" => "/tasks/65590", "role-task-view-column" => "ready", "test-task-view" => ""}
     .form-container
