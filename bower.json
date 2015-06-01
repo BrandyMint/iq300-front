@@ -17,7 +17,7 @@
     "fullcalendar": "~2.2.7",
     "bootstrap-multiselect": "0.9.10",
     "modernizr": "~2.8.3",
-    "eonasdan-bootstrap-datetimepicker": "https://github.com/Eonasdan/bootstrap-datetimepicker.git#805bcc39f3e30",
+    "eonasdan-bootstrap-datetimepicker": "4.0.0",
     "marked": "latest",
     "highlightjs": "latest"
   },
