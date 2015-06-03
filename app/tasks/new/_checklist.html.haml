@@ -1,0 +1,40 @@
+.todo-list{:role => "todo-fields-list"}
+  .row
+    .col-sm-2
+      %h3.task-form-section-title{"data-original-title" => "С помощью чек-листов Вы можете создавать список работ по задаче и отслеживать прогресс ее исполнения", "data-placement" => "right", "role-bootstrap-tooltip" => "ready", :title => ""}
+        Чек-лист
+    .col-sm-2
+      .radio
+        %label.radio-inline
+          %input{type: :radio, name: 'task_new_checklist_type', role: 'task-new-checklist-type', checked: :checked, value: "false"}
+          Обычный чек-лист
+    .col-sm-5
+      .radio
+        %label.radio-inline
+          %input{type: :radio, name: 'task_new_checklist_type', role: 'task-new-checklist-type', value: "true"}
+          Чек-лист с прогрессом по исполнению
+  %div
+    %ul#todo-list
+      - for i in 0..2
+        %li.fields.task-checklist-item{:role => "todo-fields"}
+          .task-checklist-item-form
+            %input#base_task_todo_items_attributes_1432543593417_title.form-control.task-checklist-item-input-title{:name => "base_task[todo_items_attributes][1432543593417][title]", :placeholder => "Новый пункт", :role => "todo-title", :size => "30", :type => "text"}/
+            .input-group.task-checklist-item-input-weight{role: 'task-todo-weight'}
+              %input#base_task_todo_items_attributes_1432543593417_title.form-control{:name => "base_task[todo_items_attributes][1432543593417][title]", :placeholder => "Вес", :type => "number"}/
+              %span.input-group-addon= "%"
+            %input#base_task_todo_items_attributes_1432543593417_position{:name => "base_task[todo_items_attributes][1432543593417][position]", :role => "ui-todo-position", :type => "hidden", :value => "1"}/
+            %input#base_task_todo_items_attributes_1432543593417__destroy{:name => "base_task[todo_items_attributes][1432543593417][_destroy]", :type => "hidden", :value => "false"}/
+            .task-checklist-item-buttons
+              %a.remove_nested_fields.btn.btn-link-plain.btn-link-gray-light{"data-association" => "todo_items", :href => "javascript:void(0)"}
+                %i.fa.fa-times
+    .pull-left
+      %a.add-todo.btn.btn-default.add-button.add_nested_fields{"data-association" => "todo_items", "data-blueprint-id" => "todo_items_fields_blueprint", "data-target" => "#todo-list", :href => "javascript:void(0)", :role => "add-todo-field"}
+        %span.fa.fa-plus-circle
+        Добавить пункт
+    .pull-right{role: 'task-todo-weight'}
+      .task-checklist-item-form
+        .task-checklist-item-weight-help
+          .text-color-danger Сумма значений весов не равна 100%
+          %div Сумма значений весов равна 100%
+    .clearfix
+

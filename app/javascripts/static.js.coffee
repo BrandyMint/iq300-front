@@ -11,6 +11,7 @@
 #= require jquery.atwho/dist/js/jquery.atwho.min
 #= require bootstrap-multiselect/dist/js/bootstrap-multiselect
 #= require fullcalendar/dist/fullcalendar
+#= require jquery-drag-drop-plugin/jquery.drag-drop.plugin
 #= require projects/tasks
 #= require projects/new
 #= require projects/discussions
@@ -19,6 +20,8 @@
 #= require projects/wizard
 #= require notifications/list
 #= require tasks/list
+#= require tasks/form
+#= require tasks/checklist
 #= require communities/billing
 #= require layout/fixed_block
 #= require notifications/widget
