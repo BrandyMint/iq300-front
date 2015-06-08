@@ -8,6 +8,7 @@
   color: $text-color
   background: #fff
   box-shadow: none
+  box-sizing: border-box
 
 .select2-container.select2-drop-above .select2-choice
   border-radius: $border-radius-base
@@ -114,3 +115,9 @@ ul.select2-results li.select2-result
   text-align: center
   padding: 5px 10px
   border-radius: 0 0 $border-radius-base $border-radius-base
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi)
+  .select2-search input, .select2-search-choice-close, .select2-container .select2-choice abbr, .select2-container .select2-choice .select2-arrow b
+    background: none !important
+
