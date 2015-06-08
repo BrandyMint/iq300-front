@@ -38,7 +38,8 @@ nav_item: communities
           = partial 'communities/profile/participants'
 
         #community-departments.object-details.community-departments-tab.undefined.tab-pane
-          = partial 'communities/profile/departments'
+          -#= partial 'communities/profile/departments'
+          = partial 'communities/profile/departments_rules'
 
         #community-roles-edit.tab-pane
           = partial 'communities/profile/roles_edit'

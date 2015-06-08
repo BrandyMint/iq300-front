@@ -1,0 +1,1375 @@
+
+#community-departments.object-details.community-departments-tab.undefined{"data-url" => "/communities/20/departments", :style => "display: block;"}
+  :css
+    .apply-changes-view {
+      top: 250px !important;
+    }
+  .community-structure-panel-view{"role-community-structure-panel" => ""}
+    .community-structure-panel.personal-tree
+      .add-department-btn{"ui-invite-button" => "ui-invite-button"}
+        .add-button.popup-window{"data-popup" => "new-department", "role-popup-window" => "ready"}
+          Добавить отдел 
+          %i.fa.fa-plus-circle
+        .adding-form.new-department.without-left-pimp.popup-window{"data-focused-input" => "input#department_title"}
+          %form{:action => "#"}
+            %ul.errors.department
+            .input
+              %label{:for => "department_title"}
+                Название
+                %abbr *
+              %input#department_title{:name => "department[title]", :placeholde => "введите название"}/
+            .input
+              %label{:for => "department_parent_id"} Вышестоящий отдел
+              #s2id_department_parent_id.select2-container.select-two{:style => "width: 100%;"}
+                %a.select2-choice{:href => "javascript:void(0)", :tabindex => "-1"}
+                  %span#select2-chosen-1.select2-chosen  
+                  %abbr.select2-search-choice-close
+                  %span.select2-arrow{:role => "presentation"}
+                    %b{:role => "presentation"}
+                %label.select2-offscreen{:for => "s2id_autogen1"} Вышестоящий отдел
+                %input#s2id_autogen1.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-1", :role => "button", :type => "text"}/
+                .select2-drop.select2-display-none.select2-with-searchbox
+                  .select2-search
+                    %label.select2-offscreen{:for => "s2id_autogen1_search"} Вышестоящий отдел
+                    %input#s2id_autogen1_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-1", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+                  %ul#select2-results-1.select2-results{:role => "listbox"}
+              %select#department_parent_id.select-two.select2-offscreen{"data-allow-clear" => "true", :name => "department[parent_id]", :placeholder => "выбрать из списка", "role-select-two" => "ready", :tabindex => "-1", :title => "Вышестоящий отдел"}
+            %ul.errors.contract
+            .input
+              %label{:for => "department_boss_id"} Назначить руководителем
+              #s2id_department_boss_id.select2-container.select-two{:style => "width: 100%;"}
+                %a.select2-choice{:href => "javascript:void(0)", :tabindex => "-1"}
+                  %span#select2-chosen-2.select2-chosen  
+                  %abbr.select2-search-choice-close
+                  %span.select2-arrow{:role => "presentation"}
+                    %b{:role => "presentation"}
+                %label.select2-offscreen{:for => "s2id_autogen2"} Назначить руководителем
+                %input#s2id_autogen2.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-2", :role => "button", :type => "text"}/
+                .select2-drop.select2-display-none.select2-with-searchbox
+                  .select2-search
+                    %label.select2-offscreen{:for => "s2id_autogen2_search"} Назначить руководителем
+                    %input#s2id_autogen2_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-2", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+                  %ul#select2-results-2.select2-results{:role => "listbox"}
+              %select#department_boss_id.select-two.select2-offscreen{"data-allow-clear" => "true", :name => "department[boss_id]", :placeholder => "выбрать из списка", "role-select-two" => "ready", :tabindex => "-1", :title => "Назначить руководителем"}
+            %section.buttons
+              %input.btn.btn-primary{:name => "commit", :type => "submit", :value => "Создать"}/
+              %a.delete Отменить
+      .unallocated-btn.ui-droppable.droppable
+        .btn.expanded
+          .expander{"data-target" => ".unallocated-workers", "role-expander" => "ready"}
+          = succeed "\u{a0}" do
+            %a Нераспределенные
+          %span.red.counter{:style => "display: inline;"} 70
+        .unallocated-workers.expanded
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/144/thumb_e7e663ba-9f05-453c-884f-d0ec3c80d422.png"}/
+            .name
+              %a{:href => "/users/141"} Aufderharll Estelleff Noelmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/73/thumb_d51cff7e-ba56-4011-ac61-b3a473e37158.png"}/
+            .name
+              %a{:href => "/users/70"} Bergstromll Luciousff Maybellmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/162/thumb_14325ddf-760b-4304-ace9-1d161ef375a6.png"}/
+            .name
+              %a{:href => "/users/159"} Hegmannll Margretff Rahulmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/81/thumb_8cf63ad4-05d4-4472-bbf2-9574a3f64816.png"}/
+            .name
+              %a{:href => "/users/78"} Howell Tessff Alejandramm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/89/thumb_2a070bfe-39ff-4986-940d-f0ec5968b86a.png"}/
+            .name
+              %a{:href => "/users/86"} Kerlukell Keiraff Daphneymm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/126/thumb_2af53639-59b6-4de0-ae3b-62bcba807060.png"}/
+            .name
+              %a{:href => "/users/123"} Kossll Cordieff Fredymm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/104/thumb_6dc4ecff-4cb4-4d41-896a-5d22f14b01ba.png"}/
+            .name
+              %a{:href => "/users/101"} Krisll Janyff Robertmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/102/thumb_1c39afd6-ddf0-4fa8-a37c-e1eccf6ac33d.png"}/
+            .name
+              %a{:href => "/users/99"} Langll Angelitaff Lolitamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/91/thumb_bd30809d-0e13-4c67-93d1-a86858cf1432.png"}/
+            .name
+              %a{:href => "/users/88"} Leannonll Paulineff Fernmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/122/thumb_f9aabab8-8cb5-4351-8a32-2d1a4da18e78.png"}/
+            .name
+              %a{:href => "/users/119"} Lefflerll Jaquelinff Rodgermm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/66/thumb_66a2cacb-719f-41ff-a55a-37c8e8f5fbc4.png"}/
+            .name
+              %a{:href => "/users/63"} Lehnerll Westleyff Diamondmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/108/thumb_42202800-9727-4b30-a097-139b24e80b2d.png"}/
+            .name
+              %a{:href => "/users/105"} Littelll Kentonff Evamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/111/thumb_39dba98a-e79c-486f-9b8d-e11df796f2b9.png"}/
+            .name
+              %a{:href => "/users/108"} Macejkovicll Delbertff Herminamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/100/thumb_e8e0bb49-fe18-4b48-adce-c74251d022f9.png"}/
+            .name
+              %a{:href => "/users/97"} Mannll Danielleff Laishamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/109/thumb_5d46a2e7-7973-40e5-b0d0-6fcfae407b2b.png"}/
+            .name
+              %a{:href => "/users/106"} McGlynnll Mossieff Estebanmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/125/thumb_485ee32a-41b2-4693-ac5c-7f3950bf061e.png"}/
+            .name
+              %a{:href => "/users/122"} Millerll Irwinff Marinamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/107/thumb_2b1943b0-a743-4726-a255-cfb10194e6ae.png"}/
+            .name
+              %a{:href => "/users/104"} Moenll Charlesff Luthermm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/128/thumb_ab113003-a792-41f4-97e8-9d79683fb423.png"}/
+            .name
+              %a{:href => "/users/125"} Monahanll Samsonff Davontemm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/159/thumb_ac1d8124-51e6-4067-89f6-31f71133b4d9.png"}/
+            .name
+              %a{:href => "/users/156"} Muellerll Terenceff Romanmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/96/thumb_4759bade-6792-4337-a53d-b836e85ff959.png"}/
+            .name
+              %a{:href => "/users/93"} Mullerll Abagailff Taylormm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/115/thumb_4f99e1d3-fa09-4940-93ea-261575cb083b.png"}/
+            .name
+              %a{:href => "/users/112"} Murazikll Stefanieff Justynmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/75/thumb_eed935db-f911-45a9-b623-18ad7309f297.png"}/
+            .name
+              %a{:href => "/users/72"} Nikolausll Freidaff Ismaelmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/158/thumb_b3defee7-86f0-474e-ab22-b599dceabfd6.png"}/
+            .name
+              %a{:href => "/users/155"} Nolanll Zackeryff Keyonmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "/assets/default-user-avatar.png"}/
+            .name
+              %a{:href => "/users/61"} Oll Irwinff Dionmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "/assets/default-user-avatar.png"}/
+            .name
+              %a{:href => "/users/61"} Oll Irwinff Dionmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/83/thumb_97d46491-bf98-4c18-b5c7-096a46ba0874.png"}/
+            .name
+              %a{:href => "/users/80"} Ondrickall Ileneff Alanmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/84/thumb_2a772a10-4aeb-479e-94a4-0e5f5cb47355.png"}/
+            .name
+              %a{:href => "/users/81"} Osinskill Vernonff Jaydamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/88/thumb_2290ad9c-2da0-440a-9d58-43b66cf89472.png"}/
+            .name
+              %a{:href => "/users/85"} Pacochall Caryff Leonardomm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/153/thumb_9ee26098-9a5c-4037-8437-383db171b5d2.png"}/
+            .name
+              %a{:href => "/users/150"} Prosaccoll Theronff Ednamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/77/thumb_600c8b2f-6df5-4820-b1b8-fffc8a889a2f.png"}/
+            .name
+              %a{:href => "/users/74"} Rathll Meaganff Annabellmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/112/thumb_982b7e2a-7799-4d97-bf86-494362f72c44.png"}/
+            .name
+              %a{:href => "/users/109"} Reillyll Cristobalff Crawfordmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/135/thumb_a871b0b0-5106-478e-a687-2233d09b58b1.png"}/
+            .name
+              %a{:href => "/users/132"} Robelll Ernestinaff Annamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/106/thumb_fb3e48a2-b82e-4b76-b1d4-d6839e4397c5.png"}/
+            .name
+              %a{:href => "/users/103"} Robertsll Oranff Oswaldmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/134/thumb_cebd0f28-13fd-49e8-826e-4c5438da4cd2.png"}/
+            .name
+              %a{:href => "/users/131"} Roobll Herminaff Kendrickmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/79/thumb_da8d726d-db19-4f18-92e5-22ec3b45721e.png"}/
+            .name
+              %a{:href => "/users/76"} Ryanll Lamontff Jimmymm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/147/thumb_6c4eefb1-e154-41fe-ad57-fe13ca3cdf6d.png"}/
+            .name
+              %a{:href => "/users/144"} Sanfordll Jaquanff Herthamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/68/thumb_2cbda405-15ad-418b-abe8-19be59a17743.png"}/
+            .name
+              %a{:href => "/users/65"} Satterfieldll Jettieff Ashlymm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/68/thumb_2cbda405-15ad-418b-abe8-19be59a17743.png"}/
+            .name
+              %a{:href => "/users/65"} Satterfieldll Jettieff Ashlymm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/130/thumb_47e1f4c8-859f-4ecd-80ae-7b868f23b4a1.png"}/
+            .name
+              %a{:href => "/users/127"} Schoenll Adrielff Patrickmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/116/thumb_7e907bed-63e0-4506-aafb-0f0aff1c5d4f.png"}/
+            .name
+              %a{:href => "/users/113"} Schroederll Dockff Clintmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/127/thumb_896d5375-93e8-4a08-be5a-345389bdfce8.png"}/
+            .name
+              %a{:href => "/users/124"} Schulistll Cheyanneff Marianomm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/101/thumb_6cf01b88-9a41-4545-9b8f-e5496cf88b29.png"}/
+            .name
+              %a{:href => "/users/98"} Schultzll Zacheryff Verliemm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/154/thumb_94f69be2-43d1-4f90-bf99-2e0e3b11b55e.png"}/
+            .name
+              %a{:href => "/users/151"} Schusterll Sylvanff Tianamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "/assets/default-user-avatar.png"}/
+            .name
+              %a{:href => "/users/199"} Show Irvin Александровна
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/65/thumb_2cb35e40-aab3-4ad6-bc38-4709eab2c8f5.png"}/
+            .name
+              %a{:href => "/users/62"} Spencerll Zaneff Taniamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/65/thumb_2cb35e40-aab3-4ad6-bc38-4709eab2c8f5.png"}/
+            .name
+              %a{:href => "/users/62"} Spencerll Zaneff Taniamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/71/thumb_09d6adbe-f3df-4b31-8762-2fc35018f9e8.png"}/
+            .name
+              %a{:href => "/users/68"} Sporerll Giovannyff Damienmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/71/thumb_09d6adbe-f3df-4b31-8762-2fc35018f9e8.png"}/
+            .name
+              %a{:href => "/users/68"} Sporerll Giovannyff Damienmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/143/thumb_91e0434b-eceb-4590-980c-095d32a27462.png"}/
+            .name
+              %a{:href => "/users/140"} Starkll Maximusff Kevinmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/138/thumb_8378819e-47a4-48f3-9ef6-07259499af68.png"}/
+            .name
+              %a{:href => "/users/135"} Stiedemannll Arnoldff Keltonmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/120/thumb_886d55a6-259f-418e-91fe-eb4f9d25156e.png"}/
+            .name
+              %a{:href => "/users/117"} Thompsonll Tedff Jaymm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/118/thumb_f8119b0f-ebbf-4a77-94d5-1658f8959ba6.png"}/
+            .name
+              %a{:href => "/users/115"} Turnerll Abbyff Demarcomm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/114/thumb_3447ea96-1bce-49ff-917d-5fa1ee7b1cb0.png"}/
+            .name
+              %a{:href => "/users/111"} Volkmanll Taliaff Karlmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/67/thumb_a8e43a5f-8308-4a0e-871c-cde7d0bd827b.png"}/
+            .name
+              %a{:href => "/users/64"} Waelchill Itzelff Hebermm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/67/thumb_a8e43a5f-8308-4a0e-871c-cde7d0bd827b.png"}/
+            .name
+              %a{:href => "/users/64"} Waelchill Itzelff Hebermm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/97/thumb_6c0b27a2-fef5-430c-b1a6-83bcd95c7ecb.png"}/
+            .name
+              %a{:href => "/users/94"} Waelchill Jayff Thelmamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/149/thumb_c4d76491-49d1-4246-b35c-e4286f398bd1.png"}/
+            .name
+              %a{:href => "/users/146"} Weimannll Bonnieff Milomm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/150/thumb_ab5e2bbb-35c5-4330-a14a-01dec1c3cae7.png"}/
+            .name
+              %a{:href => "/users/147"} Westll Heberff Majormm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/117/thumb_da2bc968-040e-4377-9789-0c0c8f8e73e1.png"}/
+            .name
+              %a{:href => "/users/114"} Wiegandll Hattieff Janicemm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/87/thumb_23473ba2-007d-42b2-876a-5354b9aedcdf.png"}/
+            .name
+              %a{:href => "/users/84"} Wiegandll Stellaff Jaydemm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/90/thumb_c7a2a370-6b39-4e3b-827c-f63b7d187df9.png"}/
+            .name
+              %a{:href => "/users/87"} Windlerll Daytonff Rorymm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/94/thumb_98f0fa9b-227b-4345-b391-80eb6c68ed34.png"}/
+            .name
+              %a{:href => "/users/91"} Zboncakll Angelineff Marcosmm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/70/thumb_dbb247d1-db60-4d12-9af0-f1758b713836.png"}/
+            .name
+              %a{:href => "/users/67"} Zboncakll Dinoff Raymundomm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/70/thumb_dbb247d1-db60-4d12-9af0-f1758b713836.png"}/
+            .name
+              %a{:href => "/users/67"} Zboncakll Dinoff Raymundomm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/72/thumb_f7f4e99c-9f42-409b-86c4-95277cd4ed49.png"}/
+            .name
+              %a{:href => "/users/69"} Ziemell Armandff Ericamm
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/179/thumb_14aceee6-126d-49ed-bccd-bfd903b9eb92.png"}/
+            .name
+              %a{:href => "/users/174"} euryturyt Bhbyr
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/257/thumb_d1fecdd3-5258-493e-9b3b-5d2c470d39e7.png"}/
+            .name
+              %a{:href => "/users/252"} Алиса Лиса
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/258/thumb_b21ca98b-dc02-4288-a40d-8095f93aaf80.png"}/
+            .name
+              %a{:href => "/users/253"} Мамонтов Аркадий
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "/assets/default-user-avatar.png"}/
+            .name
+              %a{:href => "/users/8"} Нуриахметов Эльвир
+              .detailed
+                %span
+          .memberships-contract.ui-draggable
+            %img.img-corrector-initialized{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/1/thumb_c9a08661-a442-42e6-8acf-122eaf3d1723.jpg"}/
+            .name
+              %a{:href => "/users/1"} Шайдуллин Артур
+              .detailed
+                %span
+      .apply-changes-view{"role-apply-changes-view" => "ready", :style => "display: none;"}
+        .accept
+          %span Закончить редактирование
+          %i.icon-ok
+        .decline
+          %span Отменить
+          %i.icon-remove
+        .spinner
+          %span Сохранение...
+        .error
+          %span Ошибка сохранения. Новая попытка сохранения каждые 5 секунд.
+  .community-structure-view.personal-tree{"role-community-structure-view" => "ready", :style => "min-height:100px;"}
+    %ol.departments
+      .root-line
+      .root-line-clear
+      %li.department.ui-droppable.droppable
+        %input.3.toggle{:type => "checkbox"}/
+        %input.3.department-toggle{:type => "checkbox"}/
+        .line.3
+        .line-child
+        .line-clear
+        .counter.3 5
+        .department-card.3
+        .expander{"role-expander" => "role-expander"}
+        .d-card-title.3
+          .expander{"role-expander" => "role-expander"}
+          %label
+            %span{:title => "Двойной щелчок для редактирования"} Руководство
+            %input/
+          .options
+        .d-card-body.3.ui-droppable.droppable
+          .boss-card.3
+            .memberships-contract.ui-draggable
+              %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/2/thumb_0552aa14-0bdb-4fc0-85d7-ac98cd743f5d.jpg"}/
+              .name
+                %a{:href => "/users/2"} Mikhaylova Iren
+                .detailed
+                  %span В пВ поле
+                  .actions
+                    %a.edit{"data-original-title" => "", :title => ""}
+                      %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "25"}
+                      %span.workers-counter
+                        3
+                        %i.icon-user
+          .workers.3
+            .memberships-contract.ui-draggable
+              %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/80/thumb_4d5be2ab-8e16-4ad8-9063-24c1f31cfcd0.png"}/
+              .name
+                %a{:href => "/users/77"} Beckerll Piperff Allenmm
+                .detailed
+                  %span Администратор проекта
+                  .actions
+                    %a.edit
+                      %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "241"}
+            .memberships-contract.ui-draggable
+              %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/136/thumb_cd575ae5-163a-44a7-81fb-df861b1535dc.png"}/
+              .name
+                %a{:href => "/users/133"} Haagll Jameyff Lenoremm
+                .detailed
+                  %span Секретарь
+                  .actions
+                    %a.edit
+                      %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "297"}
+            .memberships-contract.ui-draggable
+              %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/148/thumb_2b4de519-7678-406c-886e-2d390987ab01.png"}/
+              .name
+                %a{:href => "/users/145"} Keelingll Adeliaff Shanamm
+                .detailed
+                  %span -
+                  .actions
+                    %a.edit
+                      %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "309"}
+        %ol.children.3
+          %li.department.ui-droppable.droppable
+            %input.14.toggle{:type => "checkbox"}/
+            %input.14.department-toggle{:type => "checkbox"}/
+            .line.14
+            .line-child
+            .line-clear
+            .counter.14 3
+            .department-card.14
+            .expander{"role-expander" => "role-expander"}
+            .d-card-title.14.ui-draggable
+              .expander{"role-expander" => "role-expander"}
+              %label
+                %span{:title => "Двойной щелчок для редактирования"} Отдел маркетинга
+                %input/
+              .destroy-department.14
+              .options
+            .d-card-body.14.ui-droppable.droppable
+              .boss-card.14
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/93/thumb_23ac6127-3968-4a50-9cea-35b5b478a06f.png"}/
+                  .name
+                    %a{:href => "/users/90"} Corkeryll Julianff Hughmm
+                    .detailed
+                      %span Начальник Отдела
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "254"}
+                          %span.workers-counter
+                            3
+                            %i.icon-user
+              .workers.14
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/119/thumb_201049c3-f9c4-4fad-87c2-b0af846e1669.png"}/
+                  .name
+                    %a{:href => "/users/116"} Bodell Gustaveff Orenmm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "280"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/142/thumb_2fd25a11-dbf4-4b37-9a4b-3089bc80274f.png"}/
+                  .name
+                    %a{:href => "/users/139"} Brakusll Rafaelaff Quincymm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "303"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/137/thumb_3c7012c1-f5e2-46f1-bab0-470ff2fa3960.png"}/
+                  .name
+                    %a{:href => "/users/134"} Carterll Theresiaff Osbaldomm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "298"}
+            %ol.children.14
+              %li.department.ui-droppable.droppable
+                %input.126.toggle{:type => "checkbox"}/
+                %input.126.department-toggle{:type => "checkbox"}/
+                .line.126
+                .line-child
+                .line-clear
+                .counter.126 1
+                .department-card.126
+                .expander{"role-expander" => "role-expander"}
+                .d-card-title.126.ui-draggable
+                  .expander{"role-expander" => "role-expander"}
+                  %label
+                    %span{:title => "Двойной щелчок для редактирования"} nfv
+                    %input/
+                  .destroy-department.126
+                  .options
+                .d-card-body.126.ui-droppable.droppable
+                  .boss-card.126
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/161/thumb_633860ac-832e-48c7-98cf-db1a044cf366.png"}/
+                      .name
+                        %a{:href => "/users/158"} Herzogll Shanelff Morganmm
+                        .detailed
+                          %span Начальник Отдела
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "322"}
+                              %span.workers-counter
+                                0
+                                %i.icon-user
+                  .workers.126
+                %ol.children.126
+                  %li.department.zero-children.ui-droppable.droppable
+                    %input.127.toggle{:type => "checkbox"}/
+                    %input.127.department-toggle{:type => "checkbox"}/
+                    .line.127
+                    .line-child
+                    .line-clear
+                    .counter.127 0
+                    .department-card.127
+                    .expander{"role-expander" => "role-expander"}
+                    .d-card-title.127.ui-draggable
+                      .expander{"role-expander" => "role-expander"}
+                      %label
+                        %span{:title => "Двойной щелчок для редактирования"} nfv njjj
+                        %input/
+                      .destroy-department.127
+                      .options
+                    .d-card-body.127.ui-droppable.droppable
+                      .boss-card.127
+                      .workers.127
+                        .memberships-contract.ui-draggable
+                          %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/145/thumb_7631241a-494d-40e8-b543-0fdcf60b58c7.png"}/
+                          .name
+                            %a{:href => "/users/142"} Jonesll Jeramyff Claremm
+                            .detailed
+                              %span Начальник Отдела
+                              .actions
+                                %a.edit
+                                  %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "306"}
+                    %ol.children.127
+                    .toggle-icon
+                    .toggle-arrow
+                    .toggle-block
+                .toggle-icon
+                .toggle-arrow
+                .toggle-block
+              %li.department.zero-children.ui-droppable.droppable
+                %input.18.toggle{:type => "checkbox"}/
+                %input.18.department-toggle{:type => "checkbox"}/
+                .line.18
+                .line-child
+                .line-clear
+                .counter.18 0
+                .department-card.18
+                .expander{"role-expander" => "role-expander"}
+                .d-card-title.18.ui-draggable
+                  .expander{"role-expander" => "role-expander"}
+                  %label
+                    %span{:title => "Двойной щелчок для редактирования"} Отдел бенчмаркинга
+                    %input/
+                  .destroy-department.18
+                  .options
+                .d-card-body.18.ui-droppable.droppable
+                  .boss-card.18
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/82/thumb_80712d83-364b-417a-a8de-8f8ade798d06.png"}/
+                      .name
+                        %a{:href => "/users/79"} Botsfordll Einarff Jordimm
+                        .detailed
+                          %span Начальник Отдела
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "243"}
+                              %span.workers-counter
+                                6
+                                %i.icon-user
+                  .workers.18
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/99/thumb_2f8567c3-8626-4fb5-9735-c865bbedbab9.png"}/
+                      .name
+                        %a{:href => "/users/96"} Hammesll Nevaff Noelmm
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "260"}
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/151/thumb_94062dfd-7619-418a-a4ec-f8c14d6df546.png"}/
+                      .name
+                        %a{:href => "/users/148"} Handll Brendaff Larrymm
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "312"}
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/141/thumb_4b3f978d-be40-477a-a64f-2f4b7b939e1d.png"}/
+                      .name
+                        %a{:href => "/users/138"} Harberll Emeraldff Giovannamm
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "302"}
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/105/thumb_69536563-9387-4e22-907b-f7ba7f3510a7.png"}/
+                      .name
+                        %a{:href => "/users/102"} Hayesll Candelarioff Omermm
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "266"}
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/78/thumb_4d97ccc9-ce0b-43b2-a6db-79ad8b1dd782.png"}/
+                      .name
+                        %a{:href => "/users/75"} Herzogll Jakeff Novellamm
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "239"}
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/86/thumb_cd89c501-6a8c-4144-b194-bb9ef7da0039.png"}/
+                      .name
+                        %a{:href => "/users/83"} Konopelskill Imogeneff Kellenmm
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "247"}
+                %ol.children.18
+                .toggle-icon
+                .toggle-arrow
+                .toggle-block
+              %li.department.zero-children.ui-droppable.droppable
+                %input.19.toggle{:type => "checkbox"}/
+                %input.19.department-toggle{:type => "checkbox"}/
+                .line.19
+                .line-child
+                .line-clear
+                .counter.19 0
+                .department-card.19
+                .expander{"role-expander" => "role-expander"}
+                .d-card-title.19.ui-draggable
+                  .expander{"role-expander" => "role-expander"}
+                  %label
+                    %span{:title => "Двойной щелчок для редактирования"} Отдел исследований...
+                    %input/
+                  .destroy-department.19
+                  .options
+                .d-card-body.19.ui-droppable.droppable
+                  .boss-card.19
+                  .workers.19
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/76/thumb_8954a13f-e738-4d57-afbe-3ce4b95d4e82.png"}/
+                      .name
+                        %a{:href => "/users/73"} Hammesll Myrtleff Burnicemm
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "237"}
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/131/thumb_e8db120d-7a21-439f-87e3-5a7d007808d9.png"}/
+                      .name
+                        %a{:href => "/users/128"} Krisll Avaff Blakemm
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "292"}
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/10/thumb_b036de1d-8bde-42e7-8475-fde8295569af.jpg"}/
+                      .name
+                        %a{:href => "/users/10"} Nuriahmetov Ehlvir
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "608"}
+                %ol.children.19
+                .toggle-icon
+                .toggle-arrow
+                .toggle-block
+            .toggle-icon
+            .toggle-arrow
+            .toggle-block
+          %li.department.ui-droppable.droppable
+            %input.15.toggle{:type => "checkbox"}/
+            %input.15.department-toggle{:type => "checkbox"}/
+            .line.15
+            .line-child
+            .line-clear
+            .counter.15 1
+            .department-card.15
+            .expander{"role-expander" => "role-expander"}
+            .d-card-title.15.ui-draggable
+              .expander{"role-expander" => "role-expander"}
+              %label
+                %span{:title => "Двойной щелчок для редактирования"} Отдел развития и и...
+                %input/
+              .destroy-department.15
+              .options
+            .d-card-body.15.ui-droppable.droppable
+              .boss-card.15
+              .workers.15
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/85/thumb_93dfb589-8a45-4a20-a6b3-91f53b6efa88.png"}/
+                  .name
+                    %a{:href => "/users/82"} Bednarll Elwinff Mafaldamm
+                    .detailed
+                      %span Начальник Отдела
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "246"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/132/thumb_660a89a1-415d-441f-bf59-3e8a75fb30c3.png"}/
+                  .name
+                    %a{:href => "/users/129"} Dickensll Adolfoff Ramiromm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "293"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/139/thumb_d3264e87-c4d3-4e7a-bf04-cff325b20b2a.png"}/
+                  .name
+                    %a{:href => "/users/136"} Dickinsonll Jaronff Benedictmm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "300"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/95/thumb_b074ad46-0848-4fda-aa9d-de4c8e8fc6d0.png"}/
+                  .name
+                    %a{:href => "/users/92"} Fadelll Clemensff Fritzmm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "256"}
+            %ol.children.15
+              %li.department.ui-droppable.droppable
+                %input.16.toggle{:type => "checkbox"}/
+                %input.16.department-toggle{:type => "checkbox"}/
+                .line.16
+                .line-child
+                .line-clear
+                .counter.16 1
+                .department-card.16
+                .expander{"role-expander" => "role-expander"}
+                .d-card-title.16.ui-draggable
+                  .expander{"role-expander" => "role-expander"}
+                  %label
+                    %span{:title => "Двойной щелчок для редактирования"} Отдел разработки н...
+                    %input/
+                  .destroy-department.16
+                  .options
+                .d-card-body.16.ui-droppable.droppable
+                  .boss-card.16
+                  .workers.16
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/160/thumb_f1167556-7dd2-4e6e-94ba-cfa29b8ec493.png"}/
+                      .name
+                        %a{:href => "/users/157"} Friesenll Peytonff Bethanymm
+                        .detailed
+                          %span Начальник Отдела
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "321"}
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/121/thumb_4efe5340-cc07-4ad8-bede-eac74a758b19.png"}/
+                      .name
+                        %a{:href => "/users/118"} Gislasonll Mayaff Adrainmm
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "282"}
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/157/thumb_53286272-b9dd-401d-829a-d0fd70fb39e5.png"}/
+                      .name
+                        %a{:href => "/users/154"} Greenfelderll Tressieff Claremm
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "318"}
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/124/thumb_a9c08912-1420-442e-b95f-58b834c21bab.png"}/
+                      .name
+                        %a{:href => "/users/121"} Haleyll Alyceff Carissamm
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "285"}
+                %ol.children.16
+                  %li.department.zero-children.ui-droppable.droppable
+                    %input.17.toggle{:type => "checkbox"}/
+                    %input.17.department-toggle{:type => "checkbox"}/
+                    .line.17
+                    .line-child
+                    .line-clear
+                    .counter.17 0
+                    .department-card.17
+                    .expander{"role-expander" => "role-expander"}
+                    .d-card-title.17.ui-draggable
+                      .expander{"role-expander" => "role-expander"}
+                      %label
+                        %span{:title => "Двойной щелчок для редактирования"} Отдел сопровождени...
+                        %input/
+                      .destroy-department.17
+                      .options
+                    .d-card-body.17.ui-droppable.droppable
+                      .boss-card.17
+                      .workers.17
+                        .memberships-contract.ui-draggable
+                          %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/133/thumb_8c3d4153-7228-41e2-a870-51fc48a40702.png"}/
+                          .name
+                            %a{:href => "/users/130"} Kuhlmanll Macyff Rupertmm
+                            .detailed
+                              %span njhhj
+                              .actions
+                                %a.edit
+                                  %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "294"}
+                        .memberships-contract.ui-draggable
+                          %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/113/thumb_a324fc42-211f-4517-b4b6-fe952c0f56b8.png"}/
+                          .name
+                            %a{:href => "/users/110"} Kutchll Chanceff Amosmm
+                            .detailed
+                              %span -
+                              .actions
+                                %a.edit
+                                  %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "274"}
+                    %ol.children.17
+                    .toggle-icon
+                    .toggle-arrow
+                    .toggle-block
+                .toggle-icon
+                .toggle-arrow
+                .toggle-block
+            .toggle-icon
+            .toggle-arrow
+            .toggle-block
+          %li.department.zero-children.ui-droppable.droppable
+            %input.12.toggle{:type => "checkbox"}/
+            %input.12.department-toggle{:type => "checkbox"}/
+            .line.12
+            .line-child
+            .line-clear
+            .counter.12 0
+            .department-card.12
+            .expander{"role-expander" => "role-expander"}
+            .d-card-title.12.ui-draggable
+              .expander{"role-expander" => "role-expander"}
+              %label
+                %span{:title => "Двойной щелчок для редактирования"} Проектно-конструкт...
+                %input/
+              .destroy-department.12
+              .options
+            .d-card-body.12.ui-droppable.droppable
+              .boss-card.12
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/69/thumb_1636664f-c799-457c-aef6-686ef273f946.png"}/
+                  .name
+                    %a{:href => "/users/66"} Gerlachll Johnff Jamalmm
+                    .detailed
+                      %span Начальник Отдела
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "230"}
+                          %span.workers-counter
+                            3
+                            %i.icon-user
+              .workers.12
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/152/thumb_dcafa208-4977-421e-a47c-7d4ffcc8137a.png"}/
+                  .name
+                    %a{:href => "/users/149"} Bergstromll Thadff Haleighmm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "313"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/129/thumb_fea00e7c-f319-4c7a-bc55-7e64daf60215.png"}/
+                  .name
+                    %a{:href => "/users/126"} Friesenll Lonieff Rosaleemm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "290"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/146/thumb_163f8a2e-2c3a-4fef-a3e9-9458d614c037.png"}/
+                  .name
+                    %a{:href => "/users/143"} Fritschll Birdieff Esthermm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "307"}
+            %ol.children.12
+            .toggle-icon
+            .toggle-arrow
+            .toggle-block
+          %li.department.zero-children.ui-droppable.droppable
+            %input.13.toggle{:type => "checkbox"}/
+            %input.13.department-toggle{:type => "checkbox"}/
+            .line.13
+            .line-child
+            .line-clear
+            .counter.13 0
+            .department-card.13
+            .expander{"role-expander" => "role-expander"}
+            .d-card-title.13.ui-draggable
+              .expander{"role-expander" => "role-expander"}
+              %label
+                %span{:title => "Двойной щелчок для редактирования"} Транспортный отдел
+                %input/
+              .destroy-department.13
+              .options
+            .d-card-body.13.ui-droppable.droppable
+              .boss-card.13
+              .workers.13
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/74/thumb_5defe464-86f1-4315-b46e-b66456657c5a.png"}/
+                  .name
+                    %a{:href => "/users/71"} Binsll Eldaff Annamm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "235"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/163/thumb_124ae5ad-f682-4996-bd66-261e142b0e69.png"}/
+                  .name
+                    %a{:href => "/users/160"} Franeckill Abagailff Gloriamm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "324"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/69/thumb_1636664f-c799-457c-aef6-686ef273f946.png"}/
+                  .name
+                    %a{:href => "/users/66"} Gerlachll Johnff Jamalmm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "222"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/98/thumb_58e6ca31-bf6b-41be-8f8e-b51622f7033b.png"}/
+                  .name
+                    %a{:href => "/users/95"} Gibsonll Ransomff Santamm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "259"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/123/thumb_4279f81a-e69c-49d4-b6e0-abaf7c01af3d.png"}/
+                  .name
+                    %a{:href => "/users/120"} Hintzll Alizeff Alysonmm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "284"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/155/thumb_a85ebda5-acf0-4f8e-aea1-1ea070d1c218.png"}/
+                  .name
+                    %a{:href => "/users/152"} Kiehnll Ellsworthff Marisamm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "316"}
+            %ol.children.13
+            .toggle-icon
+            .toggle-arrow
+            .toggle-block
+          %li.department.ui-droppable.droppable
+            %input.11.toggle{:type => "checkbox"}/
+            %input.11.department-toggle{:type => "checkbox"}/
+            .line.11
+            .line-child
+            .line-clear
+            .counter.11 1
+            .department-card.11
+            .expander{"role-expander" => "role-expander"}
+            .d-card-title.11.ui-draggable
+              .expander{"role-expander" => "role-expander"}
+              %label
+                %span{:title => "Двойной щелчок для редактирования"} Финансовый отдел
+                %input/
+              .destroy-department.11
+              .options
+            .d-card-body.11.ui-droppable.droppable
+              .boss-card.11
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/3/thumb_c02d9765-687d-43ac-a23a-82ded8ebf278.jpg"}/
+                  .name
+                    %a{:href => "/users/3"} Крам Марк
+                    .detailed
+                      %span Начальник Отдела
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "595"}
+                          %span.workers-counter
+                            4
+                            %i.icon-user
+              .workers.11
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/110/thumb_715aac8b-ca36-4044-a436-efc85259386d.png"}/
+                  .name
+                    %a{:href => "/users/107"} Carrollll Marcelinoff Cruzmm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "271"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/156/thumb_ce234ec9-7ef8-4841-851b-346858e169f8.png"}/
+                  .name
+                    %a{:href => "/users/153"} Haleyll Barneyff Cornellmm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "317"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/103/thumb_6b75302d-e98c-482b-8e62-b04d0d37237d.png"}/
+                  .name
+                    %a{:href => "/users/100"} Halvorsonll Theoff Charlenemm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "264"}
+                .memberships-contract.ui-draggable
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/140/thumb_6f7479f3-4959-412a-a4ac-673c9da4d652.png"}/
+                  .name
+                    %a{:href => "/users/137"} Hamillll Vernff Parkermm
+                    .detailed
+                      %span -
+                      .actions
+                        %a.edit
+                          %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "301"}
+            %ol.children.11
+              %li.department.zero-children.ui-droppable.droppable
+                %input.125.toggle{:type => "checkbox"}/
+                %input.125.department-toggle{:type => "checkbox"}/
+                .line.125
+                .line-child
+                .line-clear
+                .counter.125 0
+                .department-card.125
+                .expander{"role-expander" => "role-expander"}
+                .d-card-title.125.ui-draggable
+                  .expander{"role-expander" => "role-expander"}
+                  %label
+                    %span{:title => "Двойной щелчок для редактирования"} апрпа
+                    %input/
+                  .destroy-department.125
+                  .options
+                .d-card-body.125.ui-droppable.droppable
+                  .boss-card.125
+                  .workers.125
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/92/thumb_9aa56301-2c55-45f2-8d8c-561e4be17c7d.png"}/
+                      .name
+                        %a{:href => "/users/89"} Howell Mathiasff Zanemm
+                        .detailed
+                          %span hjgjgjg
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "253"}
+                    .memberships-contract.ui-draggable
+                      %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/66/thumb_66a2cacb-719f-41ff-a55a-37c8e8f5fbc4.png"}/
+                      .name
+                        %a{:href => "/users/63"} Lehnerll Westleyff Diamondmm
+                        .detailed
+                          %span -
+                          .actions
+                            %a.edit
+                              %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "219"}
+                %ol.children.125
+                .toggle-icon
+                .toggle-arrow
+                .toggle-block
+            .toggle-icon
+            .toggle-arrow
+            .toggle-block
+        .toggle-icon
+        .toggle-arrow
+        .toggle-block
+    .personal-tree
+      .personal-tree-header
+        .title Правила постановки задач
+        .close-btn
+          %i.icon-remove
+      .personal-tree-body
+        .masters-column
+          .btn.dark.column-title.expanded
+            .expander{"data-expand-on-init" => "data-expand-on-init", "data-target" => ".task-rules-list", "role-expander" => "ready"}
+            %a Поставщики
+            .search-expander{"data-expanded-class" => "search-expanded", "data-target" => ".search, .search-results", "role-search-expander" => "ready", :style => "background-color: #338cae;"}
+              %i.icon-plus
+          .search{:style => "background-color: #338cae;"}
+            %input/
+            %i.icon-search
+          .search-results
+          .task-rules-list.expanded
+            .group-workers-view
+              .btn.expanded
+                .expander{"data-expand-on-init" => "data-expand-on-init", "data-target" => ".workers.3", "role-expander" => "ready"}
+                %a Руководство
+              .workers.3.expanded
+                .memberships-contract
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/136/thumb_cd575ae5-163a-44a7-81fb-df861b1535dc.png"}/
+                  .name
+                    %a{:href => "/users/133"} Haagll Jameyff Lenoremm
+                    .detailed
+                      %span Секретарь
+                      %input.add-remove{:checked => "checked", :type => "checkbox"}/
+                      %i
+            .group-workers-view
+              .btn.expanded
+                .expander{"data-expand-on-init" => "data-expand-on-init", "data-target" => ".workers.11", "role-expander" => "ready"}
+                %a Финансовый отдел
+              .workers.11.expanded
+                .memberships-contract
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/140/thumb_6f7479f3-4959-412a-a4ac-673c9da4d652.png"}/
+                  .name
+                    %a{:href => "/users/137"} Hamillll Vernff Parkermm
+                    .detailed
+                      %span -
+                      %input.add-remove{:checked => "checked", :type => "checkbox"}/
+                      %i
+        .target-column
+          .arrow
+          .btn.expanded
+            .expander{"data-expand-on-init" => "data-expand-on-init", "data-target" => ".target", "role-expander" => "ready"}
+            %a.department-title Руководство
+          .target.expanded
+            .memberships-contract
+              %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/2/thumb_0552aa14-0bdb-4fc0-85d7-ac98cd743f5d.jpg"}/
+              .name
+                %a{:href => "/users/2"} Mikhaylova Iren
+                .detailed
+                  %span В пВ поле
+                  .actions
+                    %a.edit
+                      %i.icon-reorder.popup-trigger.edit-job{"data-model-id" => "25"}
+          .arrow
+        .slaves-column
+          .btn.dark.column-title.expanded
+            .expander{"data-expand-on-init" => "data-expand-on-init", "data-target" => ".task-rules-list", "role-expander" => "ready"}
+            %a Исполнители
+            .search-expander{"data-expanded-class" => "search-expanded", "data-target" => ".search, .search-results", "role-search-expander" => "ready", :style => "background-color: #338cae;"}
+              %i.icon-plus
+          .search{:style => "background-color: #338cae;"}
+            %input/
+            %i.icon-search
+          .search-results
+          .task-rules-list.expanded
+            .group-workers-view
+              .btn.expanded
+                .expander{"data-expand-on-init" => "data-expand-on-init", "data-target" => ".workers.3", "role-expander" => "ready"}
+                %a Руководство
+              .workers.3.expanded
+                .memberships-contract
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/80/thumb_4d5be2ab-8e16-4ad8-9063-24c1f31cfcd0.png"}/
+                  .name
+                    %a{:href => "/users/77"} Beckerll Piperff Allenmm
+                    .detailed
+                      %span Администратор проекта
+                      %input.add-remove{:checked => "checked", :type => "checkbox"}/
+                      %i
+                .memberships-contract
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/136/thumb_cd575ae5-163a-44a7-81fb-df861b1535dc.png"}/
+                  .name
+                    %a{:href => "/users/133"} Haagll Jameyff Lenoremm
+                    .detailed
+                      %span Секретарь
+                      %input.add-remove{:checked => "checked", :type => "checkbox"}/
+                      %i
+                .memberships-contract
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/148/thumb_2b4de519-7678-406c-886e-2d390987ab01.png"}/
+                  .name
+                    %a{:href => "/users/145"} Keelingll Adeliaff Shanamm
+                    .detailed
+                      %span -
+                      %input.add-remove{:checked => "checked", :type => "checkbox"}/
+                      %i
+            .group-workers-view
+              .btn.expanded
+                .expander{"data-expand-on-init" => "data-expand-on-init", "data-target" => ".workers.11", "role-expander" => "ready"}
+                %a Финансовый отдел
+              .workers.11.expanded
+                .memberships-contract
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/3/thumb_c02d9765-687d-43ac-a23a-82ded8ebf278.jpg"}/
+                  .name
+                    %a{:href => "/users/3"} Крам Марк
+                    .detailed
+                      %span Начальник Отдела
+                      %input.add-remove{:checked => "checked", :type => "checkbox"}/
+                      %i
+            .group-workers-view
+              .btn.expanded
+                .expander{"data-expand-on-init" => "data-expand-on-init", "data-target" => ".workers.12", "role-expander" => "ready"}
+                %a Проектно-конструкторский отдел
+              .workers.12.expanded
+                .memberships-contract
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/69/thumb_1636664f-c799-457c-aef6-686ef273f946.png"}/
+                  .name
+                    %a{:href => "/users/66"} Gerlachll Johnff Jamalmm
+                    .detailed
+                      %span Начальник Отдела
+                      %input.add-remove{:checked => "checked", :type => "checkbox"}/
+                      %i
+            .group-workers-view
+              .btn.expanded
+                .expander{"data-expand-on-init" => "data-expand-on-init", "data-target" => ".workers.14", "role-expander" => "ready"}
+                %a Отдел маркетинга
+              .workers.14.expanded
+                .memberships-contract
+                  %img{"data-default-src" => "/assets/default-user-avatar.png", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/93/thumb_23ac6127-3968-4a50-9cea-35b5b478a06f.png"}/
+                  .name
+                    %a{:href => "/users/90"} Corkeryll Julianff Hughmm
+                    .detailed
+                      %span Начальник Отдела
+                      %input.add-remove{:checked => "checked", :type => "checkbox"}/
+                      %i
