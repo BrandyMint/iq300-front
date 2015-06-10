@@ -6,6 +6,10 @@
 .btn-xs
   font-size: $font-size-smaller
 
+.btn-xsm
+  @extend .btn-sm
+  +button-size(0, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-small)
+
 .btn-link-plain
   @extend .btn-link
   &, &:hover, &:focus

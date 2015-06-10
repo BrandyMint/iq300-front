@@ -9,26 +9,7 @@ nav_item: communities
 
   .application-content-block
     %section
-      .form-container.container-grey
-        .tabs-page-header
-          .row
-            .col-sm-2
-              .fluid-square
-                %a{:href => "#"}
-                  %img.fluid-square-content{:src => "/images/community/2.png", :alt => ""}/
-            .col-sm-10
-              .content-group
-                %h2.content-heading
-                  ООО «Старбакс»
-                  %small 123
-                %h4.content-heading Кабельные и беспроводные сети. Оборудование для IT-коммуникаций
-                %ul.list-inline
-                  %li +7 (8552) 30-55-42
-                  %li
-                    %a{:href => "#"} http://www.starbucks.com
-              .tabs-page-header-actions
-                %a.btn.btn-default{:href => "#"} Написать сообщение
-
+      = partial 'communities/profile/header'
       = partial 'communities/profile/tabs'
       .tab-content.tab-panels
         #community-profile.tab-pane.active
@@ -44,7 +25,7 @@ nav_item: communities
         #community-roles-edit.tab-pane
           = partial 'communities/profile/roles_edit'
 
-        #community-actions.tab-pane
+        -##community-actions.tab-pane
           = partial 'communities/profile/actions'
 
         #community-partners.tab-pane

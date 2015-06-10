@@ -1,0 +1,37 @@
+- tasks = [{bar: :info, title: 'Новые', value: 20},
+  {bar: :success, title: 'Активные', value: 12},
+  {bar: :danger, title: 'Просроченные', value: 4},
+  {bar: :default, title: 'Завершенные', value: 30}]
+- tasks_total = tasks.inject(0){|sum, t| sum + t[:value]}
+
+- projects = [{bar: :info, title: 'Новые', value: 2},
+  {bar: :success, title: 'Активные', value: 8},
+  {bar: :danger, title: 'Просроченные', value: 1},
+  {bar: :default, title: 'Завершенные', value: 3}]
+
+- projects_total = projects.inject(0){|sum, t| sum + t[:value]}
+
+
+.community-profile
+  .row
+    .col-md-2
+      Задачи на сегодня
+    .col-md-10
+      .progress
+        - tasks.each do |t|
+          - width = t[:value].to_f/tasks_total.to_f*100
+          .progress-bar{class: "progress-bar-#{t[:bar]}", :style => "width: #{width}%",
+              role: :tooltip, data: {'original-title' => t[:title]}}
+            = t[:value]
+  .row
+    .col-md-2
+      Проекты на сегодня
+    .col-md-10
+      .progress
+        - projects.each do |t|
+          - width = t[:value].to_f/projects_total.to_f*100
+          .progress-bar{class: "progress-bar-#{t[:bar]}", :style => "width: #{width}%",
+              role: :tooltip, data: {'original-title' => t[:title]}}
+            = t[:value]
+
+

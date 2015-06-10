@@ -1,0 +1,25 @@
+.community-profile-header-image
+  @extend .media
+
+.community-profile-header-image-block
+  @extend .pull-left
+  margin-right: $grid-gutter-width/2
+
+.community-profile-header-content
+  @extend .media-body
+
+.community-profile-header-image
+  width: $grid-gutter-width*2
+
+.community-profile-header-title
+  margin-bottom: $grid-gutter-width/3
+
+.community-tariff-progress
+  margin: 0.5em 0
+  height: 5px
+  +border-radius(0)
+  background-color: darken($gray-lighter, 5%)
+  &, .progress-bar
+    +box-shadow(none)
+  .progress-bar
+    background-color: desaturate(lighten($brand-primary, 20%), 30%)
