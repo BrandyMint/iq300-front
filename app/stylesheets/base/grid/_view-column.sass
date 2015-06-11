@@ -1,10 +1,4 @@
-%content-column-block-wide
-  overflow-x: hidden
-  overflow-y: auto
-  +overflow-scrolling
-
 .column-content-fluid
-  @extend %content-column-block-wide
   padding:
     top: $grid-gutter-width
     bottom: $grid-gutter-width * 2
@@ -14,7 +8,6 @@
   header.tab-navigation + .column-content
     top: 55px
   .column-content
-    @extend %content-column-block-wide
     .object-details
       padding: 26px 22px 10px 22px
       &, header
