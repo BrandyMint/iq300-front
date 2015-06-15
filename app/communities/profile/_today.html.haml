@@ -1,21 +1,21 @@
 - tasks = [{bar: :info, title: 'Новые', value: 20},
-  {bar: :success, title: 'Активные', value: 12},
+  {bar: :warning, title: 'Активные', value: 12},
   {bar: :danger, title: 'Просроченные', value: 4},
-  {bar: :default, title: 'Завершенные', value: 30}]
+  {bar: :success, title: 'Завершенные', value: 30}]
 - tasks_total = tasks.inject(0){|sum, t| sum + t[:value]}
 
 - projects = [{bar: :info, title: 'Новые', value: 2},
-  {bar: :success, title: 'Активные', value: 8},
+  {bar: :warning, title: 'Активные', value: 8},
   {bar: :danger, title: 'Просроченные', value: 1},
-  {bar: :default, title: 'Завершенные', value: 3}]
+  {bar: :success, title: 'Завершенные', value: 3}]
 
 - projects_total = projects.inject(0){|sum, t| sum + t[:value]}
 
 
-.community-profile
+.community-profile.community-profile-today
   .row
     .col-md-2
-      Задачи на сегодня
+      Задачи сегодня
     .col-md-10
       .progress
         - tasks.each do |t|
@@ -25,7 +25,7 @@
             = t[:value]
   .row
     .col-md-2
-      Проекты на сегодня
+      Проекты сегодня
     .col-md-10
       .progress
         - projects.each do |t|

@@ -11,38 +11,42 @@
               %small 123
             .content-group-sm
               .row
-                .col-sm-3
-                  Доступных проектов
+                .col-sm-1
+                  Проекты
                 .col-sm-6
                   .progress.community-tariff-progress
                     .progress-bar.progress-bar{:style => "width: 100%"}
-                .col-sm-3
-                  10 из 10
-                  &nbsp;&nbsp;
+                .col-sm-5
+                  .community-tariff-counter
+                    10 из 10
                   %a.btn.btn-xsm.btn-default
                     Повысить план
 
             .content-group-sm
               .row
-                .col-sm-3
-                  Доступных участников
+                .col-sm-1
+                  Участники
                 .col-sm-6
                   .progress.community-tariff-progress
                     .progress-bar.progress-bar{:style => "width: 50%"}
-                .col-sm-3
-                  25 из 50
-            %p
-              Тарифный план &laquo;Команда&raquo;
-              &nbsp;&mdash;&nbsp;
-              до окончания 2 месяца 15 дней
-              &nbsp;&nbsp;
-              %a.btn.btn-xsm.btn-default
-                Продлить подписку
+                .col-sm-5
+                  .community-tariff-counter
+                    25 из 50
+            .content-group-sm
+              .row
+                .col-sm-7
+                  %strong
+                    &laquo;Команда&raquo;
+                  &nbsp;&mdash;&nbsp;
+                  до окончания 2 месяца 15 дней
+                  &nbsp;&nbsp;
+                .col-sm-5
+                  .community-tariff-counter &nbsp;
+                  %a.btn.btn-xsm.btn-default
+                    Продлить подписку
 
       .col-sm-2.text-right
         %a.btn.btn-block.btn-default
           %i.fa.fa-cog
           Настройка
-        %a.btn.btn-block.btn-sm.btn-link-gray{href: 'javascript:confirm("Все проекты и задачи этого сообщества будут удалены. Продолжить?")'}
-          Расформировать
 

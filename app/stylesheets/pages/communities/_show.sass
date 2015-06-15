@@ -15,11 +15,16 @@
   margin-bottom: $grid-gutter-width/3
 
 .community-tariff-progress
-  margin: 0.5em 0
-  height: 5px
-  +border-radius(0)
-  background-color: darken($gray-lighter, 5%)
-  &, .progress-bar
-    +box-shadow(none)
-  .progress-bar
-    background-color: desaturate(lighten($brand-primary, 20%), 30%)
+  @extend .progress
+  margin:
+    top: 0
+    bottom: 0.5em
+
+.community-tariff-counter
+  display: inline-block
+  width: 80px
+
+.community-profile-today
+  padding:
+    top: $grid-gutter-width/2
+    bottom: $grid-gutter-width/2
