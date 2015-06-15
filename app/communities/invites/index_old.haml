@@ -1,208 +1,139 @@
 ---
 body_class: tasks-index
 ---
-%header.header-global.group
-  %a.logo{:href => "/", :title => "IQ300 System"}
-  .search-header{"role-search-form" => "ready"}
-    %span.search-button
-      %span.icon-search
-    %form.form-search{:action => "/communities/112", :method => "get"}
-      / - b = button_tag raw("<span class='icon-search'></span>")
-      / #{content_tag(:i)}#{i}#{b}
-      %i
-      %input#search.search-query.form-control{:name => "search", :placeholder => "Поиск", :role => "global-search-field", :type => "search"}
-  %span.app-version
-    v.1.5.2
-    %span ig-new_projects_list
-  .user-nav
-    %a{:href => "/help"} Помощь
-    %a{:href => "/users/82"}
-      %span.userpic
-        %img.img-corrector-initialized{:alt => "Егор", :hide_wait_message => "true", :src => "https://iq300-dev.s3.amazonaws.com/uploads/user_profile/photo/86/medium_8099a61d-7307-4c72-bf30-3dbf4d1f2164.png", :style => "width:44px; height:44px;", :title => "Городов Егор"}
-      Егор Городов
-    %a.fa.fa-sign-out{"data-method" => "delete", :href => "/users/sign_out", :rel => "nofollow", :title => "Выйти"}
-    / %section
-    / = render "shared/user_widget"
-    / .help-link>
-    / = link_to icon('question-sign'), "/help", title: t('common.help')
-  %input#app_signed_in_user_id{:name => "app_signed_in_user_id", :type => "hidden", :value => "82"}
-    %input#pusher_app_key{:name => "pusher_app_key", :type => "hidden", :value => "ba95502d0971c3028cdd"}
-.content.content-global.display-mode{"data-initial-action" => "show", :filters => "false", :full_view => "true", :list => "false", "role-display-mode" => "ready", :view => "true"}
-  %section.top-panel
-    .pull-left
-      %a.navigation{:href => "#", :onclick => "$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;"}
-        %i.icon-reorder
-      %a.add-button.small{"data-popup" => "add-button-target", :href => "/communities/new"}
-        %i.icon-plus
-      %a.add-button.big{"data-popup" => "add-button-target", :href => "/communities/new"}
-        %i.icon-plus
-        %span Создать сообщество
-  %nav.nav-global.menu-list{"data-channel" => "presence-82:notifications", "data-remote" => "true", "role-menu-list" => "ready"}
-    %ul
-      %li.menu-item.notifications{"data-extra-params" => "null", "data-params" => "null", "data-section" => "notifications", "data-url" => "/notifications"}
-        .html-notifier{"data-channel" => "presence-82:notifications", "data-redirect-url" => "/notifications?folder=new", "data-url" => "/notifications.count?folder=new", "role-html-notifier" => "ready"}
-          %audio#notice-audio
-            %source{:src => "/audios/notify.wav", :type => "audio/wav"}/
-        %a{:href => "/notifications"}
-          .picture
-            %i.icon-bell
-          %span Уведомления
-      %li.menu-item.tasks{"data-extra-params" => "{&quot;related&quot;:82,&quot;overdue&quot;:true,&quot;by_statuses&quot;:[&quot;new&quot;,&quot;browsed&quot;,&quot;refused&quot;,&quot;in_work&quot;]}", "data-params" => "{&quot;overview&quot;:82}", "data-section" => "tasks", "data-url" => "/tasks"}
-        %a{:href => "/tasks"}
-          .picture
-            %i.icon-list-alt
-            %sup 1
-            %sup.overdue 1
-          %span Задачи
-      %li.menu-item.projects.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "projects", "data-url" => "/projects"}
-        %a{:href => "/projects"}
-          .picture
-            %i.icon-books
-          %span Проекты
-      %li.menu-item.calendars.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "calendars", "data-url" => "/calendar"}
-        %a{:href => "/calendar"}
-          .picture
-            %i.icon-calendar
-          %span Календарь
-      %li.active.menu-item.communities.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "communities", "data-url" => "/communities"}
-        %a{:href => "/communities?folder=my"}
-          .picture
-            %i.icon-briefcase
-          %span Сообщества
-      %li.menu-item.docs.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "docs", "data-url" => "/docs"}
-        %a{:href => "/docs?folder=my"}
-          .picture
-            %i.icon-paste
-          %span Документы
-      %li.menu-item.conversations{"data-extra-params" => "null", "data-params" => "{&quot;folder&quot;:&quot;new&quot;}", "data-section" => "conversations", "data-url" => "/conversations"}
-        %a{:href => "/conversations"}
-          .picture
-            %i.icon-comment-alt
-          %span Сообщения
-      %li.menu-item.contacts.not-initialize{"data-extra-params" => "null", "data-params" => "null", "data-section" => "contacts", "data-url" => "/contacts"}
-        %a{:href => "/contacts?folder=all"}
-          .picture
-            %i.icon-group
-          %span Контакты
-  %section.list-column.communities-list-column{"data-url" => "/communities", "role-communities-list-column" => "ready"}
-    %ul
-      %li.header.sortable-header{"data-sortable-collection" => "communities", "data-store" => "1", "role-sortable-header" => "ready"}
-        .logo
-          %a.sorteddesc{"data-column" => "id", "data-direction" => "asc"}
-            %b Лого
-            %span.sort-arrow ↑
-        .name
-          %a{"data-column" => "title", "data-direction" => "asc"}
-            %b Название
-        .paid
-        .favorite
-          %i.icon-star-empty
-        .population
-    %ul.infinite-list
-      %li.active.community-item.remote{"data-id" => "112"}
-        .image
-          %img.default-community-picture.img-corrector-initialized{:alt => "1", "data-default-src" => "/assets/logo_x2.png", :src => "/assets/community/1.png"}
-        .name
-          .title
-            sdfsdf
-        .paid
-        .favorite
-          .favorite.favorite-view{"role-favorite-view" => "ready"}
-            %a{"data-method" => "put", :href => "/favorites?base_community_id=112", :rel => "nofollow"}
-              %i.icon-star-empty
-        .population
-          1
-          %i.icon-user
-  %section.view-column{"data-channel" => "private-base_community-112:update", "data-channel-template" => "private-base_community-%id%:update", "data-id" => "112", "data-url" => "/communities", "role-community-view-column" => "ready"}
-    :javascript
-      window.gon = window.gon || {}
-      window.gon.communityId = 112 // TODO try to use gon watch:true
-      $(document).ready(function() {
-        if (true) {
-          $('#community_members_tab a').click()
-        }
-      });
-    %header.tab-navigation
-      %ul.tabnav{"data-container" => "#community-tab-pane", "role-tabnav" => "ready"}
-        %li
-          %a{"data-target" => "community-details", :href => "/communities/112"} Детали
-        %li#community_members_tab
-          %a{"data-target" => "community-participants", :href => "/communities/112/member_users?per=500"} Участники
-        %li
-          %a{"data-target" => "community-contracts", :href => "/communities/112/contracts?initial=true"} Договоры
-        %li#community_reports_tab
-          %a{"data-target" => "community-reports", :href => "/communities/112/reports/new"} Отчёты
-        %li#community_invites_tab.active
-          %a{"data-target" => "community-invites", :href => "/communities/112/reports/new"} Приглашения
-      .column-controller
-        %a.enlarge.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "full-view", :state => "true", :title => "Развернуть"}
-          %i.icon-resize-small{"data-opposite-class" => "icon-resize-full"}
-        %a.close-panel.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "view", :state => "true", :title => "Закрыть"}
-          %i.icon-remove
-        %a.u-turn-right{"data-target" => "community-preferences", :href => "/communities/112/edit", :title => "Настройки сообщества"}
-          %i.icon-cog
-    #community-tab-pane.column-content
-      .community-invites-pane
-        %section.community-invites-form-section
-          .community-invites-form-title
-            %strong
-              Введите пользователей, которых вы хотите пригласить в сообщество
-          .community-invites-form-wrapper
-            %form.community-invites-form
-              .form-controls-wrapper
-                %textarea.invitation-email-area{placeholder: "e-mail пользователей для приглашения"}
-                %input{type: 'submit', class: "community-invites-btn-check", value: "Проверить"}
-        .community-invites-status-block
-          %table.table.community-invites-status-list
-            %thead
-              %tr.community-invites-status-item-head-row
-                %th.community-invites-status-item-head #
-                %th.community-invites-status-item-head Пользователь
-                %th.community-invites-status-item-head Статус
-                %th.community-invites-status-item-head Действия
-            %tbody
-              %tr
-                %td.id 1
-                %td.email name@company.com
-                %td.invite-people-list-status Готов к отправке
-                %td.community-invites-status-item-actions
-                  %a{href: "#", class: "community-invites-cancel-invite-link"} Удалить
-              %tr
-                %td.id 3
-                %td.email @@users.com
-                %td.invite-people-list-status-error Неверный формат адреса
-                %td.community-invites-status-item-actions
-                  %a{href: "#", class: "community-invites-cancel-invite-link"} Удалить
-          .collection-action
-            %form.send-invites
-              .form-controls-wrapper
-                %input{type: 'submit', class: "community-invites-btn-send", value: "Отправить"}
-        .community-invites-sended-block
-          .community-invites-sended-block-title
-            %strong
-              Список отправленных приглашений
-          .community-invites-waiting-people-list
-            %table.table.community-sended-invites-list
+
+.application-content
+  .application-content-top-panel
+    = partial 'projects/top_panel'
+    %section.top-panel
+      .pull-left
+        %a.navigation{:href => "#", :onclick => "$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;"}
+          %i.icon-reorder
+        %a.add-button.small{"data-popup" => "add-button-target", :href => "/communities/new"}
+          %i.icon-plus
+        %a.add-button.big{"data-popup" => "add-button-target", :href => "/communities/new"}
+          %i.icon-plus
+          %span Создать сообщество
+  .application-content-block
+    %section.list-column.communities-list-column{"data-url" => "/communities", "role-communities-list-column" => "ready"}
+      %ul
+        %li.header.sortable-header{"data-sortable-collection" => "communities", "data-store" => "1", "role-sortable-header" => "ready"}
+          .logo
+            %a.sorteddesc{"data-column" => "id", "data-direction" => "asc"}
+              %b Лого
+              %span.sort-arrow ↑
+          .name
+            %a{"data-column" => "title", "data-direction" => "asc"}
+              %b Название
+          .paid
+          .favorite
+            %i.icon-star-empty
+          .population
+      %ul.infinite-list
+        %li.active.community-item.remote{"data-id" => "112"}
+          .image
+            %img.default-community-picture.img-corrector-initialized{:alt => "1", "data-default-src" => "/assets/logo_x2.png", :src => "/assets/community/1.png"}
+          .name
+            .title
+              sdfsdf
+          .paid
+          .favorite
+            .favorite.favorite-view{"role-favorite-view" => "ready"}
+              %a{"data-method" => "put", :href => "/favorites?base_community_id=112", :rel => "nofollow"}
+                %i.icon-star-empty
+          .population
+            1
+            %i.icon-user
+    %section.view-column{"data-channel" => "private-base_community-112:update", "data-channel-template" => "private-base_community-%id%:update", "data-id" => "112", "data-url" => "/communities", "role-community-view-column" => "ready"}
+      :javascript
+        window.gon = window.gon || {}
+        window.gon.communityId = 112 // TODO try to use gon watch:true
+        $(document).ready(function() {
+          if (true) {
+            $('#community_members_tab a').click()
+          }
+        });
+      %header.tab-navigation
+        %ul.tabnav{"data-container" => "#community-tab-pane", "role-tabnav" => "ready"}
+          %li
+            %a{"data-target" => "community-details", :href => "/communities/112"} Детали
+          %li#community_members_tab
+            %a{"data-target" => "community-participants", :href => "/communities/112/member_users?per=500"} Участники
+          %li
+            %a{"data-target" => "community-contracts", :href => "/communities/112/contracts?initial=true"} Договоры
+          %li#community_reports_tab
+            %a{"data-target" => "community-reports", :href => "/communities/112/reports/new"} Отчёты
+          %li#community_invites_tab.active
+            %a{"data-target" => "community-invites", :href => "/communities/112/reports/new"} Приглашения
+        .column-controller
+          %a.enlarge.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "full-view", :state => "true", :title => "Развернуть"}
+            %i.icon-resize-small{"data-opposite-class" => "icon-resize-full"}
+          %a.close-panel.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "view", :state => "true", :title => "Закрыть"}
+            %i.icon-remove
+          %a.u-turn-right{"data-target" => "community-preferences", :href => "/communities/112/edit", :title => "Настройки сообщества"}
+            %i.icon-cog
+      #community-tab-pane.column-content
+        .community-invites-pane
+          %section.community-invites-form-section
+            .community-invites-form-title
+              %strong
+                Введите пользователей, которых вы хотите пригласить в сообщество
+            .community-invites-form-wrapper
+              %form.community-invites-form
+                .form-controls-wrapper
+                  %textarea.invitation-email-area{placeholder: "e-mail пользователей для приглашения"}
+                  %input{type: 'submit', class: "community-invites-btn-check", value: "Проверить"}
+          .community-invites-status-block
+            %table.table.community-invites-status-list
+              %thead
+                %tr.community-invites-status-item-head-row
+                  %th.community-invites-status-item-head #
+                  %th.community-invites-status-item-head Пользователь
+                  %th.community-invites-status-item-head Статус
+                  %th.community-invites-status-item-head Действия
               %tbody
-                %tr.community-sended-invite-item
-                  %td.community-sended-invite-item-detail.invitation-person-email shamil@users.com
-                  %td.community-sended-invite-item-detail.status
-                    .invite-people-list-status-accepted В сообществе
-                  %td.community-sended-invite-item-detail.actions.pull-right
-                    %a{href: "#", class: "community-invites-resend-invite-link"} Отправить приглашение заново
+                %tr
+                  %td.id 1
+                  %td.email name@company.com
+                  %td.invite-people-list-status Готов к отправке
+                  %td.community-invites-status-item-actions
                     %a{href: "#", class: "community-invites-cancel-invite-link"} Удалить
-                %tr.community-sended-invite-item
-                  %td.community-sended-invite-item-detail.invitation-person-email egor@users.com
-                  %td.community-sended-invite-item-detail.status
-                    .invite-people-list-status-invited Ждем ответа
-                  %td.community-sended-invite-item-detail.actions.pull-right
-                    %a{href: "#", class: "community-invites-resend-invite-link"} Отправить приглашение заново
+                %tr
+                  %td.id 3
+                  %td.email @@users.com
+                  %td.invite-people-list-status-error Неверный формат адреса
+                  %td.community-invites-status-item-actions
                     %a{href: "#", class: "community-invites-cancel-invite-link"} Удалить
-                %tr.community-sended-invite-item
-                  %td.community-sended-invite-item-detail.invitation-person-email egor@users.com
-                  %td.community-sended-invite-item-detail.status
-                    .invite-people-list-status-canceled Отменено
-                  %td.community-sended-invite-item-detail.actions.pull-right
-                    %a{href: "#", class: "community-invites-resend-invite-link"} Отправить приглашение заново
-                    %a{href: "#", class: "community-invites-cancel-invite-link"} Удалить
+            .collection-action
+              %form.send-invites
+                .form-controls-wrapper
+                  %input{type: 'submit', class: "community-invites-btn-send", value: "Отправить"}
+          .community-invites-sended-block
+            .community-invites-sended-block-title
+              %strong
+                Список отправленных приглашений
+            .community-invites-waiting-people-list
+              %table.table.community-sended-invites-list
+                %tbody
+                  %tr.community-sended-invite-item
+                    %td.community-sended-invite-item-detail.invitation-person-email shamil@users.com
+                    %td.community-sended-invite-item-detail.status
+                      .invite-people-list-status-accepted В сообществе
+                    %td.community-sended-invite-item-detail.actions.pull-right
+                      %a{href: "#", class: "community-invites-resend-invite-link"} Отправить приглашение заново
+                      %a{href: "#", class: "community-invites-cancel-invite-link"} Удалить
+                  %tr.community-sended-invite-item
+                    %td.community-sended-invite-item-detail.invitation-person-email egor@users.com
+                    %td.community-sended-invite-item-detail.status
+                      .invite-people-list-status-invited Ждем ответа
+                    %td.community-sended-invite-item-detail.actions.pull-right
+                      %a{href: "#", class: "community-invites-resend-invite-link"} Отправить приглашение заново
+                      %a{href: "#", class: "community-invites-cancel-invite-link"} Удалить
+                  %tr.community-sended-invite-item
+                    %td.community-sended-invite-item-detail.invitation-person-email egor@users.com
+                    %td.community-sended-invite-item-detail.status
+                      .invite-people-list-status-canceled Отменено
+                    %td.community-sended-invite-item-detail.actions.pull-right
+                      %a{href: "#", class: "community-invites-resend-invite-link"} Отправить приглашение заново
+                      %a{href: "#", class: "community-invites-cancel-invite-link"} Удалить
 
