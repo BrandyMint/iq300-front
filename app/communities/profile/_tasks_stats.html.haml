@@ -1,0 +1,302 @@
+.community-tasks-chart{"role-community-tasks-chart" => "ready", :style => "padding-bottom:20px;"}
+  %h2.pull-left
+    Статистика по задачам за последние 10 дней
+  .pull-right
+    %a.btn.btn-default{:href => "/communities/2933/statistic_items", :target => "_blank"} Подробнее
+  .clearfix
+  .community-tasks-chart-container{"data-height" => "250", "data-url" => "/api/web/communities/2933/statistic_items", :role => "community-tasks-chart"}
+    .c3{:style => "opacity: 1; max-height: 250px; position: relative; overflow: hidden;"}
+      %svg{:height => "250", :style => "overflow: hidden;", :width => "1110"}
+        %defs
+          %clippath#c3-1433932342788-clip
+            %rect{:height => "196", :width => "1068"}
+          %clippath#c3-1433932342788-clip-xaxis
+            %rect{:height => "70", :width => "1140", :x => "-41", :y => "-20"}
+          %clippath#c3-1433932342788-clip-yaxis
+            %rect{:height => "220", :width => "60", :x => "-39", :y => "-4"}
+          %clippath#c3-1433932342788-clip-grid
+            %rect{:height => "196", :width => "1068"}
+          %clippath#c3-1433932342788-clip-subchart
+            %rect{:width => "1068"}
+        %g{:transform => "translate(40.5,4.5)"}
+          %text.c3-text.c3-empty{"dominant-baseline" => "middle", :style => "opacity: 0;", "text-anchor" => "middle", :x => "534", :y => "98"}
+          %rect.c3-zoom-rect{:height => "196", :style => "opacity: 0;", :width => "1068"}
+          %g.c3-regions{"clip-path" => "url(https://app.iq300.ru/communities/2933/profile#c3-1433932342788-clip)", :style => "visibility: visible;"}
+          %g.c3-grid{"clip-path" => "url(https://app.iq300.ru/communities/2933/profile#c3-1433932342788-clip-grid)", :style => "visibility: visible;"}
+            %g.c3-xgrid-focus
+              %line.c3-xgrid-focus{:style => "visibility: hidden;", :x1 => "325", :x2 => "325", :y1 => "0", :y2 => "196"}
+          %g.c3-chart{"clip-path" => "url(https://app.iq300.ru/communities/2933/profile#c3-1433932342788-clip)"}
+            %g.c3-event-rects.c3-event-rects-single{:style => "fill-opacity: 0;"}
+              %rect.c3-event-rect.c3-event-rect-0{:height => "196", :width => "58", :x => "5.5", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-1{:height => "196", :width => "104.5", :x => "63.5", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-2{:height => "196", :width => "104.5", :x => "168", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-3{:height => "196", :width => "105", :x => "272.5", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-4{:height => "196", :width => "104.5", :x => "377.5", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-5{:height => "196", :width => "104.5", :x => "482", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-6{:height => "196", :width => "105", :x => "586.5", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-7{:height => "196", :width => "105", :x => "691.5", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-8{:height => "196", :width => "104.5", :x => "796.5", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-9{:height => "196", :width => "104.5", :x => "901", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-10{:height => "196", :width => "57.5", :x => "1005.5", :y => "0"}
+            %g.c3-chart-bars
+              %g.c3-chart-bar.c3-target{:class => "c3-target-Поставленные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-shapes.c3-bars{:class => "c3-shapes-Поставленные c3-bars-Поставленные", :style => "cursor: pointer;"}
+              %g.c3-chart-bar.c3-target{:class => "c3-target-Выполненные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-shapes.c3-bars{:class => "c3-shapes-Выполненные c3-bars-Выполненные", :style => "cursor: pointer;"}
+              %g.c3-chart-bar.c3-target{:class => "c3-target-Просроченные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-shapes.c3-bars{:class => "c3-shapes-Просроченные c3-bars-Просроченные", :style => "cursor: pointer;"}
+            %g.c3-chart-lines
+              %g.c3-chart-line.c3-target{:class => "c3-target-Поставленные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-shapes.c3-lines{:class => "c3-shapes-Поставленные c3-lines-Поставленные"}
+                  %path.c3-shape.c3-shape.c3-line{:class => "c3-line-Поставленные", :d => "M11,196Q95.1,196,116,196C147.35,196,188.65,196,220,196S293.5,196,325,196S398.65,196,430,196S502.65,196,534,196S607.5,196,639,196S712.5,196,744,196S817.65,196,849,196S921.65,196,953,196Q973.9,196,1058,196", :style => "stroke: rgb(51, 140, 174); opacity: 1;"}
+                %g.c3-shapes.c3-areas{:class => "c3-shapes-Поставленные c3-areas-Поставленные"}
+                  %path.c3-shape.c3-shape.c3-area{:class => "c3-area-Поставленные", :d => "M11,196Q95.1,196,116,196C147.35,196,188.65,196,220,196S293.5,196,325,196S398.65,196,430,196S502.65,196,534,196S607.5,196,639,196S712.5,196,744,196S817.65,196,849,196S921.65,196,953,196Q973.9,196,1058,196L1058,196Q973.9,196,953,196C921.65,196,880.35,196,849,196S775.5,196,744,196S670.5,196,639,196S565.35,196,534,196S461.35,196,430,196S356.5,196,325,196S251.35,196,220,196S147.35,196,116,196Q95.1,196,11,196Z", :style => "fill: rgb(51, 140, 174); opacity: 0.200000002980232;"}
+                %g.c3-selected-circles{:class => "c3-selected-circles-Поставленные"}
+                %g.c3-shapes.c3-circles{:class => "c3-shapes-Поставленные c3-circles-Поставленные", :style => "cursor: pointer;"}
+                  %circle.c3-shape.c3-shape-0.c3-circle.c3-circle-0{:cx => "11", :cy => "196", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-1.c3-circle.c3-circle-1{:cx => "116", :cy => "196", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-2.c3-circle.c3-circle-2{:cx => "220", :cy => "196", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-3.c3-circle.c3-circle-3{:cx => "325", :cy => "196", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-4.c3-circle.c3-circle-4{:cx => "430", :cy => "196", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-5.c3-circle.c3-circle-5{:cx => "534", :cy => "196", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-6.c3-circle.c3-circle-6{:cx => "639", :cy => "196", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-7.c3-circle.c3-circle-7{:cx => "744", :cy => "196", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-8.c3-circle.c3-circle-8{:cx => "849", :cy => "196", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-9.c3-circle.c3-circle-9{:cx => "953", :cy => "196", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-10.c3-circle.c3-circle-10{:cx => "1058", :cy => "196", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+              %g.c3-chart-line.c3-target{:class => "c3-target-Выполненные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-shapes.c3-lines{:class => "c3-shapes-Выполненные c3-lines-Выполненные"}
+                  %path.c3-shape.c3-shape.c3-line{:class => "c3-line-Выполненные", :d => "M11,196Q95.1,196,116,196C147.35,196,188.65,196,220,196S293.5,196,325,196S398.65,196,430,196S502.65,196,534,196S607.5,196,639,196S712.5,196,744,196S817.65,196,849,196S921.65,196,953,196Q973.9,196,1058,196", :style => "stroke: rgb(0, 128, 0); opacity: 1;"}
+                %g.c3-shapes.c3-areas{:class => "c3-shapes-Выполненные c3-areas-Выполненные"}
+                  %path.c3-shape.c3-shape.c3-area{:class => "c3-area-Выполненные", :d => "M11,196Q95.1,196,116,196C147.35,196,188.65,196,220,196S293.5,196,325,196S398.65,196,430,196S502.65,196,534,196S607.5,196,639,196S712.5,196,744,196S817.65,196,849,196S921.65,196,953,196Q973.9,196,1058,196L1058,196Q973.9,196,953,196C921.65,196,880.35,196,849,196S775.5,196,744,196S670.5,196,639,196S565.35,196,534,196S461.35,196,430,196S356.5,196,325,196S251.35,196,220,196S147.35,196,116,196Q95.1,196,11,196Z", :style => "fill: rgb(0, 128, 0); opacity: 0.200000002980232;"}
+                %g.c3-selected-circles{:class => "c3-selected-circles-Выполненные"}
+                %g.c3-shapes.c3-circles{:class => "c3-shapes-Выполненные c3-circles-Выполненные", :style => "cursor: pointer;"}
+                  %circle.c3-shape.c3-shape-0.c3-circle.c3-circle-0{:cx => "11", :cy => "196", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-1.c3-circle.c3-circle-1{:cx => "116", :cy => "196", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-2.c3-circle.c3-circle-2{:cx => "220", :cy => "196", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-3.c3-circle.c3-circle-3{:cx => "325", :cy => "196", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-4.c3-circle.c3-circle-4{:cx => "430", :cy => "196", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-5.c3-circle.c3-circle-5{:cx => "534", :cy => "196", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-6.c3-circle.c3-circle-6{:cx => "639", :cy => "196", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-7.c3-circle.c3-circle-7{:cx => "744", :cy => "196", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-8.c3-circle.c3-circle-8{:cx => "849", :cy => "196", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-9.c3-circle.c3-circle-9{:cx => "953", :cy => "196", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-10.c3-circle.c3-circle-10{:cx => "1058", :cy => "196", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+              %g.c3-chart-line.c3-target{:class => "c3-target-Просроченные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-shapes.c3-lines{:class => "c3-shapes-Просроченные c3-lines-Просроченные"}
+                  %path.c3-shape.c3-shape.c3-line{:class => "c3-line-Просроченные", :d => "M11,196Q95.1,196,116,196C147.35,196,188.65,196,220,196S293.5,196,325,196S398.65,196,430,196S502.65,196,534,196S607.5,196,639,196S712.5,196,744,196S817.65,196,849,196S921.65,196,953,196Q973.9,196,1058,196", :style => "stroke: rgb(255, 0, 0); opacity: 1;"}
+                %g.c3-shapes.c3-areas{:class => "c3-shapes-Просроченные c3-areas-Просроченные"}
+                  %path.c3-shape.c3-shape.c3-area{:class => "c3-area-Просроченные", :d => "M11,196Q95.1,196,116,196C147.35,196,188.65,196,220,196S293.5,196,325,196S398.65,196,430,196S502.65,196,534,196S607.5,196,639,196S712.5,196,744,196S817.65,196,849,196S921.65,196,953,196Q973.9,196,1058,196L1058,196Q973.9,196,953,196C921.65,196,880.35,196,849,196S775.5,196,744,196S670.5,196,639,196S565.35,196,534,196S461.35,196,430,196S356.5,196,325,196S251.35,196,220,196S147.35,196,116,196Q95.1,196,11,196Z", :style => "fill: rgb(255, 0, 0); opacity: 0.200000002980232;"}
+                %g.c3-selected-circles{:class => "c3-selected-circles-Просроченные"}
+                %g.c3-shapes.c3-circles{:class => "c3-shapes-Просроченные c3-circles-Просроченные", :style => "cursor: pointer;"}
+                  %circle.c3-shape.c3-shape-0.c3-circle.c3-circle-0{:cx => "11", :cy => "196", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-1.c3-circle.c3-circle-1{:cx => "116", :cy => "196", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-2.c3-circle.c3-circle-2{:cx => "220", :cy => "196", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-3.c3-circle.c3-circle-3{:cx => "325", :cy => "196", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-4.c3-circle.c3-circle-4{:cx => "430", :cy => "196", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-5.c3-circle.c3-circle-5{:cx => "534", :cy => "196", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-6.c3-circle.c3-circle-6{:cx => "639", :cy => "196", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-7.c3-circle.c3-circle-7{:cx => "744", :cy => "196", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-8.c3-circle.c3-circle-8{:cx => "849", :cy => "196", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-9.c3-circle.c3-circle-9{:cx => "953", :cy => "196", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-10.c3-circle.c3-circle-10{:cx => "1058", :cy => "196", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+            %g.c3-chart-arcs{:transform => "translate(534,93)"}
+              %text.c3-chart-arcs-title{:style => "text-anchor: middle; opacity: 0;"}
+            %g.c3-chart-texts
+              %g.c3-chart-text.c3-target{:class => "c3-target-Поставленные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-texts{:class => "c3-texts-Поставленные"}
+              %g.c3-chart-text.c3-target{:class => "c3-target-Выполненные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-texts{:class => "c3-texts-Выполненные"}
+              %g.c3-chart-text.c3-target{:class => "c3-target-Просроченные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-texts{:class => "c3-texts-Просроченные"}
+          %g.c3-grid.c3-grid-lines{"clip-path" => "url(https://app.iq300.ru/communities/2933/profile#c3-1433932342788-clip-grid)"}
+            %g.c3-xgrid-lines
+            %g.c3-ygrid-lines
+          %g.c3-axis.c3-axis-x{"clip-path" => "url(https://app.iq300.ru/communities/2933/profile#c3-1433932342788-clip-xaxis)", :style => "visibility: visible; opacity: 1;", :transform => "translate(0,196)"}
+            %text.c3-axis-x-label{:dx => "-0.5em", :dy => "-0.5em", :style => "text-anchor: end;", :transform => "", :x => "1068"}
+            %g.tick{:style => "opacity: 1;", :transform => "translate(11, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 31-05-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(116, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: none;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 1-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(220, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 2-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(325, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: none;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 3-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(430, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 4-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(534, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: none;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 5-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(639, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 6-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(744, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: none;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 7-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(849, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 8-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(953, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: none;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 9-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(1058, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 10-06-2015
+            %path.domain{:d => "M0,6V0H1068V6"}
+          %g.c3-axis.c3-axis-y{"clip-path" => "url(https://app.iq300.ru/communities/2933/profile#c3-1433932342788-clip-yaxis)", :style => "visibility: visible; opacity: 1;", :transform => "translate(0,0)"}
+            %text.c3-axis-y-label{:dx => "-0.5em", :dy => "1.2em", :style => "text-anchor: end;", :transform => "rotate(-90)", :x => "0"}
+            %path.domain{:d => "M-6,1H0V196H-6"}
+          %g.c3-axis.c3-axis-y2{:style => "visibility: hidden; opacity: 1;", :transform => "translate(1068,0)"}
+            %text.c3-axis-y2-label{:dx => "-0.5em", :dy => "-0.5em", :style => "text-anchor: end;", :transform => "rotate(-90)", :x => "0"}
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,196)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,177)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.1
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,157)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.2
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,138)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.3
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,118)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.4
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,99)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.5
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,79)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.6
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,60)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.7
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,40)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.8
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,21)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.9
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,1)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 1
+            %path.domain{:d => "M6,1H0V196H6"}
+        %g{:style => "visibility: hidden;", :transform => "translate(40.5,250.5)"}
+          %g.c3-chart{"clip-path" => "url(https://app.iq300.ru/communities/2933/profile#c3-1433932342788-clip-subchart)"}
+            %g.c3-chart-bars
+            %g.c3-chart-lines
+          %g.c3-brush{"clip-path" => "url(https://app.iq300.ru/communities/2933/profile#c3-1433932342788-clip)", :style => "pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"}
+            %rect.background{:style => "visibility: hidden; cursor: crosshair;", :width => "0", :x => "0"}
+            %rect.extent{:style => "cursor: move;", :width => "0", :x => "0"}
+            %g.resize.e{:style => "cursor: ew-resize; display: none;", :transform => "translate(0,0)"}
+              %rect{:height => "6", :style => "visibility: hidden;", :width => "6", :x => "-3"}
+            %g.resize.w{:style => "cursor: ew-resize; display: none;", :transform => "translate(0,0)"}
+              %rect{:height => "6", :style => "visibility: hidden;", :width => "6", :x => "-3"}
+          %g.c3-axis-x{"clip-path" => "url(https://app.iq300.ru/communities/2933/profile#c3-1433932342788-clip-xaxis)", :style => "opacity: 1;", :transform => "translate(0,0)"}
+            %g.tick{:style => "opacity: 1;", :transform => "translate(11, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 31-05-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(116, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: none;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 1-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(220, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 2-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(325, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: none;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 3-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(430, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 4-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(534, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: none;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 5-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(639, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 6-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(744, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: none;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 7-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(849, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 8-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(953, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: none;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 9-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(1058, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 10-06-2015
+            %path.domain{:d => "M0,6V0H1068V6"}
+        %g{:transform => "translate(0,230)"}
+          %g.c3-legend-item{:class => "c3-legend-item-Поставленные", :style => "visibility: visible; cursor: pointer; opacity: 1;"}
+            %text{:style => "pointer-events: none;", :x => "414.0078125", :y => "9"} Поставленные
+            %rect.c3-legend-item-event{:height => "18", :style => "fill-opacity: 0;", :width => "107.84375", :x => "400.0078125", :y => "-5"}
+            %rect.c3-legend-item-tile{:height => "10", :style => "pointer-events: none; fill: rgb(51, 140, 174);", :width => "10", :x => "400.0078125", :y => "0"}
+          %g.c3-legend-item{:class => "c3-legend-item-Выполненные", :style => "visibility: visible; cursor: pointer; opacity: 1;"}
+            %text{:style => "pointer-events: none;", :x => "521.8515625", :y => "9"} Выполненные
+            %rect.c3-legend-item-event{:height => "18", :style => "fill-opacity: 0;", :width => "103.953125", :x => "507.8515625", :y => "-5"}
+            %rect.c3-legend-item-tile{:height => "10", :style => "pointer-events: none; fill: rgb(0, 128, 0);", :width => "10", :x => "507.8515625", :y => "0"}
+          %g.c3-legend-item{:class => "c3-legend-item-Просроченные", :style => "visibility: visible; cursor: pointer;"}
+            %text{:style => "pointer-events: none;", :x => "625.8046875", :y => "9"} Просроченные
+            %rect.c3-legend-item-event{:height => "18", :style => "fill-opacity: 0;", :width => "98.1875", :x => "611.8046875", :y => "-5"}
+            %rect.c3-legend-item-tile{:height => "10", :style => "pointer-events: none; fill: rgb(255, 0, 0);", :width => "10", :x => "611.8046875", :y => "0"}
+      .c3-tooltip-container{:style => "position: absolute; pointer-events: none; display: none; top: 48.5px; left: 385.5px;"}
+        %table.c3-tooltip
+          %tbody
+            %tr
+              %th{:colspan => "2"} 3-06-2015
+            %tr{:class => "c3-tooltip-name-Поставленные"}
+              %td.name
+                %span{:style => "background-color:#338cae"}>
+                Поставленные
+              %td.value 0
+            %tr{:class => "c3-tooltip-name-Выполненные"}
+              %td.name
+                %span{:style => "background-color:green"}>
+                Выполненные
+              %td.value 0
+            %tr{:class => "c3-tooltip-name-Просроченные"}
+              %td.name
+                %span{:style => "background-color:red"}>
+                Просроченные
+              %td.value 0
+

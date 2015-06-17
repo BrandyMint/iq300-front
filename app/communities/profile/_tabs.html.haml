@@ -1,7 +1,7 @@
 %ul.nav.nav-tabs.tab-buttons.tabnav.container-grey
   %li.active
     %a{"data-toggle" => "tab", :href => "#community-profile"}
-      Профиль
+      Сводка
       %span.badge{:role => "counter"}
   %li
     %a{"data-class" => "accessor-users-view", "data-target" => "tab", :href => "/tasks/121/accessor_users"}
@@ -14,17 +14,18 @@
       Участники
       %small.text-muted 17
   %li
-    %a{"data-toggle" => "tab", :href => "#community-departments"} Структура сообщества
+    %a{"data-toggle" => "tab", :href => "#community-departments"} Структура
   %li
-    %a{"data-toggle" => "tab", :href => "#community-partners"} Карта партнера
-  -#%li
-    %a{"data-toggle" => "tab", :href => "#community-partners-edit"} Редактировать карту партнера
+    %a{"data-toggle" => "tab", :href => "#invites"} Приглашения
   %li
     %a{"data-toggle" => "tab", :href => "#community-reports"} Отчеты
-  %li
+  -#%li
     %a{"data-toggle" => "tab", :href => "#community-actions"} Активность
   %li
-    %a{"data-toggle" => "tab", :href => "[role='community-billing']"} Биллинг
+    %a.nav-tab-item-btn{"data-toggle" => "tab", :href => "[role='community-billing']"}
+      %span.nav-tab-item-btn-label
+        %i.fa.fa-credit-card
+        Оплата
 
 
 

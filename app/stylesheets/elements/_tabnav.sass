@@ -3,6 +3,23 @@
     & > a
       &:hover
         color: $blue-link-color
+      &.nav-tab-item-btn
+        padding:
+          @each $s in top, bottom
+            #{$s}: nth($nav-link-padding,1) - $padding-small-vertical - 1px
+          @each $s in left, right
+            #{$s}: nth($nav-link-padding,1) - $padding-small-horizontal - 1px
+    &.active
+      & > a
+        &.nav-tab-item-btn
+          .nav-tab-item-btn-label
+            border-color: transparent
+
+.nav-tab-item-btn-label
+  @extend .btn
+  @extend .btn-outline-gray
+  padding: $padding-small-vertical $padding-small-horizontal
+  background-color: transparent
 
 header.tab-navigation
   background: #f1f5f6
