@@ -1,0 +1,12 @@
+- id = (5000 + rand(999))
+- time = locals[:time] || "#{8 + rand(12)}:#{10 + rand(49)}"
+
+.notification-list-item-block{role: 'notification-list-item-block'}
+  .panel.panel-default.notification-list-item-block-card.notification-list-item-block-important.collapse.in{role: 'notification-list-item'}
+    .panel-body
+      = partial 'notifications/list/list_item_body_important', locals: {time: time}
+
+    %a.notification-list-item-close-btn{href: '#', role: 'notification-list-item-close-btn'}
+      &times;
+
+

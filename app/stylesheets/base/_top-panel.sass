@@ -288,3 +288,17 @@
   font-size: $font-size-h4
   font-weight: bold
   text-align: center
+
+.top-panel-block-left
+  margin-right: $grid-gutter-width/2
+
+.top-panel-block-right
+  margin-left: $grid-gutter-width/2
+
+.top-panel-btn
+  +transition(transform 0.3s ease, opacity 0.3s ease)
+  +translate(0, 0)
+  opacity: 1
+  &.top-panel-btn-hidden
+    +translate(0, -100%)
+    opacity: 0

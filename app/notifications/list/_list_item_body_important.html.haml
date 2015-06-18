@@ -1,0 +1,58 @@
+- id = locals[:id]
+- title = 'Сообщество «Айкью 300, ООО»'
+- text = 'Осталось 3 дня на тарифе «Команда».'
+- time = locals[:time] || "#{8 + rand(12)}:#{10 + rand(49)}"
+
+
+.row
+  .notifications-list-item-date-block
+    10 июля 
+    %div
+      = "#{8 + rand(12)}:#{10 + rand(49)}"
+
+  .notifications-list-item-description-block
+    .media
+      %a.pull-left{:href => "/users/203"}
+        %img.user-avatar.media-object.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", :title => "Мещеряков Александр"}
+      .media-body
+        .notification-list-item-description
+          %a{:href => "/users/203"}
+            Александр Мещеряков
+          %br
+          = truncate(text, length: 200)
+          %a{href: ''}
+            Подробнее
+            %i.fa.fa-angle-right
+
+  .notifications-list-item-title-block
+    %small.text-muted.notification-type
+      = id
+    .notification-list-item-title
+      %a.notification-name{href: ''}
+        %strong= truncate(title, length: 50)
+
+-#.row
+  .col-md-1
+    Сегодня
+    %br
+    = time
+  .col-md-11
+    .media
+      %a.pull-left{:href => "/users/203"}
+        %img.user-avatar.media-object.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", 
+          :src => "https://iq300.s3.amazonaws.com/uploads/community_profile/logo/677/normal_0f8f780b-4956-466c-ac0a-ccf94e30ca83.png", :title => "Мещеряков Александр"}
+      .media-body
+        .notification-list-item-description
+          %a.btn-link-primary.btn-link-plain{href: '/projects/show/discussions'}
+            %strong
+              = truncate(title, length: 50)
+          %br
+          = truncate(text, length: 140)
+          %a{href: ''}
+            Продлите подписку
+            %i.fa.fa-angle-right
+  -#.col-md-1
+    %a.notification-list-item-open-btn{href: '', role: 'notification-list-item-open-btn'}
+      %i.fa.fa-angle-right.notification-list-item-open-btn-icon
+        
+
