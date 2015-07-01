@@ -1,3 +1,4 @@
+
 .btn
   padding:
     top: $padding-base-vertical - 1px
@@ -18,18 +19,27 @@
 @each $color in "white" #fff, "gray-lighter" $gray-lighter, "gray-light" $gray-light, "gray" $gray, "success" $brand-success, "danger" $brand-danger, "warning" $brand-warning, "primary" $brand-primary
   .btn-link-#{nth($color, 1)}
     @extend .btn-link
-    color: nth($color, 2)
+    &, &:focus
+      color: nth($color, 2)
     &:hover
       color: darken(nth($color, 2), 10%)
 
-@each $color in "gray-light" $gray-light, "gray" $gray, "danger" $brand-danger, "primary" $brand-primary, "success" $brand-success
+@each $color in "gray-light" $gray-light $text-color, "gray" $gray #fff, "danger" $brand-danger #fff, "primary" $brand-primary #fff, "success" $brand-success #fff
   .btn-outline-#{nth($color, 1)}
     @extend .btn-default
-    color: nth($color, 2)
-    border-color: lighten(nth($color, 2), 30%)
-    &:hover, &:hover
+    &, &:focus
+      color: nth($color, 2)
+      border-color: lighten(nth($color, 2), 30%)
+    &:hover
       color: darken(nth($color, 2), 10%)
       border-color: lighten(nth($color, 2), 20%)
+    &.active
+      box-shadow: none
+      &, &:hover, &:focus
+        color: nth($color, 3)
+        background-color: nth($color, 2)
+        border-color: nth($color, 2)
+
 
 input[type="submit"]
   &.btn

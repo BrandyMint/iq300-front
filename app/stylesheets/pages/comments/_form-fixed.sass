@@ -1,4 +1,5 @@
 $comment-fixed-form-breakpoint: $container-fixed-width - $navColumnWidth
+$comment-form-buttons-width: 30px
 
 .comments-form-block
   @extend .comments-form
@@ -45,6 +46,15 @@ $comment-fixed-form-breakpoint: $container-fixed-width - $navColumnWidth
 .comment-form-tip-content
   +center-block-content
 
+.comments-form-actions-block
+  padding-left: $comment-form-buttons-width
 
+.comments-form-buttons-block
+  @extend .pull-left
+  margin-left: - $comment-form-buttons-width
 
-
+.comment-tab-content
+  .tab-pane
+    display: none
+    &.active
+      display: block

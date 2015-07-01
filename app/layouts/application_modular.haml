@@ -1,0 +1,43 @@
+!!! 5
+/[if lt IE 7]   <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us">
+/[if IE 7]      <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us">
+/[if IE 8]      <html class="no-js lt-ie10 lt-ie9" lang="en-us">
+/[if IE 9]      <html class="no-js lt-ie10 lt-ie9" lang="en-us">
+/[if lt IE 10]  <html class="no-js lt-ie10" lang="en-us">
+/[if !IE]>
+%html{lang: 'en', class: 'no-js'}
+  /<![endif]
+  %head
+    = partial 'layouts/head'
+  %body{class: current_page.data.body_class || 'page'}
+    .application-wrapper
+      = partial 'shared/header'
+      .application-container
+        = partial 'shared/_navigation', locals: {active: current_page.data.nav_item || ''}
+        - if content_for?(:filters_column)
+          .application-filters
+            = yield(:filters_column)
+
+        .application-content
+          .application-content-top-panel{role: 'application-content-top-panel'}
+            - if content_for?(:top_panel_block)
+              %section.top-panel
+                = yield(:top_panel_block)
+            = yield(:top_panel).presence
+
+          = yield(:top_panel_after).presence
+
+          - if content_for?(:content) || yield.present?
+            .application-content-block{role: 'application-content-block'}
+              = content_for?(:content) ? yield(:content) : yield
+
+          .application-content-bottom-block{role: 'application-content-bottom-block'}
+            = yield(:bottom_block).presence
+
+        .application-content-column
+          .application-content-column-block
+            = yield(:content_column).presence
+          .application-content-column-bottom-block{role: 'application-content-column-bottom-block'}
+            = yield(:content_column_bottom_block).presence
+
+= partial 'layouts/javascripts'
