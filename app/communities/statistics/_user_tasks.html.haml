@@ -1,0 +1,353 @@
+.col-md-11{"role-community-user-tasks-chart" => "ready", :style => "min-height:420px;"}
+  .community-user-tasks-chart-fields
+    %h2{:style => "padding-bottom:20px;"}
+      Статистика пользователей по задачам сообщества 'wfwerfergrtg trg t5g 5g 5g5g5'
+    .community-department-tasks-chart-filters{"data-community-id" => "205", "data-kind" => "user_tasks", :role => "chart-filters"}
+      .community-members.col-md-4
+        %select{"data-single" => "true", "data-url" => "/api/web/communities/205/members", "data-width" => "100%", :multiple => "multiple", :role => "community-members-select", :style => "display: none;"}
+          %optgroup{:label => "Руководство"}
+            %option{:label => "Эльвир Нуриахметов - Директор", :value => "8"}
+        .btn-group{:style => "width: 100%;"}
+          %button.multiselect.dropdown-toggle.btn.btn-default{"data-toggle" => "dropdown", :style => "width: 100%;", :title => "", :type => "button"}
+            %i.fa.fa-user
+            Эльвир Нуриахметов - Директор
+            %b.caret
+          %ul.multiselect-container.dropdown-menu{:style => "max-height: 200px; overflow-y: auto; overflow-x: hidden;"}
+            %li.multiselect-item.filter{:value => "0"}
+              .input-group
+                %span.input-group-addon
+                  %i.glyphicon.glyphicon-search
+                %input.form-control.multiselect-search{:placeholder => "Поиск", :type => "text"}/
+                %span.input-group-btn
+                  %button.btn.btn-default.multiselect-clear-filter{:type => "button"}
+                    %i.glyphicon.glyphicon-remove-circle
+            %li.multiselect-item.multiselect-group
+              %label Руководство
+            %li.active
+              %a{:href => "javascript:void(0);"}
+                %label.checkbox
+                  %input{:type => "checkbox", :value => "8"}/
+                  Эльвир Нуриахметов - Директор
+      .col-md-6
+        %label.input-group-inline-label.pull-left
+          За период
+        .pull-left
+          .input-group-inline-block.pull-left
+            .input-group{"data-group" => "community-department-tasks-chart", "data-max-date" => "03.07.2015", "data-min-date" => "11.11.2014", "data-period-role" => "start", "data-pick-time" => "false", :role => "begin-date", "role-bootstrap-datetimepicker" => "ready"}
+              %input.form-control.date-input.date-input-short{:role => "begin-date-input", :type => "text", :value => "23.06.2015"}/
+              .input-group-addon.btn{:role => "calendar-trigger"}
+                .fa.fa-calendar-o.fa-lg
+          .input-group-inline-dash.pull-left —
+          .input-group-inline-block.pull-left
+            .input-group{"data-group" => "community-department-tasks-chart", "data-max-date" => "03.07.2015", "data-min-date" => "11.11.2014", "data-period-role" => "end", "data-pick-time" => "false", :role => "chained-calendar", "role-bootstrap-datetimepicker" => "ready"}
+              %input.form-control.date-input.date-input-short{:role => "end-date-input", :type => "text", :value => "03.07.2015"}/
+              .input-group-addon.btn{:role => "calendar-trigger"}
+                .fa.fa-calendar-o.fa-lg
+          .pull-left
+             
+             
+            %a.btn.btn-default.btn-sm{:href => "#", :role => "submit"} Показать
+          .clearfix
+          %small
+            %a{"data-date" => "02.07.2015", :href => "#", :role => "begin-date-helper"} День
+             
+            %a{"data-date" => "26.06.2015", :href => "#", :role => "begin-date-helper"} Неделя
+             
+            %a{"data-date" => "03.06.2015", :href => "#", :role => "begin-date-helper"} Месяц
+        .clearfix
+      .col-md-2.pull-right
+        .pull-right
+          .btn.btn-default.btn-sm{"data-value" => "line", :role => "chart-data-type"}
+            %i.fa.fa-line-chart
+          .btn.btn-default.btn-sm{"data-value" => "area-spline", :disabled => "disabled", :role => "chart-data-type"}
+            %i.fa.fa-area-chart
+      .clearfix
+  .community-user-tasks-chart-container{"data-url" => "/api/web/communities/205/users/8/statistic_items", :role => "chart-container"}
+    .c3{:style => "opacity: 1; max-height: 320px; position: relative;"}
+      %svg{:height => "320", :style => "overflow: hidden;", :width => "1143.328125"}
+        %defs
+          %clippath#c3-1435926336013-clip
+            %rect{:height => "266", :width => "1101.328125"}
+          %clippath#c3-1435926336013-clip-xaxis
+            %rect{:height => "70", :width => "1173.328125", :x => "-41", :y => "-20"}
+          %clippath#c3-1435926336013-clip-yaxis
+            %rect{:height => "290", :width => "60", :x => "-39", :y => "-4"}
+          %clippath#c3-1435926336013-clip-grid
+            %rect{:height => "266", :width => "1101.328125"}
+          %clippath#c3-1435926336013-clip-subchart
+            %rect{:width => "1101.328125"}
+        %g{:transform => "translate(40.5,4.5)"}
+          %text.c3-text.c3-empty{"dominant-baseline" => "middle", :style => "opacity: 0;", "text-anchor" => "middle", :x => "550.6640625", :y => "133"}
+          %rect.c3-zoom-rect{:height => "266", :style => "opacity: 0;", :width => "1101.328125"}
+          %g.c3-regions{"clip-path" => "url(http://edge3.iq300.ru/communities/205/statistic_items#c3-1435926336013-clip)", :style => "visibility: visible;"}
+          %g.c3-grid{"clip-path" => "url(http://edge3.iq300.ru/communities/205/statistic_items#c3-1435926336013-clip-grid)", :style => "visibility: visible;"}
+            %g.c3-xgrid-focus
+              %line.c3-xgrid-focus{:style => "visibility: hidden;", :x1 => "-10", :x2 => "-10", :y1 => "0", :y2 => "266"}
+          %g.c3-chart{"clip-path" => "url(http://edge3.iq300.ru/communities/205/statistic_items#c3-1435926336013-clip)"}
+            %g.c3-event-rects.c3-event-rects-single{:style => "fill-opacity: 0;"}
+              %rect.c3-event-rect.c3-event-rect-0{:height => "266", :width => "59.5", :x => "5.5", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-1{:height => "266", :width => "162", :x => "65", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-2{:height => "266", :width => "162", :x => "227", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-3{:height => "266", :width => "108", :x => "389", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-4{:height => "266", :width => "108", :x => "497", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-5{:height => "266", :width => "108", :x => "605", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-6{:height => "266", :width => "216", :x => "713", :y => "0"}
+              %rect.c3-event-rect.c3-event-rect-7{:height => "266", :width => "167.5", :x => "929", :y => "0"}
+            %g.c3-chart-bars
+              %g.c3-chart-bar.c3-target{:class => "c3-target-Поставленные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-shapes.c3-bars{:class => "c3-shapes-Поставленные c3-bars-Поставленные", :style => "cursor: pointer;"}
+              %g.c3-chart-bar.c3-target{:class => "c3-target-Выполненные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-shapes.c3-bars{:class => "c3-shapes-Выполненные c3-bars-Выполненные", :style => "cursor: pointer;"}
+              %g.c3-chart-bar.c3-target{:class => "c3-target-Просроченные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-shapes.c3-bars{:class => "c3-shapes-Просроченные c3-bars-Просроченные", :style => "cursor: pointer;"}
+            %g.c3-chart-lines
+              %g.c3-chart-line.c3-target{:class => "c3-target-Поставленные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-shapes.c3-lines{:class => "c3-shapes-Поставленные c3-lines-Поставленные"}
+                  %path.c3-shape.c3-shape.c3-line{:class => "c3-line-Поставленные", :d => "M11,241.9090909090909Q86.6,263.59090909090907,119,266C167.60000000000002,269.6136363636364,286.4,266,335,266S410.6,266,443,266S518.6,266,551,266S626.6,266,659,266S702.2,266,767,266Q810.2,266,1091,266", :style => "stroke: rgb(51, 140, 174); opacity: 1;"}
+                %g.c3-shapes.c3-areas{:class => "c3-shapes-Поставленные c3-areas-Поставленные"}
+                  %path.c3-shape.c3-shape.c3-area{:class => "c3-area-Поставленные", :d => "M11,241.9090909090909Q86.6,263.59090909090907,119,266C167.60000000000002,269.6136363636364,286.4,266,335,266S410.6,266,443,266S518.6,266,551,266S626.6,266,659,266S702.2,266,767,266Q810.2,266,1091,266L1091,266Q810.2,266,767,266C702.2,266,691.4,266,659,266S583.4,266,551,266S475.4,266,443,266S383.6,266,335,266S167.60000000000002,266,119,266Q86.6,266,11,266Z", :style => "fill: rgb(51, 140, 174); opacity: 0.200000002980232;"}
+                %g.c3-selected-circles{:class => "c3-selected-circles-Поставленные"}
+                %g.c3-shapes.c3-circles{:class => "c3-shapes-Поставленные c3-circles-Поставленные", :style => "cursor: pointer;"}
+                  %circle.c3-shape.c3-shape-0.c3-circle.c3-circle-0{:cx => "11", :cy => "241.9090909090909", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-1.c3-circle.c3-circle-1{:cx => "119", :cy => "266", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-2.c3-circle.c3-circle-2{:cx => "335", :cy => "266", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-3.c3-circle.c3-circle-3{:cx => "443", :cy => "266", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-4.c3-circle.c3-circle-4{:cx => "551", :cy => "266", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-5.c3-circle.c3-circle-5{:cx => "659", :cy => "266", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-6.c3-circle.c3-circle-6{:cx => "767", :cy => "266", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-7.c3-circle.c3-circle-7{:cx => "1091", :cy => "266", :r => "2.5", :style => "fill: rgb(51, 140, 174); opacity: 1;"}
+              %g.c3-chart-line.c3-target{:class => "c3-target-Выполненные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-shapes.c3-lines{:class => "c3-shapes-Выполненные c3-lines-Выполненные"}
+                  %path.c3-shape.c3-shape.c3-line{:class => "c3-line-Выполненные", :d => "M11,266Q86.6,266,119,266C167.60000000000002,266,286.4,266,335,266S410.6,266,443,266S518.6,266,551,266S626.6,266,659,266S702.2,266,767,266Q810.2,266,1091,266", :style => "stroke: rgb(0, 128, 0); opacity: 1;"}
+                %g.c3-shapes.c3-areas{:class => "c3-shapes-Выполненные c3-areas-Выполненные"}
+                  %path.c3-shape.c3-shape.c3-area{:class => "c3-area-Выполненные", :d => "M11,266Q86.6,266,119,266C167.60000000000002,266,286.4,266,335,266S410.6,266,443,266S518.6,266,551,266S626.6,266,659,266S702.2,266,767,266Q810.2,266,1091,266L1091,266Q810.2,266,767,266C702.2,266,691.4,266,659,266S583.4,266,551,266S475.4,266,443,266S383.6,266,335,266S167.60000000000002,266,119,266Q86.6,266,11,266Z", :style => "fill: rgb(0, 128, 0); opacity: 0.200000002980232;"}
+                %g.c3-selected-circles{:class => "c3-selected-circles-Выполненные"}
+                %g.c3-shapes.c3-circles{:class => "c3-shapes-Выполненные c3-circles-Выполненные", :style => "cursor: pointer;"}
+                  %circle.c3-shape.c3-shape-0.c3-circle.c3-circle-0{:cx => "11", :cy => "266", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-1.c3-circle.c3-circle-1{:cx => "119", :cy => "266", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-2.c3-circle.c3-circle-2{:cx => "335", :cy => "266", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-3.c3-circle.c3-circle-3{:cx => "443", :cy => "266", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-4.c3-circle.c3-circle-4{:cx => "551", :cy => "266", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-5.c3-circle.c3-circle-5{:cx => "659", :cy => "266", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-6.c3-circle.c3-circle-6{:cx => "767", :cy => "266", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-7.c3-circle.c3-circle-7{:cx => "1091", :cy => "266", :r => "2.5", :style => "fill: rgb(0, 128, 0); opacity: 1;"}
+              %g.c3-chart-line.c3-target{:class => "c3-target-Просроченные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-shapes.c3-lines{:class => "c3-shapes-Просроченные c3-lines-Просроченные"}
+                  %path.c3-shape.c3-shape.c3-line{:class => "c3-line-Просроченные", :d => "M11,25.0909090909091Q86.6,25.0909090909091,119,25.0909090909091C167.60000000000002,25.0909090909091,286.4,25.0909090909091,335,25.0909090909091S410.6,25.0909090909091,443,25.0909090909091S518.6,25.0909090909091,551,25.0909090909091S626.6,25.0909090909091,659,25.0909090909091S702.2,25.0909090909091,767,25.0909090909091Q810.2,25.0909090909091,1091,25.0909090909091", :style => "stroke: rgb(255, 0, 0); opacity: 1;"}
+                %g.c3-shapes.c3-areas{:class => "c3-shapes-Просроченные c3-areas-Просроченные"}
+                  %path.c3-shape.c3-shape.c3-area{:class => "c3-area-Просроченные", :d => "M11,25.0909090909091Q86.6,25.0909090909091,119,25.0909090909091C167.60000000000002,25.0909090909091,286.4,25.0909090909091,335,25.0909090909091S410.6,25.0909090909091,443,25.0909090909091S518.6,25.0909090909091,551,25.0909090909091S626.6,25.0909090909091,659,25.0909090909091S702.2,25.0909090909091,767,25.0909090909091Q810.2,25.0909090909091,1091,25.0909090909091L1091,266Q810.2,266,767,266C702.2,266,691.4,266,659,266S583.4,266,551,266S475.4,266,443,266S383.6,266,335,266S167.60000000000002,266,119,266Q86.6,266,11,266Z", :style => "fill: rgb(255, 0, 0); opacity: 0.200000002980232;"}
+                %g.c3-selected-circles{:class => "c3-selected-circles-Просроченные"}
+                %g.c3-shapes.c3-circles{:class => "c3-shapes-Просроченные c3-circles-Просроченные", :style => "cursor: pointer;"}
+                  %circle.c3-shape.c3-shape-0.c3-circle.c3-circle-0{:cx => "11", :cy => "25.0909090909091", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-1.c3-circle.c3-circle-1{:cx => "119", :cy => "25.0909090909091", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-2.c3-circle.c3-circle-2{:cx => "335", :cy => "25.0909090909091", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-3.c3-circle.c3-circle-3{:cx => "443", :cy => "25.0909090909091", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-4.c3-circle.c3-circle-4{:cx => "551", :cy => "25.0909090909091", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-5.c3-circle.c3-circle-5{:cx => "659", :cy => "25.0909090909091", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-6.c3-circle.c3-circle-6{:cx => "767", :cy => "25.0909090909091", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+                  %circle.c3-shape.c3-shape-7.c3-circle.c3-circle-7{:cx => "1091", :cy => "25.0909090909091", :r => "2.5", :style => "fill: rgb(255, 0, 0); opacity: 1;"}
+            %g.c3-chart-arcs{:transform => "translate(550.6640625,128)"}
+              %text.c3-chart-arcs-title{:style => "text-anchor: middle; opacity: 0;"}
+            %g.c3-chart-texts
+              %g.c3-chart-text.c3-target{:class => "c3-target-Поставленные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-texts{:class => "c3-texts-Поставленные"}
+              %g.c3-chart-text.c3-target{:class => "c3-target-Выполненные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-texts{:class => "c3-texts-Выполненные"}
+              %g.c3-chart-text.c3-target{:class => "c3-target-Просроченные", :style => "opacity: 1; pointer-events: none;"}
+                %g.c3-texts{:class => "c3-texts-Просроченные"}
+          %g.c3-grid.c3-grid-lines{"clip-path" => "url(http://edge3.iq300.ru/communities/205/statistic_items#c3-1435926336013-clip-grid)"}
+            %g.c3-xgrid-lines
+            %g.c3-ygrid-lines
+          %g.c3-axis.c3-axis-x{"clip-path" => "url(http://edge3.iq300.ru/communities/205/statistic_items#c3-1435926336013-clip-xaxis)", :style => "visibility: visible; opacity: 1;", :transform => "translate(0,266)"}
+            %text.c3-axis-x-label{:dx => "-0.5em", :dy => "-0.5em", :style => "text-anchor: end;", :transform => "", :x => "1101.328125"}
+            %g.tick{:style => "opacity: 1;", :transform => "translate(11, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 23-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(119, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 24-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(335, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 26-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(443, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 27-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(551, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 28-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(659, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 29-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(767, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 30-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(1091, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 3-07-2015
+            %path.domain{:d => "M0,6V0H1101.328125V6"}
+          %g.c3-axis.c3-axis-y{"clip-path" => "url(http://edge3.iq300.ru/communities/205/statistic_items#c3-1435926336013-clip-yaxis)", :style => "visibility: visible; opacity: 1;", :transform => "translate(0,0)"}
+            %text.c3-axis-y-label{:dx => "-0.5em", :dy => "1.2em", :style => "text-anchor: end;", :transform => "rotate(-90)", :x => "0"}
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,266)"}
+              %line{:x2 => "-6"}
+              %text{:style => "text-anchor: end;", :x => "-9", :y => "0"}
+                %tspan{:dy => "3", :x => "-9"} 0
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,242)"}
+              %line{:x2 => "-6"}
+              %text{:style => "text-anchor: end;", :x => "-9", :y => "0"}
+                %tspan{:dy => "3", :x => "-9"} 1
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,218)"}
+              %line{:x2 => "-6"}
+              %text{:style => "text-anchor: end;", :x => "-9", :y => "0"}
+                %tspan{:dy => "3", :x => "-9"} 2
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,194)"}
+              %line{:x2 => "-6"}
+              %text{:style => "text-anchor: end;", :x => "-9", :y => "0"}
+                %tspan{:dy => "3", :x => "-9"} 3
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,170)"}
+              %line{:x2 => "-6"}
+              %text{:style => "text-anchor: end;", :x => "-9", :y => "0"}
+                %tspan{:dy => "3", :x => "-9"} 4
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,146)"}
+              %line{:x2 => "-6"}
+              %text{:style => "text-anchor: end;", :x => "-9", :y => "0"}
+                %tspan{:dy => "3", :x => "-9"} 5
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,122)"}
+              %line{:x2 => "-6"}
+              %text{:style => "text-anchor: end;", :x => "-9", :y => "0"}
+                %tspan{:dy => "3", :x => "-9"} 6
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,98)"}
+              %line{:x2 => "-6"}
+              %text{:style => "text-anchor: end;", :x => "-9", :y => "0"}
+                %tspan{:dy => "3", :x => "-9"} 7
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,74)"}
+              %line{:x2 => "-6"}
+              %text{:style => "text-anchor: end;", :x => "-9", :y => "0"}
+                %tspan{:dy => "3", :x => "-9"} 8
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,50)"}
+              %line{:x2 => "-6"}
+              %text{:style => "text-anchor: end;", :x => "-9", :y => "0"}
+                %tspan{:dy => "3", :x => "-9"} 9
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,26)"}
+              %line{:x2 => "-6"}
+              %text{:style => "text-anchor: end;", :x => "-9", :y => "0"}
+                %tspan{:dy => "3", :x => "-9"} 10
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,1)"}
+              %line{:x2 => "-6"}
+              %text{:style => "text-anchor: end;", :x => "-9", :y => "0"}
+                %tspan{:dy => "3", :x => "-9"} 11
+            %path.domain{:d => "M-6,1H0V266H-6"}
+          %g.c3-axis.c3-axis-y2{:style => "visibility: hidden; opacity: 1;", :transform => "translate(1101.328125,0)"}
+            %text.c3-axis-y2-label{:dx => "-0.5em", :dy => "-0.5em", :style => "text-anchor: end;", :transform => "rotate(-90)", :x => "0"}
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,266)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,240)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.1
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,213)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.2
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,187)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.3
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,160)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.4
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,134)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.5
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,107)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.6
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,81)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.7
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,54)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.8
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,28)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 0.9
+            %g.tick{:style => "opacity: 1;", :transform => "translate(0,1)"}
+              %line{:x2 => "6", :y2 => "0"}
+              %text{:style => "text-anchor: start;", :x => "9", :y => "0"}
+                %tspan{:dy => "3", :x => "9"} 1
+            %path.domain{:d => "M6,1H0V266H6"}
+        %g{:style => "visibility: hidden;", :transform => "translate(40.5,320.5)"}
+          %g.c3-chart{"clip-path" => "url(http://edge3.iq300.ru/communities/205/statistic_items#c3-1435926336013-clip-subchart)"}
+            %g.c3-chart-bars
+            %g.c3-chart-lines
+          %g.c3-brush{"clip-path" => "url(http://edge3.iq300.ru/communities/205/statistic_items#c3-1435926336013-clip)", :style => "pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"}
+            %rect.background{:style => "visibility: hidden; cursor: crosshair;", :width => "0", :x => "0"}
+            %rect.extent{:style => "cursor: move;", :width => "0", :x => "0"}
+            %g.resize.e{:style => "cursor: ew-resize; display: none;", :transform => "translate(0,0)"}
+              %rect{:height => "6", :style => "visibility: hidden;", :width => "6", :x => "-3"}
+            %g.resize.w{:style => "cursor: ew-resize; display: none;", :transform => "translate(0,0)"}
+              %rect{:height => "6", :style => "visibility: hidden;", :width => "6", :x => "-3"}
+          %g.c3-axis-x{"clip-path" => "url(http://edge3.iq300.ru/communities/205/statistic_items#c3-1435926336013-clip-xaxis)", :style => "opacity: 1;", :transform => "translate(0,0)"}
+            %g.tick{:style => "opacity: 1;", :transform => "translate(11, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 23-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(119, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 24-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(335, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 26-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(443, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 27-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(551, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 28-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(659, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 29-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(767, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 30-06-2015
+            %g.tick{:style => "opacity: 1;", :transform => "translate(1091, 0)"}
+              %line{:x1 => "0", :x2 => "0", :y2 => "6"}
+              %text{:style => "text-anchor: middle; display: block;", :transform => "", :x => "0", :y => "9"}
+                %tspan{:dx => "0", :dy => ".71em", :x => "0"} 3-07-2015
+            %path.domain{:d => "M0,6V0H1101.328125V6"}
+        %g{:transform => "translate(0,300)"}
+          %g.c3-legend-item{:class => "c3-legend-item-Поставленные", :style => "visibility: visible; cursor: pointer;"}
+            %text{:style => "pointer-events: none;", :x => "430.671875", :y => "9"} Поставленные
+            %rect.c3-legend-item-event{:height => "18", :style => "fill-opacity: 0;", :width => "107.84375", :x => "416.671875", :y => "-5"}
+            %rect.c3-legend-item-tile{:height => "10", :style => "pointer-events: none; fill: rgb(51, 140, 174);", :width => "10", :x => "416.671875", :y => "0"}
+          %g.c3-legend-item{:class => "c3-legend-item-Выполненные", :style => "visibility: visible; cursor: pointer;"}
+            %text{:style => "pointer-events: none;", :x => "538.515625", :y => "9"} Выполненные
+            %rect.c3-legend-item-event{:height => "18", :style => "fill-opacity: 0;", :width => "103.953125", :x => "524.515625", :y => "-5"}
+            %rect.c3-legend-item-tile{:height => "10", :style => "pointer-events: none; fill: rgb(0, 128, 0);", :width => "10", :x => "524.515625", :y => "0"}
+          %g.c3-legend-item{:class => "c3-legend-item-Просроченные", :style => "visibility: visible; cursor: pointer;"}
+            %text{:style => "pointer-events: none;", :x => "642.46875", :y => "9"} Просроченные
+            %rect.c3-legend-item-event{:height => "18", :style => "fill-opacity: 0;", :width => "98.1875", :x => "628.46875", :y => "-5"}
+            %rect.c3-legend-item-tile{:height => "10", :style => "pointer-events: none; fill: rgb(255, 0, 0);", :width => "10", :x => "628.46875", :y => "0"}
+      .c3-tooltip-container{:style => "position: absolute; pointer-events: none; display: none;"}
+

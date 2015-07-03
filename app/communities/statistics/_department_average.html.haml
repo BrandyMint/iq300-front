@@ -1,0 +1,75 @@
+.col-md-11.is-loading{"role-community-department-average-user-tasks-chart" => "ready", :style => "min-height:420px;"}
+  .community-department-average-user-tasks-chart-fields
+    %h2{:style => "padding-bottom:20px;"}
+      Количество созданных и выполненных задач на одного сотрудника по отделам сообщества 'wfwerfergrtg trg t5g 5g 5g5g5'
+    .community-department-average-user-tasks-chart-filters{"data-community-id" => "205", :role => "chart-filters"}
+      .community-departments.col-md-4
+        %select#department_id{"data-by-text" => "true", "data-single" => "true", "data-width" => "100%", :multiple => "multiple", :name => "department_id", :role => "community-departments-select", :style => "display: none;"}
+          %option{"data-children" => "true", :selected => "selected", :value => "33"} Руководство
+          %option{"data-children" => "false", :value => "118"} dev
+          %option{"data-children" => "false", :value => "0"} Нераспределенные
+        .btn-group{:style => "width: 100%;"}
+          %button.multiselect.dropdown-toggle.btn.btn-default{"data-toggle" => "dropdown", :style => "width: 100%;", :title => "Руководство", :type => "button"}
+            %i.fa.fa-user
+            Руководство
+            %b.caret
+          %ul.multiselect-container.dropdown-menu{:style => "max-height: 200px; overflow-y: auto; overflow-x: hidden;"}
+            %li.multiselect-item.filter{:value => "0"}
+              .input-group
+                %span.input-group-addon
+                  %i.glyphicon.glyphicon-search
+                %input.form-control.multiselect-search{:placeholder => "Поиск", :type => "text"}/
+                %span.input-group-btn
+                  %button.btn.btn-default.multiselect-clear-filter{:type => "button"}
+                    %i.glyphicon.glyphicon-remove-circle
+            %li.active
+              %a{:href => "javascript:void(0);"}
+                %label.checkbox
+                  %input{:type => "checkbox", :value => "33"}/
+                  Руководство
+            %li
+              %a{:href => "javascript:void(0);"}
+                %label.checkbox
+                  %input{:type => "checkbox", :value => "118"}/
+                  dev
+            %li
+              %a{:href => "javascript:void(0);"}
+                %label.checkbox
+                  %input{:type => "checkbox", :value => "0"}/
+                  Нераспределенные
+      .col-md-6
+        %label.input-group-inline-label.pull-left
+          За период
+        .pull-left
+          .input-group-inline-block.pull-left
+            .input-group{"data-group" => "community-department-average-user-tasks-chart", "data-max-date" => "03.07.2015", "data-min-date" => "11.11.2014", "data-period-role" => "start", "data-pick-time" => "false", :role => "begin-date", "role-bootstrap-datetimepicker" => "ready"}
+              %input.form-control.date-input.date-input-short{:role => "begin-date-input", :type => "text", :value => "23.06.2015"}/
+              .input-group-addon.btn{:role => "calendar-trigger"}
+                .fa.fa-calendar-o.fa-lg
+          .input-group-inline-dash.pull-left —
+          .input-group-inline-block.pull-left
+            .input-group{"data-group" => "community-department-average-user-tasks-chart", "data-max-date" => "03.07.2015", "data-min-date" => "11.11.2014", "data-period-role" => "end", "data-pick-time" => "false", :role => "chained-calendar", "role-bootstrap-datetimepicker" => "ready"}
+              %input.form-control.date-input.date-input-short{:role => "end-date-input", :type => "text", :value => "03.07.2015"}/
+              .input-group-addon.btn{:role => "calendar-trigger"}
+                .fa.fa-calendar-o.fa-lg
+          .pull-left
+             
+             
+            %a.btn.btn-default.btn-sm{:href => "#", :role => "submit"} Показать
+          .clearfix
+          %small
+            %a{"data-date" => "02.07.2015", :href => "#", :role => "begin-date-helper"} День
+             
+            %a{"data-date" => "26.06.2015", :href => "#", :role => "begin-date-helper"} Неделя
+             
+            %a{"data-date" => "03.06.2015", :href => "#", :role => "begin-date-helper"} Месяц
+        .clearfix
+      .col-md-2.pull-right
+        .pull-right
+          .btn.btn-default.btn-sm{"data-value" => "line", :role => "chart-data-type"}
+            %i.fa.fa-line-chart
+          .btn.btn-default.btn-sm{"data-value" => "area-spline", :disabled => "disabled", :role => "chart-data-type"}
+            %i.fa.fa-area-chart
+      .clearfix
+  .community-department-average-user-tasks-chart-container{:role => "chart-container"}
+

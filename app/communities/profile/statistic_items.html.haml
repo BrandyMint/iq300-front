@@ -1,0 +1,16 @@
+---
+layout: empty
+body_class: communities-profile
+nav_item: communities
+---
+.content-group
+  &nbsp;
+.content-group
+  - sections = [:tasks, :departments, :department_average, :user_tasks, :user_statuses, :user_average, :user_average_opened, :distribution]
+  - sections.each do |s|
+    .panel.panel-lg.panel-default
+      .panel-body
+        // this div is for static project only
+        %div{style: 'max-width: 100%; overflow: hidden'}
+          = partial "communities/statistics/#{s}"
+
