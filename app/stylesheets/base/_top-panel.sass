@@ -289,6 +289,14 @@
   font-weight: bold
   text-align: center
 
+.top-panel-content
+  line-height: $line-height-base
+
+.top-panel-form-block
+  padding:
+    @each $s in top, bottom
+      #{$s}: ($topPanelHeight - $input-height-base - 2px) / 2
+
 .top-panel-block-left
   margin-right: $grid-gutter-width/2
 

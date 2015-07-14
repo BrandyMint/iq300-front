@@ -1,7 +1,11 @@
 %section.top-panel
-  .pull-left
-    %a.navigation{:href => "#", :onclick => "$('#container').removeClass('show-filters show-list').toggleClass('show-navigation'); return false;"}
-      %i.icon-reorder
-    %a.voronka.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "filters", :onclick => "$('#container').removeClass('show-navigation show-list').toggleClass('show-filters'); return false;", :state => "true"}
-      %i.icon-filter
-
+  .container-fluid
+    .row
+      .col-md-2
+        %a.btn{:href => "/conversations"}
+          %span.fa.fa-reply
+          Сообщения
+      .col-md-10.text-right
+        %a.btn-link-plain.btn-link-gray{href: '/users/2'}
+          %img.member-box-avatar-image-small.conference-members-avatar-image{:src => data.avatars.last[:url], :alt => "", :width => "40px", :height => "40px"}
+          Эльвир Нуриахметов

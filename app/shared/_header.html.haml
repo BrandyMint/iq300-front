@@ -2,14 +2,15 @@
   = partial 'notifications/popover'
   %header.header-global
     %a.logo{href: "/", title: "IQ300 System"}
-    .search-header{"role-ready" => "search-form"}
-      %span.search-button
-        %span.icon-search
-      %form.form-search{action: "/projects/879", method: "get"}
-        / - b = button_tag raw("<span class='icon-search'></span>")
-        / #{content_tag(:i)}#{i}#{b}
-        %i
-        %input#search.search-query.form-control{name: "search", placeholder: "Поиск", role: "global-search-field", type: "search"}/
+    - if current_page.data.search
+      .search-header{"role-ready" => "search-form"}
+        %span.search-button
+          %span.icon-search
+        %form.form-search{action: "/projects/879", method: "get"}
+          / - b = button_tag raw("<span class='icon-search'></span>")
+          / #{content_tag(:i)}#{i}#{b}
+          %i
+          %input#search.search-query.form-control{name: "search", placeholder: "Поиск", role: "global-search-field", type: "search"}/
     %span.app-version
       = app_version
     .user-nav

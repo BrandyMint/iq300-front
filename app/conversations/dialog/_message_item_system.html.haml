@@ -1,0 +1,13 @@
+- text = locals[:text] || 'Шамиль Хамадеев добавил вас в групповой чат'
+- user_status = locals[:user_status] || 'offline'
+- files = locals[:files]
+
+.message-box-system
+  .message-body
+    .row
+      .col-xs-10
+        .message-body-text= text
+      .col-xs-2.text-right
+        %span.message-box-time 18:39
+
+

@@ -1,30 +1,86 @@
+%filters-column-list
+  padding-top: $grid-gutter-width / 2
+
 %filters-column-list-padding
   padding:
     left: $grid-gutter-width / 2
     right: $grid-gutter-width / 2
 
+%filters-column-list-item
+  @extend %filters-column-list-padding
+  padding:
+    top: 6px
+    bottom: 6px
+  display: block
+  color: $gray
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
 .filters-column-list
+  @extend %filters-column-list
   .counter,
   .grey-counter
     // TODO hide this in main app
     display: none
-  padding-top: $grid-gutter-width / 2
   & > li
     & > a
+      @extend %filters-column-list-item
       font-size: $font-size-base * 1.1
-      @extend %filters-column-list-padding
-      padding:
-        top: 6px
-        bottom: 6px
-      display: block
-      color: $gray
-      overflow: hidden
-      text-overflow: ellipsis
-      white-space: nowrap
-    &.active > a
-      font-weight: bold
+    &.active
+      & > a
+        font-weight: bold
+        &, &:hover
+          color: $brand-primary
+
+.contacts-filters-column-list
+  @extend %filters-column-list
+  & > li
+    & > a
+      @extend %filters-column-list-item
+      position: relative
+      font-size: $font-size-base
+      transition: color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease
       &, &:hover
-        color: $brand-primary
+        text-decoration: none
+      &:hover
+        color: $blue-link-color-hover
+    &.active
+      & > a
+        font-weight: bold
+        background-color: #fff
+        box-shadow: inset 0 1px rgba(#000, 0.05), inset 0 -1px rgba(#000, 0.05)
+        &, &:focus, &:hover
+          color: $text-color-dark
+    &.filters-column-list-item-new
+      & > a
+        &, &:focus
+          color: $brand-primary
+        &:hover
+          color: $blue-link-color-hover
+
+.filters-column-list-divider
+  padding: 0
+  margin:
+    top: -1px
+    bottom: -1px
+  border-bottom: 1px solid $line-color
+
+.filters-column-list-item-counter-sup
+  @extend %bubble-counter
+  position: absolute
+  width: auto
+  padding: 2px 4px
+  font-size: 10px
+  border: none
+  top: 2px
+  right: 10px
+
+.filters-column-list-section-title
+  @extend %filters-column-list-item
+  color: $text-muted
+  text-transform: uppercase
+  font-size: 0.85em
 
 .filters-column-list-item-expander
   @extend .fa

@@ -1,0 +1,28 @@
+%section.top-panel
+  .container-fluid
+    .row
+      .col-md-7
+        %a{role: :tooltip, 'data-original-title' => 'Изменить тему'}
+          %strong
+            Без темы
+      .col-md-5.text-right
+        - data.avatars.last(4).each do |u|
+          %a.btn-link-plain{href: '/users/2'}
+            %img.member-box-avatar-image-small.conference-members-avatar-image{:src => u[:url], :alt => "", :width => "40px", :height => "40px"}
+        &nbsp;
+        %a
+          и ещё 2
+        &nbsp;&nbsp;
+        %a.btn.btn-outline-primary{role: :tooltip, data: {'original-title' => 'Добавить участника'}, role: 'conference-add-member-btn'}
+          %i.fa.fa-plus
+        &nbsp;
+        %a.btn.btn-outline-primary{role: :tooltip, data: {'original-title' => 'Управление конференцией'}, role: 'conference-settings-btn'}
+          %i.fa.fa-cog
+        &nbsp;
+        %a.btn.btn-outline-gray-light{role: :tooltip, data: {'original-title' => 'Покинуть конференцию'}, role: 'conference-leave-btn',
+            href: 'javascript:confirm("Вы не сможете читать сообщения в этой конференции. Покинуть её?")'}
+          %i.fa.fa-times
+
+
+
+

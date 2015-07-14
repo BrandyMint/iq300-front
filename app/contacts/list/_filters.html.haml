@@ -1,0 +1,51 @@
+.navbar.navbar-default{role: 'tasks-list-filters'}
+  .tasks-list-filters-block-content
+    .row
+      .col-md-6.tasks-list-filters-block-section
+        .input-group-above.input-group-sm
+          #s2id_communities.select2-container{:style => "width: 100%;"}
+            %a.select2-choice{:href => "javascript:void(0)", :tabindex => "-1"}
+              %span#select2-chosen-1.select2-chosen Все сообщества
+              %abbr.select2-search-choice-close
+              %span.select2-arrow{:role => "presentation"}
+                %b{:role => "presentation"}
+            %label.select2-offscreen{:for => "s2id_autogen1"}
+            %input#s2id_autogen1.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-1", :role => "button", :type => "text"}/
+            .select2-drop.select2-display-none.select2-with-searchbox
+              .select2-search
+                %label.select2-offscreen{:for => "s2id_autogen1_search"}
+                %input#s2id_autogen1_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-1", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+              %ul#select2-results-1.select2-results{:role => "listbox"}
+          %select#communities.select2-offscreen{"data-param" => "by_community", :name => "communities", :role => "contacts-community-filter", :tabindex => "-1", :title => ""}
+            %option{:value => ""} Все сообщества
+            %option{:value => "956"} Айкью 300 - 4
+            %option{:value => "1605"} Айти Челны - 1
+            %option{:value => "1747"} Любимая семья - 1
+            %option{:value => "6451"} Зеленодольский муниципальный район - 1
+            %option{:value => "4025"} Рабочая группа по рассмотрению вопросов интеграции IQ300 и ЭДО  - 1
+            %option{:value => "2933"} UX fake community - 1
+            %option{:value => "4500"} пример - 1
+            %option{:value => "1302"} Сообщество 1 - 1
+            %option{:value => "8183"} Light Side of Force - 1
+            %option{:value => "4137"} Тестовое - 1
+            %option{:value => "6494"} Test - 1
+            %option{:value => "2203"} superman - 1
+            %option{:value => "6523"} КамаТред - 1
+            %option{:value => "5341"} Институт по проектированию объектов дорожного хозяйства Республики Татарстан "Татдорпроект" - 1
+            %option{:value => "3762"} цуц - 1
+            %option{:value => "182"} ООО "Центр "Практик" - 1
+            %option{:value => "1026"} Elance management - 1
+            %option{:value => "4874"} Apple - 1
+            %option{:value => "8043"} ММЭ - 1
+            %option{:value => "5748"} Исполнительный комитет Чистопольского муниципального района - 1
+            %option{:value => "4766"} Соrp Us - 1
+            %option{:value => "1884"} QA  - 1
+      .col-md-6.tasks-list-filters-block-section{:role => "tasks-sorted-panel"}
+        .input-group.input-group-sm{:role => "sorter"}
+          %select#sort.form-control.tasks-list-filters-block-select{"data-param" => "sort", :name => "sort", :role => "sorter-value"}
+            %option{:value => "created_at"}
+              Время добавления
+            %option{:value => "last_name"}
+              Фамилия
+          .input-group-btn{"data-direction" => "desc", :role => "sorter-direction"}
+            %a.btn.fa.fa-sort-amount-desc{:href => "#"}

@@ -1,0 +1,18 @@
+---
+body_class: contacts-index
+nav_item: contacts
+layout: application_modular
+---
+
+- content_for :filters_column do
+  = partial 'contacts/filters', locals: {active: :dialog}
+
+- content_for :top_panel do
+  = partial 'contacts/dialog/top_panel'
+
+- content_for :bottom_block do
+  = partial 'comments/form'
+
+%section.contacts-content-column.form-container-compact
+  = partial 'conversations/dialog/messages'
+

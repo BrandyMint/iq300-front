@@ -2,18 +2,15 @@
 - user_status = locals[:user_status] || 'offline'
 - files = locals[:files]
 
-.message-box
+.message-box.message-box-from-current-user
   .media
     .pull-left
-      .message-box-user-avatar
-        %a{:href => "#"}
-          %img.img-circle.message-box-user-avatar-image{:src => "/images/community/2.png", :alt => "", :width => "40px", :height => "40px"}/
-        .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right{class: "user-status-bullet-#{user_status}"}
+      .message-box-user-avatar-empty
     .media-body
       .message-box-header.group
         .pull-left
-          %a.message-box-title
-            Шамиль Хамадеев
+          %span.message-box-title
+            Александр Мещеряков
           %small.text-muted
             &nbsp;&nbsp;
             %a.btn-link-gray-light.btn-link-plain{href: '#', role: "conversation-message-fwd", data: {'original-title' => 'Переслать сообщение'}}

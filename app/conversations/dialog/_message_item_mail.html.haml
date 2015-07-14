@@ -1,6 +1,7 @@
 - text = locals[:text] || ''
 - user_status = locals[:user_status] || 'offline'
 - files = locals[:files]
+- task = locals[:task]
 
 .message-box
   .media
@@ -13,18 +14,30 @@
       .message-box-header.group
         .pull-left
           %a.message-box-title
-            Шамиль Хамадеев
+            Александр Мещеряков
           %small.text-muted
+            &nbsp;&nbsp;
+            %a.btn-link-gray-light{href: '', role: :tooltip, data: {'original-title' => 'Настроить получение и отправку'}}
+              Fwd из почты
+            &nbsp;&nbsp;
+            - if task
+              %a.btn.btn-xsm.btn-outline-primary{href: '/tasks/show'}
+                Задача #182315
+            - else
+              %a.btn.btn-xsm.btn-outline-primary{href: '/tasks/new'}
+                Добавить задачу
             &nbsp;&nbsp;
             %a.btn-link-gray-light.btn-link-plain{href: '#', role: "conversation-message-fwd", data: {'original-title' => 'Переслать сообщение'}}
               %i.fa.fa-mail-forward
 
-        -#, Алексеева Лиана, Чоловский Дмитрий 
         %span.message-box-time.pull-right 18 июля, 16:03
+
       .message-body
-        .message-body-text= text
+        .message-body-text
+          = text
+
         .message-box-files
-          - if files && files.any?
+          - if files.present?
             - files.each do |f|
               %a.btn.btn-default{:href => "#"}
                 %span.fa.fa-file-text-o 

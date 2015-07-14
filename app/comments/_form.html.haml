@@ -1,0 +1,42 @@
+%form#new_comment.comments-form.main-form.comments-form-block-fixed{role: 'comment-form', 
+  data: {'fixed-block-parent' => '@fixed-block-parent-comments'}}
+  .comment-form-content{role: 'comment-form-content'}
+    %div{ role: 'tabpanel' }
+      .comment-tab-content
+        .tab-pane.active{ role: 'tabpanel', id: 'text-editor' }
+          .comments-form-actions-block
+            .comments-form-actions.comments-form-buttons-block
+              %a.btn-plain.btn-link-primary.btn-block.add_nested_fields{role: :tooltip, data: {'original-title': 'Упомянуть пользователя'}}
+                %i.fa.fa-user.icon-size-16
+              %a.btn-plain.btn-link-primary.btn-block.add_nested_fields{role: :tooltip, data: {'original-title': 'Прикрепить файл'}}
+                %i.fa.fa-paperclip.icon-size-16
+            .comments-form-actions
+              .row
+                .col-sm-10
+                  %div{:style => "margin:0;padding:0;display:inline"}
+                    %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+                    %input{:name => "authenticity_token", :type => "hidden", :value => "uA6xR7HjabBYeN2QtkkPByY5w+mC3PIq0qRVBuwnwC0="}/
+                  %input#redirect_to{:name => "redirect_to", :type => "hidden", :value => "/tasks/109472"}/
+                  %textarea.comment-body.form-control.task-discussion-form-textarea{:placeholder => "Добавить комментарий", rows: 2, :role => "autosize", "test-comment-body" => "true", style: 'height: 36px;'}
+                .col-sm-2
+                  %input#btnSubmit.btn.btn-block.btn-primary{"data-wait" => "Отправка...", :name => "commit", :role => "submit-button", "test-submit-comment" => "true", :type => "submit", :value => "Отправить"}/
+              .comments-form-actions
+                .row
+                  .col-sm-5
+                    #discussion-attachments-137412{"data-files-max-size" => "50", :role => "files"}
+                    .progress{role: 'comment-form-upload-block', style: 'display: none;'}
+                      .progress-bar{role: 'comment-form-upload-progress', style: 'width: 10%'}
+                  .col-sm-5.text-center
+                    %a.pull-right{:href => "//ru.wikipedia.org/wiki/Markdown", :target => "_blank"} Markdown
+                    %span.pull-right
+                      Shift+Enter перенос строки
+                      &nbsp;&nbsp;
+                    .clearfix
+                #attachments_fields_blueprint{"data-blueprint" => "<div class='file fields' role='file'>\r\n<a href=\"#\"><span class='fa fa-file-text-o fa-lg'></span>\r\n</a><span class='file-name' role='file-name'>\r\nfile_name\r\n</span>\r\n<input id=\"comment_attachments_attributes_new_attachments_file\" name=\"comment[attachments_attributes][new_attachments][file]\" role=\"file-input\" style=\"display:none\" type=\"file\" />\r\n<input id=\"comment_attachments_attributes_new_attachments__destroy\" name=\"comment[attachments_attributes][new_attachments][_destroy]\" type=\"hidden\" value=\"false\" /><a href=\"javascript:void(0)\" class=\"delete remove_nested_fields\" data-association=\"attachments\" data-confirm=\"Вы уверены?\"><i class=\"icon-remove \" ></i></a>\r\n</div>\r\n", :style => "display: none"}
+          .comment-form-content.comment-form-tip{role: 'comment-form-tip-drag', style: 'display: none;'}
+            .comment-form-tip-content
+              Перетащите файлы для загрузки сюда
+          .comment-form-content.comment-form-tip{role: 'comment-form-tip-release', style: 'display: none;'}
+            .comment-form-tip-content
+              Отпустите кнопку мыши для загрузки файлов
+

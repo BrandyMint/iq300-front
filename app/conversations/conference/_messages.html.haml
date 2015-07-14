@@ -1,0 +1,11 @@
+- text = 'Нам программист нужен для этого проекта. Нам программист нужен для этого проекта. У тебя случайно нет таких знакомых с кем можно поработать в этом плане толковых? Может тебе интересно?'
+
+.content-group
+  = partial 'conversations/dialog/message_item_system'
+  = partial 'conversations/dialog/message_item', locals: {text: text}
+  = partial 'conversations/dialog/message_item_my', locals: {text: text}
+  = partial 'conversations/dialog/message_item', locals: {user_status: 'online', text: text}
+  = partial 'conversations/dialog/message_item_my', locals: {text: text}
+  = partial 'conversations/dialog/message_item', locals: {user_status: 'offline', files: ['file1.doc', 'file2.doc'], text: text}
+  = partial 'conversations/dialog/message_item_my', locals: {text: text}
+

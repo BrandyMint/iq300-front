@@ -1,8 +1,16 @@
 - text = 'Нам программист нужен для этого проекта. Нам программист нужен для этого проекта. У тебя случайно нет таких знакомых с кем можно поработать в этом плане толковых? Может тебе интересно?'
+- mail_text = 'Президент РФ Владимир Путин планирует поручить Министерству здравоохранения проработать программу дистанционной диагностики онкологических заболеваний. Глава государства заявил об этом на встрече с интернет-предпринимателями и представителями Фонда развития интернет-инициатив, информирует РИА Новости. С соответствующей инициативой перед президентом выступил руководитель интернет-проекта по дистанционной диагностике рака. Он попросил главу государства поддержать программу по введению стандартов дистанционной диагностики системы оказания онкологической помощи. Также он попросил помочь в организации закупок специальных сканеров. В свою очередь Владимир Путин заметил, что борьба с онкологическими заболеваниями является приоритетной задачей.'
 
 .content-group
   .tab-content-wide
+    = partial 'conversations/dialog/message_item_request'
     = partial 'conversations/dialog/message_item', locals: {text: text}
+    = partial 'conversations/dialog/message_item_my', locals: {text: text}
     = partial 'conversations/dialog/message_item', locals: {user_status: 'online', text: text}
+    = partial 'conversations/dialog/message_item_my', locals: {text: text}
+    = partial 'conversations/dialog/message_item_mail', locals: {text: mail_text}
+    = partial 'conversations/dialog/message_item_mail', locals: {text: mail_text, task: true}
+    = partial 'conversations/dialog/message_item_my', locals: {text: text}
     = partial 'conversations/dialog/message_item', locals: {user_status: 'offline', files: ['file1.doc', 'file2.doc'], text: text}
+    = partial 'conversations/dialog/message_item_my', locals: {text: text}
 

@@ -1,13 +1,27 @@
+- active = locals[:active] || :all
+
 %section.filters-column.contacts-filters-column
-  %ul.filters-column-list
-    %li.active
-      %a{:href => "/contacts"} Мои контакты
-    %li
-      %a{:href => "#"} Входящие
-    %li
-      %a{:href => "#"} Исходящие
-    %li
-      %a{:href => "#"} Все контакты
-    %li
-      %a{href: '/contacts/search/'} Поиск
+  %ul.contacts-filters-column-list
+    %li{class: "all #{active == :all ? 'active' : ''}"}
+      = link_to "/contacts/" do
+        Контакты
+    %li.filters-column-list-section-title
+      Недавние
+    - data.conversations.each_with_index do |c, i|
+      %li{class: "#{(active == c[:type].to_sym && !c[:new]) ? 'active' : ''} #{c[:new] ? 'filters-column-list-item-new' : ''}"}
+        = link_to "/contacts/#{c[:type]}/" do
+          - if c[:type].to_sym == :dialog
+            .icon-item-block
+              .user-status-bullet.user-status-bullet-inline.user-status-bullet-sm.user-status-bullet-online
+          - elsif c[:type].to_sym == :conference
+            %i.fa.fa-users.icon-item-block
+          = c[:name]
+          - if c[:new]
+            .filters-column-list-item-counter-sup
+              2
+    %li.filters-column-list-divider
+    %li{class: "all #{active == :history ? 'active' : ''}"}
+      = link_to "/contacts/history" do
+        %i.fa.fa-clock-o.icon-item-block
+        Все сообщения
 

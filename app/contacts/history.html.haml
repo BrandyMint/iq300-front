@@ -1,0 +1,15 @@
+---
+body_class: contacts-index
+nav_item: contacts
+layout: application_modular
+---
+
+- content_for :top_panel do
+  = partial 'contacts/messages_search'
+
+- content_for :filters_column do
+  = partial 'contacts/filters', locals: {active: :history}
+
+%section.contacts-content-column.container-fluid
+  = partial 'contacts/messages_list'
+
