@@ -1,11 +1,18 @@
 $kanban-state-row-width: 300px
 $kanban-card-name-width: 210px
 
+.kanban-box
+  background-color: $kanban-nav-font-color
+  min-width: 1920px
+  overflow-x: scroll
+
 .kanban-nav
   background-color: white
   width: 100%
   padding: 10px 15px 10px 15px
   color: $kanban-nav-font-color
+  > .kanban-nav-filter-input
+    margin-left: 30px
 
 .kanban-dashboard
   width: 100%
