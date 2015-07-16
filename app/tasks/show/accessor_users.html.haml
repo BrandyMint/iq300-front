@@ -12,7 +12,7 @@ nav_item: tasks
         %a.btn.btn-lg{:href => "/tasks"}
           %span.fa.fa-reply
           Список задач
-  .application-content-block
+  .application-content-block{role: 'application-content-block'}
     %section.view-column.task-view-column{"data-channel" => "private-base_task-65590:update", "data-channel-template" => "private-base_task-%id%:update", "data-status" => "completed", "data-url" => "/tasks/65590", "role-task-view-column" => "ready", "test-task-view" => ""}
       .form-container
         = partial 'tasks/show/title'

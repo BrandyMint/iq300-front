@@ -14,7 +14,7 @@ body_class: tasks-index
         %a.add-button.big{"data-popup" => "add-button-target", :href => "/communities/new"}
           %i.icon-plus
           %span Создать сообщество
-  .application-content-block
+  .application-content-block{role: 'application-content-block'}
     %section.list-column.communities-list-column{"data-url" => "/communities", "role-communities-list-column" => "ready"}
       %ul
         %li.header.sortable-header{"data-sortable-collection" => "communities", "data-store" => "1", "role-sortable-header" => "ready"}

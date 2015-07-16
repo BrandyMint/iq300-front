@@ -1,0 +1,37 @@
+%section.top-panel
+  .container-fluid
+    .notification-options
+      %form.form-inline.notification-options-form
+        .pull-left
+          .form-group
+            .checkbox
+              %label
+                %input{type: 'checkbox'}
+                Только новые
+        .pull-left
+          .form-group
+            &nbsp;
+            %a.btn.btn-link.link-gray-light{href: '#', role: 'tooltip'}
+              Отметить все как прочитанные
+
+        .pull-right
+          .form-group
+            %select.form-control
+              %option{selected: ''} Все уведомления
+              %option{:value => "id"} Задачи
+              %option{:value => "updated_at"} Проекты
+              %option{:value => "end_date"} Сообщества
+              %option{:value => "message"} Сообщения
+            %select.form-control
+              %option{selected: ''} Все сообщества
+              %option{:value => "id"} Айти Челны
+              %option{:value => "updated_at"} UX Fake
+              %option{:value => "end_date"} Айкью 300
+            %span c
+            %input.form-control.notification-options-date{type: "text", placeholder: "22.08.2014"}
+            %span по
+            %input.form-control.notification-options-date{type: "text", placeholder: "23.08.2014"}
+            %span.notification-options-collapse-link
+              %i.icon-chevron-up
+              Свернуть
+        .clearfix

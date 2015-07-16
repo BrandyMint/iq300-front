@@ -1,0 +1,12 @@
+- id = (5000 + rand(999))
+- status = locals[:status] || ''
+- children_count = locals[:children_count] || 0
+
+.notification-list-item-block{role: 'notification-list-item-block'}
+  .panel.panel-default.notification-list-item-block-card.collapse.in{role: 'notification-list-item'}
+    .panel-body
+      = partial 'notifications/list/list_item_body', locals: {type: type, type_activity: type_activity, id: id}
+
+    %a.notification-list-item-close-btn{href: '#', role: 'notification-list-item-close-btn'}
+      &times;
+

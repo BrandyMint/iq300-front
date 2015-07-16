@@ -1,0 +1,7 @@
+.btn-group.btn-group-horizontal.top-panel-block-left
+  - filters = {new: 'Новые', my: 'Мои уведомления', all: 'Вся активность'}
+  - filters.each_with_index do |(section, f), i|
+    %a.btn.btn-outline-primary{data: {toggle: :tab}, role: 'notification-list-tab-btn', href: "[role*='notification-list-tab-pane-#{section}']", class: "#{i == 0 ? 'active' : ''}"}
+      = f
+      - if i == 0
+        %span.notifications-bullet-item

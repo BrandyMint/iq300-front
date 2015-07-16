@@ -7,7 +7,7 @@ nav_item: projects
   .application-content-top-panel
     = partial 'projects/new/top_panel'
     = partial 'projects/new/navigation'
-  .application-content-block
+  .application-content-block{role: 'application-content-block'}
     %form#new_project.projects-form{:action => "/projects"}
       .container-fluid
         .row

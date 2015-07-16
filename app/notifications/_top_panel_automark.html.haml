@@ -3,7 +3,7 @@
     .notification-options
       %form.form-inline.notification-options-form
         .row
-          .col-sm-10
+          .col-sm-3
             .form-group.top-panel-block-left
               %select{role: 'select2', style: "width: 200px;"}
                 %option{selected: ''} Все сообщества
@@ -16,24 +16,19 @@
                 %label
                   %input{type: 'checkbox'}
                   Только новые
-            .form-group.top-panel-block-left
+            -#.form-group.top-panel-block-left
               &nbsp;
-              %a.btn.btn-link.btn-link-plain.btn-link-primary.top-panel-btn{href: '#', role: 'tooltip notification-list-mark-btn', data: {mark: :all}}
+              %a.btn.btn-link.btn-link-plain.btn-link-primary{href: '#', role: 'tooltip'}
                 %strong 
                   %i.fa.fa-check
-                  Отметить все как прочитанные
-              %a.btn.btn-link.btn-link-plain.btn-link-primary.top-panel-btn.top-panel-btn-hidden{style: 'display: none', href: '#', role: 'tooltip notification-list-mark-btn'}
-                %strong 
-                  %i.fa.fa-check
-                  Отметить 
-                  %span{role: 'notification-list-mark-btn-counter'}
-                  как прочитанные
+                  Все прочитаны
 
+          .col-sm-6.text-center
+            = partial 'notifications/top_panel_filters'
 
-          .col-sm-2.text-right
-            .form-group.top-panel-block-right
+          .col-sm-3.text-right
+            .form-group.top-panel-block-left
               &nbsp;
               %a.btn.btn-link.btn-link-plain.btn-link-primary{href: '#', role: 'tooltip'}
                 %i.fa.fa-cog
                 Настройки
-

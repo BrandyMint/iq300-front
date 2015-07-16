@@ -1,20 +1,46 @@
 ---
 body_class: notifications-index
+nav_item: notifications
 ---
 
-= partial 'shared/header'
-.content.content-global.display-mode{"data-initial-action" => "index", :filters => "false", :full_view => "false", :list => "true", "role-display-mode" => "ready", :view => "false"}
-  = partial 'notifications/top_panel'
-  = partial 'shared/navigation', locals: {active: 'notifications'}
-  -#%section.view-column.content-column-block-under-top-panel.notifications-list-column{"data-channel" => "presence-4:notifications", "data-url" => "/notifications", "role-notifications-list-column" => "ready"}
-  %section.list-column.notifications-list-column{"data-channel" => "presence-4:notifications", "data-url" => "/notifications", "role-notifications-list-column" => "ready"}
-    .container-fluid
-      - ['Сегодня', 'Вчера', '20 октября'].each do |date|
-        %h4.notifications-list-column-title
-          = date
-        - types = {'Проект' => 'создал обсуждение в проекте', 'Задача' => 'написал комментарий', 'Сообщество' => 'приглашает вас вступить в сообщество'}
-        - types.each_pair do |type, type_activity|
-          - children_count = 2 + rand(10)
-          - ['', 'new'].each do |status|
-            = partial 'notifications/list/list_item', locals: {type: type, type_activity: type_activity, status: status, children_count: children_count}
-            = partial 'notifications/list/list_item', locals: {type: type, type_activity: type_activity, status: status, children_count: 0}
+-#.application-filters
+  %section.filters-column.filters-label.section-navigation
+    %ul.filters-column-list
+      - filters = {'new' => 'Новые', 'my' => 'Мои уведомления', 'all' => 'Вся активность'}
+      - filters.each_with_index do |(key, value), i|
+        %li{class: "#{i == 0 ? 'active' : ''} #{key}"}
+          %a= value
+
+.application-content
+  .application-content-top-panel
+    = partial 'notifications/top_panel'
+    .top-panel
+      .container-fluid.text-center
+        = partial 'notifications/top_panel_filters'
+
+  .application-content-block{role: 'application-content-block'}
+    %section.list-column.notifications-list-column{"data-channel" => "presence-4:notifications", "data-url" => "/notifications", "role-notifications-list-column" => "ready"}
+      .container-fluid
+        .tab-content.tab-panels
+          - tab_panes = [:new, :my, :all]
+          - tab_panes.each_with_index do |section, si|
+            .tab-pane{role: "notification-list-tab-pane-#{section}", class: "#{si == 0 ? 'active' : ''}"}
+              %a.notifications-list-update-btn.fade{role: 'notification-list-update-btn'}
+                %i.fa.fa-arrow-up
+                Новые уведомления
+              - important = ['12:12', '10:55', '8:21']
+              - important.each do |time|
+                = partial 'notifications/list/list_item_important', locals: {time: time}
+              - ['Сегодня', 'Вчера', '20 октября'].each do |date|
+                %h4.notifications-list-column-title
+                  = date
+                - types = {'Проект' => 'создал обсуждение в проекте', 'Задача' => 'написал комментарий', 'Сообщество' => 'приглашает вас вступить в сообщество'}
+                - types.each_pair do |type, type_activity|
+                  - children_count = 2 + rand(10)
+                  - if section == :new
+                    = partial 'notifications/list/list_item_card', locals: {type: type, type_activity: type_activity, status: '', children_count: 0}
+                  - else
+                    - statuses = ['', 'new']
+                    - statuses.each do |status|
+                      = partial 'notifications/list/list_item', locals: {type: type, type_activity: type_activity, status: status, children_count: children_count}
+                      = partial 'notifications/list/list_item', locals: {type: type, type_activity: type_activity, status: status, children_count: 0}

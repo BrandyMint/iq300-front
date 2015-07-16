@@ -9,15 +9,24 @@
 
 .row
   .col-md-1
-    .text-muted.notification-type
-      = type
-    %a.link-gray{href: ''}
-      %small= id
+    %div
+      = "#{8 + rand(12)}:#{10 + rand(49)}"
+    - if children_count > 0
+      %a.notification-list-group-item-counter{href: '#', role: 'notification-list-group-item-counter'}
+        = children_count
+        %i.fa.fa-angle-down
+      %a.notification-list-group-item-counter{href: '#', role: 'notification-list-group-item-close', style: 'display: none;'}
+        = children_count
+        %i.fa.fa-angle-up
   .col-md-3
+    %small.text-muted.notification-type
+      = type
+      = id
     .notification-list-item-title
       %a.notification-name{href: ''}
-        = truncate(title, length: 50)
-  .col-md-7
+        %strong= truncate(title, length: 50)
+
+  .col-md-8
     .media
       %a.pull-left{:href => "/users/203"}
         %img.user-avatar.media-object.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", :title => "Мещеряков Александр"}
@@ -27,17 +36,7 @@
             Александр Мещеряков
           = type_activity
           %br
-          = truncate(text, length: 140)
-          %a{href: "/#{type}/show"}
+          = truncate(text, length: 200)
+          %a{href: ''}
             Подробнее
             %i.fa.fa-angle-right
-
-  .col-md-1
-    .notification-list-item-time
-      = "#{8 + rand(12)}:#{10 + rand(49)}"
-    - if children_count % 2 == 1
-      %a.notification-list-group-item-counter{href: '#', role: 'notification-list-group-item-counter'}
-        = children_count
-      %a.notification-list-group-item-counter{href: '#', role: 'notification-list-group-item-close', style: 'display: none;'}
-        свернуть
-
