@@ -63,7 +63,7 @@
           left: 34px
           background: $borderColor
         &:hover:after
-          background: #338cae !important
+          background: $brand-primary !important
         &.active:after
           background: $borderColor !important
       &.flat
@@ -81,7 +81,7 @@
             background: #cad9dc
           &.active
             > a, > strong, > .expander
-              background: #338cae
+              background: $brand-primary
             &.expanded
               > .expander
                 background: #cad9dc
@@ -89,16 +89,16 @@
           background: #dbe3e6
         &.flat, &.nested
           &.active:after
-            background: #338cae
+            background: $brand-primary
       & + li
         margin-top: -1px
       &:hover
         z-index: 8
-        border-color: #338cae
+        border-color: $brand-primary
         > ul
-          border-color: #338cae !important
+          border-color: $brand-primary !important
       &.active
-        border-color: #338cae
+        border-color: $brand-primary
         z-index: 8
         &, > *
           position: relative
@@ -113,14 +113,14 @@
           z-index: 10
 
         > .expander
-          background: #338cae
+          background: $brand-primary
           &:before
             color: white
         > a, > strong
           color: #f2f4f1
-          background: #338cae
+          background: $brand-primary
         > ul
-          border-color: #338cae !important
+          border-color: $brand-primary !important
   ul.with-subfolders
     ul
       border: 1px solid transparent
@@ -134,7 +134,7 @@
         position: relative
         &:hover
           z-index: 9
-          border-color: #338cae
+          border-color: $brand-primary
     li.expanded
       > ul
         display: block
@@ -164,7 +164,7 @@
             margin-top: -1px
           &.active
             z-index: 9
-            border-color: #338cae
+            border-color: $brand-primary
             &, > *
               position: relative
             > *
@@ -177,7 +177,7 @@
 
             > a
               color: #f2f4f1
-              background: #338cae
+              background: $brand-primary
             &.red > a
               color: #ff0101
   ul > li > span.counter

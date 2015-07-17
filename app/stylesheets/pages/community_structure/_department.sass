@@ -195,7 +195,7 @@ $department-label-padding: 10px
   min-height: 71px
   width: $department-width
   &.drop-area
-    border: 1px solid #338cae
+    border: 1px solid $brand-primary
   &.removed
     display: none !important
   input.department-toggle
@@ -276,9 +276,9 @@ $department-label-padding: 10px
         display: none
     &.dragging-source
       opacity: 0.6
-      border: 1px dashed #338cae !important
+      border: 1px dashed $brand-primary !important
     &.dragging
-      border: 1px solid #338cae
+      border: 1px solid $brand-primary
       z-index: 2000 !important
     .destroy-department
       cursor: pointer
@@ -293,7 +293,7 @@ $department-label-padding: 10px
   .d-card-body
     background: #f1f5f6
     &.drop-area
-      border: 1px solid #338cae
+      border: 1px solid $brand-primary
       margin: -1px
     .boss-card
       .memberships-contract
@@ -302,10 +302,10 @@ $department-label-padding: 10px
           height: $department-toggle-size
           cursor: default
           opacity: 0.6
-          border: $department-toggle-border-size dashed #338cae !important
+          border: $department-toggle-border-size dashed $brand-primary !important
           z-index: 400
           &:hover
-            border: $department-toggle-border-size dashed #338cae !important
+            border: $department-toggle-border-size dashed $brand-primary !important
           +has-after-icon(18px, white)
             //+absoluted
             line-height: $department-toggle-size
@@ -330,7 +330,7 @@ $department-label-padding: 10px
         border: $department-toggle-border-size solid #f1f5f6
         z-index: 1
         &:hover
-          border: $department-toggle-border-size solid #338cae
+          border: $department-toggle-border-size solid $brand-primary
     .boss-card
       .memberships-contract
         margin-top: -1px

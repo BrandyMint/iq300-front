@@ -1,56 +1,108 @@
-$kanban-state-row-width: 300px
-$kanban-card-name-width: 210px
+$kanban-card-background-color: #fff
+$kanban-state-background-color: #e3e3e3
+$kanban-nav-font-color: $brand-primary
+$kanban-state-column-width: 320px
+$kanban-state-column-padding: 10px
+$kanban-card-content-width: 100%
+
+.community-kanban-dashboard
+  background-color: $brand-primary
 
 .kanban-box
+  display: flex
+  flex-direction: column
+  height: 100%
   background-color: $kanban-nav-font-color
 
 .kanban-nav
-  background-color: white
+  flex: 0 0 auto
+  order: 1
+  background-color: #fff
   width: 100%
   padding: 10px 15px 10px 15px
   color: $kanban-nav-font-color
-  > .kanban-nav-filter-input
-    margin-left: 30px
+
+.kanban-nav-filter-input
+  margin-left: 30px
 
 .kanban-dashboard
+  flex: 1 1 auto
+  order: 2
   width: 100%
-  min-width: 1920px
   height: 100%
-  padding: 5px
-  margin-top: 20px
   overflow-x: scroll
+  position: relative
+
+.kanban-dashboard-content
   display: flex
   flex-direction: row
   align-items: flex-start
-
-.kanban-state-row
-  width: $kanban-state-row-width
-  margin: 5px 5px
+  position: absolute
+  box-sizing: border-box
+  height: 100%
   padding: 10px
+
+.kanban-dashboard-block
+  display: flex
+  flex: 0 0 auto
+  flex-direction: column
+  width: $kanban-state-column-width
+  max-height: 100%
+  box-sizing: border-box
+  margin: 0 5px
+  padding: $kanban-state-column-padding 0
   background-color: $kanban-state-background-color
   border-radius: 3px
-  > .kanban-state-header
-      font-weight: bold
-      line-height: 18px
-  > .kanban-state-tasks-list
-      max-height: 100%
-      overflow-y: scroll
+
+.kanban-state-header
+  flex: 0 0 auto
+  margin-bottom: 10px
+  padding:
+    left: $kanban-state-column-padding
+    right: $kanban-state-column-padding
+  line-height: 18px
+
+.kanban-state-tasks-list
+  flex: 1 1 auto
+  max-height: 100%
+  overflow-y: scroll
+  padding:
+    left: $kanban-state-column-padding
+    right: $kanban-state-column-padding
 
 .kanban-card
-  margin-top: 5px
+  margin-bottom: 10px
   padding: 6px 8px
   background-color: $kanban-card-background-color
   font-weight: normal
   border-radius: 3px
-  border-bottom: 1px solid $kanban-card-border-color
-  > .kanban-card-name
-    width: $kanban-card-name-width
-    display: inline-block
-    text-overflow: ellipsis
-  > .kanban-card-date
-    display: inline-block
-    text-align: center
-    vertical-align: top
+  cursor: pointer
+  box-shadow: 0 1px 0 rgba(#000, 0.1)
+  transition: box-shadow 0.2s ease
   &:hover
-    cursor: pointer
-    background-color: $kanban-card-color-hovered
+    box-shadow: 0 2px 5px rgba(#000, 0.3)
+
+.kanban-card-content
+  width: $kanban-card-content-width
+  display: block
+  text-overflow: ellipsis
+  line-height: 1.2em
+  color: $text-color-darker
+
+.kanban-card-name
+  margin-bottom: 0.5em
+  font:
+    size: $font-size-base*1.1
+  line-height: 1.2em
+
+.kanban-card-info
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  margin-bottom: 0.3em
+  color: lighten($text-color-darker, 10%)
+
+.kanban-card-info-icon
+  width: 16px
+  text-align: center
+  color: lighten($text-color-darker, 30%)

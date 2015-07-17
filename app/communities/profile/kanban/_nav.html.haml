@@ -1,0 +1,33 @@
+.kanban-nav{:role => "kanban-dashboard-filters"}
+  %a{:href => "/communities/205"}
+    %span.fa.fa-reply
+    Вернуться к сообществу wfwerfergrtg trg t5g 5g 5g5g5
+  #s2id_project_id.select2-container{:style => "margin-left: 30px; width: 350px;"}
+    %a.select2-choice.select2-default{:href => "javascript:void(0)", :tabindex => "-1"}
+      %span#select2-chosen-1.select2-chosen Project filter
+      %abbr.select2-search-choice-close
+      %span.select2-arrow{:role => "presentation"}
+        %b{:role => "presentation"}
+    %label.select2-offscreen{:for => "s2id_autogen1"}
+    %input#s2id_autogen1.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-1", :role => "button", :type => "text"}/
+    .select2-drop.select2-display-none.select2-with-searchbox
+      .select2-search
+        %label.select2-offscreen{:for => "s2id_autogen1_search"}
+        %input#s2id_autogen1_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-1", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+      %ul#select2-results-1.select2-results{:role => "listbox"}
+  %input#project_id.select2-offscreen{:name => "project_id", :role => "project-select", :style => "margin-left: 30px;", :tabindex => "-1", :title => "", :type => "hidden"}/
+  #s2id_executor_id.select2-container{:style => "margin-left: 30px; width: 250px;"}
+    %a.select2-choice.select2-default{:href => "javascript:void(0)", :tabindex => "-1"}
+      %span#select2-chosen-2.select2-chosen Executor filter
+      %abbr.select2-search-choice-close
+      %span.select2-arrow{:role => "presentation"}
+        %b{:role => "presentation"}
+    %label.select2-offscreen{:for => "s2id_autogen2"}
+    %input#s2id_autogen2.select2-focusser.select2-offscreen{"aria-haspopup" => "true", "aria-labelledby" => "select2-chosen-2", :role => "button", :type => "text"}/
+    .select2-drop.select2-display-none.select2-with-searchbox
+      .select2-search
+        %label.select2-offscreen{:for => "s2id_autogen2_search"}
+        %input#s2id_autogen2_search.select2-input{"aria-autocomplete" => "list", "aria-expanded" => "true", "aria-owns" => "select2-results-2", :autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :placeholder => "", :role => "combobox", :spellcheck => "false", :type => "text"}/
+      %ul#select2-results-2.select2-results{:role => "listbox"}
+  %input#executor_id.select2-offscreen{:name => "executor_id", :role => "executor-select", :style => "margin-left: 30px;", :tabindex => "-1", :title => "", :type => "hidden"}/
+
