@@ -1,7 +1,21 @@
-.stack-bar-top
-  position: inherit
-
 .ui-pnotify-container
   &.alert-success
     background-color: $pnotify-background-color
     color: $pnotify-color
+
+.application-global-notice
+  position: absolute
+  top: 0
+  width: 100%
+  margin: 0 auto
+  padding: 0 $grid-gutter-width
+  box-sizing: border-box
+
+.global-notice-top
+  &,
+  &.ui-pnotify
+    position: relative
+    width: auto
+    left: 0
+    right: 0
+    margin-bottom: 5px
