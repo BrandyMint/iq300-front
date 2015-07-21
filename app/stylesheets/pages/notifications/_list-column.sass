@@ -20,12 +20,13 @@ $notifications-list-update-btn-height: 30px
 .notification-list-item
   @extend %task-box-style
   font-size: $font-size-base
+  border-left: none
   padding:
     top: 10px
-    bottom: 10px
-    left: $grid-gutter-width / 2
-    right: $grid-gutter-width / 2
-  +transition(border 0.3s ease, background 0.3s ease, box-shadow 0.3s ease)
+    bottom: 12px
+    left: 0
+    right: 0
+  +transition(background 0.3s ease, box-shadow 0.3s ease)
 
 .notification-name
   word-wrap: break-word
