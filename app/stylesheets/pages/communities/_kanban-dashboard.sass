@@ -31,6 +31,7 @@ $kanban-card-content-width: 100%
   width: 100%
   height: 100%
   overflow-x: scroll
+  +overflow-scrolling
   position: relative
 
 .kanban-dashboard-content
@@ -54,6 +55,9 @@ $kanban-card-content-width: 100%
   background-color: $kanban-state-background-color
   border-radius: 3px
 
+.kanban-state-column
+  overflow-y: hidden
+
 .kanban-state-header
   flex: 0 0 auto
   margin-bottom: 10px
@@ -65,7 +69,8 @@ $kanban-card-content-width: 100%
 .kanban-state-tasks-list
   flex: 1 1 auto
   max-height: 100%
-  overflow-y: scroll
+  overflow-y: auto
+  +overflow-scrolling
   padding:
     left: $kanban-state-column-padding
     right: $kanban-state-column-padding
