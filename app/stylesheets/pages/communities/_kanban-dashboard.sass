@@ -79,11 +79,14 @@ $kanban-card-content-width: 100%
   background-color: $kanban-card-background-color
   font-weight: normal
   border-radius: 3px
+  border-left: 3px solid transparent
   cursor: pointer
   box-shadow: 0 1px 0 rgba(#000, 0.1)
-  transition: box-shadow 0.2s ease
+  transition: box-shadow 0.2s ease, border 0.2s ease
   &:hover
     box-shadow: 0 2px 5px rgba(#000, 0.3)
+  &.kanban-card-overdued
+    border-left-color: lighten($brand-danger, 25%)
 
 .kanban-card-content
   width: $kanban-card-content-width
