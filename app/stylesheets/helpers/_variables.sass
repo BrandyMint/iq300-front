@@ -1,6 +1,8 @@
 $container-fixed-width: 1280px
 $container-fixed-width-lg: $container-fixed-width
 
+$brand-primary: #338cae
+
 $text-color: #606060
 $text-color-dark: #474747
 $text-color-darker: #333
@@ -36,7 +38,7 @@ $draft-item-border-color: lighten($item-border-color, 15%)
 //$new-item-background: $blue-pale-dark
 $new-item-background: saturate(darken($blue-pale-dark, 3%), 34%)
 $new-item-border-color: darken($new-item-background, 10%)
-$new-item-border-color-dark: #338cae
+$new-item-border-color-dark: $brand-primary
 
 $template-item-background: $green-pale
 $template-item-border-color: lighten($brand-success, 30%)
@@ -171,12 +173,6 @@ $comment-textarea-max-height: 11.7em
 $panel-lg-body-padding: 20px $grid-gutter-width
 $panel-lg-heading-padding: 10px $grid-gutter-width
 $panel-lg-footer-padding: $panel-lg-heading-padding
-
-$kanban-card-color-hovered: #F0F0F0
-$kanban-card-border-color: $borderColor
-$kanban-card-background-color: $alert-warning-text
-$kanban-state-background-color: #E3E3E3
-$kanban-nav-font-color: #338cae
 
 // pnotify
 $pnotify-color: #3c763d

@@ -1,0 +1,28 @@
+.kanban-box{"data-community-id" => "205", "role-kanban-box" => "ready"}
+  = partial 'communities/profile/kanban/nav'
+  .kanban-dashboard{:role => "kanban-dashboard"}
+    .kanban-dashboard-content
+      .kanban-dashboard-block{:role => "kanban-dashboard-draft-block"}
+        .kanban-state-header{"data-reactid" => ".0.0"}
+          %strong
+            Draft
+        .kanban-state-tasks-list{"data-reactid" => ".0.1"}
+      .kanban-dashboard-block{:role => "kanban-dashboard-new-block"}
+        .kanban-state-header{"data-reactid" => ".1.0"}
+          %strong
+            New
+        .kanban-state-tasks-list{"data-reactid" => ".1.1"}
+      .kanban-dashboard-block{:role => "kanban-dashboard-in_work-block"}
+        - cards_count = 10
+        .kanban-state-header{"data-reactid" => ".2.0"}
+          %strong
+            In work
+          = cards_count
+        .kanban-state-tasks-list{"data-reactid" => ".2.1"}
+          - for i in 0..(cards_count - 1)
+            = partial 'communities/profile/kanban/card'
+      .kanban-dashboard-block{:role => "kanban-dashboard-pending-block"}
+        .kanban-state-header{"data-reactid" => ".3.0"}
+          %strong
+            Pending
+        .kanban-state-tasks-list{"data-reactid" => ".3.1"}
