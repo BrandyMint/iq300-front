@@ -1,32 +1,30 @@
-$mailer-text-color: #6e7e91
+$mailer-text-color: #222
 $mailer-invited-placeName: #212f40
 $mailer-not-correct-letter: #999999
 
 .invitation-mailer-table
-  border: 0
+  border-collapse: separate
   border-spacing: 0
-  width: 800px
-  padding: 20px 0 0
-
-.invitation-mailer-default-text
-  font-family: 'Helvetica Neue,Arial,sans-serif'
-  margin: 0
-  font-size: 18px
-  font-weight: normal
-  color: $mailer-text-color
-
-.invitation-mailer-header-text
-  padding: 0
-  margin: 0
-  color: $mailer-text-color
-  font-size: 30px
-  font-weight: bold
+  font-family: Helvetica,Arial,sans-serif
+  letter-spacing: 0
+  table-layout: fixed
+  width: 100%
 
 .invitation-mailer-text
-  padding: 0
-  margin: 0
-  font-size: 18px
+  color: $mailer-text-color
+  font-family: Helvetica,Arial,sans-serif
   font-weight: normal
+  font-size: 13px
+  line-height: 20px
+  padding: 0
+
+.invitation-mailer-header-text
+  @extend .invitation-mailer-bold-text
+  font-size: 16px
+
+.invitation-mailer-bold-text
+  @extend .invitation-mailer-text
+  font-weight: bold
 
 .invitation-mailer-header-cell
   width: 470px
@@ -84,8 +82,8 @@ $mailer-not-correct-letter: #999999
   display: block
   left: 14px
   top: 14px
-  height: 47px
-  width: 112px
+  height: 64px
+  width: 150px
   background-image: url("login/logo-blue.png")
   background-repeat: no-repeat
   background-size: contain
