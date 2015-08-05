@@ -34,7 +34,7 @@ nav_item: notifications
               - important.each do |time|
                 = partial 'notifications/list/list_item_important', locals: {time: time}
               - unless section == :new
-                = partial 'notifications/list/list_item', locals: {time: '17:47', pinned: true, type: 'Проект', type_activity: 'создал обсуждение в проекте'}
+                = partial 'notifications/list/list_item_important', locals: {time: '17:47', pin: true, pinned: true, type: 'Проект', type_activity: 'создал обсуждение в проекте'}
               - ['Сегодня', 'Вчера', '20 октября'].each do |date|
                 %h4.notifications-list-column-title
                   = date

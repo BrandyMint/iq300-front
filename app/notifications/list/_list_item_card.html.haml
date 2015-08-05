@@ -5,7 +5,7 @@
 .notification-list-item-block{role: 'notification-list-item-block'}
   .panel.panel-default.notification-list-item-block-card.collapse.in{role: 'notification-list-item'}
     .panel-body
-      = partial 'notifications/list/list_item_body', locals: {type: type, type_activity: type_activity, id: id}
+      = partial 'notifications/list/list_item_body', locals: {type: type, type_activity: type_activity, id: id, pin: true, pinned: locals[:pinned]}
 
     %a.notification-list-item-close-btn{href: '#', role: 'notification-list-item-close-btn'}
       &times;

@@ -6,9 +6,15 @@
 
 .row
   .notifications-list-item-date-block
-    10 июля 
-    %div
-      = "#{8 + rand(12)}:#{10 + rand(49)}"
+    .pull-left
+      10 июля 
+      %div
+        = "#{8 + rand(12)}:#{10 + rand(49)}"
+    - if locals[:pin]
+      .pull-left
+        &nbsp;
+        %a.btn-pin{class: locals[:pinned] ? 'active' : ''}
+          %i.fa.fa-thumb-tack.icon-rotate-30
 
   .notifications-list-item-description-block
     .media
