@@ -111,3 +111,9 @@ input[type="submit"]
   padding-right: 1em
   float: right
 
+.btn-pin
+  @extend .btn-link-gray-light
+  @extend .btn-link-plain
+  &.active
+    &, &:hover, &:focus
+      color: $brand-primary

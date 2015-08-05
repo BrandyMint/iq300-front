@@ -11,6 +11,9 @@ nav_item: notifications
         %li{class: "#{i == 0 ? 'active' : ''} #{key}"}
           %a= value
 
+- tab_panes = [:new, :my, :all]
+- types = {'Проект' => 'создал обсуждение в проекте', 'Задача' => 'написал комментарий', 'Сообщество' => 'приглашает вас вступить в сообщество'}
+
 .application-content
   .application-content-top-panel
     = partial 'notifications/top_panel'
@@ -22,7 +25,6 @@ nav_item: notifications
     %section.list-column.notifications-list-column{"data-channel" => "presence-4:notifications", "data-url" => "/notifications", "role-notifications-list-column" => "ready"}
       .container-fluid
         .tab-content.tab-panels
-          - tab_panes = [:new, :my, :all]
           - tab_panes.each_with_index do |section, si|
             .tab-pane{role: "notification-list-tab-pane-#{section}", class: "#{si == 0 ? 'active' : ''}"}
               %a.notifications-list-update-btn.fade{role: 'notification-list-update-btn'}
@@ -31,10 +33,11 @@ nav_item: notifications
               - important = ['12:12', '10:55', '8:21']
               - important.each do |time|
                 = partial 'notifications/list/list_item_important', locals: {time: time}
+              - unless section == :new
+                = partial 'notifications/list/list_item', locals: {time: '17:47', pinned: true, type: 'Проект', type_activity: 'создал обсуждение в проекте'}
               - ['Сегодня', 'Вчера', '20 октября'].each do |date|
                 %h4.notifications-list-column-title
                   = date
-                - types = {'Проект' => 'создал обсуждение в проекте', 'Задача' => 'написал комментарий', 'Сообщество' => 'приглашает вас вступить в сообщество'}
                 - types.each_pair do |type, type_activity|
                   - children_count = 2 + rand(10)
                   - if section == :new

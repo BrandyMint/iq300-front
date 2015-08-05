@@ -11,21 +11,10 @@
   .col-md-1
     %div
       = "#{8 + rand(12)}:#{10 + rand(49)}"
-    - if children_count > 0
-      %a.notification-list-group-item-counter{href: '#', role: 'notification-list-group-item-counter'}
-        = children_count
-        %i.fa.fa-angle-down
-      %a.notification-list-group-item-counter{href: '#', role: 'notification-list-group-item-close', style: 'display: none;'}
-        = children_count
-        %i.fa.fa-angle-up
-  .col-md-3
-    %small.text-muted.notification-type
-      = type
-      = id
-    .notification-list-item-title
-      %a.notification-name{href: ''}
-        %strong= truncate(title, length: 50)
-
+      - if locals[:pin]
+        &nbsp;
+        %a.btn-pin{class: locals[:pinned] ? 'active' : ''}
+          %i.fa.fa-thumb-tack.icon-rotate-30
   .col-md-8
     .media
       %a.pull-left{:href => "/users/203"}
@@ -40,3 +29,12 @@
           %a{href: ''}
             Подробнее
             %i.fa.fa-angle-right
+  .col-md-3
+    %small.text-muted.notification-type
+      = type
+      = id
+    .notification-list-item-title
+      %a.notification-name{href: ''}
+        %strong= truncate(title, length: 50)
+
+
