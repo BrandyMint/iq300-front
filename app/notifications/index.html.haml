@@ -30,7 +30,7 @@ nav_item: notifications
               %a.notifications-list-update-btn.fade{role: 'notification-list-update-btn'}
                 %i.fa.fa-arrow-up
                 Новые уведомления
-              - important = ['12:12', '10:55', '8:21']
+              - important = ['12:12', '10:55']
               - important.each do |time|
                 = partial 'notifications/list/list_item_important', locals: {time: time}
               - unless section == :new
