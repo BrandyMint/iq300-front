@@ -1,0 +1,28 @@
+- contact_sources = ['Из сообщества Iq300', 'Ваш друг из Facebook', 'Вы подписаны в Twitter']
+- repeat = 9
+
+.contacts-list-container
+  .content-group-sm
+    %h3
+      %span{:role => "contacts-list-panel-title"} В контактах
+  %div{"data-scroll-container" => "@application-content-block", "data-url" => "/contacts", :role => "contacts-list", "test-contacts-list" => ""}
+    .row
+      - for i in 1..repeat
+        .col-sm-4
+          .content-group
+            = partial 'contacts/list_item', locals: {contact: true, remove: true}
+    %a.btn.btn-block.btn-link-primary.text-center
+      Показать ещё
+  %hr.content-group
+  .content-group-sm
+    %h3
+      %span{:role => "contacts-list-panel-title"} Другие пользователи
+  %div{"data-scroll-container" => "@application-content-block", "data-url" => "/contacts", :role => "contacts-list", "test-contacts-list" => ""}
+    .row
+      - for i in 1..repeat
+        .col-sm-4
+          .content-group
+            = partial 'contacts/list_item', locals: {contact: false, remove: false, position: contact_sources.sample}
+    %a.btn.btn-block.btn-link-primary.text-center
+      Показать ещё
+

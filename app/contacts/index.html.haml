@@ -12,5 +12,18 @@ search: false
   = partial 'contacts/top_panel'
 
 %section.contacts-content-column.form-container-compact
-  = partial 'contacts/list'
+  %div{role: 'contacts-list-content'}
+    = partial 'contacts/list'
+  %div{role: 'contacts-list-search', style: 'display: none;'}
+    = partial 'contacts/search_list'
+  %div{role: 'contacts-list-invite', style: 'display: none;'}
+    .contacts-list-container
+      .content-group
+        Пользователь с email
+        %strong{role: 'contacts-list-invite-email'}
+        еще не пользуется системой
+        %br
+        %a.btn.btn-primary
+          Отправить приглашение
+
 

@@ -4,14 +4,20 @@
       .container-fluid
         .row
           .col-md-6
-            .form-inline{:role => "search-block"}
+            .form-inline{:role => "contacts-search-block"}
               .form-group
-                %input.form-control{:placeholder => "Найти пользователя", :role => "contacts-list-search-input"}
-              .form-group
+                .search-block
+                  %input.form-control{:placeholder => "Найти пользователя", :role => "contacts-list-search-input"}
+                  .search-block-reset-btn{role: 'contacts-list-search-reset', style: "display: none;"}
+              -#.form-group
                 %a.btn.btn-default{:href => "/users/1757/contact_requests/invite_new_user", :role => "invite-new-user", :style => "display: none;"} Пригласить нового пользователя
           .col-md-6.text-right
-            %a.btn.btn-default{role: 'conference-add-member-btn', data: {'original-title' => 'Добавить в контакты'}}
+            -#%a.btn.btn-default{role: 'conference-add-member-btn', data: {'original-title' => 'Добавить в контакты'}}
               %i.fa.fa-plus-circle
               Добавить контакт
+
+            %a.btn.btn-default{href: '/contacts/conference/new'}
+              %i.fa.fa-users
+              Создать конференцию
 
 

@@ -1,3 +1,5 @@
+- users_count = locals[:users_count] || 4
+
 %section.top-panel
   .container-fluid
     .row
@@ -6,13 +8,14 @@
           %strong
             Без темы
       .col-md-5.text-right
-        - data.avatars.last(4).each do |u|
-          %a.btn-link-plain{href: '/users/2'}
-            %img.member-box-avatar-image-small.conference-members-avatar-image{:src => u[:url], :alt => "", :width => "40px", :height => "40px"}
-        &nbsp;
-        %a
-          и ещё 2
-        &nbsp;&nbsp;
+        - if users_count && users_count > 0
+          - data.avatars.last(users_count).each do |u|
+            %a.btn-link-plain{href: '/users/2'}
+              %img.member-box-avatar-image-small.conference-members-avatar-image{:src => u[:url], :alt => "", :width => "40px", :height => "40px"}
+          &nbsp;
+          %a
+            и ещё 2
+          &nbsp;&nbsp;
         %a.btn.btn-outline-primary{role: :tooltip, data: {'original-title' => 'Добавить участника'}, role: 'conference-add-member-btn'}
           %i.fa.fa-plus
         &nbsp;

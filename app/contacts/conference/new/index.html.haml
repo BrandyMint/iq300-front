@@ -1,0 +1,20 @@
+---
+body_class: contacts-index
+nav_item: contacts
+layout: application_modular
+---
+
+- content_for :filters_column do
+  = partial 'contacts/filters', locals: {active: :conference}
+
+- content_for :top_panel do
+  = partial 'contacts/conference/top_panel', locals: {users_count: 0}
+
+- content_for :bottom_block do
+  = partial 'comments/form'
+
+%section.contacts-content-column.form-container-compact
+  .content-group
+    = partial 'conversations/dialog/message_item_system', locals: {text: 'Александр Мещеряков создал конференцию'}
+
+
