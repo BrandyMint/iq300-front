@@ -36,6 +36,10 @@ Gulp-задача собирает в `app/tmp/assets` все ассеты, пр
 `<stage_name>.iq300-dev.com`, по номеру стейджа предварительно
 договариваемся и указываем в STAGE — например, `STAGE=frontend3 ./frontend_deploy`
 
+```
+./frontend_build && STAGE=<stage_name> ./frontend_deploy
+```
+
 При первом деплое нужно связаться c [elvir](https://github.com/elvir) или
 [sibsfinx](https://github.com/sibsfinx) и скинуть свой ssh-ключ.
 
