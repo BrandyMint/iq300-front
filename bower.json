@@ -19,7 +19,8 @@
     "modernizr": "~2.8.3",
     "eonasdan-bootstrap-datetimepicker": "https://github.com/sibsfinx/bootstrap-datetimepicker.git#6761822c9",
     "marked": "latest",
-    "highlightjs": "latest"
+    "highlightjs": "latest",
+    "react-select": "~0.6.1"
   },
   "ignore": [
     "**/.*",
