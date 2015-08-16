@@ -1,0 +1,21 @@
+$select-arrow-color: #606060
+$select-arrow-border-width: 4px
+
+.Select-control,
+.Select-placeholder
+  height: $input-height-base
+  padding: ($padding-base-vertical - 1) $padding-base-horizontal
+
+.Select-control
+  border-color: $input-border
+
+.Select
+  .input-group &
+    display: table-cell
+    width: 100%
+
+.Select-arrow
+  border:
+    top-color: $select-arrow-color
+    top-width: $select-arrow-border-width
+    right-width: $select-arrow-border-width

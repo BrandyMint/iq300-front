@@ -2,30 +2,28 @@
 - online = locals[:online]
 - remove = locals[:remove]
 - img_url = data.avatars.last[:url]
-- name = 'Эльвир Нуриахметов'
+- name = data.users.sample[:name]
 - position = locals[:position] || 'Сотрудник'
 
 .user-block
-  .user-block-avatar
-    %img.user-block-avatar-image.member-box-avatar-image-small.img-corrector-initialized{:alt => "Ирина", :hide_wait_message => "true", 
-      :src => img_url, :style => "width:34px;height:34px;", :title => "Михайлова Ирина Николаевна"}/
-    .user-block-status-bullet{class: "user-status-bullet-#{online ? 'online' : 'offline'}"}
+  .user-block-avatar-block
+    .user-block-avatar
+      %img.user-block-avatar-image.member-box-avatar-image-small.img-corrector-initialized{:alt => "Ирина", :hide_wait_message => "true", 
+        :src => img_url, :style => "width:34px;height:34px;", :title => "Михайлова Ирина Николаевна"}/
+      .user-block-status-bullet{class: "user-status-bullet-#{online ? 'online' : 'offline'}"}
   .user-block-content
-    .pull-left
-      %a.user-block-content-name{:href => "/users/1147", :role => "member-name"}
-        = name
-      .user-block-position
-        = position
-    .pull-left
-      - if contact
-        %a.user-block-compose-btn{href: '#', role: :tooltip, 'data-original-title' => 'Написать сообщение'}
-          %i.fa.fa-pencil
-      - else
-        %a.user-block-add-btn{href: '#', role: :tooltip, 'data-original-title' => 'Добавить в контакты'}
-          %i.fa.fa-plus
-      - if remove
-        %a.user-block-remove-btn{href: 'javascript:confirm("Удалить из контактов?");'}
-          %i.fa.fa-times
-
-    .clearfix
+    %a.user-block-content-name.user-block-content-name-line{:href => "/users/1147", :role => "member-name"}
+      = name
+    .user-block-position
+      = position
+  .user-block-actions
+    - if contact
+      %a.user-block-compose-btn{href: '#', role: :tooltip, 'data-original-title' => 'Написать сообщение'}
+        %i.fa.fa-pencil
+    - else
+      %a.user-block-add-btn{href: '#', role: :tooltip, 'data-original-title' => 'Добавить в контакты'}
+        %i.fa.fa-plus
+    - if remove
+      %a.user-block-remove-btn{href: 'javascript:confirm("Удалить из контактов?");'}
+        %i.fa.fa-times
 
