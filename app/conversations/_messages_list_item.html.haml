@@ -5,7 +5,7 @@
 - from_current_user = locals[:from_current_user]
 - author = locals[:author] || 'Алексеева Лиана'
 
-.message-box.tab-content-wide{class: "message-box-#{message_status} #{from_current_user ? 'message-box-from-current-user' : ''}"}
+.message-box{class: "message-box-#{message_status} #{from_current_user ? 'message-box-from-current-user' : ''}"}
   .media
     .pull-left
       .message-box-user-avatar

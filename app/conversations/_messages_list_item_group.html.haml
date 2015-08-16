@@ -5,7 +5,7 @@
 - from_current_user = locals[:from_current_user]
 - author = locals[:author] || 'Шамиль Хамадеев, Эльвир Нуриахметов, Ирина Михайлова и ещё 3 участника'
 
-.message-box.conference-message-box.tab-content-wide{class: "message-box-#{message_status} #{from_current_user ? 'message-box-from-current-user' : ''}"}
+.message-box.conference-message-box{class: "message-box-#{message_status} #{from_current_user ? 'message-box-from-current-user' : ''}"}
   .media
     .pull-left
       %a.message-box-user-avatar{href: '/conversations/conference'}

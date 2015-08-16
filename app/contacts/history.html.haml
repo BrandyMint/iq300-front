@@ -10,6 +10,6 @@ layout: application_modular
 - content_for :filters_column do
   = partial 'contacts/filters', locals: {active: :history}
 
-%section.contacts-content-column.container-fluid
+%section.contacts-content-column
   = partial 'contacts/messages_list'
 
