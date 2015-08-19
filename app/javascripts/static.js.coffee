@@ -20,12 +20,12 @@
 #= require projects/milestones
 #= require projects/wizard
 #= require notifications/list
+#= require notifications/widget
 #= require tasks/list
 #= require tasks/form
 #= require tasks/checklist
 #= require communities/billing
 #= require layout/fixed_block
-#= require notifications/widget
 #= require discussions/mention
 #= require calendar/calendar
 #= require comments/form

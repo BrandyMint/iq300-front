@@ -4,8 +4,13 @@ body_class: tasks-show
 nav_item: tasks
 ---
 
-- content_for :top_panel do
+-# content_for :top_panel do
   = partial 'tasks/top_panel'
+
+- content_for :back_button do
+  %a.btn.btn-lg{:href => "/tasks"}
+    %span.fa.fa-angle-left.icon-size-16
+    Список задач
 
 %section.view-column.task-view-column{"data-channel" => "private-base_task-65590:update", "data-channel-template" => "private-base_task-%id%:update", "data-status" => "completed", "data-url" => "/tasks/65590", "role-task-view-column" => "ready", "test-task-view" => ""}
   .form-container

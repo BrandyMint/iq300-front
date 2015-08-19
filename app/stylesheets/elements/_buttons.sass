@@ -43,6 +43,24 @@
         background-color: nth($color, 2)
         border-color: nth($color, 2)
 
+.btn-circle-plus
+  width: $user-avatar-width
+  height: $user-avatar-width
+  border-radius: 100%
+  line-height: $user-avatar-width
+  padding: 0
+  text-align: center
+  .dropdown.open &
+    .btn-circle-plus-icon
+      transform: translate3d(0.5px, -1px, 0) rotate(-135deg)
+
+.btn-circle-plus-icon
+  display: inline-block
+  font:
+    size: 18px
+    weight: bold
+  transition: transform 0.2s ease
+  transform: translate3d(0.5px, 0, 0)
 
 input[type="submit"]
   &.btn

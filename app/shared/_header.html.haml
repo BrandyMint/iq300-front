@@ -11,22 +11,32 @@
           / #{content_tag(:i)}#{i}#{b}
           %i
           %input#search.search-query.form-control{name: "search", placeholder: "Поиск", role: "global-search-field", type: "search"}/
+    = yield_content(:back_button) if yield_content(:back_button).present?
     %span.app-version
       = app_version
     .user-nav
-      %a.notifications-widget-button{role: 'notifications-widget-button'}
-        %i.iqs-notifications-o
-        .notifications-widget-button-bullet
-      %a{href: "/help"} Помощь
-      %a{href: "/users/1757"}
-        %span.userpic
-          %img.userpic-image.img-corrector-initialized{alt: "Александр", hide_wait_message: "true", src: "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", title: "Мещеряков Александр Игоревич"}/
-        Александр Мещеряков
-      %a.fa.fa-sign-out{"data-method" => "delete", href: "/users/sign_out", rel: "nofollow", title: "Выйти"}
-      / %section
-      / = render "shared/user_widget"
-      / .help-link>
-      / = link_to icon('question-sign'), "/help", title: t('common.help')
-    %input#app_signed_in_user_id{name: "app_signed_in_user_id", type: "hidden", value: "1757"}/
-    %input#pusher_app_key{name: "pusher_app_key", type: "hidden", value: "7baa6a182eefe7314de0"}/
+      .dropdown.pull-right
+        %a.user-nav-link.user-nav-btn{data: {toggle: :dropdown}}
+          %span.userpic
+            %img.userpic-image.img-corrector-initialized{alt: "Александр", hide_wait_message: "true", src: "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", title: "Мещеряков Александр Игоревич"}/
+          Александр Мещеряков
+        %ul.dropdown-menu{role: :menu}
+          - ['Подсказки', 'Помощь', 'Выйти'].each do |l|
+            %li
+              %a{href: ""}= l
+      .dropdown.user-nav-btn.pull-right
+        %a.btn.btn-primary.btn-circle-plus{data: {toggle: :dropdown}}
+          %span.btn-circle-plus-icon +
+        %ul.dropdown-menu{role: :menu}
+          - ['Новая задача', 'Новый проект', 'Новое сообщество', :divider, 'Обратная связь'].each do |l|
+            - if l == :divider
+              %li.divider
+            - else
+              %li
+                %a{href: ""}= l
+      .user-nav-btn.pull-right
+        %a.notifications-widget-button.user-nav-link{role: 'notifications-widget-button'}
+          %i.iqs-notifications-o
+          .notifications-widget-button-bullet
 
+      .clearfox
