@@ -193,7 +193,7 @@ gulp.task "watch", [
   #gulp.watch('app/scripts/**/*.coffee', ['coffee', 'scripts']);
   #gulp.watch "app/scripts/**/*.coffee", ["scripts"]
   #gulp.watch "app/stylesheets/**/*.css", ["assets"]
-  gulp.watch "app/stylesheets/**/*.{sass,scss}", ["sass:watch"]
+  gulp.watch "app/stylesheets/**/*.{sass,scss}", ["sass:watch", "prefix:watch"]
   gulp.watch "app/fonts/**/*", ["fonts:watch"]
   gulp.watch "app/images/**/*", ["images:watch"]
   #gulp.watch ["app/**/*.haml"], ["browser-sync-reload"]
