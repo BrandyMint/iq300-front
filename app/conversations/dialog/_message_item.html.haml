@@ -7,16 +7,24 @@
     .pull-left
       .message-box-user-avatar
         %a{:href => "#"}
-          %img.img-circle{:src => "/images/community/2.png", :alt => "", :width => "40px", :height => "40px"}/
+          %img.img-circle.message-box-user-avatar-image{:src => "/images/community/2.png", :alt => "", :width => "40px", :height => "40px"}/
         .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right{class: "user-status-bullet-#{user_status}"}
     .media-body
       .message-box-header.group
-        %h4.pull-left Алексеев Иван, Алексеева Лиана, Чоловский Дмитрий 
-        %p.pull-right.text-muted 18 июля, 16:03
+        .pull-left
+          %a.message-box-title
+            Шамиль Хамадеев
+          %small.text-muted
+            &nbsp;&nbsp;
+            %a.btn-link-gray-light.btn-link-plain{href: '#', role: "conversation-message-fwd", data: {'original-title' => 'Переслать сообщение'}}
+              %i.fa.fa-mail-forward
+
+        -#, Алексеева Лиана, Чоловский Дмитрий 
+        %span.message-box-time.pull-right 18 июля, 16:03
       .message-body
         .message-body-text= text
         .message-box-files
-          - if files.present?
+          - if files && files.any?
             - files.each do |f|
               %a.btn.btn-default{:href => "#"}
                 %span.fa.fa-file-text-o 

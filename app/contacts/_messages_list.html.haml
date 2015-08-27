@@ -1,0 +1,13 @@
+.content-group
+  .messages-list
+    = partial 'conversations/messages_list_item_group', locals: {conversation: true, message_status: 'new', user_status: 'online'}
+    = partial 'conversations/messages_list_item', locals: {conversation: true, message_status: 'new', user_status: 'online'}
+    = partial 'conversations/messages_list_item', locals: {conversation: true, user_status: 'offline', author: 'Александр Мещеряков', from_current_user: true, files: ['file1.doc', 'file2.doc']}
+    = partial 'conversations/messages_list_item', locals: {conversation: true, user_status: 'online'}
+    = partial 'conversations/messages_list_item', locals: {conversation: true, user_status: 'offline', files: ['file1.doc', 'file2.doc']}
+
+
+.content-group.text-center
+  %a{:href => "#"} Загрузить еще
+
+

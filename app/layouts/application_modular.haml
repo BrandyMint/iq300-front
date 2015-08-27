@@ -10,34 +10,34 @@
   %head
     = partial 'layouts/head'
   %body{class: current_page.data.body_class || 'page'}
-    .application-wrapper
+    .application-wrapper{role: 'application-wrapper'}
       = partial 'shared/header'
-      .application-container
+      .application-container{role: 'application-container'}
         = partial 'shared/_navigation', locals: {active: current_page.data.nav_item || ''}
         - if content_for?(:filters_column)
           .application-filters
-            = yield(:filters_column)
+            = yield_content(:filters_column) if yield_content(:filters_column).present?
 
-        .application-content
+        .application-content{role: 'application-content'}
           .application-content-top-panel{role: 'application-content-top-panel'}
             - if content_for?(:top_panel_block)
               %section.top-panel
-                = yield(:top_panel_block)
-            = yield(:top_panel).presence
+                = yield_content(:top_panel_block) if yield_content(:top_panel_block).present?
+            = yield_content(:top_panel) if yield_content(:top_panel).present?
 
-          = yield(:top_panel_after).presence
+          = yield_content(:top_panel_after) if yield_content(:top_panel_after).present?
 
-          - if content_for?(:content) || yield.present?
-            .application-content-block{role: 'application-content-block'}
-              = content_for?(:content) ? yield(:content) : yield
+          .application-content-block{role: 'application-content-block'}
+            = yield_content(:content) if yield_content(:content).present?
+            = yield
 
           .application-content-bottom-block{role: 'application-content-bottom-block'}
-            = yield(:bottom_block).presence
+            = yield_content(:bottom_block) if yield_content(:bottom_block).present?
 
         .application-content-column
           .application-content-column-block
-            = yield(:content_column).presence
+            = yield_content(:content_column) if yield_content(:content_column).present?
           .application-content-column-bottom-block{role: 'application-content-column-bottom-block'}
-            = yield(:content_column_bottom_block).presence
+            = yield_content(:content_column_bottom_block) if yield_content(:content_column_bottom_block).present?
 
 = partial 'layouts/javascripts'

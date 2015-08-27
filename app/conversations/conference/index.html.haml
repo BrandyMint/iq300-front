@@ -1,0 +1,16 @@
+---
+body_class: dialog-index
+layout: application_modular
+---
+
+- content_for :top_panel do
+  = partial 'conversations/conference/top_panel'
+
+.tab-content.tab-panels
+  #messages-tab.tab-pane.active
+    = partial 'conversations/conference/messages'
+    = partial 'conversations/dialog/message_form'
+
+  #comments-tab.tab-pane
+    = partial 'conversations/dialog/comments'
+

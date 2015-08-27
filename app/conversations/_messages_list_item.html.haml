@@ -5,18 +5,19 @@
 - from_current_user = locals[:from_current_user]
 - author = locals[:author] || 'Алексеева Лиана'
 
-.message-box.tab-content-wide{class: "message-box-#{message_status} #{from_current_user ? 'message-box-from-current-user' : ''}"}
+.message-box{class: "#{locals[:conversation] ? 'conversation-box' : ''} message-box-#{message_status} #{from_current_user ? 'message-box-from-current-user' : ''}"}
   .media
     .pull-left
       .message-box-user-avatar
         %a{:href => "#"}
-          %img.img-circle{:src => "/images/community/1.png", :alt => "", :width => "40px", :height => "40px"}/
+          %img.img-circle.message-box-user-avatar-image{:src => "/images/community/1.png", :alt => "", :width => "40px", :height => "40px"}/
         .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right{class: "user-status-bullet-#{user_status}"}
     .media-body
       .message-box-header
         .row
           .col-xs-11
-            %h4= author
+            %a.message-box-title
+              = author
             %p.text-muted 21 июля, 14:59
           .col-xs-1.text-right
             - if message_status == 'new'
@@ -29,7 +30,7 @@
           .col-xs-1.text-right
             .badge 245
         .message-box-files
-          - if files.present?
+          - if files && files.any?
             - files.each do |f|
               %a.btn.btn-default{:href => "#"}
                 %span.fa.fa-file-text-o 

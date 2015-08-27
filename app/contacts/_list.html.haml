@@ -1,0 +1,36 @@
+- user_statuses = ['online', 'offline', 'away', '']
+- contact_sources = ['Из сообщества Iq300', 'Ваш друг из Facebook', 'Вы подписаны в Twitter']
+- repeat = 4
+
+
+.contacts-list-container
+  .row
+    .col-sm-8
+      .content-group-sm
+        %h3
+          %span{:role => "contacts-list-panel-title"} Контакты
+          %small.text-muted{:role => "contacts-list-panel-title-counter"}
+            = user_statuses.count*repeat
+      .content-group
+        -#= partial 'contacts/list/filters'
+        = partial 'contacts/list/filters_react_static'
+      %div{"data-scroll-container" => "@application-content-block", "data-url" => "/contacts", :role => "contacts-list", "test-contacts-list" => ""}
+        .row
+          - for i in 1..repeat
+            - user_statuses.each do |user_status|
+              .col-sm-6
+                .content-group
+                  = partial 'contacts/list_item', locals: {user_status: user_status, contact: true, remove: true}
+
+    .col-sm-4
+      .content-group
+        %h4
+          %span{:role => "contacts-list-panel-title"} Вы можете их знать
+      %div{"data-scroll-container" => "@application-content-block", "data-url" => "/contacts", :role => "contacts-list", "test-contacts-list" => ""}
+        - contact_sources.each do |s|
+          .content-group
+            = partial 'contacts/list_item', locals: {contact: false, remove: false, position: s}
+        %a.btn.btn-block.btn-link-primary.text-center
+          Показать ещё
+
+

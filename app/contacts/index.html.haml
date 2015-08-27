@@ -1,12 +1,29 @@
 ---
 body_class: contacts-index
 nav_item: contacts
+layout: application_modular
+search: false
 ---
 
-.application-filters
-  = partial 'contacts/filters'
-.application-content
-  .application-content-block{role: 'application-content-block'}
-    %section.contacts-content-column
-      = partial 'contacts/index'
+- content_for :filters_column do
+  = partial 'contacts/filters', locals: {active: :all}
+
+- content_for :top_panel_block do
+  = partial 'contacts/top_panel'
+
+%section.contacts-content-column.form-container-compact
+  %div{role: 'contacts-list-content'}
+    = partial 'contacts/list'
+  %div{role: 'contacts-list-search', style: 'display: none;'}
+    = partial 'contacts/search_list'
+  %div{role: 'contacts-list-invite', style: 'display: none;'}
+    .contacts-list-container
+      .content-group
+        Пользователь с email
+        %strong{role: 'contacts-list-invite-email'}
+        еще не пользуется системой
+        %br
+        %a.btn.btn-primary
+          Отправить приглашение
+
 

@@ -12,10 +12,32 @@ $user-block-btn-height: $user-block-btn-width
     right: 5px
 
 .user-block
-  @extend .media
+  display: flex
+  flex-direction: row
+  padding-bottom: 10px
+
+.user-block-avatar-block
+  flex: 0 2 auto
+  order: 1
+  margin-right: 10px
+
+.user-block-content
+  flex: 2 1 auto
+  order: 2
+  overflow: hidden
+  &.user-block-content-centered
+    overflow: visible
+    .user-block-content-name
+      height: 0
+      overflow: visible
+      vertical-align: middle
+
+.user-block-actions
+  flex: 0 0 auto
+  order: 3
 
 .user-block-avatar
-  @extend .pull-left
+  display: inline-block
   position: relative
 
 .user-block-avatar-image
@@ -32,18 +54,16 @@ $user-block-btn-height: $user-block-btn-width
   right: 0
   bottom: 0
 
-.user-block-content
-  @extend .media-body
-  &.user-block-content-centered
-    overflow: visible
-    .user-block-content-name
-      height: 0
-      overflow: visible
-      vertical-align: middle
-
 .user-block-content-name
   display: inline-block
   margin-right: 8px
+
+.user-block-content-name-line
+  display: block
+  max-width: 100%
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
 
 .user-block-position
   font-size: $font-size-small

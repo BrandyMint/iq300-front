@@ -1,0 +1,25 @@
+.div{"data-url" => "/contacts/list_panel", :role => "contacts-list-panel"}
+  .div{:role => "filters-block", :style => ""}
+    .form-group.form-group-sm
+      .container-fluid.top-panel-content
+        .row
+          .col-md-4
+            .top-panel-form-block{:role => "contacts-search-block"}
+              .form-group
+                .input-group
+                  %input.form-control{:placeholder => "Найти пользователя", :role => "contacts-list-search-input"}
+                  .input-group-btn
+                    .search-block-reset-btn{role: 'contacts-list-search-reset', style: "display: none;"}
+                    %a.btn.btn-default Найти
+              -#.form-group
+                %a.btn.btn-default{:href => "/users/1757/contact_requests/invite_new_user", :role => "invite-new-user", :style => "display: none;"} Пригласить нового пользователя
+          .col-md-6.col-md-offset-2.text-right
+            -#%a.btn.btn-default{role: 'conference-add-member-btn', data: {'original-title' => 'Добавить в контакты'}}
+              %i.fa.fa-plus-circle
+              Добавить контакт
+            .top-panel-content-block
+              %a.btn.btn-default{href: '/contacts/conference/new'}
+                %i.fa.fa-users
+                Создать конференцию
+
+

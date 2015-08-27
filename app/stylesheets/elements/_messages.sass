@@ -1,7 +1,10 @@
+$message-box-padding: 10px 20px
+
 .message-box
-  padding: 20px
+  padding: $message-box-padding
+  border-bottom: 1px solid $line-color
   &.message-box-from-current-user
-    background-color: darken($gray-lighter, 3%)
+    opacity: 0.8
   &.message-box-new
     background-color: lighten($brand-primary, 53%)
   ol, ul
@@ -19,21 +22,76 @@
       margin-left: $grid-gutter-width/2
       list-style-type: disc
 
+.conversation-box
+  cursor: pointer
+  transition: background 0.2s ease
+  &:hover
+    background-color: $item-hover-background
+
+.message-box-system
+  padding: $message-box-padding
+  background-color: $item-hover-background
+  text-align: center
+  border-radius: $border-radius-base
+  margin-bottom: 10px
+
 .messages-list
+  +translate3d(0,0,0)
   .message-box
     border-bottom: solid 1px $input-border
-    &:first-child
-      border-top: solid 1px $input-border
 
 .message-box-user-avatar
   display: inline-block
   position: relative
   padding-right: 10px
-  img
-    display: block
+  &, &:focus, &:hover
+    text-decoration: none
+  .conference-message-box &
+    .message-box-user-avatar-image + .message-box-user-avatar-image
+      margin:
+        top: - $user-avatar-width-md
+        bottom: 4px
+      border: 1px solid rgba(#fff, 0.5)
+      box-shadow: 0 1px 4px rgba(#000, 0.2)
+      transition: opacity 0.2s $transition-bounce, margin 0.2s $transition-bounce
+      transition-delay: 0.3s
+    &:hover
+      .message-box-user-avatar-image + .message-box-user-avatar-image
+        margin-top: - $user-avatar-width-md/2
+        transition-delay: 0
+      .message-box-user-avatar-more
+        opacity: 1
+
+.message-box-user-avatar-empty
+  display: inline-block
+  width: $user-avatar-width-md + 2px
+  height: $user-avatar-width-md + 2px
+  padding-right: 10px
+
+.message-box-user-avatar-image
+  display: block
+  width: $user-avatar-width-md
+  height: $user-avatar-width-md
+  background-color: #fff
+  border: 1px solid $line-color
+
+.message-box-user-avatar-more
+  position: relative
+  text-align: center
+  line-height: $user-avatar-width-md - $font-size-base/2
+  font:
+    size: 16px
+    weight: bold
+  color: $gray-light
+  opacity: 0
 
 .message-box-header
   margin-bottom: 5px
+
+.message-box-title
+  font:
+    size: 1.1em
+    weight: bold
 
 .message-body-text
   &:not(:last-child)
@@ -43,3 +101,11 @@
   margin:
     top: 0.5em
     bottom: 0.5em
+
+.message-box-time
+  @extend small
+  color: $text-muted
+  line-height: $font-size-base*$line-height-base
+
+.conference-members-avatar-image
+  vertical-align: middle

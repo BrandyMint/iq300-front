@@ -1,0 +1,20 @@
+.search-block
+  position: relative
+
+.search-block-inline
+  @extend .search-block
+  display: inline-block
+
+.search-block-reset-btn
+  @extend .btn-link-plain
+  @extend .btn-link-gray
+  position: absolute
+  top: 3px
+  left: -24px
+  font-size: 18px
+  padding: 0 6px
+  z-index: 10
+  &:before
+    content: "\00d7"
+    display: inline-block
+

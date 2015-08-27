@@ -1,0 +1,18 @@
+- user_status = locals[:user_status] || 'offline'
+- files = locals[:files]
+
+.message-box-system
+  .message-body
+    .message-body-text
+      %a
+        %strong
+          Шамиль Хамадеев
+      хочет добавить вас в контакты
+    .text-center
+      %a.btn.btn-primary
+        Принять
+      &nbsp;
+      %a.btn.btn-default
+        Отклонить
+
+

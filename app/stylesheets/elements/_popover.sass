@@ -1,9 +1,9 @@
-.popover-close-btn
+$popover-form-content-block-height: 200px
+
+%popover-close-btn-style
   @extend .btn-link-plain
   display: block
   position: absolute
-  top: -15px
-  right: -15px
   width: 30px
   height: 30px
   border-radius: 100%
@@ -13,11 +13,21 @@
     size: 20px
     weight: bold
   color: $gray-light
+  &:hover
+    color: $gray
+
+.popover-close-btn
+  @extend %popover-close-btn-style
+  top: -15px
+  right: -15px
   &, &:hover, &:focus
     background-color: #fff
     border: 1px solid rgba(#000, 0.2)
-  &:hover
-    color: $gray
+
+.popover-close-btn-inner
+  @extend %popover-close-btn-style
+  top: 0
+  right: 0
 
 .popover-form-block
   @extend .popover
@@ -30,7 +40,6 @@
     padding:
       left: 10px
       right: 10px
-
 
 .popover-form-control
   @extend .form-control
@@ -59,6 +68,11 @@
 .popover-form-actions,
 .popover-form-content-block
   padding: 10px
+
+.popover-form-content-block
+  max-height: $popover-form-content-block-height
+  overflow-y: auto
+  +overflow-scrolling
 
 .popover-form-actions-bottom
   border-top: 1px solid $line-color

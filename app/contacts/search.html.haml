@@ -1,59 +1,47 @@
 ---
 body_class: contacts-index
+nav_item: contacts
+layout: application_modular
 ---
 
-= partial 'shared/header'
-.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
-  / = partial 'communities/top_panel'
-  = partial 'shared/_navigation', locals: {active: 'contacts'}
-  %section.filters-column.contacts-filters-column
-    %ul.with-subfolders
-      %li
-        %a{:href => "/contacts"} Мои контакты
-      %li
-        %a{:href => "#"} Входящие
-      %li
-        %a{:href => "#"} Исходящие
-      %li
-        %a{:href => "#"} Все контакты
-      %li.active
-        %a{href: '/contacts/search/'} Поиск
+- content_for :filters_column do
+  = partial 'contacts/filters'
 
-  %section.contacts-content-column.page-content-compact
-    .contacts-list-header
-      .row
-        .col-sm-4
-          %label Найти пользователя
-          %input.form-control{:type => "text", placeholder: 'Начните писать имя, фамилию или email', role: 'contacts-list-search-input'}
-        .col-sm-2
-          %label &nbsp;
-          %br
-          %input.btn.btn-default.btn-sm{type: :reset, value: 'Отменить', role: 'contacts-list-search-reset', style: 'display: none;'}
-        -#.col-sm-3
-          %select{:name => "", :role => "select2", data: {width: '100%'}, style: 'width: 100%'}
-            %option{:value => ""} Все сообщества
-            %option{:value => ""} Сообщества
-            %option{:value => ""} Сообщества
-            %option{:value => ""} Сообщества
-        -#.col-sm-3
-          %select{:name => "", :role => "select2", data: {width: '100%'}, style: 'width: 100%'}
-            %option{:value => ""} Без сортировки
-            %option{:value => ""} Сортировка
-            %option{:value => ""} Сортировка
-            %option{:value => ""} Сортировка
+%section.contacts-content-column.page-content-compact
+  .contacts-list-header
+    .row
+      .col-sm-4
+        %label Найти пользователя
+        %input.form-control{:type => "text", placeholder: 'Начните писать имя, фамилию или email', role: 'contacts-list-search-input'}
+      .col-sm-2
+        %label &nbsp;
+        %br
+        %input.btn.btn-default.btn-sm{type: :reset, value: 'Отменить', role: 'contacts-list-search-reset', style: 'display: none;'}
+      -#.col-sm-3
+        %select{:name => "", :role => "select2", data: {width: '100%'}, style: 'width: 100%'}
+          %option{:value => ""} Все сообщества
+          %option{:value => ""} Сообщества
+          %option{:value => ""} Сообщества
+          %option{:value => ""} Сообщества
+      -#.col-sm-3
+        %select{:name => "", :role => "select2", data: {width: '100%'}, style: 'width: 100%'}
+          %option{:value => ""} Без сортировки
+          %option{:value => ""} Сортировка
+          %option{:value => ""} Сортировка
+          %option{:value => ""} Сортировка
 
 
-    -#.page-content-compact
-      .row.row-collapse
-        - user_statuses = ['online', 'offline', 'away', '']
-        - for i in 1..4
-          - user_statuses.each do |user_status|
-            .col-sm-4.col-collapse
-              = partial 'contacts/contacts_list_item', locals: {user_status: user_status, is_contact: true}
-            .col-sm-4.col-collapse
-              = partial 'contacts/contacts_list_item', locals: {user_status: user_status, is_contact: false}
+  -#.page-content-compact
+    .row.row-collapse
+      - user_statuses = ['online', 'offline', 'away', '']
+      - for i in 1..4
+        - user_statuses.each do |user_status|
+          .col-sm-4.col-collapse
+            = partial 'contacts/contacts_list_item', locals: {user_status: user_status, is_contact: true}
+          .col-sm-4.col-collapse
+            = partial 'contacts/contacts_list_item', locals: {user_status: user_status, is_contact: false}
 
 
 
-      .text-center
-        %a.btn.btn-default{:href => "#"} Показать Еще 100
+    .text-center
+      %a.btn.btn-default{:href => "#"} Показать Еще 100

@@ -30,10 +30,12 @@
 #= require calendar/calendar
 #= require comments/form
 #= require contacts/list
+#= require conversations/conference
 
 $ ->
   $('@select2').select2()
   $('@multiselect').multiselect()
+  $('[data-toggle*="popover"]').popover()
   multiselectTaskStates = $('@multiselect-task-states')
   multiselectTaskStates.multiselect
     includeSelectAllOption: true

@@ -2,12 +2,6 @@
   data: {'fixed-block-parent' => '@fixed-block-parent-comments'}}
   .comment-form-content{role: 'comment-form-content'}
     %div{ role: 'tabpanel' }
-      .comment-tab-panel
-        %ul.btn-group{ role: 'tablist' }
-          %li.btn.btn-outline-primary.active{ href: '#text-editor', data: { toggle: 'pill' }, role: 'presentation' }
-            Сообщение
-          %li.btn.btn-outline-primary{ href: '#text-preview', data: { toggle: 'pill' }, role: 'presentation' }
-            Предпросмотр
       .comment-tab-content
         .tab-pane.active{ role: 'tabpanel', id: 'text-editor' }
           .comments-form-actions-block
@@ -45,14 +39,4 @@
           .comment-form-content.comment-form-tip{role: 'comment-form-tip-release', style: 'display: none;'}
             .comment-form-tip-content
               Отпустите кнопку мыши для загрузки файлов
-        .tab-pane{ role: 'tabpanel', id: 'text-preview' }
-          .row
-            .col-sm-12.markdown-wrapper
-              %p
-                На конференции, которая ежегодно проходила в моём учебном заведении, я представил этот проект и, разумеется, снискал невиданную славу, ведь учёл все пожелания учителей. Им не надо много – например, идеальный журнал представлял для них всего лишь таблицу с учениками и датами, в которую можно было заносить оценки без перезагрузки страницы.
-                Для реализации такого заноса оценок я использовал jquery. При клике на поле оно превращалось в input type=«text» и после ввода оценки и клика в другом месте запускало ajax-запрос, который, собственно, и отправлял данные к файлу, заносящему их в базу.
-              %p
-                Для реализации такого заноса оценок я использовал jquery. При клике на поле оно превращалось в input type=«text» и после ввода оценки и клика в другом месте запускало ajax-запрос, который, собственно, и отправлял данные к файлу, заносящему их в базу.
-                Для реализации такого заноса оценок я использовал jquery. При клике на поле оно превращалось в input type=«text» и после ввода оценки и клика в другом месте запускало ajax-запрос, который, собственно, и отправлял данные к файлу, заносящему их в базу.
-
 

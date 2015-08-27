@@ -1,0 +1,13 @@
+.top-panel
+  .container-fluid.top-panel-content
+    %form.top-panel-form-block
+      .row
+        .col-md-4
+          .input-group
+            %input.form-control{type: :search, placeholder: 'Поиск по сообщениям', value: 'портал'}
+            .input-group-btn
+              %a.btn.btn-default Найти
+        .col-md-2.col-collapse
+          %a.btn.btn-link-gray-light.btn-link-plain
+            %i.fa.fa-times
+            Отменить

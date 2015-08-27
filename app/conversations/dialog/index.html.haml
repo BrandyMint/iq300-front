@@ -1,28 +1,16 @@
 ---
 body_class: dialog-index
+layout: application_modular
 ---
 
-= partial 'shared/header'
-.content.content-global.display-mode.display-mode-initialized{"data-initial-action" => "index", filters: "true", full_view: "true", list: "true", view: "false"}
-  = partial 'communities/top_panel'
-  = partial 'shared/_navigation'
+- content_for :top_panel do
+  = partial 'conversations/top_panel'
 
-  %section.one-big-column.one-big-column-collapse
-    %ul.nav.nav-tabs.tab-buttons.tabnav.container-grey
-      %li.active
-        %a{"data-toggle" => "tab", :href => "#messages-tab"}
-          Сообщения
-          %span.badge{:role => "counter"} 5
-      %li
-        %a{"data-toggle" => "tab", :href => "#comments-tab"}
-          Комментарии
-          %span.badge{:role => "counter"} 5
+.tab-content.tab-panels
+  #messages-tab.tab-pane.active
+    = partial 'conversations/dialog/messages'
+    = partial 'conversations/dialog/message_form'
 
-    .tab-content.tab-panels
-      #messages-tab.tab-pane.active
-        = partial 'conversations/dialog/messages'
-        = partial 'conversations/dialog/message_form'
-
-      #comments-tab.tab-pane
-        = partial 'conversations/dialog/comments'
+  #comments-tab.tab-pane
+    = partial 'conversations/dialog/comments'
 
