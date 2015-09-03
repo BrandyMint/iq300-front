@@ -1,3 +1,13 @@
+.project-view-column
+  &.project-view-column-project-template
+    .project-show-header
+      background-color: $template-item-background
+
+.project-show-header
+  padding:
+    top: $space-middle
+  margin-bottom: 1em
+
 .project-show-title,
 h2.project-show-title
   &,
@@ -11,6 +21,7 @@ h2.project-show-title
 
 .project-show-tabs
   @extend %page-tabs-block
+  margin-bottom: 0
 
 .nav-tabs-notification-bullet
   @extend %notifications-bullet
