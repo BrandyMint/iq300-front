@@ -26,7 +26,8 @@
               %a{href: ""}= l
       .dropdown.user-nav-btn.pull-right
         %a.btn.btn-primary.btn-circle-plus{data: {toggle: :dropdown}}
-          %span.btn-circle-plus-icon +
+          %span.btn-circle-plus-icon
+            %i.fa.fa-plus
         %ul.dropdown-menu{role: :menu}
           - ['Новая задача', 'Новый проект', 'Новое сообщество', :divider, 'Обратная связь'].each do |l|
             - if l == :divider

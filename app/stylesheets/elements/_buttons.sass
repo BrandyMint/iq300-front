@@ -52,15 +52,16 @@
   text-align: center
   .dropdown.open &
     .btn-circle-plus-icon
-      transform: translate3d(0.5px, -1px, 0) rotate(-135deg)
+      transform: translate3d(0, 0, 0) rotate(-135deg)
 
 .btn-circle-plus-icon
   display: inline-block
   font:
-    size: 18px
+    size: 14px
     weight: bold
   transition: transform 0.2s ease
-  transform: translate3d(0.5px, 0, 0)
+  transform: translate3d(0, 0, 0)
+  transform-origin: 48% 48%
 
 input[type="submit"]
   &.btn
