@@ -1,8 +1,6 @@
-// Input group spacing
 .input-group-spacy + .input-group-spacy
   padding-left: $grid-gutter-width / 2
 
-// For addons which placed above input field
 .input-group-above
   position: relative
   display: inline-block
@@ -18,3 +16,10 @@
       border-left: solid 1px $input-border
   .form-control:focus + .input-group-addon
     border-left-color: $input-border-focus
+
+.input-group
+  &.input-group-block
+    &,
+    .form-inline &,
+    .navbar-form &
+      width: 100%

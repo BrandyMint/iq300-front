@@ -13,10 +13,6 @@ $ ->
     $(@).parents('@project-group-header-form').addClass('hide')
     $(@).parents('@project-group-header').find('@project-group-header-content').removeClass('hide')
 
-  $('@project-tasks-list-toggle-groups').on 'change', () ->
-    $('@project-tasks-list').toggleClass('project-tasks-list-show-groups')
-    $('@project-group-header').toggleClass('hide')
-
   $('@project-tasks-list-select-all').on 'change', () =>
     @checkboxes.prop('checked', !@checkboxes.prop('checked'))
 

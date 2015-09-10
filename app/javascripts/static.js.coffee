@@ -43,6 +43,7 @@ $ ->
   multiselectTaskStates.multiselect
     includeSelectAllOption: true
     selectAllText: 'Все задачи'
+    buttonClass: $(@).data('button-class') || 'btn btn-default'
     buttonText: (options, select) ->
       if options.length is 0 || options.length is multiselectTaskStates.find('option').length
         "<i class=\"fa fa-list\"></i>&nbsp; Все задачи <b class=\"caret\"></b>"
@@ -59,6 +60,7 @@ $ ->
     enableFiltering: true
     enableCaseInsensitiveFiltering: true
     selectAllText: 'Все исполнители'
+    buttonClass: $(@).data('button-class') || 'btn btn-default'
     buttonText: (options, select) ->
       if multiselectUsers.find('option:selected').length is 0 || multiselectUsers.find('option:selected').length is multiselectUsers.find('option').length
         "<i class=\"fa fa-user\"></i>&nbsp; Все исполнители <b class=\"caret\"></b>"

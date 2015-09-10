@@ -1,0 +1,197 @@
+.navbar.navbar-default.project-tasks-list-navbar{:style => "\n    /* margin-bottom: 1px; */\n    /* background-color: transparent; */\n"}
+  .panel-body
+    .row
+      .project-tasks-list-users-filters-block
+        .col-sm-8
+          .row
+            %span.btn.btn-link{:role => "project-tasks-counts"}
+              %i.fa.fa-filter>
+                41 из 113
+            %select.form-control.input-sm{:multiple => "multiple", :role => "multiselect-task-states", :style => "display: none;"}
+              %option{:value => "templates"} Черновики
+              %option{:disabled => "disabled", :value => "new"} Новые
+              %option{:disabled => "disabled", :value => "browsed"} Просмотренные
+              %option{:value => "in_work"} В работе
+              %option{:disabled => "disabled", :value => "completed"} На проверке
+              %option{:value => "overdued"} Просроченные
+              %option{:disabled => "disabled", :value => "refused"} Отказанные
+              %option{:value => "accepted"} Выполненные
+              %option{:value => "canceled"} Отменённые
+              %option{:disabled => "disabled", :value => "pending"} Не активные
+            = succeed "\u{a0}" do
+              .btn-group
+                %button.multiselect.dropdown-toggle.btn.btn-link{"aria-expanded" => "false", "data-toggle" => "dropdown", :title => "Ничего не выбрано", :type => "button"}
+                  %i.fa.fa-list>
+                    Кроме выполненных и отмененных
+                  %b.caret
+                %ul.multiselect-container.dropdown-menu
+                  %li.multiselect-item.multiselect-all
+                    %a.multiselect-all{:href => "javascript:void(0);"}
+                      %label.checkbox
+                        %input{:type => "checkbox", :value => "multiselect-all"}/
+                        Выбрать все
+                  %li
+                    %a{:href => "javascript:void(0);"}
+                      %label.checkbox
+                        %input{:type => "checkbox", :value => "templates"}/
+                        Черновики
+                  %li.disabled
+                    %a{:href => "javascript:void(0);", :tabindex => "-1"}
+                      %label.checkbox
+                        %input{:disabled => "disabled", :type => "checkbox", :value => "new"}/
+                        Новые
+                  %li.disabled
+                    %a{:href => "javascript:void(0);", :tabindex => "-1"}
+                      %label.checkbox
+                        %input{:disabled => "disabled", :type => "checkbox", :value => "browsed"}/
+                        Просмотренные
+                  %li
+                    %a{:href => "javascript:void(0);"}
+                      %label.checkbox
+                        %input{:type => "checkbox", :value => "in_work"}/
+                        В работе
+                  %li.disabled
+                    %a{:href => "javascript:void(0);", :tabindex => "-1"}
+                      %label.checkbox
+                        %input{:disabled => "disabled", :type => "checkbox", :value => "completed"}/
+                        На проверке
+                  %li
+                    %a{:href => "javascript:void(0);"}
+                      %label.checkbox
+                        %input{:type => "checkbox", :value => "overdued"}/
+                        Просроченные
+                  %li.disabled
+                    %a{:href => "javascript:void(0);", :tabindex => "-1"}
+                      %label.checkbox
+                        %input{:disabled => "disabled", :type => "checkbox", :value => "refused"}/
+                        Отказанные
+                  %li
+                    %a{:href => "javascript:void(0);"}
+                      %label.checkbox
+                        %input{:type => "checkbox", :value => "accepted"}/
+                        Выполненные
+                  %li
+                    %a{:href => "javascript:void(0);"}
+                      %label.checkbox
+                        %input{:type => "checkbox", :value => "canceled"}/
+                        Отменённые
+                  %li.disabled
+                    %a{:href => "javascript:void(0);", :tabindex => "-1"}
+                      %label.checkbox
+                        %input{:disabled => "disabled", :type => "checkbox", :value => "pending"}/
+                        Не активные
+            = succeed "\u{a0}" do
+              %span.project-tasks-list-users-filter
+                %select{:multiple => "multiple", :role => "multiselect-users", :style => "display: none;", :tabindex => "-1"}
+                  %option{:value => "3"} Эльвир Нуриахметов
+                  %option{:value => "253"} Ильнур Газизуллин
+                  %option{:value => "710"} Артур Шайдуллин
+                  %option{:value => "1147"} Ирина Михайлова
+                  %option{:value => "1757"} Александр Мещеряков
+                  %option{:value => "3258"} Имир Киямов
+                .btn-group
+                  %button.multiselect.dropdown-toggle.btn.btn-link{"aria-expanded" => "false", "data-toggle" => "dropdown", :tabindex => "-1", :title => "Ничего не выбрано", :type => "button"}
+                    %i.fa.fa-user>
+                      Все исполнители
+                    %b.caret
+                  %ul.multiselect-container.dropdown-menu{:style => "max-height: 200px; overflow-y: auto; overflow-x: hidden;"}
+                    %li.multiselect-item.filter{:value => "0"}
+                      .input-group
+                        %span.input-group-addon
+                          %i.glyphicon.glyphicon-search
+                        %input.form-control.multiselect-search{:placeholder => "Поиск", :type => "text"}/
+                        %span.input-group-btn
+                          %button.btn.btn-default.multiselect-clear-filter{:type => "button"}
+                            %i.glyphicon.glyphicon-remove-circle
+                    %li.multiselect-item.multiselect-all
+                      %a.multiselect-all{:href => "javascript:void(0);"}
+                        %label.checkbox
+                          %input{:type => "checkbox", :value => "multiselect-all"}/
+                          Выбрать всех
+                    %li{:style => "display: list-item;"}
+                      %a{:href => "javascript:void(0);"}
+                        %label.checkbox
+                          %input{:type => "checkbox", :value => "3"}/
+                          Эльвир Нуриахметов
+                    %li{:style => "display: list-item;"}
+                      %a{:href => "javascript:void(0);"}
+                        %label.checkbox
+                          %input{:type => "checkbox", :value => "253"}/
+                          Ильнур Газизуллин
+                    %li{:style => "display: list-item;"}
+                      %a{:href => "javascript:void(0);"}
+                        %label.checkbox
+                          %input{:type => "checkbox", :value => "710"}/
+                          Артур Шайдуллин
+                    %li{:style => "display: list-item;"}
+                      %a{:href => "javascript:void(0);"}
+                        %label.checkbox
+                          %input{:type => "checkbox", :value => "1147"}/
+                          Ирина Михайлова
+                    %li{:style => "display: list-item;"}
+                      %a{:href => "javascript:void(0);"}
+                        %label.checkbox
+                          %input{:type => "checkbox", :value => "1757"}/
+                          Александр Мещеряков
+                    %li{:style => "display: list-item;"}
+                      %a{:href => "javascript:void(0);"}
+                        %label.checkbox
+                          %input{:type => "checkbox", :value => "3258"}/
+                          Имир Киямов
+        .col-sm-4
+          .row{"data-reactid" => ".4.0.0.0.0"}
+            .col-sm-8.hide
+              %form.input-group{"data-reactid" => ".4.0.0.0.0.0.0"}
+                %input.form-control{"data-reactid" => ".4.0.0.0.0.0.0.0", :name => "query", :placeholder => "Поиск", :style => "\n    /* background: none; */\n", :type => "search", :value => ""}/
+                .input-group-btn{"data-reactid" => ".4.0.0.0.0.0.0.1"}
+                  %span{"data-reactid" => ".4.0.0.0.0.0.0.1.0"}
+                  %a.btn.btn-default{"data-reactid" => ".4.0.0.0.0.0.0.1.1", :style => "\n    /* background: none; */\n    /* color: #606060; */\n"}
+                    %i.fa.fa-search{"data-reactid" => ".4.0.0.0.0.0.0.1.1.0"}
+            .col-sm-4.hide.text-right
+              %a.btn.btn-sm{:href => "#", :role => "tasks-print-form-link", :style => "text-decoration:none;"}
+                %i.fa.fa-th-large.icon-color-gray-light.icon-size-14{:role => "tasks-print-form-link"}
+              %a.btn.btn-sm{:href => "#", :role => "tasks-print-form-link", :style => "text-decoration:none;"}
+                %i.fa.fa-print.icon-color-gray-light.icon-size-16{:role => "tasks-print-form-link"}
+            .col-sm-12.text-right
+              .dropdown{:style => "\n    display: inline-block;\n"}
+                %a.btn.btn-link-default.btn-circle-plus{"aria-expanded" => "false", "data-toggle" => "dropdown"}
+                  %span.btn-circle-plus-icon
+                    %i.fa.fa-plus
+                %ul.dropdown-menu{:role => "menu"}
+                  %li
+                    %a{:href => "/tasks/new"} Добавить задачу
+                  %li
+                    %a{:href => "/projects/new"} Добавить группу
+              %a.btn.btn-sm
+                %i.fa.fa-search.icon-color-gray-light.icon-size-14
+              %a.btn.btn-sm{:href => "#", :role => "tasks-print-form-link", :style => "text-decoration:none;"}
+                %i.fa.fa-th-large.icon-color-gray-light.icon-size-14{:role => "tasks-print-form-link"}
+              %a.btn.btn-sm{:href => "#", :role => "tasks-print-form-link", :style => "text-decoration:none;"}
+                %i.fa.fa-print.icon-color-gray-light.icon-size-16{:role => "tasks-print-form-link"}
+  .project-group-header-actions-fixed.hide{"ui-group-actions" => "ui-group-actions"}
+  .hide.project-tasks-group-header.panel-footer{:style => "\n    /* margin-bottom: 10px; */\n    background-color: transparent;\n"}
+    .row
+      .col-md-6
+        %form.input-group{"data-reactid" => ".4.0.0.0.0.0.0"}
+          %input.form-control{"data-reactid" => ".4.0.0.0.0.0.0.0", :name => "query", :placeholder => "Поиск", :style => "\n    /* background: none; */\n", :type => "search", :value => ""}/
+          .input-group-btn{"data-reactid" => ".4.0.0.0.0.0.0.1"}
+            %span{"data-reactid" => ".4.0.0.0.0.0.0.1.0"}
+            %a.btn.btn-default{"data-reactid" => ".4.0.0.0.0.0.0.1.1", :style => "\n    /* background: none; */\n    /* color: #606060; */\n"}
+              %i.fa.fa-search{"data-reactid" => ".4.0.0.0.0.0.0.1.1.0"}
+      .col-sm-6.text-right
+        %a.btn.btn-sm{:href => "#", :role => "tasks-print-form-link", :style => "text-decoration:none;"}
+          %i.fa.fa-times.icon-color-gray-light.icon-size-14{:role => "tasks-print-form-link"}
+  .hide.project-tasks-group-header.panel-footer{:style => "\n    /* margin-bottom: 10px; */\n    background-color: transparent;\n"}
+    .row
+      .col-sm-6
+        .text-center{:style => "\n    \n"}
+          %div
+            %a.btn.btn-default{:style => "\n    color: #338cae;\n"}
+              %i.fa.fa-plus>
+                Добавить задачу
+      .col-sm-6
+        .text-center{:style => "\n    \n"}
+          %div
+            %a.btn.btn-default{:style => "\n    color: #338cae;\n"}
+              %i.fa.fa-list-ul>
+                Добавить группу
