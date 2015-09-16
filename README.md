@@ -4,7 +4,8 @@
 ## Старт
 
 Должны быть установлены git, ruby, bundler, bower, nodejs.
-Работает с nodejs v0.10.32
+Работает с nodejs v0.10.32.
+Удобно пользоваться [nvm](https://github.com/creationix/nvm) — `nvm use` устанавливает версию node, прописанную в `.nvmrc`
 
 1. `bundle install`
 

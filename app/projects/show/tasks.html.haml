@@ -1,24 +1,20 @@
 ---
 body_class: projects-show
 nav_item: projects
+layout: application_modular
 ---
 
-.application-content
-  .application-content-top-panel
-    = partial 'projects/top_panel'
-  .application-content-block{role: 'application-content-block'}
-    %section.view-column.project-view-column{"data-channel" => "private-project-879:update", "data-channel-template" => "private-project-%id%:update", "data-id" => "879", "data-url" => "/projects"}
-      .column-content-fluid
-        .project-show-header
-          .container-fluid
-            .row
-              .col-lg-10.col-lg-offset-1
-                = partial 'projects/show/header'
-                = partial 'projects/tab_navigation', locals: {active_item: 1}
-        .project-show-content
-          .container-fluid
-            .row
-              .col-lg-10.col-lg-offset-1
-                #project-tab-pane
-                  #project-details(role-projects-details-view)
-                    = partial 'projects/tasks_list'
+%section.view-column.project-view-column{"data-channel" => "private-project-879:update", "data-channel-template" => "private-project-%id%:update", "data-id" => "879", "data-url" => "/projects"}
+  .project-show-header
+    .container-fluid
+      .row
+        .col-lg-10.col-lg-offset-1
+          = partial 'projects/show/header'
+          = partial 'projects/tab_navigation', locals: {active_item: 1}
+  .project-show-content
+    .container-fluid
+      .row
+        .col-lg-10.col-lg-offset-1
+          #project-tab-pane
+            #project-details(role-projects-details-view)
+              = partial 'projects/tasks_list'
