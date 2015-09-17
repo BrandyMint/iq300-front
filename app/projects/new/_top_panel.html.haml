@@ -1,11 +1,12 @@
 %section.top-panel
   .pull-left.col-xs-4.col-reset-padding
-    %a.navigation{:href => "#"}
-      %i.icon-reorder
-    %a.btn.btn-lg{:href => "../projects"} 
-      %span.fa.fa-reply
+    %a.header-back-btn{:href => "../projects"}
+      %span.header-back-btn-icon
       К списку проектов
   .col-xs-4
     .top-panel-title
-      Новый проект
+      - if locals[:edit]
+        Настройки проекта
+      - else
+        Новый проект
   .clearfix

@@ -16,6 +16,10 @@ $user-block-btn-height: $user-block-btn-width
   flex-direction: row
   padding-bottom: 10px
 
+.user-block-inline
+  @extend .user-block
+  padding-bottom: 0
+
 .user-block-avatar-block
   flex: 0 2 auto
   order: 1
@@ -25,7 +29,11 @@ $user-block-btn-height: $user-block-btn-width
   flex: 2 1 auto
   order: 2
   overflow: hidden
+  padding-left: 10px
   &.user-block-content-centered
+    justify-content: center
+    display: flex
+    flex-direction: column
     overflow: visible
     .user-block-content-name
       height: 0

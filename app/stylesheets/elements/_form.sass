@@ -1,5 +1,3 @@
-$form-group-padding: 20px
-
 form .inline-errors
   display: inline
   color: red
@@ -97,74 +95,6 @@ select
       visibility: visible
     small
       color: #666666
-
-// <-- form members list
-
-// form members checkbox -->
-.checkbox-member
-  padding: 7px $form-group-padding 7px 38px
-  position: relative
-  cursor: pointer
-  &:hover
-    color: #2b8cae
-    .input-holder
-      border-color: #2b8cae
-  label
-    display: inline
-  input
-    margin: 0
-    border: 0
-    opacity: 0
-    position: absolute
-    +box-sizing(border-box)
-    ~ .project-form-team-member-btn
-      display: none
-    &:checked
-      + i
-        &:before
-          content: ""
-          +absoluted
-          background-color: #45aee4
-          z-index: 0
-      ~ .input-holder
-        background: #3982a7
-        border-color: #3982a7
-      ~ .input-label
-        font-weight: 600
-        color: white
-      ~ .project-form-team-member-btn
-        display: inline-block
-  .input-holder
-    width: $form-group-padding
-    height: $form-group-padding
-    border-radius: 100%
-    border: solid 1px #e6e6e6
-    float: left
-    margin-left: -32px
-    overflow: hidden
-    position: relative
-    z-index: 1
-    &:after
-      content: ""
-      position: absolute
-      left: 7px
-      top: 4px
-      width: 4px
-      height: 7px
-      border-bottom: solid 2px white
-      border-right: solid 2px white
-      -webkit-transform: rotate(45deg)
-      -moz-transform: rotate(45deg)
-      -ms-transform: rotate(45deg)
-      -o-transform: rotate(45deg)
-      transform: rotate(45deg)
-  .input-label
-    display: inline-block
-    padding-top: 3px
-    position: relative
-    z-index: 1
-
-// <-- form members checkbox
 
 // form field -->
 .form-container

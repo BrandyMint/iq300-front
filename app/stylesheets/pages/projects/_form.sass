@@ -44,7 +44,7 @@ $project-form-navigation-z-index: 100
     position: absolute
     left: 10px
     right: 10px
-    top: 50%
+    top: $font-size-base*$line-height-base
     z-index: 0
   span
     vertical-align: middle
@@ -138,3 +138,59 @@ $project-form-navigation-z-index: 100
   text-transform: uppercase
   &, &:hover
     background: $gray-lightest
+
+.project-form-team-users-list
+  list-style-type: none
+  margin: 0
+  padding: 0
+  & > li
+    display: block
+
+.project-form-team-users-list-item-block
+  display: block
+  width: 100%
+  margin: 0
+  bottom: 0
+
+.project-form-team-users-list-item
+  padding: 5px $form-group-padding
+  cursor: pointer
+  border-bottom: 1px solid $line-color
+  &:hover
+    background: $item-hover-background
+
+.project-form-team-users-list-item-checkbox-hidden
+  display: none
+  &:checked ~ .project-form-team-users-list-item
+    background-color: $blue-brand-bright
+    border-color: darken($blue-brand-bright, 10%)
+    color: #fff
+    .project-form-team-users-list-item-checkbox
+      border-color: #fff
+      &:after
+        display: block
+        border-color: #fff
+
+.project-form-team-users-list-item-checkbox
+  display: inline-block
+  order: 3
+  position: relative
+  width: $form-group-padding
+  height: $form-group-padding
+  border-radius: 100%
+  border: solid 1px $line-color
+  overflow: hidden
+  margin: ($user-avatar-width - $form-group-padding)/2 0
+  &:after
+    content: ""
+    display: none
+    position: absolute
+    left: 7px
+    top: 4px
+    width: 4px
+    height: 7px
+    border:
+      bottom: solid 2px $line-color
+      right: solid 2px $line-color
+    transform: rotate(45deg)
+

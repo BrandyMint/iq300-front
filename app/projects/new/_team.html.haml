@@ -60,23 +60,22 @@
 
   .project-form-team-list-content
     -#.members-scrolling-list
-    %ul.form-list.underline{:role => "users-list", "test-result-members-list" => ""}
-      - for i in 0..20
+    %ul.project-form-team-users-list
+      - for i in 0..2
         %li
-          .checkbox-member
-            %label.group{role: 'project-team-member-checkbox'}
-              - if i == 0
-                %input{:checked => "checked", :type => "checkbox"}/
-              - else
-                %input{type: 'checkbox'}
-              %i
-              %span.input-holder
-              %span.input-label.pull-left Александр Мещеряков
-              %a.input-label.project-form-team-member-btn.pull-right{role: 'project-team-member-checkbox-admin'}
-                %i.fa.fa-check.project-form-team-member-btn-active-icon
-                %span.project-form-team-member-btn-inactive-icon + 
-                админ
-              %span.clearfix
+          %label.project-form-team-users-list-item-block
+            - if i == 0
+              %input.project-form-team-users-list-item-checkbox-hidden{:checked => "checked", :type => "checkbox"}
+            - else
+              %input.project-form-team-users-list-item-checkbox-hidden{:type => "checkbox"}
+            .project-form-team-users-list-item
+              .user-block-inline
+                .user-block-avatar
+                  %img.user-block-avatar-image{:alt => "Александр", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", :style => "width:34px;height:34px;", :title => "Мещеряков Александр Игоревич"}/
+                .user-block-content.user-block-content-centered
+                  .user-block-content-name-line
+                    Александр Мещеряков
+                .project-form-team-users-list-item-checkbox
 
   .project-form-team-selected-block-header
     .form-header
@@ -90,7 +89,7 @@
 
   .project-form-team-selected-block
     %ul.form-list.underline{:role => "team-list", "test-team-list" => ""}
-      %li.project-form-team-selected-list-group Управление проектом 
+      %li.project-form-team-selected-list-group Управление проектом
       %li{role: 'tooltip', 'data-original-title' => 'Руководитель проекта'}
         %strong.pull-left
           %i.fa.fa-flag.text-color-gray-light
@@ -99,7 +98,7 @@
           &nbsp;
         %a.input-label.project-form-team-member-selected-btn.active.pull-left{role: 'project-team-member-checkbox-admin'}
           %i.fa.fa-check.project-form-team-member-btn-active-icon
-          %span.project-form-team-member-btn-inactive-icon + 
+          %span.project-form-team-member-btn-inactive-icon +
           админ
         %span.clearfix
         %input#project_memberships_attributes_0_user_id{:name => "project[memberships_attributes][0][user_id]", :type => "hidden", :value => "203"}/
@@ -114,7 +113,7 @@
           &nbsp;
         %a.input-label.project-form-team-member-selected-btn.active.pull-left{role: 'project-team-member-checkbox-admin'}
           %i.fa.fa-check.project-form-team-member-btn-active-icon
-          %span.project-form-team-member-btn-inactive-icon + 
+          %span.project-form-team-member-btn-inactive-icon +
           админ
         %span.clearfix
 
@@ -151,7 +150,7 @@
             &nbsp;
           %a.input-label.project-form-team-member-selected-btn.pull-left{role: 'project-team-member-checkbox-admin'}
             %i.fa.fa-check.project-form-team-member-btn-active-icon
-            %span.project-form-team-member-btn-inactive-icon + 
+            %span.project-form-team-member-btn-inactive-icon +
             админ
           %span.clearfix
 
@@ -166,7 +165,7 @@
             &nbsp;
           %a.input-label.project-form-team-member-selected-btn.pull-left{role: 'project-team-member-checkbox-admin'}
             %i.fa.fa-check.project-form-team-member-btn-active-icon
-            %span.project-form-team-member-btn-inactive-icon + 
+            %span.project-form-team-member-btn-inactive-icon +
             админ
           %span.clearfix
 
