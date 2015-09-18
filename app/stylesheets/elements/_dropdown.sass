@@ -1,0 +1,42 @@
+.open > .dropdown-menu
+  transform: scale(1, 1)
+  opacity: 1
+
+.open > .dropdown-menu li a
+  color: $text-color
+
+.dropdown-menu li a
+  color: #fff
+
+.dropdown-menu
+  transform-origin: top left
+  animation-fill-mode: forwards
+  transform: scale(0, 0)
+  opacity: 0
+  display: block
+  transition: all 0.2s $transition-bounce
+  .pull-right &,
+  .navbar-right &
+    transform-origin: top right
+
+
+.dropup .dropdown-menu
+  +transform-origin(bottom)
+  .pull-right &,
+  .navbar-right &
+    transform-origin: top right
+
+//.navbar .nav > li > .dropdown-menu:after
+
+.dropup > .dropdown-menu:after
+  border-bottom: 0
+  border-top: 6px solid rgba(39, 45, 51, 0.9)
+  top: auto
+  display: inline-block
+  bottom: -6px
+  content: ''
+  position: absolute
+  left: 50%
+  border-right: 6px solid transparent
+  border-left: 6px solid transparent
+
