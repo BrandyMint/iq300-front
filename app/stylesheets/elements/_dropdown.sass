@@ -1,5 +1,5 @@
 .open > .dropdown-menu
-  transform: scale(1, 1)
+  transform: scale(1, 1) translate3d(0, 0, 0)
   opacity: 1
 
 .open > .dropdown-menu li a
@@ -11,7 +11,7 @@
 .dropdown-menu
   transform-origin: top left
   animation-fill-mode: forwards
-  transform: scale(0, 0)
+  transform: scale(0, 0) translate3d(0, 0, 0)
   opacity: 0
   display: block
   transition: all 0.2s $transition-bounce
@@ -30,7 +30,7 @@
 
 .dropup > .dropdown-menu:after
   border-bottom: 0
-  border-top: 6px solid rgba(39, 45, 51, 0.9)
+  border-top: 6px solid $line-color
   top: auto
   display: inline-block
   bottom: -6px
