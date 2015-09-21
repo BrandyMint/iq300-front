@@ -1,12 +1,8 @@
-.open > .dropdown-menu
-  transform: scale(1, 1) translate3d(0, 0, 0)
-  opacity: 1
-
-.open > .dropdown-menu li a
-  color: $text-color
-
-.dropdown-menu li a
-  color: #fff
+.dropdown-menu
+  .open > &,
+  &.bootstrap-datetimepicker-widget
+    transform: scale(1, 1) translate3d(0, 0, 0)
+    opacity: 1
 
 .dropdown-menu
   transform-origin: top left
@@ -15,18 +11,15 @@
   opacity: 0
   display: block
   transition: all 0.2s $transition-bounce
+  &.pull-right,
   .pull-right &,
   .navbar-right &
     transform-origin: top right
-
-
-.dropup .dropdown-menu
-  +transform-origin(bottom)
-  .pull-right &,
-  .navbar-right &
-    transform-origin: top right
-
-//.navbar .nav > li > .dropdown-menu:after
+  .dropup &
+    +transform-origin(bottom)
+    .pull-right &,
+    .navbar-right &
+      transform-origin: top right
 
 .dropup > .dropdown-menu:after
   border-bottom: 0

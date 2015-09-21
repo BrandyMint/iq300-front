@@ -33,11 +33,10 @@ nav_item: tasks
       %a{"data-target" => "task-discussions", :href => "/tasks/121/discussion?initial=true"}
         Обсуждения
         %span.badge{:role => "counter"} 1
-  
+
   .tab-content
     #task-details.tab-pane.active
       = partial 'tasks/show/details'
-    
 
 
-
+-#= partial 'shared/datetimepicker'
