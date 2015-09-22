@@ -63,7 +63,7 @@
     %ul.project-form-team-users-list
       - for i in 0..2
         %li
-          %label.project-form-team-users-list-item-block
+          %label.project-form-team-users-list-item-block{role: 'tooltip', data: {'original-title' => 'alexander@mail.com'}}
             - if i == 0
               %input.project-form-team-users-list-item-checkbox-hidden{:checked => "checked", :type => "checkbox"}
             - else
