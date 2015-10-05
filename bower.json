@@ -3,6 +3,10 @@
   "version": "0.1",
   "dependencies": {
     "bootstrap-multiselect": "0.9.10",
+    "jquery": "latest",
+    "jquery.role": "git://github.com/kossnocorp/role",
+    "jquery.atwho": "~1.0.1",
+    "font-awesome": "~4.4.0",
     "bootstrap-sass-official": "3.2.0",
     "bootstrap-tour": "~0.10.1",
     "c3": "latest",

@@ -15,13 +15,13 @@ window.MultiselectElements ||={}
     buttonText: (options, select) ->
       @caretIcon = 'fa fa-caret-down' if !@caretIcon?
       if options.length is 0 || options.length is $(@).find('option').length
-        "<i class=\"#{@buttonIcon}\"></i>&nbsp; #{@buttonTextAll || 'Все'} <i class=\"#{@caretIcon}\"></i>"
+        "<i class=\"#{@buttonIcon}\"></i>&nbsp;<span class=\"multiselect-select-text\">#{@buttonTextAll || 'Все'}</span><i class=\"#{@caretIcon}\"></i>"
       else
         labels = []
         options.each ->
           labels.push $(@).text()
         text = labels.join(", ") + " "
-        "<i class=\"#{@buttonIcon}\"></i>&nbsp; #{text} <i class=\"#{@caretIcon}\"></i>"
+        "<i class=\"#{@buttonIcon}\"></i>&nbsp;<span class=\"multiselect-select-text\">#{text}</span><i class=\"#{@caretIcon}\"></i>"
 
   multiselectTaskStates = $('@multiselect-task-states')
   multiselectTaskStates.multiselect
