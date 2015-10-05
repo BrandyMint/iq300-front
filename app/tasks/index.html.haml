@@ -19,6 +19,7 @@ nav_item: tasks
           %span.fa.fa-plus-circle
           Добавить задачу
   = partial 'tasks/list/filters'
+  = partial 'tasks/list/list_panel'
   .form-group{"data-url" => "/tasks", role: "tasks-list", "test-tasks-list" => ""}
     .form-group{group: "all_tasks", role: "grouped-tasks"}
       = partial 'tasks/list'
