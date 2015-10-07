@@ -8,8 +8,11 @@ search: false
 - content_for :filters_column do
   = partial 'contacts/filters', locals: {active: :all}
 
-- content_for :top_panel_block do
-  = partial 'contacts/top_panel'
+- content_for :top_panel do
+  .top-panel-container
+    .list-panel-container
+      .container-fluid
+        = partial 'contacts/list/list_panel'
 
 %section.contacts-content-column.form-container-compact
   %div{role: 'contacts-list-content'}

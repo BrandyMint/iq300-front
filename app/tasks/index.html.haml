@@ -9,7 +9,9 @@ nav_item: tasks
 
 - content_for :top_panel do
   .top-panel-container
-    = partial 'tasks/list/list_panel'
+    .list-panel-container
+      .container-fluid
+        = partial 'tasks/list/list_panel'
 
 %section.list-column.tasks-list-column.form-container-compact{role: "tasks-list-scroll-container"}
   .form-group{"data-url" => "/tasks", role: "tasks-list", "test-tasks-list" => ""}

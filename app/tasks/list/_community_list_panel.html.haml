@@ -15,6 +15,11 @@
         - tasks_filter.each do |f|
           %option= f
       %select.form-control-select-plain{role: 'multiselect-select',
+        data: {'button-icon' => 'fa fa-user', 'button-class' => 'btn btn-link-plain'}}
+        %option Все исполнители
+        - data.users.map{|u| u[:name]}.each do |f|
+          %option= f
+      -#%select.form-control-select-plain{role: 'multiselect-select',
         data: {'button-icon' => 'fa fa-users', 'button-class' => 'btn btn-link-plain', 'button-text-all' => 'Все задачи', 'button-text-default' => 'Задачи'}}
         - filter_communities = "Все сообщества, ООО Айкью 300, ЦИТ".split(', ')
         - for i in 0..2

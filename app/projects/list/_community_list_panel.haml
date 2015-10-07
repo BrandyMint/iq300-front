@@ -8,25 +8,31 @@
         %ul.dropdown-menu{:role => "menu"}
           %li
             %a{href: ""} Сбросить все фильтры
-
       %select.form-control-select-plain{role: 'multiselect-select',
-          data: {'button-icon' => 'fa fa-list', 'button-class' => 'btn btn-link-plain', 'button-text-all' => 'Все задачи', 'button-text-default' => 'Задачи'}}
-        - tasks_filter = ['Все задачи', 'Черновики', 'Новые', 'В работе', 'На проверке', 'Просроченные', 'Выполненные', 'Отменённые']
-        - tasks_filter.each do |f|
-          %option= f
-      %select.form-control-select-plain{role: 'multiselect-select',
-        data: {'button-icon' => 'fa fa-users', 'button-class' => 'btn btn-link-plain', 'button-text-all' => 'Все задачи', 'button-text-default' => 'Задачи'}}
+        data: {'button-icon' => 'fa fa-list', 'button-class' => 'btn btn-link-plain'}}
+        %option{:selected => "selected", :value => ""} Все проекты
+        %option{:value => "scenario"} На планировании - 4
+        %option{:value => "in_work"} В работе - 1
+        %option{:value => "archived"} Выполненные - 1
+        %option{:disabled => "disabled", :value => "canceled"} Отмененные
+        %option{:disabled => "disabled", :value => "state_frozen"} Замороженные
+      -#%select.form-control-select-plain{role: 'multiselect-select',
+        data: {'button-icon' => 'fa fa-users', 'button-class' => 'btn btn-link-plain', 'button-text-all' => 'Все проекты', 'button-text-default' => 'проекты'}}
         - filter_communities = "Все сообщества, ООО Айкью 300, ЦИТ".split(', ')
         - for i in 0..2
           - filter_communities.each do |user|
             %option
               = user
       %select.form-control-select-plain{role: 'multiselect-select',
+        data: {'button-icon' => 'fa fa-user', 'button-class' => 'btn btn-link-plain'}}
+        %option Все руководители
+        - data.users.map{|u| u[:name]}.each do |f|
+          %option= f
+
+      -#%select.form-control-select-plain{role: 'multiselect-select',
         data: {'button-icon' => 'fa fa-folder-o', 'button-class' => 'btn btn-link-plain'}}
         %option{selected: "selected", value: ""} Без группировки
         %option{value: "favorite"} По важности
-        %option{value: "deadline"} По дедлайну
-        %option{value: "projects_u"} По проектам
       .btn-group
         %select.form-control-select-plain{role: 'multiselect-select',
           data: {'button-class' => 'btn btn-link-plain', 'caret-icon' => 'false'}}
@@ -38,21 +44,12 @@
 
   .col-sm-3
     .list-panel-block.text-right
-      -# .dropdown.dropdown-inline
-      -#   %a.btn.btn-link-default.btn-circle-plus{"aria-expanded" => "false", "data-toggle" => "dropdown"}
-      -#     %span.btn-circle-plus-icon
-      -#       %i.fa.fa-plus.icon-size-16
-      -#   %ul.dropdown-menu{:role => "menu"}
-      -#     %li
-      -#       %a{:href => "/tasks/new", role: 'project-tasks-list-add-task-btn'} Добавить задачу
-      -#     %li
-      -#       %a{:href => "/projects/new"} Добавить группу
-      %a.btn.btn-link-default.btn-circle-plus{href: '/tasks/new', role: :tooltip, 'data-original-title' => 'Добавить задачу'}
+      %a.btn.btn-link-default.btn-circle-plus{href: '/tasks/new', role: :tooltip, 'data-original-title' => 'Добавить проект'}
         %span.btn-circle-plus-icon
           %i.fa.fa-plus.icon-size-16
       %a.btn.btn-sm.btn-link-plain{href: '[role*="project-tasks-list-search"]', data: {toggle: :collapse}}
         %i.fa.fa-search.icon-color-gray-light.icon-size-14
-      %a.btn.btn-sm.btn-link-plain{:href => "#", role: :tooltip, 'data-original-title' => 'Доска задач'}
+      -# %a.btn.btn-sm.btn-link-plain{:href => "#", role: :tooltip, 'data-original-title' => 'Доска проектов'}
         %i.fa.fa-th-large.icon-color-gray-light.icon-size-14
       %a.btn.btn-sm.btn-link-plain{:href => "#"}
         %i.fa.fa-print.icon-color-gray-light.icon-size-16

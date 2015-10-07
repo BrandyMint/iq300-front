@@ -1,11 +1,10 @@
 ---
 body_class: communities-index
+layout: application_modular
+nav_item: communities-index
 ---
 
-= partial 'shared/header'
-.content.content-global.display-mode{"data-initial-action" => "index", :filters => "true", :full_view => "true", :list => "true", "role-display-mode" => "ready", :view => "false"}
-  = partial 'communities/top_panel'
-  = partial 'shared/_navigation'
+- content_for :filters_column do
   %section.filters-column
     %ul.with-subfolders
       %li.active
@@ -16,43 +15,37 @@ body_class: communities-index
 
       %li
         %a{:href => "#"} Каталог сообществ
-    -# TODO refactor 
-    -#= partial 'shared/navigation'
-    -#%div{"role-communities-list-manager" => "ready"}
-    -#= partial 'communities/filters'
-    -#%section.list-column-block.form-container-compact{:role => "communities-list-scroll-container", :style => "z-index: 100;"}
-    -# // refactor
 
-  %section.communities-content-column.form-container-compact
-    .content-group
-      .page-title.clearfix
-        .pull-left
-          %h2
-            Мои сообщества
-        .pull-right
-          %a.btn.btn-default{href: "../communities/new/"}
-            %span.fa.fa-plus-circle
-            Новое сообщество
-    .content-group
-      %select{:name => "", role: "select2"}
-        %option{:value => ""} Список объектов
-        %option{:value => ""} Список объектов
-        %option{:value => ""} Список объектов
-        %option{:value => ""} Список объектов
-        %option{:value => ""} Список объектов
+%section.communities-content-column.form-container-compact
+  .content-group
+    .page-title.clearfix
+      .pull-left
+        %h2
+          Мои сообщества
+      .pull-right
+        %a.btn.btn-default{href: "../communities/new/"}
+          %span.fa.fa-plus-circle
+          Новое сообщество
+  .content-group
+    %select{:name => "", role: "select2"}
+      %option{:value => ""} Список объектов
+      %option{:value => ""} Список объектов
+      %option{:value => ""} Список объектов
+      %option{:value => ""} Список объектов
+      %option{:value => ""} Список объектов
 
-    - description = 'Кабельные и беспроводные сети. Оборудование для IT-коммуникаций. Кабельные и беспроводные сети. Оборудование для IT-коммуникаций. Кабельные и беспроводные сети. Оборудование для IT-коммуникаций'
-    - phone = '+7 (8552) 30-55-42'
-    - email = 'welcome@romaska.ru'
+  - description = 'Кабельные и беспроводные сети. Оборудование для IT-коммуникаций. Кабельные и беспроводные сети. Оборудование для IT-коммуникаций. Кабельные и беспроводные сети. Оборудование для IT-коммуникаций'
+  - phone = '+7 (8552) 30-55-42'
+  - email = 'welcome@romaska.ru'
 
-    .content-group
-      .row
+  .content-group
+    .row
+      .col-md-6.col-inline
+        = partial 'communities/block', locals: {status: 'new', description: description, phone: phone, email: email}
+      - for i in 1..5
         .col-md-6.col-inline
-          = partial 'communities/block', locals: {status: 'new', description: description, phone: phone, email: email}
-        - for i in 1..5
-          .col-md-6.col-inline
-            - if i % 2 == 0
-              = partial 'communities/block', locals: {description: description, phone: phone, email: email}
-            - else
-              = partial 'communities/block', locals: {description: description}
+          - if i % 2 == 0
+            = partial 'communities/block', locals: {description: description, phone: phone, email: email}
+          - else
+            = partial 'communities/block', locals: {description: description}
 

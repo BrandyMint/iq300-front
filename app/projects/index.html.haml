@@ -7,5 +7,11 @@ layout: application_modular
 - content_for :filters_column do
   = partial 'projects/list_filters'
 
+- content_for :top_panel do
+  .top-panel-container
+    .list-panel-container
+      .container-fluid
+        = partial 'projects/list/list_panel'
+
 = partial 'projects/projects_list_column'
 

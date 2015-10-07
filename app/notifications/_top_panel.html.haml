@@ -5,11 +5,25 @@
         .row
           .col-sm-10
             .form-group.top-panel-block-left
-              %select{role: 'select2', style: "width: 200px;"}
-                %option{selected: ''} Все сообщества
-                %option{:value => "id"} Айти Челны
-                %option{:value => "updated_at"} UX Fake
-                %option{:value => "end_date"} Айкью 300
+              %select.form-control-select-plain{role: 'multiselect-select',
+                data: {'button-icon' => 'fa fa-users', 'button-class' => 'btn btn-link-plain', 'button-text-all' => 'Все задачи', 'button-text-default' => 'Задачи'}}
+                - filter_communities = "Все сообщества, ООО Айкью 300, ЦИТ".split(', ')
+                - for i in 0..2
+                  - filter_communities.each do |user|
+                    %option
+                      = user
+
+              %select.form-control-select-plain{role: 'multiselect-select',
+                data: {'button-icon' => 'fa fa-bell', 'button-class' => 'btn btn-link-plain', 'button-text-all' => 'Все задачи', 'button-text-default' => 'Задачи'}}
+                %option{:value => ""} Все уведомления
+                %option{:value => "base_task"} Задачи
+                %option{:value => "comment"} Комментарии
+                %option{:value => "mention"} Упоминания
+                %option{:value => "base_contract"} Сообщества
+                %option{:value => "project"} Проекты
+                %option{:value => "error_report"} Обратная связь
+                %option{:value => "event"} Календарь
+                %option{:value => "contact_request"} Контакты
             -#.form-group.top-panel-block-left
               &nbsp;
               .checkbox
@@ -19,13 +33,13 @@
             .form-group.top-panel-block-left
               &nbsp;
               %a.btn.btn-link.btn-link-plain.btn-link-primary.top-panel-btn{href: '#', role: 'tooltip notification-list-mark-btn', data: {mark: :all}}
-                %strong 
+                %strong
                   %i.fa.fa-check
                   Отметить все как прочитанные
               %a.btn.btn-link.btn-link-plain.btn-link-primary.top-panel-btn.top-panel-btn-hidden{style: 'display: none', href: '#', role: 'tooltip notification-list-mark-btn'}
-                %strong 
+                %strong
                   %i.fa.fa-check
-                  Отметить 
+                  Отметить
                   %span{role: 'notification-list-mark-btn-counter'}
                   как прочитанные
 
