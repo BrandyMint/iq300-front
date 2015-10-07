@@ -147,17 +147,13 @@ a.project-task-box-add-subtask-btn
   .month
     font-size: $font-size-small
 
-.project-tasks-list-navbar
-  @extend .navbar
-  @extend .navbar-default
-  border: none
-  border-radius: 0
-  background-color: $gray-lighter
+.list-panel
+  @extend %list-panel-container
 
-.project-tasks-list-navbar-divider
-  border-bottom: 1px solid $line-color-transparent
+.list-panel-divider
+  @extend %list-panel-divider
 
-.project-tasks-list-navbar-checkbox
+.list-panel-checkbox
   margin:
     right: 1em
   label
@@ -165,7 +161,7 @@ a.project-task-box-add-subtask-btn
       top: 9px
       bottom: 9px
 
-.project-tasks-list-navbar-checkbox-input
+.list-panel-checkbox-input
   margin-right: 3px
 
 .project-tasks-list-users-filters-block

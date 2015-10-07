@@ -1,10 +1,10 @@
-.project-tasks-list-navbar
+.list-panel
   .row
     .col-sm-8
       .navbar-form.navbar-left
-        .checkbox.project-tasks-list-navbar-checkbox
+        .checkbox.list-panel-checkbox
           %label{role: 'project-tasks-list-select-all'}
-            %input.project-tasks-list-navbar-checkbox-input{type: 'checkbox'}
+            %input.list-panel-checkbox-input{type: 'checkbox'}
 
         .dropdown.dropdown-inline
           %a.btn.btn-link-plain{:role => "project-tasks-counts", 'data-toggle' => 'dropdown'}
@@ -51,7 +51,7 @@
           %i.fa.fa-print.icon-color-gray-light.icon-size-16
 
   .collapse{role: 'project-tasks-list-search'}
-    .project-tasks-list-navbar-divider
+    .list-panel-divider
     .navbar-form
       .row
         .col-md-6.col-md-offset-3

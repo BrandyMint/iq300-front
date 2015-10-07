@@ -1,16 +1,16 @@
 %section.tree.project-tasks-list.project-tasks-list-initialized.project-tasks-list-show-groups{role: 'project-tasks-list'}
-  .navbar.navbar-default.project-tasks-list-navbar
+  .navbar.navbar-default.list-panel-container-block
     .row
       .col-sm-8
         %form.navbar-form.navbar-left
           .form-group
-            .checkbox.project-tasks-list-navbar-checkbox
+            .checkbox.list-panel-checkbox
               %label{role: 'project-tasks-list-select-all'}
-                %input.project-tasks-list-navbar-checkbox-input{type: 'checkbox'}
+                %input.list-panel-checkbox-input{type: 'checkbox'}
                 Выбрать все
-            .checkbox.project-tasks-list-navbar-checkbox
+            .checkbox.list-panel-checkbox
               %label{role: 'project-tasks-list-toggle-groups'}
-                %input.project-tasks-list-navbar-checkbox-input{type: 'checkbox'}
+                %input.list-panel-checkbox-input{type: 'checkbox'}
                 Скрыть группы
           %select.form-control.input-sm
             - tasks_filter = ['Все задачи', 'К выполнению', 'Завершённые', 'Черновики', 'Задачи на сегодня']
