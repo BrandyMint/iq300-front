@@ -12,6 +12,7 @@
 #= require bootstrap-multiselect/dist/js/bootstrap-multiselect
 #= require fullcalendar/dist/fullcalendar
 #= require jquery-drag-drop-plugin/jquery.drag-drop.plugin
+#= require purl/purl
 #= require layout
 #= require projects/tasks
 #= require projects/new

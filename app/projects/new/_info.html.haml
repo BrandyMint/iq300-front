@@ -4,10 +4,7 @@
     %small
       (обязательное поле)
   #project-title.col-md-9
-    .input-group
-      %input#project_title.form-control{"data-errors-in" => "#project-title", "data-v-presence" => "true", :name => "project[title]", :placeholder => "Название проекта (обязательно)", :role => "validable", :size => "30", :type => "text"}/
-      .input-group-addon
-        .fa.fa-exclamation-triangle
+    %input#project_title.form-control{"data-errors-in" => "#project-title", "data-v-presence" => "true", :name => "project[title]", :placeholder => "Название проекта (обязательно)", :role => "validable", :size => "30", :type => "text"}/
     %ul.errors-list{:role => "errors-list"}
 .form-group
   %label.col-md-3
@@ -86,10 +83,18 @@
 
 
 .form-group
-  .pull-left
-    %a.btn.btn-lg{"data-step" => "description", :href => "#", :role => "step-switcher", "test-add-project-params" => ""}
-      Добавить параметры проекта
-  .pull-right
+  .row
+    .col-md-4.text-left
+      %a.btn.btn-lg{"data-step" => "description", :href => "#", :role => "step-switcher", "test-add-project-params" => ""}
+        Добавить параметры проекта
+    - if current_page.data.new_record == true
+      .col-md-4.col-md-offset-4
+        .small.text-muted.text-center.media
+          Изменить участников можно
+          %br
+          после создания проекта
+
+  -#.pull-right
     %a.btn.btn-primary.btn-lg{"data-step" => "team", :href => "#", :role => "step-switcher"}
       Выбрать участников
       %span.fa.fa-chevron-right

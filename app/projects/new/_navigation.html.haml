@@ -5,8 +5,9 @@
         %a.back-link{:href => "#", :role => "step-back-btn", data: {step: 'description', target: 'info'}, :style => "display: none;"}
           %span.fa.fa-angle-left
           %span{:role => "btn-title"} Назад к п.1 "Информация"
-        %a.back-link{:href => "#", :role => "step-back-btn", data: {step: 'team', target: 'description'}, :style => "display: none;"}
-          %span.fa.fa-angle-left
+        - if current_page.data.new_record != true
+          %a.back-link{:href => "#", :role => "step-back-btn", data: {step: 'team', target: 'description'}, :style => "display: none;"}
+            %span.fa.fa-angle-left
             %span{:role => "btn-title"} Назад к п.2 "Параметры"
     .col-sm-7
       .project-form-navigation-container-centered{:role => "step-informer"}
@@ -16,9 +17,11 @@
         %a.projects-form-step-indicator{"data-step" => "description", :role => "step-indicator"}
           %span.number 2
           %span Параметры
-        %a.projects-form-step-indicator{"data-step" => "team", :role => "step-indicator"}
-          %span.number 3
-          %span Команда
+        - if current_page.data.new_record != true
+          %a.projects-form-step-indicator{"data-step" => "team", :role => "step-indicator"}
+            %span.number 3
+            %span Команда
+
     .col-sm-3
       %input.btn.btn-success.btn-lg.pull-right{"data-disable-with" => "Сохранение проекта...", :name => "commit", "test-save-project-btn" => "true", :type => "submit", :value => "Сохранить проект"}/
       .clearfix

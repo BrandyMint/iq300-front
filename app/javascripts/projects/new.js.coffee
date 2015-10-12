@@ -2,6 +2,7 @@ window.NewProject ||= {}
 
 ((app) ->
   $(document).ready ->
+    url = $.url()
 
     stepSwitcher = $('@step-switcher')
     stepInformer = $('@step-informer')
@@ -11,21 +12,6 @@ window.NewProject ||= {}
     projectTeamList = $('@team-list')
 
     select2btn = $('@projects-form-select2btn')
-
-    stepSwitcher.on 'click', (e) ->
-      e.preventDefault()
-      step = $(@).data('step')
-      setStepAll step
-    
-    stepIndicator.on 'click', (e) ->
-      e.preventDefault()
-      step = $(@).data('step')
-      setStepAll step
-
-    backBtn.on 'click', (e) ->
-      e.preventDefault()
-      target = $(@).data('target')
-      setStepAll target
 
     select2btn.on 'click', (e) ->
       e.preventDefault()
@@ -37,7 +23,7 @@ window.NewProject ||= {}
         setStep step
         setStepInformer step
         setBackBtn step
-    
+
     setStepInformer = (step) ->
       stepInformer.find('@step-indicator').removeClass('active')
       stepInformer.find('@step-indicator[data-step="'+step+'"]').addClass 'active'
@@ -49,6 +35,24 @@ window.NewProject ||= {}
     setBackBtn = (step) ->
       backBtn.hide()
       backBtn.filter('[data-step="'+step+'"]').show()
+
+    inititalStep = url.data.param.query.data_step
+    setStepAll inititalStep
+
+    stepSwitcher.on 'click', (e) ->
+      e.preventDefault()
+      step = $(@).data('step')
+      setStepAll step
+
+    stepIndicator.on 'click', (e) ->
+      e.preventDefault()
+      step = $(@).data('step')
+      setStepAll step
+
+    backBtn.on 'click', (e) ->
+      e.preventDefault()
+      target = $(@).data('target')
+      setStepAll target
 
 
     goalsEditor = $('@projects-form-goal-editor')
