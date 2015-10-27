@@ -27,7 +27,13 @@
           %tbody{"data-reactid" => ".2.1.1"}
             %tr.community-roles-table-cell{"data-reactid" => ".2.1.1.$4", "data-test-reconciliation-member" => "true"}
               %td{"data-reactid" => ".2.1.1.$4.0"}
-                %a= user[:name]
+                .user-block-inline
+                  .user-block-avatar
+                    %img.user-block-avatar-image{:alt => "Александр", :src => data.avatars.first.url, :style => "width:34px;height:34px;", :title => "Мещеряков Александр Игоревич"}/
+                  .user-block-content.user-block-content-centered
+                    .user-block-content-name-line
+                      %a
+                        = user[:name]
               %td{"data-reactid" => ".2.1.1.$4.1"}
                 - if i == 1
                   .text-color-success
