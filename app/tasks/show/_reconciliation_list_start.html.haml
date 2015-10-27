@@ -1,0 +1,15 @@
+.alert.alert-warning-light
+  .content-group
+    Данная функция на тарифном плане &laquo;Старт&raquo; недоступна.
+    %br
+    Повысить тарифный план сообщества Вы можете в разделе
+    = link_to "&laquo;Оплата&raquo;", "/communities/profile"
+    %br
+    Полная информацией по существующим тарифам доступна
+    = link_to 'на нашем сайте', 'https://iq300.ru/', target: :blank
+    в разделе
+    = link_to "&laquo;Тарифы&raquo;", 'http://iq300.ru/pricing', target: :blank
+
+  %a.btn.btn-warning{role: 'change-plan-confirm-btn', href: '/communities/profile'}
+    Поменять план
+

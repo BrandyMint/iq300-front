@@ -1,0 +1,17 @@
+details:
+  title: Детали
+  link: /tasks/show/
+discussion:
+  title: Обсуждение
+  counter: 1
+  link: /tasks/show/discussion
+accessor_users:
+  title: Участники
+  link: /tasks/show/accessor_users
+activities:
+  title: История
+  link: /tasks/show/activities
+reconciliation_list:
+  title: Лист согласования
+  link: /tasks/show/reconciliation_list
+  counter: 3

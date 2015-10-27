@@ -14,6 +14,7 @@
 #= require jquery-drag-drop-plugin/jquery.drag-drop.plugin
 #= require purl/purl
 #= require layout
+#= require data_toggle_hide
 #= require projects/tasks
 #= require projects/new
 #= require projects/discussions

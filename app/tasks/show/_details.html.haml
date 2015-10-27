@@ -1,15 +1,3 @@
-.form-group.events{:role => "actions-field", :style => "display: block;"}
-  .form-field
-    .pull-left
-      .group
-        %a.btn.btn-default.action.force_accept{:href => "/tasks/121/change_status?do=force_accept", :role => "action"} Принять как выполненную
-        %a.btn.btn-default.action.cancel{"data-confirm" => "Вы уверены?", :href => "/tasks/121/change_status?do=cancel", :role => "action"} Отменить
-    .pull-right
-      %a.btn.btn-default{"data-method" => "put", :href => "/tasks/121/save_as_template", :rel => "nofollow"} Сохранить как шаблон
-      %a.btn.btn-default{:href => "/tasks/121/edit"}
-        %span.fa.fa-edit
-        Редактировать
-
 .task-page-section-block
   .row
     .col-md-6
@@ -47,8 +35,7 @@
                 .add-button
                   %a.with-plus-button.add-tag{"data-original-title" => "Добавьте новую категорию к задаче", :href => "#", "role-bootstrap-tooltip" => "ready", :title => ""}
                     Добавить
-                    %span
-                      %i.icon-plus
+                    %i.fa.fa-plus-circle
                 .adding-form
                   %form.new-todo{"accept-charset" => "UTF-8", :action => "#", :method => "post"}
                     %div{:style => "margin:0;padding:0;display:inline"}

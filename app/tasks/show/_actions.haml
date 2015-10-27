@@ -1,0 +1,27 @@
+.form-group.events{:role => "actions-field", :style => "display: block;"}
+  - if locals[:reconciliation]
+    .form-field
+      .pull-left
+        .group
+          %a.btn.btn-default{role: 'task-reconciliation-accept-btn', data: {toggle: :toggle, target: '[role*="task-reconciliation-accept-btn"]'}}
+            Согласовать
+          %a.btn.btn-default{role: 'task-reconciliation-accept-btn', style: 'display: none', data: {toggle: :toggle, target: '[role*="task-reconciliation-accept-btn"]'}}
+            Отозвать согласование
+      .pull-right
+        %a.btn.btn-default{"data-method" => "put", :href => "/tasks/121/save_as_template", :rel => "nofollow"} Сохранить как шаблон
+  - else
+    .form-field
+      .pull-left
+        .group
+          %a.btn.btn-default.action.force_accept{:href => "/tasks/121/change_status?do=force_accept", :role => "action"} Принять как выполненную
+          %a.btn.btn-default.action.cancel{"data-confirm" => "Вы уверены?", :href => "/tasks/121/change_status?do=cancel", :role => "action"} Отменить
+      .pull-right
+        %a.btn.btn-default{"data-method" => "put", :href => "/tasks/121/save_as_template", :rel => "nofollow"} Сохранить как шаблон
+        %a.btn.btn-default{:href => "/tasks/121/edit"}
+          %span.fa.fa-edit
+          Редактировать
+      .clearfix
+      .content-group-sm
+      = link_to '/tasks/show/reconciliation_list' do
+        Задачу согласовали 1 из 3
+

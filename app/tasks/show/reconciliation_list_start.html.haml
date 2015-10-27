@@ -1,7 +1,7 @@
 ---
-body_class: tasks-show
-nav_item: projects
 layout: application_modular
+body_class: tasks-show
+nav_item: tasks
 ---
 
 - content_for :back_button do
@@ -12,12 +12,8 @@ layout: application_modular
 %section.view-column.task-view-column{"data-channel" => "private-base_task-65590:update", "data-channel-template" => "private-base_task-%id%:update", "data-status" => "completed", "data-url" => "/tasks/65590", "role-task-view-column" => "ready", "test-task-view" => ""}
   .form-container
     = partial 'tasks/show/title'
-  = partial 'tasks/show/tabnav', locals: {active: :discussion}
-  = partial 'tasks/show/discussion'
-
-  .application-content-bottom-block
-    = partial 'comments/form'
-
-
-
+  = partial 'tasks/show/tabnav', locals: {active: :reconciliation_list, lock: [:reconciliation_list]}
+  .tab-content
+    #task-details.tab-pane.active
+      = partial 'tasks/show/reconciliation_list_start'
 

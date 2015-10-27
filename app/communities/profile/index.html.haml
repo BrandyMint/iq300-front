@@ -1,42 +1,43 @@
 ---
 body_class: communities-profile
 nav_item: communities
+layout: application_modular
 ---
 
-.application-content
-  .application-content-top-panel
-    = partial 'communities/top_panel'
+- content_for :back_button do
+  %a.btn.btn-lg{:href => "/communities"}
+    %span.fa.fa-angle-left.icon-size-16
+    Сообщества
 
-  .application-content-block{role: 'application-content-block'}
-    %section
-      = partial 'communities/profile/header'
-      = partial 'communities/profile/tabs'
-      .tab-content.tab-panels
-        #community-profile.tab-pane.active
-          = partial 'communities/profile/details'
+%section
+  = partial 'communities/profile/header'
+  = partial 'communities/profile/tabs'
+  .tab-content.tab-panels
+    #community-profile.tab-pane.active
+      = partial 'communities/profile/details'
 
-        #community-members.tab-pane
-          = partial 'communities/profile/participants'
+    #community-members.tab-pane
+      = partial 'communities/profile/participants'
 
-        #community-departments.object-details.community-departments-tab.undefined.tab-pane
-          -#= partial 'communities/profile/departments'
-          = partial 'communities/profile/departments_rules'
+    #community-departments.object-details.community-departments-tab.undefined.tab-pane
+      -#= partial 'communities/profile/departments'
+      = partial 'communities/profile/departments_rules'
 
-        #community-roles-edit.tab-pane
-          = partial 'communities/profile/roles_edit'
+    #community-roles-edit.tab-pane
+      = partial 'communities/profile/roles_edit'
 
-        -##community-actions.tab-pane
-          = partial 'communities/profile/actions'
+    -##community-actions.tab-pane
+      = partial 'communities/profile/actions'
 
-        #community-partners.tab-pane
-          = partial 'communities/profile/partners'
+    #community-partners.tab-pane
+      = partial 'communities/profile/partners'
 
-        #community-partners-edit.tab-pane
-          = partial 'communities/profile/partners_edit'
+    #community-partners-edit.tab-pane
+      = partial 'communities/profile/partners_edit'
 
-        #community-reports.tab-pane
-          = partial 'communities/profile/reports'
+    #community-reports.tab-pane
+      = partial 'communities/profile/reports'
 
-        .tab-pane{role: 'community-billing'}
-          = partial 'communities/profile/billing'
+    .tab-pane{role: 'community-billing'}
+      = partial 'communities/profile/billing'
 
