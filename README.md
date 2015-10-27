@@ -34,7 +34,7 @@ Gulp-задача собирает в `app/tmp/assets` все ассеты, пр
 `./frontend_build` — делаем билд
 
 `STAGE=<stage_name> ./frontend_deploy` — деплоим на
-`<stage_name>.iq300-dev.com`, по номеру стейджа предварительно
+`<stage_name>.iq300-dev.ru`, по номеру стейджа предварительно
 договариваемся и указываем в STAGE — например, `STAGE=frontend3 ./frontend_deploy`
 
 ```
