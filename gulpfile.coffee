@@ -52,7 +52,7 @@ options.autoprefixer =
   browsers: ['Explorer 10', 'Chrome 31', 'Firefox 27', 'Opera 27', 'Safari 7', 'iOS 7', 'Android 4.1', 'OperaMini 8']
   cascade: false
 
-options.minifyCss = 
+options.minifyCss =
   compatibility: '*'
 
 gulp.task "sass:watch", ->
@@ -121,7 +121,7 @@ gulp.task "images:dist", ->
 
 gulp.task "fonts:watch", ->
   gulp
-    .src("app/**/*.{eot,svg,ttf,woff}")
+    .src("app/**/*.{eot,svg,ttf,woff,woff2}")
     .pipe(flatten())
     .pipe(gulp.dest("./app/tmp/assets"))
     .pipe $.connect.reload()
@@ -129,7 +129,7 @@ gulp.task "fonts:watch", ->
 
 gulp.task "fonts:dist", ->
   gulp
-    .src("app/**/*.{eot,svg,ttf,woff}")
+    .src("app/**/*.{eot,svg,ttf,woff,woff2}")
     .pipe(flatten())
     .pipe(gulp.dest("./dist/assets"))
     .on "error", $.util.log
@@ -199,10 +199,10 @@ gulp.task "watch", [
   #gulp.watch ["app/**/*.haml"], ["browser-sync-reload"]
   gulp.watch ["app/javascripts/**/*.*", "app/tmp/stylesheets/*.css"], ["browser-sync-reload"]
   #gulp.watch ["app/tmp/stylesheets/*.css"], ["browser-sync-reload"]
- 
+
   # Watch .js files
   #gulp.watch "app/scripts/**/*.js", ["scripts"]
-  
+
   # Watch image files
   #gulp.watch "app/images/**/*", ["images"]
   return
