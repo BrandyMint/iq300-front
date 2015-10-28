@@ -33,16 +33,17 @@
       img
         border-radius: 100%
         display: inline-block
-        margin: floor(($headerHeight - $user-avatar-width) / 2) 0.5em 0 0
-        border: 1px solid #ddd
+        margin: floor(($headerHeight - $user-avatar-width) / 2 + 2px) 0.5em 0 0
         width: $user-avatar-width
         height: $user-avatar-width
+        box-sizing: border-box
+        box-shadow: 0 0 0 1px rgba(#000, 0.1)
 
 .user-nav-link
   color: inherit
   display: inline-block
   vertical-align: top
-  line-height: $headerHeight
+  line-height: $headerHeight - 1px
   &:hover
     text-decoration: none
 
@@ -51,6 +52,13 @@
     left: $grid-gutter-width/3
     right: $grid-gutter-width/3
 
+.app-header-widget-button-icon
+  display: inline-block
+  font-size: 18px
+
+.app-header-widget-button-text
+  display: inline-block
+  vertical-align: top
 
 .header-back-btn
   @extend .btn

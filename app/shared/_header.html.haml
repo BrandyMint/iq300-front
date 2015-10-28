@@ -36,8 +36,20 @@
               %li
                 %a{href: ""}= l
       .user-nav-btn.pull-right
-        %a.notifications-widget-button.user-nav-link{role: 'notifications-widget-button'}
-          %i.iqs-notifications-o
+        %a.notifications-widget-button.user-nav-link{role: 'notifications-widget-button tooltip', data: {'original-title' => 'Уведомления', placement: 'bottom'}}
+          %i.iqs-notifications-o.app-header-widget-button-icon
           .notifications-widget-button-bullet
+        &nbsp;
+      .user-nav-btn.pull-right
+        %a.notifications-widget-button.user-nav-link{role: 'tooltip', data: {'original-title' => 'Обратная связь', placement: 'bottom'}}
+          %i.iqs.iqs-chat.app-header-widget-button-icon
+      .user-nav-btn.pull-right
+        %a.notifications-widget-button.user-nav-link{data: {toggle: :toggle, target: '[role*="help-modal"]'}}
+          %i.iqs.iqs-help.app-header-widget-button-icon
+          .app-header-widget-button-text
+            Уроки
 
-      .clearfox
+      .clearfix
+
+  = partial 'shared/help_modal'
+

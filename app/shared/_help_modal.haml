@@ -1,0 +1,25 @@
+%div{:style => "display: none;", role: 'help-modal'}
+  .project-wizard-modal-backdrop
+    .project-wizard-modal
+      .project-wizard-modal-content.project-wizard-modal-content-wide.project-wizard-modal-content-fixed-horizontal
+        .project-wizard-modal-body-menu
+          .project-wizard-modal-body-menu-list
+            - data.help.sections.each_with_index do |s,i|
+              %li{class: "#{i == 0 ? 'active' : ''}"}
+                %a
+                  = s
+        .project-wizard-modal-body.project-wizard-modal-body-fixed
+          .project-wizard-modal-content-fixed
+            .project-wizard-modal-header.project-wizard-modal-header-fixed
+              %button.close.btn{data: {toggle: :toggle, target: '[role*="help-modal"]'}}
+                &times;
+              %p
+                %span.text-muted
+                  Уроки
+                  &nbsp;/&nbsp;
+                = data.help.sections.first.presence
+            .project-wizard-modal-body-content
+              .project-wizard-modal-body-content-block
+                .markdown-wrapper
+                  - for i in 0..3
+                    = partial 'shared/markdown_test'

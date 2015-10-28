@@ -83,17 +83,5 @@
           21 января, 14:01
       .message-body
         .message-body-text.markdown-wrapper{"test-comment-item-body" => ""}
-          %p
-            Тестирование markdown стилей
-          %em
-            Курсив
-          %strong
-            Выделенный
-          %del
-            Удаленный
-          %ul
-            %li Первый
-            %li Второй
-          %ol
-            %li Первый
-            %li Второй
+          = partial 'shared/markdown_test'
+
