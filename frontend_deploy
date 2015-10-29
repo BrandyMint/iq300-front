@@ -3,7 +3,7 @@ tmp_branch=tmp_deploy
 default_stage=frontend
 STAGE=${STAGE:-$default_stage}
 current_branch=$(git symbolic-ref --short -q HEAD)
-git remote add $STAGE dokku@iq300-dev.com:$STAGE
+git remote add $STAGE dokku@iq300-dev.ru:$STAGE
 git branch -D $tmp_branch
 git checkout -b $tmp_branch
 rm -rf package.json gulpfile.* bower.json app Gemfile Gemfile.lock Guardfile Rakefile config/ config.rb config.ru data/
@@ -14,7 +14,7 @@ git commit -m 'build'
 git push -f $STAGE $tmp_branch:master
 echo return to branch $current_branch
 git checkout $current_branch
-open "http://"$STAGE".iq300-dev.com"
+open "http://"$STAGE".iq300-dev.ru"
 npm install
 bower install
 
