@@ -1,0 +1,14 @@
+- nav = data.tasks.navigation
+- active = locals[:active] || -1
+
+%ul.nav.nav-tabs.tabnav{"data-channel" => "presence-5:base_task-121", "data-container" => ".tab-content", "data-read-changes-url" => "/changes/read?base_task_id=121", "role-ready" => "tabnav", "test-tabnav" => ""}
+  - nav.each_with_index do |(k, v), i|
+    %li{class: "#{k} #{active.to_s == k.to_s ? 'active' : ''}"}
+      - link = v.link.present? ? v.link : "/#{k}/"
+      = link_to link do
+        - if locals[:lock].present? && locals[:lock].include?(k.to_sym)
+          %i.fa.fa-lock
+        = v.title
+        - if v.counter.present?
+          %span.badge= v.counter
+

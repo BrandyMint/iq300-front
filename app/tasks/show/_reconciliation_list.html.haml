@@ -1,0 +1,47 @@
+.reconciliation-list{"data-can-manage" => "true", "data-task-id" => "8306", "role-task-reconciliation-list" => "ready"}
+  .content-group-sm
+    .row
+      .col-md-3
+        .checkbox-inline
+          %label{data: {toggle: :collapse, target: "[role*='reconciliation-list-container']"}}
+            %input#use_reconciliation_list{:checked => "checked", :name => "use_reconciliation_list", :role => "use-reconciliation-list", "test-use-reconciliation-list" => "true", :type => "checkbox", :value => "true"}/
+            Использовать лист согласования
+      .col-md-9
+        Вы можете добавить согласователей для контроля выполнения и приёмки задачи.
+        %br
+        Заказчик не сможет принять задачу, пока она не будет согласована задача всеми из этого списка.
+  .collapse.in.reconciliation-list-container{:role => "list-container reconciliation-list-container"}
+    %div{"data-reactid" => ".2", "data-test-task-reconciliation-list" => "true"}
+      .content-group-sm
+        %a.btn.btn-outline-primary{role: :tooltip, data: {'original-title' => 'Добавить участника', placement: 'bottom'}, role: 'conference-add-member-btn'}
+          %i.fa.fa-plus{"data-reactid" => ".2.0.0"}
+          Добавить согласователя
+      %table.table.table-condensed.form-inline{"data-reactid" => ".2.1"}
+        %thead{"data-reactid" => ".2.1.0"}
+          %tr{"data-reactid" => ".2.1.0.0"}
+            %th{"data-reactid" => ".2.1.0.0.0"} Согласователь
+            %th{"data-reactid" => ".2.1.0.0.1"} Статус
+            %th{"data-reactid" => ".2.1.0.0.2"} Дата согласования
+            %th{"data-reactid" => ".2.1.0.0.3"}
+        - data.users.each_with_index do |user, i|
+          %tbody{"data-reactid" => ".2.1.1"}
+            %tr.community-roles-table-cell{"data-reactid" => ".2.1.1.$4", "data-test-reconciliation-member" => "true"}
+              %td{"data-reactid" => ".2.1.1.$4.0"}
+                .user-block-inline
+                  .user-block-avatar
+                    %img.user-block-avatar-image{:alt => "Александр", :src => data.avatars.first.url, :style => "width:34px;height:34px;", :title => "Мещеряков Александр Игоревич"}/
+                  .user-block-content.user-block-content-centered
+                    .user-block-content-name-line
+                      %a
+                        = user[:name]
+              %td{"data-reactid" => ".2.1.1.$4.1"}
+                - if i == 1
+                  .text-color-success
+                    Согласовано
+                - else
+                  На согласовании
+              %td{"data-reactid" => ".2.1.1.$4.2"}
+                - if i == 1
+                  25 октября
+              %td{"data-reactid" => ".2.1.1.$4.3"}
+                %a.btn.btn-link-primary{"data-reactid" => ".2.1.1.$4.3.0", "data-test-remove-button" => "true", :href => "#"} Удалить
