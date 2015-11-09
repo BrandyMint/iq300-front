@@ -21,11 +21,57 @@ layout: input_registration
                   - "Имя, Фамилия, Название организации, Email, Пароль".split(", ").each do |input|
                     .registration-form-input-wrapper
                       %input.form-control.registration-form-input{placeholder: input}
+                  .registration-form-input-wrapper-sm
+                    .input-group
+                      %span.input-group-addon
+                        +7
+                      %input.form-control.registration-form-input{placeholder: 'Номер телефона', type: :tel, role: 'sign-up-phone', maxlength: 10, size: 10}
+                  .registration-form-input-wrapper
+                    .registration-form-text.registration-form-input-wrapper-sm
+                      %small
+                        Мы не присылаем рекламу — только важные вам уведомления.
+                    .registration-form-input-wrapper
+                      %a{href: '', class: 'registration-form-btn-send', role: 'sign-up-phone-btn', style: 'display: none;'} Получить пин–код
+                    %div{role: 'sign-up-phone-code', style: 'display: none;'}
+                      .registration-form-input-wrapper-sm
+                        .registration-form-text
+                          Введите пин-код, отправленный вам по смс.
+                          %a{href: ''} Отправить ещё раз
+                      .registration-form-input-wrapper
+                        %input.form-control.registration-form-input{placeholder: 'Пин-код', type: :tel, maxlength: 10, size: 10, role: 'sign-up-phone-code-input'}
+
                   .registration-form-actions
-                    %a{href: '', class: 'registration-form-submit-btn'} Регистрация
+                    .registration-form-input-wrapper-sm
+                      %a{href: '', class: 'registration-form-submit-btn', disabled: :disabled, role: 'signup-submit-btn'}
+                        Зарегистрироваться
+                    .registration-form-text
+                      %small
+                        Подтвердите номер телефона, чтобы зарегистрироваться
+
+
               .col-md-4.col-md-offset-1.col-sm-5.col-sm-offset-1
                 %p.registration-form-text Уже регистрировались?
-                %a.registration-form-btn-signup{href: '/sign_up'} Войти
+                %a.registration-form-btn-signup{:href => "/sign_in"}
+                  Войти
+                .registration-form-social
+                  %a.mix-sign-in.registration-form-btn-social.registration-form-btn-social-facebook{:href => "/users/auth/facebook"}
+                    Войти через Facebook
+                  %a.mix-sign-in.registration-form-btn-social.registration-form-btn-social-googleplus{:href => "/users/auth/google_oauth2"}
+                    Войти через Google+
+                  %a.mix-sign-in.registration-form-btn-social.registration-form-btn-social-yandex{:href => "/users/auth/yandex"}
+                    Войти через Yandex
+                  %a.mix-sign-in.registration-form-btn-social.registration-form-btn-social-mailru{:href => "/users/auth/mailru"}
+                    Войти через Mail.Ru
+                %p.registration-form-text
+                  Если у вас что-то не получается, напишите нам
+                  %a.registration-form-link-inline{:href => "mailto:support@iq300.ru"} support@iq300.ru
 
-
-
+            .row
+              .col-md-9.col-md-offset-2
+                %p.registration-form-text
+                  %small
+                    Регистрируясь, Вы соглашаетесь на сбор и хранение Ваших персональных данных с целью дальнейшей идентификации при оказании услуг в соответствии с Законом "О персональных данных" №152-ФЗ от 27.07.2006",
+                    а также с
+                    %a.registration-form-link-inline{:href => "https://iq300.ru/oferta", :target => "blank"} Правилами использования
+                    и
+                    %a.registration-form-link-inline{:href => "https://iq300.ru/privacy", :target => "blank"} Политикой конфиденциальности

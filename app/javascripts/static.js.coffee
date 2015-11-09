@@ -33,6 +33,7 @@
 #= require comments/form
 #= require contacts/list
 #= require conversations/conference
+#= require auth
 
 $ ->
   $('@select2').select2()
