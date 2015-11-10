@@ -13,7 +13,8 @@ window.NotificationsWidget ||= {}
     #widget.fadeIn()
     messages.hide()
     notifications.show()
-    setWidgetPosition(widget, btn)
+    if widget?.length > 0 && btn?.length > 0
+      setWidgetPosition(widget, btn)
 
     btn.on 'click', (e) ->
       e.preventDefault()
