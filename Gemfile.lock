@@ -162,6 +162,3 @@ DEPENDENCIES
   select2-rails
   semver2
   therubyracer
-
-BUNDLED WITH
-   1.10.6
