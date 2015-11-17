@@ -8,7 +8,7 @@
 .message-box.conference-message-box{class: "#{locals[:conversation] ? 'conversation-box' : ''} message-box-#{message_status} #{from_current_user ? 'message-box-from-current-user' : ''}"}
   .media
     .pull-left
-      %a.message-box-user-avatar{href: '/conversations/conference'}
+      %a.message-box-user-avatar.conference-message-box-avatars.conference-message-box-avatars-animated{href: '/conversations/conference'}
         - data.avatars.last(5).each do |u|
           %img.img-circle.message-box-user-avatar-image{:src => u[:url], :alt => "", :width => "40px", :height => "40px"}
         .img-circle.message-box-user-avatar-image.message-box-user-avatar-more
@@ -35,7 +35,7 @@
           - if files && files.any?
             - files.each do |f|
               %a.btn.btn-default{:href => "#"}
-                %span.fa.fa-file-text-o 
+                %span.fa.fa-file-text-o
                   = "#{f}"
 
 

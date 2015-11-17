@@ -29,13 +29,13 @@
             %a
               и ещё 2
             &nbsp;&nbsp;
-          %a.btn.btn-outline-primary{role: :tooltip, data: {'original-title' => 'Добавить участника'}, role: 'conference-add-member-btn'}
+          %a.btn.btn-outline-primary{data: {'original-title' => 'Добавить участника'}, role: 'conference-add-member-btn role'}
             %i.fa.fa-plus
           &nbsp;
-          %a.btn.btn-outline-primary{role: :tooltip, data: {'original-title' => 'Управление конференцией'}, role: 'conference-settings-btn'}
+          %a.btn.btn-outline-primary{data: {'original-title' => 'Управление конференцией'}, role: 'conference-settings-btn tooltip'}
             %i.fa.fa-cog
           &nbsp;
-          %a.btn.btn-outline-gray-light{role: :tooltip, data: {'original-title' => 'Покинуть конференцию'}, role: 'conference-leave-btn',
+          %a.btn.btn-outline-gray-light{data: {'original-title' => 'Покинуть конференцию'}, role: 'conference-leave-btn tooltip',
               href: 'javascript:confirm("Вы не сможете читать сообщения в этой конференции. Покинуть её?")'}
             %i.fa.fa-times
 
