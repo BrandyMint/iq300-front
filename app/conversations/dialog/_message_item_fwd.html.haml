@@ -1,0 +1,39 @@
+- text = locals[:text] || ''
+- user_status = locals[:user_status] || 'offline'
+- files = locals[:files]
+
+.message-box
+  .media
+    .pull-left
+      .message-box-user-avatar
+        %a{:href => "#"}
+          %img.img-circle.message-box-user-avatar-image{:src => "/images/community/2.png", :alt => "", :width => "40px", :height => "40px"}/
+        .user-status-bullet.user-status-bullet-sm.user-status-bullet-bottom-right{class: "user-status-bullet-#{user_status}"}
+    .media-body
+      .message-box-header.group
+        .pull-left
+          %a.message-box-title
+            Шамиль Хамадеев
+          %small.text-muted
+            &nbsp;&nbsp;
+            %a.btn-link-gray-light.btn-link-plain{href: '#', role: "conversation-message-fwd", data: {'original-title' => 'Переслать сообщение'}}
+              %i.fa.fa-mail-forward
+        %span.message-box-time.pull-right 18 июля, 16:03
+      .message-body
+        .message-body-forwarded
+          %small.text-muted Пересланное сообщение
+          .message-box-header.group
+            .pull-left
+              %a.message-box-title
+                %small
+                  Эльвир Нуриахметов
+            %span.message-box-time.pull-right 10 июля, 12:47
+            .clearfix
+          .message-body-text= text
+          .message-box-files
+            - if files && files.any?
+              - files.each do |f|
+                %a.btn.btn-default{:href => "#"}
+                  %span.fa.fa-file-text-o
+                    = "#{f}"
+
