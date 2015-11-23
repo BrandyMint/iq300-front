@@ -1,14 +1,3 @@
 %section.projects-list-column.form-container-compact{"data-channel" => "presence-1757:projects", "data-list-with-scroll" => "true", "data-url" => "/projects"}
-  .projects-list-header{role: 'projects-list-header'}
-    = partial 'projects/list/header'
-    = partial 'projects/list/filters'
-  .form-group
-    %h4.task-group-title Все проекты
-  .infinite-list.projects-list{"data-url" => "/projects"}
-    - for i in 0..4
-      -# statuses = ['in_work', 'draft', 'overdued', 'completed', 'new']
-      -# statuses = %w(new draft scenario in_work archived canceled)
-      - statuses = {'draft' => 'Инициализация', 'scenario' => 'Планирование', 'in_work' => 'В работе', 'new' => 'В работе', 'overdued' => 'В работе', 'completed' => 'Выполнен', 'cancelled' => 'Отменён'}
-      - statuses.each_with_index do |(status, status_title), i|
-        = partial 'projects/list/list_item', locals: {status: status, status_title: status_title}
+  = partial 'projects/list'
 

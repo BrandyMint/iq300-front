@@ -34,38 +34,12 @@
 #= require contacts/list
 #= require conversations/conference
 #= require auth
+#= require elements/multiselect
 
 $ ->
   $('@select2').select2()
-  $('@multiselect').multiselect()
   $('[data-toggle*="popover"]').popover()
-  multiselectTaskStates = $('@multiselect-task-states')
-  multiselectTaskStates.multiselect
-    includeSelectAllOption: true
-    selectAllText: 'Все задачи'
-    buttonText: (options, select) ->
-      if options.length is 0 || options.length is multiselectTaskStates.find('option').length
-        "<i class=\"fa fa-list\"></i>&nbsp; Все задачи <b class=\"caret\"></b>"
-      else
-        labels = []
-        options.each ->
-          labels.push $(@).text()
-        labels.join(", ") + " "
 
-  multiselectUsers = $('@multiselect-users')
-  multiselectUsers.multiselect
-    maxHeight: 200
-    includeSelectAllOption: true
-    enableFiltering: true
-    enableCaseInsensitiveFiltering: true
-    selectAllText: 'Все исполнители'
-    buttonText: (options, select) ->
-      if multiselectUsers.find('option:selected').length is 0 || multiselectUsers.find('option:selected').length is multiselectUsers.find('option').length
-        "<i class=\"fa fa-user\"></i>&nbsp; Все исполнители <b class=\"caret\"></b>"
-        #else if options.length is 0
-        #"<i class=\"fa fa-user\"></i> Все"
-      else
-        "<i class=\"fa fa-user\"></i>&nbsp; Исполнители: " + options.length + " <b class=\"caret\"></b>"
 
   $('@datetimepicker').datetimepicker
     locale: 'ru'

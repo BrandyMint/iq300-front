@@ -1,0 +1,82 @@
+.list-panel
+  .row
+    .col-sm-8
+      .navbar-form.navbar-left
+        .checkbox.list-panel-checkbox
+          %label{role: 'project-tasks-list-select-all'}
+            %input.list-panel-checkbox-input{type: 'checkbox'}
+
+        .dropdown.dropdown-inline
+          %a.btn.btn-link-plain{:role => "project-tasks-counts", 'data-toggle' => 'dropdown'}
+            %i.fa.fa-filter
+            41 из 113
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a{href: ""} Сбросить все фильтры
+
+      %form.navbar-form.navbar-left
+        %select.form-control.input-sm.btn-link.btn-link-plain{role: 'multiselect-task-states', multiple: 'multiple',
+            data: {'button-class': 'btn btn-link-plain'}}
+          - tasks_filter = ['Черновики', 'Новые', 'В работе', 'На проверке', 'Просроченные', 'Выполненные', 'Отменённые']
+          - tasks_filter.each do |f|
+            %option= f
+        &nbsp;
+        -#%span.project-tasks-list-users-filter{role: :tooltip, data: {'original-title' => 'Фильтровать задачи по исполнителям'}}
+        %span.project-tasks-list-users-filter
+          %select{role: 'multiselect-users', :tabindex => "-1", multiple: 'multiple',
+              data: {'button-class': 'btn btn-link-plain'}}
+            - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов, Ахмед Сарсенбайулов-Алтынбеков".split(', ')
+            - for i in 0..2
+              - filter_users.each do |user|
+                %option
+                  -#= "#{user.split(' ')[0][0]}. #{truncate(user.split(' ')[1..-1].join(' '), length: 12)}"
+                  = user
+
+    .col-sm-4
+      .navbar-form.text-right
+        .dropdown.dropdown-inline
+          %a.btn.btn-link-default.btn-circle-plus{"aria-expanded" => "false", "data-toggle" => "dropdown"}
+            %span.btn-circle-plus-icon
+              %i.fa.fa-plus.icon-size-16
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a{:href => "/tasks/new", role: 'project-tasks-list-add-task-btn'} Добавить задачу
+            %li
+              %a{:href => "/projects/new"} Добавить группу
+        %a.btn.btn-sm.btn-link-plain{href: '[role*="project-tasks-list-search"]', data: {toggle: :collapse}}
+          %i.fa.fa-search.icon-color-gray-light.icon-size-14
+        %a.btn.btn-sm.btn-link-plain{:href => "#"}
+          %i.fa.fa-th-large.icon-color-gray-light.icon-size-14
+        %a.btn.btn-sm.btn-link-plain{:href => "#"}
+          %i.fa.fa-print.icon-color-gray-light.icon-size-16
+
+  .collapse{role: 'project-tasks-list-search'}
+    .list-panel-divider
+    .navbar-form
+      .row
+        .col-md-6.col-md-offset-3
+          %form
+            .input-group.input-group-block
+              %input.form-control{:placeholder => "Поиск", :type => "search", :value => ""}/
+              .input-group-btn
+                %a.btn.btn-default
+                  %i.fa.fa-search
+        .col-sm-3.text-right
+          %a.btn.btn-sm.btn-link.btn-link-plain{href: '[role*="project-tasks-list-search"]', data: {toggle: :collapse}}
+            %i.fa.fa-times.icon-color-gray-light.icon-size-14{:role => "tasks-print-form-link"}
+
+  .project-group-header-actions-fixed.hide{role: 'project-group-header-actions'}
+    .navbar-form.navbar-left
+      = link_to 'Преобразовать в задачу', '#', class: 'btn btn-default btn-sm'
+    .navbar-form.navbar-left
+      = link_to 'Отменить', '#', class: 'btn btn-default btn-sm'
+    .navbar-form.navbar-left
+      = link_to 'Преобразовать в черновик', '#', class: 'btn btn-default btn-sm'
+    .navbar-form.navbar-left.pull-right
+      %select.form-control.input-sm
+        - tasks_filter = ['Группа 2', 'Группа 3', 'Группа 4']
+        %option{selected: 'selected'} Изменить группу
+        - tasks_filter.each do |f|
+          %option= f
+    .clearfix
+

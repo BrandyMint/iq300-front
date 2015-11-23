@@ -1,0 +1,39 @@
+%list-panel-container
+  @extend .navbar
+  @extend .navbar-default
+  border: none
+  border-radius: 0
+
+.list-panel-container
+  @extend %list-panel-container
+  margin-bottom: 0
+  background: none
+
+.list-panel-container-block
+  @extend %list-panel-container
+  background-color: $gray-lighter
+
+.list-panel-divider
+  border-bottom: 1px solid $line-color-transparent
+
+.list-panel-block
+  @extend .navbar-form
+  padding:
+    left: 0
+    right: 0
+
+.list-panel-block-left
+  @extend .navbar-left
+
+.list-panel-checkbox
+  margin:
+    right: 1em
+  label
+    padding:
+      top: 9px
+      bottom: 9px
+
+.list-panel-checkbox-input
+  margin-right: 3px
+
+

@@ -7,18 +7,13 @@ nav_item: tasks
 - content_for :filters_column do
   = partial 'tasks/filters'
 
-%section.tasks-list-column.form-container-compact{role: "tasks-list-scroll-container"}
-  .form-group{"data-channel" => "presence-203:base_tasks", "data-url" => "/tasks/list_panel", role: "tasks-list-panel"}
-    .page-title.mbm
-      .pull-left
-        %h2
-          Актуальные задачи
-          %small 2
-      .pull-right
-        %a.btn.btn-default{href: "/tasks/new"}
-          %span.fa.fa-plus-circle
-          Добавить задачу
-  = partial 'tasks/list/filters'
+- content_for :top_panel do
+  .top-panel-container
+    .list-panel-container
+      .container-fluid
+        = partial 'tasks/list/list_panel'
+
+%section.list-column.tasks-list-column.form-container-compact{role: "tasks-list-scroll-container"}
   .form-group{"data-url" => "/tasks", role: "tasks-list", "test-tasks-list" => ""}
     .form-group{group: "all_tasks", role: "grouped-tasks"}
       = partial 'tasks/list'

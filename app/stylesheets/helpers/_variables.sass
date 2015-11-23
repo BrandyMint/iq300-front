@@ -29,6 +29,7 @@ $blue-link-color: #368aaf
 $blue-link-color-hover: darken($blue-link-color, 10%)
 
 $line-color: $gray-lighter
+$line-color-transparent: rgba(#000, 0.1)
 
 $item-border-color: darken($gray-lighter, 15%)
 $item-border-bottom-color: darken($gray-lighter, 5%)
@@ -113,6 +114,10 @@ $modal-z-index: 29
 $popover-z-index: 30
 $float-btn-z-index: $popover-z-index
 
+
+// buttons
+$padding-button-vertical: $padding-base-vertical - 1px
+
 $user-avatar-width-sm: 32px
 $user-avatar-width-md: 40px
 $user-avatar-width: $user-avatar-width-sm
@@ -123,7 +128,6 @@ $select2-shadow-color: #d7d7d7
 
 // Community Panel
 $community-block-height: 155px
-
 
 // States
 
@@ -193,6 +197,11 @@ $panel-lg-footer-padding: $panel-lg-heading-padding
 // pnotify
 $pnotify-color: #3c763d
 $pnotify-background-color: #dff0d8
+
+// navbar
+
+$navbar-default-link-color: $text-color-dark
+$navbar-default-link-hover-color: darken($text-color-dark, 10%)
 
 // transitions
 $transition-bounce: cubic-bezier(0.405, 1.510, 1.000, 0.915)

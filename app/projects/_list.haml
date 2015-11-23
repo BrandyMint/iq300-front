@@ -1,0 +1,8 @@
+.infinite-list.projects-list{"data-url" => "/projects"}
+  - for i in 0..4
+    -# statuses = ['in_work', 'draft', 'overdued', 'completed', 'new']
+    -# statuses = %w(new draft scenario in_work archived canceled)
+    - statuses = {'draft' => 'Инициализация', 'scenario' => 'Планирование', 'in_work' => 'В работе', 'new' => 'В работе', 'overdued' => 'В работе', 'completed' => 'Выполнен', 'cancelled' => 'Отменён'}
+    - statuses.each_with_index do |(status, status_title), i|
+      = partial 'projects/list/list_item', locals: {status: status, status_title: status_title}
+

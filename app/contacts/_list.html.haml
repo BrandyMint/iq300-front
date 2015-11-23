@@ -6,14 +6,6 @@
 .contacts-list-container
   .row
     .col-sm-8
-      .content-group-sm
-        %h3
-          %span{:role => "contacts-list-panel-title"} Контакты
-          %small.text-muted{:role => "contacts-list-panel-title-counter"}
-            = user_statuses.count*repeat
-      .content-group
-        -#= partial 'contacts/list/filters'
-        = partial 'contacts/list/filters_react_static'
       %div{"data-scroll-container" => "@application-content-block", "data-url" => "/contacts", :role => "contacts-list", "test-contacts-list" => ""}
         .row
           - for i in 1..repeat
