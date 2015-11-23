@@ -20,9 +20,14 @@
 
 .multiselect-container
   padding: 5px
+  min-width: 250px
+  max-width: 500px
   & > li
     & > a
       white-space: normal
+  label
+    &.radio, &.checkbox
+      white-space: normal !important
 
 .form-inline .multiselect-container
   label
