@@ -1,113 +1,102 @@
 ---
-layout: application
+layout: application_modular
 body_class: 'communities-show'
+nav_item: communities
 ---
 
-= partial 'shared/header'
-.content.content-global.display-mode{"data-initial-action" => "show", :filters => "false", :full_view => "true", :list => "false", "role-display-mode" => "ready", :view => "true"}
-  = partial 'communities/top_panel'
-  = partial 'shared/navigation'
-  %section.view-column.community-view-column{"data-channel" => "private-base_community-291:update", "data-channel-template" => "private-base_community-%id%:update", "data-id" => "291", "data-url" => "/communities", "role-community-view-column" => "ready"}
-    :javascript
-      window.gon = window.gon || {}
-      window.gon.communityId = 291 // TODO try to use gon watch:true
-      $(document).ready(function() {
-        if (false) {
-          $('#community_members_tab a').click()
-        }
-      });
-    %header.tab-navigation
-      %ul.tabnav{"data-container" => "#community-tab-pane", "role-tabnav" => "ready"}
-        %li.active
-          %a{"data-target" => "community-details", :href => "/communities/291"} Детали
-        %li#community_members_tab
-          %a{"data-target" => "community-participants", :href => "/communities/291/member_users?initial=true"} Участники
-        %li#community_activities_tab
-          %a{"data-target" => "community-activities", :href => "/communities/291/activities"} Активность
-        %li
-          %a{"data-target" => "community-contracts", :href => "/communities/291/contracts?initial=true"} Договоры
-        %li#community_invites_tab
-          %a{"data-target" => "community-invites", :href => "/communities/291/invites"} Приглашения
-        %li#community_reports_tab
-          %a{"data-target" => "community-reports", :href => "/communities/291/reports/new"} Отчёты
-      .column-controller
-        %a.enlarge.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "full-view", :state => "true", :title => "Развернуть"}
-          %i.icon-resize-small{"data-opposite-class" => "icon-resize-full"}
-        %a.close-panel.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "view", :state => "true", :title => "Закрыть"}
-          %i.icon-remove
-        %a.u-turn-right{"data-target" => "community-preferences", :href => "/communities/291/edit", :title => "Настройки сообщества"}
-          %i.icon-cog
-    #community-tab-pane.column-content
-      #community-details.object-details
-        %header
-          .resource-watcher-subscription{"data-url" => "/subscriptions?community_id=291", "role-resource-watcher-subscription" => "ready"}
-            %label.checkbox{:title => "Вы не можете отписаться от уведомлений"}
-              %input#subscribe{:checked => "checked", :disabled => "disabled", :name => "subscribe", :type => "checkbox", :value => "1"}/
-              %i
-              Следить за изменениями
-          %p.membership-status Вы состоите в сообществе
-          .community-cart
-            .community-avatar
-              %img.default-community-picture.img-corrector-initialized{:alt => "4", "data-default-src" => "/assets/logo_x2.png", :src => "/assets/community/4.png"}/
-            %a.destroy-button{"data-target" => "#destroy-confirm", "data-toggle" => "modal", :href => "/communities/291"}
-              Расформировать сообщество
-            #destroy-confirm.modal.fade.modal-initialized{"data-remote" => "/communities/291/destroy_confirmation", "data-width" => "760", :tabindex => "-1"}
-              .modal-header
-                %button.close.btn{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-                %h4 Вы действительно хотите расформировать сообщество Fake community?
-              .modal-body
-            .info
-              %p
-                Дата создания:
-                %span 12 августа 2014
-              %p
-                Участников:
-                %span 1
-              %p
-                Проекты:
-                %a{:href => "/projects?community_id=291&folder=all"} 5/5
-              %p
-                Задачи:
-                %span
-                  %a{:href => "/communities/291/tasks"} 0/0
-                %span
-                  %a{:href => "/calendar?community_id=291", :title => "Календарь"}
-                    %i.icon-calendar
-              %p.status
-        %p
-          Телефон:
-          %a{:href => "tel:88008888888"} 88008888888
-        %p
-          Эл. почта:
-          %a{:href => "mailto:sibsfinx@ya.ru"} sibsfinx@ya.ru
-        %h2.with-icons
-          Fake community
-          .icons
-            %span.favorite.favorite-view{"role-favorite-view" => "ready"}
-              %a{"data-method" => "put", :href => "/favorites?base_community_id=291", :rel => "nofollow"}
-                %i.icon-star-empty
-        %section.people
-          .admin
-            Владелец:
-            .user
-              .avatar
-                %img.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "/assets/default-user-avatar.png", :style => "width:34px;height:34px;", :title => "Мещеряков Александр "}/
-              .name
-                %a{:href => "/users/203", :role => "member-name"} Александр Мещеряков
-                %span.user-email
-                  Владелец
-          .moderator
-            Руководитель:
-            .user
-              .avatar
-                %img.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "/assets/default-user-avatar.png", :style => "width:34px;height:34px;", :title => "Мещеряков Александр "}/
-              .name
-                %a{:href => "/users/203", :role => "member-name"} Александр Мещеряков
-                %span.user-email
-                  Руководитель
-          %footer
-            %a{:href => "/communities/291/users", :onclick => "$('#community_members_tab a').trigger('click'); return false;"} Все участники
-        %p.address
-          Адрес:
-          %br/
-          %span test
+%section.view-column.community-view-column{"data-channel" => "private-base_community-291:update", "data-channel-template" => "private-base_community-%id%:update", "data-id" => "291", "data-url" => "/communities", "role-community-view-column" => "ready"}
+  %header.tab-navigation
+    %ul.tabnav{"data-container" => "#community-tab-pane", "role-tabnav" => "ready"}
+      %li.active
+        %a{"data-target" => "community-details", :href => "/communities/291"} Детали
+      %li#community_members_tab
+        %a{"data-target" => "community-participants", :href => "/communities/291/member_users?initial=true"} Участники
+      %li#community_activities_tab
+        %a{"data-target" => "community-activities", :href => "/communities/291/activities"} Активность
+      %li
+        %a{"data-target" => "community-contracts", :href => "/communities/291/contracts?initial=true"} Договоры
+      %li#community_invites_tab
+        %a{"data-target" => "community-invites", :href => "/communities/291/invites"} Приглашения
+      %li#community_reports_tab
+        %a{"data-target" => "community-reports", :href => "/communities/291/reports/new"} Отчёты
+    .column-controller
+      %a.enlarge.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "full-view", :state => "true", :title => "Развернуть"}
+        %i.icon-resize-small{"data-opposite-class" => "icon-resize-full"}
+      %a.close-panel.mode-trigger.mode-trigger-initialized{:href => "#", :mode => "view", :state => "true", :title => "Закрыть"}
+        %i.icon-remove
+      %a.u-turn-right{"data-target" => "community-preferences", :href => "/communities/291/edit", :title => "Настройки сообщества"}
+        %i.icon-cog
+  #community-tab-pane.column-content
+    #community-details.object-details
+      %header
+        .resource-watcher-subscription{"data-url" => "/subscriptions?community_id=291", "role-resource-watcher-subscription" => "ready"}
+          %label.checkbox{:title => "Вы не можете отписаться от уведомлений"}
+            %input#subscribe{:checked => "checked", :disabled => "disabled", :name => "subscribe", :type => "checkbox", :value => "1"}/
+            %i
+            Следить за изменениями
+        %p.membership-status Вы состоите в сообществе
+        .community-cart
+          .community-avatar
+            %img.default-community-picture.img-corrector-initialized{:alt => "4", "data-default-src" => "/assets/logo_x2.png", :src => "/assets/community/4.png"}/
+          %a.destroy-button{"data-target" => "#destroy-confirm", "data-toggle" => "modal", :href => "/communities/291"}
+            Расформировать сообщество
+          #destroy-confirm.modal.fade.modal-initialized{"data-remote" => "/communities/291/destroy_confirmation", "data-width" => "760", :tabindex => "-1"}
+            .modal-header
+              %button.close.btn{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+              %h4 Вы действительно хотите расформировать сообщество Fake community?
+            .modal-body
+          .info
+            %p
+              Дата создания:
+              %span 12 августа 2014
+            %p
+              Участников:
+              %span 1
+            %p
+              Проекты:
+              %a{:href => "/projects?community_id=291&folder=all"} 5/5
+            %p
+              Задачи:
+              %span
+                %a{:href => "/communities/291/tasks"} 0/0
+              %span
+                %a{:href => "/calendar?community_id=291", :title => "Календарь"}
+                  %i.icon-calendar
+            %p.status
+      %p
+        Телефон:
+        %a{:href => "tel:88008888888"} 88008888888
+      %p
+        Эл. почта:
+        %a{:href => "mailto:sibsfinx@ya.ru"} sibsfinx@ya.ru
+      %h2.with-icons
+        Fake community
+        .icons
+          %span.favorite.favorite-view{"role-favorite-view" => "ready"}
+            %a{"data-method" => "put", :href => "/favorites?base_community_id=291", :rel => "nofollow"}
+              %i.icon-star-empty
+      %section.people
+        .admin
+          Владелец:
+          .user
+            .avatar
+              %img.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "/assets/default-user-avatar.png", :style => "width:34px;height:34px;", :title => "Мещеряков Александр "}/
+            .name
+              %a{:href => "/users/203", :role => "member-name"} Александр Мещеряков
+              %span.user-email
+                Владелец
+        .moderator
+          Руководитель:
+          .user
+            .avatar
+              %img.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "/assets/default-user-avatar.png", :style => "width:34px;height:34px;", :title => "Мещеряков Александр "}/
+            .name
+              %a{:href => "/users/203", :role => "member-name"} Александр Мещеряков
+              %span.user-email
+                Руководитель
+        %footer
+          %a{:href => "/communities/291/users", :onclick => "$('#community_members_tab a').trigger('click'); return false;"} Все участники
+      %p.address
+        Адрес:
+        %br/
+        %span test

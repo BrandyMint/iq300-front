@@ -1,40 +1,55 @@
-%project-wizard-modal-block
+%project-wizard-modal-content-padding
   padding: $grid-gutter-width/2 $grid-gutter-width
+
+%project-wizard-modal-block
+  @extend %project-wizard-modal-content-padding
   .form-group
     .errors-list
       color: $brand-danger
 
-.project-wizard-modal-container
-  @extend .fade
-  @extend .in
-  display: block
-  width: 100%
-  height: 100%
-  min-width: $container-fixed-width
-  +center-block-container
-
-.project-wizard-modal
-  +center-block-content
-  text-align: left
-  max-width: $container-fixed-width - $grid-gutter-width*2
-
 .project-wizard-modal-backdrop
+  display: flex
+  flex-direction: column
+  justify-content: center
   position: fixed
   z-index: $modal-z-index
   width: 100%
   height: 100%
   left: 0
   top: 0
+  box-sizing: border-box
+  padding: $grid-gutter-width 0
   background-color: rgba(#000, .5)
   overflow-y: auto
 
+.project-wizard-modal
+  display: flex
+  flex-direction: row
+  justify-content: center
+  height: 100%
+
 .project-wizard-modal-content
   position: relative
-  height: 100%
   background-color: #fff
   padding-bottom: $grid-gutter-width/2
   border-radius: $border-radius-base
   box-shadow: 0 2px 5px rgba(#000, .5)
+  box-sizing: border-box
+  max-width: $modal-md
+
+.project-wizard-modal-content-wide
+  min-width: $modal-wide-min-width
+  max-width: $container-fixed-width - $grid-gutter-width*2
+
+.project-wizard-modal-content-fixed
+  display: flex
+  flex-direction: column
+  flex: 1 1
+  padding: 0
+
+.project-wizard-modal-content-fixed-horizontal
+  @extend .project-wizard-modal-content-fixed
+  flex-direction: row
 
 .project-wizard-modal-header
   @extend %project-wizard-modal-block
@@ -44,8 +59,72 @@
   border-bottom: 1px solid $line-color
   margin-bottom: 0.5em
 
+.project-wizard-modal-header-fixed
+  flex: 0 0 auto
+  order: 1
+  margin-bottom: 0
+
 .project-wizard-modal-body
   @extend %project-wizard-modal-block
+
+.project-wizard-modal-body-fixed
+  @extend %project-wizard-modal-block
+  display: flex
+  order: 2
+  flex: 1 1
+  padding: 0
+  overflow-y: auto
+
+.project-wizard-modal-body-menu
+  flex: 0 0 25%
+  order: 1
+  display: flex
+  flex-direction: column
+  border:
+    top-left-radius: $border-radius-base
+    bottom-left-radius: $border-radius-base
+  background-color: $blue-brand
+
+.project-wizard-modal-body-menu-list
+  @extend %filters-column-list-compact
+  flex: 1 1
+  //padding-right: 1px
+  //border-right: 1px solid $line-color
+  overflow-y: auto
+  & > li
+    & > a
+      color: #fff
+      color: rgba(#fff, 0.85)
+      white-space: normal
+      overflow: visible
+      box-shadow: inset 0 1px rgba(#fff, 0.1)
+      &, &:hover
+        text-decoration: none
+      &:hover
+        color: #fff
+        background-color: darken($blue-brand, 7%)
+        box-shadow: inset 0 1px rgba(#000, 0.1)
+    &:first-child
+      & > a
+        box-shadow: none
+    &.active
+      & > a
+        display: block
+        width: 100%
+        font-weight: bold
+        color: #fff
+        background-color: darken($blue-brand, 10%)
+        box-shadow: inset 0 1px rgba(#000, 0.1)
+        &, &:focus, &:hover
+          color: #fff
+
+.project-wizard-modal-body-content
+  flex: 1 1 75%
+  order: 2
+  overflow-y: auto
+
+.project-wizard-modal-body-content-block
+  @extend %project-wizard-modal-content-padding
 
 .project-wizard-modal-content-block
   margin-bottom: 1em

@@ -17,23 +17,7 @@
   text-overflow: ellipsis
   white-space: nowrap
 
-.filters-column-list
-  @extend %filters-column-list
-  .counter,
-  .grey-counter
-    // TODO hide this in main app
-    display: none
-  & > li
-    & > a
-      @extend %filters-column-list-item
-      font-size: $font-size-base * 1.1
-    &.active
-      & > a
-        font-weight: bold
-        &, &:hover
-          color: $brand-primary
-
-.contacts-filters-column-list
+%filters-column-list-compact
   @extend %filters-column-list
   & > li
     & > a
@@ -61,6 +45,27 @@
           color: $brand-primary
         &:hover
           color: $blue-link-color-hover
+
+
+
+.filters-column-list
+  @extend %filters-column-list
+  .counter,
+  .grey-counter
+    // TODO hide this in main app
+    display: none
+  & > li
+    & > a
+      @extend %filters-column-list-item
+      font-size: $font-size-base * 1.1
+    &.active
+      & > a
+        font-weight: bold
+        &, &:hover
+          color: $brand-primary
+
+.contacts-filters-column-list
+  @extend %filters-column-list-compact
 
 .filters-column-list-divider
   padding: 0
