@@ -44,21 +44,46 @@ $message-box-padding: 10px 20px
   padding-right: 10px
   &, &:focus, &:hover
     text-decoration: none
-  .conference-message-box &
-    .message-box-user-avatar-image + .message-box-user-avatar-image
-      margin:
-        top: - $user-avatar-width-md
-        bottom: 4px
+  &.conference-message-box-avatars
+    .message-box-user-avatar-image
       border: 1px solid rgba(#fff, 0.5)
       box-shadow: 0 1px 4px rgba(#000, 0.2)
       transition: opacity 0.2s $transition-bounce, margin 0.2s $transition-bounce
       transition-delay: 0.3s
-    &:hover
-      .message-box-user-avatar-image + .message-box-user-avatar-image
-        margin-top: - $user-avatar-width-md/2
-        transition-delay: 0
-      .message-box-user-avatar-more
-        opacity: 1
+    .message-box-user-avatar-image + .message-box-user-avatar-image
+      margin:
+        top: - $user-avatar-width-md
+        bottom: 4px
+    &.conference-message-box-avatars-animated
+      &:hover
+        .message-box-user-avatar-image + .message-box-user-avatar-image
+          margin-top: - $user-avatar-width-md/2
+          transition-delay: 0
+        .message-box-user-avatar-more
+          opacity: 1
+  &.conference-message-box-avatars-horizontal
+    vertical-align: middle
+    padding-right: 0
+    .message-box-user-avatar-image
+      display: inline-block
+      margin-bottom: 0
+    .message-box-user-avatar-image-small + .message-box-user-avatar-image-small
+      margin:
+        top: 0
+        left: - $user-avatar-width-sm
+        bottom: 0
+      &.message-box-user-avatar-more
+        position: absolute
+        margin-top: 0
+    &.conference-message-box-avatars-animated
+      &:hover
+        .message-box-user-avatar-image-small + .message-box-user-avatar-image-small
+          top: 0
+          margin-left: - $user-avatar-width-sm/2
+          &.message-box-user-avatar-more
+            position: absolute
+            position: absolute
+            margin-top: 0
 
 .message-box-user-avatar-empty
   display: inline-block
@@ -73,6 +98,10 @@ $message-box-padding: 10px 20px
   background-color: #fff
   border: 1px solid $line-color
 
+.message-box-user-avatar-image-small
+  width: $user-avatar-width-sm
+  height: $user-avatar-width-sm
+
 .message-box-user-avatar-more
   position: relative
   text-align: center
@@ -82,6 +111,8 @@ $message-box-padding: 10px 20px
     weight: bold
   color: $gray-light
   opacity: 0
+  &.message-box-user-avatar-image-small
+    line-height: $user-avatar-width-sm - $font-size-base/2
 
 .message-box-header
   margin-bottom: 5px
@@ -90,6 +121,10 @@ $message-box-padding: 10px 20px
   font:
     size: 1.1em
     weight: bold
+
+.message-body-forwarded
+  padding-left: $grid-gutter-width/2
+  border-left: 2px solid $line-color
 
 .message-body-text
   &:not(:last-child)

@@ -14,10 +14,9 @@ gem "therubyracer", :require => 'v8'
 gem "middleman-deploy"
 #gem "middleman-imageoptim", "~> 0.1.4"
 
-gem 'bootstrap-sass', '~> 3.2.0', :require => false
-gem 'compass-rails', require: false
+#gem 'bootstrap-sass', '~> 3.2.0', :require => false
 gem 'autoprefixer-rails'
-gem "sass-rails", require: false
+#gem "sass-rails", require: false
 
 #gem 'animate-sass'
 #gem "sass", ">= 3.2"
