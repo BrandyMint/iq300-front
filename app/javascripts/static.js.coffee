@@ -41,16 +41,19 @@ $ ->
   $('[data-toggle*="popover"]').popover()
 
 
-  $('@datetimepicker').datetimepicker
-    locale: 'ru'
-    icons:
-      time: "fa fa-clock-o datetimepicker-icon",
-      date: "fa fa-calendar datetimepicker-icon",
-      up: "fa fa-angle-up datetimepicker-icon",
-      down: "fa fa-angle-down datetimepicker-icon"
-      previous: 'fa fa-angle-left datetimepicker-icon'
-      next: 'fa fa-angle-right datetimepicker-icon'
-    format: 'DD/MM/YYYY HH:mm'
+  $('@datetimepicker').each ->
+    format = $(@).data('format') || 'DD/MM/YYYY HH:mm'
+    $(@).datetimepicker
+      locale: 'ru'
+      defaultDate: moment()
+      icons:
+        time: "fa fa-clock-o datetimepicker-icon",
+        date: "fa fa-calendar datetimepicker-icon",
+        up: "fa fa-angle-up datetimepicker-icon",
+        down: "fa fa-angle-down datetimepicker-icon"
+        previous: 'fa fa-angle-left datetimepicker-icon'
+        next: 'fa fa-angle-right datetimepicker-icon'
+      format: format
 
   $('@datetimepicker-now').datetimepicker
     locale: 'ru'

@@ -65,15 +65,11 @@ $project-tasks-group-header-colors: "blue" $project-tasks-group-header-blue, "ye
 
 .project-task-box-template
   &, &:hover, &.task-box
-    background: #fff
-    border: 1px dashed $gray-light
-    margin: 2em 0
-    margin-bottom: 2em
-    padding:
-      top: 1.5em
-      bottom: 1.5em
-      left: $grid-gutter-width
-      right: $grid-gutter-width
+    @extend .list-panel-container-block-actions
+    padding: $grid-gutter-width/1.5 $grid-gutter-width
+    margin:
+      top: 2em
+      bottom: 2em
 
 .project-task-box-title-block
   @extend .task-box-title-block

@@ -31,7 +31,6 @@
 
 @each $color in "white" #fff, "gray-lighter" $gray-lighter, "gray-light" $gray-light, "gray" $gray, "success" $brand-success, "danger" $brand-danger, "warning" $brand-warning, "primary" $brand-primary
   .btn-link-#{nth($color, 1)}
-    @extend .btn-link
     &, &:focus
       color: nth($color, 2)
     &:hover
