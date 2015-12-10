@@ -22,6 +22,11 @@ layout: input_registration
                     %input.form-control.registration-form-input{placeholder: 'Логин'}
                   .registration-form-input-wrapper
                     %input.form-control.registration-form-input{placeholder: 'Пароль'}
+                  .registration-form-input-wrapper.form-inline
+                    .checkbox
+                      %label.registration-form-text
+                        %input{type: :checkbox}
+                        Запомнить меня на 2 недели
                   .registration-form-actions
                     %a{href: '', class: 'registration-form-submit-btn'} Войти
                   .registration-form-social

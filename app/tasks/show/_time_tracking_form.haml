@@ -1,0 +1,43 @@
+- time = locals[:time] || ''
+- date = locals[:date] || ''
+- notes = locals[:notes] || ''
+- btn_text = locals[:edit] ? 'Сохранить' : 'Записать'
+
+.list-panel-container-block-actions.task-page-section-block
+  .container-fluid.content-group-sm
+    .row
+      .col-sm-2
+        .list-panel-block
+          %label Время работы
+          %input.form-control{placeholder: '0:00', role: 'tooltip', 'data-original-title' => 'например 2.5, 2,5 или 2:30', size: 6, value: time}
+        -# .list-panel-block.has-error
+          %label Время работы
+          %input.form-control{placeholder: '0:00', role: 'tooltip', 'data-original-title' => 'например 2.5, 2,5 или 2:30', size: 6}
+          %span.help-block
+            Обязательное поле
+      .col-sm-2
+        .list-panel-block
+          %label Дата
+          %div{role: "datetimepicker", 'data-format' => 'DD/MM/YYYY'}
+            %input.form-control{size: 10, :role => "calendar-trigger", value: date}
+          -#.form-group.form-inline
+            %input.form-control{value: Time.now.strftime('%H:%M'), size: 5}
+            &mdash;
+            %input.form-control{value: Time.now.strftime('%H:%M'), size: 5}
+      .col-sm-6
+        .list-panel-block
+          %label Заметки
+          %input.form-control{:placeholder => "Опишите выполненную работу", :type => "text", "ui-title" => "true", size: 80, value: notes}
+      .col-md-2
+        .list-panel-block
+          %label &nbsp;
+          %input.btn.btn-primary.btn-block{"data-disable-with" => "Отправка...", :name => "commit", :type => "submit", :value => btn_text}/
+  - if locals[:edit]
+    .container-fluid
+      .pull-right
+        %a.btn.btn-link-danger{:href => "#", "ui-task-form-cancel" => ""} Удалить запись
+        %a.btn.btn-link-gray-light{:href => "#", "ui-task-form-cancel" => ""} Отменить изменения
+      .clearfix
+
+.clearfix
+

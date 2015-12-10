@@ -1,0 +1,44 @@
+.content-group
+  .row
+    .col-sm-3
+      Фактическое время
+      %strong
+        7.5
+        часов
+    .col-sm-3
+      Планируемое время
+      %strong
+        32
+        часа
+
+= partial 'tasks/show/_time_tracking_form'
+- ['Сегодня', 'Вчера'].each_with_index do |d, di|
+  .task-page-section-block
+    %h4.task-page-section-title
+      = d
+      &nbsp;
+      %small.text-muted
+        = data.time_tracking.map{|x| x[:time].to_f}.inject(:+)
+        ч
+    - data.time_tracking.each_with_index do |t, i|
+      - if i == 0
+        %div{role: "task-time-shift-#{i}-#{di}", style: 'display: none;'}
+          = partial 'tasks/show/_time_tracking_form', locals: {edit: true, time: t[:time], notes: t[:title]}
+          %hr
+      .content-group-sm{role: "task-time-shift-#{i}-#{di}"}
+        .row
+          .col-sm-6
+            = t[:title]
+          .col-sm-3
+            %a{href: '/users/show'}
+              = data.users.sample[:name]
+          .col-sm-2
+            = t[:time]
+          .col-sm-1.text-right
+            - if i == 0
+              %a.btn-link-gray-light.btn-link-plain.btn-sm{data: {toggle: :toggle, target: "[role*='task-time-shift-#{i}-#{di}']"}}
+                %i.fa.fa-pencil.icon-size-14
+              %a.btn-link-gray-light.btn-link-plain.btn-sm
+                %i.fa.fa-times.icon-size-14
+        %hr
+

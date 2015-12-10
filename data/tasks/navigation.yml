@@ -15,3 +15,6 @@ reconciliation_list:
   title: Лист согласования
   link: /tasks/show/reconciliation_list
   counter: 3
+time_tracking:
+  title: Учет времени
+  link: /tasks/show/time_tracking
