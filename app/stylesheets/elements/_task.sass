@@ -176,24 +176,20 @@ a.task-box-block-link
   background-color: $new-item-background
 
 .task-status-badge
-  padding: 2px 6px
+  padding: 2px 10px
   display: inline-block
   text-align: center
   font:
     size: 12px
-    weight: 500
+  color: rgba(#000, 0.5)
   background-color: $brand-status-info-light
-  border-radius: 5px
-  border: 2px solid rgba(#000, .1)
-  color: $brand-caption-clarified
+  border-radius: $border-radius-base
+  box-shadow: inset 0 0 0 1px rgba(#000, 0.1)
   margin-left: auto
   &.task-status-badge-overdued
     background-color: $brand-status-danger-light
   &.task-status-badge-close-deadline
     background-color: $brand-status-warning-light
-  .task-status-badge-icon
-    font-size: 16px
-    font-weight: 600
 
 
 

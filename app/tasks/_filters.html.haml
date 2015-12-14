@@ -43,5 +43,42 @@
     %span{role: "expander"}
       Категории
       %i.fa.fa-angle-right
-    .form-horizontal
-
+  -#
+    .form-horizontal{"role-tasks-categories-search" => "ready", style: 'display: block;'}
+      .form-group
+        .col-xs-11{:role => "categories-search-container"}
+          .form-group{"data-reactid" => ".2", :style => "line-height:20px;margin:0;width:100%;"}
+            %form.input-group{"data-reactid" => ".2.0"}
+              %input.form-control{"data-reactid" => ".2.0.0", "data-test-global-search-field" => "true", :name => "query", :placeholder => "Поиск по категориям", :type => "search", :value => ""}/
+              .input-group-btn{"data-reactid" => ".2.0.1"}
+                %span{"data-reactid" => ".2.0.1.0"}
+                %a.btn.btn-default{"data-reactid" => ".2.0.1.1", "data-test-global-search-btn" => "true", :style => "height:30px;"}
+                  %i.fa.fa-search{"data-reactid" => ".2.0.1.1.0"}
+      %div{:role => "categories-list"}
+        .form-group.form-group-sm{"data-category" => "ткачев", :role => "category"}
+          .col-sm-9.small
+            .checkbox
+              %label
+                %input{:type => "checkbox"}/
+                ткачев
+          .col-sm-3.small
+            %span{"data-params" => "categories=%D1%82%D0%BA%D0%B0%D1%87%D0%B5%D0%B2", "data-url" => "/error_reports"}
+              4
+        .form-group.form-group-sm{"data-category" => "отчет", :role => "category"}
+          .col-sm-9.small
+            .checkbox
+              %label
+                %input{:type => "checkbox"}/
+                отчет
+          .col-sm-3.small
+            %span{"data-params" => "categories=%D0%BE%D1%82%D1%87%D0%B5%D1%82", "data-url" => "/error_reports"}
+              2
+        .form-group.form-group-sm{"data-category" => "документы ткачев", :role => "category"}
+          .col-sm-9.small
+            .checkbox
+              %label
+                %input{:type => "checkbox"}/
+                документы ткачев
+          .col-sm-3.small
+            %span{"data-params" => "categories=%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B+%D1%82%D0%BA%D0%B0%D1%87%D0%B5%D0%B2", "data-url" => "/error_reports"}
+              2

@@ -9,14 +9,14 @@ layout: application_modular
     %span.fa.fa-angle-left.icon-size-16
     Список задач
 
+- content_for :bottom_block do
+  = partial 'comments/form'
+
 %section.view-column.task-view-column{"data-channel" => "private-base_task-65590:update", "data-channel-template" => "private-base_task-%id%:update", "data-status" => "completed", "data-url" => "/tasks/65590", "role-task-view-column" => "ready", "test-task-view" => ""}
   .form-container
     = partial 'tasks/show/title'
   = partial 'tasks/show/tabnav', locals: {active: :discussion}
   = partial 'tasks/show/discussion'
-
-  .application-content-bottom-block
-    = partial 'comments/form'
 
 .application-content-block{role: 'application-content-block'}
   = partial 'tasks/show/discussion'
