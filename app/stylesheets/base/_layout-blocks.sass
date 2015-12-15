@@ -52,8 +52,6 @@ $layout-block-shadow-radius: 3px
   order: 2
   overflow-y: auto
   +overflow-scrolling
-  padding: $layout-block-shadow-radius*2
-  margin: - $layout-block-shadow-radius*2
 
 .application-nav
   flex:
@@ -85,6 +83,11 @@ $layout-block-shadow-radius: 3px
   flex-direction: column
   z-index: $content-column-z-index
   overflow-x: hidden
+  margin:
+    top: $layout-block-shadow-radius
+    left: $layout-block-shadow-radius
+    right: $layout-block-shadow-radius
+    bottom: 0
 
 .application-content-top-panel
   flex: 0 2 auto
