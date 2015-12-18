@@ -18,3 +18,6 @@ docs:
   icon: documents
 calendar:
   title: Календарь
+crm:
+  title: CRM
+  icon: tasks

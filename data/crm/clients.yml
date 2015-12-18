@@ -1,0 +1,34 @@
+attributes:
+  client: Клиент
+  category: Категория
+  contact: Контактное лицо
+  created_at: Дата создания
+  responsible: Ответственный
+  last_activity: Последняя активность
+  stage: Стадия
+
+data:
+  -
+    client:
+      title: Муниципальное автономное учреждение города Набережные Челны «Центр информационных технологий», МАУ
+    category: VIP
+    contact:
+      title: Эльвир Нуриахметов
+    created_at: 17.12.2015
+    responsible:
+      title: Ирина Михайлова
+    last_activity:
+      title: 18.12.2015
+    stage: Стадия воронки
+  -
+    client:
+      title: Муниципальное автономное учреждение города Набережные Челны «Центр информационных технологий», МАУ
+    category: VIP
+    contact:
+      title: Эльвир Нуриахметов
+    created_at: 17.12.2015
+    responsible:
+      title: Ирина Михайлова
+    last_activity:
+      title: 18.12.2015
+    stage: Стадия воронки

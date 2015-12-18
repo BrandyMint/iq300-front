@@ -1,0 +1,18 @@
+%table.table.table-condensed
+  %thead
+    %tr
+      - data.crm.clients.attributes.each_pair do |k, v|
+        %th= v
+  %tbody
+    - data.crm.clients.data.each do |c|
+      %tr
+        - data.crm.clients.attributes.each_pair do |k, v|
+          %td{class: "crm-clients-list-#{k}"}
+            -# if c.send(k.title).present?
+              = c.send(k)
+            - if c.send(k).is_a? Hash
+              %a{href: "#{c.send(k).link.present? ? c.send(k).link : ''}"}
+                = c.send(k).title
+            - else
+              = c.send(k)
+

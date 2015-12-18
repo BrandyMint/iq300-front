@@ -1,0 +1,8 @@
+- active = locals[:active] || -1
+
+.filters-column
+  %ul.filters-column-list
+    - data.crm.navigation.each_pair do |k, v|
+      %li{class: "#{k} #{active.to_s == k.to_s ? 'active' : ''}"}
+        %a= v.title
+
