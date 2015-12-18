@@ -1,4 +1,4 @@
-%table.table.table-condensed
+%table.table{role: 'list-view-switch'}
   %thead
     %tr
       - data.crm.clients.attributes.each_pair do |k, v|
@@ -10,9 +10,51 @@
           %td{class: "crm-clients-list-#{k}"}
             -# if c.send(k.title).present?
               = c.send(k)
-            - if c.send(k).is_a? Hash
+            - if k.to_s == "stage"
+              %strong{class: "text-color-#{c.stage.color}"}= c.stage.title
+              %br
+              .text-muted
+                - for i in 1..4
+                  %i.fa.icon-size-8{class: "#{i <= c.stage.position ? 'fa-circle' : 'fa-circle-o'}"}
+            - elsif c.send(k).is_a? Hash
               %a{href: "#{c.send(k).link.present? ? c.send(k).link : ''}"}
-                = c.send(k).title
+                - if k.to_s == "client"
+                  %strong= c.send(k).title
+                - else
+                  = c.send(k).title
             - else
               = c.send(k)
+
+.crm-clients-list{role: 'list-view-switch', style: 'display: none;'}
+  - data.crm.clients.data.each do |c|
+    .panel.panel-default
+      .panel-body
+        .row
+          .col-md-4
+            .content-group-xs
+              %a{href: ''}
+                %strong= c.client.title
+            %span.label.label-success= c.category
+          .col-md-2
+            %small.text-muted Контакт
+            %br
+            %a
+              = c.contact.title
+          .col-md-2
+            %small.text-muted Ответственный
+            %br
+            %a
+              = c.responsible.title
+          .col-md-2
+            %small.text-muted Последняя активность
+            %br
+            %a
+              = c.last_activity.title
+          .col-md-2
+            %strong{class: "text-color-#{c.stage.color}"}= c.stage.title
+            %br
+            .text-muted
+              - for i in 1..4
+                %i.fa.icon-size-8{class: "#{i <= c.stage.position ? 'fa-circle' : 'fa-circle-o'}"}
+
 

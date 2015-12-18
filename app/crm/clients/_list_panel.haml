@@ -26,8 +26,10 @@
       &nbsp;
       %a.btn.btn-sm.btn-link-plain{href: '[role*="project-tasks-list-search"]', data: {toggle: :collapse}}
         %i.fa.fa-search.icon-color-gray-light.icon-size-14
-      -#%a.btn.btn-sm.btn-link-plain{:href => "#", role: :tooltip, 'data-original-title' => 'Доска задач'}
+      %a.btn.btn-sm.btn-link-plain{role: 'list-view-switch', data: {toggle: :toggle, target: '[role*="list-view-switch"]'}}
         %i.fa.fa-th-large.icon-color-gray-light.icon-size-14
+      %a.btn.btn-sm.btn-link-plain{role: 'list-view-switch', data: {toggle: :toggle, target: '[role*="list-view-switch"]'}, style: 'display: none;'}
+        %i.fa.fa-th-list.icon-color-gray-light.icon-size-14
       %a.btn.btn-sm.btn-link-plain{:href => "#"}
         %i.fa.fa-print.icon-color-gray-light.icon-size-16
 

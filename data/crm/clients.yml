@@ -19,10 +19,13 @@ data:
       title: Ирина Михайлова
     last_activity:
       title: 18.12.2015
-    stage: Стадия воронки
+    stage:
+      title: Переговоры
+      position: 1
+      color: info
   -
     client:
-      title: Муниципальное автономное учреждение города Набережные Челны «Центр информационных технологий», МАУ
+      title: Автомастер
     category: VIP
     contact:
       title: Эльвир Нуриахметов
@@ -31,4 +34,7 @@ data:
       title: Ирина Михайлова
     last_activity:
       title: 18.12.2015
-    stage: Стадия воронки
+    stage:
+      title: Коммерческое предложение
+      position: 2
+      color: warning
