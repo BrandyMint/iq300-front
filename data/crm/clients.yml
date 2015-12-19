@@ -7,6 +7,21 @@ attributes:
   last_activity: Последняя активность
   stage: Стадия
 
+tabs:
+  details:
+    title: Информация
+    link: /crm/clients/show/
+  contacts:
+    title: Контактные лица
+    counter: 1
+    link: /crm/clients/show/contacts
+  notes:
+    title: Заметки
+    link: /crm/clients/show/notes
+  contracts:
+    title: Договоры
+    link: /crm/clients/show/contracts
+
 data:
   -
     client:

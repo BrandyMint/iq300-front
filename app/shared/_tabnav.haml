@@ -1,0 +1,14 @@
+- active = locals[:active] || -1
+- css_class = locals[:css_class] || ''
+
+%ul.nav.nav-tabs.tabnav{class: css_class}
+  - nav.each_with_index do |(k, v), i|
+    %li{class: "#{k} #{active.to_s == k.to_s ? 'active' : ''}"}
+      - link = v.link.present? ? v.link : "/#{k}/"
+      = link_to link do
+        - if locals[:lock].present? && locals[:lock].include?(k.to_sym)
+          %i.fa.fa-lock
+        = v.title
+        - if v.counter.present?
+          %span.badge= v.counter
+

@@ -1,0 +1,41 @@
+.page-title
+  .row
+    .col-sm-9
+      %h3.task-title.task-view-column-title.content-group
+        = data.crm.clients.data.first.client.title
+    .col-sm-3
+      .dropdown.pull-right
+        = link_to '#', class: 'btn btn-sm btn-default text-color-gray-light', 'data-toggle' => 'dropdown' do
+          Управление
+          %i.fa.fa-caret-down
+        %ul.dropdown-menu
+          %li
+            %a
+              Редактировать
+            %a
+              Удалить
+      .clearfix
+
+  .row
+    .col-sm-3
+      = link_to '#', class: 'text-color-gray' do
+        = image_tag data.avatars[5].url, class: 'project-header-avatar pull-left'
+        .project-header-avatar-content
+          .text-muted Ответственный
+          Ирина Михайлова
+    .col-sm-3
+      .project-header-avatar-content
+        .text-muted
+          Стадия воронки
+        %strong.text-color-info
+          Переговоры
+    .col-sm-3
+      = link_to '/crm/activities', class: 'btn btn-link-primary' do
+        Активности клиента
+
+    .col-sm-3.text-right
+      .content-group-sm
+        = link_to '/crm/activities', class: 'btn btn-sm btn-default' do
+          %i.fa.fa-plus
+          Добавить активность
+
