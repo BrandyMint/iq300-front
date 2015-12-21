@@ -7,6 +7,21 @@ attributes:
   last_activity: Последняя активность
   stage: Стадия
 
+
+categories:
+  positive: Позитивный
+  vip: VIP
+  negative: Негативный
+  inappropriate: Неадекватный
+
+stages:
+  contact: Первичный контакт
+  negotiation: Переговоры
+  decision: Принимают решение
+  contract: Согласование договора
+  done: Выполнено
+  cancelled: Отменено
+
 tabs:
   details:
     title: Информация

@@ -3,19 +3,32 @@
     = partial 'communities/profile/contacts'
 .panel.panel-lg.panel-default
   .panel-body
-    .content-group
-      .text-muted
-        Сообщество в Iq300
-      .user-block-inline
-        .user-block-avatar
-          %img.user-block-avatar-image{:src => data.communities.first.avatar, :style => "width:34px;height:34px;", :title => "Мещеряков Александр Игоревич"}/
-        .user-block-content.user-block-content-centered
-          .user-block-content-name-line
-            %a
-              = data.communities.first.short_title || data.communities.first.title
+    .row
+      .col-sm-9
+        %h2.community-profile-contacts-title Карта партнёра
+        .content-group
+          .user-block-inline
+            .user-block-avatar
+              %img.user-block-avatar-image{:src => data.communities.first.avatar, :style => "width:34px;height:34px;", :title => "Мещеряков Александр Игоревич"}/
+            .user-block-content
+              .text-muted
+                Сообщество в Iq300
+              .user-block-content-name
+                %a
+                  = data.communities.first.short_title || data.communities.first.title
+        %a.btn.btn-default{role: 'crm-client-partner-card', data: {toggle: :toggle, target: '[role*="crm-client-partner-card"]'}}
+          Добавить карту партнёра из сообщества
 
-    %a.btn.btn-default{role: 'crm-client-partner-card', data: {toggle: :toggle, target: '[role*="crm-client-partner-card"]'}}
-      Добавить карту партнёра из сообщества
+      .col-sm-3{role: 'crm-client-partner-card'}
+        %a.btn.btn-block.btn-default{:href => "/communities/2933/profile/edit"}
+          %span.fa.fa-edit
+          Редактировать
+        %a.btn.btn-block.btn-default{:href => "/communities/2933/profile/print_partner_card", :target => "_blank"}
+          %span.fa.fa-print
+          Печать
+        %a.btn.btn-block.btn-default{"data-toggle" => "tab", :href => "#community-partners"}
+          %span.fa.fa-download
+          Скачать карту партнера
 
     %div{role: 'crm-client-partner-card', style: 'display: none'}
       = partial 'communities/profile/partner_card'

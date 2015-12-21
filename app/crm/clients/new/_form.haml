@@ -1,0 +1,121 @@
+.task-form-section-block
+  %form.form-horizontal
+    .content-group
+      %h3.content-group-sm
+        Новый клиент
+      Заполните общую информацию о клиенте
+
+    .content-group
+      .row
+        %label.control-label.col-sm-2
+          Клиент
+        .col-sm-5
+          %input.form-control{:placeholder => "Название организации", :type => "text"}
+        .col-sm-5
+          %a.btn.btn-link-primary.btn-link-plain
+            или выбрать сообщество
+
+    .content-group
+      .row
+        %label.control-label.col-sm-2
+          Категория
+        .col-sm-5
+          %select.form-control
+            %option Без категории
+            - data.crm.clients.categories.each_pair do |k,v|
+              %option= v
+
+    .content-group
+      .row
+        %label.control-label.col-sm-2
+          Организационно-правовая форма
+        .col-sm-5
+          %select.form-control
+            %option ИП
+            %option AO
+            %option ПАО
+
+    .content-group
+      .row
+        %label.control-label.col-sm-2
+          Юридический адрес
+        .col-sm-5
+          %input.form-control{:placeholder => "", :type => "text"}
+
+    .content-group
+      .row
+        %label.control-label.col-sm-2
+          Почтовый адрес
+        .col-sm-5
+          %input.form-control{:placeholder => "", :type => "text"}
+
+    .content-group
+      .row
+        %label.control-label.col-sm-2
+          Руководитель
+        .col-sm-5
+          %input.form-control{:placeholder => "Фамилия, имя, отчество", :type => "text"}
+        .col-sm-5
+          %a.btn.btn-link-primary.btn-link-plain
+            или выбрать пользователя
+
+    %hr.content-group
+
+    .content-group
+      %h3.content-group-sm
+        Реквизиты
+
+    - "ИНН, КПП, ОГРН".split(", ").each do |r|
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            = r
+          .col-sm-5
+            %input.form-control{:placeholder => "", :type => "number"}
+
+    %hr.content-group
+
+    .content-group
+      %h3.content-group-sm
+        Контактное лицо
+      Больше контактов можно добавить после создания клиента
+
+    .content-group
+      .row
+        %label.control-label.col-sm-2
+          ФИО
+        .col-sm-5
+          %input.form-control{:placeholder => "", :type => :text}
+        .col-sm-5
+          %a.btn.btn-link-primary.btn-link-plain
+            или выбрать пользователя
+    .content-group
+      .row
+        %label.control-label.col-sm-2
+          Должность
+        .col-sm-5
+          %input.form-control{:placeholder => "", :type => :text}
+    .content-group
+      .row
+        %label.control-label.col-sm-2
+          Дата рождения
+        .col-sm-5
+          %input.form-control{:placeholder => "", :type => :datetime}
+    .content-group
+      .row
+        %label.control-label.col-sm-2
+          Телефон
+        .col-sm-5
+          %input.form-control{:placeholder => "", :type => :tel}
+    .content-group
+      .row
+        %label.control-label.col-sm-2
+          Email
+        .col-sm-5
+          %input.form-control{:placeholder => "", type: :email}
+
+    %hr.content-group
+
+
+    .content-group
+      %input.btn.btn-primary.btn-lg{"data-disable-with" => "Отправка...", "mix-target" => "save_task_btn", :name => "commit", :role => "input-submit", "test-submit-task" => "true", :type => "submit", :value => "Создать клиента"}/

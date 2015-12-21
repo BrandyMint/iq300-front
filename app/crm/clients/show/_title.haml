@@ -25,17 +25,29 @@
           Ирина Михайлова
     .col-sm-3
       .project-header-avatar-content
-        .text-muted
-          Стадия воронки
-        %strong.text-color-info
-          Переговоры
-    .col-sm-3
-      = link_to '/crm/activities', class: 'btn btn-link-primary' do
-        Активности клиента
+        .dropdown.dropdown-inline
+          %a.text-color-info.btn-link-plain{data: {toggle: :dropdown}}
+            .text-muted
+              Стадия воронки
+            %strong
+              = data.crm.clients.stages.negotiation
+              %i.fa.fa-caret-down
+          %ul.dropdown-menu
+            -#%li.dropdown-header
+              Изменение стадии воронки
+              %li.divider
+            - data.crm.clients.stages.each_with_index do |(k, v), i|
+              %li{class: "#{k.to_s == 'negotiation'  ? 'active' : ''}"}
+                %a= v
 
+    .col-sm-3
     .col-sm-3.text-right
       .content-group-sm
-        = link_to '/crm/activities', class: 'btn btn-sm btn-default' do
+        = link_to '/crm/activities', class: 'btn btn-link-primary' do
+          Активности клиента
+
+
+        -#= link_to '/crm/activities', class: 'btn btn-sm btn-default' do
           %i.fa.fa-plus
           Добавить активность
 
