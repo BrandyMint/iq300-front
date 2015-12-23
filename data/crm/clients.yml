@@ -1,3 +1,18 @@
+tabs:
+  details:
+    title: Информация
+    link: /crm/clients/show/
+  contacts:
+    title: Контактные лица
+    counter: 1
+    link: /crm/clients/show/contacts
+  notes:
+    title: Заметки
+    link: /crm/clients/show/notes
+  projects:
+    title: Проекты
+    link: /crm/clients/show/projects
+
 attributes:
   client: Клиент
   category: Категория
@@ -22,20 +37,21 @@ stages:
   done: Выполнено
   cancelled: Отменено
 
-tabs:
-  details:
-    title: Информация
-    link: /crm/clients/show/
-  contacts:
-    title: Контактные лица
-    counter: 1
-    link: /crm/clients/show/contacts
-  notes:
-    title: Заметки
-    link: /crm/clients/show/notes
-  contracts:
-    title: Договоры
-    link: /crm/clients/show/contracts
+
+contacts:
+  attributes:
+    title: Имя
+    email: Email
+    phone: Телефон
+  data:
+    -
+      title: Шамиль Хамадеев
+      email: shamil@gmail.com
+      phone: +79007733344
+    -
+      title: Шамиль Хамадеев
+      email: shamil@gmail.com
+      phone: +79007733344
 
 data:
   -

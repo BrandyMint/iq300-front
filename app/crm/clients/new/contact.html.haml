@@ -1,0 +1,26 @@
+---
+body_class: crm-index
+layout: application_modular
+nav_item: crm
+---
+
+- content_for :back_button do
+  %a.btn.btn-lg{:href => "/crm"}
+    %span.fa.fa-angle-left.icon-size-16
+    Список клиентов
+
+%section.view-column
+  .view-column-tab-content
+
+    .task-form-section-block
+      %form.form-horizontal{action: '/crm/clients/show/contacts'}
+        .content-group
+          %h3.content-group-sm
+            Новое контактное лицо
+
+        = partial 'crm/clients/new/contact'
+
+        %hr.content-group
+
+        .content-group
+          %input.btn.btn-primary.btn-lg{:type => "submit", :value => "Создать контактное лицо"}

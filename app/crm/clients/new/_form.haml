@@ -80,42 +80,19 @@
         Контактное лицо
       Больше контактов можно добавить после создания клиента
 
+    = partial 'crm/clients/new/contact'
+
     .content-group
       .row
         %label.control-label.col-sm-2
-          ФИО
+          Ответственный
         .col-sm-5
-          %input.form-control{:placeholder => "", :type => :text}
-        .col-sm-5
-          %a.btn.btn-link-primary.btn-link-plain
-            или выбрать пользователя
-    .content-group
-      .row
-        %label.control-label.col-sm-2
-          Должность
-        .col-sm-5
-          %input.form-control{:placeholder => "", :type => :text}
-    .content-group
-      .row
-        %label.control-label.col-sm-2
-          Дата рождения
-        .col-sm-5
-          %input.form-control{:placeholder => "", :type => :datetime}
-    .content-group
-      .row
-        %label.control-label.col-sm-2
-          Телефон
-        .col-sm-5
-          %input.form-control{:placeholder => "", :type => :tel}
-    .content-group
-      .row
-        %label.control-label.col-sm-2
-          Email
-        .col-sm-5
-          %input.form-control{:placeholder => "", type: :email}
+          %select.form-control
+            %option Без категории
+            - data.crm.clients.categories.each_pair do |k,v|
+              %option= v
 
     %hr.content-group
-
 
     .content-group
       %input.btn.btn-primary.btn-lg{"data-disable-with" => "Отправка...", "mix-target" => "save_task_btn", :name => "commit", :role => "input-submit", "test-submit-task" => "true", :type => "submit", :value => "Создать клиента"}/

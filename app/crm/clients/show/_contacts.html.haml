@@ -1,0 +1,21 @@
+.accessor-users{"role-task-members" => "ready"}
+  .content-group
+    %a.btn.btn-primary{:href => "/crm/clients/new/contact" } Добавить контактное лицо
+    %section.invite-community-member.search-user-for-community{:style => "margin-top:6px;", "ui-invite-form" => ""}
+      %form{:action => "/tasks/127468/candidates?for=tasks", :method => "get", "ui-search-form" => ""}
+        %input#search{:name => "search", :placeholder => "Введите имя пользователя или его email", :type => "text", "ui-search-input" => "true", :value => ""}/
+      .results{"ui-result-list" => ""}
+  .content-group
+    %table.table
+      %thead
+        %tr
+          - data.crm.clients.contacts.attributes.each_pair do |k, v|
+            %th= v
+      %tbody
+        - data.crm.clients.contacts.data.each do |c|
+          %tr
+            - data.crm.clients.contacts.attributes.each_pair do |k, v|
+              %td{class: "crm-clients-list-#{k}"}
+                %a= c.send(k)
+
+
