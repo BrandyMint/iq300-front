@@ -98,6 +98,5 @@ Gulp-задача собирает в `app/tmp/assets` все ассеты, пр
 
 ## TODO
 
-Убрать зависимости из проекта в Bower.
-
-`grep -r TODO app`
+- Убрать зависимости из проекта в Bower `grep -r TODO app`
+- Обновить libsass
