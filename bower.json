@@ -28,7 +28,8 @@
     "purl": "~2.3.1",
     "react-select": "~1.0.0-beta8",
     "select2": "~3.5.1",
-    "photoswipe": "latest"
+    "photoswipe": "latest",
+    "amcharts3": "latest"
   },
   "ignore": [
     "**/.*",
