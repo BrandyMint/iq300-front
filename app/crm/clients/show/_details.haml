@@ -1,7 +1,11 @@
-.panel.panel-lg.panel-default
-  .panel-body
-    = partial 'communities/profile/contacts'
-.panel.panel-lg.panel-default
+= partial 'crm/clients/show/details/contacts'
+
+.btn{data: {toggle: :collapse, target: '[role*="community-profile-partner-card"]'}}
+  %h4.content-group-sm
+    Дополнительная информация
+    %i.fa.fa-angle-down
+
+.panel.panel-lg.panel-default.collapse{role: 'community-profile-partner-card'}
   .panel-body
     .row
       .col-sm-9
