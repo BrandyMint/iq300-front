@@ -13,6 +13,7 @@ URL_REGEX = ///
             url
             \s* # Arbitrary white-spaces
             \(  # An opening bracket
+            #^((?!base64).)*$
             \s* # Arbitrary white-spaces
             ([^\)]+) # Anything but a closing bracket
             \) # A closing bracket
@@ -46,6 +47,7 @@ module.exports = (opt) ->
     data.replace URL_REGEX, (match, file) ->
       ret = match
       file = cleanMatch file
+      return if match.match('base64')
       # refactor this
       if opt.relative
         if (isRelativeUrl file) and not (isRelativeToBase file)
