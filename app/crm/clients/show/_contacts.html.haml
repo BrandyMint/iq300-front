@@ -9,14 +9,18 @@
         .results{"ui-result-list" => ""}
   .collapse{role: 'community-profile-contact-add-form'}
     .list-panel-container-block-actions.task-page-section-block
+      .list-panel-container-close-btn{data: {toggle: :collapse, target: '[role*="community-profile-contact-add-form"]'}}
+        &times;
+      .clearfix
       .container-fluid.content-group-sm
         .row
           .col-sm-2
             .list-panel-block
               %label Пользователь
-              %select.form-control
+              %select.form-control.content-group-xs
                 - data.users.each do |u|
                   %option= u.name
+              %a.small{href: '#'} Заполнить поля
           .col-sm-2
             .list-panel-block
               %label ФИО
