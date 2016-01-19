@@ -40,4 +40,7 @@
           .application-content-column-bottom-block{role: 'application-content-column-bottom-block'}
             = yield_content(:content_column_bottom_block) if yield_content(:content_column_bottom_block).present?
 
+    - if content_for?(:body)
+      = yield_content(:body) if yield_content(:body).present?
+
 = partial 'layouts/javascripts'

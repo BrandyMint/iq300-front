@@ -1,0 +1,58 @@
+.content-group
+  %h3.content-group-sm Персональные настройки
+  Отображение, напоминания и интеграция для вашего аккаунта
+
+.content-group.collapse.in
+  .row
+    %label.control-label.col-sm-2
+      Цвет календаря
+    .col-sm-10
+      .form-inline
+        - calendars_count = 15
+        - for i in 0..calendars_count
+          - if i == 0
+            - color = "hsl(200, 50%, 45%)"
+          - else
+            - color = "hsl(#{i*360/calendars_count}, 50%, 45%)"
+          %label.radio.multiselect-color-picker-list-item.multiselect-color-picker-list-item-radio
+            - if i == 0
+              %input#optionsRadios1{checked: :checked, :name => "calendar-color", :type => "radio", :value => color}/
+            - else
+              %input#optionsRadios1{:name => "calendar-color", :type => "radio", :value => color}/
+            %i.multiselect-color-picker-option{style: "background-color: #{color}"}
+
+      -#%select.form-control-select-plain{role: 'multiselect-color-picker',
+        data: {'button-class' => 'btn btn-default'}}
+        - for i in 0..11
+          - if i == 0
+            - color = "hsl(200, 50%, 45%)"
+          - else
+            - color = "hsl(#{i*360/10}, 50%, 45%)"
+          %option{value: color}
+            .multiselect-option-bullet{style: "background-color: #{color}"}
+
+.content-group
+  .row
+    %label.control-label.col-sm-2
+      Напоминания о событиях
+    .col-sm-10
+      %div{role: 'calendar-alerts'}
+        .pull-left
+          .content-group-sm{role: 'calendar-alert-select'}
+            %select.form-control-select-plain{role: 'multiselect-select',
+              data: {'button-class' => 'btn btn-default'}}
+              - options = "за 30 мин, за 1 час, за 12 часов, за 1 день, нет".split(", ")
+              - options.each do |o|
+                %option= o
+        .pull-left
+          %a.btn.btn-link-primary{role: 'duplicate-element', data: {source: '[role*="calendar-alert-select"]', destination: '[role*="calendar-alerts"]'}}
+            %i.fa.fa-plus
+        .clearfix
+.content-group
+  .row
+    %label.control-label.col-sm-2
+      Интеграция с Google Calendar
+    .col-sm-10
+      %a.btn.btn-default Подключить
+
+

@@ -1,0 +1,76 @@
+---
+layout: application_modular
+body_class: calendar-new
+nav_item: calendar
+---
+
+
+- content_for :back_button do
+  %a.btn.btn-lg{:href => "/calendar"}
+    %span.fa.fa-angle-left.icon-size-16
+    Календарь
+
+%section.task-form-section.form-container{"data-default-community" => "290", "data-default-executor" => "203", "role-task-form" => "ready"}
+  %form#edit_base_task_2330.form-horizontal{"accept-charset" => "UTF-8", :action => "/calendar", :enctype => "multipart/form-data", :method => "post"}
+    %div{:style => "margin:0;padding:0;display:inline"}
+    %input#base_task_kind.task-kind-input{:name => "base_task[kind]", :type => "hidden", :value => "Task"}/
+    %input#base_task_template_id{:name => "base_task[template_id]", :type => "hidden"}/
+    .task-form-section-block
+      .content-group
+        %h3 Новый календарь
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Название
+          .col-sm-5
+            %input#base_task_title.form-control{:placeholder => "Новый календарь", :size => "30", :type => "text"}
+            .btn-line
+              %a.btn.btn-deffault{:href => "#", :role => "add-description-btn"}
+                %span.fa.fa-pencil-square-o{:role => "description-icon"}
+                %span{"data-original-title" => "В описании Вы можете детализировать задачу", :role => "text", "role-bootstrap-tooltip" => "ready", "test-add-descr-btn" => "", :title => ""}
+                  Добавить описание
+      .content-group.collapse.in
+        .row
+          %label.control-label.col-sm-2
+            Сообщество
+          .col-sm-10
+            %select.form-control-select-plain{role: 'multiselect-select',
+              data: {'button-class' => 'btn btn-default'}}
+              - options = "Личная задача, Iq300, ЦИТ МАУ".split(", ")
+              - options.each do |o|
+                %option= o
+      .content-group.show
+        .row
+          %label.control-label.col-sm-2
+            Участники
+          .col-sm-10
+            %select.form-control-select-plain{role: 'multiselect-select', multiple: :multiple,
+              data: {'button-class' => 'btn btn-default',
+              filtering: 'true',
+              'select-all-option' => 'true', 'select-all-text' => 'Выбрать всех', 'button-text-all' => 'Выберите участников',
+              'button-text-default' => 'Участники'}}
+              - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов, Ахмед Сарсенбайулов-Алтынбеков".split(', ')
+              - for i in 0..2
+                %optgroup{label: "Отдел #{i}"}
+                  - filter_users.each do |user|
+                    %option
+                      = user
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Управление событиями
+          .col-sm-10
+            %select.form-control-select-plain{role: 'multiselect-select',
+              data: {'button-class' => 'btn btn-default'}}
+              - options = "Только администраторы, Все участники календаря".split(", ")
+              - options.each do |o|
+                %option= o
+
+    .task-form-section-block
+      %hr.content-group
+
+      = partial 'calendar/settings/personal'
+
+    %hr.content-group
+    .content-group
+      %input.btn.btn-primary.btn-lg{"data-disable-with" => "Отправка...", "mix-target" => "save_task_btn", :name => "commit", :role => "input-submit", "test-submit-task" => "true", :type => "submit", :value => "Создать календарь"}/

@@ -1,0 +1,38 @@
+%fc-btn-reset
+  &, &:hover, &:focus
+    box-shadow: none
+    outline: none
+    text-shadow: none
+
+.calendar-block
+  border: none !important
+
+  .fc-button
+    @extend %fc-btn-reset
+    @extend .btn
+
+  .fc-state-default
+    @extend %fc-btn-reset
+    @extend .btn-outline-primary
+
+  .fc-state-active
+    @extend %fc-btn-reset
+    @extend .btn-outline-primary
+    @extend .active
+
+  .fc-button-group
+    @extend .btn-group
+
+  &.fc
+    .fc-toolbar > * > *
+       margin-left: 0
+  .fc-left
+    .fc-button-group
+      margin-right: 0.75em
+  .fc-right
+    .fc-button-group
+      margin-left: 0.75em
+
+  .fc-day
+    &.fc-today
+      background-color: rgba($brand-warning, 0.2)

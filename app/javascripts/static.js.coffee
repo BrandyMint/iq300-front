@@ -15,6 +15,7 @@
 #= require purl/purl
 #= require layout
 #= require data_toggle_hide
+#= require data_clone
 #= require projects/tasks
 #= require projects/new
 #= require projects/discussions

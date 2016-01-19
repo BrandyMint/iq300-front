@@ -16,13 +16,16 @@ $popover-form-content-block-height: 200px
   &:hover
     color: $gray
 
-.popover-close-btn
+%popover-close-btn-circle-style
   @extend %popover-close-btn-style
   top: -15px
   right: -15px
   &, &:hover, &:focus
     background-color: #fff
     border: 1px solid rgba(#000, 0.2)
+
+.popover-close-btn
+  @extend %popover-close-btn-circle-style
 
 .popover-close-btn-inner
   @extend %popover-close-btn-style

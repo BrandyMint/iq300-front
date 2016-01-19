@@ -1,0 +1,61 @@
+.row
+  .col-sm-6
+    .list-panel-block.list-panel-block-left
+      %select.form-control-select-plain{role: 'multiselect-select', multiple: :multiple,
+        data: {'button-icon' => 'fa fa-users', 'button-class' => 'btn btn-link-plain',
+        'select-all-option' => 'true', 'select-all-text' => 'Выбрать все', 'button-text-all' => 'Все календари',
+        'button-text-default' => 'Календарь', 'show-option-bullets' => 'true'}}
+        - calendars_count = 15
+        - for i in 0..calendars_count
+          - if i == 0
+            - color = "hsl(200, 50%, 45%)"
+            %option{data: {'bullet-color' => color}} Личный календарь
+
+          - else
+            - color = "hsl(#{i*360/calendars_count}, 50%, 45%)"
+            - caption = data.communities.sample[:title]
+            %option{data: {'bullet-color' => color}}
+              -#= truncate(caption, length: 28)
+              = caption
+
+      %select.form-control-select-plain{role: 'multiselect-select', multiple: :multiple,
+        data: {'button-icon' => 'fa fa-user', 'button-class' => 'btn btn-link-plain',
+        'select-all-option' => 'true', 'select-all-text' => 'Выбрать всех', 'button-text-all' => 'Все участники',
+        'button-text-default' => 'Участники'}}
+        - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов, Ахмед Сарсенбайулов-Алтынбеков".split(', ')
+        - for i in 0..2
+          - filter_users.each do |user|
+            %option
+              -#= "#{user.split(' ')[0][0]}. #{truncate(user.split(' ')[1..-1].join(' '), length: 12)}"
+              = user
+      %span.btn-sm
+        %label.checkbox-inline
+          %input{type: :checkbox, checked: :checked}
+            Дедлайны задач
+
+
+  .col-sm-6
+    .list-panel-block.text-right
+      .dropdown.dropdown-inline
+        %a.btn.btn-link-default.btn-circle-plus{"aria-expanded" => "false", "data-toggle" => "dropdown"}
+          %span.btn-circle-plus-icon
+            %i.fa.fa-plus.icon-size-16
+        %ul.dropdown-menu.pull-right{:role => "menu"}
+          %li
+            %a{:href => "/calendar/new_event", role: 'project-tasks-list-add-task-btn'} Добавить событие
+          %li
+            %a{:href => "/calendar/new"} Добавить календарь
+      %a.btn.btn-sm.btn-link-plain{:href => "/calendar/settings", role: :tooltip, data: {'original-title' => 'Настройки календаря'}}
+        %i.fa.fa-cog.icon-color-gray-light.icon-size-16
+
+      -#%a.btn.btn-link.btn-link-plain.btn-link-primary{href: '#', role: 'tooltip'}
+        %i.fa.fa-cog
+        Настройки
+
+      -#%a.btn.btn-sm.btn-link-plain{href: '[role*="project-tasks-list-search"]', data: {toggle: :collapse}}
+        %i.fa.fa-search.icon-color-gray-light.icon-size-14
+      -#%a.btn.btn-sm.btn-link-plain{:href => "#", role: :tooltip, 'data-original-title' => 'Доска задач'}
+        %i.fa.fa-th-large.icon-color-gray-light.icon-size-14
+      %a.btn.btn-sm.btn-link-plain{:href => "#"}
+        %i.fa.fa-print.icon-color-gray-light.icon-size-16
+

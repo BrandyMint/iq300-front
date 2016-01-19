@@ -4,37 +4,21 @@ window.Calendar ||= {}
   $(document).ready ->
     $calendar = $('@fullcalendar')
     jsonUrl = $calendar.data('events')
-    multiselectUsers = $('@multiselect-calendar-users')
-    multiselectCommunities = $('@multiselect-calendar-communities')
-
-    $calendar.fullCalendar
+    eventModalEl = $('@calendar-block-modal')
+    app.calendar = $calendar.fullCalendar
       eventRender: (event, element) ->
         if event.type == "deadline"
           element.addClass "fullcalendar-event-type-deadline"
 
-      dayClick: ->
-        if $(@).data('bs.popover')?.$tip?.length > 0
-          $calendar.find('td').each ->
-            $(@).popover('destroy')
-        else
-          $calendar.find('td').each ->
-            $(@).popover('destroy')
-          app.pop = app.popover $(@)
-          $popover = app.pop.data('bs.popover')
-          app.pop.popover('show')
-          $popover.$tip.find('[role*="event-edit"]').on 'click', (e) =>
-            e.preventDefault()
-            app.pop.popover('destroy')
-            app.popEdit = app.popoverEdit $(@)
-            app.popEdit.popover('show')
-            $popoverEdit = app.popEdit.data('bs.popover')
-            popoverBindings($popoverEdit)
-
+      dayClick: =>
+        app.eventModal = $(eventModalEl).modal()
+        $eventModal = app.eventModal.data('bs.modal')
+        eventBindings app.eventModal
       header:
         left: 'prev,next today'
         center: 'title, users, communities'
         right: 'month,agendaWeek,agendaDay'
-      defaultDate: '2015-02-12'
+      defaultDate: '2015-12-12'
       editable: true
       #eventLimit: true, // allow "more" link when too many events
       events:
@@ -43,34 +27,6 @@ window.Calendar ||= {}
           console.log 'calendar events error'
       #loading: (bool) ->
         #$('@fullcalendar-loading').toggle(bool)
-
-    multiselectUsers.multiselect
-      maxHeight: 200
-      includeSelectAllOption: true
-      enableFiltering: true
-      enableCaseInsensitiveFiltering: true
-      selectAllText: 'Все участники'
-      buttonText: (options, select) ->
-        if multiselectUsers.find('option:selected').length is 0 || multiselectUsers.find('option:selected').length is multiselectUsers.find('option').length
-          "<i class=\"fa fa-user\"></i>&nbsp; Все участники <b class=\"caret\"></b>"
-          #else if options.length is 0
-          #"<i class=\"fa fa-user\"></i> Все"
-        else
-          "<i class=\"fa fa-user\"></i>&nbsp; Участники: " + options.length + " <b class=\"caret\"></b>"
-
-    multiselectCommunities.multiselect
-      maxHeight: 200
-      includeSelectAllOption: true
-      enableFiltering: true
-      enableCaseInsensitiveFiltering: true
-      selectAllText: 'Все сообщества'
-      buttonText: (options, select) ->
-        if multiselectUsers.find('option:selected').length is 0 || multiselectUsers.find('option:selected').length is multiselectUsers.find('option').length
-          "<i class=\"fa fa-users\"></i>&nbsp; Все сообщества <b class=\"caret\"></b>"
-          #else if options.length is 0
-          #"<i class=\"fa fa-user\"></i> Все"
-        else
-          "<i class=\"fa fa-users\"></i>&nbsp; Сообщества: " + options.length + " <b class=\"caret\"></b>"
 
   app.popover = (el) ->
     pop = $(el).popover
@@ -105,7 +61,7 @@ window.Calendar ||= {}
             4 февраля с 11:00 до 13:00
           </div>
           <div class="fullcalendar-event-form-text">
-            А. Мещеряков, 
+            А. Мещеряков,
             Э. Нуриахметов
             Ш. Хамадеев
           </div>
@@ -167,10 +123,10 @@ window.Calendar ||= {}
       container: '[role="application-content-block"]'
     return pop
 
-  popoverBindings = ($popover) ->
-    $popover.$tip.find('[role="event-participants"], [role="select2"]').select2
+  eventBindings = ($el) ->
+    $el.find('[role="event-participants"], [role="select2"]').select2
       width: "100%"
-    $popover.$tip.find('input[type="datetime"]').datetimepicker
+    $el.find('input[type="datetime"]').datetimepicker
       keepOpen: false
       showClose: true
       #language: 'ru'
@@ -183,8 +139,8 @@ window.Calendar ||= {}
         close: 'fa fa-times'
         today: 'fa fa-crosshairs'
       format: 'DD/MM/YYYY HH:mm'
-    $popover.$tip.find('input:first').focus()
-    $popover.$tip.find('[role*="autosize"]').autosize()
+    $el.find('input:first').focus()
+    $el.find('[role*="autosize"]').autosize()
 
 
 )(window.Calendar ||={} )
