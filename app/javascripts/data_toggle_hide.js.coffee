@@ -5,7 +5,8 @@ window.DataToggleHide ||= {}
     toggle = $('[data-toggle*="toggle"]')
     toggle.each ->
       target = $(@).data('target') || $(@).attr('href')
-      $(@).on 'click', () ->
+      $(@).on 'click', (e) ->
+        e.preventDefault()
         $(target).toggle()
 
 )(window.DataToggleHide ||= {})

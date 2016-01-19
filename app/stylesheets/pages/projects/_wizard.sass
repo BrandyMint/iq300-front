@@ -21,23 +21,34 @@
   padding: $grid-gutter-width 0
   background-color: rgba(#000, .5)
   overflow-y: auto
+  +overflow-scrolling
 
 .project-wizard-modal
   display: flex
   flex-direction: row
   justify-content: center
-  height: 100%
+  max-height: 100%
 
 .project-wizard-modal-content
   position: relative
   background-color: #fff
   padding-bottom: $grid-gutter-width/2
-  border-radius: $border-radius-base
   box-shadow: 0 2px 5px rgba(#000, .5)
   box-sizing: border-box
-  max-width: $modal-md
+  width: $modal-md
+  //overflow: hidden
+
+.project-wizard-modal-close-btn
+  @extend %popover-close-btn-circle-style
+  position: static
+  z-index: $popover-z-index
+  order: 2
+  margin:
+    top: -15px
+    left: -15px
 
 .project-wizard-modal-content-wide
+  width: auto
   min-width: $modal-wide-min-width
   max-width: $container-fixed-width - $grid-gutter-width*2
 
@@ -46,7 +57,7 @@
   flex-direction: column
   flex: 1 1
   padding: 0
-  overflow-x: hidden
+  overflow-x: -moz-hidden-unscrollable
 
 .project-wizard-modal-content-fixed-horizontal
   @extend .project-wizard-modal-content-fixed
@@ -75,15 +86,13 @@
   flex: 1 1
   padding: 0
   overflow-y: auto
+  +overflow-scrolling
 
 .project-wizard-modal-body-menu
   flex: 0 0 25%
   order: 1
   display: flex
   flex-direction: column
-  border:
-    top-left-radius: $border-radius-base
-    bottom-left-radius: $border-radius-base
   background-color: $blue-brand
 
 .project-wizard-modal-body-menu-list
@@ -92,6 +101,7 @@
   //padding-right: 1px
   //border-right: 1px solid $line-color
   overflow-y: auto
+  +overflow-scrolling
   & > li
     & > a
       color: #fff
@@ -123,6 +133,7 @@
   flex: 1 1 75%
   order: 2
   overflow-y: auto
+  +overflow-scrolling
 
 .project-wizard-modal-body-content-block
   @extend %project-wizard-modal-content-padding

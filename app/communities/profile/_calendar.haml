@@ -1,0 +1,34 @@
+%select.form-control-select-plain{role: 'multiselect-select',
+    data: {'button-icon' => 'fa fa-calendar', 'button-class' => 'btn btn-link-plain btn-collapse'}}
+  %option Основной календарь сообщества
+  %option Встречи с заказчиком
+
+- permissions = 'Создание события, Изменение события, Просмотр участников, Приглашение новых участников'.split(', ')
+
+%table.table.table-condensed.form-inline{:role => "loading-container"}
+  %thead
+    %tr
+      %th
+        Участник сообщества
+      %th
+        Роль в календаре
+      - permissions.each do |p|
+        %th= p
+  %tbody{:role => "members-rights-container"}
+    %tr.community-roles-table-cell.community-roles-table-cell-owner
+      %td
+        .user-block
+          .user-block-avatar
+            %img.user-block-avatar-image{:alt => "Артур", :hide_wait_message => "true", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/596/medium_771782bd-208e-4be3-b78a-dc62d236a232.jpg", :style => "width:34px;height:34px;", :title => "Шайдуллин Артур Хафизович"}/
+          .user-block-content.user-block-content-centered
+            .pull-left
+              %a.user-block-content-name{:href => "/users/710", :role => "member-name", "test-task-member-name" => "true"} Артур Шайдуллин
+              .user-block-position
+                Руководитель сообщества
+
+      %td
+        Администратор
+      - permissions.each do |p|
+        %td.community-roles-table-checkbox
+          .checkbox
+            %input{:checked => "checked", "data-right" => "create_projects", :disabled => "disabled", :role => "member-right", :type => "checkbox"}/

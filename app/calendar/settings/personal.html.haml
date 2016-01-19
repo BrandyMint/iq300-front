@@ -1,0 +1,21 @@
+---
+layout: application_modular
+body_class: calendar-new
+nav_item: calendar
+---
+
+
+- content_for :back_button do
+  %a.btn.btn-lg{:href => "/calendar"}
+    %span.fa.fa-angle-left.icon-size-16
+    Календарь
+
+%section.task-form-section.form-container{"data-default-community" => "290", "data-default-executor" => "203", "role-task-form" => "ready"}
+  %form#edit_base_task_2330.form-horizontal{"accept-charset" => "UTF-8", :action => "/calendar", :enctype => "multipart/form-data", :method => "post"}
+    .task-form-section-block
+
+      = partial 'calendar/settings/personal'
+
+    %hr.content-group
+    .content-group
+      %input.btn.btn-primary.btn-lg{"data-disable-with" => "Отправка...", "mix-target" => "save_task_btn", :name => "commit", :role => "input-submit", "test-submit-task" => "true", :type => "submit", :value => "Создать календарь"}/

@@ -2,6 +2,9 @@
 $user-block-btn-width: 30px
 $user-block-btn-height: $user-block-btn-width
 
+%user-block-avatar-middle
+  vertical-align: middle
+
 %user-block-btn
   @extend .btn
   @extend .btn-xs
@@ -36,7 +39,6 @@ $user-block-btn-height: $user-block-btn-width
     flex-direction: column
     overflow: visible
     .user-block-content-name
-      height: 0
       overflow: visible
       vertical-align: middle
 
@@ -54,6 +56,14 @@ $user-block-btn-height: $user-block-btn-width
   width: $user-avatar-width
   height: $user-avatar-width
   +bordered
+
+.user-block-avatar-image-inline
+  @extend %user-block-avatar-middle
+  display: inline-block
+
+.user-block-avatar-image-xs
+  width: $user-avatar-width-xs
+  height: $user-avatar-width-xs
 
 .user-block-status-bullet
   @extend .user-status-bullet

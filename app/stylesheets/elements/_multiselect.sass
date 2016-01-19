@@ -28,6 +28,12 @@
   label
     &.radio, &.checkbox
       white-space: normal !important
+  &.multiselect-color-picker-container
+    min-width: 0
+    & > li
+      & > a
+        & > label
+          padding: 3px 20px
 
 .form-inline .multiselect-container
   label
@@ -42,5 +48,37 @@
       label
         &.checkbox input[type=checkbox],
         &.radio input[type=radio]
-          margin-left: -20px
-          margin-right: 5px
+          margin:
+            left: -20px
+            right: 5px
+            bottom: 0
+
+.multiselect-option-bullet
+  display: inline-block
+  width: 6px
+  height: 6px
+  +border-radius(100%)
+  background-color: $gray-light
+  margin-bottom: ($font-size-base - 6px)/2 - 1px
+
+.multiselect-color-picker-option
+  display: inline-block
+  width: $font-size-base
+  height: $font-size-base
+  +border-radius(100%)
+  background-color: $gray-light
+
+.multiselect-color-picker-option-sm
+  width: $font-size-base/1.5
+  height: $font-size-base/1.5
+
+.multiselect-color-picker-list-item
+  input
+    display: none
+  &.active .multiselect-color-picker-option,
+  input:checked + .multiselect-color-picker-option
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px $brand-primary
+
+.multiselect-color-picker-list-item-radio
+  padding: 5px
+  cursor: pointer

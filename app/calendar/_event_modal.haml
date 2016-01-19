@@ -1,0 +1,63 @@
+.fade{:style => "display: none;", role: 'calendar-block-modal'}
+  .project-wizard-modal-backdrop
+    .project-wizard-modal
+      %a.project-wizard-modal-close-btn{ "data-dismiss" => "modal" }
+        &times;
+      .project-wizard-modal-content.block-scrollable-y
+        %form.form.form-vertical.fullcalendar-event-form{role: 'calendar-event-form'}
+          .fullcalendar-event-form-text.fullcalendar-event-form-control-title{:type => "text"} Новая версия календаря
+          .fullcalendar-event-form-actions.text-center.content-group-sm.hide
+            .content-group-sm
+              %strong
+                Шамиль Хамадеев пригласил вас
+            %a.btn.btn-primary Подтвердить участие
+            %a.btn.btn-link-primary.btn-link-plain Возможно участвую
+            %a.btn.btn-link-gray.btn-link-plain Отказаться
+          .fullcalendar-event-form-text
+            %a{:href => "/tasks/show/"} http://app.iq300.ru/tasks/4765
+          .fullcalendar-event-form-text Описание встречи
+          .fullcalendar-event-form-text Сообщество IQ300
+          -#.fullcalendar-event-form-text
+            Весь день
+          .fullcalendar-event-form-text 4 февраля с 11:00 до 13:00
+          - statuses = "Участуют, Возможно участвуют, Ожидается ответ, Отказались".split(', ')
+          - statuses.each do |s|
+            .fullcalendar-event-form-text
+              %strong= s
+              &nbsp;&nbsp;
+              - users = "А. Мещеряков, Э. Нуриахметов, Ш. Хамадеев".split(', ')
+              - users.each_with_index do |u, i|
+                %a>= u
+                - unless i == (users.count - 1)
+                  = ",&nbsp;".html_safe
+              %a
+                и ещё 15&hellip;
+          .fullcalendar-event-form-actions
+            %a.btn.btn-sm.btn-link-danger.pull-left{:href => "javascript:confirm('Точно удалить событие?');"} Удалить
+            %a.fullcalendar-event-form-submit-btn.pull-right{data: {toggle: :toggle, target: '[role*="calendar-event-form"]'}} Изменить
+            .clearfix
+
+        %form.form.form-vertical.fullcalendar-event-form{style: 'display: none;', role: 'calendar-event-form'}
+          %input.fullcalendar-event-form-control.fullcalendar-event-form-control-title{:placeholder => "Новое событие", :type => "text"}/
+          %textarea.fullcalendar-event-form-control{:placeholder => "Добавить описание", :role => "autosize"}
+          .fullcalendar-event-form-actions
+            %select{"data-placeholder" => "Выберите календарь", :role => "select2"}
+              %option{:selected => "selected"} Выберите календарь
+              %option Test community
+              %option IQ300
+          .fullcalendar-event-form-text
+            .checkbox
+              %label
+                %input{:type => "checkbox"}/
+                Весь день
+          %input.fullcalendar-event-form-control{:placeholder => "Начало события", :type => "datetime"}/
+          %input.fullcalendar-event-form-control{:placeholder => "Конец события", :type => "datetime"}/
+          .fullcalendar-event-form-actions
+            %select.form-control-select-plain{role: 'multiselect-select', multiple: :multiple,
+                data: {'button-icon' => 'fa fa-users', 'button-class' => 'btn btn-link-plain btn-collapse'}}
+              - data.users.map(&:name).each do |u|
+                %option= u
+          .fullcalendar-event-form-actions
+            %a.btn.btn-sm.btn-link-danger.pull-left{:href => "javascript:confirm(\\'Точно удалить событие?\\');"} Удалить
+            %a.fullcalendar-event-form-submit-btn.pull-right{data: {toggle: :toggle, target: '[role*="calendar-event-form"]'}} Сохранить
+            .clearfix

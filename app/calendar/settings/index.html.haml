@@ -1,0 +1,95 @@
+---
+layout: application_modular
+body_class: calendar-new
+nav_item: calendar
+---
+
+
+- content_for :back_button do
+  %a.btn.btn-lg{:href => "/calendar"}
+    %span.fa.fa-angle-left.icon-size-16
+    Календарь
+
+%section.task-form-section.form-container{"data-default-community" => "290", "data-default-executor" => "203", "role-task-form" => "ready"}
+  %form#edit_base_task_2330.form-horizontal{"accept-charset" => "UTF-8", :action => "/calendar", :enctype => "multipart/form-data", :method => "post"}
+    %div{:style => "margin:0;padding:0;display:inline"}
+    %input#base_task_kind.task-kind-input{:name => "base_task[kind]", :type => "hidden", :value => "Task"}/
+    %input#base_task_template_id{:name => "base_task[template_id]", :type => "hidden"}/
+    .task-form-section-block
+      .form-group
+        .page-title.col-md-12
+          .pull-left
+            %h3 Календари
+          .pull-right
+            %a.btn.btn-default{href: "/calendar/new"}
+              %i.fa.fa-plus
+              Создать календарь
+
+      -#.form-group
+        %label.control-label.col-sm-2
+          Название
+        .col-sm-5
+          %input#base_task_title.form-control{:placeholder => "Новый календарь", :size => "30", :type => "text"}
+          .btn-line
+            %a.btn.btn-deffault{:href => "#", :role => "add-description-btn"}
+              %span.fa.fa-pencil-square-o{:role => "description-icon"}
+              %span{"data-original-title" => "В описании Вы можете детализировать задачу", :role => "text", "role-bootstrap-tooltip" => "ready", "test-add-descr-btn" => "", :title => ""}
+                Добавить описание
+      - calendars_count = 15
+      - description = 'Основной целью деятельности муниципального автономного учреждения города Набережные Челны «Центр информационных технологий» является получение и применение новых знаний для решения технологических задач в области информационных технологий'
+
+      - data.communities.first(15).each_with_index do |c, i|
+        .row
+          .col-sm-8
+            .content-group-xs
+              - if i == 0
+                - color = "hsl(200, 50%, 45%)"
+                %h4.calendar-settings-title-block
+                  .calendar-settings-item-bullet-block
+                    %i.multiselect-color-picker-option.multiselect-color-picker-option-sm.v-align-middle{style: "background-color: #{color}"}
+                  Личный календарь
+              - else
+                - color = "hsl(#{i*360/calendars_count}, 50%, 45%)"
+                %h4.calendar-settings-title-block
+                  .calendar-settings-item-bullet-block>
+                    %i.multiselect-color-picker-option.multiselect-color-picker-option-sm.v-align-middle{style: "background-color: #{color}"}
+                  = c[:title]
+                  - if  i.between? 1, 3
+                    &nbsp;
+                    %small.text-muted Администратор
+                  - if  i.between? 2, 4
+                    &nbsp;
+                    %small.icon-item-block
+                      %i.fa.fa-calendar-check-o.icon-size-14{role: :tooltip, 'data-original-title' => 'Подключен Google–календарь'}
+
+            - if i > 0
+              .calendar-settings-title-block
+                .content-group-xs
+                  %a.btn-link-gray-light.btn-link-plain{href: '/communities/profile'}
+                    %i.fa.fa-group.icon-size-12{role: :tooltip, 'data-original-title' => 'Календарь сообщества'}
+                    = c[:title]
+                .content-group-sm
+                  = truncate(description, length: 200)
+          .col-sm-4
+            %a.btn.btn-link-primary{href: '/calendar/settings/personal'}
+              %strong Настройки
+            - if  i.between? 1, 3
+              %a.btn.btn-link-primary Управление правами участников
+        - if i > 0
+          .calendar-settings-title-block
+            %span
+              - data.avatars.last(5).each do |u|
+                %a.btn-link-plain{href: '/users/2', role: 'tooltip', 'data-original-title' => data.users.sample[:name]}
+                  %img.user-block-avatar-image.user-block-avatar-image-xs.user-block-avatar-image-inline{:src => u[:url], :alt => "", :width => "40px", :height => "40px"}
+            %span{role: 'calendar-settings-item-users-list', style: 'display: none;'}
+              - for i in 0..3
+                - data.avatars.last(5).each do |u|
+                  %a.btn-link-plain{href: '/users/2', role: 'tooltip', 'data-original-title' => data.users.sample[:name]}
+                    %img.user-block-avatar-image.user-block-avatar-image-xs.user-block-avatar-image-inline{:src => u[:url], :alt => "", :width => "40px", :height => "40px"}
+            &nbsp;
+            %a{'data-toggle' => 'toggle', 'data-target' => '[role*="calendar-settings-item-users-list"]'}
+              %small{role: 'calendar-settings-item-users-list'} и ещё 15
+              %small{role: 'calendar-settings-item-users-list', style: 'display: none;'} скрыть
+
+
+        %hr
