@@ -26,7 +26,7 @@
     "momentjs": "2.8.4",
     "nestedSortable": "https://github.com/ilikenwf/nestedSortable.git#~1.3.4",
     "purl": "~2.3.1",
-    "react-select": "~0.6.1",
+    "react-select": "~1.0.0-beta8",
     "select2": "~3.5.1",
     "photoswipe": "latest"
   },
