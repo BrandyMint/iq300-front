@@ -82,21 +82,34 @@ $layout-block-shadow-radius: 3px
   +overflow-scrolling
   box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1)
   z-index: $filters-column-z-index
+  margin:
+    top: $layout-block-shadow-radius
+    left: $layout-block-shadow-radius
+    right: - $layout-block-shadow-radius
 
-.application-content
-  @extend %view-column-block
-  @extend %list-column-shadow
+
+%application-content
   flex: 1 1
   order: 3
   display: flex
   flex-direction: column
   z-index: $content-column-z-index
   overflow-x: hidden
+  background-color: #fff
   margin:
     top: $layout-block-shadow-radius
     left: $layout-block-shadow-radius
     right: $layout-block-shadow-radius
     bottom: 0
+
+
+.application-content
+  @extend %application-content
+  @extend %list-column-shadow
+
+.application-content-plain
+  @extend %view-column-block
+  @extend %application-content
 
 .application-content-top-panel
   flex: 0 2 auto
