@@ -112,7 +112,7 @@
           cursor: default;
         }
       }
-    } 
+    }
   }
   // pulling this in mainly for less shorthand
   &.nav-justified {
@@ -231,9 +231,6 @@
 
 // Hide tabbable panes to start, show them when `.active`
 .tab-content {
-  > div {
-    padding: 20px 0;
-  }
   > .tab-pane {
     display: none;
   }

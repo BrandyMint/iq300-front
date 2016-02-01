@@ -1,0 +1,29 @@
+%view-column-layout-padding
+  padding: $space-middle $space-large
+
+%view-column-tab-content
+  @extend %view-column-layout-padding
+  background-color: #fff
+
+%view-column-gray
+  +gradient-vertical($bg-light-grey, #fff, 220px, 220px)
+  padding: 0
+
+%view-column-template
+  //background-color: $template-item-background
+  +gradient-vertical($template-item-background, #fff, 220px, 220px)
+
+.view-column-gray
+  @extend %view-column-gray
+
+.view-column-header
+  @extend %view-column-layout-padding
+
+.view-column-tabnav
+  padding:
+    left: $space-large
+    right: $space-large
+
+.view-column-tab-content
+  @extend %view-column-tab-content
+

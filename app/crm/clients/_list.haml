@@ -1,0 +1,57 @@
+%table.table{role: 'list-view-switch', style: 'display: none;'}
+  %thead
+    %tr
+      - data.crm.clients.attributes.each_pair do |k, v|
+        %th= v
+  %tbody
+    - data.crm.clients.data.each do |c|
+      %tr
+        - data.crm.clients.attributes.each_pair do |k, v|
+          %td{class: "crm-clients-list-#{k}"}
+            -# if c.send(k.title).present?
+              = c.send(k)
+            - if k.to_s == "stage"
+              %strong{class: "text-color-#{c.stage.color}"}= c.stage.title
+              %br
+              .text-muted
+                - for i in 1..4
+                  %i.fa.icon-size-8{class: "#{i <= c.stage.position ? 'fa-circle' : 'fa-circle-o'}"}
+            - elsif c.send(k).is_a? Hash
+              - if k.to_s == "client"
+                %a{href: "/crm/clients/show"}
+                  %strong= c.send(k).title
+              - else
+                %a{href: "#{c.send(k).link.present? ? c.send(k).link : ''}"}
+                  = c.send(k).title
+            - else
+              = c.send(k)
+
+.crm-clients-list{role: 'list-view-switch'}
+  - data.crm.clients.data.each do |c|
+    %article
+      %a.crm-clients-list-card{href: '/crm/clients/show'}
+        .row
+          .col-md-4
+            .crm-clients-list-card-title.content-group-xs
+              %strong= c.client.title
+            %span.label.label-success= c.category
+          .col-md-2
+            %small.text-muted Контакт
+            %br
+            = c.contact.title
+          .col-md-2
+            %small.text-muted Ответственный
+            %br
+            = c.responsible.title
+          .col-md-2
+            %small.text-muted Последняя активность
+            %br
+            = c.last_activity.title
+          .col-md-2
+            %strong{class: "text-color-#{c.stage.color}"}= c.stage.title
+            %br
+            .text-muted
+              - for i in 1..4
+                %i.fa.icon-size-8{class: "#{i <= c.stage.position ? 'fa-circle' : 'fa-circle-o'}"}
+
+

@@ -1,0 +1,86 @@
+tabs:
+  details:
+    title: Информация
+    link: /crm/clients/show/
+  contacts:
+    title: Контактные лица
+    counter: 1
+    link: /crm/clients/show/contacts
+  notes:
+    title: Заметки
+    link: /crm/clients/show/notes
+  projects:
+    title: Проекты
+    link: /crm/clients/show/projects
+
+attributes:
+  client: Клиент
+  category: Категория
+  contact: Контактное лицо
+  created_at: Дата создания
+  responsible: Ответственный
+  last_activity: Последняя активность
+  stage: Стадия
+
+
+categories:
+  positive: Позитивный
+  vip: VIP
+  negative: Негативный
+  inappropriate: Неадекватный
+
+stages:
+  contact: Первичный контакт
+  negotiation: Переговоры
+  decision: Принимают решение
+  contract: Согласование договора
+  done: Выполнено
+  cancelled: Отменено
+
+
+contacts:
+  attributes:
+    title: Имя
+    email: Email
+    phone: Телефон
+  data:
+    -
+      title: Шамиль Хамадеев
+      email: shamil@gmail.com
+      phone: +79007733344
+    -
+      title: Шамиль Хамадеев
+      email: shamil@gmail.com
+      phone: +79007733344
+
+data:
+  -
+    client:
+      title: Муниципальное автономное учреждение города Набережные Челны «Центр информационных технологий», МАУ
+    category: VIP
+    contact:
+      title: Эльвир Нуриахметов
+    created_at: 17.12.2015
+    responsible:
+      title: Ирина Михайлова
+    last_activity:
+      title: 18.12.2015
+    stage:
+      title: Переговоры
+      position: 1
+      color: info
+  -
+    client:
+      title: Автомастер
+    category: VIP
+    contact:
+      title: Эльвир Нуриахметов
+    created_at: 17.12.2015
+    responsible:
+      title: Ирина Михайлова
+    last_activity:
+      title: 18.12.2015
+    stage:
+      title: Коммерческое предложение
+      position: 2
+      color: warning

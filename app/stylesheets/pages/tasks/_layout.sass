@@ -7,21 +7,16 @@
 //.tasks-view-column
   @extend %view-column-block
 
-
 .tab-content
   body.tasks-show &
-    background-color: #fff
-    padding-left: 40px
-    padding-right: 40px
+    @extend %view-column-tab-content
 
 .task-view-column
   &,
   body.tasks-show &
-    +gradient-vertical($bg-light-grey, #fff, 220px, 220px)
-    padding: 0
+    @extend %view-column-gray
     &.task-view-column-task-template
-      //background-color: $template-item-background
-      +gradient-vertical($template-item-background, #fff, 220px, 220px)
+      @extend %view-column-template-style
 
 
 

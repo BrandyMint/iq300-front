@@ -1,0 +1,23 @@
+---
+body_class: crm-index
+layout: application_modular
+nav_item: crm
+---
+
+-#.application-app-container{role: 'crm-app'}
+  .application-filters
+    = partial 'crm/filters', locals: {active: :clients}
+  .application-content
+    .application-content-top-panel
+      = partial 'crm/clients/top_panel'
+    .application-content-block
+
+- content_for :filters_column do
+  = partial 'crm/filters', locals: {active: :clients}
+
+- content_for :top_panel do
+  = partial 'crm/clients/top_panel'
+
+.contacts-list-container.form-container-compact
+  = partial 'crm/clients/list'
+

@@ -1,0 +1,16 @@
+---
+body_class: crm-index
+layout: application_modular
+nav_item: crm
+---
+
+- content_for :back_button do
+  %a.btn.btn-lg{:href => "/crm"}
+    %span.fa.fa-angle-left.icon-size-16
+    Список клиентов
+
+%section.view-column
+  .view-column-tab-content
+    = partial 'crm/clients/new/form'
+
+

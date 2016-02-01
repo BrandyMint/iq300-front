@@ -1,0 +1,58 @@
+.accessor-users{"role-task-members" => "ready"}
+  %div.collapse.in{role: 'community-profile-contact-add-form'}
+    .content-group
+      -#%a.btn.btn-primary{:href => "/crm/clients/new/contact" } Добавить контактное лицо
+      %a.btn.btn-primary{data: {toggle: :collapse, target: '[role*="community-profile-contact-add-form"]'}} Добавить контактное лицо
+      %section.invite-community-member.search-user-for-community{:style => "margin-top:6px;", "ui-invite-form" => ""}
+        %form{:action => "/tasks/127468/candidates?for=tasks", :method => "get", "ui-search-form" => ""}
+          %input#search{:name => "search", :placeholder => "Введите имя пользователя или его email", :type => "text", "ui-search-input" => "true", :value => ""}/
+        .results{"ui-result-list" => ""}
+  .collapse{role: 'community-profile-contact-add-form'}
+    .list-panel-container-block-actions.task-page-section-block
+      .list-panel-container-close-btn{data: {toggle: :collapse, target: '[role*="community-profile-contact-add-form"]'}}
+        &times;
+      .clearfix
+      .container-fluid.content-group-sm
+        .row
+          .col-sm-2
+            .list-panel-block
+              %label Пользователь
+              %select.form-control.content-group-xs
+                - data.users.each do |u|
+                  %option= u.name
+              %a.small{href: '#'} Заполнить поля
+          .col-sm-2
+            .list-panel-block
+              %label ФИО
+              %input.form-control{type: :text}
+          .col-sm-2
+            .list-panel-block
+              %label Email
+              %input.form-control{type: :email}
+          .col-sm-2
+            .list-panel-block
+              %label Телефон
+              %input.form-control{type: :tel}
+          .col-sm-2
+            .list-panel-block
+              %label Должность
+              %input.form-control{type: :text}
+          .col-md-2
+            .list-panel-block
+              %label  
+              %input.btn.btn-primary.btn-block{ data: {toggle: :collapse, target: '[role*="community-profile-contact-add-form"]'},
+                :type => "submit", :value => "Добавить"}
+  .content-group
+    %table.table
+      %thead
+        %tr
+          - data.crm.clients.contacts.attributes.each_pair do |k, v|
+            %th= v
+      %tbody
+        - data.crm.clients.contacts.data.each do |c|
+          %tr
+            - data.crm.clients.contacts.attributes.each_pair do |k, v|
+              %td{class: "crm-clients-list-#{k}"}
+                %a= c.send(k)
+
+

@@ -36,6 +36,7 @@
 #= require conversations/conference
 #= require auth
 #= require elements/multiselect
+#= require crm
 
 $ ->
   $('@select2').select2()
