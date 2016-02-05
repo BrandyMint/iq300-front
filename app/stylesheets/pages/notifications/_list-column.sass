@@ -11,6 +11,10 @@ $notifications-list-update-btn-height: 30px
 .notification-list-item-block-card
   position: relative
   margin-bottom: $grid-gutter-width / 3
+  transition: background 0.3s ease, box-shadow 0.3s ease
+  cursor: pointer
+  &:hover
+    background-color: $item-hover-background
 
 .notifications-list-column-title
   font-size: $font-size-large
