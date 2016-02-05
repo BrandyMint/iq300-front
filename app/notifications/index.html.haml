@@ -24,7 +24,7 @@ nav_item: notifications
   .application-content-block{role: 'application-content-block'}
     %section.list-column.notifications-list-column{"data-channel" => "presence-4:notifications", "data-url" => "/notifications", "role-notifications-list-column" => "ready"}
       .container-fluid
-        .tab-content.tab-panels
+        .tab-content.tab-panels.page-content
           - tab_panes.each_with_index do |section, si|
             .tab-pane{role: "notification-list-tab-pane-#{section}", class: "#{si == 0 ? 'active' : ''}"}
               %a.notifications-list-update-btn.fade{role: 'notification-list-update-btn'}
