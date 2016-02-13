@@ -1,0 +1,66 @@
+$community-process-list-actions-max-height: 80px
+$community-process-list-actions-padding: $grid-gutter-width/2
+$community-process-list-actions-arrow-width: 7px
+$community-process-list-actions-line-color: $line-color
+
+.community-process-list-item-content
+  @extend .panel
+  @extend .panel-default
+  margin-bottom: 0
+
+.community-process-list-item-body
+  @extend .panel-body
+
+.community-process-list-actions
+  display: flex
+  flex-direction: row
+
+.community-process-list-actions-block
+  flex: 1 1 50%
+  position: relative
+  padding:
+    top: $community-process-list-actions-padding
+    bottom: $community-process-list-actions-padding + $community-process-list-actions-arrow-width/2
+
+.community-process-list-actions-block-connected
+  &:before
+    content: ' '
+    display: block
+    position: absolute
+    top: 0
+    left: 50%
+    height: 100%
+    width: 0
+    border-left: 1px solid $community-process-list-actions-line-color
+
+.community-process-list-actions-output-block
+  position: absolute
+  width: 100%
+  text-align: center
+
+.community-process-list-actions-output
+  display: inline-block
+  padding: 4px 12px
+  border-radius: 34px
+  background-color: $community-process-list-actions-line-color
+  color: rgba(#000, 0.7)
+
+.community-process-list-actions-arrow
+  +arrow(bottom, $community-process-list-actions-arrow-width, $community-process-list-actions-line-color, $community-process-list-actions-line-color)
+  display: block
+  position: absolute
+  bottom: $community-process-list-actions-arrow-width
+  left: 50%
+
+.community-process-list-item-number
+  display: inline-block
+  width: 1.2em
+  height: 1.2em
+  border-radius: 100%
+  padding: 0.3em
+  font-size: $font-size-small
+  line-height: 1.3em
+  text-align: center
+  color: $text-muted
+  border: 1px solid $line-color
+

@@ -8,38 +8,52 @@ layout: application_modular
 = partial 'communities/profile/tabs'
 .tab-content.tab-panels
   #community-profile.tab-pane.active
-    = partial 'communities/profile/details'
+    .tab-content.tab-panels.page-content
+      = partial 'communities/profile/details'
 
   #community-projects.tab-pane
-    = partial 'communities/profile/projects'
+    .tab-content.tab-panels.page-content
+      = partial 'communities/profile/projects'
 
   #community-tasks.tab-pane
-    = partial 'communities/profile/tasks'
+    .tab-content.tab-panels.page-content
+      = partial 'communities/profile/tasks'
 
   #community-members.tab-pane
-    = partial 'communities/profile/participants'
+    .tab-content.tab-panels.page-content
+      = partial 'communities/profile/participants'
 
   #community-departments.object-details.community-departments-tab.undefined.tab-pane
-    -#= partial 'communities/profile/departments'
-    = partial 'communities/profile/departments_rules'
+    .tab-content.tab-panels.page-content
+      -#= partial 'communities/profile/departments'
+      = partial 'communities/profile/departments_rules'
 
   #community-roles-edit.tab-pane
-    = partial 'communities/profile/roles_edit'
+    .tab-content.tab-panels.page-content
+      = partial 'communities/profile/roles_edit'
 
   -##community-actions.tab-pane
     = partial 'communities/profile/actions'
 
   #community-partners.tab-pane
-    = partial 'communities/profile/partners'
+    .tab-content.tab-panels.page-content
+      = partial 'communities/profile/partners'
 
   #community-partners-edit.tab-pane
-    = partial 'communities/profile/partners_edit'
+    .tab-content.tab-panels.page-content
+      = partial 'communities/profile/partners_edit'
 
   #community-reports.tab-pane
-    = partial 'communities/profile/reports'
+    .tab-content.tab-panels.page-content
+      = partial 'communities/profile/reports'
 
   #community-calendar.tab-pane
-    = partial 'communities/profile/calendar'
+    .tab-content.tab-panels.page-content
+      = partial 'communities/profile/calendar'
+
+  #community-processes.community-processes-tab.tab-pane
+    .tab-content.tab-panels.page-content
+      = partial 'communities/profile/processes'
 
   .tab-pane{role: 'community-billing'}
     = partial 'communities/profile/billing'

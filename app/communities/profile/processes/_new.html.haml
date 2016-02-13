@@ -1,0 +1,20 @@
+%div
+  %div
+    .content-group
+      %a.header-back-btn.btn-collapse{:href => "/communities/profile/processes"}
+        %span.header-back-btn-icon
+        %span Процессы
+    %form.form-horizontal
+      .task-page-section-block
+        .row
+          .col-md-6
+            %input.form-control.form-control-lg{:placeholder => "Название процесса", :type => "text", :value => ""}/
+          .col-md-6.text-right
+            %a.btn.link-grey.btn-lg{:href => "/communities/profile/processes"} Отменить
+            %input.btn.btn-primary.btn-lg{:type => "submit", :value => "Создать процесс"}/
+
+      .content-group
+        - items_count = 5
+        - for i in 1..items_count
+          = partial 'communities/profile/processes/action_item', locals: {i: i, count: items_count}
+

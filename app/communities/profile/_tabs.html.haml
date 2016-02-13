@@ -1,34 +1,16 @@
+- nav = data.communities_navigation
+- active = locals[:active] || -1
 %ul.nav.nav-tabs.tab-buttons.tabnav.container-grey
-  %li.active
-    %a{"data-toggle" => "tab", :href => "#community-profile"}
-      Сводка
-      %span.badge{:role => "counter"}
-  %li
-    %a{"data-toggle" => "tab", :href => "#community-projects"}
-      Проекты
-      %span.badge{:role => "counter"}
-  %li
-    %a{"data-toggle" => "tab", :href => "#community-tasks"}
-      Задачи
-  %li
-    %a{"data-toggle" => "tab", :href => "#community-members"}
-      Участники
-      %small.text-muted 17
-  %li
-    %a{"data-toggle" => "tab", :href => "#community-departments"} Структура
-  %li
-    %a{"data-toggle" => "tab", :href => "#invites"} Приглашения
-  %li
-    %a{"data-toggle" => "tab", :href => "#community-reports"} Отчеты
-  %li
-    %a{"data-toggle" => "tab", :href => "#community-calendar"} Календарь
-  -#%li
-    %a{"data-toggle" => "tab", :href => "#community-actions"} Активность
-  %li
-    %a.nav-tab-item-btn{"data-toggle" => "tab", :href => "[role='community-billing']"}
-      %span.nav-tab-item-btn-label
-        %i.fa.fa-credit-card
-        Оплата
-
-
+  - nav.each_with_index do |(k, v), i|
+    %li{class: "#{k} #{active.to_s == k.to_s ? 'active' : ''}"}
+      - if active == 'billing'
+        %a.nav-tab-item-btn{"data-toggle" => "tab", :href => "[role='community-billing']"}
+          %span.nav-tab-item-btn-label
+            %i.fa.fa-credit-card
+            Оплата
+      - else
+        = link_to "/#{k}/" do
+          = v.title
+          - if v.counter.present?
+            %small.text-muted= v.counter
 

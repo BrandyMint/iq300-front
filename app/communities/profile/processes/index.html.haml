@@ -1,0 +1,13 @@
+---
+body_class: communities-profile
+nav_item: communities
+layout: application_modular
+---
+
+= partial 'communities/profile/header'
+= partial 'communities/profile/tabs', locals: {active: :processes}
+.tab-content.tab-panels
+  #community-processes.community-processes-tab.tab-pane{style: 'display: block;'}
+    .tab-content.tab-panels.page-content
+      = partial 'communities/profile/processes/index'
+
