@@ -12,7 +12,9 @@ nav_item: notifications
           %a= value
 
 - tab_panes = [:new, :my, :all]
-- types = {'Проект' => 'создал обсуждение в проекте', 'Задача' => 'написал комментарий', 'Сообщество' => 'приглашает вас вступить в сообщество'}
+- types = {'Проект' => 'создал обсуждение в проекте',
+  'Задача' => 'написал комментарий',
+  'Сообщество' => 'приглашает вас вступить в сообщество'}
 
 .application-content
   .application-content-top-panel
@@ -38,6 +40,8 @@ nav_item: notifications
               - ['Сегодня', 'Вчера', '20 октября'].each do |date|
                 %h4.notifications-list-column-title
                   = date
+                = partial 'notifications/list/list_item_card', locals: {type: 'Событие',
+                  type_activity: 'Напоминание о событии', status: '', children_count: 0, is_event: true}
                 - types.each_pair do |type, type_activity|
                   - children_count = 2 + rand(10)
                   - if section == :new

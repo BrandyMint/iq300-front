@@ -3,7 +3,7 @@ $notifications-list-update-btn-height: 30px
 
 %notification-list-item-btn
   display: inline-block
-  +transition(color 0.3s ease, background 0.3s ease)
+  +transition(color 0.2s ease, background 0.2s ease)
 
 .notification-list-item-block
   +translate3d(0, 0, 0)
@@ -11,10 +11,17 @@ $notifications-list-update-btn-height: 30px
 .notification-list-item-block-card
   position: relative
   margin-bottom: $grid-gutter-width / 3
-  transition: background 0.3s ease, box-shadow 0.3s ease
+  transition: background 0.2s ease, box-shadow 0.2s ease, border 0.2s ease
   cursor: pointer
   &:hover
     background-color: $item-hover-background
+
+.notification-list-item-block-event
+  background-color: rgba($brand-warning, 0.1)
+  border-color: rgba(darken($brand-warning, 10%), 0.2)
+  &:hover
+    background-color: rgba($brand-warning, 0.2)
+    border-color: rgba(darken($brand-warning, 10%), 0.3)
 
 .notifications-list-column-title
   font-size: $font-size-large
@@ -30,7 +37,7 @@ $notifications-list-update-btn-height: 30px
     bottom: 12px
     left: 0
     right: 0
-  +transition(background 0.3s ease, box-shadow 0.3s ease)
+  +transition(background 0.2s ease, box-shadow 0.2s ease)
 
 .notification-name
   word-wrap: break-word

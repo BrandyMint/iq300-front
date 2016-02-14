@@ -17,12 +17,17 @@
           %i.fa.fa-thumb-tack.icon-rotate-30
   .col-md-8
     .media
-      %a.pull-left{:href => "/users/203"}
-        %img.user-avatar.media-object.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", :title => "Мещеряков Александр"}
+      - if locals[:is_event]
+        %a.pull-left.btn-link-gray{:href => "/calendar"}
+          %i.iqs.iqs-nav-calendar.icon-size-24
+      - else
+        %a.pull-left{:href => "/users/203"}
+          %img.user-avatar.media-object.img-corrector-initialized{:alt => "Александр", :hide_wait_message => "true", :src => "https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg", :title => "Мещеряков Александр"}
       .media-body
         .notification-list-item-description
-          %a{:href => "/users/203"}
-            Александр Мещеряков
+          - unless locals[:is_event]
+            %a{:href => "/users/203"}
+              Александр Мещеряков
           = type_activity
           %br
           = truncate(text, length: 200)
