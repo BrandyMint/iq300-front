@@ -1,0 +1,45 @@
+#destroy-confirm.modal.fade.in{:style => "display: none;"}
+  .iq-modal-fullscreen
+    .iq-modal-fullscreen-content
+      %button.close.iq-modal-close-btn{"data-dismiss" => "modal"}
+        &times;
+      .iq-modal-fullscreen-header
+        .container
+          %p Вы действительно хотите расформировать сообщество UX fake community?
+      .iq-modal-fullscreen-body
+        .project-wizard-modal-body-content-block
+          .container
+            .content-group
+              %h2.text-color-danger Внимание
+              %h3.text-muted После удаления сообщества 'UX fake community' будут удалены все участники.
+              %h3 Также будут отменены следующие задачи:
+              .community-contracts-modal
+                %table
+                  %thead
+                    %tr
+                      %th{:style => "width: 30%;"} Название
+                      %th Заказчик
+                      %th Исполнитель
+                      %th Статус
+                      %th Дедлайн
+                  %tbody
+                    - for i in 0..20
+                      %tr
+                        %td
+                          %a{:href => "/tasks/257260"} test ux task
+                        %td
+                          %a{:href => "/users/1757"}
+                            %i.icon-user
+                            Александр Мещеряков
+                        %td
+                          %a{:href => "/users/1757"}
+                            %i.icon-user
+                            Александр Мещеряков
+                        %td.status
+                          %span.task-status-in_work В работе
+                        %td 31 марта 2016
+      .iq-modal-fullscreen-footer.text-right
+        .container
+          %button.btn.btn-lg.btn-default{"data-dismiss" => "modal", :type => "button"} Отменить
+          %a.btn.btn-lg.btn-link-danger{"data-method" => "delete", :href => "/communities/2933", :rel => "nofollow"} Удалить сообщество
+

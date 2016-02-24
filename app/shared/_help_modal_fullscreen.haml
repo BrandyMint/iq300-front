@@ -1,0 +1,22 @@
+%div{:style => "display: none;", role: 'help-modal'}
+  .iq-modal-fullscreen
+    .project-wizard-modal-body-menu
+      .project-wizard-modal-body-menu-list
+        - data.help.sections.each_with_index do |s,i|
+          %li{class: "#{i == 0 ? 'active' : ''}"}
+            %a
+              = s
+    .iq-modal-fullscreen-content
+      %button.close.iq-modal-close-btn{"data-dismiss" => "modal"}
+        &times;
+      .iq-modal-fullscreen-header
+        %p
+          %span.text-muted
+            Уроки
+            &nbsp;/&nbsp;
+          = data.help.sections.first.presence
+      .iq-modal-fullscreen-body
+        .project-wizard-modal-body-content-block
+          .markdown-wrapper
+            - for i in 0..3
+              = partial 'shared/markdown_test'
