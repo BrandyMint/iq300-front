@@ -1,0 +1,23 @@
+profile:
+  title: Сводка
+projects:
+  title: Проекты
+tasks:
+  title: Задачи
+members:
+  title: Участники
+  counter: 17
+departments:
+  title: Структура
+invites:
+  title: Приглашения
+reports:
+  title: Отчеты
+calendar:
+  title: Календарь
+processes:
+  title: Процессы
+billing:
+  title: Оплата
+
+

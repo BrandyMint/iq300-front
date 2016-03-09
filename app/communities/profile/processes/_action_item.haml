@@ -1,0 +1,57 @@
+- i = locals[:i] || 1
+- count = locals[:count] || 1
+
+.community-process-list-item
+  .community-process-list-item-content
+    .community-process-list-item-body
+      .row
+        .col-md-1
+          .community-process-list-item-number
+            = i
+        .col-md-5
+          .Select.is-searchable.has-value
+            .Select-control
+              .Select-value{:title => "Блок ожидания"}
+                %span.Select-value-label Создание проекта из шаблона
+              .Select-input{:style => "display:inline-block;"}
+                %input{:style => "width:5px;box-sizing:content-box;", :value => ""}/
+                %div{:style => "position: absolute; visibility: hidden; height: 0px; width: 0px; overflow: scroll; white-space: nowrap; font-size: 13px; font-family: Arial, sans-serif; font-weight: normal; font-style: normal; letter-spacing: normal;"}
+              %span.Select-arrow-zone
+                %span.Select-arrow
+        .col-md-5
+          .content-group-xs
+            .row
+              .col-xs-4
+                %label.form-control-label-plain
+                  Шаблон проекта
+                  %small.text-muted Обязательное поле
+              .col-xs-8
+                .Select-control
+                  .Select-placeholder Выберите свойство
+                  .Select-input{:style => "display:inline-block;"}
+                    %input{:style => "width:5px;box-sizing:content-box;", :value => ""}/
+                    %div{:style => "position: absolute; visibility: hidden; height: 0px; width: 0px; overflow: scroll; white-space: nowrap; font-size: 13px; font-family: Arial, sans-serif; font-weight: normal; font-style: normal; letter-spacing: normal;"}
+                  %span.Select-arrow-zone
+                    %span.Select-arrow
+          .content-group-xs
+            .row
+              .col-xs-4
+                %label.form-control-label-plain
+                  Название проекта
+              .col-xs-8
+                %input.form-control{type: :text, placeholder: 'Название проекта'}
+        .col-md-1.text-right
+          %a.btn.btn-sm.btn-outline-gray-light{:href => "#"}
+            %i.fa.fa-times
+
+  - unless i == count
+    .community-process-list-actions
+      .community-process-list-actions-block.community-process-list-actions-block-connected
+        .community-process-list-actions-arrow
+        .community-process-list-actions-output-block
+          .community-process-list-actions-output
+            Проект
+      .community-process-list-actions-block
+        %a.user-block-compose-btn{:href => "#"}
+          %i.fa.fa-plus
+
