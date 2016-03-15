@@ -1,0 +1,61 @@
+.row
+  .col-sm-8
+    .list-panel-block.list-panel-block-left
+      .dropdown.dropdown-inline
+        %a.btn.btn-link-plain.btn-link-primary.top-panel-title{:role => "project-tasks-counts", 'data-toggle' => 'dropdown'}
+          %i.fa.fa-folder-open-o.icon-item-block
+          Рисунки
+        %ul.dropdown-menu{:role => "menu"}
+          %li
+            %a{href: ""} Инструкции
+          %li
+            %a{href: ''} Iq300
+          %li
+            %a{href: ''} Все документы
+
+  .col-sm-4
+    .list-panel-block.text-right
+      .dropdown.dropdown-inline
+        %a.btn.btn-link-default.btn-circle-plus{"aria-expanded" => "false", "data-toggle" => "dropdown"}
+          %span.btn-circle-plus-icon
+            %i.fa.fa-plus.icon-size-16
+        %ul.dropdown-menu.dropdown-menu-right{:role => "menu"}
+          %li
+            %a{:href => "/tasks/new", role: 'project-tasks-list-add-task-btn'}
+              %i.fa.fa-file-text-o.icon-item-block
+              Добавить документ
+          %li
+            %a{:href => "/projects/new"}
+              %i.fa.fa-folder-open-o.icon-item-block
+              Добавить каталог
+      -#%a.btn.btn-sm.btn-primary{href: '/crm/clients/new'}
+        %i.fa.fa-plus
+        %strong
+          Добавить клиента
+      &nbsp;
+      %a.btn.btn-sm.btn-link-plain{href: '[role*="project-tasks-list-search"]', data: {toggle: :collapse}}
+        %i.fa.fa-search.icon-color-gray-light.icon-size-14
+      -#%a.btn.btn-sm.btn-link-plain{role: 'list-view-switch', data: {toggle: :toggle, target: '[role*="list-view-switch"]'}}
+        %i.fa.fa-th-large.icon-color-gray-light.icon-size-14
+      -#%a.btn.btn-sm.btn-link-plain{role: 'list-view-switch', data: {toggle: :toggle, target: '[role*="list-view-switch"]'}, style: 'display: none;'}
+        %i.fa.fa-th-list.icon-color-gray-light.icon-size-14
+      -#%a.btn.btn-sm.btn-link-plain{:href => "#"}
+        %i.fa.fa-print.icon-color-gray-light.icon-size-16
+
+
+.collapse{role: 'project-tasks-list-search'}
+  .list-panel-divider
+  .list-panel-block
+    .row
+      .col-md-6.col-md-offset-3
+        %form
+          .input-group.input-group-block
+            %input.form-control{:placeholder => "Поиск", :type => "search", :value => ""}/
+            .input-group-btn
+              %a.btn.btn-default
+                %i.fa.fa-search
+      .col-sm-3.text-right
+        %a.btn.btn-sm.btn-link.btn-link-plain{href: '[role*="project-tasks-list-search"]', data: {toggle: :collapse}}
+          %i.fa.fa-times.icon-color-gray-light.icon-size-14{:role => "tasks-print-form-link"}
+
+

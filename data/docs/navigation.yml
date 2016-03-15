@@ -1,0 +1,4 @@
+all:
+  title: Все документы
+favourites:
+  title: Избранные
