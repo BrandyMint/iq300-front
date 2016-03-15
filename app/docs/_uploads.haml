@@ -1,0 +1,66 @@
+.docs-uploads-block
+  .docs-uploads-block-header
+    .container-fluid
+      .row
+        .col-sm-8
+          .docs-uploads-block-header-title
+            Загружается 2 файла
+        .col-sm-4.text-right
+          %a.docs-uploads-block-header-btn
+            %i.fa.fa-chevron-down.icon-size-14
+          %a.docs-uploads-block-header-btn
+            %i.fa.fa-times.icon-size-16
+  .docs-uploads-block-status
+    .container-fluid
+
+  .docs-uploads-block-content
+    .container-fluid
+      - for i in 0..0
+        .docs-upload-list-item
+          .row
+            .col-sm-9
+              %div
+                Screen Shot 2016-02-24 at 18.25.52.png
+              %p.text-color-danger{role: 'progressbar-error', style: 'display: none;'}
+                Не удалось загрузить файл
+            .col-sm-3.text-right
+              .text-btn-horizontal
+                %span{role: 'progressbar-circle'}
+                  .docs-upload-progress-bar-circle{role: 'progressbar-circle-el', id: "progressbar-circle"}
+                %span{role: 'progressbar-success', style: 'display: none;'}
+                  %i.fa.fa-check-circle.text-color-success.docs-upload-progress-bar-icon
+                %span{role: 'progressbar-error', style: 'display: none;'}
+                  %i.fa.fa-warning.text-color-warning.docs-upload-progress-bar-icon
+      - for i in 0..5
+        .docs-upload-list-item
+          .row
+            .col-sm-9
+              %div
+                Screen Shot 2016-02-24 at 18.25.52.png
+              %p.text-color-danger{role: 'progressbar-error', style: 'display: none;'}
+                Не удалось загрузить файл
+            .col-sm-3.text-right
+              .text-btn-horizontal
+                %span{role: 'progressbar-circle', style: 'display: none;'}
+                  .docs-upload-progress-bar-circle{role: 'progressbar-circle-el'}
+                %span{role: 'progressbar-success'}
+                  %i.fa.fa-check-circle.text-color-success.docs-upload-progress-bar-icon
+                %span{role: 'progressbar-error', style: 'display: none;'}
+                  %i.fa.fa-warning.text-color-warning.docs-upload-progress-bar-icon
+
+      .docs-upload-list-item
+        .row
+          .col-sm-9
+            %div
+              Screen Shot 2016-02-24 at 18.25.52.png
+            %p.text-color-danger{role: 'progressbar-error'}
+              Не удалось загрузить файл
+          .col-sm-3.text-right
+            .text-btn-horizontal
+              %span{role: 'progressbar-circle', style: 'display: none;'}
+                .docs-upload-progress-bar-circle{role: 'progressbar-circle-el'}
+              %span{role: 'progressbar-success', style: 'display: none;'}
+                %i.fa.fa-check-circle.text-color-success.docs-upload-progress-bar-icon
+              %span{role: 'progressbar-error'}
+                %i.fa.fa-warning.text-color-warning.docs-upload-progress-bar-icon
+

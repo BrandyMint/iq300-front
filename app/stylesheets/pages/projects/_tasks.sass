@@ -280,14 +280,9 @@ li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div
       border-left: none
 
 .project-group-header-actions-fixed
+  @extend %app-fixed-block
   @extend .navbar
   @extend .navbar-default
-  position: fixed
-  z-index: 1000
-  bottom: 0
-  left: inherit
-  right: inherit
-  width: inherit
   background-color: $gray-lighter
   margin-left: -$grid-gutter-width / 2
 

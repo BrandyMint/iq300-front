@@ -1,0 +1,48 @@
+$docs-uploads-width: 400px
+$uploads-block-content-max-height: 115px
+
+.docs-uploads-block
+  @extend %app-fixed-block
+  right: $grid-gutter-width
+  bottom: $grid-gutter-width
+  width: $docs-uploads-width
+  background-color: #fff
+  box-shadow: 0 $layout-block-shadow-radius/2 $layout-block-shadow-radius*2 rgba(0, 0, 0, 0.2)
+
+.docs-uploads-block-content
+  padding:
+    top: $grid-gutter-width/3
+    bottom: $grid-gutter-width/3
+  max-height: $uploads-block-content-max-height
+  overflow-y: auto
+
+.docs-uploads-block-header
+  background-color: lighten(#000, 20%)
+  color: #fff
+  padding: $grid-gutter-width/3 0
+
+.docs-upload-list-item
+  padding: 0.7em 0
+  border-top: 1px solid $line-color
+  &:first-child
+    border-top: none
+
+.docs-uploads-block-header-title
+  cursor: move
+  padding: $padding-base-vertical 0
+
+.docs-uploads-block-header-btn
+  @extend .btn
+  &, &:focus
+    color: rgba(#fff, 0.8)
+  &:hover
+    color: #fff
+
+.docs-upload-progress-bar-circle
+  display: inline-block
+  width: 16px
+  height: 16px
+  line-height: 1em
+
+.docs-upload-progress-bar-icon
+  font-size: 16px
