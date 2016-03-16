@@ -26,6 +26,11 @@
   @extend .btn-sm
   +button-size(0, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-small)
 
+.btn-link
+  color: $text-color
+  &:hover
+    color: lighten($text-color, 15%)
+
 .btn-link-plain
   @extend .btn-link
   &, &:hover, &:focus

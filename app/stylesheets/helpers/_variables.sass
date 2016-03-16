@@ -3,9 +3,20 @@ $container-fixed-width-lg: $container-fixed-width
 
 $brand-primary: #338cae
 
-$text-color: #606060
+$gray-darker: lighten(#000, 13.5%)
+$gray-dark: lighten(#000, 20%)
+$gray: lighten(#000, 33.5%)
+$gray-light: lighten(#000, 57%)
+$gray-lighter: lighten(#000, 90%)
+$gray-lightest: lighten(#000, 95%)
+
+$text-color-lighter: #999
+$text-color-light: #606060
 $text-color-dark: #474747
 $text-color-darker: #333
+$text-color: $text-color-darker
+$text-muted: #777
+
 $blue-pale-dark: #e3ebed
 $blue-brand: #3b5b78
 $blue-brand-bright: #3998fc
@@ -34,9 +45,10 @@ $line-color-transparent: rgba(#000, 0.1)
 $item-border-color: darken($gray-lighter, 15%)
 $item-border-bottom-color: darken($gray-lighter, 5%)
 
-$draft-item-border-color: lighten($item-border-color, 15%)
+$draft-item-link-color: $text-muted
+$draft-item-border-color: lighten($item-border-color, 10%)
 
-//$new-item-background: $blue-pale-dark
+$new-item-link-color: darken(saturate($brand-primary, 20%), 10%)
 $new-item-background: saturate(darken($blue-pale-dark, 3%), 34%)
 $new-item-border-color: darken($new-item-background, 10%)
 $new-item-border-color-dark: $brand-primary
