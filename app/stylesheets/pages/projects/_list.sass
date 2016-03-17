@@ -18,13 +18,13 @@
     border-left-color: $new-item-border-color
     .project-box-title-block,
     .status-date
-      color: desaturate(darken($brand-primary, 0%), 30%)
+      color: $new-item-link-color
   &.project-box-project-draft
-    border-left-color: desaturate(darken(#a0b9be, 0%), 30%)
-    &, 
+    border-left-color: $draft-item-border-color
+    &,
     .project-box-title-block,
     .status-date
-      color: #8d8d8d
+      color: $draft-item-link-color
     .project-box-title-block
       font-style: italic
   &.project-box-project-template
@@ -49,9 +49,9 @@ a.project-box-block-link
 
 .project-box-details-item,
 a.project-box-details-item
-  color: $gray-light
+  color: $text-muted
   &:hover
-    color: $gray
+    color: darken($text-muted, 10%)
 
 .project-box-details-item-new,
 a.project-box-details-item-new
