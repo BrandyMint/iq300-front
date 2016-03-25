@@ -48,5 +48,10 @@
       .col-sm-2.text-right
         %a.btn.btn-block.btn-default
           %i.fa.fa-cog
-          Настройка
+            Настройка
+        %a.btn.btn-block.btn-link-danger{"data-target" => "#destroy-confirm", "data-toggle" => "modal", :href => "/communities/2933"}
+          Расформировать
+
+- content_for :body do
+  = partial 'communities/profile/destroy_modal'
 

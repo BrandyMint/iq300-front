@@ -9,7 +9,7 @@
             %i.fa.fa-credit-card
             Оплата
       - else
-        = link_to "/#{k}/" do
+        = link_to "/communities/profile/#{k}/" do
           = v.title
           - if v.counter.present?
             %small.text-muted= v.counter
