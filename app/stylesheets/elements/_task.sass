@@ -1,5 +1,6 @@
 $task-box-padding: 10px
-$task-box-padding-left: 25px
+$task-box-padding-left: 35px
+$task-box-checkbox-padding: 10px
 
 %task-box-style
   border-left: solid 5px $item-border-color
@@ -44,11 +45,11 @@ $task-box-padding-left: 25px
   @extend .checkbox
   position: absolute
   top: 2em
-  left: $task-box-padding-left - 13px
+  left: $task-box-padding-left - $task-box-padding - $task-box-checkbox-padding - 2px
   margin: 0
 
 label.task-box-block-checkbox-label
-  padding: 10px
+  padding: $task-box-checkbox-padding
   margin: 0
   cursor: pointer
   input[type="checkbox"]
@@ -83,7 +84,7 @@ a.task-box-block-link
   .fa-star, .icon-star-empty, .fa-star-o,
   .task-box-title-icon
     float: left
-    margin: 3px 0 0 -23px
+    margin: 3px 0 0 (-$task-box-padding-left + 3px)
   .task-details-subtasks-list &
     padding-left: 10px
     .star-favourite
