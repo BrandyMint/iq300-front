@@ -1,4 +1,7 @@
 %article.task-box-block
+  .task-box-block-checkbox
+    %label.task-box-block-checkbox-label
+      %input{type: :checkbox}
   %a.task-box-block-link{href: "/tasks/show"}
     .task-box{"data-group-id" => "all_tasks", "data-group-title" => "Все задачи", "data-href" => "/tasks/2531", :role => "task-item", "test-task" => ""}
       .col-md-10
@@ -45,6 +48,7 @@
               Март
           %br.visible-md.visible-lg/
           .clearfix
+
 %article.task-box-block
   %a.task-box-block-link{href: "/tasks/show"}
     .task-box.task-new.task-overdue{"data-group-id" => "all_tasks", "data-group-title" => "Все задачи", "data-href" => "/tasks/2383", :role => "task-item", "test-task" => ""}
