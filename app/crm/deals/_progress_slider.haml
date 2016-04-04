@@ -1,0 +1,16 @@
+// static html from https://github.com/davidchin/react-input-range
+- value = locals[:value] || 50
+
+.progress-slider
+  .InputRange{"aria-disabled" => "false", "data-reactid" => ".0.1.0"}
+    %span.InputRange-label.InputRange-label--min{"data-reactid" => ".0.1.0.0"}
+      %span.InputRange-labelContainer{"data-reactid" => ".0.1.0.0.0"} 0
+    .InputRange-track.InputRange-track--container{"data-reactid" => ".0.1.0.1"}
+      .InputRange-track.InputRange-track--active{"data-reactid" => ".0.1.0.1.0", :style => "left:0%;width:#{value}%;"}
+      %span.InputRange-sliderContainer{"data-reactid" => ".0.1.0.1.1:$max", :style => "position:absolute;left:#{value}%;"}
+        %span.InputRange-label.InputRange-label--value{"data-reactid" => ".0.1.0.1.1:$max.0"}
+          %span.InputRange-labelContainer{"data-reactid" => ".0.1.0.1.1:$max.0.0"}
+            = value
+        %span.InputRange-slider{"aria-valuemax" => "20", "aria-valuemin" => "0", "aria-valuenow" => "5", "data-reactid" => ".0.1.0.1.1:$max.1", :draggable => "false", :href => "#", :role => "slider"}
+    %span.InputRange-label.InputRange-label--max{"data-reactid" => ".0.1.0.2"}
+      %span.InputRange-labelContainer{"data-reactid" => ".0.1.0.2.0"} 100

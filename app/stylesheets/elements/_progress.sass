@@ -1,3 +1,17 @@
 .progress-bar
   &.progress-bar-default
     background-color: $gray-light
+
+.slider-progress-bar
+  @extend .progress-bar
+  background-color: $blue-link-color
+  transition: background 0.2s ease
+  &:hover
+    background-color: lighten($blue-link-color, 5%)
+
+.slider-progress-bar-transparent
+  background-color: transparent
+  box-shadow: none
+  &:hover
+    background-color: rgba($blue-link-color, 0.2)
+
