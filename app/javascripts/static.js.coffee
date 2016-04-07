@@ -37,6 +37,7 @@
 #= require auth
 #= require elements/multiselect
 #= require crm
+#= require docs
 
 $ ->
   $('@select2').select2()

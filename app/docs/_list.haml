@@ -1,4 +1,4 @@
-%table.table
+-#%table.table
   %thead
     %tr{"data-sortable-collection" => "docs", "data-store" => "1", "role-sortable-header" => "ready"}
       %th
@@ -19,4 +19,17 @@
         %td.author Александр Мещеряков
         %td.date
           24 февр.
+
+- for i in 0..20
+  %label.project-form-team-users-list-item-block{role: 'docs-list-item'}
+    %input.project-form-team-users-list-item-checkbox-hidden{:type => "checkbox"}/
+    .project-form-team-users-list-item.docs-list-item-block
+      .row
+        .col-sm-7
+          Screen Shot 2016-02-24 at 18.25.52.png
+        .col-sm-3
+          Александр Мещеряков
+        .col-sm-2
+          24 февр.
+
 
