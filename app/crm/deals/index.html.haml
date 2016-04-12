@@ -1,0 +1,15 @@
+---
+body_class: crm-index
+layout: application_modular
+nav_item: crm
+---
+
+- content_for :filters_column do
+  = partial 'crm/filters', locals: {active: :deals}
+
+- content_for :top_panel do
+  = partial 'crm/deals/top_panel'
+
+.contacts-list-container.form-container-compact
+  = partial 'crm/deals/list'
+

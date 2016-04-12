@@ -1,0 +1,54 @@
+# tabs:
+#   details:
+#     title: Информация
+#     link: /crm/deals/show/
+#   contacts:
+#     title: Контактные лица
+#     counter: 1
+#     link: /crm/deals/show/contacts
+#   notes:
+#     title: Заметки
+#     link: /crm/deals/show/notes
+#   projects:
+#     title: Проекты
+#     link: /crm/deals/show/projects
+
+attributes:
+  title: Название
+  client: Клиент
+  cost: Сумма
+  contact: Контактное лицо
+  created_at: Дата создания
+  responsible: Ответственный
+  last_activity: Последняя активность
+  progress: Прогресс
+
+data:
+  -
+    title:
+      title: Интеграция CRM
+    client:
+      title: Муниципальное автономное учреждение города Набережные Челны «Центр информационных технологий», МАУ
+    cost: 50000 руб.
+    contact:
+      title: Эльвир Нуриахметов
+    created_at: 17.12.2015
+    responsible:
+      title: Ирина Михайлова
+    last_activity:
+      title: 18.12.2015
+    progress: 0.5
+  -
+    title:
+      title: Настройка мониторинга
+    client:
+      title: Автомастер
+    cost: 47000 руб.
+    contact:
+      title: Эльвир Нуриахметов
+    created_at: 17.12.2015
+    responsible:
+      title: Ирина Михайлова
+    last_activity:
+      title: 18.12.2015
+    progress: 0.7

@@ -1,0 +1,57 @@
+%table.table{role: 'list-view-switch', style: 'display: none;'}
+  %thead
+    %tr
+      - data.crm.deals.attributes.each_pair do |k, v|
+        %th= v
+  %tbody
+    - data.crm.deals.data.each do |c|
+      %tr
+        - data.crm.deals.attributes.each_pair do |k, v|
+          %td{class: "crm-clients-list-#{k}"}
+            -# if c.send(k.title).present?
+              = c.send(k)
+            - if k.to_s == "progress"
+              .progress
+                .progress-bar.progress-bar-info{style: "width: #{c.progress*100}%"}
+            - elsif c.send(k).is_a? Hash
+              - if k.to_s == "title"
+                %a{href: "/crm/deals/show"}
+                  %strong= c.send(k).title
+              - else
+                %a{href: "#{c.send(k).link.present? ? c.send(k).link : ''}"}
+                  = c.send(k).title
+            - else
+              = c.send(k)
+
+.crm-clients-list{role: 'list-view-switch'}
+  - data.crm.deals.data.each_with_index do |c,i|
+    %article
+      %a.crm-clients-list-card{href: '/crm/deals/show'}
+        .row
+          .col-md-3
+            .crm-clients-list-card-title.content-group-xs
+              %strong= c.title.title
+            %span.label.label-success= c.category
+          .col-md-4
+            .crm-clients-list-card-title.content-group-xs
+              %strong= c.client.title
+            %span.label.label-success= c.category
+          .col-md-2
+            %small.text-muted Сумма сделки
+            %br
+            = c.cost
+          .col-md-3
+            -#.progress
+              .progress-bar.progress-bar-info{style: "width: #{c.progress*100}%"}
+            -#input.form-control{type: :range, min: 0, max: 100, step: 10, value: c.progress.to_f*100}
+            - stages_active = data.crm.clients.stages.reject{|s| s.to_s == 'cancelled'}
+            - stages_count = stages_active.count
+            %small.text-muted
+              = stages_active.map{|sk, sv| sv}[(c.progress*stages_count).floor]
+            .progress
+              - stages_active.each_with_index do |(k, v), i|
+                .progress-bar{style: "width: #{100/stages_count}%", role: :tooltip, data: {'original-title' => v},
+                  class: "#{(i.to_f)/stages_count <= c.progress.to_f ? 'slider-progress-bar' : 'slider-progress-bar-transparent'}",
+                  "role-deal-progress-final" => "#{i + 1 == stages_count ? 'true' : 'false'}"}
+
+

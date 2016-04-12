@@ -1,0 +1,65 @@
+.row
+  .col-sm-8
+    .list-panel-block.list-panel-block-left
+      .dropdown.dropdown-inline
+        %a.btn.btn-link-plain{:role => "project-tasks-counts", 'data-toggle' => 'dropdown'}
+          %i.fa.fa-filter
+          41 из 113
+        %ul.dropdown-menu{:role => "menu"}
+          %li
+            %a{href: ""} Сбросить все фильтры
+
+      %select.form-control-select-plain{role: 'multiselect-select',
+          data: {'button-icon' => '', 'button-class' => 'btn btn-link-plain'}}
+        %option Все клиенты
+        - data.crm.clients.data.each do |c|
+          %option= truncate(c.client.title, length: 40)
+
+      %select.form-control-select-plain{role: 'multiselect-select',
+          data: {'button-icon' => '', 'button-class' => 'btn btn-link-plain'}}
+        %option Все стадии
+        - data.crm.clients.stages.each_pair do |k,v|
+          %option= v
+
+      %select.form-control-select-plain{role: 'multiselect-select',
+          data: {'button-icon' => '', 'button-class' => 'btn btn-link-plain'}}
+        %option Все ответственные
+        - data.crm.clients.data.map{|c| c.responsible}.uniq.each do |r|
+          %option= r.title
+
+  .col-sm-4
+    .list-panel-block.text-right
+      -#%a.btn.btn-link-default.btn-circle-plus{href: '/tasks/new', role: :tooltip, 'data-original-title' => 'Добавить задачу'}
+        %span.btn-circle-plus-icon
+          %i.fa.fa-plus.icon-size-16
+      %a.btn.btn-sm.btn-primary{href: '/crm/deals/new'}
+        %i.fa.fa-plus
+        %strong
+          Добавить сделку
+      &nbsp;
+      %a.btn.btn-sm.btn-link-plain{href: '[role*="project-tasks-list-search"]', data: {toggle: :collapse}}
+        %i.fa.fa-search.icon-color-gray-light.icon-size-14
+      %a.btn.btn-sm.btn-link-plain{role: 'list-view-switch', data: {toggle: :toggle, target: '[role*="list-view-switch"]'}}
+        %i.fa.fa-th-large.icon-color-gray-light.icon-size-14
+      %a.btn.btn-sm.btn-link-plain{role: 'list-view-switch', data: {toggle: :toggle, target: '[role*="list-view-switch"]'}, style: 'display: none;'}
+        %i.fa.fa-th-list.icon-color-gray-light.icon-size-14
+      %a.btn.btn-sm.btn-link-plain{:href => "#"}
+        %i.fa.fa-print.icon-color-gray-light.icon-size-16
+
+
+.collapse{role: 'project-tasks-list-search'}
+  .list-panel-divider
+  .list-panel-block
+    .row
+      .col-md-6.col-md-offset-3
+        %form
+          .input-group.input-group-block
+            %input.form-control{:placeholder => "Поиск", :type => "search", :value => ""}/
+            .input-group-btn
+              %a.btn.btn-default
+                %i.fa.fa-search
+      .col-sm-3.text-right
+        %a.btn.btn-sm.btn-link.btn-link-plain{href: '[role*="project-tasks-list-search"]', data: {toggle: :collapse}}
+          %i.fa.fa-times.icon-color-gray-light.icon-size-14{:role => "tasks-print-form-link"}
+
+

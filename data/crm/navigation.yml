@@ -1,8 +1,16 @@
 clients:
   title: Клиенты
+  link: '/crm/'
+deals:
+  title: Сделки
+  link: '/crm/deals'
+tasks:
+  title: Задачи
 activities:
   title: Активности
 projects:
   title: Проекты
 reports:
-  title: Отчёты
+  title: Отчётыa
+settings:
+  title: Настройки
