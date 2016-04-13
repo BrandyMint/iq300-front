@@ -1,0 +1,46 @@
+-#%table.table
+  %thead
+    %tr{"data-sortable-collection" => "docs", "data-store" => "1", "role-sortable-header" => "ready"}
+      %th
+        %a.btn-link-gray-light.btn-link-plain{"data-column" => "title", "data-direction" => "asc"}
+          Название
+      %th
+        %a.btn-link-gray-light.btn-link-plain{"data-column" => "updated_at", "data-direction" => "asc"}
+          Изменено
+      %th
+        %a.btn-link-gray-light.btn-link-plain{"data-column" => "author_id", "data-direction" => "asc"}
+          Автор изменения
+  %tbody
+    - for i in 0..20
+      %tr
+        %td.name{"test-doc-item-name" => ""}
+          Screen Shot 2016-02-24 at 18.25.52.png
+          %small.text-muted 217.6 КБ
+        %td.author Александр Мещеряков
+        %td.date
+          24 февр.
+
+- for i in 0..20
+  %label.project-form-team-users-list-item-block{role: 'docs-list-item'}
+    %input.project-form-team-users-list-item-checkbox-hidden{:type => "checkbox"}/
+    .project-form-team-users-list-item.docs-list-item-block
+      .row
+        - if i > 3
+          .col-sm-1.docs-list-item-icon-col
+            %i.fa.fa-file-o.icon-size-16.item-opacity-md
+          .col-sm-6
+            - if i == 5
+              Тест длинного названия документа: Как это работает: сколько приносит ателье по пошиву и ремонту одежды
+            - else
+              Screen Shot 2016-02-24 at 18.25.52.png
+        - else
+          .col-sm-1.docs-list-item-icon-col
+            %i.fa.fa-folder.icon-size-16.item-opacity-md
+          .col-sm-6
+            Схемы
+        .col-sm-3
+          Александр Мещеряков
+        .col-sm-2
+          24 февр.
+
+
