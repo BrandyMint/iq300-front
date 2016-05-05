@@ -13,6 +13,7 @@
 #= require fullcalendar/dist/fullcalendar
 #= require jquery-drag-drop-plugin/jquery.drag-drop.plugin
 #= require purl/purl
+#= require progressbar.js/dist/progressbar.js
 #= require layout
 #= require data_toggle_hide
 #= require data_clone
@@ -38,6 +39,7 @@
 #= require elements/multiselect
 #= require crm
 #= require docs
+#= require progress
 
 $ ->
   $('@select2').select2()

@@ -45,7 +45,8 @@
     "components"
   ],
   "devDependencies": {
-    "underscore": "~1.7.0",
-    "jquery-drag-drop-plugin": "git@github.com:mikeplate/jquery-drag-drop-plugin.git"
+    "jquery-drag-drop-plugin": "git@github.com:mikeplate/jquery-drag-drop-plugin.git",
+    "progressbar.js": "~1.0.1",
+    "underscore": "~1.7.0"
   }
 }
