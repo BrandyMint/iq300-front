@@ -19,23 +19,25 @@ new_record: true
     %input#base_task_kind.task-kind-input{:name => "base_task[kind]", :type => "hidden", :value => "Task"}/
     %input#base_task_template_id{:name => "base_task[template_id]", :type => "hidden"}/
     .task-form-section-block
-      .form-group
-        .page-title.col-md-12
-          .pull-left
+      .col-md-12
+        .form-group
+          .page-title
             %h3 Создание задачи
-      .form-group
+        .form-group.text-color-danger
+          При создании задачи были обнаружены ошибки — пожалуйста, взгляните на них
+
+      .form-group.has-error
         %label.control-label.col-sm-2
           Название
-        .col-sm-10
-          .input-group
-            %input#base_task_title.form-control{:name => "base_task[title]", :placeholder => "Новая задача", :role => "title", :size => "30", :type => "text", :value => ""}/
-            .input-group-addon{"data-original-title" => "Формулировка задачи должна быть понятна исполнителю. Правильно поставленная задача - половина успеха! Ознакомьтесь с нашими рекомендациями по формулировке задач в разделе Помощь.", "role-bootstrap-tooltip" => "ready", :title => ""}
-              .fa.fa-question-circle
-          .btn-line
-            %a.btn.btn-deffault{:href => "#", :role => "add-description-btn"}
-              %span.fa.fa-arrow-circle-o-down{:role => "description-icon"}
-              %span{"data-original-title" => "В описании Вы можете детализировать задачу", :role => "text", "role-bootstrap-tooltip" => "ready", "test-add-descr-btn" => "", :title => ""}
-                Добавить описание
+        .col-sm-9
+          %input#base_task_title.form-control{:name => "base_task[title]", :placeholder => "Новая задача", :role => "title", :size => "30", :type => "text", :value => ""}/
+          .help-block
+            Обязательное поле
+          %a.btn.btn-link-primary.btn-collapse{:href => "#", :role => "add-description-btn"}
+            %span{"data-original-title" => "В описании Вы можете детализировать задачу", :role => "text", "role-bootstrap-tooltip" => "ready", "test-add-descr-btn" => "", :title => ""}
+              Добавить описание
+        .col-sm-1
+          %i.fa.fa-question-circle.btn-link-gray-light{role: :tooltip, "data-original-title" => "Формулировка задачи должна быть понятна исполнителю. Правильно поставленная задача - половина успеха! Ознакомьтесь с нашими рекомендациями по формулировке задач в разделе Помощь.", "role-bootstrap-tooltip" => "ready", :title => ""}
       .form-group.description{:role => "description"}
         %label.control-label.col-sm-2
           Описание
@@ -49,7 +51,7 @@ new_record: true
             %option{:value => "290"} Личная задача
             %option{:value => "291"} Fake community
         .col-md-1.form-control-static.nopadding-left
-          .fa.fa-question-circle{"data-original-title" => "Укажите сообщество, в рамках которого Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
+          .fa.fa-question-circle.btn-link-gray-light{"data-original-title" => "Укажите сообщество, в рамках которого Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
         .col-sm-3.add-invited-executor-button
           %a.btn{href: '[role*="task-new-community"]', data: {toggle: :collapse}}
             или выберите проект
@@ -64,7 +66,7 @@ new_record: true
                 %option{:value => "290"} Test project
                 %option{:value => "291"} Another project
         .col-md-1.form-control-static.nopadding-left
-          .fa.fa-question-circle{"data-original-title" => "Укажите проект, в рамках которого Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
+          .fa.fa-question-circle.btn-link-gray-light{"data-original-title" => "Укажите проект, в рамках которого Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
         .col-sm-3.add-invited-executor-button
           %a.btn{href: '[role*="task-new-community"]', data: {toggle: :collapse}}
             или выберите сообщество
@@ -78,7 +80,7 @@ new_record: true
             %option{:value => "290"} Александр Мещеряков
             %option{:value => "291"} Эльвир Нуриахметов
         .col-md-1.form-control-static.nopadding-left
-          .fa.fa-question-circle{"data-original-title" => "Укажите сотрудника, которому Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
+          .fa.fa-question-circle.btn-link-gray-light{"data-original-title" => "Укажите сотрудника, которому Вы хотите поставить задачу", "role-bootstrap-tooltip" => "ready", :title => ""}
         .col-sm-3.add-invited-executor-button
           %a.btn{}
             или добавьте нового пользователя
@@ -94,7 +96,7 @@ new_record: true
                 .fa.fa-calendar-o.fa-lg
             .input-group
               .input-group-addon{"data-original-title" => "Срок начала задачи", "role-bootstrap-tooltip" => "ready", :title => ""}
-                .fa.fa-question-circle
+                .fa.fa-question-circle.btn-link-gray-light
       .form-group{"role-datetime-field" => "ready"}
         %label.control-label.col-sm-2
           Выполнить к:
@@ -106,7 +108,7 @@ new_record: true
                 .fa.fa-calendar-o.fa-lg
             .input-group
               .input-group-addon{"data-original-title" => "Срок, к которому Вы хотите видеть задачу выполненной", "role-bootstrap-tooltip" => "ready", :title => ""}
-                .fa.fa-question-circle
+                .fa.fa-question-circle.btn-link-gray-light
         .col-sm-8.col-sm-offset-2
           .input-group-inline.task-proposed-end-dates
             .input-group
