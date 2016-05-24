@@ -220,3 +220,15 @@ select
 
 .form-control-label-plain
   font-weight: normal
+
+.has-success
+  +form-control-validation($state-success-text, $state-success-text, transparent)
+
+.has-warning
+  +form-control-validation($state-warning-text, $state-warning-text, transparent)
+
+.has-error
+  +form-control-validation($state-danger-text, $state-danger-text, transparent)
+
+
+

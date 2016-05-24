@@ -38,12 +38,12 @@ new_record: true
               Добавить описание
         .col-sm-1
           %i.fa.fa-question-circle.btn-link-gray-light{role: :tooltip, "data-original-title" => "Формулировка задачи должна быть понятна исполнителю. Правильно поставленная задача - половина успеха! Ознакомьтесь с нашими рекомендациями по формулировке задач в разделе Помощь.", "role-bootstrap-tooltip" => "ready", :title => ""}
-      .form-group.description{:role => "description"}
+      .form-group.has-error.description{:role => "description"}
         %label.control-label.col-sm-2
           Описание
         .col-sm-10
           %textarea#base_task_description.form-control{:cols => "40", :name => "base_task[description]", :rows => "5"}
-      .form-group.collapse.in{:role => "task-new-community"}
+      .form-group.has-error.collapse.in{:role => "task-new-community"}
         %label.control-label.col-sm-2
           Сообщество
         .col-sm-5
@@ -55,7 +55,7 @@ new_record: true
         .col-sm-3.add-invited-executor-button
           %a.btn{href: '[role*="task-new-community"]', data: {toggle: :collapse}}
             или выберите проект
-      .form-group.collapse{:role => "task-new-community-project"}
+      .form-group.has-error.collapse{:role => "task-new-community-project"}
         %label.control-label.col-sm-2
           Проект
         .col-sm-5
@@ -71,7 +71,7 @@ new_record: true
           %a.btn{href: '[role*="task-new-community"]', data: {toggle: :collapse}}
             или выберите сообщество
 
-      .form-group.show{:role => "task-executor"}
+      .form-group.has-error.show{:role => "task-executor"}
         %label.control-label.col-sm-2
           Исполнитель
         .col-sm-5
@@ -85,47 +85,48 @@ new_record: true
           %a.btn{}
             или добавьте нового пользователя
 
-      .form-group{"role-datetime-field" => "ready"}
+      .form-group.has-error{"role-datetime-field" => "ready"}
         %label.control-label.col-sm-2
           Начинается:
-        .col-sm-10
-          .input-group-inline
-            .input-group{role: 'datetimepicker'}
-              %input#base_task_start_date.form-control{:name => "base_task[start_date]", :role => "start-date", :size => "30", :type => "text", :value => "10.03.2015 00:00"}/
-              .input-group-addon.input-group-addon-btn{:role => "calendar-trigger"}
-                .fa.fa-calendar-o.fa-lg
-            .input-group
-              .input-group-addon{"data-original-title" => "Срок начала задачи", "role-bootstrap-tooltip" => "ready", :title => ""}
-                .fa.fa-question-circle.btn-link-gray-light
-      .form-group{"role-datetime-field" => "ready"}
-        %label.control-label.col-sm-2
-          Выполнить к:
-        .col-sm-10
-          .input-group-inline
-            .input-group{role: 'datetimepicker'}
-              %input#base_task_end_date.form-control{:name => "base_task[end_date]", :role => "input-end-date tour-tasks-end-date", :size => "30", :type => "text", :value => ""}/
-              .input-group-addon.input-group-addon-btn{:role => "calendar-trigger", "test-input-end-date" => ""}
-                .fa.fa-calendar-o.fa-lg
-            .input-group
-              .input-group-addon{"data-original-title" => "Срок, к которому Вы хотите видеть задачу выполненной", "role-bootstrap-tooltip" => "ready", :title => ""}
-                .fa.fa-question-circle.btn-link-gray-light
-        .col-sm-8.col-sm-offset-2
-          .input-group-inline.task-proposed-end-dates
-            .input-group
-              %a{"data-date" => "10.03.2015 23:59", :href => "#", :role => "task-proposed-end-dates"} сегодня, 10 марта
-            .input-group
-              %a{"data-date" => "11.03.2015 23:59", :href => "#", :role => "task-proposed-end-dates"} завтра, 11 марта
-            .input-group
-              %a{"data-date" => "12.03.2015 23:59", :href => "#", :role => "task-proposed-end-dates"} 12 марта
+        .col-sm-3
+          .input-group{role: 'datetimepicker'}
+            %input#base_task_start_date.form-control{:name => "base_task[start_date]", :role => "start-date", :size => "30", :type => "text", :value => "10.03.2015 00:00"}/
+            .input-group-addon.input-group-addon-btn{:role => "calendar-trigger"}
+              .fa.fa-calendar-o.fa-lg
+        .col-sm-1
+          %i.fa.fa-question-circle.btn-link-gray-light{role: :tooltip, "data-original-title" => "Срок начала задачи", "role-bootstrap-tooltip" => "ready", :title => ""}
+
+      .form-group.has-error{"role-datetime-field" => "ready"}
+        .row
+          .col-md-12
+            %label.control-label.col-sm-2
+              Выполнить к:
+            .col-sm-3
+              .input-group{role: 'datetimepicker'}
+                %input#base_task_end_date.form-control{:name => "base_task[end_date]", :role => "input-end-date tour-tasks-end-date", :size => "30", :type => "text", :value => ""}/
+                .input-group-addon.input-group-addon-btn{:role => "calendar-trigger", "test-input-end-date" => ""}
+                  .fa.fa-calendar-o.fa-lg
+            .col-sm-1
+              %i.fa.fa-question-circle.btn-link-gray-light{"data-original-title" => "Срок, к которому Вы хотите видеть задачу выполненной", "role-bootstrap-tooltip" => "ready", :title => ""}
+        .row
+          .col-md-12
+            .col-sm-8.col-sm-offset-2
+              .input-group-inline.task-proposed-end-dates
+                .input-group
+                  %a{"data-date" => "10.03.2015 23:59", :href => "#", :role => "task-proposed-end-dates"} сегодня, 10 марта
+                .input-group
+                  %a{"data-date" => "11.03.2015 23:59", :href => "#", :role => "task-proposed-end-dates"} завтра, 11 марта
+                .input-group
+                  %a{"data-date" => "12.03.2015 23:59", :href => "#", :role => "task-proposed-end-dates"} 12 марта
       .col-md-4.col-md-offset-2.task-repeat-checkbox
         .checkbox{:role => "task-repeat-checkbox"}
           %label
             %input{:name => "generation_cycle", :role => "input-checkbox", :type => "checkbox", :value => ""}/
             %span{"data-original-title" => "Автоматическое повторение задачи по расписанию", "role-bootstrap-tooltip" => "ready", :title => ""}
               Повторять задачу
-      .form-group.task-repeat-form{:role => "repeat-form"}
+      .form-group.has-error.task-repeat-form{:role => "repeat-form"}
         .form-field-gray.col-md-12
-          .form-group
+          .form-group.has-error
             .input-group-inline
               .input-group
                 %span.align-text Раз в:
@@ -189,7 +190,7 @@ new_record: true
                     %option{:value => "29"} 29
                     %option{:value => "30"} 30
                     %option{:value => "31"} 31
-          .form-group
+          .form-group.has-error
             .input-group-inline
               .input-group
                 %span.align-text Начинается с:
