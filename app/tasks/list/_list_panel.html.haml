@@ -72,14 +72,22 @@
         %a.btn.btn-sm.btn-link.btn-link-plain{href: '[role*="project-tasks-list-search"]', data: {toggle: :collapse}}
           %i.fa.fa-times.icon-color-gray-light.icon-size-14{:role => "tasks-print-form-link"}
 
-.project-group-header-actions-fixed.hide{role: 'project-group-header-actions'}
-  .list-panel-block.list-panel-block-left
-    = link_to 'Преобразовать в задачу', '#', class: 'btn btn-default btn-sm'
-  .list-panel-block.list-panel-block-left
-    = link_to 'Отменить', '#', class: 'btn btn-default btn-sm'
-  .list-panel-block.list-panel-block-left
-    = link_to 'Преобразовать в черновик', '#', class: 'btn btn-default btn-sm'
-  .list-panel-block.list-panel-block-left.pull-right
+.hide{role: 'project-group-header-actions'}
+  .list-panel-divider
+  .list-panel-block.list-panel-block-inline
+    = link_to '#', class: 'btn btn-default btn-sm' do
+      %i.fa.fa-times
+  &nbsp;&nbsp;
+  -# .list-panel-block.list-panel-block-inline
+  -#   = link_to 'Преобразовать в задачу', '#', class: 'btn btn-default btn-sm'
+  -# &nbsp;
+  -# .list-panel-block.list-panel-block-inline
+  -#   = link_to 'Отменить', '#', class: 'btn btn-default btn-sm'
+  -# &nbsp;
+  -# .list-panel-block.list-panel-block-inline
+  -#   = link_to 'Преобразовать в черновик', '#', class: 'btn btn-default btn-sm'
+  -# &nbsp;
+  .list-panel-block.list-panel-block-inline
     %select.form-control.input-sm
       - tasks_filter = ['Группа 2', 'Группа 3', 'Группа 4']
       %option{selected: 'selected'} Изменить группу
