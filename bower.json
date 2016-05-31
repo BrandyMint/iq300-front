@@ -21,7 +21,7 @@
     "nestedSortable": "https://github.com/ilikenwf/nestedSortable.git#~1.3.4",
     "photoswipe": "latest",
     "purl": "~2.3.1",
-    "react-select": "~1.0.0-beta8",
+    "react-select": "1.0.0-beta13",
     "react-slider": "~0.6.1",
     "select2": "~3.5.1"
   },
