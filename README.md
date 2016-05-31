@@ -13,11 +13,7 @@
 
 3. Запуск сервера
 
-	3.1. `bundle exec middleman` стартуем сервер на http://localhost:4567
-(обрабатываются haml, js/coffee)
-
-	3.2. В отдельной вкладке — `gulp watch` стартуем gulp для сборки sass, картинок (в images) и
-шрифтов (в fonts)
+`npm run server`
 
 4. Билд статичного сайта
   `./frontend_build` делает билд статичного сайта в `build/` и билд
