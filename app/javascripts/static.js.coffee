@@ -83,7 +83,7 @@ $ ->
 
   $('@autosize').autosize()
 
-  @checkboxes = $('.project-task-box input[type="checkbox"], @project-tasks-list-select-all')
+  @checkboxes = $('.project-task-box input[type="checkbox"], @project-tasks-list-select-all, @tasks-list-item-checkbox')
 
   $('@project-group-header').on 'click', () ->
     $(@).find('@project-group-header-form')

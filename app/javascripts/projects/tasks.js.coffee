@@ -1,6 +1,6 @@
 $ ->
-  @checkboxes = $('.project-task-box input[type="checkbox"], @project-tasks-list-select-all')
-  
+  @checkboxes = $('.project-task-box input[type="checkbox"], @project-tasks-list-select-all, @tasks-list-item-checkbox')
+
   $('@project-group-header').on 'click', () ->
     $(@).find('@project-group-header-form')
       .removeClass('hide')
@@ -28,7 +28,7 @@ $ ->
       .removeClass('hide')
       .find('input').first().focus()
 
-  
+
   $('@project-tasks-list-task-form-close').on 'click', (e) ->
     e.preventDefault()
     $('@project-tasks-list-new-task').addClass('hide')
@@ -49,7 +49,7 @@ $ ->
 window.ProjectTasksList ||= {}
 
 ((app) ->
-  app.widgetPlacement = 
+  app.widgetPlacement =
     vertical: 'top'
     horizontal: 'left'
   $(document).ready ->
