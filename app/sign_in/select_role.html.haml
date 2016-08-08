@@ -1,0 +1,41 @@
+---
+layout: input_registration
+---
+.registration-page
+  .registration-page-container
+    .registration-page-header
+      %img{src: '/images/login/logo-blue.png', class: 'main-logo'}
+      %p.registration-page-header-title
+        Система проектного управления
+    .registration-page-content
+      .registration-page-body
+        %img{src: '/images/login/logo-blue.png', class: 'enter-logo'}
+        .registration-form-title-wrapper
+          %p.registration-form-title.registration-top-title
+            Добро пожаловать в Демо-версию iQ300!
+        %form.registration-page-form
+          .container-fluid
+            .row
+              .col-md-8.col-md-offset-2
+                .registration-form-actions
+                  %p.registration-select-user-text
+                    Пожалуйста, выберите пользователя, чтобы поближе познакомиться с возможностями системы
+                    %a.registration-form-link-inline{:href => "iq300.ru"} iQ300
+            - data.sign_in_users.each do |user|
+              .row
+                .col-md-10.col-md-offset-1
+                  .btn-default.panel.panel-lg.panel-default.registration-user-panel
+                    .panel-body
+                      .col-sm-3
+                        %p.registration-form-link
+                          = user.role
+                      .col-sm-2
+                        %img.member-box-avatar-image-small{ src: "#{user.img_url}", style: 'width: 52px; height: 52px;'}
+                      .col-sm-5
+                        %p.registration-form-link.registration-username
+                          = user.name
+                        %p.registration-form-text
+                          = user.post
+                      .col-sm-2
+                        %p.btn.btn-default.btn-lg.registration-select-user-btn
+                          %i.fa.fa-chevron-right
