@@ -153,6 +153,40 @@ $ ->
     else
       docsContentGlobal.attr('view', 'true')
 
+  $focusBtn = $('@focus-btn')
+  $focusBtn.each ->
+    $(@).popover
+      content: '<div>
+          <div class="content-group-sm navigation-kontur-link">
+            <a href="#" >
+              <img class="navigation-kontur-image" src="/images/kontur-focus.png">
+              <div class="navigation-kontur-text">
+                <h4>Фокус</h4>
+                <p>Проверка компании на благонадежность</p>
+              </div>
+            </a>
+          </div>
+          <div class="navigation-kontur-link">
+            <a href="#" >
+              <img class="navigation-kontur-image" src="/images/kontur-diadok.png">
+              <div class="navigation-kontur-text">
+                <h4>Диадок</h4>
+                <p>Документооборот с контрагентами без бумаг</p>
+              </div>
+            </a>
+          </div>
+        </div>'
+      template: '<div class="popover fade navigation-kontur-popover">
+          <div class="arrow"></div>
+            <div class="popover-content">
+            </div>
+        </div>'
+      title: false
+      html: true
+      placement: 'right'
+      trigger: 'click',
+      container: '[role="application-wrapper"]'
+
 $(document).on 'click', '@jump', (e) ->
   href = $(this).data('href')
   if $(this).data 'push'
