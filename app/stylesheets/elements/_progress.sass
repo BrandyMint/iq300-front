@@ -2,12 +2,34 @@
   &.progress-bar-default
     background-color: $gray-light
 
+.progress-sm
+  height: 5px
+  +border-radius(0)
+  background-color: darken($gray-lighter, 5%)
+  &, .progress-bar
+    +box-shadow(none)
+
+.slider-progress
+  height: 15px
+  +border-radius(0)
+  background-color: darken($gray-lighter, 5%)
+  &, .progress-bar
+    +box-shadow(none)
+
 .slider-progress-bar
   @extend .progress-bar
   background-color: $blue-link-color
   transition: background 0.2s ease
   &:hover
-    background-color: lighten($blue-link-color, 5%)
+    background-color: lighten($blue-link-color, 10%)
+
+@each $s in 'primary' $blue-link-color, 'danger' $brand-danger, 'warning' $brand-warning
+  .slider-progress-bar-#{nth($s,1)}
+    @extend .progress-bar
+    background-color: nth($s,2)
+    transition: background 0.2s ease
+    &:hover
+      background-color: lighten(nth($s,2), 10%)
 
 .slider-progress-bar-transparent
   background-color: transparent

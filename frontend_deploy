@@ -2,7 +2,7 @@
 tmp_branch=tmp_deploy
 default_stage=frontend
 STAGE=${STAGE:-$default_stage}
-HOST=iq300-dev.ru
+HOST=iq300-dev.pro
 current_branch=$(git symbolic-ref --short -q HEAD)
 git remote remove $STAGE
 git remote add $STAGE dokku@$HOST:$STAGE

@@ -1,0 +1,76 @@
+.page-title
+  .row
+    .col-sm-9
+      %h3.task-title.task-view-column-subtitle.content-group-sm
+        %a.btn-link-plain.btn-link-primary{href: '/crm/clients/show'}
+          "Челны–Бройлер"
+        &nbsp;/&nbsp;
+        Сделка
+      %h3.task-title.task-view-column-title.content-group-sm
+        Договор с ООО "Челны–Бройлер" ISO 9001 Консалт/тренинг Маннанова Г.В. от Центр Практик середина 2017
+
+    .col-sm-3
+      .dropdown.pull-right
+        %a.btn.btn-sm.btn-default.text-color-gray-light{"data-toggle" => "dropdown", :href => "#"}
+          %span Управление
+          %span  
+          %i.fa.fa-caret-down
+        %ul.dropdown-menu
+          %li
+            %a{:href => "/crm/communities/247/deals/25/edit"} Редактировать
+          %li
+            %a{:href => "#"} Удалить
+
+  .content-group
+    %div
+      Переговоры в процессе
+    -#.progress.progress-sm
+      .progress-bar.progress-bar-primary{"aria-valuemax" => "100", "aria-valuemin" => "0", :style => "width: 75%"}
+    -#.progress.slider-progress
+      .progress-bar.slider-progress-bar-danger{"aria-describedby" => "dealsPprogressTooltip-25-processing", :style => "width:25%;cursor:pointer;"}
+      .progress-bar.slider-progress-bar-warning{"aria-describedby" => "dealsPprogressTooltip-25-proposal", :style => "width:25%;cursor:pointer;"}
+      .progress-bar.slider-progress-bar{"aria-describedby" => "dealsPprogressTooltip-25-negotiation", :style => "width:25%;cursor:pointer;"}
+      .progress-bar.slider-progress-bar-transparent{"aria-describedby" => "dealsPprogressTooltip-25-finish", :style => "width:25%;cursor:pointer;"}
+    .progress.slider-progress
+      .progress-bar.slider-progress-bar-primary{"aria-describedby" => "dealsPprogressTooltip-25-processing", :style => "width:25%;cursor:pointer;"}
+      .progress-bar.slider-progress-bar-primary{"aria-describedby" => "dealsPprogressTooltip-25-proposal", :style => "width:25%;cursor:pointer;"}
+      .progress-bar.slider-progress-bar-primary{"aria-describedby" => "dealsPprogressTooltip-25-negotiation", :style => "width:25%;cursor:pointer;"}
+      .progress-bar.slider-progress-bar-transparent{"aria-describedby" => "dealsPprogressTooltip-25-finish", :style => "width:25%;cursor:pointer;"}
+
+  .row
+    .col-sm-3
+      %img.project-header-avatar.pull-left{:src => "https://s3-eu-west-1.amazonaws.com/iq300/uploads/defaults/default-user-avatar.png"}/
+      .project-header-avatar-content
+        .text-muted Ответственный
+        %a.text-color-gray{:href => "/users/16"} Артур Шайдуллин
+    .col-sm-3
+      .project-header-avatar-content
+        .text-muted Контактное лицо
+        %span Таггарт Дэгни
+    .col-sm-2
+      .project-header-avatar-content
+        .text-muted Дата создания
+        %span 14.04.2016 08:00:00
+    .col-sm-2
+      .project-header-avatar-content
+        .text-muted Дата завершения
+        %span 15.04.2016 18:00:00
+    .col-sm-2
+      .project-header-avatar-content
+        .text-muted Сумма
+        %strong 0 ₽
+
+    -#.col-sm-3
+      .project-header-avatar-content
+        %div
+          %small.text-muted Переговоры в процессе
+          .progress
+            .progress-bar.slider-progress-bar{"aria-describedby" => "dealsPprogressTooltip-25-processing", :style => "width:25%;cursor:pointer;"}
+            .progress-bar.slider-progress-bar{"aria-describedby" => "dealsPprogressTooltip-25-proposal", :style => "width:25%;cursor:pointer;"}
+            .progress-bar.slider-progress-bar{"aria-describedby" => "dealsPprogressTooltip-25-negotiation", :style => "width:25%;cursor:pointer;"}
+            .progress-bar.slider-progress-bar-transparent{"aria-describedby" => "dealsPprogressTooltip-25-finish", :style => "width:25%;cursor:pointer;"}
+    -#.col-sm-3
+      .project-header-avatar-content
+        .text-muted Клиент
+        %a.text-color-gray{:href => "/crm/communities/247/clients/16/info"} test client
+
