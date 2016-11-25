@@ -1,0 +1,8 @@
+%nav.navbar.navbar-default
+  .container
+    %ul.nav.navbar-nav
+      - data.ui.navigation.each_pair do |k,v|
+        -# data.ui.navigation.each_pair do |k, v|
+        %li{class: "#{k} #{active.to_s == k.to_s ? 'active' : ''}"}
+          %a{href: "#{v.link.presence}"}= v.title
+

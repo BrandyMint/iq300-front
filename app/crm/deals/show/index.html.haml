@@ -1,0 +1,32 @@
+---
+body_class: crm-index
+layout: application_modular
+nav_item: crm
+---
+
+- content_for :back_button do
+  %a.btn.btn-lg{:href => "/crm"}
+    %span.fa.fa-angle-left.icon-size-16
+    Список клиентов
+
+-#.application-app-container{role: 'crm-app'}
+  .application-content
+    .application-content-block
+
+%section.view-column.view-column-gray
+  .view-column-header
+    = partial 'crm/deals/show/title'
+  -# = partial 'shared/tabnav', locals: {nav: data.crm.clients.tabs, active: :details, css_class: "view-column-tabnav"}
+  %ul.nav.nav-tabs.tabnav.view-column-tabnav
+    %li.active
+      %a{:href => "/crm/communities/247/deals/25/tasks"} Задачи
+    %li
+      %a{:href => "/crm/communities/247/deals/25/plan"} План
+    %li
+      %a{:href => "/crm/communities/247/deals/25/events"} События
+    %li
+      %a{:href => "/crm/communities/247/deals/25/notes"} Заметки
+  .tab-content.view-column-tab-content
+    = partial 'crm/deals/show/details'
+
+

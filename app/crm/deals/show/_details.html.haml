@@ -1,0 +1,209 @@
+%div
+  .list-panel-container-block
+    .container-fluid
+      .row
+        .col-sm-10
+          .list-panel-block.list-panel-block-left
+            .btn-group
+              .dropdown.dropdown-inline{"aria-describedby" => "1476102099469"}
+                %a.btn.btn-link-plain.btn-link-gray{"data-toggle" => "dropdown", :href => "#"}
+                  %i.fa.fa-filter
+                  %span 1 из 1
+                %ui.dropdown-menu
+                  %li
+                    %a{:href => "#"} Сбросить все фильтры
+            .btn-group
+              %select.form-control-select-plain{:data => "", :kind => "task_statuses", :style => "display: none;"}
+                %option{:label => "Все статусы ", :selected => "selected", :value => ""}
+                %option{:label => "Новые - 1", :value => "new"}
+                %option{:disabled => "disabled", :label => "Просмотренные ", :value => "browsed"}
+                %option{:disabled => "disabled", :label => "В работе ", :value => "in_work"}
+                %option{:disabled => "disabled", :label => "Отказанные ", :value => "refused"}
+                %option{:disabled => "disabled", :label => "На проверке ", :value => "completed"}
+                %option{:disabled => "disabled", :label => "Выполненные ", :value => "accepted"}
+                %option{:disabled => "disabled", :label => "Отмененные ", :value => "canceled"}
+                %option{:disabled => "disabled", :label => "Невыполненные ", :value => "unperformed"}
+              .btn-group
+                %button.multiselect.dropdown-toggle.btn-link-gray.btn.btn-link-plain{"data-toggle" => "dropdown", :title => "Все статусы ", :type => "button"}
+                  %span.multiselect-selected-text
+                    %i.fa.fa-list
+                    %span.multiselect-select-text Все статусы
+                    %i.fa.fa-caret-down
+                %ul.multiselect-container.dropdown-menu{:style => "max-height: 250px; overflow-y: auto; overflow-x: hidden;"}
+                  %li.active
+                    %a{:tabindex => "0"}
+                      %label.radio
+                        %input{:type => "radio", :value => ""}/
+                        Все статусы
+                  %li
+                    %a{:tabindex => "0"}
+                      %label.radio
+                        %input{:type => "radio", :value => "new"}/
+                        Новые - 1
+                  %li.disabled
+                    %a{:tabindex => "-1"}
+                      %label.radio
+                        %input{:disabled => "disabled", :type => "radio", :value => "browsed"}/
+                        Просмотренные
+                  %li.disabled
+                    %a{:tabindex => "-1"}
+                      %label.radio
+                        %input{:disabled => "disabled", :type => "radio", :value => "in_work"}/
+                        В работе
+                  %li.disabled
+                    %a{:tabindex => "-1"}
+                      %label.radio
+                        %input{:disabled => "disabled", :type => "radio", :value => "refused"}/
+                        Отказанные
+                  %li.disabled
+                    %a{:tabindex => "-1"}
+                      %label.radio
+                        %input{:disabled => "disabled", :type => "radio", :value => "completed"}/
+                        На проверке
+                  %li.disabled
+                    %a{:tabindex => "-1"}
+                      %label.radio
+                        %input{:disabled => "disabled", :type => "radio", :value => "accepted"}/
+                        Выполненные
+                  %li.disabled
+                    %a{:tabindex => "-1"}
+                      %label.radio
+                        %input{:disabled => "disabled", :type => "radio", :value => "canceled"}/
+                        Отмененные
+                  %li.disabled
+                    %a{:tabindex => "-1"}
+                      %label.radio
+                        %input{:disabled => "disabled", :type => "radio", :value => "unperformed"}/
+                        Невыполненные
+            .btn-group
+              %select.form-control-select-plain{:data => "", :kind => "executors", :style => "display: none;"}
+                %option{:label => "Все исполнители ", :selected => "selected", :value => ""}
+                %option{:label => "Артур Шайдуллин - 1", :value => "16"}
+              .btn-group
+                %button.multiselect.dropdown-toggle.btn-link-gray.btn.btn-link-plain{"data-toggle" => "dropdown", :title => "Все исполнители ", :type => "button"}
+                  %span.multiselect-selected-text
+                    %i.fa.fa-user
+                    %span.multiselect-select-text Все исполнители
+                    %i.fa.fa-caret-down
+                %ul.multiselect-container.dropdown-menu{:style => "max-height: 250px; overflow-y: auto; overflow-x: hidden;"}
+                  %li.active
+                    %a{:tabindex => "0"}
+                      %label.radio
+                        %input{:type => "radio", :value => ""}/
+                        Все исполнители
+                  %li
+                    %a{:tabindex => "0"}
+                      %label.radio
+                        %input{:type => "radio", :value => "16"}/
+                        Артур Шайдуллин - 1
+            .btn-group
+              .btn-group
+                %select.form-control-select-plain{:data => "", :kind => "sorts", :style => "display: none;"}
+                  %option{:label => "По последней активности", :selected => "selected", :value => "updated_at"}
+                  %option{:label => "По номеру", :value => "id"}
+                  %option{:label => "По дедлайну", :value => "end_date"}
+                .btn-group
+                  %button.multiselect.dropdown-toggle.btn-link-gray.btn.btn-link-plain{"data-toggle" => "dropdown", :title => "По последней активности", :type => "button"}
+                    %span.multiselect-selected-text
+                      %i.undefined
+                      %span.multiselect-select-text По последней активности
+                  %ul.multiselect-container.dropdown-menu{:style => "max-height: 250px; overflow-y: auto; overflow-x: hidden;"}
+                    %li.active
+                      %a{:tabindex => "0"}
+                        %label.radio
+                          %input{:type => "radio", :value => "updated_at"}/
+                          По последней активности
+                    %li
+                      %a{:tabindex => "0"}
+                        %label.radio
+                          %input{:type => "radio", :value => "id"}/
+                          По номеру
+                    %li
+                      %a{:tabindex => "0"}
+                        %label.radio
+                          %input{:type => "radio", :value => "end_date"}/
+                          По дедлайну
+                %a.btn.btn-collapse.btn-link-plain.btn-link-primary.btn-link-gray{"aria-describedby" => "1476102099494"}
+                  %i.fa.fa-sort-amount-desc
+        .col-sm-2
+          .list-panel-block.text-right
+            .dropdown.dropdown-inline
+              %a.btn.btn-link-default.btn-circle-plus{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#"}
+                %span.btn-circle-plus-icon
+                  %i.fa.fa-plus.icon-size-16
+              %ul.dropdown-menu.dropdown-menu-right
+                %li
+                  %span.btn.btn-link Добавить задачу
+                %li
+                  %span.btn.btn-link Загрузить из шаблона
+            %a.btn.btn-sm.btn-link-plain.btn-link-gray{:href => "#"}
+              %i.fa.fa-search.icon-color-gray-light.icon-size-14
+      .collapse
+        .list-panel-divider
+        .list-panel-block
+          .row
+            .col-md-6.col-md-offset-3
+              %form
+                .input-group.input-group-block
+                  %input.form-control{:placeholder => "Поиск", :type => "search", :value => ""}/
+                  .input-group-btn
+                    %a.btn.btn-default
+                      %i.fa.fa-search
+            .col-sm-3.text-right
+              %a.btn.btn-sm.btn-link.btn-link-plain{:href => "#"}
+                %i.fa.fa-times.icon-color-gray-light.icon-size-14
+  .application-content-block{:style => "padding-bottom:90px;"}
+    %li
+      .project-tasks-group
+        .project-tasks-group-content
+          %article
+            .project-task-view
+              .project-task-box.task-box.task-in_work.project-task-box-without-checkbox
+                .project-task-box-controls
+                  %span 1
+                  %span .
+                %a.project-task-box-content{:href => "/tasks/3335"}
+                  .row
+                    .col-md-11
+                      .project-task-box-title-block
+                        %span.task-box-title-block-link{"aria-describedby" => "1476102030850"} CRM: test deal task
+                    .col-md-1
+                      %span.small
+                        %span #
+                        %span 3335
+                  %span.label.label-primary Новая
+                  %span   
+                  %span
+                    %span Артур Шайдуллин
+                    %span   
+                .project-task-box-status-block
+                  .row
+                    .col-xs-6.col-collapse
+                      .status-date.project-task-box-status-date
+                        .day 14
+                        %span апреля
+                    .col-xs-6.col-collapse
+                      .task-box-status-date-hypen
+                        %i.fa.fa-angle-right.icon-color-gray-light
+                      .status-date.project-task-box-status-date
+                        .day 15
+                        %span апреля
+                .project-task-box-actions.dropdown.pull-right
+                  %a.project-task-box-actions-btn{"data-placement" => "bottom", "data-toggle" => "dropdown", :href => "#"}
+                    %i.fa.fa-bars.icon-color-gray-light.project-task-box-actions-icon
+                  %ul.dropdown-menu
+                    %li
+                      %a{:href => "#"}
+                        %i.icon-pencil.icon-color-gray-light
+                        %span   
+                        %span Редактировать
+                    %li
+                      %a{:href => "#"}
+                        %i.fa.fa-arrow-right.icon-size-14.icon-color-gray-light
+                        %span   
+                        %span Новая
+                        %span  
+                        %i.fa.fa-angle-right
+                        %span  
+                        %span В работу
+                .clearfix
