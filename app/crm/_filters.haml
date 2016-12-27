@@ -2,7 +2,18 @@
 
 .filters-column
   .list-panel-block
-    %select.form-control-select-plain{role: 'multiselect-select',
+    .filters-column-select-block
+      .filters-column-select
+        .Select.Select--single.is-searchable.has-value{"data-reactid" => ".3.0.0.0.0.0"}
+          .Select-control{"data-reactid" => ".3.0.0.0.0.0.1"}
+            .Select-value{"data-reactid" => ".3.0.0.0.0.0.1.0", :title => "UX fake community"}
+              %span.Select-value-label{"data-reactid" => ".3.0.0.0.0.0.1.0.1"} UX fake community
+            .Select-input{"data-reactid" => ".3.0.0.0.0.0.1.1", :style => "display:inline-block;"}
+              %input{"data-reactid" => ".3.0.0.0.0.0.1.1.0", :style => "width:5px;box-sizing:content-box;", :value => ""}/
+              %div{"data-reactid" => ".3.0.0.0.0.0.1.1.1", :style => "position: absolute; visibility: hidden; height: 0px; width: 0px; overflow: scroll; white-space: pre; font-size: 13px; font-family: Roboto, Arial, sans-serif; font-weight: normal; font-style: normal; letter-spacing: normal;"}
+            %span.Select-arrow-zone{"data-reactid" => ".3.0.0.0.0.0.1.4"}
+              %span.Select-arrow{"data-reactid" => ".3.0.0.0.0.0.1.4.0"}
+    -#%select.form-control-select-plain{role: 'multiselect-select',
       data: {'button-icon' => 'fa fa-users', 'button-class' => 'btn btn-link-plain', 'button-text-all' => 'Все задачи', 'button-text-default' => 'Задачи'}}
       - filter_communities = "ООО Айкью 300, ЦИТ".split(', ')
       - for i in 0..2
