@@ -41,6 +41,38 @@
 .list-panel-block
   @extend %list-panel-block
 
+.list-panel-select-block
+  @extend .btn-group
+  @extend %list-panel-block
+  width: 100%
+  padding-bottom: 0
+
+.list-panel-select
+  @extend %btn-group
+  width: 100%
+  .multiselect
+    width: 100%
+    padding-top: 0
+    text-align: left
+  .multiselect-select-text
+    width: 90%
+    font:
+      size: $font-size-base*1.2
+      weight: bold
+    overflow: hidden
+    text-overflow: ellipsis
+    display: inline-block
+    text-align: left
+    padding: 0
+  .list-panel-select-icon
+    display: inline-block
+    vertical-align: top
+    line-height: 20px
+
+.list-panel-select-label
+  color: $text-muted
+  padding: 0 $grid-gutter-width/2
+
 .list-panel-block-form
   @extend %list-panel-block
   padding:

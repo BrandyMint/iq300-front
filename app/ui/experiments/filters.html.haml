@@ -6,27 +6,14 @@ layout: page
   .row
     .col-xs-2
       .filters-column
-        .list-panel-block{:style => "\n    padding-bottom: 0;\n"}
-          -#%select.form-control-select-plain{"data-button-class" => "btn btn-link-plain", "data-button-icon" => "fa fa-users", "data-button-text-all" => "Все задачи", "data-button-text-default" => "Задачи", :role => "multiselect-select", :style => "display: none;"}
-            %option
-              ООО Айкью 300
-            %option
-              ЦИТ
-            %option
-              ООО Айкью 300
-            %option
-              ЦИТ
-            %option
-              ООО Айкью 300
-            %option
-              ЦИТ
-          .btn-group{:style => "\n    width: 100%;\n"}
-            .text-muted.btn-text{:style => "\n    padding: 0 15px;\n"} Сообщество
-            %button.multiselect.dropdown-toggle.btn.btn-link-plain{"aria-expanded" => "false", "data-toggle" => "dropdown", :style => "\n    /* margin-top: -4px; */\n    width: 100%;\n    padding-top: 0;\n", :title => "\n                  ООО Айкью 300\n                ", :type => "button"}
-              %span.multiselect-selected-text{:style => "\n    /* width: 100%; */\n    /* display: inline-block; */\n"}
-                %span.multiselect-select-text{:style => "\n    font-size: 15px;\n    font-weight: bold;\n    /* margin-top: -5px; */\n    width: 90%;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    display: inline-block;\n    text-align: left;\n    padding: 0;\n"} ООО Айкью 300 Длинное название
-                = succeed "\u{a0}" do
-                  %span.fa.fa-caret-down{:style => "\n    display: inline-block;\n    vertical-align: top;\n    line-height: 20px;\n"}
+        .list-panel-select-block
+          .list-panel-select
+            .list-panel-select-label Сообщество
+            %button.multiselect.dropdown-toggle.btn.btn-link-plain{"aria-expanded" => "false", "data-toggle" => "dropdown", :title => "\n                  ООО Айкью 300\n                ", :type => "button"}
+              %span.multiselect-selected-text
+                %span.multiselect-select-text
+                  ООО Айкью 300 Длинное название
+                %span.fa.fa-caret-down.list-panel-select-icon
             %ul.multiselect-container.dropdown-menu
               %li.active
                 %a{:tabindex => "0"}
@@ -73,6 +60,7 @@ layout: page
             %a{:href => ""} Отчётыa
           %li.settings
             %a{:href => ""} Настройки
+
     .col-xs-2
       .filters-column
         .list-panel-block{:style => "\n"}
