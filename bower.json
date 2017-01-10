@@ -23,7 +23,10 @@
     "purl": "~2.3.1",
     "react-select": "1.0.0-beta13",
     "react-slider": "~0.6.1",
-    "select2": "~3.5.1"
+    "select2": "~3.5.1",
+    "nanoscroller": "0.8.7",
+    "emoji-picker": "1.0",
+    "tether": "~1.4.0"
   },
   "ignore": [
     "**/.*",

@@ -14,6 +14,12 @@
 #= require jquery-drag-drop-plugin/jquery.drag-drop.plugin
 #= require purl/purl
 #= require progressbar.js/dist/progressbar.js
+#= require nanoscroller/bin/javascripts/jquery.nanoscroller
+#= require tether/dist/js/tether.min
+#= require emoji-picker/lib/js/config.js
+#= require emoji-picker/lib/js/util.js
+#= require lib/jquery.emojiarea.js
+#= require emoji-picker/lib/js/emoji-picker.js
 #= require layout
 #= require data_toggle_hide
 #= require data_clone
@@ -42,6 +48,12 @@
 #= require progress
 
 $ ->
+  new EmojiPicker(popupButtonClasses: 'fa fa-smile-o', iconSize: 22, assetsPath: '/tmp').discover()
+  $('.emoji-picker').click (ev) ->
+    setTimeout ->
+      Tether.position()
+    ,0
+
   $('@select2').select2()
   $('[data-toggle*="popover"]').popover()
 

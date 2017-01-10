@@ -18,7 +18,7 @@
                       %input{:name => "utf8", :type => "hidden", :value => "✓"}/
                       %input{:name => "authenticity_token", :type => "hidden", :value => "uA6xR7HjabBYeN2QtkkPByY5w+mC3PIq0qRVBuwnwC0="}/
                     %input#redirect_to{:name => "redirect_to", :type => "hidden", :value => "/tasks/109472"}/
-                    %textarea.comment-body.form-control.task-discussion-form-textarea{:placeholder => "Добавить комментарий", rows: 2, :role => "autosize", "test-comment-body" => "true", style: 'height: 36px;'}
+                    %textarea.comment-body.form-control.task-discussion-form-textarea{:placeholder => "Добавить комментарий", rows: 2, :role => "autosize", 'data-emojiable' => "true", "test-comment-body" => "true", style: 'height: 36px;'}
                   .col-sm-2
                     %input#btnSubmit.btn.btn-block.btn-primary{"data-wait" => "Отправка...", :name => "commit", :role => "submit-button", "test-submit-comment" => "true", :type => "submit", :value => "Отправить"}/
               .comments-form-actions
@@ -41,4 +41,3 @@
           .comment-form-content.comment-form-tip{role: 'comment-form-tip-release', style: 'display: none;'}
             .comment-form-tip-content
               Отпустите кнопку мыши для загрузки файлов
-
