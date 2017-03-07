@@ -1,0 +1,23 @@
+---
+layout: page
+---
+
+.container
+  .row
+    .col-xs-6
+      .notifications-widget-list-empty-content{"data-reactid" => ".3.1.1.0.0.0"}
+        .notifications-widget-list-empty-icon{"data-reactid" => ".3.1.1.0.0.0.0"}
+          %i.iqs-nav-contacts{"data-reactid" => ".3.1.1.0.0.0.0.0"}
+        %p.content-group-sm{"data-reactid" => ".3.1.1.0.0.0.1"} Клиенты в этом сообществе отсутствуют
+        .content-group
+          %a.btn.btn-outline-primary Добавить клиента
+        .content-group
+          Не можете найти клиента?
+          %br/
+          Возможно, нужно выбрать другое сообщество:
+          %br/
+          = succeed "," do
+            %a ООО Айкью 300
+          = succeed "," do
+            %a МАУ ЦИТ
+          %a Татнефть–композит

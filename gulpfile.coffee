@@ -74,11 +74,15 @@ gulp.task "sass:dist", ->
     .on "error", $.util.log
 
 gulp.task "prefix:watch", ["sass:watch"], shell.task([
-  './node_modules/.bin/autoprefixer ' + './app/tmp/stylesheets/*.css ' + '-b '+ '"' + options.autoprefixer.browsers.join(', ').toLowerCase() + '"'
+  #'./node_modules/.bin/autoprefixer ' + './app/tmp/stylesheets/*.css ' + '-b '+ '"' + options.autoprefixer.browsers.join(', ').toLowerCase() + '"'
+  # TODO just a temporary fix
+  './node_modules/.bin/autoprefixer ' + './app/tmp/stylesheets/*.css '
 ])
 
 gulp.task "prefix:dist", ["sass:dist"], shell.task([
-  './node_modules/.bin/autoprefixer ' + './dist/stylesheets/*.css ' + '-b '+ '"' + options.autoprefixer.browsers.join(', ').toLowerCase() + '"'
+  #'./node_modules/.bin/autoprefixer ' + './dist/stylesheets/*.css ' + '-b '+ '"' + options.autoprefixer.browsers.join(', ').toLowerCase() + '"'
+  # TODO just a temporary fix
+  './node_modules/.bin/autoprefixer ' + './app/tmp/stylesheets/*.css '
 ])
 
 
