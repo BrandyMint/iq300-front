@@ -9,13 +9,13 @@
           .community-process-list-item-number
             = i
         .col-md-5
-          .Select.is-searchable.has-value
+          .Select.Select--single.is-searchable
             .Select-control
-              .Select-value{:title => "Блок ожидания"}
-                %span.Select-value-label Создание проекта из шаблона
-              .Select-input{:style => "display:inline-block;"}
-                %input{:style => "width:5px;box-sizing:content-box;", :value => ""}/
-                %div{:style => "position: absolute; visibility: hidden; height: 0px; width: 0px; overflow: scroll; white-space: nowrap; font-size: 13px; font-family: Arial, sans-serif; font-weight: normal; font-style: normal; letter-spacing: normal;"}
+              %span#react-select-2--value.Select-multi-value-wrapper
+                .Select-placeholder Выберите ответственного
+                .Select-input{ :style => "display:inline-block;"}
+                  %input{"aria-activedescendant" => "react-select-2--value", "aria-expanded" => "false", "aria-haspopup" => "false", "aria-owns" => "", :role => "combobox", :style => "box-sizing: content-box; width: 2px;", :value => ""}/
+                  %div{:style => "position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 13px; font-family: Roboto, Arial, sans-serif; font-weight: normal; font-style: normal; letter-spacing: normal;"}
               %span.Select-arrow-zone
                 %span.Select-arrow
         .col-md-5

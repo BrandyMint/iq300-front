@@ -1,275 +1,461 @@
-/**
- * React Select
- * ============
- * Created by Jed Watson and Joss Mackison for KeystoneJS, http://www.keystonejs.com/
- * https://twitter.com/jedwatson https://twitter.com/jossmackison https://twitter.com/keystonejs
- * MIT License: https://github.com/keystonejs/react-select
-*/
-.Select {
-  position: relative;
-}
-.Select-control {
-  position: relative;
-  overflow: hidden;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border-color: #d9d9d9 #cccccc #b3b3b3;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #333333;
-  cursor: default;
-  outline: none;
-  padding: 8px 52px 8px 10px;
-  transition: all 200ms ease;
-}
-.Select-control:hover {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-}
-.is-searchable.is-open > .Select-control {
-  cursor: text;
-}
-.is-open > .Select-control {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  background: #ffffff;
-  border-color: #b3b3b3 #cccccc #d9d9d9;
-}
-.is-open > .Select-control > .Select-arrow {
-  border-color: transparent transparent #999999;
-  border-width: 0 5px 5px;
-}
-.is-searchable.is-focused:not(.is-open) > .Select-control {
-  cursor: text;
-}
-.is-focused:not(.is-open) > .Select-control {
-  border-color: #0088cc #0099e6 #0099e6;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 5px -1px rgba(0, 136, 204, 0.5);
-}
-.Select-placeholder {
-  color: #aaaaaa;
-  padding: 8px 52px 8px 10px;
-  position: absolute;
-  top: 0;
+//colors
+$color_alabaster_approx: #f9f9f9;
+$white: #fff;
+$color_alto_approx: #d9d9d9;
+$color_celeste_approx: #ccc;
+$color_nobel_approx: #b3b3b3;
+$color_mine_shaft_approx: #333;
+$black_6: rgba(0, 0, 0, 0.06);
+$color_mountain_mist_approx: #999;
+$color_azure_radiance_approx: #4aaee4;
+$black_7_5: rgba(0, 0, 0, 0.075);
+$color_azure_radiance_10_approx: rgba(0, 126, 255, 0.1);
+$color_silver_chalice_approx: #aaa;
+$color_monza_approx: #d0021b;
+$color_storm_dust_approx: #666;
+$color_mercury_approx: #e6e6e6;
+$color_zircon_approx: #f5faff;
+$color_azure_radiance_4_approx: rgba(0, 126, 255, 0.04);
+$color_solitude_approx: #ebf5ff;
+$color_azure_radiance_8_approx: rgba(0, 126, 255, 0.08);
+$color_tropical_blue_approx: #c2e0ff;
+$color_azure_radiance_24_approx: rgba(0, 126, 255, 0.24);
+$color_hawkes_blue_approx: #d8eafd;
+$color_blue_ribbon_8_approx: rgba(0, 113, 230, 0.08);
+$color_blue_ribbon_approx: #4aaee4;
+
+//@extend-elements
+//original selectors
+//.Select-placeholder, .Select--single >.Select-control .Select-value
+%extend_1 {
+  bottom: 0;
+  color: $color_silver_chalice_approx;
   left: 0;
-  right: -15px;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.has-value > .Select-control > .Select-placeholder {
-  color: #333333;
-}
-.Select-value {
-  color: #aaaaaa;
-  padding: 5px 52px 8px 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: -15px;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.has-value > .Select-control > .Select-value {
-  color: #333333;
-}
-.Select-input > input {
-  cursor: default;
-  background: none transparent;
-  box-shadow: none;
-  height: auto;
-  border: 0 none;
-  font-family: inherit;
-  font-size: inherit;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  display: inline-block;
-  -webkit-appearance: none;
-}
-.is-focused .Select-input > input {
-  cursor: text;
-}
-.Select-control:not(.is-searchable) > .Select-input {
-  outline: none;
-}
-.Select-loading {
-  -webkit-animation: Select-animation-spin 400ms infinite linear;
-  -o-animation: Select-animation-spin 400ms infinite linear;
-  animation: Select-animation-spin 400ms infinite linear;
-  width: 16px;
-  height: 16px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  border: 2px solid #cccccc;
-  border-right-color: #333333;
-  display: inline-block;
-  position: relative;
-  margin-top: -8px;
-  position: absolute;
-  right: 30px;
-  top: 50%;
-}
-.has-value > .Select-control > .Select-loading {
-  right: 46px;
-}
-.Select-clear {
-  color: #999999;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 16px;
-  padding: 6px 10px;
-  position: absolute;
-  right: 17px;
-  top: 0;
-}
-.Select-clear:hover {
-  color: #c0392b;
-}
-.Select-clear > span {
-  font-size: 1.1em;
-}
-.Select-arrow-zone {
-  content: " ";
-  display: block;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   position: absolute;
   right: 0;
   top: 0;
-  bottom: 0;
-  width: 30px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//original selectors
+//.has-value.Select--single >.Select-control .Select-value a.Select-value-label:hover, .has-value.is-pseudo-focused.Select--single >.Select-control .Select-value a.Select-value-label:hover, .has-value.Select--single >.Select-control .Select-value a.Select-value-label:focus, .has-value.is-pseudo-focused.Select--single >.Select-control .Select-value a.Select-value-label:focus
+%extend_2 {
+  color: $color_azure_radiance_approx;
+  outline: none;
+  text-decoration: underline;
+}
+
+
+.Select {
+  position: relative;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  div {
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+  }
+  input {
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+  }
+  span {
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+  }
+  &.is-disabled {
+    .Select-arrow-zone {
+      cursor: default;
+      pointer-events: none;
+      opacity: 0.35;
+    }
+    > .Select-control {
+      background-color: $color_alabaster_approx;
+      &:hover {
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: none;
+      }
+    }
+  }
+  .Select-aria-only {
+    display: inline-block;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    float: left;
+  }
+}
+.Select-control {
+  background-color: $white;
+  border-color: $color_alto_approx $color_celeste_approx $color_nobel_approx;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 4px;
+  border: 1px solid $color_celeste_approx;
+  color: $color_mine_shaft_approx;
+  cursor: default;
+  display: table;
+  border-spacing: 0;
+  border-collapse: separate;
+  height: 36px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  &:hover {
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 0 1px 0 $black_6;
+  }
+  .Select-input:focus {
+    outline: none;
+  }
+  &:not(.is-searchable) > .Select-input {
+    outline: none;
+  }
+}
+.is-searchable {
+  &.is-open > .Select-control {
+    cursor: text;
+  }
+  &.is-focused:not(.is-open) > .Select-control {
+    cursor: text;
+  }
+}
+.is-open {
+  .Select-arrow {
+    border-top-color: $color_storm_dust_approx;
+  }
+  > .Select-control {
+    //Instead of the line below you could use @include border-bottom-right-radius($radius)
+    border-bottom-right-radius: 0;
+    //Instead of the line below you could use @include border-bottom-left-radius($radius)
+    border-bottom-left-radius: 0;
+    background: $white;
+    border-color: $color_nobel_approx $color_celeste_approx $color_alto_approx;
+    .Select-arrow {
+      top: -2px;
+      border-color: transparent transparent $color_mountain_mist_approx;
+      border-width: 0 5px 5px;
+    }
+  }
+}
+.is-focused {
+  &:not(.is-open) > .Select-control {
+    border-color: $color_azure_radiance_approx;
+  }
+  .Select-input > input {
+    cursor: text;
+  }
+}
+.Select-placeholder {
+  @extend %extend_1;
+}
+.has-value {
+  &.is-pseudo-focused {
+    .Select-input {
+      opacity: 0;
+    }
+    &.Select--single > .Select-control .Select-value {
+      .Select-value-label {
+        color: $color_mine_shaft_approx;
+      }
+      a.Select-value-label {
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+          @extend %extend_2;
+        }
+        &:focus {
+          @extend %extend_2;
+        }
+      }
+    }
+  }
+  &.Select--single > .Select-control .Select-value {
+    .Select-value-label {
+      color: $color_mine_shaft_approx;
+    }
+    a.Select-value-label {
+      cursor: pointer;
+      text-decoration: none;
+      &:hover {
+        @extend %extend_2;
+      }
+      &:focus {
+        @extend %extend_2;
+      }
+    }
+  }
+}
+.Select-input {
+  height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  > input {
+    width: 100%;
+    background: none transparent;
+    border: 0 none;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: none;
+    cursor: default;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    outline: none;
+    line-height: 14px;
+    padding: 8px 0 12px;
+  }
+}
+.Select-loading-zone {
   cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 16px;
+}
+.Select-loading {
+  animation: Select-animation-spin 400ms infinite linear;
+  width: 16px;
+  height: 16px;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 50%;
+  border: 2px solid $color_celeste_approx;
+  border-right-color: $color_mine_shaft_approx;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.Select-clear-zone {
+  animation: Select-animation-fadeIn 200ms;
+  color: $color_mountain_mist_approx;
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 17px;
+  &:hover {
+    color: $color_monza_approx;
+  }
+}
+.Select-clear {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 19px;
+}
+.Select--multi {
+  .Select-clear-zone {
+    width: 17px;
+  }
+  .Select-multi-value-wrapper {
+    display: inline-block;
+  }
+  .Select-input {
+    vertical-align: middle;
+    margin-left: 10px;
+    padding: 0;
+  }
+  .Select-value {
+    background-color: $color_solitude_approx;
+    background-color: $color_azure_radiance_8_approx;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 2px;
+    border: 1px solid $color_tropical_blue_approx;
+    border: 1px solid $color_azure_radiance_24_approx;
+    color: $color_azure_radiance_approx;
+    display: inline-block;
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin-left: 5px;
+    margin-top: 5px;
+    vertical-align: top;
+  }
+  .Select-value-icon {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    //Instead of the line below you could use @include border-bottom-left-radius($radius)
+    border-bottom-left-radius: 2px;
+    //Instead of the line below you could use @include border-top-left-radius($radius)
+    border-top-left-radius: 2px;
+    border-right: 1px solid $color_tropical_blue_approx;
+    border-right: 1px solid $color_azure_radiance_24_approx;
+    padding: 1px 5px 3px;
+    &:hover {
+      background-color: $color_hawkes_blue_approx;
+      background-color: $color_blue_ribbon_8_approx;
+      color: $color_blue_ribbon_approx;
+    }
+    &:focus {
+      background-color: $color_hawkes_blue_approx;
+      background-color: $color_blue_ribbon_8_approx;
+      color: $color_blue_ribbon_approx;
+    }
+    &:active {
+      background-color: $color_tropical_blue_approx;
+      background-color: $color_azure_radiance_24_approx;
+    }
+  }
+  .Select-value-label {
+    display: inline-block;
+    vertical-align: middle;
+    //Instead of the line below you could use @include border-bottom-right-radius($radius)
+    border-bottom-right-radius: 2px;
+    //Instead of the line below you could use @include border-top-right-radius($radius)
+    border-top-right-radius: 2px;
+    cursor: default;
+    padding: 2px 5px;
+  }
+  &.is-disabled {
+    .Select-value {
+      background-color: $color_alabaster_approx;
+      border: 1px solid $color_mercury_approx;
+      color: $color_mine_shaft_approx;
+    }
+    .Select-value-icon {
+      cursor: not-allowed;
+      border-right: 1px solid $color_mercury_approx;
+      &:hover {
+        background-color: $color_alabaster_approx;
+      }
+      &:focus {
+        background-color: $color_alabaster_approx;
+      }
+      &:active {
+        background-color: $color_alabaster_approx;
+      }
+    }
+  }
+  &.has-value .Select-input {
+    margin-left: 5px;
+  }
+  a.Select-value-label {
+    color: $color_azure_radiance_approx;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.Select-arrow-zone {
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 25px;
+  padding-right: 5px;
+  &:hover > .Select-arrow {
+    border-top-color: $color_storm_dust_approx;
+  }
 }
 .Select-arrow {
-  border-color: #999999 transparent transparent;
+  border-color: $color_mountain_mist_approx transparent transparent;
   border-style: solid;
-  border-width: 5px 5px 0;
-  content: " ";
-  display: block;
+  border-width: 5px 5px 2.5px;
+  display: inline-block;
   height: 0;
-  margin-top: -ceil(2.5px);
-  position: absolute;
-  right: 10px;
-  top: 14px;
   width: 0;
-  cursor: pointer;
+  position: relative;
+}
+@-webkit-keyframes Select-animation-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes Select-animation-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .Select-menu-outer {
+  //Instead of the line below you could use @include border-bottom-right-radius($radius)
   border-bottom-right-radius: 4px;
+  //Instead of the line below you could use @include border-bottom-left-radius($radius)
   border-bottom-left-radius: 4px;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border-top-color: #e6e6e6;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  background-color: $white;
+  border: 1px solid $color_celeste_approx;
+  border-top-color: $color_mercury_approx;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 1px 0 $black_6;
+  //Instead of the line below you could use @include box-sizing($bs)
   box-sizing: border-box;
   margin-top: -1px;
   max-height: 200px;
   position: absolute;
   top: 100%;
   width: 100%;
-  z-index: 1000;
-  -webkit-overflow-scrolling: touch;
+  z-index: 1;
 }
 .Select-menu {
   max-height: 198px;
   overflow-y: auto;
 }
 .Select-option {
+  //Instead of the line below you could use @include box-sizing($bs)
   box-sizing: border-box;
-  color: #666666;
+  background-color: $white;
+  color: $color_storm_dust_approx;
   cursor: pointer;
   display: block;
   padding: 8px 10px;
-}
-.Select-option:last-child {
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-.Select-option.is-focused {
-  background-color: #f2f9fc;
-  color: #333333;
-}
-.Select-option.is-disabled {
-  color: #cccccc;
-  cursor: not-allowed;
+  &:last-child {
+    //Instead of the line below you could use @include border-bottom-right-radius($radius)
+    border-bottom-right-radius: 4px;
+    //Instead of the line below you could use @include border-bottom-left-radius($radius)
+    border-bottom-left-radius: 4px;
+  }
+  &.is-selected {
+    background-color: $color_zircon_approx;
+    background-color: $color_azure_radiance_4_approx;
+    color: $color_mine_shaft_approx;
+  }
+  &.is-focused {
+    background-color: $color_solitude_approx;
+    background-color: $color_azure_radiance_8_approx;
+    color: $color_mine_shaft_approx;
+  }
+  &.is-disabled {
+    color: $color_celeste_approx;
+    cursor: default;
+  }
 }
 .Select-noresults {
+  //Instead of the line below you could use @include box-sizing($bs)
   box-sizing: border-box;
-  color: #999999;
+  color: $color_mountain_mist_approx;
   cursor: default;
   display: block;
   padding: 8px 10px;
-}
-.Select.is-multi .Select-control {
-  padding: 2px 52px 2px 3px;
-}
-.Select.is-multi .Select-input {
-  vertical-align: middle;
-  border: 1px solid transparent;
-  margin: 2px;
-  padding: 3px 0;
-}
-.Select-item {
-  background-color: #f2f9fc;
-  border-radius: 2px;
-  border: 1px solid #c9e6f2;
-  color: #0088cc;
-  display: inline-block;
-  font-size: 1em;
-  margin: 2px;
-}
-.Select-item-icon,
-.Select-item-label {
-  display: inline-block;
-  vertical-align: middle;
-}
-.Select-item-label {
-  cursor: default;
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
-  padding: 3px 5px;
-}
-.Select-item-label .Select-item-label__a {
-  color: #0088cc;
-  cursor: pointer;
-}
-.Select-item-icon {
-  cursor: pointer;
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
-  border-right: 1px solid #c9e6f2;
-  padding: 2px 5px 4px;
-}
-.Select-item-icon:hover,
-.Select-item-icon:focus {
-  background-color: #ddeff7;
-  color: #0077b3;
-}
-.Select-item-icon:active {
-  background-color: #c9e6f2;
-}
-.Select.is-multi.is-disabled .Select-item {
-  background-color: #f2f2f2;
-  border: 1px solid #d9d9d9;
-  color: #888888;
-}
-.Select.is-multi.is-disabled .Select-item-icon {
-  cursor: not-allowed;
-  border-right: 1px solid #d9d9d9;
-}
-.Select.is-multi.is-disabled .Select-item-icon:hover,
-.Select.is-multi.is-disabled .Select-item-icon:focus,
-.Select.is-multi.is-disabled .Select-item-icon:active {
-  background-color: #f2f2f2;
 }
 @keyframes Select-animation-spin {
   to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
     transform: rotate(1turn);
   }
 }
 @-webkit-keyframes Select-animation-spin {
   to {
-    -webkit-transform: rotate(1turn);
   }
+}
+.Select--single > .Select-control .Select-value {
+  @extend %extend_1;
 }
