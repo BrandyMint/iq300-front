@@ -1,5 +1,13 @@
 %form#new_comment.comments-form.main-form.comments-form-block-fixed{role: 'comment-form',
   data: {'fixed-block-parent' => '@fixed-block-parent-comments'}}
+  .comments-move-bottom-btn-block.with-unread-comments
+    %p.text-center.unread-comments-content
+      %span.badge.badge-primary{ role: 'new-messages-count' }
+        2
+    %a.btn.btn-default.btn-circle-plus.btn-lg
+      %span.btn-circle-plus-icon
+        %i.fa.fa-chevron-down
+
   .comment-form-content{role: 'comment-form-content'}
     %div{ role: 'tabpanel' }
       .comment-tab-content
