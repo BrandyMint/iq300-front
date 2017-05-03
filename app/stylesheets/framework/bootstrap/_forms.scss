@@ -338,6 +338,8 @@ input[type="checkbox"],
 
 .form-control-static {
   margin-bottom: 0; // Remove default margin from `p`
+  padding-top: ($padding-base-vertical - 1);
+  padding-bottom: ($padding-base-vertical - 1);
 }
 
 
@@ -474,15 +476,15 @@ input[type="checkbox"],
   // Make form groups behave like rows
   .form-group {
     @include make-row();
-    .form-group { 
+    .form-group {
       margin-left: 0;
       margin-right: 0;
     }
   }
 
   .form-control-static {
-    padding-top: ($padding-base-vertical + 1);
-    padding-bottom: ($padding-base-vertical + 1);
+    padding-top: ($padding-base-vertical - 1);
+    padding-bottom: ($padding-base-vertical - 1);
   }
 
   // Reset spacing and right align labels, but scope to media queries so that
