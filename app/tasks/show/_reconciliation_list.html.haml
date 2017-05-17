@@ -1,5 +1,5 @@
 .reconciliation-list{"data-can-manage" => "true", "data-task-id" => "8306", "role-task-reconciliation-list" => "ready"}
-  .content-group-sm
+  .content-group
     .row
       .col-md-3
         .checkbox-inline
@@ -11,12 +11,48 @@
         %br
         Заказчик не сможет принять задачу, пока она не будет согласована задача всеми из этого списка.
   .collapse.in.reconciliation-list-container{:role => "list-container reconciliation-list-container"}
+    .content-group
+      .project-state-block
+        .row
+          .col-sm-8
+            .project-state-title
+              %strong
+                Статус:
+            .active.project-state
+              Инициализация
+            →
+            .inactive.project-state
+              В работе
+            →
+            .inactive.project-state
+              Согласовано
+          .col-sm-4
+            .pull-right
+              %a.btn.btn-outline-primary
+                Начать согласование
+              %a.btn.btn-outline-primary
+                %i.fa.fa-edit
+                Редактировать
+    .content-group
+      .content-group-sm
+        %strong Описание:
+        %span С другой стороны дальнейшее развитие различных форм деятельности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что начало повседневной работы по формированию позиции играет важную роль в формировании форм развития. С другой стороны укрепление и развитие структуры требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.
+      .content-group-sm
+        %strong Тип согласования:
+        %span Параллельное
+        %i.fa.fa-question-circle
+
+
     %div{"data-reactid" => ".2", "data-test-task-reconciliation-list" => "true"}
       .content-group-sm
         %a.btn.btn-outline-primary{role: 'tooltip conference-add-member-btn', data: {'original-title' => 'Добавить участника', placement: 'bottom'}}
           %i.fa.fa-plus{"data-reactid" => ".2.0.0"}
           Добавить согласователя
-      %table.table.table-condensed.form-inline{"data-reactid" => ".2.1"}
+        .pull-right
+          %a.btn.btn-outline-primary
+            %i.fa.fa-print
+            Печать
+      %table.table.table-condensed.form-inline.table-hover{"data-reactid" => ".2.1"}
         %thead{"data-reactid" => ".2.1.0"}
           %tr{"data-reactid" => ".2.1.0.0"}
             %th{"data-reactid" => ".2.1.0.0.0"} Согласователь
@@ -25,7 +61,7 @@
             %th{"data-reactid" => ".2.1.0.0.3"}
         - data.users.each_with_index do |user, i|
           %tbody{"data-reactid" => ".2.1.1"}
-            %tr.community-roles-table-cell{"data-reactid" => ".2.1.1.$4", "data-test-reconciliation-member" => "true"}
+            %tr.community-roles-table-cell.sortable-helper{"data-reactid" => ".2.1.1.$4", "data-test-reconciliation-member" => "true"}
               %td{"data-reactid" => ".2.1.1.$4.0"}
                 .user-block-inline
                   .user-block-avatar
