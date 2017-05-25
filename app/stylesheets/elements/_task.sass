@@ -176,15 +176,14 @@ a.task-box-block-link
     color: $text-color-dark
 
 .task-draft,
-.task-canceled
+.task-canceled,
+.task-accepted
   @extend %task-draft-style
 
 .task-accepted
+  border-left-color: $brand-success
   .project-task-box-title-block a
     color: #666 !important
-    text-decoration: line-through !important
-    &:hover
-      text-decoration: underline !important
 
 .task-completed,
 .task-accepted,
