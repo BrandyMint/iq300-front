@@ -1,32 +1,28 @@
-%table.table{role: 'list-view-switch', style: 'display: none;'}
+%table.table{role: 'list-view-switch'}
   %thead
     %tr
-      - data.crm.clients.attributes.each_pair do |k, v|
+      - data.crm.clients.people_attributes.each_pair do |k, v|
         %th= v
   %tbody
-    - data.crm.clients.data.each do |c|
+    - data.crm.clients.people_data.each do |c|
       %tr
-        - data.crm.clients.attributes.each_pair do |k, v|
+        - data.crm.clients.people_attributes.each_pair do |k, v|
           %td{class: "crm-clients-list-#{k}"}
-            -# if c.send(k.title).present?
-              = c.send(k)
-            - if k.to_s == "stage"
-              %strong{class: "text-color-#{c.stage.color}"}= c.stage.title
-              %br
-              .text-muted
-                - for i in 1..4
-                  %i.fa.icon-size-8{class: "#{i <= c.stage.position ? 'fa-circle' : 'fa-circle-o'}"}
-            - elsif c.send(k).is_a? Hash
+            - if c.send(k).is_a? Hash
               - if k.to_s == "client"
-                %a{href: "/crm/clients/show"}
+                %a{href: "/crm/clients/show/people"}
                   %strong= c.send(k).title
+              - elsif k.to_s == 'phone'
+                %a{href: '/crm/clients/show/people/calls/outgoing', data: {container: 'body', title: c.client.title, content: "Позвонить на <strong>#{c.send(k).title}</strong>", placement: 'bottom', toggle: 'popover', trigger: 'hover', html: 'true'}}
+                  %i.fa.fa-phone
+                  = c.send(k).title
               - else
                 %a{href: "#{c.send(k).link.present? ? c.send(k).link : ''}"}
                   = c.send(k).title
             - else
               = c.send(k)
 
-.crm-clients-list{role: 'list-view-switch'}
+.crm-clients-list{role: 'list-view-switch', style: 'display: none;'}
   - data.crm.clients.data.each do |c|
     %article
       %a.crm-clients-list-card{href: '/crm/clients/show'}

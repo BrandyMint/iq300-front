@@ -1,0 +1,26 @@
+.row
+  .col-md-6
+    .community-profile.content-group
+      %h2.community-profile-contacts-title Информация и контакты
+      .content-group-sm
+        Кабельные и беспроводные сети. Оборудование для IT-коммуникаций
+      %ul.unstyled-list
+        %li
+          Телефон:
+          &nbsp;
+          %a{href: '/crm/clients/show/people/calls/outgoing', data: {container: 'body', title: 'ООО МАУ ЦИТ Набережные Челны', content: 'Позвонить на <strong>+7 (8552) 30-55-42</strong>', placement: 'bottom', toggle: 'popover', trigger: 'hover', html: 'true'}}
+            %i.fa.fa-phone
+            +7 (8552) 30-55-42
+        %li
+        %li
+          E-mail:
+          &nbsp;
+          %a{:href => "#"}  welcome@romaska.ru
+  .col-md-6
+    %h2.community-profile-contacts-title Последняя активность
+    - for i in 0..3
+      .content-group-sm
+        14.01.2016 16:23
+        %a Артур Шайдуллин
+        добавил контакт
+        %a Таггарт Дэгни

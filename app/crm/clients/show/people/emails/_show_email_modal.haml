@@ -1,0 +1,29 @@
+- email = data.crm.clients.people_emails.first
+.project-wizard-modal-backdrop{role: 'show-email-modal', style: 'display:none'}
+  .project-wizard-modal-container
+    .project-wizard-modal
+      .project-wizard-modal-close-btn{href: '[role*="show-email-modal"]', data: {toggle: :toggle}} ×
+      .project-wizard-modal-content.project-wizard-modal-content-wide.block-scrollable-y
+        .project-wizard-modal-body
+          .form-group
+            %h3= email.subject
+          .form-group
+            .row
+              .col-sm-1
+                %strong От
+              .col-sm-11
+                %a= email.author
+          .form-group
+            .row
+              .col-sm-1
+                %strong Кому
+              .col-sm-11
+                %a client@example.com
+          .form-group
+            .row
+              .col-sm-1
+                %strong Дата
+              .col-sm-11
+                = email.date
+          .form-group
+            = email.body

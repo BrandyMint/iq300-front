@@ -1,0 +1,44 @@
+.page-title
+  .row
+    .col-sm-9
+      %h3.task-title.task-view-column-title.content-group
+        = data.crm.clients.people_data.first.client.title
+    .col-sm-3
+      .dropdown.pull-right
+        = link_to '#', class: 'btn btn-sm btn-default text-color-gray-light', 'data-toggle' => 'dropdown' do
+          Управление
+          %i.fa.fa-caret-down
+        %ul.dropdown-menu
+          %li
+            %a
+              Редактировать
+            %a
+              Удалить
+      .clearfix
+
+  .row
+    .col-sm-3
+      = link_to '#', class: 'text-color-gray' do
+        = image_tag data.avatars[5].url, class: 'project-header-avatar pull-left'
+        .project-header-avatar-content
+          .text-muted Менеджер
+          Толкачев Иван
+    .col-sm-2
+      .project-header-avatar-content
+        .text-muted
+          Дата добавления
+        %strong
+          17.03.2016
+    .col-sm-2
+      .project-header-avatar-content
+        .text-muted
+          Категория
+        %strong
+          Позитивный
+    .col-sm-2
+      .project-header-avatar-content
+        .text-muted
+          Канал
+        %strong
+          Интернет
+    .col-sm-3.text-right

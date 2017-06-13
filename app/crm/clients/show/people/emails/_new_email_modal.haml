@@ -1,0 +1,30 @@
+.project-wizard-modal-backdrop{role: 'new-email-modal', style: 'display:none'}
+  .project-wizard-modal-container
+    .project-wizard-modal
+      .project-wizard-modal-close-btn{href: '[role*="new-email-modal"]', data: {toggle: :toggle}} ×
+      .project-wizard-modal-content.project-wizard-modal-content-wide.block-scrollable-y
+        .project-wizard-modal-body
+          .form-group
+            %h3 Новое письмо
+          .form-group
+            .row
+              .col-sm-3
+                %strong Email получателя
+              .col-sm-9
+                %a client@example.com
+          .form-group
+            .row
+              .col-sm-3
+                %strong Тема письма
+              .col-sm-9
+                %input.form-control
+          .form-group
+            %textarea{ role: 'tinymce-input' }
+          .pull-right
+            %a.btn.btn-default
+              %i.fa.fa-paperclip
+              &nbsp;
+              Прикрепить файл
+            %a.btn.btn-primary
+              Отправить
+

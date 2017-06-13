@@ -9,6 +9,7 @@
   /<![endif]
   %head
     = partial 'layouts/head'
+    = yield_content(:head_content)
   %body{class: current_page.data.body_class || 'page'}
     .application-wrapper{role: 'application-wrapper'}
       = partial 'shared/header'
