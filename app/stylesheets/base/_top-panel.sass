@@ -64,6 +64,12 @@
     @each $s in top, bottom
       #{$s}: ($topPanelHeight - $input-height-base - 2px) / 2
 
+.top-panel-fixed-container
+  padding: 10px 0
+
+.top-panel-fixed-community-image
+  height: 21px
+
 .top-panel-block-left
   margin-right: $grid-gutter-width/2
 
@@ -77,3 +83,8 @@
   &.top-panel-btn-hidden
     +translate(0, -100%)
     opacity: 0
+
+.top-panel-fixed-block
+  position: fixed
+  width: 1184px
+  z-index: 601
