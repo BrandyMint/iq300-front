@@ -15,6 +15,10 @@ npm-debug.log
 # Ignore the build directory
 /build
 build/
+
+config/keys.coffee
+.awspublish*
+
 *~
 # Ignore Sass' cache
 /.sass-cache

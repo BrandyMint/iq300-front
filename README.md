@@ -29,18 +29,12 @@ Gulp-задача собирает в `app/tmp/assets` все ассеты, пр
 
 `./frontend_build` — делаем билд
 
-`STAGE=<stage_name> ./frontend_deploy` — деплоим на
-`<stage_name>.iq300-dev.ru`, по номеру стейджа предварительно
-договариваемся и указываем в STAGE — например, `STAGE=frontend3 ./frontend_deploy`
+вписываем AWS key/secret в `config/keys.coffee` (пользователь iq300_frontend в IAM)
 
-```
-./frontend_build && STAGE=<stage_name> ./frontend_deploy
-```
+`gulp s3 --staging`
+`gulp s3 --staging2`
 
-При первом деплое нужно связаться c [elvir](https://github.com/elvir) или
-[sibsfinx](https://github.com/sibsfinx) и скинуть свой ssh-ключ.
-
-
+можно создавать s3 bucket-ы по примеру iq300-frontend-stage, добавлять в config/keys.coffee и деплоить `gulp s3 --<key_name>`
 
 ## Использование в основном проекте
 
