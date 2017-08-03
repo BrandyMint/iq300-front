@@ -1,0 +1,26 @@
+.crm-calls-connection-form-container
+  .form-group
+    %h3.text-center
+      Комков Степан Алексеевич (+79094315634)
+  .form-group
+    .col-sm-3.col-sm-offset-2
+      .crm-calls-phone-pic-container.text-center
+        %i.fa.fa-phone.fa-5x
+    .col-sm-2
+      .crm-calls-indicators-container.text-center
+        - for i in 0..3
+          .crm-calls-indicators-item
+    .col-sm-3
+      .crm-calls-user-pic-container.text-center
+        %img.crm-calls-user-pic{src: '/images/default-user-avatar.png'}
+    .clearfix
+  .form-group
+    .text-center
+      %h3
+        Установка соединения...
+  .text-center
+    %a.btn.btn-lg.btn-danger{ href: '/crm/clients/show/people/calls' }
+      %h4
+        %i.fa.fa-phone.fa-rotate-135
+        &nbsp;
+        Завершить

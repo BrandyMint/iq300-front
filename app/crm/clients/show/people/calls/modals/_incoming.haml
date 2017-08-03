@@ -1,0 +1,34 @@
+.crm-calls-connection-form-container
+  .form-group
+    %h3.text-center
+      Комков Степан Алексеевич (+79094315634)
+    %h4.text-center
+      Входящий звонок на +79173451231
+  .form-group
+    .col-sm-3.col-sm-offset-2
+      .crm-calls-user-pic-container.text-center
+        %img.crm-calls-user-pic{src: '/images/default-user-avatar.png'}
+    .col-sm-2
+      .crm-calls-indicators-container.text-center
+        - for i in 0..3
+          .crm-calls-indicators-item
+    .col-sm-3
+      .crm-calls-phone-pic-container.text-center
+        %i.fa.fa-phone.fa-5x
+    .clearfix
+  .form-group
+    .text-center
+      %h4
+        Для начала звонка необходимо поднять телефонную трубку
+  .text-center
+    .btn-toolbar
+      %a.btn.btn-lg.btn-success{ href: '/crm/clients/show/people/calls/connected' }
+        %h4
+          %i.fa.fa-phone
+          &nbsp;
+          Принять
+      %a.btn.btn-lg.btn-danger{ href: '/crm/clients/show/people/calls' }
+        %h4
+          %i.fa.fa-phone.fa-rotate-135
+          &nbsp;
+          Завершить

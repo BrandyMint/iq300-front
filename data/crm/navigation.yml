@@ -10,6 +10,9 @@ activities:
   title: Активности
 projects:
   title: Проекты
+phone:
+  title: Телефония
+  link: '/crm/phone'
 reports:
   title: Отчётыa
 settings:

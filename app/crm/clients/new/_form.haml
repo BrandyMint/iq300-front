@@ -4,95 +4,162 @@
       %h3.content-group-sm
         Новый клиент
       Заполните общую информацию о клиенте
-
     .content-group
       .row
         %label.control-label.col-sm-2
-          Клиент
+          Выберите тип клиента
         .col-sm-5
-          %input.form-control{:placeholder => "Название организации", :type => "text"}
-        .col-sm-5
-          %a.btn.btn-link-primary.btn-link-plain
-            или выбрать сообщество
+          .btn-group{role: 'list-view-switch', data: {toggle: :toggle, target: '[role*="list-view-switch"]'}}
+            %a.btn.btn-primary
+              Юридическое лицо
+            %a.btn.btn-default
+              Физическое лицо
+          .btn-group{role: 'list-view-switch', data: {toggle: :toggle, target: '[role*="list-view-switch"]'}, style: 'display: none'}
+            %a.btn.btn-default
+              Юридическое лицо
+            %a.btn.btn-primary
+              Физическое лицо
 
-    .content-group
-      .row
-        %label.control-label.col-sm-2
-          Категория
-        .col-sm-5
-          %select.form-control
-            %option Без категории
-            - data.crm.clients.categories.each_pair do |k,v|
-              %option= v
-
-    .content-group
-      .row
-        %label.control-label.col-sm-2
-          Организационно-правовая форма
-        .col-sm-5
-          %select.form-control
-            %option ИП
-            %option AO
-            %option ПАО
-
-    .content-group
-      .row
-        %label.control-label.col-sm-2
-          Юридический адрес
-        .col-sm-5
-          %input.form-control{:placeholder => "", :type => "text"}
-
-    .content-group
-      .row
-        %label.control-label.col-sm-2
-          Почтовый адрес
-        .col-sm-5
-          %input.form-control{:placeholder => "", :type => "text"}
-
-    .content-group
-      .row
-        %label.control-label.col-sm-2
-          Руководитель
-        .col-sm-5
-          %input.form-control{:placeholder => "Фамилия, имя, отчество", :type => "text"}
-        .col-sm-5
-          %a.btn.btn-link-primary.btn-link-plain
-            или выбрать пользователя
-
-    %hr.content-group
-
-    .content-group
-      %h3.content-group-sm
-        Реквизиты
-
-    - "ИНН, КПП, ОГРН".split(", ").each do |r|
+    %div{role: 'list-view-switch', style: 'display: none'}
       .content-group
         .row
           %label.control-label.col-sm-2
-            = r
+            ФИО
           .col-sm-5
-            %input.form-control{:placeholder => "", :type => "number"}
+            %input.form-control{ placeholder: 'Иванов Иван Иванович' }
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Телефон
+          .col-sm-5
+            %input.form-control{ placeholder: '+79001231212' }
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Электронная почта
+          .col-sm-5
+            %input.form-control{ placeholder: 'client@example.com' }
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Ответственный менеджер
+          .col-sm-5
+            %select.form-control
+              %option Выберите пользователя
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Канал
+          .col-sm-5
+            %select.form-control
+              %option Выберите канал
+              %option Интернет
+              %option Реклама
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Категория
+          .col-sm-5
+            %select.form-control
+              %option Без категории
+              - data.crm.clients.categories.each_pair do |k,v|
+                %option= v
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Описание
+          .col-sm-5
+            %textarea.form-control{rows: 5}
 
-    %hr.content-group
+    %div{role: 'list-view-switch'}
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Клиент
+          .col-sm-5
+            %input.form-control{:placeholder => "Название организации", :type => "text"}
+          .col-sm-5
+            %a.btn.btn-link-primary.btn-link-plain
+              или выбрать сообщество
 
-    .content-group
-      %h3.content-group-sm
-        Контактное лицо
-      Больше контактов можно добавить после создания клиента
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Категория
+          .col-sm-5
+            %select.form-control
+              %option Без категории
+              - data.crm.clients.categories.each_pair do |k,v|
+                %option= v
 
-    = partial 'crm/clients/new/contact'
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Организационно-правовая форма
+          .col-sm-5
+            %select.form-control
+              %option ИП
+              %option AO
+              %option ПАО
 
-    .content-group
-      .row
-        %label.control-label.col-sm-2
-          Ответственный
-        .col-sm-5
-          %select.form-control
-            %option Без категории
-            - data.crm.clients.categories.each_pair do |k,v|
-              %option= v
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Юридический адрес
+          .col-sm-5
+            %input.form-control{:placeholder => "", :type => "text"}
 
-    %hr.content-group
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Почтовый адрес
+          .col-sm-5
+            %input.form-control{:placeholder => "", :type => "text"}
+
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Руководитель
+          .col-sm-5
+            %input.form-control{:placeholder => "Фамилия, имя, отчество", :type => "text"}
+          .col-sm-5
+            %a.btn.btn-link-primary.btn-link-plain
+              или выбрать пользователя
+
+      %hr.content-group
+
+      .content-group
+        %h3.content-group-sm
+          Реквизиты
+
+      - "ИНН, КПП, ОГРН".split(", ").each do |r|
+        .content-group
+          .row
+            %label.control-label.col-sm-2
+              = r
+            .col-sm-5
+              %input.form-control{:placeholder => "", :type => "number"}
+
+      %hr.content-group
+
+      .content-group
+        %h3.content-group-sm
+          Контактное лицо
+        Больше контактов можно добавить после создания клиента
+
+      = partial 'crm/clients/new/contact'
+
+      .content-group
+        .row
+          %label.control-label.col-sm-2
+            Ответственный
+          .col-sm-5
+            %select.form-control
+              %option Без категории
+              - data.crm.clients.categories.each_pair do |k,v|
+                %option= v
+
+      %hr.content-group
 
     .content-group
       %input.btn.btn-primary.btn-lg{"data-disable-with" => "Отправка...", "mix-target" => "save_task_btn", :name => "commit", :role => "input-submit", "test-submit-task" => "true", :type => "submit", :value => "Создать клиента"}/

@@ -1,0 +1,127 @@
+.application-content
+  = partial 'crm/clients/show/people/calls/top_panel'
+  .application-content-block
+    .contacts-list-container.form-container-compact
+      -#.row
+        .col-sm-1.docs-list-item-icon-col
+          %strong №
+        .col-sm-2
+          %strong Сотрудник
+        .col-sm-2
+          %strong Номер телефона
+        .col-sm-2
+          %strong Тип звонка
+        .col-sm-1
+          %strong Время звонка
+        .col-sm-2
+          %strong Дата вызова
+        .col-sm-2
+          %strong Статус
+      -# %hr
+      -# 6.times do |i|
+        .row
+          .col-sm-1.docs-list-item-icon-col
+            %strong= i * 3 + 1
+          .col-sm-2
+            %a{href: '/profile'} Игорь Викулов
+          .col-sm-2
+            +79172221295
+          .col-sm-2
+            Исходящий
+          .col-sm-1
+            12 сек
+          .col-sm-2
+            12.06.17 11:22:07
+          .col-sm-2
+            Успешный звонок
+        .row
+          .col-sm-1.docs-list-item-icon-col
+            %strong= i * 3 + 2
+          .col-sm-2
+            %a{href: '/profile'} Игорь Викулов
+          .col-sm-2
+            +79172221295
+          .col-sm-2
+            Исходящий
+          .col-sm-1
+            0 сек
+          .col-sm-2
+            12.06.17 11:22:07
+          .col-sm-2
+            Отклонен
+        .row
+          .col-sm-1.docs-list-item-icon-col
+            %strong= i * 3 + 3
+          .col-sm-2
+            %a{href: '/profile'} Игорь Викулов
+          .col-sm-2
+            +79172221295
+          .col-sm-2
+            Исходящий
+          .col-sm-1
+            0 сек
+          .col-sm-2
+            12.06.17 11:22:07
+          .col-sm-2
+            Отменен
+      %table.table
+        %thead
+          %tr
+            %th
+              %strong №
+            %th
+              %strong Сотрудник
+            %th
+              %strong Номер телефона
+            %th
+              %strong Тип звонка
+            %th
+              %strong Время звонка
+            %th
+              %strong Дата вызова
+            %th
+              %strong Статус
+            %th
+            -# %th
+            -#   %strong Стоимость
+        %tbody
+          - 6.times do |i|
+            %tr
+              %td
+                %strong= i * 3 + 1
+              %td
+                %a{href: '/profile'} Игорь Викулов
+              %td +79172221295
+              %td Исходящий
+              %td 12 сек
+              %td 12.06.17 11:22:07
+              %td Успешный звонок
+              %td
+                %a{href: '/crm/clients/show/people/calls/history'} Подробнее
+              -# %td 1.47 руб.
+            %tr
+              %td
+                %strong= i * 3 + 3
+              %td
+                %a{href: '/profile'} Игорь Викулов
+              %td +79172221295
+              %td Исходящий
+              %td 0 сек
+              %td 12.06.17 11:22:07
+              %td Отклонен
+              %td
+                %a{href: '/crm/clients/show/people/calls/history'} Подробнее
+              -# %td 1.22 ₽
+            %tr
+              %td
+                %strong= i * 3 + 2
+              %td
+                %a{href: '/profile'} Игорь Викулов
+              %td +79172221295
+              %td Исходящий
+              %td 0 сек
+              %td 12.06.17 11:22:07
+              %td Отменен
+              %td
+                %a{href: '/crm/clients/show/people/calls/history'} Подробнее
+              -# %td 0 ₽ (₽ или руб.)

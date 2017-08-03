@@ -1,0 +1,30 @@
+= partial 'crm/clients/show/people/emails/new_email_modal'
+= partial 'crm/clients/show/people/emails/show_email_modal'
+.application-content
+  = partial 'crm/clients/show/people/emails/top_panel'
+  .application-content-block
+    .contacts-list-container.form-container-compact
+      %table.table
+        %thead
+          %tr
+            %th
+              %strong Тип
+            %th
+              %strong Автор
+            %th
+              %strong Тема
+            %th
+              %strong Письмо
+            %th
+              %strong Дата
+        %tbody
+          - 6.times do |i|
+            - data.crm.clients.people_emails.each do |email|
+              %tr
+                %td= email.kind
+                %td
+                  %a{href: '/profile'}= email.author
+                %td= truncate(email.subject, length: 50)
+                %td
+                  %a{href: '[role*="show-email-modal"]', data: {toggle: :toggle}}= truncate(email.body, length: 150)
+                %td= email.date

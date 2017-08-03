@@ -1,0 +1,12 @@
+---
+body_class: crm-index
+layout: application_modular
+nav_item: crm
+---
+
+- content_for :filters_column do
+  = partial 'crm/filters', locals: {active: :phone}
+
+.contacts-list-container.form-container-compact
+  = partial 'crm/phone/details'
+

@@ -1,0 +1,33 @@
+---
+body_class: crm-index
+layout: application_modular
+nav_item: crm
+---
+
+- content_for :back_button do
+  %a.btn.btn-lg{:href => "/crm"}
+    %span.fa.fa-angle-left.icon-size-16
+    Список клиентов
+
+- content_for :bottom_block do
+  = partial 'comments/form'
+
+%section.view-column.view-column-gray
+  .view-column-header
+    = partial 'crm/clients/show/title'
+  = partial 'shared/tabnav', locals: {nav: data.crm.clients.people.tabs, active: :notes, css_class: "view-column-tabnav"}
+  .tab-content.view-column-tab-content
+    .task-discussion{"role-task-discussion" => "ready"}
+      .comments-list{role: 'fixed-block-parent-comments', "data-channel" => "private-discussion-137412:comments", "data-url" => "/discussions/137412/comments", "data-with-button" => ""}
+        .text-center
+          %a.btn.btn-default{:href => "#", :role => "infinite-list-button"} Загрузить еще 100
+          .pull-right.task-comments-filter.hide
+            %input#task-comments-filter{:name => "task-comments-filter", :type => "checkbox", :value => "task-comments-filter"}/
+            %label{:for => "task-comments-filter"} Скрывать активность
+          .clearfix
+
+        .infinite-list{:role => "ui-infinite-list"}
+          .more-button-data{"data-current-page" => "1", "data-limit-value" => "10", "data-total-pages" => "3", :style => "display:none;"}
+          - for i in 0..3
+            = partial 'tasks/show/discussion_list'
+

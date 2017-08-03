@@ -7,7 +7,12 @@
           .content-group-sm
             Кабельные и беспроводные сети. Оборудование для IT-коммуникаций
           %ul.unstyled-list
-            %li Телефон: +7 (8552) 30-55-42
+            %li
+              Телефон:
+              &nbsp;
+              %a{href: '/crm/clients/show/people/calls/outgoing', data: {container: 'body', title: 'ООО МАУ ЦИТ Набережные Челны', content: 'Позвонить на <strong>+7 (8552) 30-55-42</strong>', placement: 'bottom', toggle: 'popover', trigger: 'hover', html: 'true'}}
+                %i.fa.fa-phone
+                +7 (8552) 30-55-42
             %li
               %a{:href => "#"} http://www.starbucks.com
             %li
@@ -20,5 +25,3 @@
             %a Артур Шайдуллин
             добавил контакт
             %a Таггарт Дэгни
-
-

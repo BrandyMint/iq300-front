@@ -1,0 +1,44 @@
+%h4
+  Звонок на +79173451231
+%hr
+.row
+  .col-sm-2
+    %img.crm-calls-user-pic{src: '/images/default-user-avatar.png', style: 'width: 100%; height: 100%'}
+  .col-sm-10
+    %h4.crm-calls-client-title Комков Степан Алексеевич
+%hr
+.row
+  .col-sm-5
+    %img.project-header-avatar.pull-left{src: 'https://iq300.s3.amazonaws.com/uploads/user_profile/photo/1394/medium_fc37398f-9139-41cd-be1c-1d252d5f50f8.jpg'}/
+    .project-header-avatar-content
+      %p Ответственный
+      %a{:href => "/users/2"} Александр Мещеряков
+  .col-sm-2
+    %strong Категория
+    %strong Канал
+    %strong Город
+  .col-sm-5
+    %p Позитивный
+    %p Email рассылка
+    %p Набережные Челны (GMT+3:00)
+%hr
+.text-center
+  .content-group-xs
+    %strong Соединение установлено
+  Продолжительность разговора 1:23 мин.
+%hr
+  %textarea.form-control{rows: 3, placeholder: 'Заметка к разговору'}
+%hr
+.btn-group
+  %button.btn.btn-default
+    %i.fa.fa-pause
+  %button.btn.btn-default
+    %i.fa.fa-microphone
+  %button.btn.btn-default
+    %i.fa.fa-arrow-right
+.pull-right
+  %a.btn.btn-danger{href: '/crm/clients/show/people/calls'}
+    %i.fa.fa-phone.fa-rotate-135
+    &nbsp;
+    Завершить
+.clearfix

@@ -1,0 +1,106 @@
+.application-content-top-panel
+  .top-panel-container
+    .list-panel-container
+      .container-fluid
+        .row
+          .col-sm-12
+            .list-panel-block.list-panel-block-left
+              .btn-group
+                .dropdown.dropdown-inline
+                  %a.btn.btn-link-plain.btn-link-gray{"data-toggle" => "dropdown", :href => "#"}
+                    %i.fa.fa-filter
+                    3 из 3
+                  %ui.dropdown-menu
+                    %li
+                      %a{:href => "#"} Сбросить все фильтры
+              .btn-group
+                .btn-group
+                  %button.multiselect.dropdown-toggle.btn-link-gray.btn.btn-link-plain{"data-toggle" => "dropdown", :title => "Все ответственные ", :type => "button"}
+                    %span.multiselect-selected-text
+                      %i.fa.fa-users
+                      %span.multiselect-select-text Все сотрудники
+                      %i.fa.fa-caret-down.undefined
+                  %ul.multiselect-container.dropdown-menu{:style => "max-height: 250px; overflow-y: auto; overflow-x: hidden;"}
+                  %ul.multiselect-container.dropdown-menu{:style => "max-height: 250px; overflow-y: auto; overflow-x: hidden;"}
+                    %li.active
+                      %a{:tabindex => "0"}
+                        %label.radio
+                          %input{:type => "radio", :value => ""}/
+                          Все сотрудники
+                    %li
+                      %a{:tabindex => "0"}
+                        %label.radio
+                          %input{:type => "radio", :value => "145"}/
+                          Мало Девилья - 2
+                    %li
+                      %a{:tabindex => "0"}
+                        %label.radio
+                          %input{:type => "radio", :value => "13"}/
+                          Арсений Коршунов - 1
+              .btn-group
+                .btn-group
+                  %button.multiselect.dropdown-toggle.btn-link-gray.btn.btn-link-plain{"data-toggle" => "dropdown", :title => "Выберите стадии", :type => "button"}
+                    %span.multiselect-selected-text
+                      %i.fa.fa-list
+                      %span.multiselect-select-text Все звонки
+                      %i.fa.fa-caret-down.undefined
+                  %ul.multiselect-container.dropdown-menu{:style => "max-height: 250px; overflow-y: auto; overflow-x: hidden;"}
+                  %ul.multiselect-container.dropdown-menu{:style => "max-height: 250px; overflow-y: auto; overflow-x: hidden;"}
+                    %li.multiselect-item.multiselect-all
+                      %a.multiselect-all{:tabindex => "0"}
+                        %label.checkbox
+                          %input{:type => "checkbox", :value => "multiselect-all"}/
+                          Выбрать все
+                    %li.disabled
+                      %a{:tabindex => "-1"}
+                        %label.checkbox
+                          %input{:disabled => "disabled", :type => "checkbox", :value => "processing"}/
+                          Входящие
+                    %li.disabled
+                      %a{:tabindex => "-1"}
+                        %label.checkbox
+                          %input{:disabled => "disabled", :type => "checkbox", :value => "failed"}/
+                          Исходящие
+              .btn-group
+                .btn-group
+                  %button.multiselect.dropdown-toggle.btn-link-gray.btn.btn-link-plain{"data-toggle" => "dropdown", :title => "Выберите стадии", :type => "button"}
+                    %span.multiselect-selected-text
+                      %i.fa.fa-list
+                      %span.multiselect-select-text Все статусы
+                      %i.fa.fa-caret-down.undefined
+                  %ul.multiselect-container.dropdown-menu{:style => "max-height: 250px; overflow-y: auto; overflow-x: hidden;"}
+                  %ul.multiselect-container.dropdown-menu{:style => "max-height: 250px; overflow-y: auto; overflow-x: hidden;"}
+                    %li.multiselect-item.multiselect-all
+                      %a.multiselect-all{:tabindex => "0"}
+                        %label.checkbox
+                          %input{:type => "checkbox", :value => "multiselect-all"}/
+                          Выбрать все
+                    %li.disabled
+                      %a{:tabindex => "-1"}
+                        %label.checkbox
+                          %input{:disabled => "disabled", :type => "checkbox", :value => "processing"}/
+                          Успешный звонок
+                    %li.disabled
+                      %a{:tabindex => "-1"}
+                        %label.checkbox
+                          %input{:disabled => "disabled", :type => "checkbox", :value => "processing"}/
+                          Занято
+                    %li.disabled
+                      %a{:tabindex => "-1"}
+                        %label.checkbox
+                          %input{:disabled => "disabled", :type => "checkbox", :value => "failed"}/
+                          Вызов отменен
+        .collapse
+          .list-panel-divider
+          .list-panel-block
+            .row
+              .col-md-6.col-md-offset-3
+                %form
+                  .input-group.input-group-block
+                    %input.form-control{:placeholder => "Поиск", :type => "search", :value => ""}/
+                    .input-group-btn
+                      %a.btn.btn-default
+                        %i.fa.fa-search
+              .col-sm-3.text-right
+                %a.btn.btn-sm.btn-link.btn-link-plain{:href => "#"}
+                  %i.fa.fa-times.icon-color-gray-light.icon-size-14
