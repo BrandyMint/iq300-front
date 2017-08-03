@@ -22,11 +22,21 @@ reload = browserSync.reload
 debug = require('gulp-debug')
 shell = require('gulp-shell')
 minifyCss = require('gulp-minify-css')
+awspublish = require('gulp-awspublish')
+parallelize = require('concurrent-transform')
+keys = require('./config/keys.coffee')
+minimist = require('minimist')
 
 $ = require("gulp-load-plugins")()
 sourcemaps = require("gulp-sourcemaps")
 
+knownOptions =
+  string: 'env',
+  default: { env: process.env.NODE_ENV || 'staging' }
+
 options = {}
+
+options.cli = minimist(process.argv.slice(2), knownOptions)
 
 options.rewriteCSSDev =
   destination: '/tmp/assets/'
@@ -54,6 +64,9 @@ options.autoprefixer =
 
 options.minifyCss =
   compatibility: '*'
+
+publishers = {}
+threads = 10
 
 gulp.task "sass:watch", ->
   gulp
@@ -210,4 +223,30 @@ gulp.task "watch", [
   # Watch image files
   #gulp.watch "app/images/**/*", ["images"]
   return
+
+createPublisher = (env = 'staging') ->
+  return awspublish.create(
+    region: keys.s3[env].region
+    params: Bucket: keys.s3[env].bucket
+    accessKeyId: keys.s3[env].key
+    secretAccessKey: keys.s3[env].secret)
+
+upload = (env = 'staging') ->
+  publisher = createPublisher(env)
+  gulp.src(['./build/**/*', './dist/**/*'])
+    .pipe(parallelize(publisher.publish(), threads))
+    .pipe(publisher.cache())
+    .pipe awspublish.reporter()
+    .on 'error', (err) ->
+      $.util.log plugins.util.colors.red('s3 upload error:'), '\n', err, '\n'
+      gulp.emit 'end'
+      return
+    .on 'end', ->
+      $.util.log "http://#{keys.s3[env].bucket}.s3-website.#{keys.s3[env].region}.amazonaws.com"
+
+gulp.task 's3', ->
+  env = process.env.NODE_ENV || 'staging'
+  upload env
+  return
+
 

@@ -1,0 +1,13 @@
+module.exports =
+  s3:
+    staging:
+      region: "eu-central-1"
+      bucket: "iq300-frontend-stage"
+      key: ""
+      secret: ""
+    staging2:
+      region: "eu-central-1"
+      bucket: "iq300-frontend-stage2"
+      key: ""
+      secret: ""
+
