@@ -11,7 +11,7 @@
     "font-awesome": "~4.2.0",
     "fullcalendar": "~2.2.7",
     "highlightjs": "latest",
-    "jquery": "latest",
+    "jquery": "~2.2.4",
     "jquery-autosize": "~1.18.17",
     "jquery.atwho": "~1.0.1",
     "jquery.role": "git://github.com/kossnocorp/role",

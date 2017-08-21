@@ -15,14 +15,14 @@
               %a{href: ""} Сбросить все фильтры
 
       %form.navbar-form.navbar-left
-        %select.form-control.input-sm.btn-link.btn-link-plain{role: 'multiselect-task-states', multiple: 'multiple',
+        -#%select.form-control.input-sm.btn-link.btn-link-plain{role: 'multiselect-task-states', multiple: 'multiple',
             data: {'button-class': 'btn btn-link-plain'}}
           - tasks_filter = ['Черновики', 'Новые', 'В работе', 'На проверке', 'Просроченные', 'Выполненные', 'Отменённые']
           - tasks_filter.each do |f|
             %option= f
         &nbsp;
         -#%span.project-tasks-list-users-filter{role: :tooltip, data: {'original-title' => 'Фильтровать задачи по исполнителям'}}
-        %span.project-tasks-list-users-filter
+        -#%span.project-tasks-list-users-filter
           %select{role: 'multiselect-users', :tabindex => "-1", multiple: 'multiple',
               data: {'button-class': 'btn btn-link-plain'}}
             - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов, Ахмед Сарсенбайулов-Алтынбеков".split(', ')

@@ -54,6 +54,20 @@ $project-tasks-group-header-colors: "blue" $project-tasks-group-header-blue, "ye
 .project-tasks-list-sortable
   padding-bottom: 90px
 
+.project-task-view-subtasks-header
+  background-color: $navbar-default-bg
+  padding-left: $project-task-subtask-block-width + $project-task-spacing - $project-task-checkbox-width
+
+.project-task-view-subtasks-header-btn
+  @extend .btn
+  @extend .btn-outline-gray
+  margin:
+    top: - $border-radius-base*3
+    bottom: 6px
+  font-size: $font-size-small
+  &.project-task-view-subtasks-header-btn-active
+    @extend .btn-primary
+
 .project-task-box
   &, &.task-box
     @extend %project-task-box-style

@@ -1,22 +1,60 @@
+- item_index = locals[:item_index]
 - status = locals[:status]
 - status_accented = locals[:status_accented]
 - root_number = locals[:root_number]
 - children = locals[:children] || true
 - group_color = locals[:group_color] || ''
+- on_control = locals[:on_control]
+- statuses = ['in_work', 'draft', 'overdued', 'completed', 'new']
+- item_index = locals[:item_index] || 0
+- children_collapse = locals[:children_collapse]
 
 .project-task-view.project-task-view-initialized{"data-id" => "10", "data-status" => status, class: "#{status}"}
-  = partial 'projects/tasks/item_body', locals: {status: status, children_count: 4,  number: root_number, is_root: true, group_color: group_color}
+  = partial 'projects/tasks/item_body', locals: {status: status, children_count: 4,  number: root_number, is_root: true, group_color: group_color, on_control: on_control}
   .edit-task-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/10/edit", :style => "display: none;"}
   .new-subtask-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/new?parent_id=10", :style => "display: none;"}
   - if children
-    %ol.project-tasks-list.project-task-view-subtasks-list
-      - statuses = ['in_work', 'draft', 'overdued', 'completed', 'new']
-      - statuses.each_with_index do |status, i|
-        %li.project-tasks-list-item
-          .project-task-view.project-task-view-initialized{"data-id" => "10", "data-status" => status, class: "#{status}"}
-            = partial 'projects/tasks/item_body', locals: {status: status, status_accented: status_accented, children_count: 0, number: "#{root_number}.#{i + 1}", group_color: group_color}
-            .edit-task-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/10/edit", :style => "display: none;"}
-            .new-subtask-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/new?parent_id=10", :style => "display: none;"}
+    .project-task-view-subtasks-header
+      -#%a.project-task-view-subtasks-header-btn{data: {toggle: :collapse, target: '[role*="project-task-view-subtasks-collapse"]'}}
+        = "#{statuses.count} подзадач"
+      - if children_collapse
+        .collapse{role: "project-tasks-view-subtasks-collapse-#{item_index}-#{status}"}
+          %a.btn.btn-link.btn-link-primary{"data-original-title" => "Показать подзадачи",
+            "data-target" => "[role*=\"project-tasks-view-subtasks-collapse-#{item_index}-#{status}\"]",
+            "data-toggle" => (children_collapse) ? "collapse" : '', :rel => "tooltip", :style => "\n    padding: 5px 0 9px;\n    font-size: 12px;\n    font-weight: bold;\n    text-decoration: none;\n"}
+            5 подзадач
+            %i.fa.fa-eye-slash
+        .collapse.in{role: (children_collapse) ? "project-tasks-view-subtasks-collapse-#{item_index}-#{status}" : ''}
+          %a.btn.btn-link.btn-link-gray-light{"data-target" => "[role*=\"project-tasks-view-subtasks-collapse-#{item_index}-#{status}\"]",
+            "data-toggle" => (children_collapse) ? "collapse" : '', :style => "\n    padding: 5px 0 9px;\n    font-size: 12px;\n    /* font-weight: bold; */\n"}
+            5 подзадач
+            %i.fa.fa-eye
+      - else
+        %a.btn.btn-link.btn-link-gray-light{:style => "\n    padding: 5px 0 9px;\n    font-size: 12px;\n    /* font-weight: bold; */\n"}
+          5 подзадач
+          %i.fa.fa-eye
+
+    .project-task-view-subtasks-collapse.collapse.in{role: (children_collapse) ? "project-tasks-view-subtasks-collapse-#{item_index}-#{status}" : ''}
+      %ol.project-tasks-list.project-task-view-subtasks-list
+        - statuses.each_with_index do |status, i|
+          %li.project-tasks-list-item
+            .project-task-view.project-task-view-initialized{"data-id" => "10", "data-status" => status, class: "#{status}"}
+              = partial 'projects/tasks/item_body', locals: {status: status, status_accented: status_accented, children_count: 0, number: "#{root_number}.#{i + 1}", group_color: group_color}
+              .edit-task-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/10/edit", :style => "display: none;"}
+              .new-subtask-form.project-task-form.project-task-form-initialized{"data-url" => "/projects/1/tasks/new?parent_id=10", :style => "display: none;"}
 
 
 
+-#.project-task-view-subtasks-header
+  %a.project-task-view-subtasks-header-btn.btn-outline-gray-light.hide{"data-target" => "[role*=\"project-task-view-subtasks-collapse\"]", "data-toggle" => "collapse"}
+    5 подзадач
+    %i.fa.fa-angle-up
+  %a.btn.btn-link.btn-link-primary{"data-original-title" => "Показать подзадачи", "data-target" => "[role*=\"project-task-view-subtasks-collapse\"]", "data-toggle" => "collapse", :rel => "tooltip", :style => "\n    padding: 5px 0 9px;\n    font-size: 12px;\n    font-weight: bold;\n    text-decoration: none;\n"}
+    5 подзадач
+    %i.fa.fa-eye-slash
+  %a.project-task-view-subtasks-header-btn.btn-primary.hide{"data-target" => "[role*=\"project-task-view-subtasks-collapse\"]", "data-toggle" => "collapse"}
+    5 подзадач
+    %i.fa.fa-angle-down
+  %a.btn.btn-link.btn-link-gray-light{"data-target" => "[role*=\"project-task-view-subtasks-collapse\"]", "data-toggle" => "collapse", :style => "\n    padding: 5px 0 9px;\n    font-size: 12px;\n    /* font-weight: bold; */\n"}
+    5 подзадач
+    %i.fa.fa-eye
