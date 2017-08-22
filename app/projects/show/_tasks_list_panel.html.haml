@@ -79,4 +79,16 @@
         - tasks_filter.each do |f|
           %option= f
     .clearfix
+  .list-panel-subtasks-header
+    .collapse{role: "project-tasks-view-subtasks-collapse-list-panel"}
+      %a.list-panel-subtasks-header-btn.btn-link-primary{"data-original-title" => "Показать все подзадачи",
+        "data-target" => "[role*=\"project-tasks-view-subtasks-collapse-list-panel\"]",
+        "data-toggle" => "collapse", :role => "tooltip"}
+        %strong Показать все подзадачи
+        %i.fa.fa-arrow-circle-o-down
+    .collapse.in{role: "project-tasks-view-subtasks-collapse-list-panel"}
+      %a.list-panel-subtasks-header-btn.btn-link-gray-light{"data-target" => "[role*=\"project-tasks-view-subtasks-collapse-list-panel\"]",
+        'data-original-title' => 'Скрыть все подзадачи', role: :tooltip,
+        "data-toggle" => "collapse"}
+        Скрыть все подзадачи
 
