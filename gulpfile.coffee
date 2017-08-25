@@ -24,8 +24,13 @@ shell = require('gulp-shell')
 minifyCss = require('gulp-minify-css')
 awspublish = require('gulp-awspublish')
 parallelize = require('concurrent-transform')
-keys = require('./config/keys.coffee')
 minimist = require('minimist')
+NotificationCenter = require('node-notifier').NotificationCenter
+
+notifier = new NotificationCenter
+  withFallback: false
+
+keys = require('./config/keys.coffee')
 
 $ = require("gulp-load-plugins")()
 sourcemaps = require("gulp-sourcemaps")
@@ -242,11 +247,24 @@ upload = (env = 'staging') ->
       gulp.emit 'end'
       return
     .on 'end', ->
-      $.util.log "http://#{keys.s3[env].bucket}.s3-website.#{keys.s3[env].region}.amazonaws.com"
+      bucketUrl = "http://#{keys.s3[env].bucket}.s3-website.#{keys.s3[env].region}.amazonaws.com"
+      $.util.log bucketUrl
+      gulp.emit 'uploadSuccess', bucketUrl
 
 gulp.task 's3', ->
   env = process.env.NODE_ENV || 'staging'
   upload env
+  gulp.on 'error', (err) ->
+    notifier.notify
+      title: 'Deploy Error'
+      message: err
+      sound: "Ping"
+  gulp.on 'uploadSuccess', (url) ->
+    $.util.log 'deployed'
+    notifier.notify
+      title: 'Deployed'
+      message: url
+      sound: "Purr"
   return
 
 

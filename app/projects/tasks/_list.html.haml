@@ -49,13 +49,14 @@
                   = link_to 'Отменить', '', class: 'btn btn-default link-gray-light', role: 'project-group-header-form-close'
                 .col-xs-4
                   = link_to 'Удалить', '', class: 'btn btn-default link-danger', role: 'project-group-header-form-close'
-    - ['in_work'].each_with_index do |status, i|
-      - statuses_accented.each do |status_accented|
+    - ['in_work'].each_with_index do |status, k|
+      - statuses_accented.each_with_index do |status_accented, n|
         %li.project-tasks-group
           %div
             .project-tasks-group-content
-              = partial 'projects/tasks/item', locals: {status: status, 
-                  status_accented: status_accented, root_number: (i+987), children: true, group_color: milestone_color}
+              = partial 'projects/tasks/item', locals: {status: status,
+                status_accented: status_accented, root_number: (k+987), children: true,
+                group_color: milestone_color, on_control: (i == 0), children_collapse: (i == 0 && k == 0 && n == 0)}
 
 
   - statuses.each_with_index do |status, i|
@@ -85,7 +86,7 @@
                     = link_to 'Отменить', '', class: 'btn link-gray-light', role: 'project-group-header-form-close'
                   .col-xs-4
                     = link_to 'Удалить', '', class: 'btn link-danger', role: 'project-group-header-form-close'
-      
+
       %li.project-tasks-group
         %div
           .project-tasks-group-content

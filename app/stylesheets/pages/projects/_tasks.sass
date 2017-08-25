@@ -54,6 +54,13 @@ $project-tasks-group-header-colors: "blue" $project-tasks-group-header-blue, "ye
 .project-tasks-list-sortable
   padding-bottom: 90px
 
+.project-task-view-subtasks-header
+  @extend %list-panel-subtasks-header
+  top: 36px
+
+.project-task-view-subtasks-header-btn
+  @extend %list-panel-subtasks-header-btn
+
 .project-task-box
   &, &.task-box
     @extend %project-task-box-style
@@ -145,23 +152,6 @@ a.project-task-box-add-subtask-btn
   @extend .task-box-status-date
   .month
     font-size: $font-size-small
-
-.list-panel
-  @extend %list-panel-container
-
-.list-panel-divider
-  @extend %list-panel-divider
-
-.list-panel-checkbox
-  margin:
-    right: 1em
-  label
-    padding:
-      top: 9px
-      bottom: 9px
-
-.list-panel-checkbox-input
-  margin-right: 3px
 
 .project-tasks-list-users-filters-block
   display: block

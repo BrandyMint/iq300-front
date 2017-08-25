@@ -7,6 +7,7 @@
 - group_color = locals[:group_color] || ''
 - subtask_btn = is_root && true
 - controls_checkbox = true
+- on_control = locals[:on_control]
 
 .task-box.project-task-box{class: "task-#{status} task-#{status_accented} #{subtask_btn ? '' : 'project-task-box-without-subtask-btn'} #{controls_checkbox ? '' : 'project-task-box-without-checkbox'}",
       role: 'jump project-task-box', data: {href: '../../../tasks/show', project_id: project_id}}
@@ -16,6 +17,9 @@
         %input{type: 'checkbox'}
     .project-task-box-level
       = number
+    - if on_control
+      %div
+        .fa.fa-flag.text-color-danger{role: :tooltip, data: {'original-title' => 'На контроле'}}
   - if is_root && subtask_btn
     .project-task-box-add-subtask-btn-block
       = link_to "#", role: :tooltip, data: {'original-title' => 'Добавить подзадачу'}, class: 'project-task-box-add-subtask-btn' do

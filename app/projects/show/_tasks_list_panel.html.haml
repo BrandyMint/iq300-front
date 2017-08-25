@@ -15,14 +15,14 @@
               %a{href: ""} Сбросить все фильтры
 
       %form.navbar-form.navbar-left
-        %select.form-control.input-sm.btn-link.btn-link-plain{role: 'multiselect-task-states', multiple: 'multiple',
+        -#%select.form-control.input-sm.btn-link.btn-link-plain{role: 'multiselect-task-states', multiple: 'multiple',
             data: {'button-class': 'btn btn-link-plain'}}
           - tasks_filter = ['Черновики', 'Новые', 'В работе', 'На проверке', 'Просроченные', 'Выполненные', 'Отменённые']
           - tasks_filter.each do |f|
             %option= f
         &nbsp;
         -#%span.project-tasks-list-users-filter{role: :tooltip, data: {'original-title' => 'Фильтровать задачи по исполнителям'}}
-        %span.project-tasks-list-users-filter
+        -#%span.project-tasks-list-users-filter
           %select{role: 'multiselect-users', :tabindex => "-1", multiple: 'multiple',
               data: {'button-class': 'btn btn-link-plain'}}
             - filter_users = "Ильнур Газизуллин, Шамиль Хамадеев, Эльвир Нуриахметов, Ахмед Сарсенбайулов-Алтынбеков".split(', ')
@@ -79,4 +79,16 @@
         - tasks_filter.each do |f|
           %option= f
     .clearfix
+  .list-panel-subtasks-header
+    .collapse{role: "project-tasks-view-subtasks-collapse-list-panel"}
+      %a.list-panel-subtasks-header-btn.btn-link-primary{"data-original-title" => "Показать все подзадачи",
+        "data-target" => "[role*=\"project-tasks-view-subtasks-collapse-list-panel\"]",
+        "data-toggle" => "collapse", :role => "tooltip"}
+        %strong Показать все подзадачи
+        %i.fa.fa-arrow-circle-o-down
+    .collapse.in{role: "project-tasks-view-subtasks-collapse-list-panel"}
+      %a.list-panel-subtasks-header-btn.btn-link-gray-light{"data-target" => "[role*=\"project-tasks-view-subtasks-collapse-list-panel\"]",
+        'data-original-title' => 'Скрыть все подзадачи', role: :tooltip,
+        "data-toggle" => "collapse"}
+        Скрыть все подзадачи
 
