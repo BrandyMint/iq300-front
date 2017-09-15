@@ -9,7 +9,7 @@
     "cal-heatmap": "~3.4.0",
     "eonasdan-bootstrap-datetimepicker": "https://github.com/sibsfinx/bootstrap-datetimepicker.git#6761822c9",
     "font-awesome": "~4.2.0",
-    "fullcalendar": "~2.2.7",
+    "fullcalendar": "~3.4.0",
     "highlightjs": "latest",
     "jquery": "~2.2.4",
     "jquery-autosize": "~1.18.17",
