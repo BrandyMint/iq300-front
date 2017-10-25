@@ -7,8 +7,10 @@
     "url": "git@github.com:IQ300Ltd/iq300-frontend.git"
   },
   "dependencies": {
+    "gulp": "^3.8.10",
     "gulp-sourcemaps": "~1.1.0",
-    "gulp": "^3.8.10"
+    "react": "^16.0.0",
+    "react-bootstrap-table": "^4.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^5.1.1",
