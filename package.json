@@ -52,6 +52,6 @@
     "node": ">=0.10.32"
   },
   "scripts": {
-    "server": "gulp watch & EXECJS_RUNTIME=Node bundle exec middleman"
+    "start": "gulp watch & EXECJS_RUNTIME=Node bundle exec middleman"
   }
 }
