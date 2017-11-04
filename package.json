@@ -51,6 +51,9 @@
     "node": ">=0.10.32"
   },
   "scripts": {
-    "start": "gulp watch & EXECJS_RUNTIME=Node bundle exec middleman"
+    "start": "gulp watch & EXECJS_RUNTIME=Node bundle exec middleman",
+    "build": "bundle exec middleman build && rm -rf dist/* && gulp dist",
+    "deploy:staging": "gulp s3 --staging",
+    "deploy:staging2": "gulp s3 --staging2"
   }
 }
