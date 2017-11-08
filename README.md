@@ -4,16 +4,18 @@
 ## Старт
 
 Должны быть установлены git, ruby, bundler, bower, nodejs.
-Работает с nodejs v0.10.32.
-Удобно пользоваться [nvm](https://github.com/creationix/nvm) — `nvm use` устанавливает версию node, прописанную в `.nvmrc`
+Работает с nodejs v8.8.1.
+Удобно пользоваться [nvm](https://github.com/creationix/nvm)
+
+`nvm use` устанавливает версию node, прописанную в `.nvmrc`
 
 1. `bundle install`
 
-2. `./frontend_prepare` устанавливаем зависимости
+2. `yarn` и `bower install` — устанавливаем зависимости
 
 3. Запуск сервера
 
-`npm run server`
+`yarn start`
 
 4. Билд статичного сайта
   `./frontend_build` делает билд статичного сайта в `build/` и билд
@@ -31,10 +33,10 @@ Gulp-задача собирает в `app/tmp/assets` все ассеты, пр
 
 вписываем AWS key/secret в `config/keys.coffee` (пользователь iq300_frontend в IAM)
 
-`gulp s3 --staging`
-`gulp s3 --staging2`
+`yarn deploy:staging`
+`yarn deploy:staging2`
 
-можно создавать s3 bucket-ы по примеру iq300-frontend-stage, добавлять в config/keys.coffee и деплоить `gulp s3 --<key_name>`
+можно создавать s3 bucket-ы по примеру iq300-frontend-stage, добавлять в config/keys.coffee и деплоить `NODE_ENV=<key_name> gulp s3`
 
 ## Использование в основном проекте
 
@@ -82,9 +84,6 @@ Gulp-задача собирает в `app/tmp/assets` все ассеты, пр
 ```npm config set registry "https://registry.nodejitsu.com"```
 или дефолтный репо
 ```npm config set registry http://registry.npmjs.org/```
-
-Фиксируем зависимости node-модулей
-```npm shrinkwrap```
 
 ## TODO
 
