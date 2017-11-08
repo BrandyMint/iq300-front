@@ -18,7 +18,7 @@ browserSync = require('browser-sync')
 reload = browserSync.reload
 #postcss = require('gulp-postcss')
 #autoprefixer = require('autoprefixer-core')
-#autoprefixer = require('gulp-autoprefixer')
+autoprefixer = require('gulp-autoprefixer')
 debug = require('gulp-debug')
 shell = require('gulp-shell')
 minifyCss = require('gulp-minify-css')
@@ -78,6 +78,7 @@ gulp.task "sass:watch", ->
     .src("./app/stylesheets/**/*.sass")
     .pipe(sass(options.sassDev))
     .pipe(rewriteCSS(options.rewriteCSSDev))
+    .pipe(autoprefixer(options.autoprefixer))
     .pipe(gulp.dest("./app/tmp/stylesheets"))
     .pipe($.connect.reload())
     .on "error", $.util.log
@@ -87,6 +88,7 @@ gulp.task "sass:dist", ->
     .src("./app/stylesheets/**/*.sass")
     .pipe(sass(options.sassDist))
     .pipe(rewriteCSS(options.rewriteCSSDist))
+    .pipe(autoprefixer(options.autoprefixer))
     .pipe(minifyCss(options.minifyCss))
     .pipe(gulp.dest("./dist/stylesheets"))
     .on "error", $.util.log
@@ -176,7 +178,7 @@ gulp.task "dist", [
   "sass:dist"
   "images:dist"
   "fonts:dist"
-  "prefix:dist"
+  #"prefix:dist"
 ], ->
   gulp.on 'stop', ->
     process.nextTick ->
@@ -190,11 +192,12 @@ gulp.task "default", ["clean:dist"], ->
   return
 
 # Connect
-gulp.task "connect", $.connect.server(
-  root: ["./app"]
-  port: 9000
-  livereload: true
-)
+gulp.task "connect", ->
+  $.connect.server(
+    root: ["./app"]
+    port: 9000
+    livereload: true
+  )
 
 # Watch
 gulp.task "watch", [
@@ -202,7 +205,7 @@ gulp.task "watch", [
   "sass:watch"
   "images:watch"
   "fonts:watch"
-  "prefix:watch"
+  #"prefix:watch"
   #"assets"
   #"html"
   #"bundle"
@@ -215,7 +218,9 @@ gulp.task "watch", [
   #gulp.watch('app/scripts/**/*.coffee', ['coffee', 'scripts']);
   #gulp.watch "app/scripts/**/*.coffee", ["scripts"]
   #gulp.watch "app/stylesheets/**/*.css", ["assets"]
-  gulp.watch "app/stylesheets/**/*.{sass,scss}", ["sass:watch", "prefix:watch"]
+  #gulp.watch "app/stylesheets/**/*.{sass,scss}", ["sass:watch", "prefix:watch"]
+  #gulp.watch "app/stylesheets/**/*.{sass,scss}", ["sass:watch", "prefix:watch"]
+  gulp.watch "app/stylesheets/**/*.{sass,scss}", ["sass:watch"]
   gulp.watch "app/fonts/**/*", ["fonts:watch"]
   gulp.watch "app/images/**/*", ["images:watch"]
   #gulp.watch ["app/**/*.haml"], ["browser-sync-reload"]
@@ -230,6 +235,7 @@ gulp.task "watch", [
   return
 
 createPublisher = (env = 'staging') ->
+  $.util.log keys.s3[env]
   return awspublish.create(
     region: keys.s3[env].region
     params: Bucket: keys.s3[env].bucket
