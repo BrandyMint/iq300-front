@@ -54,7 +54,7 @@
   "scripts": {
     "start": "gulp watch & EXECJS_RUNTIME=Node bundle exec middleman",
     "build": "bundle exec middleman build && rm -rf dist/* && gulp dist",
-    "deploy:staging": "gulp s3 --staging",
-    "deploy:staging2": "gulp s3 --staging2"
+    "deploy:staging": "NODE_ENV=staging gulp s3",
+    "deploy:staging2": "NODE_ENV=staging2 gulp s3"
   }
 }

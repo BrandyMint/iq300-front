@@ -235,7 +235,6 @@ gulp.task "watch", [
   return
 
 createPublisher = (env = 'staging') ->
-  $.util.log keys.s3[env]
   return awspublish.create(
     region: keys.s3[env].region
     params: Bucket: keys.s3[env].bucket

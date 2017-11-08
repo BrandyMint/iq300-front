@@ -33,10 +33,10 @@ Gulp-задача собирает в `app/tmp/assets` все ассеты, пр
 
 вписываем AWS key/secret в `config/keys.coffee` (пользователь iq300_frontend в IAM)
 
-`gulp s3 --staging`
-`gulp s3 --staging2`
+`yarn deploy:staging`
+`yarn deploy:staging2`
 
-можно создавать s3 bucket-ы по примеру iq300-frontend-stage, добавлять в config/keys.coffee и деплоить `gulp s3 --<key_name>`
+можно создавать s3 bucket-ы по примеру iq300-frontend-stage, добавлять в config/keys.coffee и деплоить `NODE_ENV=<key_name> gulp s3`
 
 ## Использование в основном проекте
 
