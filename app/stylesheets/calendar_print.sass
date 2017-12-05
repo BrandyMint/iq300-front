@@ -1,24 +1,15 @@
-@import helpers/mixins
+@import print
 @import libs/fullcalendar
 
-html, body
-  font-size: 13px
-  font-family: Arial, sans-serif
-  line-height: 19px
+.fc-basic-view .fc-body .fc-row
+  min-height: 94px
 
-.header
-  margin-bottom: 15px
-  a
-    margin-left: 15px
-
-.calendar-page
-  width: 950px
-
-@media print
-  .header
-    img
-      float: right
-    a.print, a.back
-      display: none
-  .fc-header-right
-    display: none
+body #wrapper > .print
+  >
+    .header > img
+      float: left
+    .controls > a
+      line-height: 19px
+      border-radius: 3px
+      margin: 0 7px
+  width: 950px      
