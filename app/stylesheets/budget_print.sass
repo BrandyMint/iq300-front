@@ -1,0 +1,39 @@
+@import print
+
+body
+  #wrapper
+    > .print
+      > .controls
+        > a
+          line-height: 19px
+          border-radius: 3px
+          margin: 0 7px
+      > .project
+        > .project-title
+          height: 60px
+          overflow: hidden
+        > table.budget-tasks
+          margin-top: 20px
+          width: 100%
+          border: 1px solid black
+          > thead > tr
+            > .number
+              width: 4%
+            > .id
+              width: 3%
+            > .title
+              width: 32%
+            > .executor
+              width: 20%
+            > .status
+              width: 11%
+            > .planned, .actual, .deviation
+              width: 10%
+            > .profit 
+              width: 70% 
+          td, th
+            padding: 5px 10px
+            & + td, & + th
+              border-left: 1px solid black
+          td
+            border-top: 1px solid black
