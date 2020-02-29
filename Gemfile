@@ -7,7 +7,7 @@ gem "middleman-sprockets"
 gem 'builder'
 gem 'redcarpet'
 #gem "activesupport", "~> 3.2.8"
-gem "rake", "~> 0.9.2"
+gem "rake", "~> 12.3.3"
 gem "therubyracer", :require => 'v8'
 # gem "middleman-livereload"
 #gem "middleman-navigation"
