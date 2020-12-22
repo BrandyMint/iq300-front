@@ -42,7 +42,7 @@
     "gulp-useref": "^0.4.4",
     "gulp-util": "~2.2.9",
     "minimist": "^1.2.0",
-    "node-notifier": "^5.1.2",
+    "node-notifier": "^8.0.1",
     "postcss": "^4.1.10",
     "through2": "latest",
     "vinyl-paths": "^1.0.0",
