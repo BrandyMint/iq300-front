@@ -41,7 +41,7 @@
     "gulp-size": "~0.1.2",
     "gulp-useref": "^0.4.4",
     "gulp-util": "~2.2.9",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.6",
     "node-notifier": "^5.1.2",
     "postcss": "^4.1.10",
     "through2": "latest",
